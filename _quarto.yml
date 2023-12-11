@@ -3,7 +3,7 @@ project:
   output-dir: docs
   render:
     - "index.qmd"
-      #    - "timeplan.qmd"
+    - "timeplan.qmd"
       #    - "!*.Rmd"
       #    - "arbeidskrav.qmd"
       #    - "oppgaver.qmd"
@@ -17,8 +17,8 @@ website:
     left:
       - text: "Forside"
         href: index.qmd
-          #      - text: "Timeplan"
-          #        href: timeplan.qmd
+      - text: "Timeplan"
+        href: timeplan.qmd
           #      - text: "Forelesninger"
           #        href: "forelesninger/notater.qmd"
           #      - text: "Oppgaveseminar"

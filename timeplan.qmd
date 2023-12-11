@@ -6,6 +6,11 @@ title: Timeplan
 
 
 ## Forelesninger
+
+```{r}
+knitr::knit_exit()
+```
+
 ```{r, echo=F, ,message=F}
 library(huxtable)
 lecnr <- 1
