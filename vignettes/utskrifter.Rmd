@@ -1,0 +1,53 @@
+---
+title: ""
+output: github_document
+---
+
+
+```{r, eval=T, echo=F}
+source('../inst/forelesningsnotater/timeplan.R')
+
+```
+
+## Introduksjon
+
+Forelesning #1: [`r tema[1]`](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/forelesningsnotater/pdfs/1-3_introduksjon.pdf)
+
+## Produsentteori: Produsentens økonomiske adferd
+
+Forelesning #2: [`r tema[2]`](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/forelesningsnotater/pdfs/4_produsent_teknologi.pdf)
+
+Forelesning #3: [`r tema[3]`](https://github.com/joernih/sfb10816mikrooekonomi/blob/main/inst/forelesningsnotater/pdfs/5_produsent_innt_kostn.pdf)
+
+Forelesning #4: [`r tema[4]`](https://github.com/joernih/sfb10816mikrooekonomi/blob/main/inst/forelesningsnotater/pdfs/6_produsent_prodm_arbm.pdf)
+
+## Konsumentteori: Konsumentens økonomiske adferd
+
+Forelesning #5: [`r tema[5]`](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/forelesningsnotater/pdfs/7_konsumentens_tilpasning.pdf)
+
+Forelesning #6: [`r tema[6]`](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/forelesningsnotater/pdfs/8_gode_og_arbeidsmarked.pdf))
+
+## Markedsteori
+
+Forelesning #7: [`r tema[7]`](https://github.com/joernih/sfb10816mikrooekonomi/blob/main/inst/forelesningsnotater/pdfs/9_markedsteori_fk.pdf)
+
+Forelesning #8: [`r tema[8]`](https://github.com/joernih/sfb10816mikrooekonomi/blob/main/inst/forelesningsnotater/pdfs/10_markedsteori_mp.pdf)
+
+Forelesning #9: [`r tema[9]`](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/forelesningsnotater/pdfs/11_markedsteori_uk.pdf)
+
+Forelesning #10  [`r substring(tema[10],1,43)`](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/forelesningsnotater/pdfs/12_prisdiskriminering.pdf)
+
+## Andre Emner
+
+Forelesning #10 [`r substring(tema[10],45)`](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/forelesningsnotater/pdfs/14_18_andre_emner.pdf)
+
+Forelesning #11  [`r tema[11]`](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/forelesningsnotater/pdfs/13_effektivitet_markedssvikt.pdf)
+
+Forelesning #12 [`r substring(tema[12],0,20)`](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/forelesningsnotater/pdfs/15_tilpasning_tid.pdf)
+
+```{r echo=F}
+knitr::knit_exit()
+```
+
+
+

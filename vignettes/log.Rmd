@@ -1,0 +1,16 @@
+---
+title: ""
+output: github_document
+---
+
+## Produsentteori
+
+## Intekter på kort og lang sikt.
+
+Fikset på figur (lagt inn gjennomsnittsinntekt).
+
+## Konsumentens økonomiske adferd i gode- og arbeidsmarkedet
+
+Lagt inn to øvelser i notatene (som benyttet under forlesningen) tilknyttet optimal produksjon og bruk av arbeidskraft.
+
+Lagt inn løsning på øvelse.

@@ -1,0 +1,64 @@
+url: https://pkgdown.r-lib.org
+title: Mikroøkonomi (SFB10816) 
+template:
+  params:
+    bootswatch: flatly
+    bootstrap: 5
+      #bootswatch: cerulean
+navbar:
+  type: inverse
+  left:
+    - icon: fa-home 
+      #      href: "index.html"
+    - text: "Slides til forelesninger"
+      menu:
+      - text: "Praktisk informasjon"
+        href: "articles/presentations.html#1" 
+      - text: "Introduksjon"
+        href: "articles/presentations.html#6" 
+      - text: "Overblikk over fullkommen konkurranse"
+        href: "articles/presentations.html#20" 
+      - text: "Produsentteori: Produksjonen"
+        href: "articles/presentations.html#34" 
+      - text: "Produsentteori: Inntekts- og kostnadsteori"
+        href: "articles/presentations.html#49" 
+      - text: "Produsentteori: Adferd i gode- og arbeidsmarkedet"
+        href: "articles/presentations.html#66" 
+      - text: "Konsumentteori: Konsumentens valg"
+        href: "articles/presentations.html#80" 
+      - text: "Konsumentteori: Adferd i gode- og arbeidsmarkedet"
+        href: "articles/presentations.html#101" 
+      - text: "Markedsteori: Fullkommen konkurranse"
+        href: "articles/presentations.html#118" 
+      - text: "Markedsteori: Monopol"
+        href: "articles/presentations.html#140" 
+      - text: "Markedsteori: Ufullkommen konkurranse: Duopol og monopolistisk konkurranse"
+        href: "articles/presentations.html#160" 
+      - text: "Markedsteori: Prisdiskriminering"
+        href: "articles/presentations.html#175" 
+      - text: "Markedsteori: Effektivitet, velferd og markedssvikt"
+        href: "articles/presentations.html#182" 
+      - text: "Andre emner: Spillteori"
+        href: "articles/presentations.html#203" 
+      - text: "Andre emner: Markedet for arbeidskraft"
+        href: "articles/presentations.html#209" 
+      - text: "Andre emner: Optimal tilpasning over tid"
+        href: "articles/presentations.html#212" 
+      - text: "Figurpakke (benytter under forelesninge)"
+        href: "https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/forelesningsnotater/pdfs/alle_figurer.pdf" 
+    - text: "Timeplan"
+      href: "articles/timeplan.html"
+    - text: "Anbefalte oppgaver"
+      href: "articles/oppgaver.html"
+    - text: "Arbeidskrav og tidligere eksamensoppgaver"
+      href: "articles/arbeidskrav.html"
+    - text: "Utskrifter"
+      href: "articles/utskrifter.html"
+    - text: "Log"
+      href: "articles/log.html" 
+    - icon: fa-github fa-lg
+      text: "github"
+      href: "https://github.com/joernih/SFB10816Mikrooekonomi"
+home:
+  sidebar:
+    structure: [license,  citation, authors, dev]

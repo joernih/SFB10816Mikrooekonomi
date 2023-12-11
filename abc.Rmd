@@ -1,0 +1,18 @@
+---
+title: ""
+subtitle: ""
+format: 
+  html:
+    page-layout: article
+#format:
+#  revealjs: 
+#    smaller: true
+#    toc-depth: 1
+#    toc: true 
+execute: 
+  cache: false
+#bibliography: 
+#footer: 
+---
+
+
