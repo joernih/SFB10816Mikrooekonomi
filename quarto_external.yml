@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "index.qmd"
+    - "timeplan.qmd"
+      #    - "!*.Rmd"
+      #    - "arbeidskrav.qmd"
+      #    - "oppgaver.qmd"
+      #    - "utskrifter.qmd"
+      #    - "log.qmd"
+      #    - "forelesninger/notater.qmd"
+
+website:
+  title: "Mikroøkonomi (SFB10816)"
+  navbar:
+    left:
+      - text: "Forside"
+        href: index.qmd
+      - text: "Timeplan"
+        href: timeplan.qmd
+          #      - text: "Forelesninger"
+          #        href: "forelesninger/notater.qmd"
+          #      - text: "Oppgaveseminar"
+          #        href: oppgaver.qmd
+          #      - text: "Arbeidskrav"
+          #        href: arbeidskrav.qmd
+          #      - text: "Utskrifter"
+          #        href: utskrifter.qmd
+          #      - text: "Endringslog"
+          #        href: log.qmd
+
+format:
+  html:
+    theme: zephyr
+    toc: true
+
+# forelesninger/notater.qmd

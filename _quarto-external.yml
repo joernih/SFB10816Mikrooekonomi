@@ -1,19 +1,17 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "."
+  title: "Mikroøkonomi (SFB10816)"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: "Forside"
+        href: index.qmd
+      - text: "Timeplan"
+        href: timeplan.qmd
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: zephyr
     toc: true
-
-
-
