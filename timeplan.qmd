@@ -7,9 +7,6 @@ title: Timeplan
 
 ## Forelesninger
 
-```{r}
-knitr::knit_exit()
-```
 
 ```{r, echo=F, ,message=F}
 library(huxtable)
@@ -18,17 +15,14 @@ source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
 # https://hughjonesd.github.io/huxtable/huxtable.html
 md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
 names(df_t) <- c("#","Topic","Chapter","Responsible","Week","Date")
-abc <- huxtable::hux(df_t,add_colnames = FALSE) %>% 
-	add_colnames() %>%
-	set_text_color(2:2, 1:3, "red") %>%
-	set_bold(row = lecnr, col = everywhere) %>% 
-	set_caption("Changes")
+abc <- huxtable::as_hux(df_t,add_colnames = FALSE) 
+#	add_colnames() %>%
+#	set_text_color(2:2, 1:3, "red") %>%
+#	set_bold(row = lecnr, col = everywhere) %>% 
+#	set_caption("Changes")
 abc
 ```
 
-```{r}
-knitr::knit_exit()
-```
 
 
 ## Oppgaveseminar
@@ -43,12 +37,15 @@ ghi
 def <- huxtable::hux(df_o,add_colnames = FALSE) 
 def
 ```
+[Romplan](https://tp.educloud.no/hiof/timeplan/timeplan.php?type=course&sem=24v&campus=&id[]=SFB10816%2C1)
+
+
+```{r, echo=F}
+knitr::knit_exit()
+```
 
 
 
 
-
-
-[Timeplan](https://tp.educloud.no/hiof/timeplan/timeplan.php?type=course&sem=24v&campus=&id[]=SFB10816%2C1)
 
 

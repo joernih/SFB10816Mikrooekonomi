@@ -4,11 +4,10 @@ project:
     - "index.qmd"
     - "timeplan.qmd"
     - "forelesninger/notater.qmd"
-      #    - "!*.Rmd"
-      #    - "arbeidskrav.qmd"
-      #    - "oppgaver.qmd"
-      #    - "utskrifter.qmd"
-      #    - "log.qmd"
+    - "arbeidskrav.qmd"
+    - "oppgaver.qmd"
+    - "utskrifter.qmd"
+    - "log.qmd"
 
 # forelesninger/notater.qmd
 # _quarto-internal.yml
