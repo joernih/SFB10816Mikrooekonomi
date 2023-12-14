@@ -14,6 +14,7 @@ website:
       - text: "Forelesninger"
         href: "forelesninger/notater.qmd"
       - text: "Seminar"
+        href: "seminar/seminar.qmd"
       - text: "Arbeidskrav og andre oppgaver"
       - text: "Utskrifter"
       - text: "Endringslog"
