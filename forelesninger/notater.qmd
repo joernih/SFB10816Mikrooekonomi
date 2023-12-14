@@ -17,6 +17,7 @@ format:
 #filters:
 #  - webr
 #footer:
+footer: https://joernih.github.io/SFB10816Mikrooekonomi/
 ---
 
 # Timeplan 

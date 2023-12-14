@@ -4,20 +4,69 @@
     "href": "timeplan.html",
     "title": "Timeplan",
     "section": "",
-    "text": "knitr::knit_exit()"
+    "text": "#\nTopic\nChapter\nResponsible\nWeek\nDate\n\n\n1\nIntroduksjon til mikroøkonomi. Overblikk over fulllkomen konkurranse\nKap. 1-3\nJIH\n2\n2024-01-10\n\n\n2\nProduksjon\nKap. 4\nJIH\n3\n2024-01-17\n\n\n3\nInntekts- og kostnadsteori\nKap. 5\nJIH\n4\n2024-01-24\n\n\n4\nProdusentens økonomiske adferd i gode- og arbeidsmarkedet\nKap. 6\nJIH\n5\n2024-01-31\n\n\n5\nKonsumentens valg\nKap. 7\nJIH\n7\n2024-02-14\n\n\n6\nKonsumentens økonomiske adferd i gode- og arbeidsmarkedet\nKap. 8\nJIH\n9\n2024-02-28\n\n\n7\nFullkommen konkurranse\nKap. 9\nJIH\n10\n2024-03-06\n\n\n8\nUfullkommen konkurranse: monopol\nKap. 10\nJIH\n11\n2024-03-13\n\n\n9\nUfullkommen konkurranse: kartel, duopol, oligopol og monopolistisk konkurranse\nKap. 11\nJIH\n12\n2024-03-20\n\n\n10\nUfullkommen konkurranse: Prisdiskriminering. Andre emner: Litt spillteori, markedet for arbeidskraft\nKap. 12, 15.2, 18\nJIH\n14\n2024-04-03\n\n\n11\nEffektivitet, velferd og markedsvikt\nKap. 13\nJIH\n15\n2024-04-10\n\n\n12\nTilpasning over tid. Gjennomgang av arbeidskrav\nKap. 14\nJIH\n16\n2024-04-17\n\n\n13\nNærmere om eksamen, repetisjon (opptak) og gjennomgang av fjorårets eksamen\n\nJIH\n17\n2024-04-24"
   },
   {
     "objectID": "timeplan.html#forelesninger",
     "href": "timeplan.html#forelesninger",
     "title": "Timeplan",
     "section": "",
-    "text": "knitr::knit_exit()"
+    "text": "#\nTopic\nChapter\nResponsible\nWeek\nDate\n\n\n1\nIntroduksjon til mikroøkonomi. Overblikk over fulllkomen konkurranse\nKap. 1-3\nJIH\n2\n2024-01-10\n\n\n2\nProduksjon\nKap. 4\nJIH\n3\n2024-01-17\n\n\n3\nInntekts- og kostnadsteori\nKap. 5\nJIH\n4\n2024-01-24\n\n\n4\nProdusentens økonomiske adferd i gode- og arbeidsmarkedet\nKap. 6\nJIH\n5\n2024-01-31\n\n\n5\nKonsumentens valg\nKap. 7\nJIH\n7\n2024-02-14\n\n\n6\nKonsumentens økonomiske adferd i gode- og arbeidsmarkedet\nKap. 8\nJIH\n9\n2024-02-28\n\n\n7\nFullkommen konkurranse\nKap. 9\nJIH\n10\n2024-03-06\n\n\n8\nUfullkommen konkurranse: monopol\nKap. 10\nJIH\n11\n2024-03-13\n\n\n9\nUfullkommen konkurranse: kartel, duopol, oligopol og monopolistisk konkurranse\nKap. 11\nJIH\n12\n2024-03-20\n\n\n10\nUfullkommen konkurranse: Prisdiskriminering. Andre emner: Litt spillteori, markedet for arbeidskraft\nKap. 12, 15.2, 18\nJIH\n14\n2024-04-03\n\n\n11\nEffektivitet, velferd og markedsvikt\nKap. 13\nJIH\n15\n2024-04-10\n\n\n12\nTilpasning over tid. Gjennomgang av arbeidskrav\nKap. 14\nJIH\n16\n2024-04-17\n\n\n13\nNærmere om eksamen, repetisjon (opptak) og gjennomgang av fjorårets eksamen\n\nJIH\n17\n2024-04-24"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
+    "title": "Mikroøkonomi med anvendelser (våren 2023)",
+    "section": "",
+    "text": "Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nEmneplan for kurset\nr 2+2\nSiste gang oppdatert: r 2+2"
+  },
+  {
+    "objectID": "oppgaver.html",
+    "href": "oppgaver.html",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "",
-    "text": "Bilder\n\n\n\n\n\nPensum"
+    "text": "knitr::knit_exit()"
+  },
+  {
+    "objectID": "timeplan.html#oppgaveseminar",
+    "href": "timeplan.html#oppgaveseminar",
+    "title": "Timeplan",
+    "section": "Oppgaveseminar",
+    "text": "Oppgaveseminar\n\nghi &lt;- huxtable::hux(df_r,add_colnames = FALSE) \nghi\n\n\n\n\n1\n\n\n3\n\n\n4\n\n\n5\n\n\n6\n\n\n7\n\n\n8\n\n\n9\n\n\n10\n\n\n11\n\n\n12\n\n\n13\n\n\n14\n\n\n15"
+  },
+  {
+    "objectID": "timeplan.html#anbefalte-oppgaver-fra-boka",
+    "href": "timeplan.html#anbefalte-oppgaver-fra-boka",
+    "title": "Timeplan",
+    "section": "Anbefalte oppgaver fra boka",
+    "text": "Anbefalte oppgaver fra boka\n\n\n\n\n\nOppgaver_bok\n\n\n1.4-1.8, 3.1-3.4, 3.5-3.9, 9.1, 9.2-9.3\n\n\n3.5-3.9, 9.2-9.3\n\n\n3.12, 9.4\n\n\n4.1-4.3, 5.2, 5.4 og 5.3\n\n\n5.1, 6.1, 6.4, 6.3\n\n\n7.1, 7.3-7.7\n\n\n8.3, 8.5-8.7 (evt. 8.1, 8,2 og 8.4)\n\n\n11.3, 11.4, 12.1, 12.2\n\n\n20.4, 20.5, 20.3\n\n\n\n\n\n\n\nRomplan"
+  },
+  {
+    "objectID": "arbeidskrav.html#regneverksted",
+    "href": "arbeidskrav.html#regneverksted",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Regneverksted",
+    "text": "Regneverksted"
+  },
+  {
+    "objectID": "arbeidskrav.html#tidligere-eksamensoppgaver",
+    "href": "arbeidskrav.html#tidligere-eksamensoppgaver",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Tidligere eksamensoppgaver",
+    "text": "Tidligere eksamensoppgaver"
+  },
+  {
+    "objectID": "utskrifter.html",
+    "href": "utskrifter.html",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "",
+    "text": "knitr::knit_exit()"
+  },
+  {
+    "objectID": "index.html#nyheter",
+    "href": "index.html#nyheter",
+    "title": "Mikroøkonomi med anvendelser (våren 2023)",
+    "section": "Nyheter",
+    "text": "Nyheter\n\nPensum og emneplan\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2023-12-14"
   }
 ]

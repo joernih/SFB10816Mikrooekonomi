@@ -1,17 +1,19 @@
 project:
   type: website
   output-dir: docs
-
 website:
   title: "Mikroøkonomi (SFB10816)"
+    #repo-url: https://github.com/joernih/https://github.com/joernih/SFB10816Mikrooekonomi
+    #site-url: https://github.com/joernih/https://joernih.github.io/SFB10816Mikrooekonomi/
+  reader-mode: false
+  repo-actions: [edit]
   navbar:
     left:
-      - text: "Forside"
-        href: index.qmd
       - text: "Timeplan"
-        href: timeplan.qmd
+      - text: "Forelesninger"
+      - text: "Seminar"
+      - text: "Arbeidskrav og andre oppgaver"
+      - text: "Utskrifter"
+      - text: "Endringslog"
 
-format:
-  html:
-    theme: zephyr
-    toc: true
+

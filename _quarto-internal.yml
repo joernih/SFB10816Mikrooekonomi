@@ -1,7 +1,6 @@
 project:
   type: website
   output-dir: docs/intw
-
 website:
   title: "Mikroøkonomi (SFB10816)"
   repo-url: https://github.com/joernih/https://github.com/joernih/SFB10816Mikrooekonomi
@@ -11,27 +10,11 @@ website:
   navbar:
     left:
       - text: "Timeplan"
-        href: timeplan.qmd
+        href: "timeplan.qmd"
       - text: "Forelesninger"
         href: "forelesninger/notater.qmd"
-      - text: "Oppgaveseminar"
-        href: oppgaver.qmd
-      - text: "Arbeidskrav"
-        href: arbeidskrav.qmd
+      - text: "Seminar"
+      - text: "Arbeidskrav og andre oppgaver"
       - text: "Utskrifter"
-        href: utskrifter.qmd
       - text: "Endringslog"
-        href: log.qmd
-  page-footer: 
-       left: "Jørn I. Halvorsen (jorn.i.halvorsen at hiof.no)" 
-       right: 
-         - icon: github
-           href: https://github.com/joernih/OEKA201ProgrammingWebPage
-
-format:
-  html:
-    theme: zephyr
-    toc: true
-
-# forelesninger/notater.qmd
 

@@ -6,15 +6,16 @@ output:
     css: PAA.css
 ---
 
+
+```{r include=FALSE}
+knitr::knit_exit()
+```
+
 ## Arbeidskrav
 
 ## Regneverksted
 
 ## Tidligere eksamensoppgaver
-
-```{r include=FALSE}
-knitr::knit_exit()
-```
 
 ## Arbeidskrav
 - Vil bli fullstendig publisert  (uke 10) **10.03**, med innleveringsfrist (opplasting i [Canvas](https://hiof.instructure.com/courses/5159/assignments/24313)) den (uke 13) **31.03**. 

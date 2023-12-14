@@ -4,9 +4,7 @@ title: Timeplan
 # data-raw/metadata.json
 ---
 
-
 ## Forelesninger
-
 
 ```{r, echo=F, ,message=F}
 library(huxtable)
@@ -15,37 +13,26 @@ source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
 # https://hughjonesd.github.io/huxtable/huxtable.html
 md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
 names(df_t) <- c("#","Topic","Chapter","Responsible","Week","Date")
-abc <- huxtable::as_hux(df_t,add_colnames = FALSE) 
+#abc <- huxtable::as_hux(df_t,add_colnames = FALSE) %>%
 #	add_colnames() %>%
 #	set_text_color(2:2, 1:3, "red") %>%
 #	set_bold(row = lecnr, col = everywhere) %>% 
 #	set_caption("Changes")
-abc
+df_t
 ```
-
-
-
-## Oppgaveseminar
-```{r}
-ghi <- huxtable::hux(df_r,add_colnames = FALSE) 
-ghi
-```
-
 
 ## Anbefalte oppgaver fra boka
-```{r}
-def <- huxtable::hux(df_o,add_colnames = FALSE) 
-def
+```{r, echo=F}
+#def <- huxtable::hux(df_o,add_colnames = FALSE) 
+df_o
 ```
+
+
+
+
 [Romplan](https://tp.educloud.no/hiof/timeplan/timeplan.php?type=course&sem=24v&campus=&id[]=SFB10816%2C1)
 
 
 ```{r, echo=F}
 knitr::knit_exit()
 ```
-
-
-
-
-
-

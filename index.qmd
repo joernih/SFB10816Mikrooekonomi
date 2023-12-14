@@ -1,10 +1,26 @@
+---
+title: "Mikroøkonomi med anvendelser (våren 2023)"
+output:
+  html_document:
+engine: knitr
+---
+
+![](man/figures/abc.jpg)
+
+## Nyheter
+
+### Pensum og emneplan
+
+![](man/figures/pensum.jpg){width=20%}
+<br>
+[Pensumbok (Andreassen, Bredesen og Thøgersen)](https://www.cappelendammundervisning.no/_innforing-i-mikrookonomi-9788202640521)
+<br>
+
+![](man/figures/oppgaver.jpg){width=10%}
+
+[Oppgavebok (Andreassen, Bredesen og Thøgersen)](https://www.cappelendammundervisning.no/_innforing-i-mikrookonomi-ovingsoppgaver-med-losningsforslag-9788202656485)
+<br>
 
 
-![Bilder](bilder/abc.jpg)
 
-
-
-![Pensum](bilder/pensum.jpg)
-
-
-
+**Siste gang oppdatert: `r as.Date(Sys.time())`**
