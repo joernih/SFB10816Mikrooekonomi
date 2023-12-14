@@ -3,7 +3,7 @@ title: ""
 output: github_document
 ---
 
-```{r}
+```{r, echo=F}
 knitr::knit_exit()
 ```
 

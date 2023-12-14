@@ -10,12 +10,15 @@ website:
   navbar:
     left:
       - text: "Timeplan"
-        href: "timeplan.qmd"
+        href: "timeplan/timeplan.qmd"
       - text: "Forelesninger"
         href: "forelesninger/notater.qmd"
       - text: "Seminar"
-        href: "seminar/seminar.qmd"
+        href: "seminar/oppgaveseminar.qmd"
       - text: "Arbeidskrav og andre oppgaver"
+        href: "oppgaver/oppgaver.qmd"
       - text: "Utskrifter"
+        href: "utskrifter/utskrifter.qmd"
       - text: "Endringslog"
+        href: "log.qmd"
 

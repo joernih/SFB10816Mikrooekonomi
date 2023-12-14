@@ -2,11 +2,11 @@ project:
   type: website
   render:
     - "index.qmd"
-    - "timeplan.qmd"
+    - "timeplan/timeplan.qmd"
     - "forelesninger/notater.qmd"
-    - "arbeidskrav.qmd"
-    - "oppgaver.qmd"
-    - "utskrifter.qmd"
+    - "oppgaver/oppgaver.qmd"
+    - "seminar/oppgaveseminar.qmd"
+    - "utskrifter/utskrifter.qmd"
     - "log.qmd"
 
 website:
