@@ -39,9 +39,12 @@
     }
 },
   "regnv": {
-	    "sem1":["TAB",1,2,3],
-	    "sem2":["TAB",1,2,3],
-	    "sem3":["TAB",1,2,3]
+	    "sem1":["Matematikk for mikroøkonomi",1,2,3],
+	    "sem2":["Introduksjon til markedsteori",1,2,3],
+	    "sem3":["Produsentteori på kort og lang sikt",1,2,3],
+	    "sem4":["Konsumentteori",1,2,3],
+	    "sem5":["Markedsteori: Fullkommen konkurranse",1,2,3],
+	    "sem6":["Markedsteori: Ufullkommen konkurranse og andre temaer:",1,2,3]
   },
   "anboppg":{
    "kap1":["1.1, 1.2, 1.3 1.5, 1.6, 1.9, 1.12,1.14" ],

@@ -1,0 +1,10 @@
+---
+title: "Anvendt statistikk og økonometri"
+author: "Bjørnar Karlsen Kivedal"
+date: "2023-09-11"
+categories: [news]
+---
+
+Lærebok
+
+![](thumbnail.jpg){width=50}

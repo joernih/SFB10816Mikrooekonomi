@@ -1,0 +1,8 @@
+convert abc.odg -crop 800x400+0+0 output.jpg
+libreoffice --headless --convert-to png abc.odg; convert abc.odg -crop 800x400+0+0 output.jpg
+libreoffice --headless --convert-to png abc.odg
+libreoffice --headless --convert-to png abc.odg; convert abc.odg -crop 800x400+0+0 def.jpg
+libreoffice --headless --convert-to png abc.odg
+libreoffice --headless --convert-to png abc.odg; convert abc.png -crop 800x400+0+0 def.jpg
+libreoffice --headless --convert-to png abc.odg; convert abc.png -crop 200x400+0+0 def.jpg
+libreoffice --headless --convert-to png abc.odg; convert abc.png -crop 400x400+0+0 def.jpg

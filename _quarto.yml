@@ -4,17 +4,16 @@ project:
     - "index.qmd"
     - "timeplan/timeplan.qmd"
     - "forelesninger/notater.qmd"
-    - "oppgaver/oppgaver.qmd"
-    - "seminar/oppgaveseminar.qmd"
+      #    - "forelesninger/presentations_hiof.Rmd"
+    - "oppgaver/arbeidskrav.qmd"
+    - "seminar/posts.qmd"
+    - "seminar/oppgaver/*.qmd"
     - "utskrifter/utskrifter.qmd"
     - "log.qmd"
 
 website:
   title: "Mikroøkonomi (SFB10816)"
-  repo-url: https://github.com/joernih/https://github.com/joernih/SFB10816Mikrooekonomi
-  site-url: https://github.com/joernih/https://joernih.github.io/SFB10816Mikrooekonomi/
   reader-mode: false
-  repo-actions: [edit]
   page-footer: 
        left: "Jørn I. Halvorsen (jorn.i.halvorsen at hiof.no)" 
        right: 
@@ -25,6 +24,7 @@ format:
     theme: zephyr
     toc: true
 
-# forelesninger/notater.qmd
+# forelesninger/timeplan.R
 # _quarto-internal.yml
 # _quarto-external.yml
+

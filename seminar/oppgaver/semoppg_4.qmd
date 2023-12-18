@@ -1,0 +1,222 @@
+---
+title: "Seminar 4: Konsumentteori"
+format:
+  html:
+    toc: false
+    css: css/OFF.css
+---
+
+Uke xx, ansvarlig xxx
+
+# Husholdningens tilpasning 
+
+## Oppgave 3
+a.
+Hva mener vi med nytte i konsumentteorien? Forklar forskjellen mellom ordinal og
+kardinal nytte.
+<div class="sol">
+Nytte er et subjektivt mål på den glede eller tilfredsstillelse som en
+konsument har ved konsumet av et gode. Ordinal innebærer at nytten er rangerbar. Det
+numeriske tallet for nyttenivå har altså ingen verdi utover at den rangerer gode
+kombinasjoner. Kardinal nytte innebærer at nytten er målbar. Kun ved kardinal nytte
+er det mulig å sammenligne nytte mellom konsumenter.
+</div>
+a.
+Hva mener vi med indifferenskurver? Skisser grafisk følgende 3 typer av
+indifferenskurver:
+<ul>
+  <li>Ordinære indifferenskurver</li>
+  <li>Indifferenskurver for en konsument som konsumerer to goder i et fast forhold (for eksempel en enhet saft og 2 enheter farrisvann)</li>
+  <li>En konsument som liker to goder like godt (for eksempel ferie i Norge og ferie i
+utlandet)</li>
+</ul>  
+<div class="sol">
+Ordinære indifferenskurver: Vanlige indifferenskurver krummer mot origo, noe som avspeiler begrensede
+substitusjonsmuligheter. Slike indifferenskurver innebærer avtagende marginal
+substitusjonsbrøk. Jo mer en konsument har av et gode i utgangspunktet, desto mindre
+trenger han i kompensasjon av det andre godet dersom han blir fratatt en enhet av det
+godet han har rikelig av.
+<br>
+Fast forhold: Goder som konsumeres i et fast forhold har rettvinklede indifferenskurver. I dette
+tilfellet har man ingen substitusjonsmuligheter, og det er et fast forhold mellom
+konsumerte mengder av de to godene. Godene er da komplementære. Vi får dermed
+ikke økt nytte dersom vi øker mengden av for eksempel saft, mens mengden av
+farrisvann er konstant. Vi må konsumere 1 enhet saft sammen med 2 enheter
+farrisvann. 
+<br>
+Like godt: Goder som er perfekt substituerbare, som f eks. norgesferie og ferie i utlandet, vil ha
+rettlinjede indifferenskurver. Å tilbringe 2 uker på ferie i Norge kan substitueres mot
+en 14 dagers utenlandsferie. Det er altså et konstant bytteforhold mellom de to godene.
+<br>
+<br>
+</div>
+a.
+Hva mener vi med den marginale substitusjonsbrøk? Bruk de tre typene
+indifferenskurver fra oppgave 1b) i svaret ditt.
+<div class="sol">
+Den marginale substitusjonsbrøk (MSB) viser hvor mye vi må gi opp av
+et gode for å få mer av et annet, når nytten er konstant. Den angir bytteforholdet
+mellom to goder. I tilfellet med krummede indifferenskurver, vil MSB avta langs en
+indifferenskurve. Er indifferenskurvene rettlinjede, vil MSB være konstant og lik 1
+langs hele kurven. Er derimot indifferenskurvene rettvinklede, og det er fravær av
+substitusjonsmuligheter, da vil MSB være lik null langs den horisontale aksen. 
+</div>
+a.
+Hvilke kriterier må være oppfylt for at konsumenten skal oppnå maksimal nytte til en
+gitt inntekt? Forklar grundig, og illustrer svaret ditt med en figur.
+<div class="sol">
+Bruk figur 7.12 i læreboka. Du skal forklare punkt a, b og c. Det er 2 betingelser som må være oppfylt for at en godekombinasjon skal være optimal: (1) Den må ligge på budsjettlinjen. (2) Den må være i tangeringspunktet mellom en indifferenskurve og den angitte budsjettlinjen. 
+<br>
+I c har vi tangering mellom den høyst oppnåelige indifferenskurven
+og budsjettlinjen. I tangeringspunktet er helningen på indifferenskurven (MRS) liker
+helningen på budsjettlinja, dvs at $\frac{u_1^{'}}{u_2^{'}}=\frac{p_1}{p_2}$. Dersom vi omformulerer
+tilpasningsbetingelsen får vi Gossens 1. lov: $\frac{u_1^{'}}{p_1}=\frac{u_2^{'}}{p_2}$. Konsumentens budsjett skal
+$p_1$ $p_2$ fordeles på kjøp av de 2 godene slik at nytten av den siste kronen er den samme,
+uansett hvilket gode den blir brukt på.
+<br>
+<br>
+Punktet a er ikke et optimumspunkt, fordi der er MSB $ > $ prisforholdet. Det
+innebærer at da vil konsumenten være villig til å ofre flere enheter av gode 2 for å
+få 1 enhet til av gode 1 (MSB) og fremdeles befinne seg på det samme nyttenivået,
+enn det han virkelig må ofre for å kjøpe en enhet til av gode 1 (prisforholdet). Da
+vil han øke sin nytte for det samme budsjettet ved å kjøpe mer av gode 1 og
+mindre av gode 2, og således bevege seg mot punkt c.
+<br>
+Eksempel: Anta at $MSB = 4$ og $p_1/p_2 = 3$ i punkt a. For å få 1 enhet mer av gode
+1, er han da villig til å ofre 4 enheter av gode 2. Det koster ham imidlertid kun 3
+enheter av gode 2 for å kunne kjøpe 1 enhet av gode 1. Siden «markedet» tilbyr en
+lavere pris for gode 1 (3 enheter av gode 2) enn det han maksimalt hadde vært
+villig til å «betale» (4 enheter av gode 2), øker hans nytte når han bytter ut noe av
+gode 2 med mer av gode 1.
+<br>
+<br>
+Punktet b er heller ikke et optimumspunkt, fordi der er MSB $ < $ prisforholdet. Det
+innebærer at da vil konsumenten ha behov for færre nye enheter av gode 2 dersom
+han får 1 enhet mindre av gode 1 (MSB) for fremdeles å befinne seg på det samme
+nyttenivået, enn de han får råd til dersom han reduserer kjøpet av gode 1 med en. Den må ligge på budsjettlinjen. enhet (prisforholdet). Da vil han øke sin nytte for det samme budsjettet ved å
+kjøpe mindre av gode 1 og mer av gode 2, og således bevege seg mot punkt c.
+<br>
+Eksempel: Anta at $MSB = 2$ og $p_1/p_2 = 3$ i punkt b. For å gi slipp på 1 enhet av
+gode 1, må han da få 2 enheter av gode 2 for å opprettholde nyttenivået. Han kan
+imidlertid kjøpe hele 3 enheter av gode 2 dersom han kjøper 1 enhet mindre av
+gode 1. Siden «markedet» tilbyr ham en høyere pris for gode 1 (3 enheter av gode enn det 
+han maksimalt hadde vært villig til å «betale» (2 enheter av gode 2),
+øker hans nytte når han bytter ut noe av gode 1 med mer av gode 2.
+</div>
+a.
+En konsument, Olava, liker å kose seg på en av byens kafeer. Prisen på et stykke kake er
+20 kroner, mens prisen for en kaffe latte er 40 kroner. Budsjettet til Olava er på 160
+kroner. Formuler Olavas budsjettbetingelse og illustrer den grafisk i et godediagram. Du
+skal ha mengden kake langs den horisontale aksen og mengden kaffe latte langs den
+vertikale. Forklar hva budsjettlinjen gir uttrykk for. Finn også et uttrykk for helningen
+på kurven.
+<div class="sol">
+Budsjettbetingelsen angir hvordan det samlede budsjettet (r) fordeles på
+utgifter til henholdsvis gode 1 $(p_1x_1)$ og gode 2 $(p_2x_2)$:
+\begin{equation*}
+r=p_1x_1+p_2x_2 \rightarrow 160=20x_1+40x_2
+\end{equation*}
+budsjettlinja får vi når vi løser budsjettbetingelsen med hensyn på $x_2$, slik at den
+passer inn i et $x_1x_2$-diagram:
+\begin{equation*}
+x_2=-\frac{p_1}{p_2}x_1+\frac{r}{p_2} \rightarrow
+\end{equation*}
+helningen på budsjettlinjen:
+\begin{equation*}
+\frac{dx_2}{dx_1}=-\frac{p_1}{p_2}
+\end{equation*}
+den er negativ, fordi kjøp av en enhet mer av gode 1 (kake), krever mindre kjøp av gode 2 (latte) med uendret budsjett.
+mulighetsområdet avgrenses av de to aksene og budsjettlinjen, og angir alle de
+kombinasjoner av kake og latte som olava kan kjøpe innenfor budsjettet sitt. hun kan
+ikke konsumere mer enn det som inntekt og priser bestemmer og avgrenser.
+</div>
+a.
+Hva skjer med budsjettlinjen dersom inntekten reduseres til 120 kroner? Bruk også en
+figur i forklaringen din.
+<div class="sol">
+Ved en reduksjon i budsjettet (R) med 120 kroner, får vi følgende reviderte
+budsjettbetingelse:
+\begin{equation*}
+R=p_1x_1+p_2x_2 \Rightarrow 120=20x_1+40x_2
+\end{equation*}
+Helningen på budsjettlinjen:
+\begin{equation*}
+\frac{dx_2}{dx_1}=-\frac{p_1}{p_2}
+\end{equation*}
+er dermed uendret. 
+Skjæringspunktet med den horisontale aksen ($\frac{R}{p_1}=\frac{120}{20}=6$) viser at Olava kan konsumere 6 kakestykker dersom hun bruker hele budsjettet på dette godet, mens skjæringspunktet med den
+vertikale aksen ($\frac{R}{p_2}=\frac{120}{40}=3$) viser at Olava kan konsumere 3 kopper med kaffelatte dersom hun bruker hele budsjettet på dette godet.
+Konklusjon: Redusert budsjett, reduserer konsumentens mulighetsområde ved å
+parallellforskyve budsjettlinjen innover i godediagrammet.
+</div>
+a.
+Olava har følgende nyttefunksjon: $U =10x_1^{0.5}x_2^{0.5}$. Her er x lik mengden som konsumeres
+av henholdsvis gode 1 (kake) og gode 2 (kaffe latte). Hvor mye velger Olava å
+konsumere av de to godene når priser og inntekt er som i oppgave 1e)? Hva blir
+nyttenivået i dette tilfellet? Illustrer svaret grafisk.
+<div class="sol">
+Løsningen må ligge på budsjettlinjen.
+\begin{equation*}
+R=p_1x_1+ p_2x_2 \Rightarrow 160=20x_1+ 40x_2 
+\end{equation*}
+samt ligge i tangeringspunktet mellom en indifferenskurve og den angitte budsjettlinjen.
+\begin{equation*}
+\frac{u_1^{'}}{u_2^{'}}=\frac{p_1}{p_2}=\frac{0.5\cdot 10 x_1^{-0.5}x_2^{0.5}}{0.5 \cdot10 x_1^{0.5}x_2^{-0.5}}=\frac{x_{2}^{0.5+0.5}}{x_1^{0.5+0.5}}=\frac{20}{40} \Rightarrow \frac{x_2}{x_1}=\frac{1}{2} \Rightarrow x_2=\frac{1}{2}x_1
+\end{equation*}
+Vi erstatter så $x_2$ i budsjettligningen:
+\begin{equation*}
+R=p_1x_1 + p_2x_2 \Rightarrow 160=20 x_1+ 40x_2 \Rightarrow 160=20x_1+ 40x_1 \Rightarrow 
+160=40x_1 \end{equation*}
+Som $\Rightarrow x_1 =4 \text{ enheter kaker}$ og $x_2 =\frac{1}{2}4=2 \text{ enheter kaffe latte}$.
+<br>
+Nyttenivået i optimum: 
+\begin{equation*}
+U =10x_1^{0.5}x_2^{0.5} = 10\cdot 4^{0.5}2^{0.5} \approx 28,3 \text{ nytteenheter}
+\end{equation*}
+</div>
+a. 
+Olava hadde egentlig tenkt å kjøpe 2 stykker kake og 3 kaffe latte for sitt budsjett. Hva
+blir nyttenivået i dette tilfellet? Hvilket råd vil du som samfunnsøkonom gi henne?
+<div class="sol">
+Hun maksimerer ikke nytten når hun konsumerer denne mengden. Dette
+skyldes at MSB da er 3/2, dvs hun er villig til å ofre 1,5 kaffekopper for å få ett
+kakestykke og samtidig opprettholde nyttenivået. Derimot kan hun kjøpe ett
+kakestykke og betale tilsvarende en ½ kaffekopp for dette. Hun er altså villig til å ofre
+flere kaffekopper for ett kakestykke enn det hun faktisk behøver for å opprettholde
+nyttenivået når hun kjøper dette kakestykket. Da bør hun kjøpe mer kake og færre
+kopper med kaffe. Dette bør hun fortsette med, helt til MSB har sunket til
+prisforholdet, dvs ½. 
+</div>
+a. 
+Anta at prisen på kake synker. Forklar kort hva vi mener med inntekt- og
+substitusjonseffekt i dette tilfellet. Illustrer grafisk.
+<div class="sol">
+Forklares ved å bruke en tilsvarende figur som Figur 8.8 i læreboka. Effekten av en
+prisreduksjon på etterspørselen etter godet, kan dekomponeres i 2 deler:
+Substitusjonseffekten (prisvridningseffekten): Den nyttekompenserte virkningen på
+etterspørselen etter kaker som følge av at kakeprisen reduseres. Besvarer følgende
+spørsmål; hvordan ville etterspørselen etter kaker endret seg dersom konsumenten
+hadde blitt fratatt en (tenkt) del av sin inntekt slik at hun hadde beholdt den samme
+nytten som tidligere. Substitusjonseffekten fanger opp effekten av at prisen på kake er
+blitt lavere sammenlignet med prisen på det andre godet, kaffe. Denne effekten virker
+alltid slik at prisnedgang på kaker øker kakeetterspørselen.
+<br>
+Inntektseffekten er virkningen på kakeetterspørselen som følge av at realinntekten har
+gått opp siden kakeprisen har gått ned. Olavas budsjett på 160 kr har fått større
+kjøpekraft da ett av godene er blitt billigere. Dersom kaker er et normalt gode for
+Olava, drar inntektseffekten i retning av økt kakekonsum, mens det motsatte er tilfellet
+dersom Olava betrakter kaker som et mindreverdig gode.
+<br>
+Den samlede effekten på Olavas etterspørsel etter kaker som følge av en prisnedgang,
+er summen av substitusjons- og inntektseffekten. Dersom Olava oppfatter kaker som
+et normalt gode, vil en prisreduksjon garantert resultere i økt etterspørsel etter kaker.
+Dersom kaker er et mindreverdig gode, drar de to effektene i hver sin retning, men da
+vil substitusjonseffekten være sterkere enn inntektseffekten. Fremdeles vil den
+samlede virkningen være en økt etterspørsel etter kaker. Dersom kaker er et sterkt
+mindreverdig gode, kan vi oppleve den situasjonen at en prisnedgang på kaker fører til
+lavere etterspørsel etter godet. I så fall betegner vi kaker som et giffengode.
+</div>
+
+
+
+

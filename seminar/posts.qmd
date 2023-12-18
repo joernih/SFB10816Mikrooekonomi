@@ -1,0 +1,16 @@
+---
+title: ""
+listing:
+  sort:
+    - "oppgaver/semoppg_1.qmd"
+    - "oppgaver/semoppg_2.qmd"
+    - "oppgaver/semoppg_3.qmd"
+    - "oppgaver/semoppg_4.qmd"
+    - "oppgaver/semoppg_5.qmd"
+    - "oppgaver/semoppg_6.qmd"
+  contents: oppgaver
+  type: default
+  categories: true
+---
+
+

@@ -1,0 +1,9 @@
+---
+title: "Seminar 1: Matematikk for mikroøkonomi"
+format:
+  html:
+    toc: false
+    css: css/OFF.css
+---
+
+Uke xx, ansvarlig xxx

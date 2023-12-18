@@ -1,21 +1,27 @@
 ---
 title: ""
-output:
-  html_document:
-  #html_notebook:
-    css: PAA.css
 ---
+
+```{r, echo=F, ,message=F}
+source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
+```
+
+## Arbeidskrav
+
+
+## Tidligere eksamensoppgaver
+
+## Anbefalte Oppgaver
+```{r, echo=F}
+semnr <- 1
+kableExtra::kbl(df_o,col.names=c("Oppgaver bok"))
+```
 
 
 ```{r include=FALSE}
 knitr::knit_exit()
 ```
 
-## Arbeidskrav
-
-## Regneverksted
-
-## Tidligere eksamensoppgaver
 
 ## Arbeidskrav
 - Vil bli fullstendig publisert  (uke 10) **10.03**, med innleveringsfrist (opplasting i [Canvas](https://hiof.instructure.com/courses/5159/assignments/24313)) den (uke 13) **31.03**. 

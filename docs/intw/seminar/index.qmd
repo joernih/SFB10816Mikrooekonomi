@@ -1,0 +1,12 @@
+---
+title: "Faglig arrangement ved HiOF"
+listing:
+  contents: posts
+  sort:
+    - "/home/joernih/homepageJIH/nonpublic/fagligp/posts/akt_h_i/index.qmd"
+  type: default
+  categories: true
+---
+
+Rommene åpnes for oss klokken 12:00 på alle disse dagene, og vi starter sosiale aktiviteter med en uformell lunsjsamling på det samme møterommet ovenfor. Ta med matpakke og ha hyggelige samtaler med kollegaene dine.
+

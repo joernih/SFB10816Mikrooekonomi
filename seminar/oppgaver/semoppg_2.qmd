@@ -1,0 +1,9 @@
+---
+title: "Seminar 2: Introduksjon til markedsteori"
+format:
+  html:
+    toc: false
+    css: css/OFF.css
+---
+
+Uke xx, ansvarlig xxx
