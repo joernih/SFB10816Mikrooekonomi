@@ -2,8 +2,15 @@
 title: "Seminar 1: Matematikk for mikroøkonomi"
 format:
   html:
-    toc: false
+    toc: true
     css: css/OFF.css
 ---
 
-Uke xx, ansvarlig xxx
+Uke xx (2), ansvarlig xxx
+
+## Abc
+### cde
+
+
+## Def
+### ghi

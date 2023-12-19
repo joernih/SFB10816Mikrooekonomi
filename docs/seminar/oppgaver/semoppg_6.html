@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -60,13 +94,11 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="css/OFF.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -90,7 +122,9 @@ ul.task-list li input[type="checkbox"] {
   <li class="dropdown-header">
  <span class="menu-text">Seminar</span></li>
   <li class="dropdown-header">
- <span class="menu-text">Arbeidskrav og andre oppgaver</span></li>
+ <span class="menu-text">Arbeidskrav</span></li>
+  <li class="dropdown-header">
+ <span class="menu-text">Anbefalte oppgaver</span></li>
   <li class="dropdown-header">
  <span class="menu-text">Utskrifter</span></li>
   <li class="dropdown-header">
@@ -122,46 +156,21 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<p>Uke xx, ansvarlig xxx</p>
-<section id="monopolistens-tilpasning" class="level1">
-<h1>Monopolistens tilpasning</h1>
-<section id="oppgave-5" class="level2">
-<h2 class="anchored" data-anchor-id="oppgave-5">Oppgave 5</h2>
-<ol type="a">
-<li>Anta at en monopolist står overfor følgende etterspørselsfunksjon: <span class="math inline">\(P(X)=5.000-2X\)</span>. Totalkostnadene er gitt ved: <span class="math inline">\(C(X)=100.000+3.000X\)</span>. I dette tilfellet er X omsatt mengde av produktet. Forklar med utgangspunkt i dette talleksempelet hva vi mener med grenseinntekt for monopolisten. Hvorfor er grenseinntekten for monopolisten ikke lik prisen på produktet?
-<div class="sol">
-<p>Grenseinntekt er lik økning i inntekt ved økt produksjon og omsetning. R’(x)=5000-4x. Den er lavere enn pris fordi ved økt produksjon og fravær av prisdiskriminering må man sette ned prisen på alle enhetene man produserer dersom man ønsker å øke omsetning. Begrunnelsen er at monopolisten ikke kan fastsette pris uavhengig av etterspørselskurven. Monopolisten står overfor en fallende etterspørselskurve, og må ta hensyn til det.</p>
-</div></li>
-<li>Forklar og vis med utgangspunkt i talleksempelet hvordan monopolisten vil tilpasse seg. Illustrer tilpasningen grafisk. Hva blir fortjenesten til monopolisten?
-<div class="sol">
-<p>Bedriften vil tilpasse seg slik grenseinntekt er lik grensekostnader. Dette kan forklares grafisk som vist i figur 10.6 i læreboka. Grensekostnader i oppgaven er konstante og lik 3000. Optimal produksjon er 500, pris er 4000. Fortjenesten er gitt ved 400.000. Grafisk:</p>
-</div></li>
-<li>Forklar hvorfor vi får et dødvektstap ved monopol. Beregn dødvektstapet og illustrer svaret ditt grafisk.
-<div class="sol">
-<p>Dødvektstap er verdien av det man ikke produserer, det vil si produksjon som er lavere enn det som svarer til tilpasning slik at pris er lik grensekostnad (x=1000). Alternativt: dersom man produserer slik at marginal betalingsvillighet er høyere enn grensekostnader i produksjon vil man få et dødvektstap (effektivitetstap). I figuren over er dette gitt ved verdien utover grensekostnad av all produksjon mellom 500 og 1000 enheter. Verdien er gitt ved forskjellen mellom betalingsvillighet og grensekostnader for disse enhetene. Utregnet blir tapet lik 250.000 kroner. (KO=250.000 kr, PO=500.000kr)</p>
-</div></li>
-<li>Hva blir fortjenesten dersom monopolisten velger å produsere 600 enheter av produktet? Illustrer den nye tilpasningen grafisk. Vil du anbefale monopolisten å øke produksjonen? Begrunn svaret ditt. Hva skjer med dødvektstapet og det samfunnsøkonomiske overskuddet i dette tilfellet?
-<div class="sol">
-<p>Ved omsatt mengde lik 600, har vi høyere produksjon enn det som svarer til fortjenestemaksimering. Vi forventer en lavere fortjeneste fordi kostnadene ved økt produksjon vil øke mer enn inntektene. Prisen til den nye mengden er lik 3800, og fortjenesten vil bli lik 380.000 (R=2.280.000, C=1.900.000). Denne mengden vil ikke maksimere monopolistens fortjeneste, men det samfunnsøkonomiske overskuddet vil øke. Dødvektstapet reduseres til: 160.000 kroner. (KO=360.000, PO=480.000kr). SØO økes til: 840000 kr.</p>
-</div></li>
-</ol>
-</section>
-<section id="oppgave-6" class="level2">
-<h2 class="anchored" data-anchor-id="oppgave-6">Oppgave 6</h2>
-</section>
-<section id="oppgave-7" class="level2">
-<h2 class="anchored" data-anchor-id="oppgave-7">Oppgave 7</h2>
+<p>Uke xx (14), ansvarlig xxx</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">knit_exit</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -403,7 +412,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">Jørn I. Halvorsen (jorn.i.halvorsen at hiof.no)</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/joernih/https://github.com/joernih/SFB10816Mikrooekonomi/edit/main/seminar/oppgaver/semoppg_6.qmd" class="toc-action">Edit this page</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

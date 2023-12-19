@@ -8,8 +8,12 @@ engine: knitr
 ![](man/figures/abc.jpg)
 
 ## Nyheter
+Hei alle studenter! Velkommen til kurs i mikroøkonomi våren  2024. 
 
-### Pensum og emneplan
+Vi sees!
+Jørn
+
+### Pensumbøker
 
 ![](man/figures/pensum.jpg){width=20%}
 <br>
@@ -20,7 +24,5 @@ engine: knitr
 
 [Oppgavebok (Andreassen, Bredesen og Thøgersen)](https://www.cappelendammundervisning.no/_innforing-i-mikrookonomi-ovingsoppgaver-med-losningsforslag-9788202656485)
 <br>
-
-
 
 **Siste gang oppdatert: `r as.Date(Sys.time())`**

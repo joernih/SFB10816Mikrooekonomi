@@ -1,0 +1,14 @@
+{
+  "hash": "a77d196331f121abec12a5f0fa6a9647",
+  "result": {
+    "markdown": "---\ntitle: \"Seminar 4: Konsumentteori\"\nformat:\n  html:\n    toc: true\n    css: css/OFF.css\n---\n\n\nUke xx (7), ansvarlig xxx\n\n# Husholdningens tilpasning \n\n\n::: {.cell}\n\n```{.r .cell-code}\nknitr::knit_exit()\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

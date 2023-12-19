@@ -2,14 +2,19 @@
 title: "Seminar 3: Produsentteori"
 format:
   html:
-    toc: false
+    toc: true
     css: css/OFF.css
 ---
 
-Uke xx, ansvarlig xxx
+Uke xx (4), ansvarlig xxx
 
 
+# Kort sikt
+# Lang sikt
 
+```{r}
+knitr::knit_exit()
+```
 
 
 ## Oppgave 1

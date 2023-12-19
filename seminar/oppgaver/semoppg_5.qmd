@@ -2,11 +2,11 @@
 title: "Seminar 5: Markedsteori: Fullkommen konkurranse"
 format:
   html:
-    toc: false
+    toc: true
     css: css/OFF.css
 ---
 
-Uke xx, ansvarlig xxx
+Uke xx (9), ansvarlig xxx
 
 # Fullkommen konkurranse
 

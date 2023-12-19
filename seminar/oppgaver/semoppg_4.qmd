@@ -2,13 +2,17 @@
 title: "Seminar 4: Konsumentteori"
 format:
   html:
-    toc: false
+    toc: true
     css: css/OFF.css
 ---
 
-Uke xx, ansvarlig xxx
+Uke xx (7), ansvarlig xxx
 
 # Husholdningens tilpasning 
+
+```{r}
+knitr::knit_exit()
+```
 
 ## Oppgave 3
 a.

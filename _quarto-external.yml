@@ -12,7 +12,8 @@ website:
       - text: "Timeplan"
       - text: "Forelesninger"
       - text: "Seminar"
-      - text: "Arbeidskrav og andre oppgaver"
+      - text: "Arbeidskrav"
+      - text: "Anbefalte oppgaver"
       - text: "Utskrifter"
       - text: "Endringslog"
 

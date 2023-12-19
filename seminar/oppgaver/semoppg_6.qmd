@@ -2,11 +2,15 @@
 title: "Seminar 6: Markedsteori: ufullkommen konkurranse og andre temaer"
 format:
   html:
-    toc: false
+    toc: true
     css: css/OFF.css
 ---
 
-Uke xx, ansvarlig xxx
+Uke xx (14), ansvarlig xxx
+
+```{r}
+knitr::knit_exit()
+```
 
 # Monopolistens tilpasning
 ## Oppgave 5
