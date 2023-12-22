@@ -6,27 +6,26 @@ website:
     #repo-url: https://github.com/joernih/https://github.com/joernih/SFB10816Mikrooekonomi
     #site-url: https://github.com/joernih/https://joernih.github.io/SFB10816Mikrooekonomi/
   reader-mode: false
-  repo-actions: [edit]
   navbar:
     left:
       - text: "Timeplan"
-        href: "timeplan/timeplan.qmd"
+        #        href: "timeplan/timeplan.qmd"
       - text: "Forelesninger"
-        menu:
-          - text: "HVL"
-          - text: "Forelesning 1: Introduksjon"
-          - text: "Forelesning 2:"
-          - text: "Forelesning 3:"
-          - text: "Forelesning 4:" 
-          - text: "Forelesning 5:"
-          - text: "Forelesning 6:"
-          - text: "Forelesning 7:"
-          - text: "Forelesning 8:"
-          - text: "Forelesning 9:"
-          - text: "Forelesning 10:"
-          - text: "Forelesning 11:"
-          - text: "Forelesning 12:"
-          - text: "Forelesning 13:"
+        #        menu:
+        #          - text: "HVL"
+        #          - text: "Forelesning 1: Introduksjon"
+        #          - text: "Forelesning 2:"
+        #          - text: "Forelesning 3:"
+        #          - text: "Forelesning 4:" 
+        #          - text: "Forelesning 5:"
+        #          - text: "Forelesning 6:"
+        #          - text: "Forelesning 7:"
+        #          - text: "Forelesning 8:"
+        #          - text: "Forelesning 9:"
+        #          - text: "Forelesning 10:"
+        #          - text: "Forelesning 11:"
+        #          - text: "Forelesning 12:"
+        #          - text: "Forelesning 13:"
       - text: "Oppgaver"
         menu:
           - text: "Seminar"

@@ -16,9 +16,6 @@ website:
   reader-mode: false
   page-footer: 
        left: "Jørn I. Halvorsen (jorn.i.halvorsen at hiof.no)" 
-       right: 
-         - icon: github
-           href: https://github.com/joernih/OEKA201ProgrammingWebPage
 format:
   html:
     theme: default
@@ -28,3 +25,6 @@ format:
 # _quarto-internal.yml
 # _quarto-external.yml
 
+
+# Tasks internal
+# Tasks external

@@ -37,4 +37,8 @@ website:
           - text: "Tidligere eksamensoppgaver"
       - text: "Utskrifter"
       - text: "Endringslog"
+page-footer: 
+     right: 
+       - icon: github
+         href: https://github.com/joernih/OEKA201ProgrammingWebPage
 
