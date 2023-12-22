@@ -1,9 +1,0 @@
----
-title: " Nye strukturer, nye muligheter:Innovasjon i utvikling av kurs"
-author: "Irina Nikolskaja Roddvik og Søren Henrik Wenstøp"
-date: "2023-12-14"
-categories: [news]
----
-
-![](image.jpg)
-

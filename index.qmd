@@ -1,5 +1,5 @@
 ---
-title: "Mikroøkonomi med anvendelser (våren 2023)"
+title: "Mikroøkonomi med anvendelser (våren 2024)"
 output:
   html_document:
 engine: knitr
@@ -8,9 +8,12 @@ engine: knitr
 ![](man/figures/abc.jpg)
 
 ## Nyheter
-Hei alle studenter! Velkommen til kurs i mikroøkonomi våren  2024. 
+Velkommen til kurs Mikroøkonomi med anvendelser våren  2024. 
 
-Vi sees!
+De to pensumbøken som blir benyttet i kurset er  lenket til nederst på siden.
+
+Ser frem til å møte dere til første forelesning onsdag den 10. januar kl. 09:15 (Sone A Aud 4)
+
 Jørn
 
 ### Pensumbøker
@@ -26,3 +29,4 @@ Jørn
 <br>
 
 **Siste gang oppdatert: `r as.Date(Sys.time())`**
+

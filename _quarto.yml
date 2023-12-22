@@ -21,7 +21,7 @@ website:
            href: https://github.com/joernih/OEKA201ProgrammingWebPage
 format:
   html:
-    theme: zephyr
+    theme: default
     toc: true
 
 # forelesninger/timeplan.R

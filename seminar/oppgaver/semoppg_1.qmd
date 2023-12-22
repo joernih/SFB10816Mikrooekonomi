@@ -3,14 +3,40 @@ title: "Seminar 1: Matematikk for mikroøkonomi"
 format:
   html:
     toc: true
+    toc-depth: 4
     css: css/OFF.css
 ---
 
-Uke xx (2), ansvarlig xxx
+Uke xx (3), ansvarlig xxx
 
-## Abc
-### cde
+## Brøkregning
 
+## Derivasjon
+### En variabel
+### To variabler
 
-## Def
-### ghi
+## Diffrensiering
+
+## System av likninger
+
+## Lagrange-metode
+
+```{r}
+
+```
+
+## Økonomiske modeller
+
+## Bruk av eksogene og endogende variabler
+
+## Økonomiske modeller og bruk av matemaikk
+
+### Ligninger og funksjoner
+
+### Den deriverte
+
+### Diffrensiering
+
+### Løsnings av ligningssystem
+
+### Regneregler i matematikk
