@@ -1,0 +1,14 @@
+{
+  "hash": "885d5ee43b3a3e395f87adbf75250630",
+  "result": {
+    "markdown": "---\ntitle: \"Seminar 5: Markedsteori: Fullkommen konkurranse\"\nformat:\n  html:\n    toc: true\n    css: css/OFF.css\n---\n\n\nUke 14, ansvarlig: TAB\n\n::: {.content-visible when-profile=\"internal\"}\n\n# Oppgave 1: Fullkommen konkurranse\n\n:::\n\n\n::: {.cell}\n\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

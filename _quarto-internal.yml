@@ -10,7 +10,7 @@ website:
   navbar:
     left:
       - text: "Timeplan"
-        #        href: "timeplan/timeplan.qmd"
+        href: "timeplan/timeplan.qmd"
       - text: "Forelesninger"
         #menu:
         #  #          - text: "HVL"
@@ -32,6 +32,7 @@ website:
       - text: "Oppgaver"
         menu:
           - text: "Seminar"
+            href: "seminar/posts.qmd"
           - text: "Arbeidskrav"
           - text: "Anbefalte oppgaver"
           - text: "Tidligere eksamensoppgaver"

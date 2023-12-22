@@ -1,7 +1,7 @@
 {
-  "hash": "4ad0059788ed06b3482134e275a7b435",
+  "hash": "00b5c91e9bcadef22822ae8a93792e85",
   "result": {
-    "markdown": "---\ntitle: \"Seminar 3: Produsentteori\"\nformat:\n  html:\n    toc: true\n    css: css/OFF.css\n---\n\n\nUke xx (4), ansvarlig xxx\n\n\n# Kort sikt\n# Lang sikt\n\n\n::: {.cell}\n\n```{.r .cell-code}\nknitr::knit_exit()\n```\n:::\n\n\n\n\n\n\n\n\n\n\n",
+    "markdown": "---\ntitle: \"Seminar 3: Produsentteori\"\nformat:\n  html:\n    toc: true\n    css: css/OFF.css\n---\n\n\nUke 6, ansvarlig: JIH\n\n::: {.content-visible when-profile=\"internal\"}\n## Oppgave 1: Produksjonsteori på kort sikt\n## Oppgave 2: Produksjonsteori på lang sik\n:::\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n\n\n\n\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

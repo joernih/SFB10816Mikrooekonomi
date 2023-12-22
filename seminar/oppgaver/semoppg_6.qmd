@@ -6,14 +6,20 @@ format:
     css: css/OFF.css
 ---
 
-Uke xx (14), ansvarlig xxx
+Uke 16, ansvarlig: TAB
 
-```{r}
+::: {.content-visible when-profile="internal"}
+
+# Oppgave 1: Monopolistens tilpasning
+# Oppgave 2: Andre temaer
+
+:::
+
+```{r, echo=F}
 knitr::knit_exit()
 ```
 
-# Monopolistens tilpasning
-## Oppgave 5
+## Oppgave 6
 (a) Anta at en monopolist står overfor følgende etterspørselsfunksjon: $P(X)=5.000-2X$. Totalkostnadene er gitt ved: $C(X)=100.000+3.000X$. I dette tilfellet er X omsatt mengde av produktet.
 Forklar med utgangspunkt i dette talleksempelet hva vi mener med grenseinntekt for monopolisten. Hvorfor er grenseinntekten for monopolisten ikke lik prisen på produktet?
 <div class="sol">
@@ -32,7 +38,6 @@ Dødvektstap er verdien av det man ikke produserer, det vil si produksjon som er
 Ved omsatt mengde lik 600, har vi høyere produksjon enn det som svarer til fortjenestemaksimering. Vi forventer en lavere fortjeneste fordi kostnadene ved økt produksjon vil øke mer enn inntektene. Prisen til den nye mengden er lik 3800, og fortjenesten vil bli lik 380.000 (R=2.280.000, C=1.900.000). Denne mengden vil ikke maksimere monopolistens fortjeneste, men det samfunnsøkonomiske overskuddet vil øke. Dødvektstapet reduseres til: 160.000 kroner. (KO=360.000, PO=480.000kr). SØO økes til: 840000 kr. 
 </div>
 
-## Oppgave 6
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
 #knitr::include_graphics("bilder/kap13.png")

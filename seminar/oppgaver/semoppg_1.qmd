@@ -7,36 +7,29 @@ format:
     css: css/OFF.css
 ---
 
-Uke xx (3), ansvarlig xxx
+Uke 3, ansvarlig: TAB
 
-## Brøkregning
 
-## Derivasjon
+::: {.content-visible when-profile="internal"}
+## Oppgave 1: Modeller i mikroøkonomi
+
+### Bruk av eksogene og endogende variabler
+### Økonomiske modeller og bruk av matemaikk
+
+## Oppgave 2: Brøkregning og derivasjon
+### Brøkregning
+### Derivasjon
 ### En variabel
 ### To variabler
+### Diffrensiering
+## Oppgave 3: System av ligninger og optimering
+### System av likninger
+### Lagrange-metode
+:::
 
-## Diffrensiering
-
-## System av likninger
-
-## Lagrange-metode
-
-```{r}
-
+```{r, echo=F}
+knitr::knit_exit()
 ```
 
-## Økonomiske modeller
 
-## Bruk av eksogene og endogende variabler
 
-## Økonomiske modeller og bruk av matemaikk
-
-### Ligninger og funksjoner
-
-### Den deriverte
-
-### Diffrensiering
-
-### Løsnings av ligningssystem
-
-### Regneregler i matematikk

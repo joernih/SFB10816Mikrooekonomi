@@ -6,13 +6,10 @@ format:
     css: css/OFF.css
 ---
 
-Uke xx (4), ansvarlig xxx
+Uke 4, ansvarlig: TAB
 
-
-**Arbeidskrav 1 i BØA203 Mikroøkonomi**
-
-
-[Oppgave 2]{.underline}
+::: {.content-visible when-profile="internal"}
+## Oppgave 1
 
 Anta at et marked med fullkommen konkurranse har slik etterspørsel og
 slikt tilbud:
@@ -51,8 +48,7 @@ d)  Hvordan vil stykkavgiften påvirke prisen som konsumentene betaler og
     samfunnsøkonomiske effektivitetstapet? Vis hvordan du kommer fram
     til svaret og illustrer.
 
-[Oppgave 1]{.underline}
-
+## Oppgave 2
 Betrakt markedet for studenthybler på et studiested, og anta at dette
 kan betraktes som et marked med fullkommen konkurranse der antall
 kvadratmeter er mål på mengde og leiepris per kvadratmeter er mål på
@@ -81,6 +77,19 @@ b)  Vil dette ha betydning for leieprisen per kvadratmeter og hvor mange
     utslagene i leiepriser og/eller antall kvadratmeter til utleie være
     store eller små? Gi et faglig begrunnet svar, og vurder om svaret på
     alle spørsmål er entydige.
+
+:::
+
+```{r, echo=F}
+knitr::knit_exit()
+```
+
+
+
+
+
+[Oppgave 1]{.underline}
+
 
 Politikerne ser med bekymring på situasjonen for studentene som må
 betale høye leiepriser for å bo på små hybler. Et politisk parti tar til

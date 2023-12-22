@@ -6,9 +6,17 @@ format:
     css: css/OFF.css
 ---
 
-Uke xx (9), ansvarlig xxx
+Uke 14, ansvarlig: TAB
 
-# Fullkommen konkurranse
+::: {.content-visible when-profile="internal"}
+
+# Oppgave 1: Fullkommen konkurranse
+
+:::
+
+```{r, echo=F}
+knitr::knit_exit()
+```
 
 a. Markedet for moteklær kan studeres som et frikonkurransemarked. Hva menes med markedsmekanismen og likevekt i dette frikonkurransemarkedet? Illustrer grafisk og knytt forklaringer til den grafiske presentasjonen.
 <div class="sol">

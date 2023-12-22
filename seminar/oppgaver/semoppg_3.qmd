@@ -6,18 +6,18 @@ format:
     css: css/OFF.css
 ---
 
-Uke xx (4), ansvarlig xxx
+Uke 6, ansvarlig: JIH
 
+::: {.content-visible when-profile="internal"}
+## Oppgave 1: Produksjonsteori på kort sikt
+## Oppgave 2: Produksjonsteori på lang sik
+:::
 
-# Kort sikt
-# Lang sikt
-
-```{r}
+```{r, echo=F}
 knitr::knit_exit()
 ```
 
 
-## Oppgave 1
 
 - Bedriften Ambå produserer spikerpistoler (x) ved hjelp av arbeidskraft (N) og realkapital (K). Produksjonsprosessen følger denne produktfunksjonen:
 
@@ -26,7 +26,7 @@ x=6N^{0.5}K^{0.5}
 $$
 
 a.  Hva er en isokvant? Skisser isokvanten x = 48 i et faktordiagram med arbeidskraft (N) på den horisontale aksen og mengden realkapital (K) på den vertikale.
-<div class="solution">
+<div class="sol">
 
     **Løsning:**
 
@@ -198,6 +198,10 @@ j.  Finn nå bedriftens kostnadsfunksjon ved å bruke uttrykket for isokostlinje
 $$
 C(x) = 4(\frac{x}{2\cdot 3^{0.5}}) + 12\cdot (\frac{x}{3^0.5\cdot 6}) = 2\frac{x}{3^{0.5}} + 2\frac{x}{3^{0.5}} = \frac{4x}{3^{0.5}}  
 $$
+
+
+
+
 
 ## Oppgave 2
 

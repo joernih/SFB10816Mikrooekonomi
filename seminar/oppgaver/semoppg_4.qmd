@@ -6,9 +6,12 @@ format:
     css: css/OFF.css
 ---
 
-Uke xx (7), ansvarlig xxx
+Uke 9, ansvarlig: JIH
 
-# Husholdningens tilpasning 
+
+::: {.content-visible when-profile="internal"}
+## Oppgave 1: Husholdningens tilpasning 
+:::
 
 ```{r}
 knitr::knit_exit()
