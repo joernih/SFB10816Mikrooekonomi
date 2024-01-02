@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.526">
+<meta name="generator" content="quarto-1.4.533">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mikroøkonomi (SFB10816) - Mikroøkonomi med anvendelser (våren 2023)</title>
+<title>Mikroøkonomi (SFB10816) - Mikroøkonomi med anvendelser (våren 2024)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,17 +83,17 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#nyheter" id="toc-nyheter" class="nav-link active" data-scroll-target="#nyheter">Nyheter</a>
   <ul class="collapse">
-  <li><a href="#pensum-og-emneplan" id="toc-pensum-og-emneplan" class="nav-link" data-scroll-target="#pensum-og-emneplan">Pensum og emneplan</a></li>
+  <li><a href="#pensumbøker" id="toc-pensumbøker" class="nav-link" data-scroll-target="#pensumbøker">Pensumbøker</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/joernih/https://github.com/joernih/SFB10816Mikrooekonomi/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Mikroøkonomi med anvendelser (våren 2023)</h1>
+<h1 class="title">Mikroøkonomi med anvendelser (våren 2024)</h1>
 </div>
 
 
@@ -113,12 +113,16 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="man/figures/abc.jpg" class="img-fluid"></p>
 <section id="nyheter" class="level2">
 <h2 class="anchored" data-anchor-id="nyheter">Nyheter</h2>
-<section id="pensum-og-emneplan" class="level3">
-<h3 class="anchored" data-anchor-id="pensum-og-emneplan">Pensum og emneplan</h3>
+<p>Velkommen til kurs Mikroøkonomi med anvendelser våren 2024.</p>
+<p>De to pensumbøken som blir benyttet i kurset er lenket til nederst på siden.</p>
+<p>Ser frem til å møte dere til første forelesning onsdag den 10. januar kl. 09:15 (Sone A Aud 4)</p>
+<p>Jørn</p>
+<section id="pensumbøker" class="level3">
+<h3 class="anchored" data-anchor-id="pensumbøker">Pensumbøker</h3>
 <p><img src="man/figures/pensum.jpg" class="img-fluid" style="width:20.0%"> <br> <a href="https://www.cappelendammundervisning.no/_innforing-i-mikrookonomi-9788202640521">Pensumbok (Andreassen, Bredesen og Thøgersen)</a> <br></p>
 <p><img src="man/figures/oppgaver.jpg" class="img-fluid" style="width:10.0%"></p>
 <p><a href="https://www.cappelendammundervisning.no/_innforing-i-mikrookonomi-ovingsoppgaver-med-losningsforslag-9788202656485">Oppgavebok (Andreassen, Bredesen og Thøgersen)</a> <br></p>
-<p><strong>Siste gang oppdatert: 2023-12-14</strong></p>
+<p><strong>Siste gang oppdatert: 2023-12-22</strong></p>
 
 
 </section>
@@ -253,27 +257,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     stripColumnClz(note)
-    const typesetMath = (el) => {
-      if (window.MathJax) {
-        // MathJax Typeset
-        window.MathJax.typeset([el]);
-      } else if (window.katex) {
-        // KaTeX Render
-        var mathElements = el.getElementsByClassName("math");
-        var macros = [];
-        for (var i = 0; i < mathElements.length; i++) {
-          var texText = mathElements[i].firstChild;
-          if (mathElements[i].tagName == "SPAN") {
-            window.katex.render(texText.data, mathElements[i], {
-              displayMode: mathElements[i].classList.contains('display'),
-              throwOnError: false,
-              macros: macros,
-              fleqn: false
-            });
-          }
-        }
-      }
-    }
     if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
@@ -288,10 +271,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             break;
           }
         }
-        typesetMath(container);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
         return container.innerHTML
       } else {
-        typesetMath(note);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
         return note.innerHTML;
       }
     } else {
@@ -300,7 +287,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (anchorLink) {
         anchorLink.remove();
       }
-      typesetMath(note);
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
       return note.innerHTML;
     }
   }
@@ -532,14 +521,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/joernih/OEKA201ProgrammingWebPage">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
+      &nbsp;
     </div>
   </div>
 </footer>

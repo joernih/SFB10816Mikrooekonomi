@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.533">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -45,7 +45,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -54,14 +60,13 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="css/OFF.css">
 </head>
@@ -69,10 +74,10 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Mikroøkonomi (SFB10816)</span>
     </a>
@@ -87,18 +92,25 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Timeplan</span></li>
   <li class="dropdown-header">
  <span class="menu-text">Forelesninger</span></li>
-  <li class="dropdown-header">
- <span class="menu-text">Seminaroppgaver</span></li>
-  <li class="dropdown-header">
- <span class="menu-text">Arbeidskrav og andre oppgaver</span></li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-oppgaver" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Oppgaver</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-oppgaver">    
+        <li class="dropdown-header">Seminar</li>
+        <li class="dropdown-header">Arbeidskrav</li>
+        <li class="dropdown-header">Anbefalte oppgaver</li>
+        <li class="dropdown-header">Tidligere eksamensoppgaver</li>
+    </ul>
+  </li>
   <li class="dropdown-header">
  <span class="menu-text">Utskrifter</span></li>
   <li class="dropdown-header">
  <span class="menu-text">Endringslog</span></li>
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -131,46 +143,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Uke xx (4), ansvarlig xxx</p>
-<p><strong>Arbeidskrav 1 i BØA203 Mikroøkonomi</strong></p>
-<p><u>Oppgave 2</u></p>
-<p>Anta at et marked med fullkommen konkurranse har slik etterspørsel og slikt tilbud:</p>
-<p>Etterspørsel: <span class="math inline">\(X^{D} = 800 - 4p\)</span></p>
-<p>Tilbud: <span class="math inline">\(X^{S} = 2p - 100\)</span></p>
-<p>Her er X<sup>D</sup> etterspurt mengde, X<sup>S</sup> er tilbudt mengde mens p er prisen.</p>
-<p>Svar på følgende spørsmål:</p>
-<ol type="a">
-<li><p>Hva er markedsprisen og hvilken mengde vil bli omsatt i markedet? Hva er konsument-overskuddet, produsentoverskuddet og det samfunnsøkonomiske overskuddet? Vis hvordan du har kommet fram til svaret og illustrer.</p></li>
-<li><p>Anta at etterspørselen øker (fra <span class="math inline">\(X^{D} = 800 - 4p\)</span>) til <span class="math inline">\(X^{D} = 560 - 4p\)</span> alt annet like. Hva skjer med pris og mengde i markedet? Vis hvordan du kom fram til svaret og illustrer.</p></li>
-<li><p>Beregn priselastisiteten til etterspørselen og priselastisiteten til tilbudets gitt at prisen er lik likevektsprisen som du beregnet i første delspørsmål. Vis hvordan du kommer fram til svaret og illustrer.</p></li>
-</ol>
-<p>La oss nå anta at etterspørselen og tilbudet er som først spesifisert innledningsvis i oppgaven. Anta at produsentene blir pålagt å betale en stykkavgift på TTT kroner per enhet de selger.</p>
-<ol start="4" type="a">
-<li>Hvordan vil stykkavgiften påvirke prisen som konsumentene betaler og prisen som produsenten betaler, samt omsatt mengde? Hvordan vil stykkavgiften påvirke konsument-overskuddet, produsentoverskuddet og det samfunnsøkonomiske overskuddet? Hvem bærer den største byrden av stykkavgiften – konsumenter eller produsenter? Og hva er det samfunnsøkonomiske effektivitetstapet? Vis hvordan du kommer fram til svaret og illustrer.</li>
-</ol>
-<p><u>Oppgave 1</u></p>
-<p>Betrakt markedet for studenthybler på et studiested, og anta at dette kan betraktes som et marked med fullkommen konkurranse der antall kvadratmeter er mål på mengde og leiepris per kvadratmeter er mål på pris.</p>
-<p>Jo høyere leiepris per kvadratmeter, jo flere hybeleiere vil ventelig finne det bryet verdt å leie ut sine hybler til studenter – derfor øker tilbudet av kvadratmeter til leie med leieprisen per kvadratmeter.</p>
-<p>Jo høyere kvadratmeterpris, jo færre kvadratmeter vil studentene ventelig ønske å leie – dermed avtar etterspørselen etter kvadratmeter med leieprisen per kvadratmeter.</p>
-<ol type="a">
-<li>Anta at det er mange studenter som ikke får leid det antall kvadratmeter de ønsker seg til den gjeldende leieprisen per kvadratmeter. Hva tror du vil skje med leieprisen på kvadratmeter – vil den falle, stige eller ingen av delene? Gi en faglig begrunnelse for ditt svar.</li>
-</ol>
-<p>Anta at høgskolen eller universitetet på studiestedet bestemmer seg for å øke opptaket av studenter og at det av den grunn blir flere studenter som etterspør hybel.</p>
-<ol start="2" type="a">
-<li>Vil dette ha betydning for leieprisen per kvadratmeter og hvor mange kvadratmeter som er til utleie, og eventuelt hvordan? Og vil utslagene i leiepriser og/eller antall kvadratmeter til utleie være store eller små? Gi et faglig begrunnet svar, og vurder om svaret på alle spørsmål er entydige.</li>
-</ol>
-<p>Politikerne ser med bekymring på situasjonen for studentene som må betale høye leiepriser for å bo på små hybler. Et politisk parti tar til orde for å bygge flere studenthybler for utleie.</p>
-<ol start="3" type="a">
-<li>Vil dette ha betydning for leieprisen per kvadratmeter og hvor mange kvadratmeter som er til utleie, og eventuelt hvordan? Og vil utslagene i leiepriser og/eller antall kvadratmeter til utleie være store eller små? Gi et faglig begrunnet svar, og vurder om svaret på alle spørsmål er entydig.</li>
-</ol>
-<p>Det tar tid å bygge studenthybelhus, så på kort sikt vil ikke dette hjelpe. Det er derfor ønske å komme med noen kortsiktige avbøtende tiltak. Ett slikt avbøtende tiltak kan være å øke stipendet til studentene slik at de har bedre råd til å betale høye leiepriser.</p>
-<ol start="4" type="a">
-<li>Vil dette ha betydning for leieprisen per kvadratmeter og hvor mange kvadratmeter som er til utleie, og eventuelt hvordan? Gi et faglig begrunnet svar.</li>
-</ol>
-<p>Et annet politisk part mener at man i stedet for å øke stipendet heller bør hjelpe studentene ved å innføre et pristak på leiepriser, altså en maksimalpris.</p>
-<ol start="5" type="a">
-<li>Hvilken effekt vil et pristak / maksimalpris for utleiehybler ha for studentvelferden? Gi et faglig begrunnet svar.</li>
-</ol>
+
+<p>Uke 4, ansvarlig: TAB</p>
 
 
 
@@ -254,10 +228,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -267,8 +240,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -281,6 +263,120 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -324,6 +420,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -349,6 +446,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -411,22 +534,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Jørn I. Halvorsen (jorn.i.halvorsen at hiof.no)</div>   
+    <div class="nav-footer-left">
+<p>Jørn I. Halvorsen (jorn.i.halvorsen at hiof.no)</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/joernih/OEKA201ProgrammingWebPage">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
+      &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 

@@ -4,7 +4,7 @@ project:
     - "index.qmd"
     - "timeplan/timeplan.qmd"
     - "forelesninger/notater.qmd"
-      #    - "forelesninger/presentations_hiof.Rmd"
+    - "forelesninger/presentations_hiof.Rmd"
     - "oppgaver/arbeidskrav.qmd"
     - "seminar/posts.qmd"
     - "seminar/oppgaver/*.qmd"
@@ -24,7 +24,4 @@ format:
 # forelesninger/timeplan.R
 # _quarto-internal.yml
 # _quarto-external.yml
-
-
 # Tasks internal
-# Tasks external

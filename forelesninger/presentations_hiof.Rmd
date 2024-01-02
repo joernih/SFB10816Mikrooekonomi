@@ -3,19 +3,11 @@ title: "Mikroøkonomi (SFB10816)"
 #subtitle: "Forelesningsnotater (shift+o for oversiksbilde)"
 author: "Jørn I. Halvorsen og Joachim Thøgersen"
 date: "`r Sys.Date()`"
-output:
-  xaringan::moon_reader:
-    includes:
-      in_header: "mathjax-equation-numbers.html"
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      count:IncrementalSlides: false
-#output:
-#  html_document:
-#    toc: true
-#    theme: united
+format:
+  revealjs: 
+    smaller: true
+    toc-depth: 1
+    toc: true 
 ---
 
 ```{r xaringan-tile-view, echo=FALSE, message=F, warning=F}
@@ -46,20 +38,21 @@ source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
 ```
 # Praktisk informasjon
 
+
 ---
 
 ## Timeplan med anbefalte oppgaver
 
 ```{r, eval=T, echo=F}
-df1_i <- df1[1:6,]
-kableExtra::kbl(df1_i[1:6,]) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=12)
+#df1_i <- df1[1:6,]
+#kableExtra::kbl(df1_i[1:6,]) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=12)
 ```
 
 ---
 
 ```{r, eval=T, echo=F}
-df1_ii <- df1[c(7:11),]
-kableExtra::kbl(df1_ii) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=12)
+#df1_ii <- df1[c(7:11),]
+#kableExtra::kbl(df1_ii) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=12)
 ```
 
 ---
@@ -117,6 +110,10 @@ Individuell, skriftlig firetimers eksamen.
 Karakterregel: A-F.
 
 Hjelpemidler: Godkjent kalkulator.
+
+```{r}
+knitr::knit_exit()
+```
 
 ---
 
