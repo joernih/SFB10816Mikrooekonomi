@@ -1,6 +1,11 @@
 {
   "kursnavn": "Mikro",
   "url" : "",
+  "kursg" :{
+    "arbkutl" : ["10.3"],
+    "arbkinl" : ["31.3"],
+    "eksamn" : ["03.05.2024"]
+  },
   "lect" : {
     "weeknr" : [1,2,3],
     "date" : [1,2,3],

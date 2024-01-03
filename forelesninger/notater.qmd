@@ -1,6 +1,7 @@
 ---
-title: "Mikroøkonomi (BOEA203)"
+title: "Mikroøkonomi (SFB10816)"
 #subtitle: "Forelesningsnotater (shift+o for oversiksbilde)"
+#`r paste("Oppdatert:",Sys.Date())`
 author: "Jørn I. Halvorsen og Joachim Thøgersen"
 date: "`r Sys.Date()`"
 #output:
@@ -9,6 +10,7 @@ date: "`r Sys.Date()`"
 #    toc_depth: 3
 format:
   revealjs: 
+    chalkboard: true
     smaller: true
     toc-depth: 2
     toc: false
@@ -22,6 +24,8 @@ footer: https://joernih.github.io/SFB10816Mikrooekonomi/
 
 ```{r}
 library(dplyr)
+md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
+source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
 tema <- c(
 "Introduksjon til mikroøkonomi. Overblikk over fullkommen konkurranse",
 "Produksjons, inntekts- og kostnadsteori og adferden i produkt- og arbeidsmarkedet på kort sikt", 
@@ -47,10 +51,61 @@ del <- c(
 )
 ```
 
+# Praktisk informasjon
+
+## Timeplan med anbefalte oppgaver
+
+```{r, echo=F, ,message=F}
+lecnr <- 1
+#kableExtra::kbl(df_t,col.names=c("#","Tema","Chapter","Ansvarlig","Ukenr","Dato")) #%>% kableExtra::kable_classic_2(full_width = F) %>% kableExtra::row_spec(lecnr, bold = T)j
+```
+
+[Romplan](https://tp.educloud.no/hiof/timeplan/timeplan.php?type=course&sem=24v&campus=&id[]=SFB10816%2C1)
+
+## Pensumliste 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Hovedbok
+```{r, echo=FALSE, out.width="25%", fig.cap=""}
+knitr::include_graphics("pensum.jpg")
+```
+[Andreassen, Bredesen og Thøgersen](https://www.cappelendammundervisning.no/_innforing-i-mikrookonomi-9788202640521)
+:::
+
+::: {.column width="50%"}
+### Oppgavebok
+```{r, echo=FALSE, out.width="25%", fig.cap=""}
+knitr::include_graphics("oppgaver.jpg")
+```
+[Andreassen, Bredesen og Thøgersen](https://www.cappelendammundervisning.no/_innforing-i-mikrookonomi-ovingsoppgaver-med-losningsforslag-9788202656485)
+:::
+
+::::
+## Kursgodkjennelse
+
+Består av et obligatorisk arbeidskrav (som må være bestått) for å kunne gå opp til skriftlig eksamen. 
+
+### Obligatorisk innleveringsoppgaver
+
+Utlevert: **`r md$kursg$arbkutl`**.
+
+Innleveringsfrist: **`r md$kursg$arbkinl`**.
+
+### Eksamen
+
+Eksamen avholdes den **`r md$kursg$eksamn`, 09:00, 4 timer**.
+
+Individuell, skriftlig firetimers eksamen.
+
+Karakterregel: A-F.
+
+Hjelpemidler: Godkjent kalkulator.
+
 
 # Kapittel 1: `r tema[1]`
 
-`r paste("Oppdatert:",Sys.Date())`
 
 ---
 
@@ -135,9 +190,7 @@ del <- c(
 - Dette tapet er alternativkostnaden.
    - *Alternativkostnaden er altså verdien av beste alternative anvendelse.*
 
-```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics("drawio/alternativ.svg")
-```
+![](drawio/alternativ.svg){width=300}
 
 ---
 
@@ -199,25 +252,18 @@ knitr::include_graphics("drawio/alternativ.svg")
 ---
 
 ## Appendiks 
-### Alle figurene samlet
-
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
-#knitr::include_graphics("drawio/alt.png")
-#knitr::include_graphics("drawio/oversikt_hele.svg")
-knitr::include_graphics("drawio/abc.png")
-```
+### Alle figurene samlet 
 
 ```{r, echo=F,eval=F}
 knitr::knit_exit()
+#knitr::include_graphics("drawio/alt.png")
+#knitr::include_graphics("drawio/oversikt_hele.svg")
+#knitr::include_graphics("drawio/abc.png")
 ```
 
 ---
 
-class: inverse, center, middle
-
 # Kapittel 3: En markedsmodell med fullkommen konkurranse
-
-`r paste("Oppdatert:",Sys.Date())`
 
 ---
 

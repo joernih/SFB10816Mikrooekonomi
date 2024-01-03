@@ -12,7 +12,7 @@ website:
       - text: "Timeplan"
         href: "timeplan/timeplan.qmd"
       - text: "Forelesninger"
-        href: "notater.qmd"
+        href: "forelesninger/notater.qmd"
         #- text: "Forelesning 1: Introduksjon"
         #- text: "Forelesning 2:"
         #- text: "Forelesning 3:"
@@ -34,7 +34,9 @@ website:
           - text: "Anbefalte oppgaver"
           - text: "Tidligere eksamensoppgaver"
       - text: "Utskrifter"
+        href: "utskrifter/utskrifter.qmd"
       - text: "Endringslog"
+        href: "log.qmd"
 page-footer: 
      right: 
        - icon: github
