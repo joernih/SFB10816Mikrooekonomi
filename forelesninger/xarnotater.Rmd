@@ -1,8 +1,8 @@
 ---
-title: "Mikroøkonomi (BOEA203)"
+title: "Mikroøkonomi (SFB10816)"
 #subtitle: "Forelesningsnotater (shift+o for oversiksbilde)"
 author: "Jørn I. Halvorsen og Joachim Thøgersen"
-date: "`r Sys.Date()`"
+date: "2021/08/12 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     includes:
@@ -11,37 +11,12 @@ output:
     nature:
       highlightStyle: github
       highlightLines: true
-      countIncrementalSlides: false
+      count:IncrementalSlides: false
 #output:
 #  html_document:
 #    toc: true
-#    toc_depth: 3
+#    theme: united
 ---
-
-```{r}
-tema <- c(
-"Introduksjon til mikroøkonomi. Overblikk over fullkommen konkurranse",
-"Produksjons, inntekts- og kostnadsteori og adferden i produkt- og arbeidsmarkedet på kort sikt", 
-"Produksjons, inntekts- og kostnadsteori og adferden i produkt- og arbeidsmarkedet på lang sikt", 
-"Konsumentens valg", 
-"Konsumentens økonomiske adferd i gode- og arbeidsmarkedet", 
-"Fullkommen konkurranse", 
-"Monopol, monopolistisk konkurranse og prisdiskriminering", 
-"Ufulkommen konkurranse: markedssvikt", 
-"Ufulkommen konkurranse: internasjonal handel"  
-)
-del <- c(
-" Introduksjon, overblikk over markeds- og velferdsteori",
-"1. Produsentteori: ", 
-"",
-"2. Konsumentteori: ", 
-"",
-"3. Markedsteori:",
-"",
-"4. Andre emner",
-""
-)
-```
 
 ```{r xaringan-tile-view, echo=FALSE, message=F, warning=F}
 xaringanExtra::use_editable(expires = 1)
@@ -57,44 +32,32 @@ library(xaringan)
 library(plotly)
 ```
 
-
 ```{r eval=FALSE, include=FALSE}
 #- Eksempel med $U(x_1, x_2) = 10x_1x_2$
-pathn <- '/forelesninger/hvl'
+pathn <- '/inst/forelesningsnotater/presentations'
 xaringan::inf_mr(paste0(rprojroot::find_rstudio_root_file(),pathn,'.Rmd'))
 system(paste0('brave ',rprojroot::find_rstudio_root_file(),pathn,'.html'))
 servr::daemon_stop()
 rmarkdown::render(paste0(rprojroot::find_rstudio_root_file(),pathn,'.html'))
 ```
 
-\newpage
-
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
+source(paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/timeplan.R'))
 ```
 
-# Timeplan 
+# Timeplan med anbefalte oppgaver
 
 ```{r, eval=T, echo=F}
-#df1_i <- df1[1:9,]
-#kableExtra::kbl(df1_i) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=12)
-
+df1_i <- df1[1:6,]
+kableExtra::kbl(df1_i[1:6,]) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=12)
 ```
 
 ---
 
-
-# Anbefalte oppgaver
-
-```{r, eval=T, echo=F, warning=F, message=F}
-library(kableExtra)
-library(dplyr)
-#timeplan <- df2
-#c_names <- c("Fra forelesningsmodul","Oppgaver")
-#c_names=c("Uke nr","Fra oppgavebok")
-#kableExtra::kbl(df2) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=12)
+```{r, eval=T, echo=F}
+df1_ii <- df1[c(7:11),]
+kableExtra::kbl(df1_ii) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=12)
 ```
-
 
 ---
 
@@ -135,24 +98,16 @@ knitr::include_graphics("oppgaver.jpg")
 
 # Kursgodkjennelse
 
-(1) Fjernvarianten:
-- Består av to obligatorisk arbeidskrav (som må være bestått) for å kunne gå opp til skriftlig eksamen. 
-
-(2) Skolevarianten (ved Akbar Osman)
-- Aktiv deltagelse på skolens oppgaveseminar.
+Består av et obligatorisk arbeidskrav (som må være bestått) for å kunne gå opp til skriftlig eksamen. 
 
 ## Obligatorisk innleveringsoppgaver
 
-**Første arbeidskrav**
-Utlevert:
-Innleveringsfrist: 29. september
-**Andre arbeidskrav**
-Utlevert:
-Innleveringsfrist: 03. november
+Utlevert: **10.03**.
+Innleveringsfrist: **31.03**.
 
 ## Eksamen
 
-Eksamen avholdes den **06.12.2023**.
+Eksamen avholdes den **03.05.2023, 09:00, 4 timer**.
 
 Individuell, skriftlig firetimers eksamen.
 
@@ -163,7 +118,6 @@ Hjelpemidler: Godkjent kalkulator.
 ---
 
 class: inverse, center, middle
-
 
 # Kapittel 1: `r tema[1]`
 
@@ -315,13 +269,10 @@ knitr::include_graphics("drawio/alternativ.svg")
 
 ---
 
-## Appendiks 
-### Alle figurene samlet
+## Appendiks (alle figurene samlet)
 
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
-#knitr::include_graphics("drawio/alt.png")
-#knitr::include_graphics("drawio/oversikt_hele.svg")
-knitr::include_graphics("drawio/abc.png")
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+knitr::include_graphics("drawio/oversikt_hele.svg")
 ```
 
 ```{r, echo=F,eval=F}
@@ -346,7 +297,7 @@ class: inverse, center, middle
 - Markedsformen er likevel nyttig:
   - Selvstendig analyseapparat.
   - Kan utvides langs mange dimensjoner.
-  - Er samfunnsøkonomisk effektiv (hva som menes med dette skal vi bruke litt tid på nå, men mere tid på senere).
+  - Er samfunnsøkonomisk effektiv (hva som menes med dette skal vi bruke en del tid på senere).
   - Er en referansemodell som andre modeller og resultater kan sammenlignes mot.
 
 ---
@@ -374,7 +325,7 @@ class: inverse, center, middle
   - En endring i konstantene vil føre til skift i kurven.
 - Fra et individs etterspørsel til markedsetterspørsel.
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
-p1 <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/ekurve.png')
+p1 <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/ekurve.png')
 knitr::include_graphics(p1)
 ```
 
@@ -391,7 +342,7 @@ knitr::include_graphics(p1)
 - Fra en bedrifts tilbud til markedstilbud.
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
-p1 <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/tkurve.png')
+p1 <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/tkurve.png')
 knitr::include_graphics(p1)
 ```
 
@@ -411,69 +362,6 @@ knitr::include_graphics(p1)
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 knitr::include_graphics("drawio/telikevekt.png")
 ```
-
----
-
-## Konsument- produsent og sammfunnsøkonomisk overskudd
-
-- I samfunnsøkonomi er vi naturlig nok opptatt av å vurdere om et marked eller et prosjekt eller politikkforslag er samfunnsøkonomisk lønnsomt. Når alt kommer til alt er det jo høyest mulig velferd for individene i samfunnet som er målet.
-- For å vurdere velferden brukes begrepet samfunnsøkonomisk overskudd (SO).
-- Dette består av konsumentoverskudd (KO) og produsentoverskudd (PO)
-- Vi har derfor at:
-\begin{equation*}
-SO=PO+KO
-\end{equation*}
-
----
-
-### Konsumentoverskudd
-#### Betalingsvillighet
-- I konsumentteorien var vi opptatt av å maksimere nytte. Men hvordan måle nytte? Hvor mye du er villig til å betale for en vare kan fortelle noe om nytten du oppnår. Det kalles:
-	- Betalingsvillighet: $B$
-- Betalingsvilligheten avhenger av hvor mye du har i utgangspunktet:
-$\Rightarrow B(X)$
-
----
-
-#### Sammenhengen mellom betalingsvillighet og konsumentoverskuddet
-
-- Det et imidlertid forskjell på det konsumenten er villig til å betale, og det han faktisk betaler. Det er denne differensen som er konsumentoverskuddet:
-	- $\Rightarrow KO(X) = B(X) – pX$
-
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
-konso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/konso.png')
-knitr::include_graphics(konso)
-```
-
-
----
-
-### Produsentoverskudd
-
-- I produksjonsteorien var vi blant annet opptatte av at bedriftene maksimerer fortjeneste. Dette er enkelt å måle som differensen mellom inntekter og utgifter.
-- Produsentoverskudd defineres som summen av den ekstrainntekten som produsenten får, av å selge til en pris som er høyere enn den laveste de ville vært villige til å akseptere.
-- Det vil si: differensen mellom produsentens samlede salgsinntekter og variable kostnader.
-
-
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
-prodo <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodo.png')
-knitr::include_graphics(prodo)
-```
-
----
-
-### Samfunnsøkonomisk overskudd og fullkommen konkurranse
-- Maksimalt SO finner vi ved 
-\begin{equation*}
-\underset{X}{\text{Maks}SO}=PO+KO=(pX-CV(x))+(B(x)-pX)
-\end{equation*}
-
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
-prodo <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/mfk_so.png')
-knitr::include_graphics(prodo)
-```
-
-- Er løsningen til dette problemet tilfredsstilt i en markedsmodell med fullkommen konkurranse? JA (vi vil se nærmere på løsningen senere i dette kurset)!
 
 ---
 
@@ -566,12 +454,10 @@ knitr::include_graphics("drawio/pmk.png")
 
 ---
 
-## Appendiks 
+## Appendiks (alle figurene samlet)
 
-### Alle figurene samlet
-
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
-knitr::include_graphics("drawio/intro_alle.png")
+```{r, echo=FALSE, out.width="55%", fig.cap=""}
+knitr::include_graphics("drawio/markedfullkommen.png")
 ```
 
 ```{r, echo=F,eval=F}
@@ -582,57 +468,46 @@ knitr::knit_exit()
 
 class: inverse, center, middle
 
-# Kapittel 4, 5 og 6: Innledning til produsentteorien
+# Kapittel 4: `r paste(substring(del[2],4),tema[2])`
 
 `r paste("Oppdatert:",Sys.Date())`
 
 ---
 
-## Produsentens rolle, teknologiske forhold og produksjon
+## Innledning
 
 - Produsentene eller bedriftene er en av hovedaktørene i en økonomi.
 - Produsentens rolle: tilby de varer og tjenester som etterspørres i et samfunn. Basert på konsumentens ønsker må produsenten vite hva som skal produseres, mengde og lokalisering.
-
 - Teknologisk perspektiv: Produsenten bruker innsatsfaktorer til å omforme råvarer til ferdige produkter.
 - Vi forenkler produksjonsbildet ved å anta at produsenten bruker to innsatsfaktorer, $N$ og $K$, til å produsere ett produkt, $x$. $N$ er arbeidskraft og $K$ er realkapital.
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
-pf <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodbildetf.png')
+pf <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/prodbildetf.png')
 knitr::include_graphics(pf)
 ```
 
+- Bedriften må altså velge effektiv produksjonsprosess.
+
 ---
 
-- Bedriften må altså velge effektiv produksjonsprosess.
 - Økonomisk perspektiv: Her består valget i å velge hvor mye bedriften skal produsere og tilby av produktet.
 - For å kunne få størst mulig overskudd må vi kjenne til inntekter og kostnader. Kostnadene er igjen svært avhengig av det teknologiske valget.
 - Vi må derfor sammenkoble elementer fra begge disse perspektivene.
 
+---
+
+## Produksjon og teknologiske forhold
+
 - Vi tar utgangspunkt i produksjonsbildet med to innsatsfaktorer og ett produkt.
-  - Produktfunksjonen:
-  	- $x = f(N, K)$
-  - Viser, for enhver mulig faktorkombinasjon, det maksimale antall enheter som kan produseres av produktet.
-  - $f$ beskriver formen på avhengighetsforholdet mellom produksjonsmengden og innsatsfaktorene. Kan tolkes som forhold (faktorer) som endrer produksjonsmengden uten å endre mengden av innsatsfaktorene $N$ og $K$.
-
-
----
-
-class: inverse, center, middle
-
-# Kapittel 4, 5 og 6: `r paste(substring(del[2],4),tema[2])`
-
-`r paste("Oppdatert:",Sys.Date())`
+- Produktfunksjonen:
+	- $x = f(N, K)$
+- Viser, for enhver mulig faktorkombinasjon, det maksimale antall enheter som kan produseres av produktet.
+- $f$ beskriver formen på avhengighetsforholdet mellom produksjonsmengden og innsatsfaktorene. Kan tolkes som forhold (faktorer) som endrer produksjonsmengden uten å endre mengden av innsatsfaktorene $N$ og $K$.
 
 ---
 
-```{r, echo=F,eval=F}
-knitr::knit_exit()
-```
+**Talleksempel på en produktfunksjonen**
 
-
-### Produksjon og teknologiske forhold 
-
-*Talleksempel på en produktfunksjon*
 ```{r, echo=FALSE}
 #knitr::include_graphics("bilder/prodftall.png")
 xout <- c(10,24,39,52,61,66,66,64,56,44)
@@ -645,7 +520,6 @@ kableExtra::kbl(tabell_prodf, col.names=tipf_navn) %>% kableExtra::kable_paper(f
 
 ---
 
-
 **Forutsetninger om produktfunksjonen**
 
 - For analytiske formål antas funksjonen kontinuerlig og to ganger deriverbar:
@@ -653,38 +527,208 @@ kableExtra::kbl(tabell_prodf, col.names=tipf_navn) %>% kableExtra::kable_paper(f
 .pull-left[
 Arbeidskraft
 
-```{r, echo=FALSE, out.width="80%", fig.cap=""}
-pkl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodkl.png')
+```{r, echo=FALSE, out.width="40%", fig.cap=""}
+pkl <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/prodkl.png')
 knitr::include_graphics(pkl)
 ```
+
 - $\frac{\partial f}{\partial N} > 0$
 - $\frac{\partial^2 f}{\partial N^2} < 0$
-
 
 ]
 
 .pull-right[
+Kapital
+
+```{r, echo=FALSE, out.width="40%", fig.cap=""}
+pkk <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/prodkk.png')
+knitr::include_graphics(pkk)
+```
+
+- $\frac{\partial f}{\partial K} > 0$
+- $\frac{\partial^2 f}{\partial K^2} < 0$
+
+]
+
 - Positive, men avtagende grenseproduktiviteter.
 - De førsteordens partielle deriverte uttrykker grenseproduktiviteten: hvor mye produsert kvantum endres ved en liten endring i bruken av vedkommende innsatsfaktor.
 - Loven om avtakende utbytte gjelder altså her.
+
+---
+
+## Isokvanter og MTSB for produksjon
+
+- For å representere produktfunksjonen grafisk, skal vi bruke et redskap fra matteboka, nemlig nivåkurver.
+- Nivåkurven kalles her en *isokvant*: viser alle kombinasjoner av N og K som gir samme produserte kvantum.
+
+```{r, echo=FALSE, out.width="40%", fig.cap=""}
+iso <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/isokvant.png')
+knitr::include_graphics(iso)
+```
+ 
+- Isokvantens form bygger på følgende prinsipp: jo mer bedriften har av en innsatsfaktor, jo mer kan den bytte for én ekstra enhet av den andre faktoren, gitt at produksjonsmengden skal være den samme.
+- *MTSB (marginale tekniske substiusjonsbrøk)* beskriver *helningen* på en isokvant for en gitt faktorkombinasjon, dvs. i ett punkt på isokvanten.
+
+---
+
+- Formell utledning av MTSB. Ta utgangspunkt i produktfunksjonen og total differensier.
+
+$$
+\overline{x} = f(K,N)
+$$
+
+Dersom vi totaldifferensierer dette uttrykket får vi 
+
+\begin{equation*}
+\Delta \overline{x} = f'_{K}(K,N)\Delta K + f'_{N}(K,N)\Delta N = 0 
+\end{equation*}
+
+Uttrykket ovenfor kan skrives som 
+
+\begin{equation*}
+f'_{K}(K,N)\Delta K =- f'_{N}(K,N)\Delta N \\
+\frac{\Delta K}{\Delta N} = - \frac{f'_{N}(K,N)}{f'_{K}(K,N)} 
+\end{equation*}
+
+\begin{equation*}
+MTSB \equiv -\frac{\Delta K}{\Delta N} =  \frac{f'_{N}(K,N)}{f'_{K}(K,N)}>0
+\end{equation*}
+
+- Merk: MTSB er gitt ved forholdet mellom grenseproduktivitetene.
+
+---
+
+**Eksempel 4.2 fra pensumbok**
+
+Anta at produktfunksjonen er gitt ved: $x = N^{0,7}+K^{0,3}$ Regn ut MTSB for denne produktfunksjonen.
+
+Grenseproduktiviteten til arbeidskraften er gitt ved $$
+\frac{\partial x}{\partial N} = 0,7N^{0,7-1} =  0,7N^{-0,3} 
+$$
+
+Grenseproduktiviteten til kapitalen er gitt ved $$
+\frac{\partial x}{\partial K} = 0,3K^{0,3-1} =  0,3K^{-0,7} 
+$$
+
+MTSB blir derfor $$
+MTSB \equiv - \frac{\Delta K}{\Delta N} = \frac{\frac{\partial x}{\partial N}}{\frac{\partial x}{\partial K}} = \frac{0,7N^{-0,3}}{0,3K^{-0,7}} 
+$$ 
+
+---
+
+## Substitusjonsegenskaper
+
+- Dette sier noe om hvor lett det er å erstatte innsatsfaktorer med hverandre.
+- For eksempel: I noen bransjer er det lettere å erstatte arbeidskraft med kapital enn i andre.
+- Dette kan fremstilles med formen på isokvanten.
+- Ytterkantene: perfekt substitusjon og ingen substitusjon (perfekte komplementer).
+
+.pull-left[
+Linær produksjonsteknologi (perfekte substitutter)
+
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+pss <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/linsub.png')
+knitr::include_graphics(pss)
+```
+]
+
+.pull-right[
+Leontief produksjonsteknologi (ingen substitusjon)
+
+```{r, echo=FALSE, out.width="60%", fig.cap=""}
+fss <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/lensub.png')
+knitr::include_graphics(fss)
+```
 ]
 
 
 ---
 
-### Inntekter 
+## Skalaegenskaper
 
-
-- Bedriftens inntekter bestemmes av antall enheter den selger, og prisen på disse enhetene.
-  - Pris: $p$. Mengde: $x$.
-  - Inntekt: $R=px$. Stigende i et $(x,R)$-diagram
-  - Grenseinntekt: endring i inntekt ved en marginal endring i solgt kvantum: $R'(x)$
-  - Gjennomsnitsinntekt: inntekt per produsert enhet: $\overline{R}$.
-
+- Mens grenseprodukt viser endring i bruken av én innsatsfaktor, viser skalaendringer endringer i bruken av *alle* innsatsfaktorer.
+- Definisjon: Skalaegenskapene sier noe om hvor mye produksjonsmengden endres ved *proporsjonale* endringer i bruken av innsatsfaktorene.
+- Proporsjonale endringer innebærer at forholdet mellom N og K er konstant. 
+- Anta en proporsjonal økning på 100%.
+- Hva skjer med produksjonsmengden (merk: produksjonsprosesser kan variere i skala)?
 
 ---
 
-*Talleksempel for salgsinntekter*
+- i) Konstant skalautbytte
+  - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på y %.
+
+```{r, echo=FALSE, out.width="40%", fig.cap=""}
+koskala <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/koskala.png')
+knitr::include_graphics(koskala)
+```
+
+---
+
+- ii) Avtagende skalautbytte
+  - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på mindre enn y %.
+
+```{r, echo=FALSE, out.width="40%", fig.cap=""}
+avskala <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/avskala.png')
+knitr::include_graphics(avskala)
+```
+
+---
+
+- iii) Økende skalautbytte
+  - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på mer enn y %.
+
+```{r, echo=FALSE, out.width="40%", fig.cap=""}
+okskala <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/okskala.png')
+knitr::include_graphics(okskala)
+```
+
+---
+
+## Appendiks (alle figurene samlet)
+
+```{r, echo=FALSE, out.height="30%",out.width="55%", fig.cap=""}
+allp <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/oversikt_prod_i.png')
+knitr::include_graphics(allp)
+```
+
+```{r, echo=F,eval=F}
+knitr::knit_exit()
+```
+
+---
+
+class: inverse, center, middle
+
+# Kapittel 5: `r paste(substring(del[2],4),tema[3])`
+
+`r paste("Oppdatert:",Sys.Date())`
+
+---
+
+## Innledning
+- Vi skal starte med å se litt generelt på inntekter, kostnader og ulike kostnadsbegreper.
+- Deretter skal vi se på kostnadslinja, som ser kostnadene i forbindelse med faktorbruk.
+- Vi skiller mellom kort og lang sikt.
+- Til slutt skal vi se på bedriftens optimale tilpasning, hvor vi vil legge til grunn at bedriften har et mål om å maksimere antall produserte enheter under en budsjettbetingelse.
+
+---
+
+## Inntekter på kort og lang sikt 
+
+- Bedriftens inntekter bestemmes av antall enheter den selger, og prisen på disse enhetene.
+- Pris: $p$. Mengde: $x$.
+- Inntekt: $R=px$. Stigende i et $(x,R)$-diagram
+- Grenseinntekt: endring i inntekt ved en marginal endring i solgt kvantum: $R'(x)$
+- Gjennomsnitsinntekt: inntekt per produsert enhet: $\overline{R}$.
+
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+innt <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/inntf.png')
+knitr::include_graphics(innt)
+```
+
+---
+
+*Tabelleksempel for salgsinntekter*
 
 ```{r echo=F, message=FALSE, warning=FALSE}
 library(dplyr)
@@ -692,33 +736,25 @@ tabell_inntekt <- data.frame(mengde=c(1,2,3),pris=c("1000","1000","1000"), salgs
 ti_navn <- c("Solge enheter","Pris per enhet","Salgsinntekt", "Grenseinntekt", "Gjennomsnittsinntekt")
 kableExtra::kbl(tabell_inntekt, col.names=ti_navn)
 ```
-
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
-innt <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/inntf.png')
-knitr::include_graphics(innt)
-```
-
 ---
 
-
-### Kostnader 
-
+## Kostnader på kort sikt
 - Kostnader: De beløp som påløper som følge av virksomhet.
-  - Faste kostnader  $(C_F)$ : Kostnader som er uavhengige av produsert kvantum.
-  - Variable kostnader $(C_V$): Varierer i takt med produsert kvantum 
-    	- $CV = CV(x)$
-  - Totale kostnader $(C)$: Summen av faste og variable kostnader
-     	- $C = C_F + C_V$
-  - Gjennomsnittskostnader (enhetskostnader): Disse finner vi ved å dividere de respektive kostnadene med antall produserte enheter. 
-    	- $\overline{C}=\frac{CF}{X}+\frac{CV}{X}=\overline{C}_F+\overline{C}_V$
-  - Grensekostnader ( $GK$ eller $C'$ ): Endringen i bedriftens totale kostnader ved en liten endring i produsert kvantum 
-    	- $GK=\frac{dC(x)}{dx}=C'(x)$
+- Faste kostnader  $(C_F)$ : Kostnader som er uavhengige av produsert kvantum.
+- Variable kostnader $(C_V$): Varierer i takt med produsert kvantum 
+  - $CV = CV(x)$
+- Totale kostnader $(C)$: Summen av faste og variable kostnader
+  - $C = CF + CV$
+- Gjennomsnittskostnader (enhetskostnader): Disse finner vi ved å dividere de respektive kostnadene med antall produserte enheter. 
+  - $\overline{C}=\frac{CF}{X}+\frac{CV}{X}=\overline{C}_F+\overline{C}_V$
+- Grensekostnader ( $GK$ eller $C'$ ): Endringen i bedriftens totale kostnader ved en liten endring i produsert kvantum 
+  - $GK=\frac{dC(x)}{dx}=C'(x)$
 
 ---
 
 **Sammenhengen mellom gjennomsnittskostnad og grensekostnad**
 
-*Talleksempel a): med avtagende marginalproduktivitet (mest relevant for dette kurset) og uten faste kostnader*
+*Tabelleksempel a): med avtagende marginalproduktivitet (mest relevant for dette kurset) og uten faste kostnader*
 
 ```{r, echo=F}
 library(dplyr)
@@ -735,10 +771,11 @@ kableExtra::kbl(tabell_inntekt_ii, col.names=ti_navn_ii)
 
 ---
 
-*Talleksempel b): med økende marginalproduktivitet (mindre relevant) og uten faste kostnader*
+*Tabelleksempel b): med økende marginalproduktivitet (mindre relevant) og uten faste kostnader*
 
 ```{r, echo=F}
 library(dplyr)
+
 tabell_inntekt_i <- data.frame(prod=c(1,2,3),faktorpris=c("1000","1000","1000"), faktantall=c("1","2","2.9"), varek=c("1000","2000","2900"))
 tabell_inntekt_ii <- data.frame(w=c("0","0","0"),a=c("1000","2000","2900"),b=c("","1000","900"),c=c("","1000","966"))
 ti_navn_i <- c("Produserte enheter","Lønnskostnader","Antall arbeidere", "Variable kostnader")	     
@@ -752,7 +789,7 @@ kableExtra::kbl(tabell_inntekt_ii, col.names=ti_navn_ii)
 
 ---
 
-*Talleksempel c): med avtagende marginalproduktivitet og med faste kostnader*
+*Tabelleksempel c): med avtagende marginalproduktivitet og med faste kostnader*
 
 ```{r, echo=F}
 library(dplyr)
@@ -763,42 +800,187 @@ ti_navn_ii <- c("Faste kostnader","Totale kostnader", "Grensekostnader", "Gjenno
 kableExtra::kbl(tabell_inntekt_i, col.names=ti_navn_i) 
 ```
 <br>
-
 ```{r, echo=F}
 kableExtra::kbl(tabell_inntekt_ii, col.names=ti_navn_ii) 
 ```
 
 ---
 
-*Grensekostnad og gjennomsnittskostnad uten faste kostnader*
+**Grensekostnad og gjennomsnittskostnad uten faste kostnader**
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-kostku <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kostku.png')
+kostku <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/kostku.png')
 knitr::include_graphics(kostku)
 ```
 
-*Grensekostnad og gjennomsnittskostnad med faste kostnader*
+**Grensekostnad og gjennomsnittskostnad med faste kostnader**
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-kostkm <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kostkm.png')
+kostkm <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/kostkm.png')
 knitr::include_graphics(kostkm)
 ```
 
 ---
 
-## Tilpasningen i gode og faktormarkedet
+## Kostnader på lang sikt
+### Kostnadslinjen og isokostlinja
+- Totale kostnader for bedriften er summen av variable og faste kostnader. La oss nå se bort fra de faste, dette siden vi antar alle faktorer antas å være variable på lang sikt.
+- Vi antar at bedriftens kostnader kan uttrykkes ved summen av utgiftene på de to innsatsfaktorene.
+	- Pris på N: w
+	- Pris på K: r
+- $C = wN + rK$
+Totale kostnader (C) er da gitt ved:
+$$
+C = wN  +  rK
+$$
+Isokost (låser totalkostnadene til et bestemt nivå, $C^o=C$
+$$
+C^o= wN + rK
+$$
+
+---
+
+Helningen på isokostlinja
+\begin{equation}
+\Delta C^0= w\Delta N + r\Delta K = 0 \\
+ r\Delta K = -w\Delta N  \\
+\frac{\Delta K}{\Delta N} = - \frac{w}{r} 
+\end{equation}
+
+Bruker hele budsjettet på arbeidskraft $\Rightarrow K=0$
+\begin{equation}
+C^0= wN + r0 = wN \\
+C^0/w = N \\
+N = C^0/w 
+\end{equation}
+
+Bruke hele budsjettet (kostnaden) på kapital $\Rightarrow N=0$
+\begin{equation}
+C^0= w0 + rK = wN \\
+C^0/r = K \\
+K = C^0/r 
+\end{equation}
+
+---
+
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+#isokost
+#skalau <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/skalau.png')
+#knitr::include_graphics(skalau)
+```
+
+## Produktmaksimering for en gitt kostnadsramme (optimal tilpasning)
+- Målsetting er her å maksimere produsert kvantum innenfor en gitt kostnadsramme.
+- Dette kan være typisk for en bedrift i offentlig sektor, der de økonomiske rammebetingelsene utgjøres av en gitt kostnadsramme eller et gitt budsjett som er blitt tildelt over de offentlige budsjetter.
+
+---
+
+- Tar utgangspunkt i produktfunksjonen:
+- $x = f(N, K)$
+- Helningen er gitt ved MTSB.
+- Tar så utgangspunkt i kostnadslinja:
+- $C = wN + rK$
+- Kombinerer disse for å finne optimal tilpasning.
+
+Max $x=f(K,N)$ gitt $C^0=wN +rK$ gitt (beskrankning)
+
+Lagrange metode:
+
+\begin{equation}
+L = f(K,N) - \lambda(wN+rK-C^0)
+\end{equation}
+
+Første ordens betingelsen er gitt ved
+
+\begin{equation}
+\partial L/\partial N = f'_{N} - \lambda w  =0 \\ 
+\partial L/\partial K = f'_{K} - \lambda r =0 
+\end{equation}
+
+---
+
+Kombinerer de to første ordens betingelsene gir oss løsningen
+
+\begin{equation}
+\lambda w/\lambda r=w/r = \frac{f'_{N}}{f'_{K}} = MTSB
+\end{equation}
+
+Optimal løsning er her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.
+
+```{r, echo=FALSE, out.width="40%", fig.cap=""}
+kosmin <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/kosmin.png')
+knitr::include_graphics(kosmin)
+```
+
+---
+
+### Endrede faktorpriser 
+
+**Redusert pris på kapital**
+
+```{r, echo=FALSE, out.width="25%", fig.cap=""}
+kosminkk <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/kosminkk.png')
+knitr::include_graphics(kosminkk)
+```
+
+**Redusert pris på arbeidskraft**
+
+```{r, echo=FALSE, out.width="25%", fig.cap=""}
+kosminka <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/kosminka.png')
+knitr::include_graphics(kosminka)
+```
+
+Kjøper mer (mindre) av den innsatsfaktoren som har blitt billigere (dyrere).
+
+---
+
+
+## Substitumalen: økonomisk substitusjon
+- Dersom vi tenker oss flere endringer i bedriftens kostnadsramme med tilhørende optimale isokvant, vil vi få frem en rekke tangeringspunkter. 
+```{r, echo=FALSE, out.width="30%", fig.cap=""}
+submalen <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/submalen.png')
+knitr::include_graphics(submalen)
+```
+- Kurven gjennom alle disse punktene kalles *ekspansjonsveien* eller *substitumalen*.
+- På ethvert punkt på denne kurven kan det leses av produksjonsmengde, tilhørende kostnader og etterspørsel etter innsatsfaktorer.
+- Alle punktene på substitumalen viser tilpasninger der det ikke er mulig å øke produktmengden, uten at kostnadene øker. Det er heller ikke mulig å redusere kostnadene, uten samtidig å redusere produsert kvantum.
+- Dersom bedriften er utenfor substitumalen kan den alltid bedre sin situasjon ved økonomisk substitusjon.
+
+---
+
+## Appendiks (alle figurene samlet)
+
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+knitr::include_graphics("drawio/oversikt_prod_ii.png")
+```
+
+```{r, echo=F,eval=F}
+knitr::knit_exit()
+```
+
+---
+
+class: inverse, center, middle
+
+# Kapittel 6: `r paste(substring(del[2],4),tema[4])`
+
+`r paste("Oppdatert:",Sys.Date())`
+
+---
+
+## Fortjenestemaksimering som mål for bedriften
 
 - Vi skal nå legge til grunn at bedriften har som mål å maksimere fortjenesten eller profitten.
 - Vi skal også legge til grunn av bedriften betrakter alle priser som gitte (gode- og faktorpriser).
 - Bedriften tilpasser seg på to markeder: 
   - godemarkedet
-  - faktormarkedet: arbeidsmarkedet
-- I faktormarkedet kjøper bedriften innsatsfaktorer og må velge de kvantum av faktorene som maksimerer fortjenesten.
-- I godemarkedet må bedriften velge den produksjonsmengden som maksimerer fortjenesten. Altså: to valg!
+  - faktormarkedet (arbeidskraft og kapital)
+- På faktormarkedet kjøper bedriften innsatsfaktorer og må velge de kvantum av faktorene som maksimerer fortjenesten. 
+- På godemarkedet må bedriften velge den produksjonsmengden som maksimerer fortjenesten. Altså: to valg!!
 
 ---
 
-### Hvor stor skal produksjonen være og bedriftens tilbud av produktet
+## Hvor stor skal produksjonen være på kort sikt?
 
 - For å finne svar på dette, lar vi produksjonsmengden være variabel.
 - Hensikten med denne tilnærmingen er å analysere hvordan bedriften varierer produsert kvantum/ antall enheter den produserer, for å oppnå høyest mulig fortjeneste.
@@ -813,8 +995,7 @@ knitr::include_graphics(kostkm)
 - Kostnader: $C(x) = CV(x) + CF$
 - Salgsinntekt: $R = px$
 - Maks profitt: $F = R – C$ som gir $F=px – CV(x) – CF$
-
-Bedriften ønsker å maksimere dette uttrykket mhp. bruken av arbeidskraften. Formelt kan vi uttrykke dette som:
+- Bedriften ønsker å maksimere dette uttrykket mhp. bruken av arbeidskraften. Formelt kan vi uttrykke dette som:
 $$
 \underset{x}{\text{Maks }} F=px-C(x)
 $$
@@ -840,33 +1021,23 @@ Kostnadsfunksjonen må være konveks (som vi tidligere har sett at kan komme som
 .pull-left[
 *Uten faste kostnader*
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-kgkufast <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kgkufast.png')
+kgkufast <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/kgkufast.png')
 knitr::include_graphics(kgkufast)
 ```
 ]
 .pull-right[
 *Med faste kostnader*
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-kgkmfast <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kgkmfast.png')
+kgkmfast <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/kgkmfast.png')
 knitr::include_graphics(kgkmfast)
 ```
 ]
 
 ---
 
-- Tilbudet til bedriften må bestemmes gjennom profittmaksimering eller kostnadsminimering.  
-- Ettersom dette krever at bedriften er på grensekostnadskurven, vil tilbudskurven være ”den samme” som grensekostnadskurven.
-- På kort vil bedriftens tilbud være stigende i et (x,p)-diagram.
-- Reservasjonsprisen (minsteprisen) vil være der hvor $p_r=\overline{C}$
-  	- Dersom de faste kostnadene er irrreversible (har en alternativ anvendelse), vil $\overline{C}=\overline{C}_V$ 
-  	- Dersom de faste kostnadene er reversible (har en alternativ anvendelse), vil $\overline{C}=\overline{C}_V+\overline{C}_F$ 
-
----
-
 **Øvelse om produksjonen**
 
 Anta at produktprisen er gitt ved 100 og kostnadsfunksjonen som $C(x)=x^2$. Hva blir den optimale produksjon?
-
 
 **Løsning**
 
@@ -876,26 +1047,55 @@ F=100\cdot x - x^2
 $$
 
 Vi ønsker å finne maksimal produksjon. Førsteordensbetingelsen vil hær være gitt ved
-\begin{equation*}
+$$
 F'(x)=100-2x=0 \\
-2x=100 \\
+2x=100
 x=100/2=50
-\end{equation*}
+$$
 
 Andreordensbetingelsen for maksimum er oppfylt siden
 $$
-F''(x)=-2<0
+F'(x)=-2<0
 $$
-
-Ved å sette $x=50$ tilbake i uttrykket for profitt finner vi at profitten er positiv og gitt ved
-$$
-F=100\cdot 50 - 50^2=2500
-$$
-
 
 ---
 
-### Hvor stor skal etterspørselen etter arbeidskraft være?
+## Hvor stor skal produksjonen være på lang sikt?
+
+- Dersom vi antar *avtagende skalautbytte*, vil denne løsningen også gjelde på lang sikt.
+- For konstant eller økende skalautbytte, vil **ikke** maksimeringen av fortjenesten gjør det mulig å bestemme det optimale nivået på $x$ (2. ordensbetingelsen er ikke oppfylt).
+- Senere i kurset, skal vi se at for dette tilfelle vil det være etterspørselskurven som bestemmer hvor mye som bli produsert i markedet.
+
+---
+
+## Bedriftens tilbud på kort og lang sikt
+
+- Tilbudet til bedriften må bestemmes gjennom profittmaksimering eller kostnadsminimering.  
+- Ettersom dette krever at bedriften er på grensekostnadskurven, vil tilbudskurven være ”den samme” som grensekostnadskurven.
+- På kort vil bedriftens tilbud være stigende i et (x,p)-diagram.
+- Reservasjonsprisen (minsteprisen) vil være der hvor $p_r=\overline{C}$
+  	- Dersom de faste kostnadene er irrreversible (har en alternativ anvendelse), vil $\overline{C}=\overline{C}_V$ 
+  	- Dersom de faste kostnadene er reversible (har en alternativ anvendelse), vil $\overline{C}=\overline{C}_V+\overline{C}_F$ 
+- På lang sikt vil bedriftens tilbudskurve kunne være horisontal (ved konstant skalautbytte) i et (x,p)-diagram på
+
+.pull-left[
+*Uten faste kostnader*
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+kgkufast <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/ktilbu.png')
+knitr::include_graphics(kgkufast)
+```
+]
+.pull-right[
+*Med faste (reversible) kostnader*
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+kgkmfast <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/ktilbm.png')
+knitr::include_graphics(kgkmfast)
+```
+]
+
+---
+
+## Hvor stor skal faktorbruken være på kort sikt?
 
 - For å finne svar på dette spørsmålet betrakter vi innsatsfaktoren arbeidskraft som variable, og at disse utgjør beslutningsvariablene til bedriften.
 - Bedriften ønsker størst mulig overskudd.
@@ -903,10 +1103,9 @@ $$
 - Kostnader: $C = wN$
 - Salgsinntekt: $R = px$
 - Profitten er gitt som inntekter (R) minus kostnader (C): $F = R – C$
-
-Bedriften ønsker å maksimere dette uttrykket mhp. bruken av arbeidskraften. Formelt kan vi uttrykke dette som:
+- Bedriften ønsker å maksimere dette uttrykket mhp. bruken av arbeidskraften. Formelt kan vi uttrykke dette som:
 $$
-\underset{N}{\text{Maks }} F=pf(N)-wN
+\underset{N}{\text{Maks }} F=pf(N, K)-wN
 $$
 
 ---
@@ -920,7 +1119,7 @@ $$
 Bruken av arbeidskraften bestemmes der hvor verdien av grenseproduktiviteten er lik det nominelle lønnsnivået.
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-arbktilp <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/klearb.png')
+arbktilp <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/klearb.png')
 knitr::include_graphics(arbktilp)
 ```
 
@@ -928,14 +1127,12 @@ knitr::include_graphics(arbktilp)
 $$
 pf''(N) < 0
 $$
-t 
----
 
+---
 
 **Øvelse om bruk av arbeidskraft**
 
 Anta at produktprisen er gitt ved 10, lønnskostnadene gitt ved 1, og produktfunsjonen $x=\sqrt{N}$
-
 
 **Løsning**
 
@@ -954,405 +1151,64 @@ N^{0.5}=5 \\
 N=5^2 = 25
 \end{equation*}
 
-2.ordensbetingelsen (som sikrer optimum) $-2.5\cdot N^{-1.5} < 0$, mens optimal forjeneste er positiv og gitt som 
-$F=10\cdot 25^{1/2}-25=25$
-
 ---
 
+## Hvor stor skal faktorbruken være på lang sikt?
 
-## Appendiks 
-### Diagramark benyttet under forelesning
+- Dersom vi antar avtagende skalautbytte, vil løsningen på forrige side inneholde en ny førsteordensbetingelse som krever at $pf'(K,N)=r$ (dvs. optimalt nivå på kapital tilpasses der hvor verdien av grenseproduktiveteten er lik kapitalkostnaden) 
+- For konstant eller økende skalautbytte, har vi antydet at nivået på $x$ vil være bestemt fra etterspørselssiden For å finne optimal faktorbruk i dette tilfelle kan vi for en gitt produksjons minimere faktorutlegget. 
+- Formelt kan vi skrive dette som 
 
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
-knitr::include_graphics("drawio/prod_kort.png")
-```
-
----
-
-class: inverse, center, middle
-
-# Kapittel 4, 5 og 6: `r paste(substring(del[2],4),tema[3])`
-
-`r paste("Oppdatert:",Sys.Date())`
-
----
-
-## Produksjon og teknologiske forhold  
-
-- Vi tar utgangspunkt i produksjonsbildet med to innsatsfaktorer og ett produkt.
-- Produktfunksjonen:
-	- $x = f(N, K)$
-- Viser, for enhver mulig faktorkombinasjon, det maksimale antall enheter som kan produseres av produktet.
-- $f$ beskriver formen på avhengighetsforholdet mellom produksjonsmengden og innsatsfaktorene. Kan tolkes som forhold (faktorer) som endrer produksjonsmengden uten å endre mengden av innsatsfaktorene $N$ og $K$.
-
-.pull-left[
-Arbeidskraft
-
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
-pkl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodkl.png')
-knitr::include_graphics(pkl)
-```
-
-- $\frac{\partial f}{\partial N} > 0$
-- $\frac{\partial^2 f}{\partial N^2} < 0$
-
-]
-
-.pull-right[
-Kapital
-
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
-pkk <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodkk.png')
-knitr::include_graphics(pkk)
-```
-
-- $\frac{\partial f}{\partial K} > 0$
-- $\frac{\partial^2 f}{\partial K^2} < 0$
-
-]
-
-
-
-
-
----
-
-### Isokvanter og MTSB for produksjon
-
-- For å representere produktfunksjonen grafisk, skal vi bruke et redskap fra matteboka, nemlig nivåkurver.
-- Nivåkurven kalles her en *isokvant*: viser alle kombinasjoner av N og K som gir samme produserte kvantum.
-
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
-iso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/isokvant.png')
-knitr::include_graphics(iso)
-```
-
----
-
-- Isokvantens form bygger på følgende prinsipp: jo mer bedriften har av en innsatsfaktor, jo mer kan den bytte for én ekstra enhet av den andre faktoren, gitt at produksjonsmengden skal være den samme.
-- *MTSB (marginale tekniske substiusjonsbrøk)* beskriver *helningen* på en isokvant for en gitt faktorkombinasjon, dvs. i ett punkt på isokvanten.
-- Merk: MTSB er gitt ved forholdet mellom grenseproduktivitetene (se appendiks for formell utledning)
 \begin{equation*}
-MTSB \equiv -\frac{\Delta K}{\Delta N} =  \frac{f'_{N}(K,N)}{f'_{K}(K,N)}>0
+\text{ Min } C=wN +rK \text{ gitt } x^0=f(K,N) 
 \end{equation*}
-- Formell utledning er vist i appendiks
-
----
-
-**Eksempel 4.2 fra pensumbok**
-
-Anta at produktfunksjonen er gitt ved: $x = N^{0,7}+K^{0,3}$ Regn ut MTSB for denne produktfunksjonen.
-
-Grenseproduktiviteten til arbeidskraften er gitt ved $$
-\frac{\partial x}{\partial N} = 0,7N^{0,7-1} =  0,7N^{-0,3} 
-$$
-
-Grenseproduktiviteten til kapitalen er gitt ved $$
-\frac{\partial x}{\partial K} = 0,3K^{0,3-1} =  0,3K^{-0,7} 
-$$
-
-MTSB blir derfor $$
-MTSB \equiv - \frac{\Delta K}{\Delta N} = \frac{\frac{\partial x}{\partial N}}{\frac{\partial x}{\partial K}} = \frac{0,7N^{-0,3}}{0,3K^{-0,7}} 
-$$ 
-
----
-
-### Substitusjonsegenskaper
-
-- Dette sier noe om hvor lett det er å erstatte innsatsfaktorer med hverandre.
-- For eksempel: I noen bransjer er det lettere å erstatte arbeidskraft med kapital enn i andre.
-- Dette kan fremstilles med formen på isokvanten.
-- Ytterkantene: perfekt substitusjon og ingen substitusjon (perfekte komplementer).
-
-.pull-left[
-Linær produksjonsteknologi (perfekte substitutter)
-
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
-pss <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/linsub.png')
-knitr::include_graphics(pss)
-```
-]
-
-.pull-right[
-Leontief produksjonsteknologi (ingen substitusjon)
-
-```{r, echo=FALSE, out.width="60%", fig.cap=""}
-fss <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/lensub.png')
-knitr::include_graphics(fss)
-```
-]
 
 
 ---
 
-### Skalaegenskaper
-
-- Mens grenseprodukt viser endring i bruken av én innsatsfaktor, viser skalaendringer endringer i bruken av *alle* innsatsfaktorer.
-- Definisjon: Skalaegenskapene sier noe om hvor mye produksjonsmengden endres ved *proporsjonale* endringer i bruken av innsatsfaktorene.
-- Proporsjonale endringer innebærer at forholdet mellom N og K er konstant. 
-- Anta en proporsjonal økning på 100%.
-  - Hva skjer med produksjonsmengden (merk: produksjonsprosesser kan variere i skala)?
-
----
-
-- i) Konstant skalautbytte
-  - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på y %.
-
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
-koskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/koskala.png')
-knitr::include_graphics(koskala)
-```
-
-- ii) Avtagende skalautbytte
-  - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på mindre enn y %.
-
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
-avskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/avskala.png')
-knitr::include_graphics(avskala)
-```
-
-- iii) Økende skalautbytte
-  - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på mer enn y %.
-
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
-okskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/okskala.png')
-knitr::include_graphics(okskala)
-```
-
-
----
-
-## Inntekter 
-- Sammenlignet med den beskrivelsen som ble gitt for kort sikt, forekommer det her ingen endringer.
-
----
-
-## Kostnader 
-- Sammenlignet med den beskrivelsen som ble gitt for kort sikt, kan vi her se bort fra de faste kostnadene siden vi antar alle innsatsfaktorer for å være variable på lang sikt.
-
-### Kostnadslinjen og isokostlinja
-- Totale kostnader for bedriften er summen av variable og faste kostnader. La oss nå se bort fra de faste, dette siden vi antar alle faktorer antas å være variable på lang sikt.
-- Vi antar at bedriftens kostnader kan uttrykkes ved summen av utgiftene på de to innsatsfaktorene.
-	- Pris på N: w
-	- Pris på K: r
-- $C = wN + rK$
-Totale kostnader (C) er da gitt ved:
-$$
-C = wN  +  rK
-$$
----
-
-- Isokost (låser totalkostnadene til et bestemt nivå) $C^o=C$
-$$
-C^o= wN + rK
-$$
-  - Helningen på isokostlinja
-\begin{equation}
-\Delta C^0= w\Delta N + r\Delta K = 0 \\
- r\Delta K = -w\Delta N  \\
-\frac{\Delta K}{\Delta N} = - \frac{w}{r} 
-\end{equation}
-  - Bruker hele budsjettet på arbeidskraft $\Rightarrow K=0$
-\begin{equation}
-C^0= wN + r0 = wN \\
-C^0/w = N \\
-N = C^0/w 
-\end{equation}
-  - Bruke hele budsjettet (kostnaden) på kapital $\Rightarrow N=0$
-\begin{equation}
-C^0= w0 + rK = wN \\
-C^0/r = K \\
-K = C^0/r 
-\end{equation}
-
----
-
-### Maksimering av produksjonen for en gitt kostnadsramme (optimal tilpasning)
-
-- Målsetting er her å maksimere produsert kvantum innenfor en gitt kostnadsramme.
-- Dette kan være typisk for en bedrift i offentlig sektor, der de økonomiske rammebetingelsene utgjøres av en gitt kostnadsramme eller et gitt budsjett som er blitt tildelt over de offentlige budsjetter.
-
----
-
-- Tar utgangspunkt i produktfunksjonen:
-  - $x = f(N, K)$
-- Helningen er gitt ved MTSB.
-- Tar så utgangspunkt i kostnadslinja:
-  - $C = wN + rK$
-- Kombinerer disse for å finne optimal tilpasning.
-
-Max $x=f(K,N)$ gitt $C^0=wN +rK$ gitt (beskrankning)
-
-Dette problemet kan løses ved bruk av Lagrange-metode (se appendiks for formell utledning), hvor løsningen er gitt ved:
+Vi kan løse dette ved bruk av Lagrange metode. Lagrangefunksjonen er her gitt ved:
 
 \begin{equation}
-MTSB \equiv  \frac{f'_{N}}{f'_{K}} = \frac{w}{r} \\
-C^0=wN +rK
+L = f(K,N) - \lambda(wN+rK-C^0)
 \end{equation}
 
-Optimal løsning er her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.
+De to første ordens betingelsen er gitt ved
 
----
+\begin{equation*}
+\partial L/\partial N = f'_{N,K} - \lambda w  =0 \\ 
+\partial K/\partial K = f'_{N,K} - \lambda w  =0  
+\end{equation*}
 
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
-kosmin <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kosmin.png')
+Kombinerer de to første ordens betingelsene gir oss løsningen
+
+\begin{equation*}
+\lambda w/\lambda r=w/r = \frac{f'_{N}}{f'_{K}} = MTSB
+\end{equation*}
+
+Optimal løsning er også her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.
+
+```{r, echo=FALSE, out.width="20%", fig.cap=""}
+kosmin <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/kosmin.png')
 knitr::include_graphics(kosmin)
 ```
 
-
 ---
 
-#### Substitumalen: økonomisk substitusjon
+## Appendiks (alle figurene samlet)
 
-- Dersom vi tenker oss flere endringer i bedriftens kostnadsramme med tilhørende optimale isokvant, vil vi få frem en rekke tangeringspunkter. 
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
-submalen <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/submalen.png')
-knitr::include_graphics(submalen)
-```
-- Kurven gjennom alle disse punktene kalles *ekspansjonsveien* eller *substitumalen*.
-- På ethvert punkt på denne kurven kan det leses av produksjonsmengde, tilhørende kostnader og etterspørsel etter innsatsfaktorer.
-- Alle punktene på substitumalen viser tilpasninger der det ikke er mulig å øke produktmengden, uten at kostnadene øker. Det er heller ikke mulig å redusere kostnadene, uten samtidig å redusere produsert kvantum.
-- Dersom bedriften er utenfor substitumalen kan den alltid bedre sin situasjon ved økonomisk substitusjon.
-
----
-
-## Tilpasningen i gode og faktormarkedet
-
-### Hvor stor skal produksjonen være og bedriftens tilbud av produktet
-
-- Tilbudet til bedriften må bestemmes gjennom profittmaksimering eller kostnadsminimering.  
-- Ettersom dette krever at bedriften er på grensekostnadskurven, vil tilbudskurven være ”den samme” som grensekostnadskurven.
-- På lang sikt vil bedriftens tilbudskurve enten være
-  - Stigende (ved avtagende skalautbytte) i et (x,p)-diagram 
-  - Horisontal (ved konstant skalautbytte) i et (x,p)-diagram 
-  - Avtagende (ved økende skalautbytte) i et (x,p)-diagram 
-
-```{r, echo=FALSE, out.width="25%", fig.cap=""}
-kosminkk <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/til_lang.png')
-knitr::include_graphics(kosminkk)
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+knitr::include_graphics("drawio/oversikt_prod_iii.png")
 ```
 
----
-
-### Hvor stor skal etterspørselen etter arbeidskraft og kapital være?
-
-**Redusert pris på kapital**
-
-```{r, echo=FALSE, out.width="25%", fig.cap=""}
-kosminkk <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kosminkk.png')
-knitr::include_graphics(kosminkk)
+```{r, echo=F,eval=F}
+knitr::knit_exit()
 ```
-
-**Redusert pris på arbeidskraft**
-
-```{r, echo=FALSE, out.width="25%", fig.cap=""}
-kosminka <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kosminka.png')
-knitr::include_graphics(kosminka)
-```
-
-Etterspør mer (mindre) av den innsatsfaktoren som har blitt billigere (dyrere).
-
-
----
-
-## Appendiks 
-### Diagramark benyttet under forelesning
-
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
-knitr::include_graphics("drawio/prod_lang_i.png")
-```
-
----
-
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
-knitr::include_graphics("drawio/prod_lang_ii.png")
-```
-
----
-
-### MTSB: Formell utledning
-
-Formell utledning av MTSB. Ta utgangspunkt i produktfunksjonen og total differensier.
-
-$$
-\overline{x} = f(K,N)
-$$
-
-Dersom vi totaldifferensierer dette uttrykket får vi 
-
-\begin{equation*}
-\Delta \overline{x} = f'_{K}(K,N)\Delta K + f'_{N}(K,N)\Delta N = 0 
-\end{equation*}
-
-Uttrykket ovenfor kan skrives som 
-
-\begin{equation*}
-f'_{K}(K,N)\Delta K =- f'_{N}(K,N)\Delta N \\
-\frac{\Delta K}{\Delta N} = - \frac{f'_{N}(K,N)}{f'_{K}(K,N)} 
-\end{equation*}
-
-\begin{equation*}
-MTSB \equiv -\frac{\Delta K}{\Delta N} =  \frac{f'_{N}(K,N)}{f'_{K}(K,N)}>0
-\end{equation*}
-
-Merk: MTSB er gitt ved forholdet mellom grenseproduktivitetene.
-
----
-
-### Lagrange: Produktmaksimering for en gitt kostnadsramme
-
-Maks $x=f(K,N)$ gitt $C^0=wN +rK$ gitt (beskrankning). Lagrange metode:
-\begin{equation}
-L = f(K,N) - \lambda(wN+rK-C^0)
-\end{equation}
-Første ordens betingelsen er gitt ved
-\begin{equation}
-\partial L/\partial N = f'_{N} - \lambda w  =0 \\ 
-\partial L/\partial K = f'_{K} - \lambda r =0 \\
-C^0=wN +rK
-\end{equation}
-Kombinerer de to første ordens betingelsene gir oss to likninger for å løse de to ukjente N,K
-\begin{equation}
-MTSB \equiv  \frac{f'_{N}}{f'_{K}} = \frac{w}{r} \\
-C^0=wN +rK
-\end{equation}
-Optimal løsning er her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.
-
----
-
-Ved å sette inn for den optimale løsningen av $N$ og $K$ finner vi det optimale produksnivået (sammensetningen
-av N og K som gjør produksjen størst mulig).
-
----
-
-### Lagrange: Kostnadsminimering for en gitt produksjon
-
-Min $C=wN +rK$ gitt $x=f(K,N)$ gitt (beskrankning). Lagrange metode:
-\begin{equation}
-L = f(K,N) - \lambda(wN+rK-C^0)
-\end{equation}
-Første ordens betingelsen er gitt ved
-\begin{equation}
-\partial L/\partial N = f'_{N} - \lambda w  =0 \\ 
-\partial L/\partial K = f'_{K} - \lambda r =0 \\
-x=f(K,N)
-\end{equation}
-Kombinerer de to første ordens betingelsene gir oss to likninger for å løse de to ukjente N,K
-\begin{equation}
-MTSB \equiv  \frac{f'_{N}}{f'_{K}} = \frac{w}{r} \\
-x=f(K,N)
-\end{equation}
-Optimal løsning også her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.
-
----
-
-Ved å sette inn for den optimale løsningen av $N$ og $K$ finner vi bedriftens kostnadsfunksjon (kostnaden som minimerer produksjonen for et gitt produksjonsnivå)
 
 ---
 
 class: inverse, center, middle
 
-# Kapittel 7: `r paste(substring(del[5],4),tema[4])`
+# Kapittel 7: `r paste(substring(del[5],4),tema[5])`
 
 `r paste("Oppdatert:",Sys.Date())`
 
@@ -1420,7 +1276,7 @@ Hvilke forhold vil være av *størst* betydning for en konsuments etterspørsel 
         - Konsumenten har positive, men avtagende grensenytter.
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-grensenytte <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/grensenytte.png')
+grensenytte <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/grensenytte.png')
 knitr::include_graphics(grensenytte)
 ```
 
@@ -1433,7 +1289,7 @@ knitr::include_graphics(grensenytte)
 - OBS: Merk at nyttefunksjonen har tre ukjente. Vi må derfor operere med et tre-dimensjonalt diagram. Dette vil vi unngå. Ved å sette de uavhengige variablene ( $x_{1},x_{2}$ ) på aksene i et to-dimensjonalt diagram, kan funksjonen illustreres grafisk for gitte verdier på den tredje variabelen, U.
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-indkurve <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/indkurve.png')
+indkurve <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/indkurve.png')
 knitr::include_graphics(indkurve)
 ```
 - Indifferenskurven viser altså alle kombinasjoner av de to godene som gir konsumenten samme totale nytte.
@@ -1444,10 +1300,24 @@ knitr::include_graphics(indkurve)
 - Kurven heller nedover pga. ikkemetningsaksiomet. Videre ser vi at kurven er konveks mot origo. 
 - Det skyldes følgende antagelse: Desto mer du har av $x_1$, jo mindre vil du gi opp av $x_2$ for å få mer av $x_1$.
 	-  Loven om fallende MSB.
-- MTSB er gitt som (se appendiks for matematisk utledning)
+
+---
+
+**Matematisk utledning**
+
 \begin{equation*}
+U=u(x_{1}, x_{2})  \\
+\text{Gitt nyttenivå} \\
+\overline{U}=u(x_{1},x_{2}) \\ 
+d\overline{U}=d(u(x_{1},x_{2})) \\
+0 = u'_{x_{1}}\Delta x_{1}+u'_{x_{2}}\Delta x_{2} \\
+-u'_{x_{2}}\Delta x_{2}  = u'_{x_{1}}\Delta x_{1}\\
+-\Delta x_{2}/\Delta x_{1}  = \frac{u'_{x_{1}}}{u'_{x_{2}}}\\
 MSB\equiv - \frac{\Delta x_{2}}{\Delta x_{1}}  = \frac{u'_{x_{1}}}{u'_{x_{2}}}
 \end{equation*}
+
+---
+
 
 ### Indifferenskart
 
@@ -1456,7 +1326,7 @@ MSB\equiv - \frac{\Delta x_{2}}{\Delta x_{1}}  = \frac{u'_{x_{1}}}{u'_{x_{2}}}
 	- For å få frem ulike nyttenivåer må vi således tegne et indifferenskart.
 
 ```{r, echo=FALSE, out.width="35%", fig.cap=""}
-indkart <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/indkart.png')
+indkart <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/indkart.png')
 knitr::include_graphics(indkart)
 ```
 
@@ -1468,7 +1338,7 @@ knitr::include_graphics(indkart)
 Ingen substitusjonsmuligheter
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-subsingen <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/subsingen.png')
+subsingen <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/subsingen.png')
 knitr::include_graphics(subsingen)
 ```
 ] 
@@ -1476,7 +1346,7 @@ knitr::include_graphics(subsingen)
 Perfekte substitusjonsmuligheter
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-subsperf <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/subsperf.png')
+subsperf <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/subsperf.png')
 knitr::include_graphics(subsperf)
 ```
 ] 
@@ -1488,10 +1358,10 @@ knitr::include_graphics(subsperf)
 
 Anta at $u(x_1,x_2) = 10x_1x_2$. Finn uttrykket for MSB.
 
-**Svar**
-\begin{equation*}
+```{r, echo=F, eval=F}
+#**Svar**
 MSB = \frac{10x_2}{10x_1}= \frac{x_2}{x_1}
-\end{equation*}
+```
 
 Beregn nyttenivået, vis og illustrer inndifferenskurven for de tre verdiene nedenfor:
 
@@ -1553,7 +1423,7 @@ msb(vxy=c(3,4))
   - $p_1x_1 + p_2x_2 = m$
 
 ```{r, echo=FALSE, out.width="30%", fig.cap=""}
-budsjbet <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/budsjbet.png')
+budsjbet <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/budsjbet.png')
 knitr::include_graphics(budsjbet)
 ```
 - Budsjettlinja viser alle kombinasjoner av $x_1$ og $x_2$ som konsumenten kan kjøpe, når hele inntekten brukes.
@@ -1562,10 +1432,15 @@ knitr::include_graphics(budsjbet)
 
 ### Skjæringspunkter og helning.
 
-Helningen på kurven er gitt ved (se appendisk for matetmatisk utledning)
+**Matematisk utledning**
+
+Helningen på kurven er gitt ved
 
 \begin{equation}
-\frac{\Delta x_{2}}{\Delta x_{1}}= - \frac{p_{1}}{p_{2}}/  \\ 
+d(p_{1}x_{1}+p_{2}x_{2})=d(m)=0 \\
+p_{1}\Delta x_{1}+p_{2}\Delta x_{2}  = 0 \\ 
+p_{2}\Delta x_{2} =-p_{1}\Delta x_{1} \\
+\Delta x_{2}/\Delta x_{1} = -p_{1}/p_{2}  \\ 
 \end{equation}
 
 Dersom vi kun velger $x_1 \Rightarrow x_2=0$
@@ -1590,27 +1465,26 @@ Anta at du har en inntekt på 40 NOK som brukes på to goder. Gode 1 koster 10,-
 1.  Tegn budsjettlinja.
 1.  Anta at prisen på gode 1 faller til 5 NOK. Skriv ned ny budsjettbetingelse. Tegn inn denne i diagrammet du brukte i forrige spørsmål
 
-- (a) Skriv ned budsjettbetingelsen.
-\begin{equation*}
-10x_{1}+5x_{2}=40
-\end{equation*}
-- (b) Hvor mye kan du kjøpe dersom du bruker all inntekten på gode 1?
-\begin{equation*}
-x_{1} = \frac{40}{10} = 4
-\end{equation*}
-- (c) Hvor mye kan du kjøpe dersom du bruker all inntekten på gode 2?
-\begin{equation*}
-x_{2} = \frac{40}{5} = 8
-\end{equation*}
-
----
-
-- (d) Tegn budsjettlinja.
-     Se diagramark
-- (e) Anta at prisen på gode 1 faller til 5 NOK. Skriv ned ny budsjettbetingelse. Tegn inn denne i diagrammet du brukte i forrige spørsmål
-\begin{equation*}
-5x_{1}+5x_{2}=40
-\end{equation*}
+```{r, echo=F}
+#- (a) Skriv ned budsjettbetingelsen.
+#\begin{equation*}
+#10x_{1}+5x_{2}=40
+#\end{equation*}
+#- (b) Hvor mye kan du kjøpe dersom du bruker all inntekten på gode 1?
+#\begin{equation*}
+#x_{1} = 40/10 = 4
+#\end{equation*}
+#- (c) Hvor mye kan du kjøpe dersom du bruker all inntekten på gode 2?
+#\begin{equation*}
+#x_{2} = 40/5 = 8
+#\end{equation*}
+#- (d) Tegn budsjettlinja.
+#     Se diagramark
+#- (e) Anta at prisen på gode 1 faller til 5 NOK. Skriv ned ny budsjettbetingelse. Tegn inn denne i diagrammet du brukte i forrige spørsmål
+#\begin{equation*}
+#5x_{1}+5x_{2}=40
+#\end{equation*}
+```
 
 ---
 
@@ -1621,84 +1495,16 @@ x_{2} = \frac{40}{5} = 8
 - Resultat:
 \begin{equation*}
 MSB=\frac{u'({x_{1}})}{u'({x_{2}})}=\frac{p_1}{p_2} \Leftrightarrow \\
-\frac{u'({x_{1}})}{p_{1}}=\frac{u'({x_{2}})}{p_{2}}
+u'({x_{1}})/p_{1} = u'({x_{2}})/p_{2}  
 \end{equation*}
 - *Gossens lov*: Nyttetilskuddet av den siste krona brukt på det ene godet, skal være lik Nyttetilskuddet av den siste krona brukt på det andre godet.
 
 ```{r, echo=FALSE, out.width="30%", fig.cap=""}
-opttilp <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/opttilp.png')
+opttilp <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/opttilp.png')
 knitr::include_graphics(opttilp)
 ```
 
 ---
-
-
-**Øvelse (til neste forelesning) om konsumentens optimale tilpasning**
-
-Benytt opplysningene fra de to foregående øvelsene (øvelse om MSB og budsjettlinjen), og skriv ned de to førsteordens betingelsene for konsumentens optimale tilpasning. Illustrer så tilpasningen grafisk ved bruk av et diagram.
-
-**Svar:**
-\begin{equation*}
-MSB=\frac{x_2}{x_1} = 2  \\
-10x_{1}+5x_{2}=40
-\end{equation*}
-Vi kan løse det første uttrykket for $x_2$
-\begin{equation*}
-x_2 = 2x_1  \\
-\end{equation*}
-Satt inn i budsjettbetingelsen og løst for $x_1$
-\begin{equation*}
-10x_{1}+5(2x{_1})=40 \Leftrightarrow
-x_{1}=\frac{40}{20}=2
-\end{equation*}
-Som deretter kan løses for $x_2$
-\begin{equation*}
-x_2 = 2\cdot 2= 4  \\
-\end{equation*}
-
----
-
-## Appendiks 
-### Alle figurene samlet
-
-```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics("drawio/oversikt_kons_i.png")
-```
-
-```{r, echo=F,eval=F}
-knitr::knit_exit()
-```
-
----
-
-### Matematisk utledning av helingen på busjettkurven
-
-\begin{equation}
-d(p_{1}x_{1}+p_{2}x_{2})=d(m)=0 \\
-p_{1}\Delta x_{1}+p_{2}\Delta x_{2}  = 0 \\ 
-p_{2}\Delta x_{2} =-p_{1}\Delta x_{1} \\
-\frac{\Delta x_{2}}{\Delta x_{1}}= - \frac{p_{1}}{p_{2}}  \\ 
-\end{equation}
-
----
-
-### Matematisk utledning av MSB
-
-\begin{equation*}
-U=u(x_{1}, x_{2})  \\
-\text{Gitt nyttenivå} \\
-\overline{U}=u(x_{1},x_{2}) \\ 
-d\overline{U}=d(u(x_{1},x_{2})) \\
-0 = u'_{x_{1}}\Delta x_{1}+u'_{x_{2}}\Delta x_{2} \\
--u'_{x_{2}}\Delta x_{2}  = u'_{x_{1}}\Delta x_{1}\\
--\Delta x_{2}/\Delta x_{1}  = \frac{u'_{x_{1}}}{u'_{x_{2}}}\\
-MSB\equiv - \frac{\Delta x_{2}}{\Delta x_{1}}  = \frac{u'_{x_{1}}}{u'_{x_{2}}}
-\end{equation*}
-
-
----
-
-### Lagrange: Nyttemaksimering for et gitt budsjett
 
 **Utledning: Løsning av nyttemaksimeringsproblemet ved bruk av Lagrange-metode**
 
@@ -1726,29 +1532,64 @@ L'_{x2}=u'({x_{2}}) - \lambda p_{2} = 0 \\
 p_{1}x_{1}+p_{2}x_{2}=m
 \end{equation*}
 
----
-
 Som gir oss to likninger til løsing av to ukjente, $X_{1}$, $x_{2}$:
 
 \begin{equation*}
-MSB=\frac{u'({x_{1}})}{u'({x_{2}})} = \frac{p_{1}}{p_{2}}  \\
+MSB=u'({x_{1}})/u'({x_{2}}) = p_{1}/p_{2}  \\
 p_{1}x_{1}+p_{2}x_{2}=m
 \end{equation*}
+
+---
 
 Vi kan omskrive den første ligningen som (*Gossens lov*)
 
 \begin{equation*}
-\frac{u'({x_{1}})}{p_{1}}= \frac{u'({x_{2}})}{p_{2}}
+u'({x_{1}})/p_{1} = u'({x_{2}})/p_{2}  \\
 \end{equation*}
 
 Den rasjonelle konsument vil fordele utgiftene slik at den siste krone gir den samme nyttendring uansett hvilket av de to godene den brukes til innkjøp av.
 
+---
+
+**Øvelse (til neste forelesning) om konsumentens optimale tilpasning**
+
+Benytt opplysningene fra de to foregående øvelsene (øvelse om MSB og budsjettlinjen), og skriv ned de to førsteordens betingelsene for konsumentens optimale tilpasning. Illustrer så tilpasningen grafisk ved bruk av et diagram.
+
+**Svar:**
+\begin{equation*}
+MSB=\frac{x_2}{x_1} = 2  \\
+10x_{1}+5x_{2}=40
+\end{equation*}
+Vi kan løse det første uttrykket for $x_2$
+\begin{equation*}
+x_2 = 2x_1  \\
+\end{equation*}
+Satt inn i budsjettbetingelsen og løst for $x_1$
+\begin{equation*}
+10x_{1}+5(2x{_1})=40 \Leftrightarrow
+x_{1}=\frac{40}{20}=2
+\end{equation*}
+Som deretter kan løses for $x_2$
+\begin{equation*}
+x_2 = 2\cdot 2= 4  \\
+\end{equation*}
+---
+
+## Appendiks (alle figurene samlet)
+
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+knitr::include_graphics("drawio/oversikt_kons_i.png")
+```
+
+```{r, echo=F,eval=F}
+knitr::knit_exit()
+```
 
 ---
 
 class: inverse, center, middle
 
-# Kapittel 8: `r paste(substring(del[5],4),tema[5])`
+# Kapittel 8: `r paste(substring(del[5],4),tema[6])`
 
 `r paste("Oppdatert:",Sys.Date())`
 
@@ -1759,7 +1600,7 @@ class: inverse, center, middle
 - Vi skal nå bruke det analyseapparatet vi har utviklet til å se på hvordan endringer i inntekt og priser vil virke inn på konsumentens konsummønster.
 - Vi skal også se hvordan vi kan bruke denne valghandlingsmodellen til
   -  Utlede konsumentens etterspørselskurve etter goder.  
-  -  Utlede konsumentens tilbudskurve etter arbeid (ikke pensum)
+  -  Utlede konsumentens tilbudskruve etter arbeid.
 
 ---
 
@@ -1801,7 +1642,7 @@ e_{ij} \equiv \frac{\frac{\Delta X_{i}}{X_{1}}}{\frac{\Delta P{j}}{P_{j}}}=\frac
   - Giffen-tilfellet pris og etterspørsel går samme vei. Økt pris fører til økt etterspørsel, og motsatt.
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-egenel <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/egenel.png')
+egenel <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/egenel.png')
 knitr::include_graphics(egenel)
 ```
 
@@ -1835,7 +1676,7 @@ Hva skjer med etterspørselen etter $x_2$ når prisen på gode $x_1$ øker? Det 
   - $\Rightarrow$ Godene er uavhengige av hverandre
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-kryssel <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kryssel.png')
+kryssel <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/kryssel.png')
 knitr::include_graphics(kryssel)
 ```
 
@@ -1862,7 +1703,7 @@ e_{12} \equiv \frac{\frac{\Delta X_{1}}{X_{1}}}{\frac{\Delta P{2}}{P_{2}}}=\frac
 - Dersom vi trekker en linje gjennom de optimale godekombinasjoner, får vi en kurve som kalles inntekts-forbrukskurven (Engel-kurven).
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-inntel <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/inntel.png')
+inntel <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/inntel.png')
 knitr::include_graphics(inntel)
 ```
 
@@ -1898,7 +1739,7 @@ $\Rightarrow$ Nyttenivået opprettholdes.
 	- Substitusjonseffekt + inntektseffekt = Priseffekt
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-utletter <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/utletter.png')
+utletter <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/utletter.png')
 knitr::include_graphics(utletter)
 ```
 
@@ -1910,7 +1751,6 @@ knitr::include_graphics(utletter)
 - Merk: Fra optimeringsproblemet har vi to betingelser som må være oppfylt: tangeringsbetingelsen og budsjettbetingelsen. Vi har også to ukjent. De kjente størrelsen som bestemmer disse to er prisene og inntekten. Altså blir de to ukjente funksjoner av priser og inntekt. Vi kan dermed skrive etterspørselsfunksjonene som:
   - $x_1^D=D(p_1,p_2,m)$ 
   - $x_2^D=D(p_1,p_2,m)$
-
 ---
 
 ### Etterspørselskurven
@@ -1923,13 +1763,13 @@ knitr::include_graphics(utletter)
 - Vi tar utgangspunkt i konsumentens optimale tilpasning, og antar så prisøkninger på gode $x_1$.
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-ekonsum <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/ekonsum.png')
+ekonsum <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/ekonsum.png')
 knitr::include_graphics(ekonsum)
 ```
 - Kurven har negativ helning: $\frac{dx_1^D}{dp_1}<0$ (gjelder alltid, bortsett fra i Giffen-tilfellet).
 ---
 
-### Tilbudsfunksjonen etter arbeid (for spesielt interesserte, ikke pensum)
+### Tilbudsfunksjonen etter arbeid 
 
 Budsjettbetingelsen
 \begin{equation*}
@@ -1952,7 +1792,7 @@ U=u(x,L) \text{ } u^{'}_{x} >0, u^{''}_{x} <0, u^{'}_{L} >0, u^{''}_{L} <0
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
 #Den optimale løsningen er gitt ved
-utltilbud <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/utltilbud.png')
+utltilbud <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/utltilbud.png')
 knitr::include_graphics(utltilbud)
 ```
 
@@ -1960,16 +1800,15 @@ knitr::include_graphics(utltilbud)
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
 #Mens tilbudsfunksjonen fremkommer som
-tarbeid <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/tarbeid.png')
+tarbeid <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/tarbeid.png')
 knitr::include_graphics(tarbeid)
 ```
 
 ---
 
-## Appendiks 
-### Alle figurene samlet
+## Appendiks (alle figurene samlet)
 
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
 knitr::include_graphics("drawio/oversikt_kons_ii.png")
 ```
 
@@ -2013,7 +1852,7 @@ knitr::knit_exit()
 
 class: inverse, center, middle
 
-# Kapittel 9: Markedsteori: Fullkommen konkurranse
+# Kapittel 9: `r paste(substring(del[7],4),tema[7])`
 
 `r paste("Oppdatert:",Sys.Date())`
 
@@ -2047,7 +1886,7 @@ class: inverse, center, middle
   - MERK: at vi nå kan forklare det med utgangspunkt i konsumentens optimale tilpasning på varemarkedet.
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-markl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/markl.png')
+markl <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/markl.png')
 knitr::include_graphics(markl)
 ```
 
@@ -2078,7 +1917,7 @@ $\Rightarrow B(X)$
 - Betalingsvilligheten blir da området under E-kurven.
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-konso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/konso.png')
+konso <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/konso.png')
 knitr::include_graphics(konso)
 ```
 
@@ -2104,7 +1943,7 @@ KO’(X) = B’(X) – p = 0 \Leftrightarrow B’(X) = p
 
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-prodo <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodo.png')
+prodo <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/prodo.png')
 knitr::include_graphics(prodo)
 ```
 
@@ -2147,7 +1986,7 @@ SO’(X) = KO’(X) + PO’(X) = 0 \\
 *Sosial planlegger*
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-planl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/planl.png')
+planl <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/planl.png')
 knitr::include_graphics(planl)
 ```
 ]
@@ -2155,7 +1994,7 @@ knitr::include_graphics(planl)
 *Fullkommen konkurranse*
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-markl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/markl.png')
+markl <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/markl.png')
 knitr::include_graphics(markl)
 ```
 ]
@@ -2170,7 +2009,7 @@ knitr::include_graphics(markl)
 - Vi har allerede sett at avgiften fører til en "glippe" eller en "kile" mellom den prisen som produsenten mottar, og den prisen som konsumenten betaler.
 
 ```{r, echo=FALSE, out.width="35%", fig.cap=""}
-avgfk <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/avgfk.png')
+avgfk <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/avgfk.png')
 knitr::include_graphics(avgfk)
 ```
 
@@ -2183,9 +2022,8 @@ knitr::include_graphics(avgfk)
   - a) Finn likevektspris, omsatt kvantum og vis tilpasningen grafisk.
   - b) Regn ut KO, PO og SO.
   - c) Det innføres en skatt på 3 kroner per produserte enhet. Sett opp ny tilbudsfunksjon og regn ut $P_K$ (pris til konsument), $P_P$ (pris til produsent) og omsatt kvantum $X$.
-  - d) Hva blir KO, PO nå?
-  - e) Regn ut avgiftsinntekten for staten og effektivitetstapet (antar her at skatteinntektene blir
-    betalt tilbake igjen til både konsument og produsent)..
+  - d) Hva blir KO, PO og SO nå?
+  - e) Regn ut avgiftsinntekten for staten og effektivitetstapet.
 
 ---
 
@@ -2209,9 +2047,7 @@ MBV: P = 20-6=14 \\
 \end{equation*}
 
 ---
-
 b)
-
 <br>
 Konsumentoverskuddet er gitt ved arealet til trekanten
 \begin{equation*}
@@ -2227,9 +2063,7 @@ SO = PO+KO =36+18=54
 \end{equation*}
 
 ---
-
 c)
-
 <br>
 Skatt per enhet gjør at tilbudskurven kan skrives som
 \begin{equation*}
@@ -2247,20 +2081,17 @@ Mens pris til produsent blir
 P_p=2+2\cdot5 = 2+10 = 12
 \end{equation*}
 
----
-
 d)
 <br>
 Konsument- , produsentoverskudd og samfunnsøkonomisk overskudd er nått gitt ved
 \begin{equation*}
 KO = \frac{(5\cdot (20-15))}{2}  = 12.5\\
 PO = (5\cdot (12-2))/2 = 25\\
+SO (\text{uten skatteinntektene}) = 12.5+25 =  37.5 
 \end{equation*}
 
 ---
-
 e) Staten
-
 <br>
 Avgiftsinntekten (SI) og Dødvektstapet (DT):
 \begin{equation*}
@@ -2295,17 +2126,15 @@ SO (\text{med tilbakebetaling av SI til KO og PO})= 12.5+25 =  37.5 + 15 = 52.5
 
 ---
 
-## Appendiks
+## Appendiks (alle figurene samlet)
 
-### Alle figurene samlet
-
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
 knitr::include_graphics("drawio/markedfullkommenanalyse.png")
 ```
 
 ---
 
-### Appendiks II (Friedman om prismekanismen)
+## Appendiks II (Friedman om prismekanismen)
 
 [Friedman om prismekanismen (kort versjon)](https://www.youtube.com/watch?v=R5Gppi-O3a8)
 
@@ -2319,7 +2148,7 @@ knitr::knit_exit()
 
 class: inverse, center, middle
 
-# Kapittel 10: Markedsteori: Ufullkommen konkurranse - Monopol
+# Kapittel 9: `r paste(substring(del[7],4),tema[8])`
 
 `r paste("Oppdatert:",Sys.Date())`
 
@@ -2373,7 +2202,7 @@ class: inverse, center, middle
 - Det kan vises at dersom etterspørselskurven er fallende og lineær, vil $R’(X)$-kurven skjære prisaksen i samme punkt som etterspørselskurven, og være dobbelt så bratt. Neste side viser dette matematisk.
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-monoe <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/monoe.png')
+monoe <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/monoe.png')
 knitr::include_graphics(monoe)
 ```
 
@@ -2421,7 +2250,7 @@ knitr::include_graphics(monoe)
  - Skyldes at $B’(X) > C’(X)$. Monopolisten begrenser tilbudet for å presse prisen oppover.
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-monop <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/monop.png')
+monop <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/monop.png')
 knitr::include_graphics(monop)
 ```
 
@@ -2439,8 +2268,7 @@ knitr::include_graphics("drawio/10.2.png")
 
 ---
 
-**Løsningsforslag 10.2: a)**
-
+**Løsningsforslag 10.2, a), f)**
 <br>
 Vi noterer først at den marginale betalingsvilligheten er gitt ved
 \begin{equation*}
@@ -2461,6 +2289,7 @@ C'(x) = 100+4x
 
 ---
 
+**a)**
 <bR>
 Optimum er karakterisert ved at $R'(X)=C'(X)$:
 \begin{equation*}
@@ -2480,7 +2309,7 @@ p^{I}= 500-4\cdot 50 = 300
 
 ---
 
-**Løsningsforslag 10.2: f)**
+**f)**
 
 $P=MBV(X)=C'(X)$ innbærer at kvantumer gitt ved
 
@@ -2508,7 +2337,7 @@ Monopol:
 DT=\frac{(66.7-50)(400-300)}{2}=835
 \end{equation*}
 \begin{equation*}
-KO=\frac{(50-0)(500-400)}{2}=2500
+KO=\frac{(50-0)(400-300)}{2}=2500
 \end{equation*}
 \begin{equation*}
 PO=\frac{(50-0)(300-100)}{2}+(50-0)(400-300)=10000
@@ -2521,7 +2350,7 @@ PO=\frac{(50-0)(300-100)}{2}+(50-0)(400-300)=10000
 Monopol:
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
-mp102 <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/m_mm.png')
+mp102 <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/m_mm.png')
 knitr::include_graphics(mp102)
 ```
 
@@ -2532,7 +2361,7 @@ knitr::include_graphics(mp102)
 Samfunnsøkonomisk optimal tilpasning:
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
-mp103 <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/m_fk.png')
+mp103 <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/m_fk.png')
 knitr::include_graphics(mp103)
 ```
 
@@ -2540,7 +2369,7 @@ knitr::include_graphics(mp103)
 
 ---
 
-**Løsningsforslag 10.2: b), c) **
+**Løsningsforslag 10.2, b), c), d), e) **
 
 **b)**
 Priselastisiteten er definert som:
@@ -2565,8 +2394,6 @@ Forholdet mellom pris og grensekostnad:
 
 ---
 
-**Løsningsforslag 10.2: d), e) **
-
 **d)**
 Vi har at sammenhengen mellom pris, grensekostnad og priselastisitet er gitt ved
 \begin{equation*}
@@ -2583,25 +2410,22 @@ Mark-up eller påslag er relativt lite (25%). Dette skyldes at markedsmakten bli
 
 ---
 
-```{r, echo=F,eval=F}
-knitr::knit_exit()
+
+## Appendiks (alle figurene samlet)
+
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+knitr::include_graphics("drawio/markedmonopolanalyse.png")
 ```
 
-
-## Appendiks 
-
-### Alle figurene samlet
-
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
-knitr::include_graphics("drawio/markedmonopolanalyse.png")
+```{r, eval=F,echo=F}
+knitr::knit_exit()
 ```
 
 ---
 
 class: inverse, center, middle
 
-# Kapittel 11: Ufullkommen konkurranse - monopolistisk konkurranse
-
+# Kapittel 11: `r paste(substring(del[7],4),tema[9])`
 
 `r paste("Oppdatert:",Sys.Date())`
 
@@ -2618,8 +2442,158 @@ class: inverse, center, middle
 - Tar vi høyde for variasjonsmulighetene for disse to faktorene, kan vi plassere de ulike markedsformene som inngår i dette kapittelet ved bruk av følgende diagram.
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-markedsformer <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/markedsf.png')
+markedsformer <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/markedsf.png')
 knitr::include_graphics(markedsformer)
+```
+
+---
+
+## Homogene produkter
+
+### Kartell
+
+- Vi sier at vi har et salgskartell dersom produsentene opptrer *samlet* for å fastsette pris og mengde
+- Som for en monopolist, vil derfor overskuddet bli maksimalt dersom produserer slik at grenseinntekten er lik
+grensekostnaden
+- Men det viser seg ofte å være en ustabil løsning over tid pga. P> GK
+  - indre fiender: insintament til øke bryte avtale ved øke produksjonen, siden dette gir høyere overskudd.
+  - ytre fiender:  insintament til å ikke stille seg solidarisk ved øke produksjone, siden dette gir høyere overskudd. 
+
+---
+
+## Duopol
+
+### Cournout
+
+- To produsenter som begge ønsker å maksimere forjenesten
+- Valgvariabel, $X_{1}$ og $X_{2}$
+- Total produksjon er gitt ved $X=X_{1}+X_{2}$
+- Den marginale betalingsvilligheten fra husholdningene antar vi er gitt ved en linær funksjon som er beskrevet som $p=60-X=60-(X_{1}+X_{2})$
+- For å rendyrke resultatene, antar marginalkostnaden er satt lik 0 for begge bedrifter
+
+---
+
+Produsent 1 vil gjøre fortjensten størst mulig og står ovenfor følgende optimeringsproblem
+\begin{equation}
+\pi_{1}(X_{1}) = pX_{1} - c_v(X_{1}) = \\ 
+(60-(X_{1}+X_{2}))X_{1} - c_v(X_{1})= 60X_{1} - X_{1}^2+X_{2}X_{1}- c_v(X_{1}) 
+\end{equation}
+
+Førsteordenbetingelsen tilknyttet dette problemet er gitt som
+\begin{equation}
+\pi_{1}'(x_{1}) = 60-2X_{1}-X_{2} + c_v'(X_{1})=0
+\end{equation}
+Løsningen av denne mhp $X_{1}$ omtaler vi som reaksjonsligningen til produsent 1
+\begin{equation}
+X_{1} = 30 - \frac{1}{2}X_{2}  
+\end{equation}
+
+**Øvelse** 
+
+Gjør samme øvelse for produsent 2 og bekreft at reaksjonsligningen til produsent 2 er gitt ved
+\
+\begin{equation}
+X_{2} = 30 - \frac{1}{2}X_{1}  
+\end{equation}
+
+---
+
+
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+cournot <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/cournotl.png')
+knitr::include_graphics(cournot)
+```
+
+Cournotlikevekten kan vi finne i skjæringspunktet mellom de to reaksjonsligningene
+
+---
+
+Formell løsning kan vi finne ved å løse for de to ukjente $X_{1}$ og $X_{2}$
+
+Løser først mhp $X_{1}$
+\begin{equation}
+X_{1} = 30 - \frac{1}{2}\left(30 - \frac{1}{2}X_{1}  \right ) \\
+X_{1} = 15 + \frac{1}{4}X_{1} \\
+X_{1}(1-\frac{1}{4}) = 15
+X_{1} = 20
+\end{equation}
+
+Deretter for $x_{2}$
+
+\begin{equation}
+X_{2} = 30 - \frac{1}{2}{20}= 20  
+\end{equation}
+
+Markedskvantum er derfor gitt ved
+
+\begin{equation}
+X = X_{1}+X_{2}= 20+20 = 40
+\end{equation}
+
+Med tilhørende likevektspris
+\begin{equation}
+p = 60-40 = 20 
+\end{equation}
+
+---
+
+### Stackelberg (for spesielt interesserte)
+
+- Produsent 1 er den dominerende aktøren -> bestemme produksjonen først
+- Produsent 2 den passive -> bestemmer produksjoen etter produsent 1
+- Ellers antar vi samme forutsetninger som under Cournot-modellen
+
+---
+
+Produsent 1 vil derfor være gitt ved
+\begin{equation*}
+R_{1} = pX_{1}=(60-(X_{1}+X_{2}))X_{1} =  \\ 60X_{1}-2X_{1}-X_{1}+ \underset{\text{Reaksjonsfunksjon til produsent 2}}{\left ( 30 - \frac{1}{2}  X_{1}  \right)}
+ =
+30X_{1}-\frac{1}{2}X_{1}^{2}
+\end{equation*}
+
+Grenseinntekten er gitt ved
+\begin{equation*}
+R'_{1} = 30 - X_{1}
+\end{equation*}
+
+Som gjør at optimal kvantumer gitt ved
+\begin{equation*}
+X_{1} = 30  
+\end{equation*}
+
+Den passive produsentent produserer derfor
+\begin{equation*}
+X_{2} = 30 - \frac{1}{2}{30}= 15  
+\end{equation*}
+
+Men prisen er gitt ved
+\begin{equation*}
+P=60-(15+30)= 15
+\end{equation*}
+
+---
+
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+stackberg <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/stackbergl.png')
+knitr::include_graphics(stackberg)
+```
+
+---
+
+### Bertrand
+
+- To produsenter som begge ønsker å maksimere forjenesten
+- Valgvariabel, $p_{1}$ og $p_{2}$
+- Gitt at $p_{1}<p_{2}$ $\Rightarrow$ $x_{1}$ tar hele markedet
+- Gitt at $p_{1}>p_{2}$ $\Rightarrow$ $x_{2}$ tar hele markedet
+- Gitt at $p_{1}=p_{2}$ $\Rightarrow$ begge kan produsere til null profit
+- Likevektsløsning $p_{1}=p_{2}=c'(X)$ (pris = grensekotnad)
+- Samfunnsøkonomisk optimal løsning
+
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+bertrandl <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/bertrandl.png')
+knitr::include_graphics(bertrandl)
 ```
 
 ---
@@ -2639,7 +2613,7 @@ knitr::include_graphics(markedsformer)
 	- Hvor stor markedsmakten er vil avhenge av elastisk etterspørselen er
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-monk_ks <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/monk_ks.png')
+monk_ks <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/monk_ks.png')
 knitr::include_graphics(monk_ks)
 ```
 
@@ -2651,17 +2625,15 @@ knitr::include_graphics(monk_ks)
 	  tilnærmet lik null på lang sikt.
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-monk_ls <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/monk_ls.png')
+monk_ls <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/monk_ls.png')
 knitr::include_graphics(monk_ls)
 ```
 
 ---
 
-## Appendiks 
+## Appendiks (diagramark benyttet under forelesning)
 
-### Diagramark benyttet under forelesning
-
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
 knitr::include_graphics("drawio/markeduf.png")
 ```
 
@@ -2669,8 +2641,9 @@ knitr::include_graphics("drawio/markeduf.png")
 
 class: inverse, center, middle
 
+<!--## DEL 4: MARKEDSTEORI: Prisdiskriminering -->
 
-# Kapittel 12: Markedsteori: Ufullkommen konkurranse - prisdiskriminering
+# Kapittel 12: Ufullkommen konkurranse: Prisdiskriminering
 
 `r paste("Oppdatert:",Sys.Date())`
 
@@ -2696,7 +2669,7 @@ Betingelser som må være oppfylt for å kunne utføre prisdiskriminering i et m
 - Det innebærer at konsumentoverskuddet er lik null, mens produsenten sitter igjen med et produsentoverskudd som nøyaktig lik det samfunnsøkonomiske overskuddet.
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-f_grads <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/1_grads.png')
+f_grads <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/1_grads.png')
 knitr::include_graphics(f_grads)
 ```
 
@@ -2713,7 +2686,7 @@ knitr::include_graphics(f_grads)
 
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
-a_grads <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/2_grads.png')
+a_grads <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/2_grads.png')
 knitr::include_graphics(a_grads)
 ```
 
@@ -2726,7 +2699,7 @@ knitr::include_graphics(a_grads)
 
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-t_grads <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/3_grads.png')
+t_grads <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/3_grads.png')
 knitr::include_graphics(t_grads)
 ```
 
@@ -2735,30 +2708,133 @@ knitr::include_graphics(t_grads)
 - Som vist i diagrammet nedenfor, konsumenten vil her oppnå større produsentoverskudd som monopolist ved avgrensning enn dersom en bare forholdt seg til én konsumentgruppe.
 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
-t_grads_kl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/3_gradskl.png')
+t_grads_kl <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/3_gradskl.png')
 knitr::include_graphics(t_grads_kl)
 ```
 
 ---
 
-## Appendiks 
-### Diagramark fra forelesningen
+## Appendiks (diagramark fra forelesningen)
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
 knitr::include_graphics("drawio/prisdiskalle.png")
-```
-
-```{r, echo=F, eval=F}
-knitr::knit_exit()
 ```
 
 ---
 
 class: inverse, center, middle
 
-# Kapittel 13: Andre emner: Velferd og markedssvikt
+# Kapittel 13: Andre emner: Effektivitet, velferd og markedssvikt
 
 `r paste("Oppdatert:",Sys.Date())`
+
+---
+
+## Effektivitet og velferdsøkonomi
+
+- **Allokering**: 
+	- Forteller oss hvordan ressursene blir fordelt
+
+- **Paretoeffektivitet:**
+	- Kriterium for samfunnsøkonomisk effektivitet
+
+---
+
+- Definisjon av *paretoforbedring*:
+
+> En endring i allokering av gode som fører til at noen får det bedre (økt nytte) uten at andre får det værre (redusert nytte) .
+
+
+- Definisjon av *paretoeffektivitet*
+
+> En allokering er *paretoeffektiv* dersom det for a) gitt ressurser, b) teknologi og c)
+organisatorisk kunnskapsnivå ikke er mulig å frembringe en annen måte å allokere ressursene på som gjør at noen konsumenter får det bedre (økt nytte) uten at andre konsumenter får det værre (redusert nytte).
+
+- For å få dette til må tre hovedkategorier være oppfylt:
+	1. *Produksjonseffektivitet*: $MTSB$ være like for alle produsenter
+	1. *Bytteeffektivitet*: $MSB$ skal være lik for alle konsumenter
+	1. *Sammensetningseffektivitet*: $MTSB=MSB$
+
+---
+
+### Produksjonseffektivitet for bedrift 1 og 2 med bruk av arbeidskraft (N) og kapial (K)
+
+.pull-left[
+
+Produksjonseffektivitet:<br>
+$MTSB_{1,N,K}=MTSB_{2,N,K}=\overline{MTSB}$
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics(c("drawio/produ_eff.png","drawio/produ_eff.png")[1])
+```
+]
+.pull-right[
+
+Markedsøkonomi:<br> 
+$\overline{MTSB}=\frac{w}{r}$
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics(c("drawio/produ_eff.png","drawio/produ_eff_m.png")[2])
+```
+]
+---
+
+### Bytteeffektivitet for husholning A og B med bruk av konsumgode 1 ( $C_A$ ) og konsumgode 2 ( $C_B$ )
+
+.pull-left[
+
+Bytteeffektivitet:<br> 
+$MSB_{A,1,2}=MSB_{B,1,2}=\overline{MSB}$
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics(c("drawio/bytte_eff.png","drawio/bytte_eff_m.png")[1])
+```
+]
+.pull-right[
+
+Markedsøkonomi:<br> 
+$\overline{MSB}=\frac{P_1}{P_2}$
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics(c("drawio/bytte_eff.png","drawio/bytte_eff_m.png")[2])
+```
+]
+
+---
+
+### Sammensetningseffektivitet (av produksjon og konsumgodet)
+
+.pull-left[
+
+Sammensetningseffektivitet:<br> 
+$\overline{MSB}=\overline{MTB}=\frac{C'_1}{C'_2}$
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics(c("drawio/samm_eff.png","drawio/samm_eff_m.png")[1])
+```
+]
+.pull-right[
+
+Markedsøkonomi:<br> 
+$\overline{MSB}=\overline{MTB}=\frac{C'_1}{C'_2}=\frac{P_1}{P_2}$
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics(c("drawio/samm_eff.png","drawio/samm_eff_m.png")[2])
+```
+]
+
+---
+
+**Velferdsøkonomiens første hovedteorem:**
+
+> Frikonkurranselikevekten er paretooptimal/paretoeffektiv.
+
+[Israeli company converts passenger planes to cargo](https://www.i24news.tv/en/news/israel/economy/1645636837-israeli-company-converts-passenger-planes-to-cargo)
+
+
+**Velferdsøkonomiens andre hovedteorem:**
+
+> Ved å foreta passende endringer av intialbeholdningene, kan enhver paretfordeling av ressursene kan realiseres som en likevekt under fullkommen konkurranse.
 
 ---
 
@@ -2784,15 +2860,13 @@ Vi skal se nærmere på fem årsaker:
 
 - Lover og regler
 - Institusjoner og tilsyn
+- Andre tiltak som sikrer konkurranse
+
 ---
 
-### Markedssvikt #2:Eksterne virkninger
+### Markedssvikt #2: Eksterne virkninger
 
 Er *bivirkninger* av andres konsum eller produksjon som den som forårsaker bivirkninger ikke tar hensyn til når man skal fatte beslutningen om hvor mye man skal produsere eller konsumere.
-
-```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics(c("drawio/eks_ill.png","drawio/eks_dia.png"))
-```
 
 ---
 
@@ -2810,17 +2884,28 @@ knitr::include_graphics("drawio/eks_pos.png")
 
 ---
 
-#### Mulige løsninger
+#### Eksternaliteter under fullkommen konkurranse
 
-- Offentlige myndigheter
-  - **Avgifter og subsidier**<br>
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+knitr::include_graphics(c("drawio/eks_dia.png"))
+```
+
+---
+
+#### Mulige løsninger ved bruk av offentlige virkemidler
+
+**Avgifter og subsidier**
+
 ```{r, echo=FALSE, out.width="35%", fig.cap=""}
 knitr::include_graphics(c("drawio/eks_avg.png"))
 ```
-  - **Direkte reguleringer**<br>
+
+**Direkte reguleringer**
+
 ```{r, echo=FALSE, out.width="35%", fig.cap=""}
 knitr::include_graphics(c("drawio/eks_kvo.png"))
 ```
+
 
 ---
 
@@ -2833,10 +2918,6 @@ knitr::include_graphics(c("drawio/eks_kvo.png"))
   Forutsetter:<br>
     	- Aktørene kan gjennomføre forhandlinger/møter med lave transaksjonskostnader
     	- Det må kunne tildeles klare definerte eiendomsrettigheter
-
-```{r, echo=FALSE, out.width="35%", fig.cap=""}
-knitr::include_graphics(c("drawio/eks_int.png"))
-```
 
 ---
 
@@ -2892,155 +2973,226 @@ Informasjonsfordelingen mellom aktøren er skjev.
   
 ---
 
-## Appendiks 
-### Diagramark fra forelesningen
+## Appendiks (diagramark fra forelesningen)
 
-```{r, echo=FALSE, out.width="45%", fig.cap=""}
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics("drawio/effektivitet.png")
+```
+
+---
+
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
 knitr::include_graphics("drawio/andre_emner.png")
+```
+
+---
+
+## Appendiks (Pandemihåndteringen under Covid-19)
+
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
+knitr::include_graphics("drawio/cost_ben.jpeg")
 ```
 
 ---
 
 class: inverse, center, middle
 
-# Kapittel 20: Andre emner: Internasjonal handel og velferd
+# Kapittel 14: Andre emner: Litt spillteori 
 
 `r paste("Oppdatert:",Sys.Date())`
 
 ---
 
-## Handelspolitikk og proteksjonisme
+### Spillteori 
 
-### Innledning
+Situasjoner der aktørene påvirker hverandres tilpasningsforhold.
 
-Generell grad av enighet blant økonomer om at frihandel er
-  - Bra
-  - Viktig faktor bak den raskt økende velferdsutviklinge i mange land
+**To sentrale konsepter**
 
-Til tross for dette forsøker mange land å begrense omfanget av internasjonal handel 
-ved bruk av handelspolitikk.
-
-Slike proteksjonistiske tiltak kan ta form av
-  - Toll
-  - Importkvoter
-  - Lover og regler
-
-Vanligvis ligger det bak slik tiltak enten  geopolitiske og/eller ønske om å beskytte nasjonale særinteressers.
+- *Nash-likevekter*
+> En situasjon hvor ingen aktør har interesse av å endre egen tilpasning, gitt den andres tilpasning 
+- *Dominante strategier*
+> Dersom aktøren kommer best ut ved å velge denne strategien uavhengig av hva den andre aktøren gjør. 
 
 ---
 
-*Liten åpen økonomi:*
-Merk: Med en liten åpen økonomi mener vi at landet er såpass lite at det må ta verdensmarkedsprisen ($P_V$) for gitt, og ikke kan påvirke denne uansett hvor mye som må importeres.
+**Eksempel 1: Fangens dilemma**
+
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
+knitr::include_graphics("drawio/tabell_14.1.png")
+```
+
+- Aktørene ønsker seg lavest mulig fengselsstraff.
 
 ---
 
-### Veldferdsvirkning av frihandel og toll
+**Eksempel 2: Kartellsammarbeid**
 
-#### Autarki
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
+knitr::include_graphics("drawio/tabell_14.2.png")
+```
 
-.pull-left[
-```{r, echo=FALSE, out.width="70%", fig.cap=""}
-knitr::include_graphics("drawio/int_handel_aut.png")
-```
-]
-.pull-right[
-```{r, echo=F, message=F, warning=F}
-# Load the huxtable library
-library(huxtable)
-# Create a small data frame
-df <- data.frame(
-  'Column 1' = c("KO","PO"),
-  'Column 2' = c("a", "b")
-)
-# Convert the data frame to a huxtable
-names(df) <- rep("", ncol(df))
-ht <- as_hux(df)
-# Set some properties for the entire table
-ht <- set_all_borders(ht, 0.4)
-# Maybe add some properties for headers
-ht <- set_bold(ht, 1, TRUE)
-ht <- set_bottom_border(ht, 1, 1)
-# Print the table to the console
-ht
-```
-]
+- Aktørene ønsker seg høyest mulig overskudd.
 
 ---
 
-#### Frihandel for en liten åpen økonomi
+**Eksempel 3: Reklamekampanje**
 
-.pull-left[
-```{r, echo=FALSE, out.width="70%", fig.cap=""}
-knitr::include_graphics("drawio/int_handel_fri.png")
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
+knitr::include_graphics("drawio/tabell_14.3.png")
 ```
-]
-.pull-right[
-```{r, echo=F}
-# Load the huxtable library
-library(huxtable)
-# Create a small data frame
-df <- data.frame(
-  'Column 1' = c("KO","PO","Netto"),
-  'Column 2' = c("+b+d", "-b", "+d")
-)
-# Convert the data frame to a huxtable
-names(df) <- rep("", ncol(df))
-ht <- as_hux(df)
-# Set some properties for the entire table
-ht <- set_all_borders(ht, 0.4)
-# Maybe add some properties for headers
-ht <- set_bold(ht, 1, TRUE)
-ht <- set_bottom_border(ht, 1, 1)
-# Print the table to the console
-ht
-```
-]
+
+- Aktørene ønsker seg høyest mulig overskudd.
 
 ---
 
-#### Toll for en liten åpen økonomi
-
-.pull-left[
-```{r, echo=FALSE, out.width="70%", fig.cap=""}
-knitr::include_graphics("drawio/int_handel_tol.png")
-```
-]
-.pull-right[
-```{r, echo=F}
-# Load the huxtable library
-library(huxtable)
-# Create a small data frame
-df <- data.frame(
-  'Column 1' = c("KO","PO","MYN","Netto"),
-  'Column 2' = c("-a-b-c-d","+a", "+c", "-b-d")
-)
-names(df) <- rep("", ncol(df))
-# Convert the data frame to a huxtable
-ht <- as_hux(df)
-# Set some properties for the entire table
-ht <- set_all_borders(ht, 0.4)
-# Maybe add some properties for headers
-ht <- set_bold(ht, 1, TRUE)
-ht <- set_bottom_border(ht, 1, 1)
-# Print the table to the console
-ht
-```
-]
-
----
-
-## Appendiks 
-### Diagramark fra forelesningen
+## Appendiks (diagramark benyttet under forelesning)
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics("drawio/int_handel.png")
+knitr::include_graphics("drawio/spillteori.png")
 ```
 
+---
 
+class: inverse, center, middle
 
+# Kapittel 15: Andre emner: arbeidsmarkedet 
 
+`r paste("Oppdatert:",Sys.Date())`
 
+---
 
+## Litt om arbeidsmarkedet
 
+### Et arbeidsmarked med fullkommen konkurranse (15.2)
 
+- Etterspørselsfunksjonen i arbeidsmarkedet framkommer ved å summere de ulike bedrifters etterspøresl på de ulike lønnsnivåene.
+- Tilbudsfunksjonen i arbeidsmarkedet framkommer ved å summere de ulike husholdningers tilbud på ulike lønnsnivåene..
+- Lønnsdannelsen under fullkommen konkurranse skjer i skjæringsinspunktet mellom tilbuds- og etterspørselsfunksjonen, hvor markedsmekanismen for å komme dette er analogt med hva som gjelder i produktmarkedet.  
+- Endring i andre faktorer enn lønn som påvirker enten etterspørsel- eller tilbudsfunksjonen vil påkalle skift i kurvene.
+---
+
+**Øvelse om arbeidsmarkedet**
+
+1. Vis ved hjelp av en figur markedslikvekten i dette markedet.
+1. Hva skjer i dette markedet dersom det innføres en minstelønn (vis og forklar)
+1. Vise hva som skjer i dette diagrammet dersom husholdningens inntekt øker?
+
+**Svar:**
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+ov_arbm <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/oppg_arbm.png')
+knitr::include_graphics(ov_arbm)
+```
+
+---
+
+class: inverse, center, middle
+
+# Kapittel 15: Andre emner: Tilpasninger over tid
+
+`r paste("Oppdatert:",Sys.Date())`
+
+---
+
+## Konsumentens fordeling av konsum over tid
+
+**Den intertemporale nyttefunksjonen er gitt ved**
+
+$$
+U = u(c_1,c_2) \text{ hvor } u'(c_1) \text{ og } u'(c_2) >0
+$$
+
+Hvor $c_1$ er konsum i periode 1, og $c_2$ er konsum i periode 2
+
+```{r, echo=FALSE, out.width="35%", fig.cap=""}
+knitr::include_graphics("drawio/int_nytte.png")
+```
+
+---
+
+**Den intertemporale budsjettlinjen**
+
+- Starter med å la utgifter i de to periodene være gitt ved
+$$
+c_1=p_1x_1 \text{ og } c_2=p_2x_2
+$$
+
+- Videre lar vi de to prisene være uendret mellom de to perioden:
+$$
+p_1=p_2=1 \Leftrightarrow  p_1/p_2 = 1
+$$
+
+- Inntektene i de to periodene er gitt ved hhv. $m_1$ og $m_2$
+	- I første periode vil vi derfor ha at sparing ( $s_1$ ) er gitt som
+$$
+s_1 = m_1 -c_1 \\
+$$
+	- Mens utgiftene i periode 2 er gitt ved
+$$
+c_2 = m_2 + s_1(1+i) \\
+$$
+
+Hvor $i$ utgjør rentenivået
+
+---
+
+- Vurdert fra periode 1, kan den intertemporale budsjettbetingelsen skrives som 
+$$
+c_1(1+i)+ c_2 = m_1(1+i)+ m_2  \\
+$$ 
+
+- Mens vurdert fra periode 2, kan skrives som 
+$$
+c_1+ c_2/(1+i) = m_1+ m_2/(1+i)  
+$$
+
+```{r, echo=FALSE, out.width="35%", fig.cap=""}
+knitr::include_graphics("drawio/int_budsj.png")
+```
+
+---
+
+### Optimal tilpasning over tid
+
+\begin{equation*}
+\text{ Maks } U = u(c_1,c_2) \text{ gitt at } c_1(1+i)+ c_2 = m_1(1+i)+ m_2 
+\end{equation*}
+
+Hvor løsningen er gitt ved:
+
+\begin{equation*}
+MSB = \frac{u'(c_1)}{u'(c_2)} = (1+i) \\
+c_1(1+i)+ c_2 = m_1(1+i)+ m_2 
+\end{equation*}
+
+```{r, echo=FALSE, out.width="55%", fig.cap=""}
+knitr::include_graphics("drawio/opt_tilpasning.png")
+```
+
+---
+
+**Komparativ statikk: Renteøkning**
+
+```{r, echo=FALSE, out.width="55%", fig.cap=""}
+knitr::include_graphics("drawio/int_tilpasning_renteokning.png")
+```
+
+- Utolmodig husholding: Periode 1, inntekt og subseffekt går samme vei i periode 1 (negativ)
+- Tålmodig husholding: Periode 2, inntekt og subseffekt går samme vei i periode 2 (positiv)
+
+**Komparativ statikk: Nedgang i framtidig inntekt**
+
+```{r, echo=FALSE, out.width="55%", fig.cap=""}
+knitr::include_graphics("drawio/int_tilpasning_inntnedgang.png")
+```
+
+---
+
+## Appendiks (diagramark benyttet under forelesning)
+
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+knitr::include_graphics("drawio/opt_tilp_tid.png")
+```
 

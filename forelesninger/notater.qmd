@@ -1,66 +1,51 @@
 ---
 title: "Mikroøkonomi (SFB10816)"
-#subtitle: "Forelesningsnotater (shift+o for oversiksbilde)"
+subtitle: "Forelesningsnotater (o for oversiksbilde)"
 #`r paste("Oppdatert:",Sys.Date())`
 author: "Jørn I. Halvorsen og Joachim Thøgersen"
 date: "`r Sys.Date()`"
-#output:
-#  html_document:
-#    toc: true
-#    toc_depth: 3
 format:
   revealjs: 
     chalkboard: true
     smaller: true
     toc-depth: 2
-    toc: false
+    toc: true
 #execute: 
 #  cache: false
-#filters:
-#  - webr
-#footer:
 footer: https://joernih.github.io/SFB10816Mikrooekonomi/
+# Ekstratemaer: Tilbudet av arbeidskraft, Andre markedsformer: Cournout, Spillteori. Spillteori
+#format: 
+#  html:
+#    toc: true
+#    toc-depth: 3
+#    number-sections: true
 ---
 
-```{r}
+```{r, echo=F, warning=F, message=F}
 library(dplyr)
 md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
+# ../data-raw/metadata.json
 source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
-tema <- c(
-"Introduksjon til mikroøkonomi. Overblikk over fullkommen konkurranse",
-"Produksjons, inntekts- og kostnadsteori og adferden i produkt- og arbeidsmarkedet på kort sikt", 
-"Produksjons, inntekts- og kostnadsteori og adferden i produkt- og arbeidsmarkedet på lang sikt", 
-"Produksjons, inntekts- og kostnadsteori og adferden i produkt- og arbeidsmarkedet på lang sikt", 
-"Konsumentens valg", 
-"Konsumentens økonomiske adferd i gode- og arbeidsmarkedet", 
-"Fullkommen konkurranse", 
-"Monopol, monopolistisk konkurranse og prisdiskriminering", 
-"Ufulkommen konkurranse: markedssvikt", 
-"Ufulkommen konkurranse: internasjonal handel"  
-)
-del <- c(
-" Introduksjon, overblikk over markeds- og velferdsteori",
-"1. Produsentteori: ", 
-"",
-"2. Konsumentteori: ", 
-"",
-"3. Markedsteori:",
-"",
-"4. Andre emner",
-""
-)
 ```
+
 
 # Praktisk informasjon
 
-## Timeplan med anbefalte oppgaver
+## Timeplan 
 
-```{r, echo=F, ,message=F}
-lecnr <- 1
-#kableExtra::kbl(df_t,col.names=c("#","Tema","Chapter","Ansvarlig","Ukenr","Dato")) #%>% kableExtra::kable_classic_2(full_width = F) %>% kableExtra::row_spec(lecnr, bold = T)j
+```{r, eval=T, echo=F}
+kableExtra::kbl(df_t) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=24)
 ```
 
 [Romplan](https://tp.educloud.no/hiof/timeplan/timeplan.php?type=course&sem=24v&campus=&id[]=SFB10816%2C1)
+
+---
+
+## Anbefalte oppgaver
+
+```{r, eval=T, echo=F}
+kableExtra::kbl(df_o) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=24)
+```
 
 ## Pensumliste 
 
@@ -103,9 +88,11 @@ Karakterregel: A-F.
 
 Hjelpemidler: Godkjent kalkulator.
 
+```{r, eval=F, echo=F}
+knitr::knit_exit()
+```
 
-# Kapittel 1: `r tema[1]`
-
+# Kapittel 1: `r md$lect$topic[1]`
 
 ---
 
@@ -500,13 +487,12 @@ knitr::include_graphics("drawio/pmk.png")
 knitr::include_graphics("drawio/intro_alle.png")
 ```
 
-```{r, echo=F,eval=T}
+---
+
+```{r}
 knitr::knit_exit()
 ```
 
----
-
-class: inverse, center, middle
 
 # Kapittel 4, 5 og 6: Innledning til produsentteorien
 
@@ -542,8 +528,6 @@ knitr::include_graphics(pf)
 
 
 ---
-
-class: inverse, center, middle
 
 # Kapittel 4, 5 og 6: `r paste(substring(del[2],4),tema[2])`
 
@@ -894,8 +878,6 @@ knitr::include_graphics("drawio/prod_kort.png")
 ```
 
 ---
-
-class: inverse, center, middle
 
 # Kapittel 4, 5 og 6: `r paste(substring(del[2],4),tema[3])`
 
@@ -1276,7 +1258,9 @@ Ved å sette inn for den optimale løsningen av $N$ og $K$ finner vi bedriftens 
 
 ---
 
-class: inverse, center, middle
+```{r, echo=F,eval=F}
+knitr::knit_exit()
+```
 
 # Kapittel 7: `r paste(substring(del[5],4),tema[4])`
 
@@ -1855,7 +1839,7 @@ knitr::include_graphics(ekonsum)
 - Kurven har negativ helning: $\frac{dx_1^D}{dp_1}<0$ (gjelder alltid, bortsett fra i Giffen-tilfellet).
 ---
 
-### Tilbudsfunksjonen etter arbeid (for spesielt interesserte, ikke pensum)
+### Tilbudsfunksjonen etter arbeid 
 
 Budsjettbetingelsen
 \begin{equation*}
@@ -1897,10 +1881,6 @@ knitr::include_graphics(tarbeid)
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
 knitr::include_graphics("drawio/oversikt_kons_ii.png")
-```
-
-```{r, echo=F,eval=F}
-knitr::knit_exit()
 ```
 
 ```{r, echo=F,eval=F}
@@ -2528,9 +2508,7 @@ class: inverse, center, middle
 
 # Kapittel 11: Ufullkommen konkurranse - monopolistisk konkurranse
 
-
 `r paste("Oppdatert:",Sys.Date())`
-
 
 ---
 
@@ -2544,8 +2522,158 @@ class: inverse, center, middle
 - Tar vi høyde for variasjonsmulighetene for disse to faktorene, kan vi plassere de ulike markedsformene som inngår i dette kapittelet ved bruk av følgende diagram.
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-markedsformer <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/markedsf.png')
-knitr::include_graphics(markedsformer)
+#markedsformer <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/markedsf.png')
+#knitr::include_graphics(markedsformer)
+```
+
+---
+
+## Homogene produkter
+
+### Kartell
+
+- Vi sier at vi har et salgskartell dersom produsentene opptrer *samlet* for å fastsette pris og mengde
+- Som for en monopolist, vil derfor overskuddet bli maksimalt dersom produserer slik at grenseinntekten er lik
+grensekostnaden
+- Men det viser seg ofte å være en ustabil løsning over tid pga. P> GK
+  - indre fiender: insintament til øke bryte avtale ved øke produksjonen, siden dette gir høyere overskudd.
+  - ytre fiender:  insintament til å ikke stille seg solidarisk ved øke produksjone, siden dette gir høyere overskudd. 
+
+---
+
+## Duopol
+
+### Cournout
+
+- To produsenter som begge ønsker å maksimere forjenesten
+- Valgvariabel, $X_{1}$ og $X_{2}$
+- Total produksjon er gitt ved $X=X_{1}+X_{2}$
+- Den marginale betalingsvilligheten fra husholdningene antar vi er gitt ved en linær funksjon som er beskrevet som $p=60-X=60-(X_{1}+X_{2})$
+- For å rendyrke resultatene, antar marginalkostnaden er satt lik 0 for begge bedrifter
+
+---
+
+Produsent 1 vil gjøre fortjensten størst mulig og står ovenfor følgende optimeringsproblem
+\begin{equation}
+\pi_{1}(X_{1}) = pX_{1} - c_v(X_{1}) = \\ 
+(60-(X_{1}+X_{2}))X_{1} - c_v(X_{1})= 60X_{1} - X_{1}^2+X_{2}X_{1}- c_v(X_{1}) 
+\end{equation}
+
+Førsteordenbetingelsen tilknyttet dette problemet er gitt som
+\begin{equation}
+\pi_{1}'(x_{1}) = 60-2X_{1}-X_{2} + c_v'(X_{1})=0
+\end{equation}
+Løsningen av denne mhp $X_{1}$ omtaler vi som reaksjonsligningen til produsent 1
+\begin{equation}
+X_{1} = 30 - \frac{1}{2}X_{2}  
+\end{equation}
+
+**Øvelse** 
+
+Gjør samme øvelse for produsent 2 og bekreft at reaksjonsligningen til produsent 2 er gitt ved
+\
+\begin{equation}
+X_{2} = 30 - \frac{1}{2}X_{1}  
+\end{equation}
+
+---
+
+
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+#cournot <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/cournotl.png')
+#knitr::include_graphics(cournot)
+```
+
+Cournotlikevekten kan vi finne i skjæringspunktet mellom de to reaksjonsligningene
+
+---
+
+Formell løsning kan vi finne ved å løse for de to ukjente $X_{1}$ og $X_{2}$
+
+Løser først mhp $X_{1}$
+\begin{equation}
+X_{1} = 30 - \frac{1}{2}\left(30 - \frac{1}{2}X_{1}  \right ) \\
+X_{1} = 15 + \frac{1}{4}X_{1} \\
+X_{1}(1-\frac{1}{4}) = 15
+X_{1} = 20
+\end{equation}
+
+Deretter for $x_{2}$
+
+\begin{equation}
+X_{2} = 30 - \frac{1}{2}{20}= 20  
+\end{equation}
+
+Markedskvantum er derfor gitt ved
+
+\begin{equation}
+X = X_{1}+X_{2}= 20+20 = 40
+\end{equation}
+
+Med tilhørende likevektspris
+\begin{equation}
+p = 60-40 = 20 
+\end{equation}
+
+---
+
+### Stackelberg (for spesielt interesserte)
+
+- Produsent 1 er den dominerende aktøren -> bestemme produksjonen først
+- Produsent 2 den passive -> bestemmer produksjoen etter produsent 1
+- Ellers antar vi samme forutsetninger som under Cournot-modellen
+
+---
+
+Produsent 1 vil derfor være gitt ved
+\begin{equation*}
+R_{1} = pX_{1}=(60-(X_{1}+X_{2}))X_{1} =  \\ 60X_{1}-2X_{1}-X_{1}+ \underset{\text{Reaksjonsfunksjon til produsent 2}}{\left ( 30 - \frac{1}{2}  X_{1}  \right)}
+ =
+30X_{1}-\frac{1}{2}X_{1}^{2}
+\end{equation*}
+
+Grenseinntekten er gitt ved
+\begin{equation*}
+R'_{1} = 30 - X_{1}
+\end{equation*}
+
+Som gjør at optimal kvantumer gitt ved
+\begin{equation*}
+X_{1} = 30  
+\end{equation*}
+
+Den passive produsentent produserer derfor
+\begin{equation*}
+X_{2} = 30 - \frac{1}{2}{30}= 15  
+\end{equation*}
+
+Men prisen er gitt ved
+\begin{equation*}
+P=60-(15+30)= 15
+\end{equation*}
+
+---
+
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+#stackberg <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/stackbergl.png')
+#knitr::include_graphics(stackberg)
+```
+
+---
+
+### Bertrand
+
+- To produsenter som begge ønsker å maksimere forjenesten
+- Valgvariabel, $p_{1}$ og $p_{2}$
+- Gitt at $p_{1}<p_{2}$ $\Rightarrow$ $x_{1}$ tar hele markedet
+- Gitt at $p_{1}>p_{2}$ $\Rightarrow$ $x_{2}$ tar hele markedet
+- Gitt at $p_{1}=p_{2}$ $\Rightarrow$ begge kan produsere til null profit
+- Likevektsløsning $p_{1}=p_{2}=c'(X)$ (pris = grensekotnad)
+- Samfunnsøkonomisk optimal løsning
+
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+#bertrandl <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/bertrandl.png')
+#knitr::include_graphics(bertrandl)
 ```
 
 ---
@@ -2565,8 +2693,8 @@ knitr::include_graphics(markedsformer)
 	- Hvor stor markedsmakten er vil avhenge av elastisk etterspørselen er
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-monk_ks <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/monk_ks.png')
-knitr::include_graphics(monk_ks)
+#monk_ks <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/monk_ks.png')
+#knitr::include_graphics(monk_ks)
 ```
 
 ---
@@ -2577,19 +2705,18 @@ knitr::include_graphics(monk_ks)
 	  tilnærmet lik null på lang sikt.
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-monk_ls <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/monk_ls.png')
-knitr::include_graphics(monk_ls)
+#monk_ls <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/monk_ls.png')
+#knitr::include_graphics(monk_ls)
 ```
 
 ---
 
-## Appendiks 
+## Appendiks (diagramark benyttet under forelesning)
 
-### Diagramark benyttet under forelesning
-
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
-knitr::include_graphics("drawio/markeduf.png")
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+#knitr::include_graphics("drawio/markeduf.png")
 ```
+
 
 ---
 
@@ -2961,6 +3088,7 @@ ht
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
 knitr::include_graphics("drawio/int_handel.png")
 ```
+
 
 
 
@@ -5851,143 +5979,203 @@ knitr::include_graphics("drawio/andre_emner.png")
 
 ---
 
-class: inverse, center, middle
-
-# Kapittel 20: Andre emner: Internasjonal handel og velferd
+# Kapittel 14: Andre emner: Litt spillteori 
 
 `r paste("Oppdatert:",Sys.Date())`
 
 ---
 
-## Handelspolitikk og proteksjonisme
+### Spillteori 
 
-### Innledning
+Situasjoner der aktørene påvirker hverandres tilpasningsforhold.
 
-Generell grad av enighet blant økonomer om at frihandel er
-  - Bra
-  - Viktig faktor bak den raskt økende velferdsutviklinge i mange land
+**To sentrale konsepter**
 
-Til tross for dette forsøker mange land å begrense omfanget av internasjonal handel 
-ved bruk av handelspolitikk.
-
-Slike proteksjonistiske tiltak kan ta form av
-  - Toll
-  - Importkvoter
-  - Lover og regler
-
-Vanligvis ligger det bak slik tiltak enten  geopolitiske og/eller ønske om å beskytte nasjonale særinteressers.
+- *Nash-likevekter*
+> En situasjon hvor ingen aktør har interesse av å endre egen tilpasning, gitt den andres tilpasning 
+- *Dominante strategier*
+> Dersom aktøren kommer best ut ved å velge denne strategien uavhengig av hva den andre aktøren gjør. 
 
 ---
 
-*Liten åpen økonomi:*
-Merk: Med en liten åpen økonomi mener vi at landet er såpass lite at det må ta verdensmarkedsprisen ($P_V$) for gitt, og ikke kan påvirke denne uansett hvor mye som må importeres.
+**Eksempel 1: Fangens dilemma**
+
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
+knitr::include_graphics("drawio/tabell_14.1.png")
+```
+
+- Aktørene ønsker seg lavest mulig fengselsstraff.
 
 ---
 
-### Veldferdsvirkning av frihandel og toll
+**Eksempel 2: Kartellsammarbeid**
 
-#### Autarki
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
+knitr::include_graphics("drawio/tabell_14.2.png")
+```
 
-.pull-left[
-```{r, echo=FALSE, out.width="70%", fig.cap=""}
-knitr::include_graphics("drawio/int_handel_aut.png")
-```
-]
-.pull-right[
-```{r, echo=F, message=F, warning=F}
-# Load the huxtable library
-library(huxtable)
-# Create a small data frame
-df <- data.frame(
-  'Column 1' = c("KO","PO"),
-  'Column 2' = c("a", "b")
-)
-# Convert the data frame to a huxtable
-names(df) <- rep("", ncol(df))
-ht <- as_hux(df)
-# Set some properties for the entire table
-ht <- set_all_borders(ht, 0.4)
-# Maybe add some properties for headers
-ht <- set_bold(ht, 1, TRUE)
-ht <- set_bottom_border(ht, 1, 1)
-# Print the table to the console
-ht
-```
-]
+- Aktørene ønsker seg høyest mulig overskudd.
 
 ---
 
-#### Frihandel for en liten åpen økonomi
+**Eksempel 3: Reklamekampanje**
 
-.pull-left[
-```{r, echo=FALSE, out.width="70%", fig.cap=""}
-knitr::include_graphics("drawio/int_handel_fri.png")
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
+knitr::include_graphics("drawio/tabell_14.3.png")
 ```
-]
-.pull-right[
-```{r, echo=F}
-# Load the huxtable library
-library(huxtable)
-# Create a small data frame
-df <- data.frame(
-  'Column 1' = c("KO","PO","Netto"),
-  'Column 2' = c("+b+d", "-b", "+d")
-)
-# Convert the data frame to a huxtable
-names(df) <- rep("", ncol(df))
-ht <- as_hux(df)
-# Set some properties for the entire table
-ht <- set_all_borders(ht, 0.4)
-# Maybe add some properties for headers
-ht <- set_bold(ht, 1, TRUE)
-ht <- set_bottom_border(ht, 1, 1)
-# Print the table to the console
-ht
-```
-]
+
+- Aktørene ønsker seg høyest mulig overskudd.
 
 ---
 
-#### Toll for en liten åpen økonomi
-
-.pull-left[
-```{r, echo=FALSE, out.width="70%", fig.cap=""}
-knitr::include_graphics("drawio/int_handel_tol.png")
-```
-]
-.pull-right[
-```{r, echo=F}
-# Load the huxtable library
-library(huxtable)
-# Create a small data frame
-df <- data.frame(
-  'Column 1' = c("KO","PO","MYN","Netto"),
-  'Column 2' = c("-a-b-c-d","+a", "+c", "-b-d")
-)
-names(df) <- rep("", ncol(df))
-# Convert the data frame to a huxtable
-ht <- as_hux(df)
-# Set some properties for the entire table
-ht <- set_all_borders(ht, 0.4)
-# Maybe add some properties for headers
-ht <- set_bold(ht, 1, TRUE)
-ht <- set_bottom_border(ht, 1, 1)
-# Print the table to the console
-ht
-```
-]
-
----
-
-## Appendiks 
-### Diagramark fra forelesningen
+## Appendiks (diagramark benyttet under forelesning)
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics("drawio/int_handel.png")
+knitr::include_graphics("drawio/spillteori.png")
 ```
 
+---
 
+class: inverse, center, middle
 
+# Kapittel 15: Andre emner: arbeidsmarkedet 
+
+`r paste("Oppdatert:",Sys.Date())`
+
+---
+
+## Litt om arbeidsmarkedet
+
+### Et arbeidsmarked med fullkommen konkurranse (15.2)
+
+- Etterspørselsfunksjonen i arbeidsmarkedet framkommer ved å summere de ulike bedrifters etterspøresl på de ulike lønnsnivåene.
+- Tilbudsfunksjonen i arbeidsmarkedet framkommer ved å summere de ulike husholdningers tilbud på ulike lønnsnivåene..
+- Lønnsdannelsen under fullkommen konkurranse skjer i skjæringsinspunktet mellom tilbuds- og etterspørselsfunksjonen, hvor markedsmekanismen for å komme dette er analogt med hva som gjelder i produktmarkedet.  
+- Endring i andre faktorer enn lønn som påvirker enten etterspørsel- eller tilbudsfunksjonen vil påkalle skift i kurvene.
+---
+
+**Øvelse om arbeidsmarkedet**
+
+1. Vis ved hjelp av en figur markedslikvekten i dette markedet.
+1. Hva skjer i dette markedet dersom det innføres en minstelønn (vis og forklar)
+1. Vise hva som skjer i dette diagrammet dersom husholdningens inntekt øker?
+
+**Svar:**
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+ov_arbm <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/oppg_arbm.png')
+knitr::include_graphics(ov_arbm)
+```
+
+---
+
+class: inverse, center, middle
+
+# Kapittel 15: Andre emner: Tilpasninger over tid
+
+`r paste("Oppdatert:",Sys.Date())`
+
+---
+
+## Konsumentens fordeling av konsum over tid
+
+**Den intertemporale nyttefunksjonen er gitt ved**
+
+$$
+U = u(c_1,c_2) \text{ hvor } u'(c_1) \text{ og } u'(c_2) >0
+$$
+
+Hvor $c_1$ er konsum i periode 1, og $c_2$ er konsum i periode 2
+
+```{r, echo=FALSE, out.width="35%", fig.cap=""}
+knitr::include_graphics("drawio/int_nytte.png")
+```
+
+---
+
+**Den intertemporale budsjettlinjen**
+
+- Starter med å la utgifter i de to periodene være gitt ved
+$$
+c_1=p_1x_1 \text{ og } c_2=p_2x_2
+$$
+
+- Videre lar vi de to prisene være uendret mellom de to perioden:
+$$
+p_1=p_2=1 \Leftrightarrow  p_1/p_2 = 1
+$$
+
+- Inntektene i de to periodene er gitt ved hhv. $m_1$ og $m_2$
+	- I første periode vil vi derfor ha at sparing ( $s_1$ ) er gitt som
+$$
+s_1 = m_1 -c_1 \\
+$$
+	- Mens utgiftene i periode 2 er gitt ved
+$$
+c_2 = m_2 + s_1(1+i) \\
+$$
+
+Hvor $i$ utgjør rentenivået
+
+---
+
+- Vurdert fra periode 1, kan den intertemporale budsjettbetingelsen skrives som 
+$$
+c_1(1+i)+ c_2 = m_1(1+i)+ m_2  \\
+$$ 
+
+- Mens vurdert fra periode 2, kan skrives som 
+$$
+c_1+ c_2/(1+i) = m_1+ m_2/(1+i)  
+$$
+
+```{r, echo=FALSE, out.width="35%", fig.cap=""}
+knitr::include_graphics("drawio/int_budsj.png")
+```
+
+---
+
+### Optimal tilpasning over tid
+
+\begin{equation*}
+\text{ Maks } U = u(c_1,c_2) \text{ gitt at } c_1(1+i)+ c_2 = m_1(1+i)+ m_2 
+\end{equation*}
+
+Hvor løsningen er gitt ved:
+
+\begin{equation*}
+MSB = \frac{u'(c_1)}{u'(c_2)} = (1+i) \\
+c_1(1+i)+ c_2 = m_1(1+i)+ m_2 
+\end{equation*}
+
+```{r, echo=FALSE, out.width="55%", fig.cap=""}
+knitr::include_graphics("drawio/opt_tilpasning.png")
+```
+
+---
+
+**Komparativ statikk: Renteøkning**
+
+```{r, echo=FALSE, out.width="55%", fig.cap=""}
+knitr::include_graphics("drawio/int_tilpasning_renteokning.png")
+```
+
+- Utolmodig husholding: Periode 1, inntekt og subseffekt går samme vei i periode 1 (negativ)
+- Tålmodig husholding: Periode 2, inntekt og subseffekt går samme vei i periode 2 (positiv)
+
+**Komparativ statikk: Nedgang i framtidig inntekt**
+
+```{r, echo=FALSE, out.width="55%", fig.cap=""}
+knitr::include_graphics("drawio/int_tilpasning_inntnedgang.png")
+```
+
+---
+
+## Appendiks (diagramark benyttet under forelesning)
+
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+knitr::include_graphics("drawio/opt_tilp_tid.png")
+```
 
 
 

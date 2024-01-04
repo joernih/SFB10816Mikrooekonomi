@@ -12,19 +12,21 @@ ant <- seq(1,length(ukr))
 
 df_t <- data.frame(
   ant=ant,
-  top=md$lect$topic$lect,
-  syl=md$lect$topic$litt,
-  res=md$lect$topic$resp,
+  top=md$lect$topic,
+  syl=md$lect$litt,
+  res=md$lect$resp,
   wnr=ukr,
   dat=wdn
 ) 
 
 ### Regneverksted ###
 temav <- unlist(lapply(1:6,function(x) md$regnv[[x]][1]))
+ukenr <- unlist(lapply(1:6,function(x) md$regnv[[x]][2]))
 
 df_r <- data.frame(
 Antall=c(1,2,3,4,5,6), 
-Tema=temav
+Tema=temav,
+Uke=ukenr
 )
 
 ### Oppgaver ###
@@ -51,4 +53,5 @@ gang <- c(gang1,gang2,gang3,gang4,gang5,gang6,gang7,gang8,gang9)
 dagv <- c(rep('Torsdag',9))
 
 df_o <- data.frame(Oppgaver_bok=gang)
+
 
