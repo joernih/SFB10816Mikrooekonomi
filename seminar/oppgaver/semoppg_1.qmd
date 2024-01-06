@@ -7,15 +7,16 @@ format:
     css: css/OFF.css
 ---
 
-Uke 3, ansvarlig: TAB
+```{r, echo=F}
+md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
+```
 
+Uke `r md$regnv$sem1[2]`, ansvarlig: `r md$regnv$ansv[1]`
 
 ::: {.content-visible when-profile="internal"}
 ## Oppgave 1: Modeller i mikroøkonomi
-
 ### Bruk av eksogene og endogende variabler
 ### Økonomiske modeller og bruk av matemaikk
-
 ## Oppgave 2: Brøkregning og derivasjon
 ### Brøkregning
 ### Derivasjon

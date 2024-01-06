@@ -9,7 +9,7 @@ format:
     chalkboard: true
     smaller: true
     toc-depth: 2
-    toc: true
+    toc: false
 #execute: 
 #  cache: false
 footer: https://joernih.github.io/SFB10816Mikrooekonomi/
@@ -21,20 +21,25 @@ footer: https://joernih.github.io/SFB10816Mikrooekonomi/
 #    number-sections: true
 ---
 
-```{r, echo=F, warning=F, message=F}
+```{r, echo=F, warning=F, message=F, eval=T}
 library(dplyr)
+library(dplyr)
+library(ggplot2)
+library(econocharts)
 md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
 # ../data-raw/metadata.json
+source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/econplot.R'))
 source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
 ```
-
 
 # Praktisk informasjon
 
 ## Timeplan 
 
 ```{r, eval=T, echo=F}
-kableExtra::kbl(df_t) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=24)
+klnt <- c("Antall","Tema","Kapittel","Ansvarlig","Uke","Dato")
+kableExtra::kbl(df_t,col.names=klnt) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=16)
+
 ```
 
 [Romplan](https://tp.educloud.no/hiof/timeplan/timeplan.php?type=course&sem=24v&campus=&id[]=SFB10816%2C1)
@@ -44,7 +49,8 @@ kableExtra::kbl(df_t) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra
 ## Anbefalte oppgaver
 
 ```{r, eval=T, echo=F}
-kableExtra::kbl(df_o) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=24)
+klno <- c("Antall")
+kableExtra::kbl(df_o,col.names=klno) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=24)
 ```
 
 ## Pensumliste 
@@ -177,7 +183,14 @@ knitr::knit_exit()
 - Dette tapet er alternativkostnaden.
    - *Alternativkostnaden er altså verdien av beste alternative anvendelse.*
 
-![](drawio/alternativ.svg){width=300}
+<!--![](drawio/alternativ.svg){width=300} -->
+
+```{mermaid}
+flowchart LR
+    A[abc] -->|abc| a 
+    B[abc] -->|abc| b
+    C[abc] -->|abc| c
+```
 
 ---
 
@@ -236,17 +249,6 @@ knitr::knit_exit()
   - Makroøkonomi: Søker å studere og forklare aggregerte størrelser. Økonomien under ett.
   - Makroøkonomi kan deles inn i konjunkturteori og økonomisk vekst.
 
----
-
-## Appendiks 
-### Alle figurene samlet 
-
-```{r, echo=F,eval=F}
-knitr::knit_exit()
-#knitr::include_graphics("drawio/alt.png")
-#knitr::include_graphics("drawio/oversikt_hele.svg")
-#knitr::include_graphics("drawio/abc.png")
-```
 
 ---
 
@@ -290,8 +292,9 @@ knitr::knit_exit()
   - En endring i konstantene vil føre til skift i kurven.
 - Fra et individs etterspørsel til markedsetterspørsel.
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
-p1 <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/ekurve.png')
-knitr::include_graphics(p1)
+#p1 <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/ekurve.png')
+#knitr::include_graphics(p1)
+grid.arrange(p_3_d1[[1]],p_3_d2[[1]],nrow = 1,top='+')
 ```
 
 ---
@@ -307,9 +310,11 @@ knitr::include_graphics(p1)
 - Fra en bedrifts tilbud til markedstilbud.
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
-p1 <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/tkurve.png')
-knitr::include_graphics(p1)
+#p1 <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/tkurve.png')
+#knitr::include_graphics(p1)
+grid.arrange(p_3_s1[[1]],p_3_s2[[1]],nrow = 1)
 ```
+
 
 ---
 
@@ -318,14 +323,27 @@ knitr::include_graphics(p1)
 - Utgangspunkt: markedets E-kurve og T-kurve.
 - Likevekt: dersom ingen aktører ønsker å endre den eksisterende økonomiske tilpasning.
   -  $X^S = X^D$
-  - Overskuddsetterspørsel: $X^D > X^S$
-- Anta at prisen er lavere enn likevektspris (makspris).
-  - Overskuddstilbud: $X^S > X^D$
-- Anta at prisen er over likevektsprisen (minpris).
-- Ingenting i modellen som tilsier stabilitet. Men utenfor modellen kan vi resonnere omkring markedskrefter, slik de er beskrevet av Adam Smith.
+```{r, echo=F}
+p_3_sd
+```
+- Merk: Ingenting i modellen som tilsier stabilitet. Men utenfor modellen kan vi resonnere omkring markedskrefter, slik de er beskrevet av Adam Smith.
 
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
-knitr::include_graphics("drawio/telikevekt.png")
+---
+
+- Anta at prisen er *lavere* enn likevektspris (makspris).
+  - Overskuddsetterspørsel: $X^D > X^S$
+
+```{r, echo=F}
+p_3_sd
+```
+
+---
+
+- Anta at prisen er *over* likevektsprisen (minpris).
+  - Overskuddstilbud: $X^S > X^D$
+
+```{r, echo=F}
+p_3_sd
 ```
 
 ---
@@ -357,9 +375,11 @@ $\Rightarrow B(X)$
 	- $\Rightarrow KO(X) = B(X) – pX$
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-konso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/konso.png')
-knitr::include_graphics(konso)
+#konso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/konso.png')
+#knitr::include_graphics(konso)
+p_3_ko 
 ```
+
 ---
 
 ### Produsentoverskudd
@@ -369,8 +389,9 @@ knitr::include_graphics(konso)
 - Det vil si: differensen mellom produsentens samlede salgsinntekter og variable kostnader.
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-prodo <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodo.png')
-knitr::include_graphics(prodo)
+#prodo <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodo.png')
+#knitr::include_graphics(prodo)
+p_3_po 
 ```
 
 ---
@@ -382,8 +403,9 @@ knitr::include_graphics(prodo)
 \end{equation*}
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-prodo <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/mfk_so.png')
-knitr::include_graphics(prodo)
+#prodo <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/mfk_so.png')
+#knitr::include_graphics(prodo)
+p_3_kopo
 ```
 
 - Er løsningen til dette problemet tilfredsstilt i en markedsmodell med fullkommen konkurranse? JA (vi vil se nærmere på løsningen senere i dette kurset)!
@@ -417,7 +439,7 @@ La oss se på noen av disse forholdene.
 La oss se på et eksempel der lavere pris på innsatsfaktorene har ført til et positivt skift i tilbudskurven.
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-knitr::include_graphics("drawio/telikevekt_ke.png")
+p_3_sdcs1
 ```
 
 ---
@@ -443,7 +465,8 @@ Resultater:
 Produsenten ”sender” nå avgiften til staten, men begge bærer byrden!!
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics("drawio/telikevekt_avg.png")
+#knitr::include_graphics("drawio/telikevekt_avg.png")
+p_3_sdcs2
 ```
 
 ---
@@ -453,7 +476,8 @@ knitr::include_graphics("drawio/telikevekt_avg.png")
 - Maksimalpris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et makspris som er *lavere* enn markedsprisen.
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-knitr::include_graphics("drawio/telikevekt_max.png")
+#knitr::include_graphics("drawio/telikevekt_max.png")
+p_3_reg2 
 ```
 
 ---
@@ -461,7 +485,8 @@ knitr::include_graphics("drawio/telikevekt_max.png")
 - Minstrepris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et minstepris som er *høyere* enn markedsprisen.
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-knitr::include_graphics("drawio/telikevekt_min.png")
+#knitr::include_graphics("drawio/telikevekt_min.png")
+p_3_reg3 
 ```
 
 ---
@@ -474,25 +499,13 @@ knitr::include_graphics("drawio/telikevekt_min.png")
 - Forutsetninger: to produkter, gitt mengde produksjonsfaktorer (kort sikt) og produksjonsteknologien er konstant.
 
 ```{r, echo=FALSE, out.width="60%", fig.cap=""}
-knitr::include_graphics("drawio/pmk.png")
+#knitr::include_graphics("drawio/pmk.png")
+p_3_ppf[[1]]
 ```
 
----
-
-## Appendiks 
-
-### Alle figurene samlet
-
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
-knitr::include_graphics("drawio/intro_alle.png")
-```
-
----
-
-```{r}
+```{r, eval=T}
 knitr::knit_exit()
 ```
-
 
 # Kapittel 4, 5 og 6: Innledning til produsentteorien
 

@@ -30,3 +30,55 @@ Jørn
 
 **Siste gang oppdatert: `r as.Date(Sys.time())`**
 
+```{mermaid}
+graph LR
+    A[ ] -->|Land| B[Process]
+    A -->|Arbeidskraft| B
+    A -->|Kapital| B
+    B -->|Output| C[Alternativ 2]
+
+    D[ ] -->|Land| E[Process]
+    D -->|Arbeidskraft| E
+    D -->|Kapital| E
+    E -->|Output| F[Alternativ 1]
+
+    G[ ] -->|Land| H[Process]
+    G -->|Arbeidskraft| H
+    G -->|Kapital| H
+    H -->|Output| I[Gode 1]
+
+```
+
+```{mermaid}
+graph TD
+    L[Labor (L)] -->|Input| P[Production Function]
+    K[Capital (K)] -->|Input| P
+    P --> X[Output (X)]
+
+```
+
+
+
+```{r}
+knitr::knit_exit()
+```
+
+```{mermaid}
+graph LR
+    A[ ] -->|Land| B[Process]
+    A -->|Arbeidskraft| B
+    A -->|Kapital| B
+    B -->|Output| C[Alternativ 2]
+
+    D[ ] -->|Land| E[Process]
+    D -->|Arbeidskraft| E
+    D -->|Kapital| E
+    E -->|Output| F[Alternativ 1]
+
+    G[ ] -->|Land| H[Process]
+    G -->|Arbeidskraft| H
+    G -->|Kapital| H
+    H -->|Output| I[Gode 1]
+
+```
+

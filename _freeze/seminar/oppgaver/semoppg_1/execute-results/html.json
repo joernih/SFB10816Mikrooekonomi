@@ -1,7 +1,8 @@
 {
-  "hash": "3776382bf4b2ce6c9031d56c7a0b35bd",
+  "hash": "50c97a67d043d1c89b629f3724c7f365",
   "result": {
-    "markdown": "---\ntitle: \"Seminar 1: Matematikk for mikroøkonomi\"\nformat:\n  html:\n    toc: true\n    toc-depth: 4\n    css: css/OFF.css\n---\n\n\nUke 3, ansvarlig: TAB\n\n\n::: {.content-visible when-profile=\"internal\"}\n## Oppgave 1: Modeller i mikroøkonomi\n\n### Bruk av eksogene og endogende variabler\n### Økonomiske modeller og bruk av matemaikk\n\n## Oppgave 2: Brøkregning og derivasjon\n### Brøkregning\n### Derivasjon\n### En variabel\n### To variabler\n### Diffrensiering\n## Oppgave 3: System av ligninger og optimering\n### System av likninger\n### Lagrange-metode\n:::\n\n\n::: {.cell}\n\n:::\n",
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Seminar 1: Matematikk for mikroøkonomi\"\nformat:\n  html:\n    toc: true\n    toc-depth: 4\n    css: css/OFF.css\n---\n\n::: {.cell}\n\n:::\n\n\nUke 3, ansvarlig: TAB\n\n::: {.content-visible when-profile=\"internal\"}\n## Oppgave 1: Modeller i mikroøkonomi\n### Bruk av eksogene og endogende variabler\n### Økonomiske modeller og bruk av matemaikk\n## Oppgave 2: Brøkregning og derivasjon\n### Brøkregning\n### Derivasjon\n### En variabel\n### To variabler\n### Diffrensiering\n## Oppgave 3: System av ligninger og optimering\n### System av likninger\n### Lagrange-metode\n:::\n\n\n::: {.cell}\n\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
