@@ -39,6 +39,12 @@ website:
         href: "utskrifter/utskrifter.qmd"
       - text: "Endringslog"
         href: "log.qmd"
+      - text: "Teknisk"
+        menu:
+        - text: "abc1"
+          href: "abc1.html"
+        - text: "abc2"
+          href: "abc2.qmd"
 page-footer: 
      right: 
        - icon: github

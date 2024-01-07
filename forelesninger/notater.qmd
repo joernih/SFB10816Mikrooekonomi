@@ -330,11 +330,11 @@ p_3_sd
 
 ---
 
-- Anta at prisen er *lavere* enn likevektspris (makspris).
+- Anta at prisen er *under* enn likevektspris (makspris).
   - Overskuddsetterspørsel: $X^D > X^S$
 
 ```{r, echo=F}
-p_3_sd
+p_3_sdo
 ```
 
 ---
@@ -343,7 +343,7 @@ p_3_sd
   - Overskuddstilbud: $X^S > X^D$
 
 ```{r, echo=F}
-p_3_sd
+p_3_sdo
 ```
 
 ---

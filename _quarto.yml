@@ -10,6 +10,7 @@ project:
     - "seminar/oppgaver/*.qmd"
     - "utskrifter/utskrifter.qmd"
     - "log.qmd"
+    - "abc2.qmd"
 
 website:
   title: "Mikroøkonomi (SFB10816)"

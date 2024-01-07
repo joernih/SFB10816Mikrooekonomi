@@ -9,28 +9,78 @@ format:
 
 ```{r, echo=F}
 md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
+fdm <- paste0(rprojroot::find_rstudio_root_file(),'/seminar/oppgaver/mate.py')
+reticulate::source_python(fdm)
+eqpar <- list(meql=reticulate::py$modeql,meqs=reticulate::py$modeqs)
+eql <- eqpar$meql
 ```
+
 
 Uke `r md$regnv$sem1[2]`, ansvarlig: `r md$regnv$ansv[1]`
 
 ::: {.content-visible when-profile="internal"}
-## Oppgave 1: Modeller i mikroøkonomi
+## Del I: Modeller i mikroøkonomi
 ### Bruk av eksogene og endogende variabler
 ### Økonomiske modeller og bruk av matemaikk
-## Oppgave 2: Brøkregning og derivasjon
+## Del II: Brøkregning og derivasjon
 ### Brøkregning
+Forenkl disse uttrykkene
+
+a. ) $$`r eql$op1a[1]`$$
+a. ) $$`r eql$op1b[1]`$$
+a. ) $$`r eql$op1c[1]`$$
+a. ) $$`r eql$op1d[1]`$$
+a. ) $$`r eql$op1e[1]`$$
+a. ) $$`r eql$op1f[1]`$$
+a. ) $$`r eql$op1g[1]`$$
+
+Løs for $y$:
+
+a. ) $$y^2 =`r eql$op2a[1]`$$
+a. ) $$y^{0.5}=`r eql$op2b[1]`$$
+
+
 ### Derivasjon
 ### En variabel
+Deriver med hensyn på $x$:
+
+a. ) $$`r eql$op3a[1]`$$
+a. ) $$`r eql$op3b[1]`$$
+a. ) $$`r eql$op3c[1]`$$
+a. ) $$`r eql$op3d[1]`$$
+a. ) $$`r eql$op3e[1]`$$
+
 ### To variabler
+Deriver med hensyn på $x$ og $y$
+
+a. ) $$`r eql$op3f[1]`$$
+a. ) $$`r eql$op3g[1]`$$
+a. ) $$`r eql$op3h[1]`$$
+
+Deriver med hensyn på $x_1$ og $x_2$
+
+a. ) $$`r eql$op3i[1]`$$
+
 ### Diffrensiering
-## Oppgave 3: System av ligninger og optimering
+Ta utgangspunkt i produktfunksjonen 
+$$
+\overline{x} = f(K,N)
+$$
+a. ) total differensier.
+b. ) vis at kan skrives som
+
+## Del III: System av ligninger og optimering
+
 ### System av likninger
+Løse systemet av likninger for $x_1$ og $x_2$
+\begin{eqnarray*}
+MSB=\frac{x_2}{x_1} = 2  \\
+10x_{1}+5x_{2}=40
+\end{eqnarray*}
+
 ### Lagrange-metode
+Løs oppgaven ved hjelp av Lagrange
+
+
 :::
-
-```{r, echo=F}
-knitr::knit_exit()
-```
-
-
 
