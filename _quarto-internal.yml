@@ -39,6 +39,8 @@ website:
         href: "utskrifter/utskrifter.qmd"
       - text: "Endringslog"
         href: "log.qmd"
+      - text: "Teknisk notat"
+        href: "teknisk.qmd"
       - text: "Teknisk"
         menu:
         - text: "abc1"

@@ -21,7 +21,7 @@ kableExtra::kbl(df_t,col.names=c("#","Tema","Kapittel","Ansvarlig","Ukenr","Dato
 ## Regneverksted
 ```{r, echo=F}
 semnr <- 1
-kableExtra::kbl(df_r,col.names=c("#","Tema")) 
+kableExtra::kbl(df_r,col.names=c("#","Tema","Ukenr")) 
 ```
 
 ```{r, echo=F}

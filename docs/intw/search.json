@@ -158,7 +158,7 @@
     "href": "timeplan/timeplan.html#regneverksted",
     "title": "Timeplan",
     "section": "Regneverksted",
-    "text": "Regneverksted\n\n\n\n\n\n#\nTema\n\n\n\n\n1\nMatematikk for mikroøkonomi\n\n\n2\nIntroduksjon til markedsteori\n\n\n3\nProdusentteori på kort og lang sikt\n\n\n4\nKonsumentteori\n\n\n5\nMarkedsteori: Fullkommen konkurranse\n\n\n6\nMarkedsteori: Ufullkommen konkurranse og andre temaer:"
+    "text": "Regneverksted\n\n\n\n\n\n#\nTema\nUkenr\n\n\n\n\n1\nMatematikk for mikroøkonomi\n3\n\n\n2\nIntroduksjon til markedsteori\n4\n\n\n3\nProdusentteori på kort og lang sikt\n6\n\n\n4\nKonsumentteori\n9\n\n\n5\nMarkedsteori: Fullkommen konkurranse\n14\n\n\n6\nMarkedsteori: Ufullkommen konkurranse og andre temaer:\n16"
   },
   {
     "objectID": "timeplan/timeplan.html#oppgaver",
@@ -494,7 +494,7 @@
     "href": "forelesninger/notater.html#alternativkostnad",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Alternativkostnad",
-    "text": "Alternativkostnad\n\nDette er et helt sentralt begrep i økonomifaget.\nBruk av ressurser tilfører en verdi som skal dekke menneskelige behov.\nRessurser har en alternativ anvendelse. Den beste alternative anvendelse har også en verdi. Denne verdien tapes når vi bruker ressursen til et bestemt formål.\nDette tapet er alternativkostnaden.\n\nAlternativkostnaden er altså verdien av beste alternative anvendelse.\n\n\n\n\n\n\n\n\nflowchart LR\n    A[abc] --&gt;|abc| a \n    B[abc] --&gt;|abc| b\n    C[abc] --&gt;|abc| c"
+    "text": "Alternativkostnad\n\nDette er et helt sentralt begrep i økonomifaget.\nBruk av ressurser tilfører en verdi som skal dekke menneskelige behov.\nRessurser har en alternativ anvendelse. Den beste alternative anvendelse har også en verdi. Denne verdien tapes når vi bruker ressursen til et bestemt formål.\nDette tapet er alternativkostnaden.\n\nAlternativkostnaden er altså verdien av beste alternative anvendelse."
   },
   {
     "objectID": "forelesninger/notater.html#to-sentrale-spørsmål-spørsmål-1",
@@ -571,7 +571,7 @@
     "href": "forelesninger/notater.html#markedslikevekt",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Markedslikevekt",
-    "text": "Markedslikevekt\n\nUtgangspunkt: markedets E-kurve og T-kurve.\nLikevekt: dersom ingen aktører ønsker å endre den eksisterende økonomiske tilpasning.\n\n\\(X^S = X^D\\)\n\n\n\n\nMerk: Ingenting i modellen som tilsier stabilitet. Men utenfor modellen kan vi resonnere omkring markedskrefter, slik de er beskrevet av Adam Smith."
+    "text": "Markedslikevekt\n\nUtgangspunkt: markedets E-kurve og T-kurve.\nLikevekt: dersom ingen aktører ønsker å endre den eksisterende økonomiske tilpasning.\n\n\\(X^S = X^D\\)\nOverskuddsetterspørsel: \\(X^D &gt; X^S\\)\n\nAnta at prisen er lavere enn likevektspris (makspris).\n\nOverskuddstilbud: \\(X^S &gt; X^D\\)\n\nAnta at prisen er over likevektsprisen (minpris).\nIngenting i modellen som tilsier stabilitet. Men utenfor modellen kan vi resonnere omkring markedskrefter, slik de er beskrevet av Adam Smith."
   },
   {
     "objectID": "forelesninger/notater.html#konsument--produsent-og-sammfunnsøkonomisk-overskudd",
@@ -1013,5 +1013,12 @@
     "title": "Seminar 1: Matematikk for mikroøkonomi",
     "section": "Del III: System av ligninger og optimering",
     "text": "Del III: System av ligninger og optimering\n\nSystem av likninger\nLøse systemet av likninger for \\(x_1\\) og \\(x_2\\) \\[\\begin{eqnarray*}\nMSB=\\frac{x_2}{x_1} = 2  \\\\\n10x_{1}+5x_{2}=40\n\\end{eqnarray*}\\]\n\n\nLagrange-metode\nLøs oppgaven ved hjelp av Lagrange"
+  },
+  {
+    "objectID": "teknisk.html",
+    "href": "teknisk.html",
+    "title": "Derivasjonregler",
+    "section": "",
+    "text": "Derivasjonregler\n\n\nDifferensiering\n\n\nLagrange-metode"
   }
 ]

@@ -21,14 +21,14 @@ footer: https://joernih.github.io/SFB10816Mikrooekonomi/
 #    number-sections: true
 ---
 
-```{r, echo=F, warning=F, message=F, eval=T}
+```{r, echo=F, warning=F, message=F, eval=T, results='hide'}
 library(dplyr)
 library(dplyr)
 library(ggplot2)
 library(econocharts)
 md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
 # ../data-raw/metadata.json
-source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/econplot.R'))
+#source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/econplot.R'))
 source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
 ```
 
@@ -183,14 +183,7 @@ knitr::knit_exit()
 - Dette tapet er alternativkostnaden.
    - *Alternativkostnaden er altså verdien av beste alternative anvendelse.*
 
-<!--![](drawio/alternativ.svg){width=300} -->
-
-```{mermaid}
-flowchart LR
-    A[abc] -->|abc| a 
-    B[abc] -->|abc| b
-    C[abc] -->|abc| c
-```
+[](drawio/alternativ.svg){width=300}
 
 ---
 
@@ -291,10 +284,10 @@ flowchart LR
   - Flere forhold holdes her konstante. Vi ser kun på endringer i prisen på varen. En endring i denne vil flytte oss langs kurven.
   - En endring i konstantene vil føre til skift i kurven.
 - Fra et individs etterspørsel til markedsetterspørsel.
+
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
-#p1 <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/ekurve.png')
-#knitr::include_graphics(p1)
-grid.arrange(p_3_d1[[1]],p_3_d2[[1]],nrow = 1,top='+')
+p1 <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/ekurve.png')
+knitr::include_graphics(p1)
 ```
 
 ---
@@ -310,9 +303,8 @@ grid.arrange(p_3_d1[[1]],p_3_d2[[1]],nrow = 1,top='+')
 - Fra en bedrifts tilbud til markedstilbud.
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
-#p1 <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/tkurve.png')
-#knitr::include_graphics(p1)
-grid.arrange(p_3_s1[[1]],p_3_s2[[1]],nrow = 1)
+p1 <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/tkurve.png')
+knitr::include_graphics(p1)
 ```
 
 
@@ -322,28 +314,15 @@ grid.arrange(p_3_s1[[1]],p_3_s2[[1]],nrow = 1)
 
 - Utgangspunkt: markedets E-kurve og T-kurve.
 - Likevekt: dersom ingen aktører ønsker å endre den eksisterende økonomiske tilpasning.
-  -  $X^S = X^D$
-```{r, echo=F}
-p_3_sd
-```
-- Merk: Ingenting i modellen som tilsier stabilitet. Men utenfor modellen kan vi resonnere omkring markedskrefter, slik de er beskrevet av Adam Smith.
+	-  $X^S = X^D$
+	- Overskuddsetterspørsel: $X^D > X^S$
+- Anta at prisen er lavere enn likevektspris (makspris).
+	- Overskuddstilbud: $X^S > X^D$
+- Anta at prisen er over likevektsprisen (minpris).
+- Ingenting i modellen som tilsier stabilitet. Men utenfor modellen kan vi resonnere omkring markedskrefter, slik de er beskrevet av Adam Smith.
 
----
-
-- Anta at prisen er *under* enn likevektspris (makspris).
-  - Overskuddsetterspørsel: $X^D > X^S$
-
-```{r, echo=F}
-p_3_sdo
-```
-
----
-
-- Anta at prisen er *over* likevektsprisen (minpris).
-  - Overskuddstilbud: $X^S > X^D$
-
-```{r, echo=F}
-p_3_sdo
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+knitr::include_graphics("drawio/telikevekt.png")
 ```
 
 ---
@@ -363,7 +342,7 @@ SO=PO+KO
 ### Konsumentoverskudd
 #### Betalingsvillighet
 - I konsumentteorien var vi opptatt av å maksimere nytte. Men hvordan måle nytte? Hvor mye du er villig til å betale for en vare kan fortelle noe om nytten du oppnår. Det kalles:
-  - Betalingsvillighet: $B$
+	- Betalingsvillighet: $B$
 - Betalingsvilligheten avhenger av hvor mye du har i utgangspunktet:
 $\Rightarrow B(X)$
 
@@ -375,9 +354,8 @@ $\Rightarrow B(X)$
 	- $\Rightarrow KO(X) = B(X) – pX$
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-#konso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/konso.png')
-#knitr::include_graphics(konso)
-p_3_ko 
+konso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/konso.png')
+knitr::include_graphics(konso)
 ```
 
 ---
@@ -388,10 +366,10 @@ p_3_ko
 - Produsentoverskudd defineres som summen av den ekstrainntekten som produsenten får, av å selge til en pris som er høyere enn den laveste de ville vært villige til å akseptere.
 - Det vil si: differensen mellom produsentens samlede salgsinntekter og variable kostnader.
 
+
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-#prodo <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodo.png')
-#knitr::include_graphics(prodo)
-p_3_po 
+prodo <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/konso.png')
+knitr::include_graphics(prodo)
 ```
 
 ---
@@ -403,9 +381,8 @@ p_3_po
 \end{equation*}
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-#prodo <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/mfk_so.png')
-#knitr::include_graphics(prodo)
-p_3_kopo
+prodo <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/konso.png')
+knitr::include_graphics(prodo)
 ```
 
 - Er løsningen til dette problemet tilfredsstilt i en markedsmodell med fullkommen konkurranse? JA (vi vil se nærmere på løsningen senere i dette kurset)!
@@ -420,16 +397,16 @@ La oss se på noen av disse forholdene.
 **Tilbudskurven**
 
 - Ble tegnet for:
-  - gitt teknologi for bedriften,
-  - gitte priser på innsatsfaktorene.
+	- gitt teknologi for bedriften,
+	- gitte priser på innsatsfaktorene.
 
 **Etterspørselskurven**
 
 - Ble tegnet for:
-  - en gitt behovsstruktur for konsumenten,
-  - gitt samlet inntekt for konsumenten,
-  - gitt inntektsfordeling,
-  - gitte priser på andre goder.
+	- en gitt behovsstruktur for konsumenten,
+	- gitt samlet inntekt for konsumenten,
+	- gitt inntektsfordeling,
+	- gitte priser på andre goder.
 
 ---
 
@@ -439,7 +416,7 @@ La oss se på noen av disse forholdene.
 La oss se på et eksempel der lavere pris på innsatsfaktorene har ført til et positivt skift i tilbudskurven.
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-p_3_sdcs1
+knitr::include_graphics("drawio/telikevekt_ke.png")
 ```
 
 ---
@@ -447,8 +424,8 @@ p_3_sdcs1
 ## Effekten av en avgift
 
 - En avgift kan ha flere hensikter, men spesielt er to ting viktig:
-  i) Inntekt for staten
-  ii) Endrer markedsresultatet. Aktuelt ved behov for korrigering av nåværende situasjon (tilpasning).
+	i) Inntekt for staten
+	ii) Endrer markedsresultatet. Aktuelt ved behov for korrigering av nåværende situasjon (tilpasning).
 - Avgiften kan pålegges kjøperne og selgerne.
 
 ---
@@ -459,14 +436,13 @@ kostnadene til bedriften stige. Dette skifter isolert sett
 tilbudskurven innover. Den vertikale størrelsen på
 skiftet er lik avgiften $\tau$.
 Resultater:
-  - Staten får inn $\tau$ kr. pr. enhet.
-  - Konsumenten betaler: $P^K$
-  - Produsenten mottar: $P^P$
+- Staten får inn $\tau$ kr. pr. enhet.
+- Konsumenten betaler: $P^K$
+- Produsenten mottar: $P^P$
 Produsenten ”sender” nå avgiften til staten, men begge bærer byrden!!
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-#knitr::include_graphics("drawio/telikevekt_avg.png")
-p_3_sdcs2
+knitr::include_graphics("drawio/telikevekt_avg.png")
 ```
 
 ---
@@ -476,8 +452,7 @@ p_3_sdcs2
 - Maksimalpris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et makspris som er *lavere* enn markedsprisen.
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-#knitr::include_graphics("drawio/telikevekt_max.png")
-p_3_reg2 
+knitr::include_graphics("drawio/telikevekt_max.png")
 ```
 
 ---
@@ -485,8 +460,7 @@ p_3_reg2
 - Minstrepris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et minstepris som er *høyere* enn markedsprisen.
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
-#knitr::include_graphics("drawio/telikevekt_min.png")
-p_3_reg3 
+knitr::include_graphics("drawio/telikevekt_min.png")
 ```
 
 ---
@@ -499,9 +473,20 @@ p_3_reg3
 - Forutsetninger: to produkter, gitt mengde produksjonsfaktorer (kort sikt) og produksjonsteknologien er konstant.
 
 ```{r, echo=FALSE, out.width="60%", fig.cap=""}
-#knitr::include_graphics("drawio/pmk.png")
-p_3_ppf[[1]]
+knitr::include_graphics("drawio/pmk.png")
 ```
+
+---
+
+## Appendiks 
+
+### Alle figurene samlet
+
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+knitr::include_graphics("drawio/intro_alle.png")
+```
+
+
 
 ```{r, eval=T}
 knitr::knit_exit()
