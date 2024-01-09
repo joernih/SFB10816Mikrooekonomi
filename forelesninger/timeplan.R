@@ -29,29 +29,22 @@ Tema=temav,
 Uke=ukenr
 )
 df_r
-### Oppgaver ###
-oppgaver <- c(
-"1.4-1.8, 3.1-3.4, 3.5-3.9, 9.1, 9.2-9.3", 
-"3.5-3.9, 9.2-9.3", 
-"3.12, 9.4", 
-"4.1-4.3, 5.2, 5.4 og 5.3", 
-"5.1, 6.1, 6.4, 6.3", 
-"7.1, 7.3-7.7", 
-"8.3, 8.5-8.7 (evt. 8.1, 8,2 og 8.4)", 
-"11.3, 11.4, 12.1, 12.2", 
-"20.4, 20.5, 20.3")
-gang1 <- paste(oppgaver[1])
-gang2 <- paste(oppgaver[2])
-gang3 <- paste(oppgaver[3])
-gang4 <- paste(oppgaver[4])
-gang5 <- paste(oppgaver[5])
-gang6 <- paste(oppgaver[6])
-gang7 <- paste(oppgaver[7])
-gang8 <- paste(oppgaver[8])
-gang9 <- paste(oppgaver[9])
-gang <- c(gang1,gang2,gang3,gang4,gang5,gang6,gang7,gang8,gang9)
-dagv <- c(rep('Torsdag',9))
+oppgaver_bok <- c(
+"1.1, 1.2, 1.3 1.5, 1.6, 1.9, 1.12, 1.14", 
+"3.2, 3.3, 3.5, 3.6, 3.7, 3.8", 
+"4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.8", 
+"5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 5.10",
+"6.2, 6.3, 6.4, 6.5, 6.6", 
+"7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8",
+"8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.7",
+"9.1, 9.2, 9.3, 9.4",
+"10.1, 10.2, 10.3, 10.4",
+"11.1 (d,feil i fasit på grafisk illustrasjon), 11.2, 11.3, 11.4",
+"12.1, (12.2, om du har tid)",
+"13.1, 13.2, 13,3, 13.4, og 13.5",
+"14.1, 14.2",
+"15.1, 15.2")
+length(oppgaver_bok)
 
-df_o <- data.frame(Oppgaver_bok=gang)
-
-
+df_o <- data.frame(Kapittel=c(1,3:15),
+		 Oppgaver=oppgaver_bok)

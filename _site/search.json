@@ -186,7 +186,7 @@
     "href": "forelesninger/notater.html#hva-handler-økonomi-om",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Hva handler økonomi om?",
-    "text": "Hva handler økonomi om?\n\nHva handler økonomi om?\nMikroøkonomi er en del av samfunnsøkonomi. Hvilke temaer forbinder du med samfunnsøkonomi?\nEn kort historie om en tur i butikken.\n\nHvilke varer skal du kjøpe?\nHvor mye skal du kjøpe av de ulike varene?\n\nHva har økonomi med dette å gjøre? Tre relevante forhold:\n\n\nVarene må ha blitt produsert.\n\n\nDu må tilby noe for å bytte til deg varer. Betalingsmiddel\n\nog handel.\n\nDu må ha skaffet betalingsmiddelet.\n\n\n\nAltså …\n\nSelv i den «enkle» historien er det:\n\nFlere beslutninger involvert.\nFlere markeder involvert.\n\nMen: hvorfor får vi ikke alle varer vi vil ha? Rundt oss ser vi (og opplever selv) stor etterspørsel.Vi trenger jo en rekke ting, også i Norge.\n\nSvaret er: KNAPPHET!"
+    "text": "Hva handler økonomi om?\n\nHva handler økonomi om?\nMikroøkonomi er en del av samfunnsøkonomi. Hvilke temaer forbinder du med samfunnsøkonomi?\nEn kort historie om en tur i butikken.\n\nHvilke varer skal du kjøpe?\nHvor mye skal du kjøpe av de ulike varene?\n\nHva har økonomi med dette å gjøre? Tre relevante forhold:\n\n\nVarene må ha blitt produsert.\n\n\nDu må tilby noe for å bytte til deg varer. Betalingsmiddel\n\nog handel.\n\nDu må ha skaffet betalingsmiddelet."
   },
   {
     "objectID": "forelesninger/notater.html#definisjon",
@@ -298,14 +298,14 @@
     "href": "forelesninger/notater.html#markedslikevekt",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Markedslikevekt",
-    "text": "Markedslikevekt\n\nUtgangspunkt: markedets E-kurve og T-kurve.\nLikevekt: dersom ingen aktører ønsker å endre den eksisterende økonomiske tilpasning.\n\n\\(X^S = X^D\\)\nOverskuddsetterspørsel: \\(X^D &gt; X^S\\)\n\nAnta at prisen er lavere enn likevektspris (makspris).\n\nOverskuddstilbud: \\(X^S &gt; X^D\\)\n\nAnta at prisen er over likevektsprisen (minpris).\nIngenting i modellen som tilsier stabilitet. Men utenfor modellen kan vi resonnere omkring markedskrefter, slik de er beskrevet av Adam Smith."
+    "text": "Markedslikevekt\n\nUtgangspunkt: markedets E-kurve og T-kurve.\nLikevekt: dersom ingen aktører ønsker å endre den eksisterende økonomiske tilpasning.\n\n\\(X^S = X^D\\)"
   },
   {
     "objectID": "forelesninger/notater.html#konsument--produsent-og-sammfunnsøkonomisk-overskudd",
     "href": "forelesninger/notater.html#konsument--produsent-og-sammfunnsøkonomisk-overskudd",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Konsument- produsent og sammfunnsøkonomisk overskudd",
-    "text": "Konsument- produsent og sammfunnsøkonomisk overskudd\n\nI samfunnsøkonomi er vi naturlig nok opptatt av å vurdere om et marked eller et prosjekt eller politikkforslag er samfunnsøkonomisk lønnsomt. Når alt kommer til alt er det jo høyest mulig velferd for individene i samfunnet som er målet.\nFor å vurdere velferden brukes begrepet samfunnsøkonomisk overskudd (SO).\nDette består av konsumentoverskudd (KO) og produsentoverskudd (PO)\nVi har derfor at: \\[\\begin{equation*}\nSO=PO+KO\n\\end{equation*}\\]"
+    "text": "Konsument- produsent og sammfunnsøkonomisk overskudd\n\nI samfunnsøkonomi er vi naturlig nok opptatt av å vurdere om et marked eller et prosjekt eller politikkforslag er samfunnsøkonomisk lønnsomt. Når alt kommer til alt er det jo høyest mulig velferd for individene i samfunnet som er målet.\nFor å vurdere velferden brukes begrepet samfunnsøkonomisk overskudd (SO).\nDette består av konsumentoverskudd (KO) og produsentoverskudd (PO)\nVi har derfor at SO er gitt ved: \\[\\begin{equation*}\nSO=PO+KO\n\\end{equation*}\\]"
   },
   {
     "objectID": "forelesninger/notater.html#komparativ-statikk-skift-i-kurvene",
@@ -361,7 +361,7 @@
     "href": "forelesninger/notater.html#kursgodkjennelse",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Kursgodkjennelse",
-    "text": "Kursgodkjennelse\nBestår av et obligatorisk arbeidskrav (som må være bestått) for å kunne gå opp til skriftlig eksamen.\nObligatorisk innleveringsoppgaver\nUtlevert: 10.3.\nInnleveringsfrist: 31.3.\nEksamen\nEksamen avholdes den 03.05.2024, 09:00, 4 timer.\nIndividuell, skriftlig firetimers eksamen.\nKarakterregel: A-F.\nHjelpemidler: Godkjent kalkulator."
+    "text": "Kursgodkjennelse\nBestår av et obligatorisk arbeidskrav (som må være bestått) for å kunne gå opp til skriftlig eksamen.\nObligatorisk innleveringsoppgaver\nUtlevert: 6.3.\nInnleveringsfrist: 31.3.\nEksamen\nEksamen avholdes den 3.5.2024(?), 09:00, 4 timer.\nIndividuell, skriftlig firetimers eksamen.\nKarakterregel: A-F.\nHjelpemidler: Godkjent kalkulator."
   },
   {
     "objectID": "forelesninger/notater.html#produsentens-rolle-teknologiske-forhold-og-produksjon",

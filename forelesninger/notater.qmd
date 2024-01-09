@@ -49,7 +49,7 @@ kableExtra::kbl(df_t,col.names=klnt) %>% kableExtra::kable_paper(full_width = F)
 ## Anbefalte oppgaver
 
 ```{r, eval=T, echo=F}
-klno <- c("Antall")
+klno <- c("Kapittel","Oppgavenummer")
 kableExtra::kbl(df_o,col.names=klno) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=24)
 ```
 
@@ -338,8 +338,13 @@ SO=PO+KO
 
 ---
 
-
 ### Konsumentoverskudd
+
+- I konsumentteorien var vi opptatt av å maksimere nytte. Men hvordan måle nytte? Hvor mye du er villig til å betale for en vare kan fortelle noe om nytten du oppnår. Det kalles:- Betalingsvillighet: $B$
+- Betalingsvilligheten avhenger av hvor mye du har i utgangspunktet: $\Rightarrow B(X)$
+- Sammenhengen mellom betalingsvillighet og konsumentoverskuddet**
+- Det et imidlertid forskjell på det konsumenten er villig til å betale, og det han faktisk betaler. Det er denne differensen som er konsumentoverskuddet:
+	- $\Rightarrow KO(X) = B(X) – pX$
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 konso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/konso.png')
@@ -350,7 +355,12 @@ knitr::include_graphics(konso)
 
 ### Produsentoverskudd
 
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
+- I produksjonsteorien var vi blant annet opptatte av at bedriftene maksimerer fortjeneste. Dette er enkelt å måle som differensen mellom inntekter og utgifter.
+- Produsentoverskudd defineres som summen av den ekstrainntekten som produsenten får, av å selge til en pris som er høyere enn den laveste de ville vært villige til å akseptere.
+- Det vil si: differensen mellom produsentens samlede salgsinntekter og variable kostnader.
+
+
+```{r, echo=FALSE, out.width="40%", fig.cap=""}
 prodo <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodo.png')
 knitr::include_graphics(prodo)
 ```
@@ -367,48 +377,7 @@ knitr::include_graphics(prodo)
 
 - Er løsningen til dette problemet tilfredsstilt i en markedsmodell med fullkommen konkurranse? JA (vi vil se nærmere på løsningen senere i dette kurset)!
 
-
-
-```{r}
-knitr::knit_exit()
-```
-
-
-
-#### Betalingsvillighet
-
-- I konsumentteorien var vi opptatt av å maksimere nytte. Men hvordan måle nytte? Hvor mye du er villig til å betale for en vare kan fortelle noe om nytten du oppnår. Det kalles:
-  - Betalingsvillighet: $B$
-- Betalingsvilligheten avhenger av hvor mye du har i utgangspunktet: $\Rightarrow B(X)$
-```{r}
-
-```
-
 ---
-
-**Sammenhengen mellom betalingsvillighet og konsumentoverskuddet**
-
-- Det et imidlertid forskjell på det konsumenten er villig til å betale, og det han faktisk betaler. Det er denne differensen som er konsumentoverskuddet:
-	- $\Rightarrow KO(X) = B(X) – pX$
-
-
----
-
-### Produsentoverskudd
-
-- I produksjonsteorien var vi blant annet opptatte av at bedriftene maksimerer fortjeneste. Dette er enkelt å måle som differensen mellom inntekter og utgifter.
-- Produsentoverskudd defineres som summen av den ekstrainntekten som produsenten får, av å selge til en pris som er høyere enn den laveste de ville vært villige til å akseptere.
-- Det vil si: differensen mellom produsentens samlede salgsinntekter og variable kostnader.
-
-
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
-prodo <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/konso.png')
-knitr::include_graphics(prodo)
-```
-
----
-
-
 
 ## Komparativ statikk/ skift i kurvene
 
