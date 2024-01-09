@@ -1,6 +1,6 @@
 ---
 title: "Mikroøkonomi (SFB10816)"
-subtitle: "Forelesningsnotater (o for oversiksbilde)"
+subtitle: "Forelesningsnotater (tast o for oversiktsbilde, e for utskriftsvennlig versjon)"
 #`r paste("Oppdatert:",Sys.Date())`
 author: "Jørn I. Halvorsen og Joachim Thøgersen"
 date: "`r Sys.Date()`"
@@ -149,7 +149,7 @@ knitr::knit_exit()
 - Behov avdekkes gjennom preferanser, som igjen kan avdekkes via etterspørsel.
 - Kan behov skapes? Jepp. Men er slike skapte behov mer eller mindre viktig enn ”andre” behov, gitt knappe ressurser.
 - En måte å skjære gjennom denne problemstillingen på er å legge til grunn *konsumentsuverenitet*.
-- ”Folk vet best selv hva som er best for dem”.
+  - ”Folk vet best selv hva som er best for dem”.
 
 ---
 
@@ -170,7 +170,6 @@ knitr::knit_exit()
 
 - Ettersom det er knapphet på ressurser kombinert med store behov, er det ønskelig å bruke ressursene smartest mulig.
 <br> $\Rightarrow$  Sikre at utnyttelsen av ressursene er optimal.
-
 - Merk at ressurser ofte har alternativ anvendelse. Dette innebærer at dersom vi bruker en ressurs til å produsere en vare, kan ikke den samme ressursen brukes samtidig til å produsere en annen vare. Av og til ikke i det hele tatt.
 
 ---
@@ -441,9 +440,9 @@ knitr::include_graphics("drawio/telikevekt_f.png")
 	ii) Endrer markedsresultatet. Aktuelt ved behov for korrigering av nåværende situasjon (tilpasning).
 - Avgiften kan pålegges kjøperne og selgerne.
 
----
+- Anta nå at avgiften $\tau$ blir pålagt selgerne
 
-Anta nå at avgiften $\tau$ blir pålagt selgerne
+---
 
 - Dersom avgiften pålegges produsentene, vil
 kostnadene til bedriften stige. Dette skifter isolert sett
@@ -461,20 +460,27 @@ knitr::include_graphics("drawio/telikevekt_avg.png")
 
 ## Maksimal- og minsteprisen
 
-- Maksimalpris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et makspris som er *lavere* enn markedsprisen.
 
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+Maksimalpris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et makspris som er *lavere* enn markedsprisen.
+<br>
+<br>
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
 knitr::include_graphics("drawio/telikevekt_max.png")
 ```
+:::
 
----
-
-- Minstrepris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et minstepris som er *høyere* enn markedsprisen.
-
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
+::: {.column width="50%"}
+Minstrepris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et minstepris som er *høyere* enn markedsprisen.
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
 knitr::include_graphics("drawio/telikevekt_min.png")
 ```
+:::
 
+::::
 ---
 
 ## Produksjonsmulighetskurven (PMK)
