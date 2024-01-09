@@ -9,7 +9,7 @@ format:
     chalkboard: true
     smaller: true
     toc-depth: 3
-    toc: true
+    toc: false
 #execute: 
 #  cache: false
 footer: https://joernih.github.io/SFB10816Mikrooekonomi/
@@ -115,6 +115,8 @@ knitr::knit_exit()
   - og handel.
   - (iii) Du må ha skaffet betalingsmiddelet.
 
+---
+
 **Altså ...**
 
 - Selv i den «enkle» historien er det:
@@ -181,7 +183,9 @@ knitr::knit_exit()
 - Dette tapet er alternativkostnaden.
    - *Alternativkostnaden er altså verdien av beste alternative anvendelse.*
 
-[](drawio/alternativ.svg){width=300}
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+knitr::include_graphics("drawio/alternativ.svg")
+```
 
 ---
 
@@ -309,15 +313,17 @@ knitr::include_graphics(p1)
 - Utgangspunkt: markedets E-kurve og T-kurve.
 - Likevekt: dersom ingen aktører ønsker å endre den eksisterende økonomiske tilpasning.
 	-  $X^S = X^D$
-	- Overskuddsetterspørsel: $X^D > X^S$
-- Anta at prisen er lavere enn likevektspris (makspris).
-	- Overskuddstilbud: $X^S > X^D$
-- Anta at prisen er over likevektsprisen (minpris).
-- Ingenting i modellen som tilsier stabilitet. Men utenfor modellen kan vi resonnere omkring markedskrefter, slik de er beskrevet av Adam Smith.
 
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
+```{r, echo=FALSE, out.width="50%", fig.align="left", fig.cap=""}
 knitr::include_graphics("drawio/telikevekt.png")
 ```
+---
+
+- Anta at prisen er lavere enn likevektspris (makspris).
+  - Overskuddsetterspørsel: $X^D > X^S$
+- Anta at prisen er over likevektsprisen (minpris).
+  - Overskuddstilbud: $X^S > X^D$
+- Merk: Ingenting i modellen som tilsier stabilitet. Men utenfor modellen kan vi resonnere markedskreftene alltid bringer oss tilbake til likevekt, slik det er beskrevet av Adam Smith.
 
 ---
 
@@ -341,7 +347,9 @@ SO=PO+KO
   - Betalingsvillighet: $B$
 - Betalingsvilligheten avhenger av hvor mye du har i utgangspunktet: $\Rightarrow B(X)$
 
-#### Sammenhengen mellom betalingsvillighet og konsumentoverskuddet
+---
+
+**Sammenhengen mellom betalingsvillighet og konsumentoverskuddet**
 
 - Det et imidlertid forskjell på det konsumenten er villig til å betale, og det han faktisk betaler. Det er denne differensen som er konsumentoverskuddet:
 	- $\Rightarrow KO(X) = B(X) – pX$
@@ -350,6 +358,8 @@ SO=PO+KO
 konso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/konso.png')
 knitr::include_graphics(konso)
 ```
+
+---
 
 ### Produsentoverskudd
 
@@ -366,6 +376,7 @@ knitr::include_graphics(prodo)
 ---
 
 ### Samfunnsøkonomisk overskudd og fullkommen konkurranse
+
 - Maksimalt SO finner vi ved 
 \begin{equation*}
 \underset{X}{\text{Maks}SO}=PO+KO=(pX-CV(x))+(B(x)-pX)
@@ -382,6 +393,8 @@ knitr::include_graphics(prodo)
 
 - Vi vet at tilbuds- og etterspørselskurvene er konstruert under en antagelse om at flere forhold antas konstante. Dersom det skjer endringer i noen av disse forholdene, vil kurvene forskyves i diagrammet.
 La oss se på noen av disse forholdene.
+
+---
 
 **Tilbudskurven**
 
@@ -460,18 +473,6 @@ knitr::include_graphics("drawio/telikevekt_min.png")
 ```{r, echo=FALSE, out.width="60%", fig.cap=""}
 knitr::include_graphics("drawio/pmk.png")
 ```
-
----
-
-## Appendiks 
-
-### Alle figurene samlet
-
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
-knitr::include_graphics("drawio/intro_alle.png")
-```
-
-
 
 ```{r, eval=T}
 knitr::knit_exit()
