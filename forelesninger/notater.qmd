@@ -237,9 +237,9 @@ knitr::include_graphics("drawio/alternativ.svg")
 
 - Det finnes flere måter å strukturere økonomifaget på. Disiplinen består av en rekke underområder.
   - Mikroøkonomi: Søker å forklare aktørers beslutninger, tilpasning og interaksjon.
-  - Aktører: Bedrifter, konsumenter, markeder.
+  	- Aktører: Bedrifter, konsumenter, markeder.
   - Makroøkonomi: Søker å studere og forklare aggregerte størrelser. Økonomien under ett.
-  - Makroøkonomi kan deles inn i konjunkturteori og økonomisk vekst.
+  	- Makroøkonomi kan deles inn i konjunkturteori og økonomisk vekst.
 
 
 # Kapittel 3: En markedsmodell med fullkommen konkurranse
@@ -250,7 +250,7 @@ knitr::include_graphics("drawio/alternativ.svg")
 
 - Bytteøkonomi og markedsøkonomi: I en markedsøkonomi (pengeøkonomi) byttes varer *indirekte*.
 - Et marked består av en tilbudsside og en etterspørselsside.
-- Vi skal nå se på den enkleste markedsformen i økonomisk teori.
+- Vi skal nå se på den enkleste markedsformen i økonomisk teori: Markedsmodell med fullkommen konkurranse
 - Markedsformen er likevel nyttig:
   - Selvstendig analyseapparat.
   - Kan utvides langs mange dimensjoner.
@@ -292,7 +292,7 @@ knitr::include_graphics(p1)
 ## Markedstilbud
 
 - Tilbud av varer og tjenester. Tilbudet utgjøres av bedriftene eller produsentene. Tilbudet er altså produksjonen.
-- Hva bestemmer tilbudet? Pris på ferdigvare og innsatsfaktorer. Matematisk på tavla.
+- Hva bestemmer tilbudet? Pris på ferdigvare og innsatsfaktorer. 
 - Tilbudsloven:
   - Økt pris $\rightarrow$ økt tilbud, cet.par. Kurve.
   - Endringer i prisen på varen fører til bevegelse langs kurven.
@@ -339,11 +339,10 @@ SO=PO+KO
 
 ### Konsumentoverskudd
 
-- I konsumentteorien var vi opptatt av å maksimere nytte. Men hvordan måle nytte? Hvor mye du er villig til å betale for en vare kan fortelle noe om nytten du oppnår. Det kalles:- Betalingsvillighet: $B$
+- Hvor mye du er villig til å betale for kalles Betalingsvillighet.
 - Betalingsvilligheten avhenger av hvor mye du har i utgangspunktet: $\Rightarrow B(X)$
-- Sammenhengen mellom betalingsvillighet og konsumentoverskuddet**
 - Det et imidlertid forskjell på det konsumenten er villig til å betale, og det han faktisk betaler. Det er denne differensen som er konsumentoverskuddet:
-	- $\Rightarrow KO(X) = B(X) – pX$
+  - $\Rightarrow KO(X) = B(X) – PX$
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 konso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/konso.png')
@@ -354,9 +353,9 @@ knitr::include_graphics(konso)
 
 ### Produsentoverskudd
 
-- I produksjonsteorien var vi blant annet opptatte av at bedriftene maksimerer fortjeneste. Dette er enkelt å måle som differensen mellom inntekter og utgifter.
 - Produsentoverskudd defineres som summen av den ekstrainntekten som produsenten får, av å selge til en pris som er høyere enn den laveste de ville vært villige til å akseptere.
 - Det vil si: differensen mellom produsentens samlede salgsinntekter og variable kostnader.
+  - $\Rightarrow PO(X) = PX-CV(x)$
 
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
@@ -370,7 +369,7 @@ knitr::include_graphics(prodo)
 
 - Maksimalt SO finner vi ved 
 \begin{equation*}
-\underset{X}{\text{Maks}SO}=PO+KO=(pX-CV(x))+(B(x)-pX)
+\underset{X}{\text{Maks}SO}=PO+KO=(PX-CV(X))+(B(X)-PX)
 \end{equation*}
 
 
@@ -465,7 +464,7 @@ knitr::include_graphics("drawio/telikevekt_avg.png")
 :::: {.columns}
 
 ::: {.column width="50%"}
-Maksimalpris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et makspris som er *lavere* enn markedsprisen.
+**Maksimalpris** har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et makspris som er *lavere* enn markedsprisen.
 <br>
 <br>
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
@@ -474,7 +473,7 @@ knitr::include_graphics("drawio/telikevekt_max.png")
 :::
 
 ::: {.column width="50%"}
-Minstrepris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et minstepris som er *høyere* enn markedsprisen.
+**Minstrepris** har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et minstepris som er *høyere* enn markedsprisen.
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 knitr::include_graphics("drawio/telikevekt_min.png")
 ```

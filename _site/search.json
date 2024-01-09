@@ -200,7 +200,7 @@
     "href": "forelesninger/notater.html#behov",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Behov",
-    "text": "Behov\n\nØkonomers behandling av behov og behovsdannelse. For enkelt? Psykologers behandling av samme tema…\nEt grovt skille:\n\nSom må dekkes\nØnsker\n\nBehov avdekkes gjennom preferanser, som igjen kan avdekkes via etterspørsel.\nKan behov skapes? Jepp. Men er slike skapte behov mer eller mindre viktig enn ”andre” behov, gitt knappe ressurser.\nEn måte å skjære gjennom denne problemstillingen på er å legge til grunn konsumentsuverenitet.\n”Folk vet best selv hva som er best for dem”."
+    "text": "Behov\n\nØkonomers behandling av behov og behovsdannelse. For enkelt? Psykologers behandling av samme tema…\nEt grovt skille:\n\nSom må dekkes\nØnsker\n\nBehov avdekkes gjennom preferanser, som igjen kan avdekkes via etterspørsel.\nKan behov skapes? Jepp. Men er slike skapte behov mer eller mindre viktig enn ”andre” behov, gitt knappe ressurser.\nEn måte å skjære gjennom denne problemstillingen på er å legge til grunn konsumentsuverenitet.\n\n”Folk vet best selv hva som er best for dem”."
   },
   {
     "objectID": "forelesninger/notater.html#ressurser",
@@ -270,7 +270,7 @@
     "href": "forelesninger/notater.html#innledning",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Innledning",
-    "text": "Innledning\n\nBytteøkonomi og markedsøkonomi: I en markedsøkonomi (pengeøkonomi) byttes varer indirekte.\nEt marked består av en tilbudsside og en etterspørselsside.\nVi skal nå se på den enkleste markedsformen i økonomisk teori.\nMarkedsformen er likevel nyttig:\n\nSelvstendig analyseapparat.\nKan utvides langs mange dimensjoner.\nEr samfunnsøkonomisk effektiv (hva som menes med dette skal vi bruke litt tid på nå, men mere tid på senere).\nEr en referansemodell som andre modeller og resultater kan sammenlignes mot."
+    "text": "Innledning\n\nBytteøkonomi og markedsøkonomi: I en markedsøkonomi (pengeøkonomi) byttes varer indirekte.\nEt marked består av en tilbudsside og en etterspørselsside.\nVi skal nå se på den enkleste markedsformen i økonomisk teori: Markedsmodell med fullkommen konkurranse\nMarkedsformen er likevel nyttig:\n\nSelvstendig analyseapparat.\nKan utvides langs mange dimensjoner.\nEr samfunnsøkonomisk effektiv (hva som menes med dette skal vi bruke litt tid på nå, men mere tid på senere).\nEr en referansemodell som andre modeller og resultater kan sammenlignes mot."
   },
   {
     "objectID": "forelesninger/notater.html#bakgrunn",
@@ -291,7 +291,7 @@
     "href": "forelesninger/notater.html#markedstilbud",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Markedstilbud",
-    "text": "Markedstilbud\n\nTilbud av varer og tjenester. Tilbudet utgjøres av bedriftene eller produsentene. Tilbudet er altså produksjonen.\nHva bestemmer tilbudet? Pris på ferdigvare og innsatsfaktorer. Matematisk på tavla.\nTilbudsloven:\n\nØkt pris \\(\\rightarrow\\) økt tilbud, cet.par. Kurve.\nEndringer i prisen på varen fører til bevegelse langs kurven.\nEn endring i konstantene fører til skift i kurven.\n\nFra en bedrifts tilbud til markedstilbud."
+    "text": "Markedstilbud\n\nTilbud av varer og tjenester. Tilbudet utgjøres av bedriftene eller produsentene. Tilbudet er altså produksjonen.\nHva bestemmer tilbudet? Pris på ferdigvare og innsatsfaktorer.\nTilbudsloven:\n\nØkt pris \\(\\rightarrow\\) økt tilbud, cet.par. Kurve.\nEndringer i prisen på varen fører til bevegelse langs kurven.\nEn endring i konstantene fører til skift i kurven.\n\nFra en bedrifts tilbud til markedstilbud."
   },
   {
     "objectID": "forelesninger/notater.html#markedslikevekt",
@@ -319,14 +319,14 @@
     "href": "forelesninger/notater.html#effekten-av-en-avgift",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Effekten av en avgift",
-    "text": "Effekten av en avgift\n\nEn avgift kan ha flere hensikter, men spesielt er to ting viktig:\n\nInntekt for staten\nEndrer markedsresultatet. Aktuelt ved behov for korrigering av nåværende situasjon (tilpasning).\n\nAvgiften kan pålegges kjøperne og selgerne."
+    "text": "Effekten av en avgift\n\nEn avgift kan ha flere hensikter, men spesielt er to ting viktig:\n\nInntekt for staten\nEndrer markedsresultatet. Aktuelt ved behov for korrigering av nåværende situasjon (tilpasning).\n\nAvgiften kan pålegges kjøperne og selgerne.\nAnta nå at avgiften \\(\\tau\\) blir pålagt selgerne"
   },
   {
     "objectID": "forelesninger/notater.html#maksimal--og-minsteprisen",
     "href": "forelesninger/notater.html#maksimal--og-minsteprisen",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Maksimal- og minsteprisen",
-    "text": "Maksimal- og minsteprisen\n\nMaksimalpris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et makspris som er lavere enn markedsprisen."
+    "text": "Maksimal- og minsteprisen\n\n\nMaksimalpris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et makspris som er lavere enn markedsprisen.  \n\n\n\n\n\n\n\n\n\n\nMinstrepris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et minstepris som er høyere enn markedsprisen."
   },
   {
     "objectID": "forelesninger/notater.html#produksjonsmulighetskurven-pmk",

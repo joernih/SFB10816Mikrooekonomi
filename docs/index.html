@@ -87,10 +87,25 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="dropdown-header">
- <span class="menu-text">Timeplan</span></li>
-  <li class="dropdown-header">
- <span class="menu-text">Forelesninger</span></li>
+  <li class="nav-item">
+    <a class="nav-link" href="./timeplan/timeplan.html"> 
+<span class="menu-text">Timeplan</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-forelesninger" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Forelesninger</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-forelesninger">    
+        <li>
+    <a class="dropdown-item" href="./forelesninger/notater.html">
+ <span class="dropdown-text">Praktisk informasjon</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./forelesninger/notater.html#/kapittel-1-introduksjon-til-mikroøkonomi.-overblikk-over-fulllkomen-konkurranse.html">
+ <span class="dropdown-text">Forelesning 1: Introduksjon til mikroøkonomi</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-oppgaver" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Oppgaver</span>
@@ -102,10 +117,14 @@ ul.task-list li input[type="checkbox"] {
         <li class="dropdown-header">Tidligere eksamensoppgaver</li>
     </ul>
   </li>
-  <li class="dropdown-header">
- <span class="menu-text">Utskrifter</span></li>
-  <li class="dropdown-header">
- <span class="menu-text">Endringslog</span></li>
+  <li class="nav-item">
+    <a class="nav-link" href="./utskrifter/utskrifter.html"> 
+<span class="menu-text">Utskrifter</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./log.html"> 
+<span class="menu-text">Endringslog</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">

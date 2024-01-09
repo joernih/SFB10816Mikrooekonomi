@@ -9,23 +9,13 @@ website:
   navbar:
     left:
       - text: "Timeplan"
-        #        href: "timeplan/timeplan.qmd"
+        href: "timeplan/timeplan.qmd"
       - text: "Forelesninger"
-        #        menu:
-        #          - text: "HVL"
-        #          - text: "Forelesning 1: Introduksjon"
-        #          - text: "Forelesning 2:"
-        #          - text: "Forelesning 3:"
-        #          - text: "Forelesning 4:" 
-        #          - text: "Forelesning 5:"
-        #          - text: "Forelesning 6:"
-        #          - text: "Forelesning 7:"
-        #          - text: "Forelesning 8:"
-        #          - text: "Forelesning 9:"
-        #          - text: "Forelesning 10:"
-        #          - text: "Forelesning 11:"
-        #          - text: "Forelesning 12:"
-        #          - text: "Forelesning 13:"
+        menu:
+          - text: "Praktisk informasjon"
+            href: "forelesninger/notater.qmd"
+          - text: "Forelesning 1: Introduksjon til mikroøkonomi"
+            href: "forelesninger/notater.html#/kapittel-1-introduksjon-til-mikroøkonomi.-overblikk-over-fulllkomen-konkurranse.html"
       - text: "Oppgaver"
         menu:
           - text: "Seminar"
@@ -33,4 +23,10 @@ website:
           - text: "Anbefalte oppgaver"
           - text: "Tidligere eksamensoppgaver"
       - text: "Utskrifter"
+        href: "utskrifter/utskrifter.qmd"
       - text: "Endringslog"
+        href: "log.qmd"
+page-footer: 
+     right: 
+       - icon: github
+         href: https://github.com/joernih/OEKA201ProgrammingWebPage

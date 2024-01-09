@@ -18,6 +18,10 @@ kableExtra::kbl(df_t,col.names=c("#","Tema","Kapittel","Ansvarlig","Ukenr","Dato
 
 [Romplan](https://tp.educloud.no/hiof/timeplan/timeplan.php?type=course&sem=24v&campus=&id[]=SFB10816%2C1)
 
+```{r, echo=F}
+knitr::knit_exit()
+```
+
 ## Regneverksted
 ```{r, echo=F}
 semnr <- 1
