@@ -34,7 +34,7 @@ op1f=[Eq(u,x1**3/x1)]
 op1g=[Eq(u,x1**3/x2)]
 ###### Oppgave 2
 op2a=[Eq(y**2, a*b)]
-op2b=[Eq(x**0.5, a*b)]
+op2b=[Eq(x**0.5, a+b)]
 ###### Oppgave 3
 op3a=[Eq(f,4*x**3)]
 op3b=[Eq(f,4*x**5+2*x**-3)]

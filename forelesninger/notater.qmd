@@ -8,8 +8,8 @@ format:
   revealjs: 
     chalkboard: true
     smaller: true
-    toc-depth: 2
-    toc: false
+    toc-depth: 3
+    toc: true
 #execute: 
 #  cache: false
 footer: https://joernih.github.io/SFB10816Mikrooekonomi/
@@ -114,8 +114,6 @@ knitr::knit_exit()
   - (ii) Du må tilby noe for å bytte til deg varer. Betalingsmiddel
   - og handel.
   - (iii) Du må ha skaffet betalingsmiddelet.
-
----
 
 **Altså ...**
 
@@ -232,8 +230,6 @@ knitr::knit_exit()
 
 ---
 
-## Økonomi som vitenskap
-
 ### Skillet mellom mikroøkonomi og makroøkonomi
 
 - Det finnes flere måter å strukturere økonomifaget på. Disiplinen består av en rekke underområder.
@@ -242,8 +238,6 @@ knitr::knit_exit()
   - Makroøkonomi: Søker å studere og forklare aggregerte størrelser. Økonomien under ett.
   - Makroøkonomi kan deles inn i konjunkturteori og økonomisk vekst.
 
-
----
 
 # Kapittel 3: En markedsmodell med fullkommen konkurranse
 
@@ -340,13 +334,12 @@ SO=PO+KO
 ---
 
 ### Konsumentoverskudd
-#### Betalingsvillighet
-- I konsumentteorien var vi opptatt av å maksimere nytte. Men hvordan måle nytte? Hvor mye du er villig til å betale for en vare kan fortelle noe om nytten du oppnår. Det kalles:
-	- Betalingsvillighet: $B$
-- Betalingsvilligheten avhenger av hvor mye du har i utgangspunktet:
-$\Rightarrow B(X)$
 
----
+#### Betalingsvillighet
+
+- I konsumentteorien var vi opptatt av å maksimere nytte. Men hvordan måle nytte? Hvor mye du er villig til å betale for en vare kan fortelle noe om nytten du oppnår. Det kalles:
+  - Betalingsvillighet: $B$
+- Betalingsvilligheten avhenger av hvor mye du har i utgangspunktet: $\Rightarrow B(X)$
 
 #### Sammenhengen mellom betalingsvillighet og konsumentoverskuddet
 
@@ -357,8 +350,6 @@ $\Rightarrow B(X)$
 konso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/konso.png')
 knitr::include_graphics(konso)
 ```
-
----
 
 ### Produsentoverskudd
 
@@ -386,8 +377,6 @@ knitr::include_graphics(prodo)
 ```
 
 - Er løsningen til dette problemet tilfredsstilt i en markedsmodell med fullkommen konkurranse? JA (vi vil se nærmere på løsningen senere i dette kurset)!
-
----
 
 ## Komparativ statikk/ skift i kurvene
 
@@ -419,8 +408,6 @@ La oss se på et eksempel der lavere pris på innsatsfaktorene har ført til et 
 knitr::include_graphics("drawio/telikevekt_ke.png")
 ```
 
----
-
 ## Effekten av en avgift
 
 - En avgift kan ha flere hensikter, men spesielt er to ting viktig:
@@ -444,8 +431,6 @@ Produsenten ”sender” nå avgiften til staten, men begge bærer byrden!!
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
 knitr::include_graphics("drawio/telikevekt_avg.png")
 ```
-
----
 
 ## Maksimal- og minsteprisen
 
