@@ -5,6 +5,7 @@ project:
     - "timeplan/timeplan.qmd"
     - "forelesninger/notater.qmd"
     - "forelesninger/presentations_hiof.Rmd"
+    - "oppgaver/oppgaver.qmd"
     - "oppgaver/arbeidskrav.qmd"
     - "seminar/posts.qmd"
     - "seminar/oppgaver/*.qmd"

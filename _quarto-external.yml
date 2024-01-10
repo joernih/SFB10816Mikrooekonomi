@@ -19,8 +19,9 @@ website:
       - text: "Oppgaver"
         menu:
           - text: "Seminar"
-          - text: "Arbeidskrav"
           - text: "Anbefalte oppgaver"
+            href: "oppgaver/oppgaver.qmd"
+          - text: "Arbeidskrav"
           - text: "Tidligere eksamensoppgaver"
       - text: "Utskrifter"
         href: "utskrifter/utskrifter.qmd"

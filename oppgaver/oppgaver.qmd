@@ -3,6 +3,22 @@ title: ""
 output: github_document
 ---
 
+```{r, echo=F, warning=F, message=F, eval=T, results='hide'}
+library(dplyr)
+library(dplyr)
+library(ggplot2)
+library(econocharts)
+md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
+# ../data-raw/metadata.json
+#source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/econplot.R'))
+source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
+```
+## Anbefalte oppgaver
+
+```{r, eval=T, echo=F}
+klno <- c("Kapittel","Oppgavenummer")
+kableExtra::kbl(df_o,col.names=klno) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=24)
+```
 
 ```{r, echo=F}
 knitr::knit_exit()

@@ -34,6 +34,7 @@ website:
             href: "seminar/posts.qmd"
           - text: "Arbeidskrav"
           - text: "Anbefalte oppgaver"
+            href: "oppgaver/oppgaver.qmd"
           - text: "Tidligere eksamensoppgaver"
       - text: "Utskrifter"
         href: "utskrifter/utskrifter.qmd"
