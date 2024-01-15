@@ -11,7 +11,7 @@ source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
 ## Forelesninger
 
 ```{r, echo=F, ,message=F}
-lecnr <- 1
+lecnr <- 2
 md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
 kableExtra::kbl(df_t,col.names=c("#","Tema","Kapittel","Ansvarlig","Ukenr","Dato")) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::row_spec(lecnr, bold = T)
 ```
