@@ -1,119 +1,98 @@
 ---
-title: "Seminar 2: Introduksjon til markedsteori"
+title: "Seminar 2: Matematikk for mikroøkonomi"
 format:
   html:
     toc: true
+    toc-depth: 4
     css: css/OFF.css
 ---
 
-Uke 4, ansvarlig: TAB
-
-::: {.content-visible when-profile="internal"}
-## Oppgave 1
-
-Anta at et marked med fullkommen konkurranse har slik etterspørsel og
-slikt tilbud:
-
-Etterspørsel: $X^{D} = 800 - 4p$
-
-Tilbud: $X^{S} = 2p - 100$
-
-Her er X^D^ etterspurt mengde, X^S^ er tilbudt mengde mens p er prisen.
-
-Svar på følgende spørsmål:
-
-a)  Hva er markedsprisen og hvilken mengde vil bli omsatt i markedet?
-    Hva er konsument-overskuddet, produsentoverskuddet og det
-    samfunnsøkonomiske overskuddet? Vis hvordan du har kommet fram til
-    svaret og illustrer.
-
-b)  Anta at etterspørselen øker (fra $X^{D} = 800 - 4p$) til
-    $X^{D} = 560 - 4p$ alt annet like. Hva skjer med pris og mengde i
-    markedet? Vis hvordan du kom fram til svaret og illustrer.
-
-c)  Beregn priselastisiteten til etterspørselen og priselastisiteten til
-    tilbudets gitt at prisen er lik likevektsprisen som du beregnet i
-    første delspørsmål. Vis hvordan du kommer fram til svaret og
-    illustrer.
-
-La oss nå anta at etterspørselen og tilbudet er som først spesifisert
-innledningsvis i oppgaven. Anta at produsentene blir pålagt å betale en
-stykkavgift på TTT kroner per enhet de selger.
-
-d)  Hvordan vil stykkavgiften påvirke prisen som konsumentene betaler og
-    prisen som produsenten betaler, samt omsatt mengde? Hvordan vil
-    stykkavgiften påvirke konsument-overskuddet, produsentoverskuddet og
-    det samfunnsøkonomiske overskuddet? Hvem bærer den største byrden av
-    stykkavgiften -- konsumenter eller produsenter? Og hva er det
-    samfunnsøkonomiske effektivitetstapet? Vis hvordan du kommer fram
-    til svaret og illustrer.
-
-## Oppgave 2
-Betrakt markedet for studenthybler på et studiested, og anta at dette
-kan betraktes som et marked med fullkommen konkurranse der antall
-kvadratmeter er mål på mengde og leiepris per kvadratmeter er mål på
-pris.
-
-Jo høyere leiepris per kvadratmeter, jo flere hybeleiere vil ventelig
-finne det bryet verdt å leie ut sine hybler til studenter -- derfor øker
-tilbudet av kvadratmeter til leie med leieprisen per kvadratmeter.
-
-Jo høyere kvadratmeterpris, jo færre kvadratmeter vil studentene
-ventelig ønske å leie -- dermed avtar etterspørselen etter kvadratmeter
-med leieprisen per kvadratmeter.
-
-a)  Anta at det er mange studenter som ikke får leid det antall
-    kvadratmeter de ønsker seg til den gjeldende leieprisen per
-    kvadratmeter. Hva tror du vil skje med leieprisen på kvadratmeter --
-    vil den falle, stige eller ingen av delene? Gi en faglig begrunnelse
-    for ditt svar.
-
-Anta at høgskolen eller universitetet på studiestedet bestemmer seg for
-å øke opptaket av studenter og at det av den grunn blir flere studenter
-som etterspør hybel.
-
-b)  Vil dette ha betydning for leieprisen per kvadratmeter og hvor mange
-    kvadratmeter som er til utleie, og eventuelt hvordan? Og vil
-    utslagene i leiepriser og/eller antall kvadratmeter til utleie være
-    store eller små? Gi et faglig begrunnet svar, og vurder om svaret på
-    alle spørsmål er entydige.
-
-:::
-
 ```{r, echo=F}
-knitr::knit_exit()
+md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
+fdm <- paste0(rprojroot::find_rstudio_root_file(),'/seminar/oppgaver/mate.py')
+reticulate::source_python(fdm)
+eqpar <- list(meql=reticulate::py$modeql,meqs=reticulate::py$modeqs)
+eql <- eqpar$meql
 ```
 
 
+Uke `r md$regnv$sem1[2]`, ansvarlig: `r md$regnv$ansv[1]`
+
+::: {.content-visible when-profile="internal"}
+## Del I: Modeller i mikroøkonomi
+a. ) Hva menes med en økonomisk modell?
+a. ) Hva er forskjellen mellom *eksogene* og *endogene* variabler i en økonomisk modell?
+a. ) Hva vil det si å utføre *komparativ stikk* i en økonomisk modell?
+
+## Del II: Brøkregning og derivasjon
+### Brøkregning
+Forenkl disse uttrykkene
+
+a. ) $$x^2 \cdot x^3$$
+<div class="sol">
+3
+</div>
+a. ) $$x \cdot x^4$$
+a. ) $$y+y$$
+a. ) $$`r eql$op1d[1]`$$
+a. ) $$`r eql$op1e[1]`$$
+a. ) $$\frac{1}{x_1} \cdot x_1^3$$
+a. ) $$`r eql$op1g[1]`$$
+
+Løs for $y$:
+
+a. ) $$y^2 =`r eql$op2a[1]`$$
+a. ) $$y^{0.5}=`r eql$op2b[1]`$$
 
 
+### Derivasjon
+### En variabel
+Deriver med hensyn på $x$:
 
-[Oppgave 1]{.underline}
+a. ) $$`r eql$op3a[1]`$$
+a. ) $$`r eql$op3b[1]`$$
+a. ) $$\frac{1}{6}x^6a$$
+a. ) $$\frac{1}{6}x^6+a$$
+a. ) $$\frac{5x}{2x^2}$$
+
+### To variabler
+Deriver med hensyn på $x$ og $y$:
+
+a. ) $$`r eql$op3f[1]`$$
+a. ) $$`r eql$op3g[1]`$$
+a. ) $$3x^{1/6}y^{2}+y^{1/3}x^{3}$$
+
+Deriver med hensyn på $x_1$ og $x_2$:
+
+a. ) $$3x_1^{1/6}+x_2^{1/3}$$
+
+### Diffrensiering
+Ta utgangspunkt i funksjonen 
+$$
+\overline{x} = f(x_1,x_2)
+$$
+Hvor $\overline{x}$ er en konstant, og $x_1$ og $x_2$ er to variabler.
+
+a. ) Total differensier uttrykket
+b. ) Vis så at det er mulig å skrive dette som 
+$$
+\frac{\Delta x_{2}}{\Delta x_{1}}  = \frac{f'_{x_{1}}}{f'_{x_{2}}}
+$$
+
+## Del III: System av ligninger og Lagranges metode
+
+### System av likninger
+Løs systemet av likninger nedenfor for $x_1$ og $x_2$
+\begin{eqnarray*}
+\frac{x_2}{x_1} = 2  \\
+10x_{1}+5x_{2}=40
+\end{eqnarray*}
+
+### Lagrange-metode
+Anta at vi har at $u(x_1,x_2)=10x_1x_2$ og at $10x_{1}+5x_{2}=40$
+
+a. ) Vis ved bruk av Lagrange-metode at dette gir opphav til systemet av ligninger vist ovenfor
 
 
-Politikerne ser med bekymring på situasjonen for studentene som må
-betale høye leiepriser for å bo på små hybler. Et politisk parti tar til
-orde for å bygge flere studenthybler for utleie.
-
-c)  Vil dette ha betydning for leieprisen per kvadratmeter og hvor mange
-    kvadratmeter som er til utleie, og eventuelt hvordan? Og vil
-    utslagene i leiepriser og/eller antall kvadratmeter til utleie være
-    store eller små? Gi et faglig begrunnet svar, og vurder om svaret på
-    alle spørsmål er entydig.
-
-Det tar tid å bygge studenthybelhus, så på kort sikt vil ikke dette
-hjelpe. Det er derfor ønske å komme med noen kortsiktige avbøtende
-tiltak. Ett slikt avbøtende tiltak kan være å øke stipendet til
-studentene slik at de har bedre råd til å betale høye leiepriser.
-
-d)  Vil dette ha betydning for leieprisen per kvadratmeter og hvor mange
-    kvadratmeter som er til utleie, og eventuelt hvordan? Gi et faglig
-    begrunnet svar.
-
-Et annet politisk part mener at man i stedet for å øke stipendet heller
-bør hjelpe studentene ved å innføre et pristak på leiepriser, altså en
-maksimalpris.
-
-e)  Hvilken effekt vil et pristak / maksimalpris for utleiehybler ha for
-    studentvelferden? Gi et faglig begrunnet svar.
+:::
 
