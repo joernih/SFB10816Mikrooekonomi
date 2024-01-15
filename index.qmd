@@ -8,13 +8,6 @@ engine: knitr
 ![](man/figures/abc.jpg)
 
 ## Nyheter
-Velkommen til kurs Mikroøkonomi med anvendelser våren  2024. 
-
-De to pensumbøken som blir benyttet i kurset er  lenket til nederst på siden.
-
-Ser frem til å møte dere til første forelesning onsdag den 10. januar kl. 09:15 (Sone A Aud 4)
-
-Jørn
 
 ### Pensumbøker
 

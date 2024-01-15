@@ -25,7 +25,7 @@
     "href": "index.html#nyheter",
     "title": "Mikroøkonomi med anvendelser (våren 2024)",
     "section": "Nyheter",
-    "text": "Nyheter\nVelkommen til kurs Mikroøkonomi med anvendelser våren 2024.\nDe to pensumbøken som blir benyttet i kurset er lenket til nederst på siden.\nSer frem til å møte dere til første forelesning onsdag den 10. januar kl. 09:15 (Sone A Aud 4)\nJørn\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-01-07"
+    "text": "Nyheter\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-01-15"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_6.html",
@@ -474,5 +474,12 @@
     "title": "Endret litt på figur s. xx",
     "section": "",
     "text": "Endret litt på figur s. xx"
+  },
+  {
+    "objectID": "oppgaver/arbeidskrav.html",
+    "href": "oppgaver/arbeidskrav.html",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "",
+    "text": "knitr::knit_exit()"
   }
 ]

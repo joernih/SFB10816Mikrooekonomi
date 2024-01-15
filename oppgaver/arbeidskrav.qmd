@@ -2,6 +2,10 @@
 title: ""
 ---
 
+```{r}
+knitr::knit_exit()
+```
+
 ```{r, echo=F, ,message=F}
 source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
 ```
@@ -18,7 +22,7 @@ kableExtra::kbl(df_o,col.names=c("Oppgaver bok"))
 ```
 
 
-```{r include=FALSE}
+```{r}
 knitr::knit_exit()
 ```
 
