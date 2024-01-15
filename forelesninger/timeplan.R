@@ -48,3 +48,5 @@ length(oppgaver_bok)
 
 df_o <- data.frame(Kapittel=c(1,3:15),
 		 Oppgaver=oppgaver_bok)
+
+

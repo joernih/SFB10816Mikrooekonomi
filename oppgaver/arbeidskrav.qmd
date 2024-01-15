@@ -2,7 +2,24 @@
 title: ""
 ---
 
-```{r}
+```{r, echo=F, warning=F, message=F, eval=T, results='hide'}
+library(dplyr)
+library(dplyr)
+library(ggplot2)
+library(econocharts)
+md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
+# ../data-raw/metadata.json
+#source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/econplot.R'))
+source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
+```
+
+### Obligatorisk innleveringsoppgaver
+
+Utlevert: **`r md$kursg$arbkutl`**.
+
+Innleveringsfrist: **`r md$kursg$arbkinl`**.
+
+```{r, echo=F}
 knitr::knit_exit()
 ```
 
@@ -11,7 +28,6 @@ source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
 ```
 
 ## Arbeidskrav
-
 
 ## Tidligere eksamensoppgaver
 

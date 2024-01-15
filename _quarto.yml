@@ -5,6 +5,7 @@ project:
     - "timeplan/timeplan.qmd"
     - "forelesninger/notater.qmd"
     - "forelesninger/presentations_hiof.Rmd"
+    - "oppgaver/eksamensoppg.qmd"
     - "oppgaver/oppgaver.qmd"
     - "oppgaver/arbeidskrav.qmd"
     - "seminar/posts.qmd"
@@ -29,3 +30,7 @@ format:
 # _quarto-external.yml
 # Tasks internal
 # data-raw/metadata.json
+#
+# Tasks:
+# Ukenr Regneverksted
+# Numerering av figurer

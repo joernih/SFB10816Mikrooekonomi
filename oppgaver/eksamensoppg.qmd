@@ -1,0 +1,28 @@
+## Tidligere eksamensoppgaver
+
+- [Eksamen våren 2022](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/eksamensoppgaver/eksamen_SFB10816_2022_V.pdf)
+  - [Eksamen våren 2022 (med losningsforslag)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/eksamensoppgaver/eksamen_SFB10816_2022_V_losning.pdf)
+- [Eksamen våren 2021](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/eksamensoppgaver/eksamen_SFB10816_2021_V.pdf)
+  - [Eksamen våren 2021 (med losningsforslag)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/eksamensoppgaver/eksamen_SFB10816_2021_V_losning.pdf)
+
+## Tre oppgavesett
+
+- [Oppgavesett 1](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/oppgaver/Oppgavesett%201.pdf)
+  - [Oppgavesett 1 (losningsforslag)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/oppgaver/arbeidsoppgaver_sett1_losningsforslag.pdf)
+
+- [Oppgavesett 2](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/oppgaver/Oppgavesett%202.pdf)
+  - [Oppgavesett 2 (losningsforslag)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/oppgaver/arbeidsoppgaver_sett2_losningsforslag.pdf)
+
+- [Oppgavesett 3](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/oppgaver/Oppgavesett%203.pdf)
+  - [Oppgavesett 3 (losningsforslag)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/oppgaver/arbeidsoppgaver_sett3_losningsforslag.pdf)
+
+## Eksamen HVL (benyttet i forelesningen)
+-![Oppgave 1](figures/hvl2022.png)
+<br>
+  -[Losningsforslag](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/eksamensoppgaver/HVL_2022_oppgave1_losning.png)
+<br>
+<br>
+-[Hele eksamen](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/eksamensoppgaver/Eksamen_BOEA203_2022_bokmaal.pdf)
+<br>
+  -[Hele eksamen (med løsningsforslag)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/eksamensoppgaver/Eksamen_BOEA203_2022_bokmaal_losningsforslag.pdf)
+

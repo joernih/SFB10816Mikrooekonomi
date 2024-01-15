@@ -489,17 +489,16 @@ knitr::include_graphics("drawio/telikevekt_min.png")
 - Kurven bygger på en antagelse om at alternativkostnadene øker ved stadige overføringer av ressurser mellom sektorer.
 - Forutsetninger: to produkter, gitt mengde produksjonsfaktorer (kort sikt) og produksjonsteknologien er konstant.
 
-```{r, echo=FALSE, out.width="60%", fig.cap=""}
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
 knitr::include_graphics("drawio/pmk.png")
 ```
 
-```{r, eval=T}
+```{r, eval=F, echo=F}
 knitr::knit_exit()
 ```
 
 # Kapittel 4, 5 og 6: Innledning til produsentteorien
 
-`r paste("Oppdatert:",Sys.Date())`
 
 ---
 
@@ -511,7 +510,7 @@ knitr::knit_exit()
 - Teknologisk perspektiv: Produsenten bruker innsatsfaktorer til å omforme råvarer til ferdige produkter.
 - Vi forenkler produksjonsbildet ved å anta at produsenten bruker to innsatsfaktorer, $N$ og $K$, til å produsere ett produkt, $x$. $N$ er arbeidskraft og $K$ er realkapital.
 
-```{r, echo=FALSE, out.width="65%", fig.cap=""}
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
 pf <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodbildetf.png')
 knitr::include_graphics(pf)
 ```
@@ -529,12 +528,7 @@ knitr::include_graphics(pf)
   - Viser, for enhver mulig faktorkombinasjon, det maksimale antall enheter som kan produseres av produktet.
   - $f$ beskriver formen på avhengighetsforholdet mellom produksjonsmengden og innsatsfaktorene. Kan tolkes som forhold (faktorer) som endrer produksjonsmengden uten å endre mengden av innsatsfaktorene $N$ og $K$.
 
-
----
-
-# Kapittel 4, 5 og 6: `r paste(substring(del[2],4),tema[2])`
-
-`r paste("Oppdatert:",Sys.Date())`
+# Kapittel 4, 5 og 6: Produksjonsteori på kort sikt `r #paste(substring(del[2],4),tema[2])`
 
 ---
 
@@ -563,7 +557,9 @@ kableExtra::kbl(tabell_prodf, col.names=tipf_navn) %>% kableExtra::kable_paper(f
 
 - For analytiske formål antas funksjonen kontinuerlig og to ganger deriverbar:
 
-.pull-left[
+:::: {.columns}
+
+::: {.column width="50%"}
 Arbeidskraft
 
 ```{r, echo=FALSE, out.width="80%", fig.cap=""}
@@ -572,15 +568,15 @@ knitr::include_graphics(pkl)
 ```
 - $\frac{\partial f}{\partial N} > 0$
 - $\frac{\partial^2 f}{\partial N^2} < 0$
+:::
 
-
-]
-
-.pull-right[
+::: {.column width="50%"}
 - Positive, men avtagende grenseproduktiviteter.
 - De førsteordens partielle deriverte uttrykker grenseproduktiviteten: hvor mye produsert kvantum endres ved en liten endring i bruken av vedkommende innsatsfaktor.
 - Loven om avtakende utbytte gjelder altså her.
-]
+:::
+
+::::
 
 
 ---
@@ -605,6 +601,7 @@ tabell_inntekt <- data.frame(mengde=c(1,2,3),pris=c("1000","1000","1000"), salgs
 ti_navn <- c("Solge enheter","Pris per enhet","Salgsinntekt", "Grenseinntekt", "Gjennomsnittsinntekt")
 kableExtra::kbl(tabell_inntekt, col.names=ti_navn)
 ```
+
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 innt <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/inntf.png')
@@ -683,19 +680,27 @@ kableExtra::kbl(tabell_inntekt_ii, col.names=ti_navn_ii)
 
 ---
 
+:::: {.columns}
+
+::: {.column width="50%"}
 *Grensekostnad og gjennomsnittskostnad uten faste kostnader*
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 kostku <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kostku.png')
 knitr::include_graphics(kostku)
 ```
+:::
 
+::: {.column width="50%"}
 *Grensekostnad og gjennomsnittskostnad med faste kostnader*
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 kostkm <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kostkm.png')
 knitr::include_graphics(kostkm)
 ```
+:::
+
+::::
 
 ---
 
@@ -749,23 +754,30 @@ $$
 
 Kostnadsfunksjonen må være konveks (som vi tidligere har sett at kan komme som et resultat av avtagende grenseproduktivitet mhp. bruken av arbeidskraft)
 
+---
 
-.pull-left[
+:::: {.columns}
+
+::: {.column width="50%"}
 *Uten faste kostnader*
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
 kgkufast <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kgkufast.png')
 knitr::include_graphics(kgkufast)
 ```
-]
-.pull-right[
+:::
+
+::: {.column width="50%"}
 *Med faste kostnader*
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
 kgkmfast <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kgkmfast.png')
 knitr::include_graphics(kgkmfast)
 ```
-]
+:::
+
+::::
 
 ---
+
 
 - Tilbudet til bedriften må bestemmes gjennom profittmaksimering eller kostnadsminimering.  
 - Ettersom dette krever at bedriften er på grensekostnadskurven, vil tilbudskurven være ”den samme” som grensekostnadskurven.
@@ -779,6 +791,8 @@ knitr::include_graphics(kgkmfast)
 **Øvelse om produksjonen**
 
 Anta at produktprisen er gitt ved 100 og kostnadsfunksjonen som $C(x)=x^2$. Hva blir den optimale produksjon?
+
+::: {.content-visible when-profile="internal"}
 
 
 **Løsning**
@@ -805,6 +819,7 @@ $$
 F=100\cdot 50 - 50^2=2500
 $$
 
+:::
 
 ---
 
@@ -841,7 +856,6 @@ knitr::include_graphics(arbktilp)
 $$
 pf''(N) < 0
 $$
-t 
 ---
 
 
@@ -849,6 +863,7 @@ t
 
 Anta at produktprisen er gitt ved 10, lønnskostnadene gitt ved 1, og produktfunsjonen $x=\sqrt{N}$
 
+::: {.content-visible when-profile="internal"}
 
 **Løsning**
 
@@ -870,14 +885,11 @@ N=5^2 = 25
 2.ordensbetingelsen (som sikrer optimum) $-2.5\cdot N^{-1.5} < 0$, mens optimal forjeneste er positiv og gitt som 
 $F=10\cdot 25^{1/2}-25=25$
 
----
+:::
 
 
-## Appendiks 
-### Diagramark benyttet under forelesning
-
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
-knitr::include_graphics("drawio/prod_kort.png")
+```{r, eval=T}
+knitr::knit_exit()
 ```
 
 ---

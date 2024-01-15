@@ -15,14 +15,18 @@ website:
           - text: "Praktisk informasjon"
             href: "forelesninger/notater.qmd"
           - text: "Forelesning 1: Introduksjon til mikroøkonomi"
-            href: "forelesninger/notater.html#/kapittel-1-introduksjon-til-mikroøkonomi.-overblikk-over-fulllkomen-konkurranse.html"
+          - text: "Forelesning 3: Introduksjons til produksjonsteori. Produksjonsteori på kort sikt"
+            href: "forelesninger/notater.html#/kapittel-4-5-og-6-innledning-til-produsentteorien"
       - text: "Oppgaver"
         menu:
           - text: "Seminar"
+            href: "seminar/posts.qmd"
           - text: "Anbefalte oppgaver"
             href: "oppgaver/oppgaver.qmd"
           - text: "Arbeidskrav"
+            href: "oppgaver/arbeidskrav.qmd"
           - text: "Tidligere eksamensoppgaver"
+            href: "oppgaver/oppgaver.qmd"
       - text: "Utskrifter"
         href: "utskrifter/utskrifter.qmd"
       - text: "Endringslog"
@@ -31,3 +35,5 @@ page-footer:
      right: 
        - icon: github
          href: https://github.com/joernih/OEKA201ProgrammingWebPage
+
+

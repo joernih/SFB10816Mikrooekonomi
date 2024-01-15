@@ -13,7 +13,7 @@ Uke 9, ansvarlig: JIH
 ## Oppgave 1: Husholdningens tilpasning 
 :::
 
-```{r}
+```{r, echo=F}
 knitr::knit_exit()
 ```
 
