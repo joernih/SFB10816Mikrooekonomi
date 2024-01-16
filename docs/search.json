@@ -46,7 +46,7 @@
     "href": "seminar/oppgaver/semoppg_4.html",
     "title": "Seminar 4: Konsumentteori",
     "section": "",
-    "text": "Uke 9, ansvarlig: JIH"
+    "text": "Uke 10, ansvarlig: TAB"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_4.html#oppgave-3",
@@ -88,7 +88,7 @@
     "href": "seminar/oppgaver/semoppg_3.html",
     "title": "Seminar 3: Produsentteori",
     "section": "",
-    "text": "Uke 6, ansvarlig: JIH"
+    "text": "Uke 7, ansvarlig: TAB"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_3.html#oppgave-1",
@@ -291,7 +291,7 @@
     "href": "forelesninger/notater.html#alternativkostnad",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Alternativkostnad",
-    "text": "Alternativkostnad\n\nDette er et helt sentralt begrep i økonomifaget.\nBruk av ressurser tilfører en verdi som skal dekke menneskelige behov.\nRessurser har en alternativ anvendelse. Den beste alternative anvendelse har også en verdi. Denne verdien tapes når vi bruker ressursen til et bestemt formål.\nDette tapet er alternativkostnaden.\n\nAlternativkostnaden er altså verdien av beste alternative anvendelse."
+    "text": "Alternativkostnad\n\nDette er et helt sentralt begrep i økonomifaget.\nBruk av ressurser tilfører en verdi som skal dekke menneskelige behov.\nRessurser har en alternativ anvendelse. Den beste alternative anvendelse har også en verdi. Denne verdien tapes når vi bruker ressursen til et bestemt formål.\nDette tapet er alternativkostnaden.\n\nAlternativkostnaden er altså verdien av beste alternative anvendelse.\n\n\n\nFigur 2.1"
   },
   {
     "objectID": "forelesninger/notater.html#to-sentrale-spørsmål-spørsmål-1",
@@ -354,21 +354,21 @@
     "href": "forelesninger/notater.html#markedsetterspørsel",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Markedsetterspørsel",
-    "text": "Markedsetterspørsel\n\nEtterspørsel etter varer og tjenester. Ofte kalles varer + tjenester for goder.\nHva bestemmer etterspørselen? Priser, inntekt med mer.\nEtterspørselsloven:\n\nØkt pris \\(\\rightarrow\\) lavere etterspørsel, alt annet konstant (cet.par.).\nFlere forhold holdes her konstante. Vi ser kun på endringer i prisen på varen. En endring i denne vil flytte oss langs kurven.\nEn endring i konstantene vil føre til skift i kurven.\n\nFra et individs etterspørsel til markedsetterspørsel."
+    "text": "Markedsetterspørsel\n\nEtterspørsel etter varer og tjenester. Ofte kalles varer + tjenester for goder.\nHva bestemmer etterspørselen? Priser, inntekt med mer.\nEtterspørselsloven:\n\nØkt pris \\(\\rightarrow\\) lavere etterspørsel, alt annet konstant (cet.par.).\nFlere forhold holdes her konstante. Vi ser kun på endringer i prisen på varen. En endring i denne vil flytte oss langs kurven.\nEn endring i konstantene vil føre til skift i kurven.\n\nFra et individs etterspørsel til markedsetterspørsel.\n\n\nFigur 3.1"
   },
   {
     "objectID": "forelesninger/notater.html#markedstilbud",
     "href": "forelesninger/notater.html#markedstilbud",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Markedstilbud",
-    "text": "Markedstilbud\n\nTilbud av varer og tjenester. Tilbudet utgjøres av bedriftene eller produsentene. Tilbudet er altså produksjonen.\nHva bestemmer tilbudet? Pris på ferdigvare og innsatsfaktorer.\nTilbudsloven:\n\nØkt pris \\(\\rightarrow\\) økt tilbud, cet.par. Kurve.\nEndringer i prisen på varen fører til bevegelse langs kurven.\nEn endring i konstantene fører til skift i kurven.\n\nFra en bedrifts tilbud til markedstilbud."
+    "text": "Markedstilbud\n\nTilbud av varer og tjenester. Tilbudet utgjøres av bedriftene eller produsentene. Tilbudet er altså produksjonen.\nHva bestemmer tilbudet? Pris på ferdigvare og innsatsfaktorer.\nTilbudsloven:\n\nØkt pris \\(\\rightarrow\\) økt tilbud, cet.par. Kurve.\nEndringer i prisen på varen fører til bevegelse langs kurven.\nEn endring i konstantene fører til skift i kurven.\n\nFra en bedrifts tilbud til markedstilbud.\n\n\nFigur 3.2"
   },
   {
     "objectID": "forelesninger/notater.html#markedslikevekt",
     "href": "forelesninger/notater.html#markedslikevekt",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Markedslikevekt",
-    "text": "Markedslikevekt\n\nUtgangspunkt: markedets E-kurve og T-kurve.\nLikevekt: dersom ingen aktører ønsker å endre den eksisterende økonomiske tilpasning.\n\n\\(X^S = X^D\\)"
+    "text": "Markedslikevekt\n\nUtgangspunkt: markedets E-kurve og T-kurve.\nLikevekt: dersom ingen aktører ønsker å endre den eksisterende økonomiske tilpasning.\n\n\\(X^S = X^D\\)\n\n\n\nFigur 3.3"
   },
   {
     "objectID": "forelesninger/notater.html#konsument--produsent-og-sammfunnsøkonomisk-overskudd",
@@ -396,14 +396,14 @@
     "href": "forelesninger/notater.html#maksimal--og-minsteprisen",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Maksimal- og minsteprisen",
-    "text": "Maksimal- og minsteprisen\n\n\nMaksimalpris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et makspris som er lavere enn markedsprisen.  \n\n\n\n\n\n\n\n\n\n\nMinstrepris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et minstepris som er høyere enn markedsprisen."
+    "text": "Maksimal- og minsteprisen\n\n\nMaksimalpris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et makspris som er lavere enn markedsprisen.  \n\n\n\n\n\nFigur 3.9\n\n\n\n\n\nMinstrepris har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et minstepris som er høyere enn markedsprisen.\n\n\n\n\n\nFigur 3.10"
   },
   {
     "objectID": "forelesninger/notater.html#produksjonsmulighetskurven-pmk",
     "href": "forelesninger/notater.html#produksjonsmulighetskurven-pmk",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Produksjonsmulighetskurven (PMK)",
-    "text": "Produksjonsmulighetskurven (PMK)\n\nProduksjonsmulighetskurven (PMK)\nPMK: kurven kan brukes til å illustrere hvordan produksjonsmulighetene er begrenset. Dette fører til et ressursallokeringsproblem. Videre skal vi illustrere forskjellen på kort og lang sikt.\nKurven bygger på en antagelse om at alternativkostnadene øker ved stadige overføringer av ressurser mellom sektorer.\nForutsetninger: to produkter, gitt mengde produksjonsfaktorer (kort sikt) og produksjonsteknologien er konstant."
+    "text": "Produksjonsmulighetskurven (PMK)\n\nProduksjonsmulighetskurven (PMK)\nPMK: kurven kan brukes til å illustrere hvordan produksjonsmulighetene er begrenset. Dette fører til et ressursallokeringsproblem. Videre skal vi illustrere forskjellen på kort og lang sikt.\nKurven bygger på en antagelse om at alternativkostnadene øker ved stadige overføringer av ressurser mellom sektorer.\nForutsetninger: to produkter, gitt mengde produksjonsfaktorer (kort sikt) og produksjonsteknologien er konstant.\n\n\nFigur 3.11"
   },
   {
     "objectID": "forelesninger/notater.html#appendiks-1",
@@ -471,9 +471,9 @@
   {
     "objectID": "log.html",
     "href": "log.html",
-    "title": "Endret litt på figur s. xx",
+    "title": "Mikroøkonomi (SFB10816)",
     "section": "",
-    "text": "Endret litt på figur s. xx"
+    "text": "Forelesning 1\n\nEndret litt på figur om avgifter."
   },
   {
     "objectID": "oppgaver/arbeidskrav.html",
@@ -487,14 +487,14 @@
     "href": "oppgaver/eksamensoppg.html",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "",
-    "text": "Eksamen våren 2022\n\nEksamen våren 2022 (med losningsforslag)\n\nEksamen våren 2021\n\nEksamen våren 2021 (med losningsforslag)"
+    "text": "knitr::knit_exit()"
   },
   {
     "objectID": "oppgaver/eksamensoppg.html#tidligere-eksamensoppgaver",
     "href": "oppgaver/eksamensoppg.html#tidligere-eksamensoppgaver",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "",
-    "text": "Eksamen våren 2022\n\nEksamen våren 2022 (med losningsforslag)\n\nEksamen våren 2021\n\nEksamen våren 2021 (med losningsforslag)"
+    "text": "knitr::knit_exit()"
   },
   {
     "objectID": "oppgaver/eksamensoppg.html#tre-oppgavesett",
@@ -515,7 +515,7 @@
     "href": "forelesninger/notater.html#produsentens-rolle-teknologiske-forhold-og-produksjon",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Produsentens rolle, teknologiske forhold og produksjon",
-    "text": "Produsentens rolle, teknologiske forhold og produksjon\n\nProdusentene eller bedriftene er en av hovedaktørene i en økonomi.\nProdusentens rolle: tilby de varer og tjenester som etterspørres i et samfunn. Basert på konsumentens ønsker må produsenten vite hva som skal produseres, mengde og lokalisering.\nTeknologisk perspektiv: Produsenten bruker innsatsfaktorer til å omforme råvarer til ferdige produkter.\nVi forenkler produksjonsbildet ved å anta at produsenten bruker to innsatsfaktorer, \\(N\\) og \\(K\\), til å produsere ett produkt, \\(x\\). \\(N\\) er arbeidskraft og \\(K\\) er realkapital."
+    "text": "Produsentens rolle, teknologiske forhold og produksjon\n\nProdusentene eller bedriftene er en av hovedaktørene i en økonomi.\nProdusentens rolle: tilby de varer og tjenester som etterspørres i et samfunn. Basert på konsumentens ønsker må produsenten vite hva som skal produseres, mengde og lokalisering.\nTeknologisk perspektiv: Produsenten bruker innsatsfaktorer til å omforme råvarer til ferdige produkter.\nVi forenkler produksjonsbildet ved å anta at produsenten bruker to innsatsfaktorer, \\(N\\) og \\(K\\), til å produsere ett produkt, \\(x\\). \\(N\\) er arbeidskraft og \\(K\\) er realkapital.\n\n\nFigur 4.1"
   },
   {
     "objectID": "forelesninger/notater.html#tilpasningen-i-gode-og-faktormarkedet",

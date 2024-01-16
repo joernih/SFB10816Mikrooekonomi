@@ -6,7 +6,16 @@ format:
     css: css/OFF.css
 ---
 
-Uke 9, ansvarlig: JIH
+```{r, echo=F}
+md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
+fdm <- paste0(rprojroot::find_rstudio_root_file(),'/seminar/oppgaver/mate.py')
+reticulate::source_python(fdm)
+eqpar <- list(meql=reticulate::py$modeql,meqs=reticulate::py$modeqs)
+eql <- eqpar$meql
+```
+
+Uke `r md$regnv$sem4[2]`, ansvarlig: `r md$regnv$ansv[1]`
+
 
 
 ::: {.content-visible when-profile="internal"}

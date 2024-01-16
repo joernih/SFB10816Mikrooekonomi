@@ -183,6 +183,8 @@ knitr::knit_exit()
    - *Alternativkostnaden er altså verdien av beste alternative anvendelse.*
 
 ```{r, echo=FALSE, out.width="50%"}
+#| label: figur2.1
+#| fig-cap: "Figur 2.1"
 knitr::include_graphics("drawio/alternativ.svg")
 ```
 
@@ -283,6 +285,8 @@ knitr::include_graphics("drawio/alternativ.svg")
 - Fra et individs etterspørsel til markedsetterspørsel.
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
+#| label: figur3.1
+#| fig-cap: "Figur 3.1"
 p1 <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/ekurve.png')
 knitr::include_graphics(p1)
 ```
@@ -300,6 +304,8 @@ knitr::include_graphics(p1)
 - Fra en bedrifts tilbud til markedstilbud.
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
+#| label: figur3.2
+#| fig-cap: "Figur 3.2"
 p1 <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/tkurve.png')
 knitr::include_graphics(p1)
 ```
@@ -313,6 +319,8 @@ knitr::include_graphics(p1)
 	-  $X^S = X^D$
 
 ```{r, echo=FALSE, out.width="50%", fig.align="left", fig.cap=""}
+#| label: figur3.3
+#| fig-cap: "Figur 3.3"
 knitr::include_graphics("drawio/telikevekt.png")
 ```
 ---
@@ -345,6 +353,8 @@ SO=PO+KO
   - $\Rightarrow KO(X) = B(X) – PX$
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
+#| label: figur3.4
+#| fig-cap: "Figur 3.4"
 konso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/konso.png')
 knitr::include_graphics(konso)
 ```
@@ -359,6 +369,8 @@ knitr::include_graphics(konso)
 
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
+#| label: figur3.5
+#| fig-cap: "Figur 3.5"
 prodo <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodo.png')
 knitr::include_graphics(prodo)
 ```
@@ -416,6 +428,8 @@ La oss se på et eksempel der lavere pris på innsatsfaktorene har ført til et 
 ::: {.column width="50%"}
 Skiftanalyse (slak/prisfølsom etterspørselskurve)
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
+#| label: figur3.6
+#| fig-cap: "Figur 3.6"
 knitr::include_graphics("drawio/telikevekt_u.png")
 ```
 :::
@@ -423,6 +437,8 @@ knitr::include_graphics("drawio/telikevekt_u.png")
 ::: {.column width="50%"}
 Skiftanalyse (slak/prisufølsom etterspørselskurve)
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
+#| label: figur3.7
+#| fig-cap: "Figur 3.7"
 knitr::include_graphics("drawio/telikevekt_f.png")
 ```
 :::
@@ -454,8 +470,11 @@ Resultater:
 Produsenten ”sender” nå avgiften til staten, men begge bærer byrden!!
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
+#| label: figur3.8
+#| fig-cap: "Figur 3.8"
 knitr::include_graphics("drawio/telikevekt_avg.png")
 ```
+
 
 ## Maksimal- og minsteprisen
 
@@ -468,6 +487,8 @@ knitr::include_graphics("drawio/telikevekt_avg.png")
 <br>
 <br>
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
+#| label: figur3.9
+#| fig-cap: "Figur 3.9"
 knitr::include_graphics("drawio/telikevekt_max.png")
 ```
 :::
@@ -475,6 +496,8 @@ knitr::include_graphics("drawio/telikevekt_max.png")
 ::: {.column width="50%"}
 **Minstrepris** har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et minstepris som er *høyere* enn markedsprisen.
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
+#| label: figur3.10
+#| fig-cap: "Figur 3.10"
 knitr::include_graphics("drawio/telikevekt_min.png")
 ```
 :::
@@ -490,6 +513,8 @@ knitr::include_graphics("drawio/telikevekt_min.png")
 - Forutsetninger: to produkter, gitt mengde produksjonsfaktorer (kort sikt) og produksjonsteknologien er konstant.
 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
+#| label: figur3.11
+#| fig-cap: "Figur 3.11"
 knitr::include_graphics("drawio/pmk.png")
 ```
 
@@ -511,6 +536,8 @@ knitr::knit_exit()
 - Vi forenkler produksjonsbildet ved å anta at produsenten bruker to innsatsfaktorer, $N$ og $K$, til å produsere ett produkt, $x$. $N$ er arbeidskraft og $K$ er realkapital.
 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
+#| label: figur4.1
+#| fig-cap: "Figur 4.1"
 pf <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodbildetf.png')
 knitr::include_graphics(pf)
 ```
@@ -563,6 +590,8 @@ kableExtra::kbl(tabell_prodf, col.names=tipf_navn) %>% kableExtra::kable_paper(f
 Arbeidskraft
 
 ```{r, echo=FALSE, out.width="80%", fig.cap=""}
+#| label: figur5KS.1
+#| fig-cap: "Figur 5KS.1"
 pkl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodkl.png')
 knitr::include_graphics(pkl)
 ```
@@ -604,6 +633,8 @@ kableExtra::kbl(tabell_inntekt, col.names=ti_navn)
 
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
+#| label: figur5KS.2
+#| fig-cap: "Figur 5KS.2"
 innt <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/inntf.png')
 knitr::include_graphics(innt)
 ```
@@ -616,11 +647,11 @@ knitr::include_graphics(innt)
 - Kostnader: De beløp som påløper som følge av virksomhet.
   - Faste kostnader  $(C_F)$ : Kostnader som er uavhengige av produsert kvantum.
   - Variable kostnader $(C_V$): Varierer i takt med produsert kvantum 
-    	- $CV = CV(x)$
+    	- $C_V = C_{V}(x)$
   - Totale kostnader $(C)$: Summen av faste og variable kostnader
      	- $C = C_F + C_V$
   - Gjennomsnittskostnader (enhetskostnader): Disse finner vi ved å dividere de respektive kostnadene med antall produserte enheter. 
-    	- $\overline{C}=\frac{CF}{X}+\frac{CV}{X}=\overline{C}_F+\overline{C}_V$
+    	- $\overline{C}=\frac{C_F}{x}+\frac{C_V}{x}=\overline{C}_F+\overline{C}_V$
   - Grensekostnader ( $GK$ eller $C'$ ): Endringen i bedriftens totale kostnader ved en liten endring i produsert kvantum 
     	- $GK=\frac{dC(x)}{dx}=C'(x)$
 
@@ -678,6 +709,7 @@ kableExtra::kbl(tabell_inntekt_i, col.names=ti_navn_i)
 kableExtra::kbl(tabell_inntekt_ii, col.names=ti_navn_ii) 
 ```
 
+
 ---
 
 :::: {.columns}
@@ -686,6 +718,8 @@ kableExtra::kbl(tabell_inntekt_ii, col.names=ti_navn_ii)
 *Grensekostnad og gjennomsnittskostnad uten faste kostnader*
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
+#| label: figur5KS.3
+#| fig-cap: "Figur 5KS.3"
 kostku <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kostku.png')
 knitr::include_graphics(kostku)
 ```
@@ -695,6 +729,8 @@ knitr::include_graphics(kostku)
 *Grensekostnad og gjennomsnittskostnad med faste kostnader*
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
+#| label: figur5KS.4
+#| fig-cap: "Figur 5KS.4"
 kostkm <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kostkm.png')
 knitr::include_graphics(kostkm)
 ```
@@ -728,9 +764,9 @@ knitr::include_graphics(kostkm)
 **Fortjenestemaksimering (kort sikt) med variabel produksjonsmengde**
 
 - Produksjon: $x = f(N)$
-- Kostnader: $C(x) = CV(x) + CF$
+- Kostnader: $C(x) = C_V(x) + C_F$
 - Salgsinntekt: $R = px$
-- Maks profitt: $F = R – C$ som gir $F=px – CV(x) – CF$
+- Maks profitt: $F = R – C$ som gir $F=px – C_V(x) – C_F$
 
 Bedriften ønsker å maksimere dette uttrykket mhp. bruken av arbeidskraften. Formelt kan vi uttrykke dette som:
 $$
@@ -761,6 +797,8 @@ Kostnadsfunksjonen må være konveks (som vi tidligere har sett at kan komme som
 ::: {.column width="50%"}
 *Uten faste kostnader*
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
+#| label: figur5KS.5
+#| fig-cap: "Figur 5KS.5"
 kgkufast <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kgkufast.png')
 knitr::include_graphics(kgkufast)
 ```
@@ -769,10 +807,13 @@ knitr::include_graphics(kgkufast)
 ::: {.column width="50%"}
 *Med faste kostnader*
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
+#| label: figur5KS.6
+#| fig-cap: "Figur 5KS.6"
 kgkmfast <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kgkmfast.png')
 knitr::include_graphics(kgkmfast)
 ```
 :::
+
 
 ::::
 
@@ -848,6 +889,8 @@ $$
 Bruken av arbeidskraften bestemmes der hvor verdien av grenseproduktiviteten er lik det nominelle lønnsnivået.
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
+#| label: figur5KS.7
+#| fig-cap: "Figur 5KS.7"
 arbktilp <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/klearb.png')
 knitr::include_graphics(arbktilp)
 ```
@@ -888,7 +931,7 @@ $F=10\cdot 25^{1/2}-25=25$
 :::
 
 
-```{r, eval=T}
+```{r, echo=F, eval=T}
 knitr::knit_exit()
 ```
 

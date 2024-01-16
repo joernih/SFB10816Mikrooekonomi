@@ -1,7 +1,8 @@
 {
-  "hash": "35ae51d313f61672a9f6072b0dbeaed6",
+  "hash": "7475859b758bd9d3999581af76b5e4b3",
   "result": {
-    "markdown": "---\ntitle: \"Seminar 6: Markedsteori: ufullkommen konkurranse og andre temaer\"\nformat:\n  html:\n    toc: true\n    css: css/OFF.css\n---\n\n\nUke 16, ansvarlig: TAB\n\n::: {.content-visible when-profile=\"internal\"}\n\n# Oppgave 1: Monopolistens tilpasning\n# Oppgave 2: Andre temaer\n\n:::\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Seminar 6: Markedsteori: ufullkommen konkurranse og andre temaer\"\nformat:\n  html:\n    toc: true\n    css: css/OFF.css\n---\n\n::: {.cell}\n\n:::\n\n\nUke Markedsteori: Ufullkommen konkurranse og andre temaer:, ansvarlig: TAB\n\n::: {.content-visible when-profile=\"internal\"}\n\n# Oppgave 1: Monopolistens tilpasning\n# Oppgave 2: Andre temaer\n\n:::\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

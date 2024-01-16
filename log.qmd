@@ -3,3 +3,5 @@ title: ""
 output: github_document
 ---
 
+### Forelesning 1 
+- Endret litt på figur om avgifter.

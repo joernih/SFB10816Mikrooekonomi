@@ -1,359 +1,225 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.533">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jørn I. Halvorsen og Joachim Thøgersen">
+<meta name="dcterms.date" content="2024-01-16">
+
+<title>Mikroøkonomi (SFB10816)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.533">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
-  <meta name="author" content="Jørn I. Halvorsen og Joachim Thøgersen">
-  <meta name="dcterms.date" content="2024-01-15">
-  <title>Mikroøkonomi (SFB10816)</title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-      vertical-align: middle;
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
     }
-  </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
-  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
-  <style type="text/css">
-
-  .callout {
-    margin-top: 1em;
-    margin-bottom: 1em;  
-    border-radius: .25rem;
   }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
-  .callout.callout-style-simple { 
-    padding: 0em 0.5em;
-    border-left: solid #acacac .3rem;
-    border-right: solid 1px silver;
-    border-top: solid 1px silver;
-    border-bottom: solid 1px silver;
-    display: flex;
-  }
-
-  .callout.callout-style-default {
-    border-left: solid #acacac .3rem;
-    border-right: solid 1px silver;
-    border-top: solid 1px silver;
-    border-bottom: solid 1px silver;
-  }
-
-  .callout .callout-body-container {
-    flex-grow: 1;
-  }
-
-  .callout.callout-style-simple .callout-body {
-    font-size: 1rem;
-    font-weight: 400;
-  }
-
-  .callout.callout-style-default .callout-body {
-    font-size: 0.9rem;
-    font-weight: 400;
-  }
-
-  .callout.callout-titled.callout-style-simple .callout-body {
-    margin-top: 0.2em;
-  }
-
-  .callout:not(.callout-titled) .callout-body {
-      display: flex;
-  }
-
-  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
-    padding-left: 1.6em;
-  }
-
-  .callout.callout-titled .callout-header {
-    padding-top: 0.2em;
-    margin-bottom: -0.2em;
-  }
-
-  .callout.callout-titled .callout-title  p {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-    
-  .callout.callout-titled.callout-style-simple .callout-content  p {
-    margin-top: 0;
-  }
-
-  .callout.callout-titled.callout-style-default .callout-content  p {
-    margin-top: 0.7em;
-  }
-
-  .callout.callout-style-simple div.callout-title {
-    border-bottom: none;
-    font-size: .9rem;
-    font-weight: 600;
-    opacity: 75%;
-  }
-
-  .callout.callout-style-default  div.callout-title {
-    border-bottom: none;
-    font-weight: 600;
-    opacity: 85%;
-    font-size: 0.9rem;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-  }
-
-  .callout.callout-style-default div.callout-content {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-  }
-
-  .callout.callout-style-simple .callout-icon::before {
-    height: 1rem;
-    width: 1rem;
-    display: inline-block;
-    content: "";
-    background-repeat: no-repeat;
-    background-size: 1rem 1rem;
-  }
-
-  .callout.callout-style-default .callout-icon::before {
-    height: 0.9rem;
-    width: 0.9rem;
-    display: inline-block;
-    content: "";
-    background-repeat: no-repeat;
-    background-size: 0.9rem 0.9rem;
-  }
-
-  .callout-title {
-    display: flex
-  }
-    
-  .callout-icon::before {
-    margin-top: 1rem;
-    padding-right: .5rem;
-  }
-
-  .callout.no-icon::before {
-    display: none !important;
-  }
-
-  .callout.callout-titled .callout-body > .callout-content > :last-child {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0;
-  }
-
-  .callout.callout-titled .callout-icon::before {
-    margin-top: .5rem;
-    padding-right: .5rem;
-  }
-
-  .callout:not(.callout-titled) .callout-icon::before {
-    margin-top: 1rem;
-    padding-right: .5rem;
-  }
-
-  /* Callout Types */
-
-  div.callout-note {
-    border-left-color: #4582ec !important;
-  }
-
-  div.callout-note .callout-icon::before {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
-  }
-
-  div.callout-note.callout-style-default .callout-title {
-    background-color: #dae6fb
-  }
-
-  div.callout-important {
-    border-left-color: #d9534f !important;
-  }
-
-  div.callout-important .callout-icon::before {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
-  }
-
-  div.callout-important.callout-style-default .callout-title {
-    background-color: #f7dddc
-  }
-
-  div.callout-warning {
-    border-left-color: #f0ad4e !important;
-  }
-
-  div.callout-warning .callout-icon::before {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
-  }
-
-  div.callout-warning.callout-style-default .callout-title {
-    background-color: #fcefdc
-  }
-
-  div.callout-tip {
-    border-left-color: #02b875 !important;
-  }
-
-  div.callout-tip .callout-icon::before {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
-  }
-
-  div.callout-tip.callout-style-default .callout-title {
-    background-color: #ccf1e3
-  }
-
-  div.callout-caution {
-    border-left-color: #fd7e14 !important;
-  }
-
-  div.callout-caution .callout-icon::before {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
-  }
-
-  div.callout-caution.callout-style-default .callout-title {
-    background-color: #ffe5d0
-  }
-
-  </style>
-  <style type="text/css">
-    .reveal div.sourceCode {
-      margin: 0;
-      overflow: auto;
-    }
-    .reveal div.hanging-indent {
-      margin-left: 1em;
-      text-indent: -1em;
-    }
-    .reveal .slide:not(.center) {
-      height: 100%;
-    }
-    .reveal .slide.scrollable {
-      overflow-y: auto;
-    }
-    .reveal .footnotes {
-      height: 100%;
-      overflow-y: auto;
-    }
-    .reveal .slide .absolute {
-      position: absolute;
-      display: block;
-    }
-    .reveal .footnotes ol {
-      counter-reset: ol;
-      list-style-type: none; 
-      margin-left: 0;
-    }
-    .reveal .footnotes ol li:before {
-      counter-increment: ol;
-      content: counter(ol) ". "; 
-    }
-    .reveal .footnotes ol li > p:first-child {
-      display: inline-block;
-    }
-    .reveal .slide ul,
-    .reveal .slide ol {
-      margin-bottom: 0.5em;
-    }
-    .reveal .slide ul li,
-    .reveal .slide ol li {
-      margin-top: 0.4em;
-      margin-bottom: 0.2em;
-    }
-    .reveal .slide ul[role="tablist"] li {
-      margin-bottom: 0;
-    }
-    .reveal .slide ul li > *:first-child,
-    .reveal .slide ol li > *:first-child {
-      margin-block-start: 0;
-    }
-    .reveal .slide ul li > *:last-child,
-    .reveal .slide ol li > *:last-child {
-      margin-block-end: 0;
-    }
-    .reveal .slide .columns:nth-child(3) {
-      margin-block-start: 0.8em;
-    }
-    .reveal blockquote {
-      box-shadow: none;
-    }
-    .reveal .tippy-content>* {
-      margin-top: 0.2em;
-      margin-bottom: 0.7em;
-    }
-    .reveal .tippy-content>*:last-child {
-      margin-bottom: 0.2em;
-    }
-    .reveal .slide > img.stretch.quarto-figure-center,
-    .reveal .slide > img.r-stretch.quarto-figure-center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; 
-    }
-    .reveal .slide > img.stretch.quarto-figure-left,
-    .reveal .slide > img.r-stretch.quarto-figure-left  {
-      display: block;
-      margin-left: 0;
-      margin-right: auto; 
-    }
-    .reveal .slide > img.stretch.quarto-figure-right,
-    .reveal .slide > img.r-stretch.quarto-figure-right  {
-      display: block;
-      margin-left: auto;
-      margin-right: 0; 
-    }
-  </style>
-  <script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
-  <link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 </head>
-<body class="quarto-light">
-  <div class="reveal">
-    <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Mikroøkonomi (SFB10816)</h1>
-  <p class="subtitle">Forelesningsnotater (tast o for oversiktsbilde, e for utskriftsvennlig versjon)</p>
+<body>
 
-<div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Jørn I. Halvorsen og Joachim Thøgersen 
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#praktisk-informasjon" id="toc-praktisk-informasjon" class="nav-link active" data-scroll-target="#praktisk-informasjon"><span class="header-section-number">1</span> Praktisk informasjon</a>
+  <ul class="collapse">
+  <li><a href="#timeplan" id="toc-timeplan" class="nav-link" data-scroll-target="#timeplan"><span class="header-section-number">1.1</span> Timeplan</a></li>
+  <li><a href="#anbefalte-oppgaver" id="toc-anbefalte-oppgaver" class="nav-link" data-scroll-target="#anbefalte-oppgaver"><span class="header-section-number">1.2</span> Anbefalte oppgaver</a></li>
+  <li><a href="#pensumliste" id="toc-pensumliste" class="nav-link" data-scroll-target="#pensumliste"><span class="header-section-number">1.3</span> Pensumliste</a></li>
+  <li><a href="#kursgodkjennelse" id="toc-kursgodkjennelse" class="nav-link" data-scroll-target="#kursgodkjennelse"><span class="header-section-number">1.4</span> Kursgodkjennelse</a>
+  <ul class="collapse">
+  <li><a href="#obligatorisk-innleveringsoppgaver" id="toc-obligatorisk-innleveringsoppgaver" class="nav-link" data-scroll-target="#obligatorisk-innleveringsoppgaver"><span class="header-section-number">1.4.1</span> Obligatorisk innleveringsoppgaver</a></li>
+  <li><a href="#eksamen" id="toc-eksamen" class="nav-link" data-scroll-target="#eksamen"><span class="header-section-number">1.4.2</span> Eksamen</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#kapittel-1-introduksjon-til-mikroøkonomi.-overblikk-over-fulllkomen-konkurranse" id="toc-kapittel-1-introduksjon-til-mikroøkonomi.-overblikk-over-fulllkomen-konkurranse" class="nav-link" data-scroll-target="#kapittel-1-introduksjon-til-mikroøkonomi.-overblikk-over-fulllkomen-konkurranse"><span class="header-section-number">2</span> Kapittel 1: Introduksjon til mikroøkonomi. Overblikk over fulllkomen konkurranse</a>
+  <ul class="collapse">
+  <li><a href="#hva-handler-økonomi-om" id="toc-hva-handler-økonomi-om" class="nav-link" data-scroll-target="#hva-handler-økonomi-om"><span class="header-section-number">2.1</span> Hva handler økonomi om?</a></li>
+  <li><a href="#definisjon" id="toc-definisjon" class="nav-link" data-scroll-target="#definisjon"><span class="header-section-number">2.2</span> Definisjon</a></li>
+  <li><a href="#behov" id="toc-behov" class="nav-link" data-scroll-target="#behov"><span class="header-section-number">2.3</span> Behov</a></li>
+  <li><a href="#ressurser" id="toc-ressurser" class="nav-link" data-scroll-target="#ressurser"><span class="header-section-number">2.4</span> Ressurser</a></li>
+  <li><a href="#så-kjernen-i-økonomifaget-er-dermed" id="toc-så-kjernen-i-økonomifaget-er-dermed" class="nav-link" data-scroll-target="#så-kjernen-i-økonomifaget-er-dermed"><span class="header-section-number">2.5</span> Så kjernen i økonomifaget er dermed:</a></li>
+  <li><a href="#alternativkostnad" id="toc-alternativkostnad" class="nav-link" data-scroll-target="#alternativkostnad"><span class="header-section-number">2.6</span> Alternativkostnad</a></li>
+  <li><a href="#to-sentrale-spørsmål-spørsmål-1" id="toc-to-sentrale-spørsmål-spørsmål-1" class="nav-link" data-scroll-target="#to-sentrale-spørsmål-spørsmål-1"><span class="header-section-number">2.7</span> To sentrale spørsmål: spørsmål 1</a></li>
+  <li><a href="#to-sentrale-spørsmål-spørsmål-2" id="toc-to-sentrale-spørsmål-spørsmål-2" class="nav-link" data-scroll-target="#to-sentrale-spørsmål-spørsmål-2"><span class="header-section-number">2.8</span> To sentrale spørsmål: spørsmål 2</a></li>
+  <li><a href="#økonomisk-tankemåte-metodologiske-tradisjoner" id="toc-økonomisk-tankemåte-metodologiske-tradisjoner" class="nav-link" data-scroll-target="#økonomisk-tankemåte-metodologiske-tradisjoner"><span class="header-section-number">2.9</span> Økonomisk tankemåte: metodologiske tradisjoner</a></li>
+  <li><a href="#økonomi-som-vitenskap" id="toc-økonomi-som-vitenskap" class="nav-link" data-scroll-target="#økonomi-som-vitenskap"><span class="header-section-number">2.10</span> Økonomi som vitenskap</a>
+  <ul class="collapse">
+  <li><a href="#modeller" id="toc-modeller" class="nav-link" data-scroll-target="#modeller"><span class="header-section-number">2.10.1</span> Modeller</a></li>
+  <li><a href="#skillet-mellom-mikroøkonomi-og-makroøkonomi" id="toc-skillet-mellom-mikroøkonomi-og-makroøkonomi" class="nav-link" data-scroll-target="#skillet-mellom-mikroøkonomi-og-makroøkonomi"><span class="header-section-number">2.10.2</span> Skillet mellom mikroøkonomi og makroøkonomi</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#kapittel-3-en-markedsmodell-med-fullkommen-konkurranse" id="toc-kapittel-3-en-markedsmodell-med-fullkommen-konkurranse" class="nav-link" data-scroll-target="#kapittel-3-en-markedsmodell-med-fullkommen-konkurranse"><span class="header-section-number">3</span> Kapittel 3: En markedsmodell med fullkommen konkurranse</a>
+  <ul class="collapse">
+  <li><a href="#innledning" id="toc-innledning" class="nav-link" data-scroll-target="#innledning"><span class="header-section-number">3.1</span> Innledning</a></li>
+  <li><a href="#bakgrunn" id="toc-bakgrunn" class="nav-link" data-scroll-target="#bakgrunn"><span class="header-section-number">3.2</span> Bakgrunn</a></li>
+  <li><a href="#markedsetterspørsel" id="toc-markedsetterspørsel" class="nav-link" data-scroll-target="#markedsetterspørsel"><span class="header-section-number">3.3</span> Markedsetterspørsel</a></li>
+  <li><a href="#markedstilbud" id="toc-markedstilbud" class="nav-link" data-scroll-target="#markedstilbud"><span class="header-section-number">3.4</span> Markedstilbud</a></li>
+  <li><a href="#markedslikevekt" id="toc-markedslikevekt" class="nav-link" data-scroll-target="#markedslikevekt"><span class="header-section-number">3.5</span> Markedslikevekt</a></li>
+  <li><a href="#konsument--produsent-og-sammfunnsøkonomisk-overskudd" id="toc-konsument--produsent-og-sammfunnsøkonomisk-overskudd" class="nav-link" data-scroll-target="#konsument--produsent-og-sammfunnsøkonomisk-overskudd"><span class="header-section-number">3.6</span> Konsument- produsent og sammfunnsøkonomisk overskudd</a>
+  <ul class="collapse">
+  <li><a href="#konsumentoverskudd" id="toc-konsumentoverskudd" class="nav-link" data-scroll-target="#konsumentoverskudd"><span class="header-section-number">3.6.1</span> Konsumentoverskudd</a></li>
+  <li><a href="#produsentoverskudd" id="toc-produsentoverskudd" class="nav-link" data-scroll-target="#produsentoverskudd"><span class="header-section-number">3.6.2</span> Produsentoverskudd</a></li>
+  <li><a href="#samfunnsøkonomisk-overskudd-og-fullkommen-konkurranse" id="toc-samfunnsøkonomisk-overskudd-og-fullkommen-konkurranse" class="nav-link" data-scroll-target="#samfunnsøkonomisk-overskudd-og-fullkommen-konkurranse"><span class="header-section-number">3.6.3</span> Samfunnsøkonomisk overskudd og fullkommen konkurranse</a></li>
+  </ul></li>
+  <li><a href="#komparativ-statikk-skift-i-kurvene" id="toc-komparativ-statikk-skift-i-kurvene" class="nav-link" data-scroll-target="#komparativ-statikk-skift-i-kurvene"><span class="header-section-number">3.7</span> Komparativ statikk/ skift i kurvene</a></li>
+  <li><a href="#effekten-av-en-avgift" id="toc-effekten-av-en-avgift" class="nav-link" data-scroll-target="#effekten-av-en-avgift"><span class="header-section-number">3.8</span> Effekten av en avgift</a></li>
+  <li><a href="#maksimal--og-minsteprisen" id="toc-maksimal--og-minsteprisen" class="nav-link" data-scroll-target="#maksimal--og-minsteprisen"><span class="header-section-number">3.9</span> Maksimal- og minsteprisen</a></li>
+  <li><a href="#produksjonsmulighetskurven-pmk" id="toc-produksjonsmulighetskurven-pmk" class="nav-link" data-scroll-target="#produksjonsmulighetskurven-pmk"><span class="header-section-number">3.10</span> Produksjonsmulighetskurven (PMK)</a></li>
+  </ul></li>
+  <li><a href="#kapittel-4-5-og-6-innledning-til-produsentteorien" id="toc-kapittel-4-5-og-6-innledning-til-produsentteorien" class="nav-link" data-scroll-target="#kapittel-4-5-og-6-innledning-til-produsentteorien"><span class="header-section-number">4</span> Kapittel 4, 5 og 6: Innledning til produsentteorien</a>
+  <ul class="collapse">
+  <li><a href="#produsentens-rolle-teknologiske-forhold-og-produksjon" id="toc-produsentens-rolle-teknologiske-forhold-og-produksjon" class="nav-link" data-scroll-target="#produsentens-rolle-teknologiske-forhold-og-produksjon"><span class="header-section-number">4.1</span> Produsentens rolle, teknologiske forhold og produksjon</a></li>
+  </ul></li>
+  <li><a href="#kapittel-4-5-og-6-produksjonsteori-på-kort-sikt" id="toc-kapittel-4-5-og-6-produksjonsteori-på-kort-sikt" class="nav-link" data-scroll-target="#kapittel-4-5-og-6-produksjonsteori-på-kort-sikt"><span class="header-section-number">5</span> Kapittel 4, 5 og 6: Produksjonsteori på kort sikt</a>
+  <ul class="collapse">
+  <li><a href="#produksjon-og-teknologiske-forhold" id="toc-produksjon-og-teknologiske-forhold" class="nav-link" data-scroll-target="#produksjon-og-teknologiske-forhold"><span class="header-section-number">5.0.1</span> Produksjon og teknologiske forhold</a></li>
+  <li><a href="#inntekter" id="toc-inntekter" class="nav-link" data-scroll-target="#inntekter"><span class="header-section-number">5.0.2</span> Inntekter</a></li>
+  <li><a href="#kostnader" id="toc-kostnader" class="nav-link" data-scroll-target="#kostnader"><span class="header-section-number">5.0.3</span> Kostnader</a></li>
+  <li><a href="#tilpasningen-i-gode-og-faktormarkedet" id="toc-tilpasningen-i-gode-og-faktormarkedet" class="nav-link" data-scroll-target="#tilpasningen-i-gode-og-faktormarkedet"><span class="header-section-number">5.1</span> Tilpasningen i gode og faktormarkedet</a>
+  <ul class="collapse">
+  <li><a href="#hvor-stor-skal-produksjonen-være-og-bedriftens-tilbud-av-produktet" id="toc-hvor-stor-skal-produksjonen-være-og-bedriftens-tilbud-av-produktet" class="nav-link" data-scroll-target="#hvor-stor-skal-produksjonen-være-og-bedriftens-tilbud-av-produktet"><span class="header-section-number">5.1.1</span> Hvor stor skal produksjonen være og bedriftens tilbud av produktet</a></li>
+  <li><a href="#hvor-stor-skal-etterspørselen-etter-arbeidskraft-være" id="toc-hvor-stor-skal-etterspørselen-etter-arbeidskraft-være" class="nav-link" data-scroll-target="#hvor-stor-skal-etterspørselen-etter-arbeidskraft-være"><span class="header-section-number">5.1.2</span> Hvor stor skal etterspørselen etter arbeidskraft være?</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mikroøkonomi (SFB10816)</h1>
+<p class="subtitle lead">Forelesningsnotater (tast o for oversiktsbilde, e for utskriftsvennlig versjon)</p>
 </div>
-</div>
-</div>
 
-  <p class="date">2024-01-15</p>
-</section>
-<section>
-<section id="praktisk-informasjon" class="title-slide slide level1 center">
-<h1>Praktisk informasjon</h1>
 
-</section>
-<section id="timeplan" class="slide level2">
-<h2>Timeplan</h2>
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jørn I. Halvorsen og Joachim Thøgersen </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 16, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="praktisk-informasjon" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Praktisk informasjon</h1>
+<section id="timeplan" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="timeplan"><span class="header-section-number">1.1</span> Timeplan</h2>
 <div class="cell">
 <div class="cell-output-display">
-<table class="lightable-paper table" data-quarto-postprocess="true" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto; font-size: 16px; margin-left: auto; margin-right: auto;">
+<table class="lightable-paper table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: right;" data-quarto-table-cell-role="th">Antall</th>
@@ -476,12 +342,13 @@ Jørn I. Halvorsen og Joachim Thøgersen
 </div>
 </div>
 <p><a href="https://tp.educloud.no/hiof/timeplan/timeplan.php?type=course&amp;sem=24v&amp;campus=&amp;id%5B%5D=SFB10816%2C1">Romplan</a></p>
+<hr>
 </section>
-<section id="anbefalte-oppgaver" class="slide level2">
-<h2>Anbefalte oppgaver</h2>
+<section id="anbefalte-oppgaver" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="anbefalte-oppgaver"><span class="header-section-number">1.2</span> Anbefalte oppgaver</h2>
 <div class="cell">
 <div class="cell-output-display">
-<table class="lightable-paper table" data-quarto-postprocess="true" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto; font-size: 24px; margin-left: auto; margin-right: auto;">
+<table class="lightable-paper table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: right;" data-quarto-table-cell-role="th">Kapittel</th>
@@ -552,55 +419,62 @@ Jørn I. Halvorsen og Joachim Thøgersen
 </div>
 </div>
 </section>
-<section id="pensumliste" class="slide level2">
-<h2>Pensumliste</h2>
+<section id="pensumliste" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="pensumliste"><span class="header-section-number">1.3</span> Pensumliste</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="hovedbok">Hovedbok</h3>
+<section id="hovedbok" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="hovedbok"><span class="header-section-number">1.3.1</span> Hovedbok</h3>
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure>
-<p><img data-src="pensum.jpg" style="width:25.0%"></p>
+<figure class="figure">
+<p><img src="pensum.jpg" class="img-fluid figure-img" style="width:25.0%"></p>
 </figure>
 </div>
 </div>
 </div>
 <p><a href="https://www.cappelendammundervisning.no/_innforing-i-mikrookonomi-9788202640521">Andreassen, Bredesen og Thøgersen</a></p>
+</section>
 </div><div class="column" style="width:50%;">
-<h3 id="oppgavebok">Oppgavebok</h3>
+<section id="oppgavebok" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="oppgavebok"><span class="header-section-number">1.3.2</span> Oppgavebok</h3>
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure>
-<p><img data-src="oppgaver.jpg" style="width:25.0%"></p>
+<figure class="figure">
+<p><img src="oppgaver.jpg" class="img-fluid figure-img" style="width:25.0%"></p>
 </figure>
 </div>
 </div>
 </div>
 <p><a href="https://www.cappelendammundervisning.no/_innforing-i-mikrookonomi-ovingsoppgaver-med-losningsforslag-9788202656485">Andreassen, Bredesen og Thøgersen</a></p>
+</section>
 </div>
 </div>
 </section>
-<section id="kursgodkjennelse" class="slide level2">
-<h2>Kursgodkjennelse</h2>
+<section id="kursgodkjennelse" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="kursgodkjennelse"><span class="header-section-number">1.4</span> Kursgodkjennelse</h2>
 <p>Består av et obligatorisk arbeidskrav (som må være bestått) for å kunne gå opp til skriftlig eksamen.</p>
-<h3 id="obligatorisk-innleveringsoppgaver">Obligatorisk innleveringsoppgaver</h3>
+<section id="obligatorisk-innleveringsoppgaver" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="obligatorisk-innleveringsoppgaver"><span class="header-section-number">1.4.1</span> Obligatorisk innleveringsoppgaver</h3>
 <p>Utlevert: <strong>6.3</strong>.</p>
 <p>Innleveringsfrist: <strong>31.3</strong>.</p>
-<h3 id="eksamen">Eksamen</h3>
+</section>
+<section id="eksamen" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="eksamen"><span class="header-section-number">1.4.2</span> Eksamen</h3>
 <p>Eksamen avholdes den <strong>3.5.2024(?), 09:00, 4 timer</strong>.</p>
 <p>Individuell, skriftlig firetimers eksamen.</p>
 <p>Karakterregel: A-F.</p>
 <p>Hjelpemidler: Godkjent kalkulator.</p>
-</section></section>
-<section>
-<section id="kapittel-1-introduksjon-til-mikroøkonomi.-overblikk-over-fulllkomen-konkurranse" class="title-slide slide level1 center">
-<h1>Kapittel 1: Introduksjon til mikroøkonomi. Overblikk over fulllkomen konkurranse</h1>
-
 </section>
-<section id="hva-handler-økonomi-om" class="slide level2">
-<h2>Hva handler økonomi om?</h2>
+</section>
+</section>
+<section id="kapittel-1-introduksjon-til-mikroøkonomi.-overblikk-over-fulllkomen-konkurranse" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Kapittel 1: Introduksjon til mikroøkonomi. Overblikk over fulllkomen konkurranse</h1>
+<hr>
+<section id="hva-handler-økonomi-om" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="hva-handler-økonomi-om"><span class="header-section-number">2.1</span> Hva handler økonomi om?</h2>
 <ul>
 <li>Hva handler økonomi om?</li>
 <li>Mikroøkonomi er en del av samfunnsøkonomi. Hvilke temaer forbinder du med samfunnsøkonomi?</li>
@@ -623,9 +497,7 @@ Jørn I. Halvorsen og Joachim Thøgersen
 </ol></li>
 </ul></li>
 </ul>
-</section>
-<section class="slide level2">
-
+<hr>
 <p><strong>Altså …</strong></p>
 <ul>
 <li>Selv i den «enkle» historien er det:
@@ -638,9 +510,10 @@ Jørn I. Halvorsen og Joachim Thøgersen
 <li>Svaret er: KNAPPHET!</li>
 </ul></li>
 </ul>
+<hr>
 </section>
-<section id="definisjon" class="slide level2">
-<h2>Definisjon</h2>
+<section id="definisjon" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="definisjon"><span class="header-section-number">2.2</span> Definisjon</h2>
 <ul>
 <li>Definisjon av økonomi:</li>
 </ul>
@@ -650,9 +523,10 @@ Jørn I. Halvorsen og Joachim Thøgersen
 <li>To stikkord: behov og ressurser. Komme tilbake til…</li>
 <li>Bedriftsøkonomi og samfunnsøkonomi: Hvorfor skal dere lære samfunnsøkonomi på dette studiet? Relevant for bedrifter?</li>
 </ul>
+<hr>
 </section>
-<section id="behov" class="slide level2">
-<h2>Behov</h2>
+<section id="behov" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="behov"><span class="header-section-number">2.3</span> Behov</h2>
 <ul>
 <li>Økonomers behandling av behov og behovsdannelse. For enkelt? Psykologers behandling av samme tema…</li>
 <li>Et grovt skille:
@@ -667,9 +541,10 @@ Jørn I. Halvorsen og Joachim Thøgersen
 <li>”Folk vet best selv hva som er best for dem”.</li>
 </ul></li>
 </ul>
+<hr>
 </section>
-<section id="ressurser" class="slide level2">
-<h2>Ressurser</h2>
+<section id="ressurser" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="ressurser"><span class="header-section-number">2.4</span> Ressurser</h2>
 <ul>
 <li>Innsatsfaktor eller produksjonsfaktor kan betegnes som synonyme ord. <br> <span class="math inline">\(\Rightarrow\)</span> Faktorer som er ”input” i produksjonsprosessen.</li>
 <li>Kategorier:
@@ -681,16 +556,18 @@ Jørn I. Halvorsen og Joachim Thøgersen
 <li>Ressurser som er KNAPPE.</li>
 <li>Er penger ressurser??</li>
 </ul>
+<hr>
 </section>
-<section id="så-kjernen-i-økonomifaget-er-dermed" class="slide level2">
-<h2>Så kjernen i økonomifaget er dermed:</h2>
+<section id="så-kjernen-i-økonomifaget-er-dermed" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="så-kjernen-i-økonomifaget-er-dermed"><span class="header-section-number">2.5</span> Så kjernen i økonomifaget er dermed:</h2>
 <ul>
 <li>Ettersom det er knapphet på ressurser kombinert med store behov, er det ønskelig å bruke ressursene smartest mulig. <br> <span class="math inline">\(\Rightarrow\)</span> Sikre at utnyttelsen av ressursene er optimal.</li>
 <li>Merk at ressurser ofte har alternativ anvendelse. Dette innebærer at dersom vi bruker en ressurs til å produsere en vare, kan ikke den samme ressursen brukes samtidig til å produsere en annen vare. Av og til ikke i det hele tatt.</li>
 </ul>
+<hr>
 </section>
-<section id="alternativkostnad" class="slide level2">
-<h2>Alternativkostnad</h2>
+<section id="alternativkostnad" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="alternativkostnad"><span class="header-section-number">2.6</span> Alternativkostnad</h2>
 <ul>
 <li>Dette er et helt sentralt begrep i økonomifaget.</li>
 <li>Bruk av ressurser tilfører en verdi som skal dekke menneskelige behov.</li>
@@ -700,10 +577,20 @@ Jørn I. Halvorsen og Joachim Thøgersen
 <li><em>Alternativkostnaden er altså verdien av beste alternative anvendelse.</em></li>
 </ul></li>
 </ul>
-
-<img data-src="drawio/alternativ.svg" style="width:50.0%" class="r-stretch"></section>
-<section id="to-sentrale-spørsmål-spørsmål-1" class="slide level2">
-<h2>To sentrale spørsmål: spørsmål 1</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/alternativ.svg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Figur 2.1</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="to-sentrale-spørsmål-spørsmål-1" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="to-sentrale-spørsmål-spørsmål-1"><span class="header-section-number">2.7</span> To sentrale spørsmål: spørsmål 1</h2>
 <ul>
 <li>(1): Hvordan vil ulike valg bestemme hvilke goder som produseres, hvordan de produseres og for hvem?
 <ul>
@@ -714,9 +601,10 @@ Jørn I. Halvorsen og Joachim Thøgersen
 <li>Hvem skal det produseres til? Inntektsulikhet.</li>
 </ul></li>
 </ul>
+<hr>
 </section>
-<section id="to-sentrale-spørsmål-spørsmål-2" class="slide level2">
-<h2>To sentrale spørsmål: spørsmål 2</h2>
+<section id="to-sentrale-spørsmål-spørsmål-2" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="to-sentrale-spørsmål-spørsmål-2"><span class="header-section-number">2.8</span> To sentrale spørsmål: spørsmål 2</h2>
 <ul>
 <li>(2): Er det slik at valg som fremmer egeninteresse også fremmer samfunnets beste?
 <ul>
@@ -727,9 +615,10 @@ Jørn I. Halvorsen og Joachim Thøgersen
 <li>Adam Smith: JA. «Usynlige hånd».</li>
 </ul></li>
 </ul>
+<hr>
 </section>
-<section id="økonomisk-tankemåte-metodologiske-tradisjoner" class="slide level2">
-<h2>Økonomisk tankemåte: metodologiske tradisjoner</h2>
+<section id="økonomisk-tankemåte-metodologiske-tradisjoner" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="økonomisk-tankemåte-metodologiske-tradisjoner"><span class="header-section-number">2.9</span> Økonomisk tankemåte: metodologiske tradisjoner</h2>
 <ul>
 <li>Økonomifaget defineres ut i fra tema som studeres, men det er en del metodiske tradisjoner.
 <ol type="1">
@@ -741,20 +630,22 @@ Jørn I. Halvorsen og Joachim Thøgersen
 <li>Valg responderer på incentiver. Incentiv: Belønning eller straff som følge av valg.</li>
 </ol></li>
 </ul>
+<hr>
 </section>
-<section id="økonomi-som-vitenskap" class="slide level2">
-<h2>Økonomi som vitenskap</h2>
-<h3 id="modeller">Modeller</h3>
+<section id="økonomi-som-vitenskap" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="økonomi-som-vitenskap"><span class="header-section-number">2.10</span> Økonomi som vitenskap</h2>
+<section id="modeller" class="level3" data-number="2.10.1">
+<h3 data-number="2.10.1" class="anchored" data-anchor-id="modeller"><span class="header-section-number">2.10.1</span> Modeller</h3>
 <ul>
 <li>Bruker økonomiske modeller.</li>
 <li>Hva er en modell? En forenklet beskrivelse av virkeligheten. Bygger pr. definisjon på forutsetninger.</li>
 <li>Hvorfor bruke modeller? For å kunne fokusere på ett eller noen aspekter av virkeligheten. Virkeligheten er komplisert…</li>
 <li>Modeller gjør at vi kan rense vekk momenter som vi tror ikke har noen spesiell innvirkning på vårt spørsmål.</li>
 </ul>
+<hr>
 </section>
-<section class="slide level2">
-
-<h3 id="skillet-mellom-mikroøkonomi-og-makroøkonomi">Skillet mellom mikroøkonomi og makroøkonomi</h3>
+<section id="skillet-mellom-mikroøkonomi-og-makroøkonomi" class="level3" data-number="2.10.2">
+<h3 data-number="2.10.2" class="anchored" data-anchor-id="skillet-mellom-mikroøkonomi-og-makroøkonomi"><span class="header-section-number">2.10.2</span> Skillet mellom mikroøkonomi og makroøkonomi</h3>
 <ul>
 <li>Det finnes flere måter å strukturere økonomifaget på. Disiplinen består av en rekke underområder.
 <ul>
@@ -768,14 +659,14 @@ Jørn I. Halvorsen og Joachim Thøgersen
 </ul></li>
 </ul></li>
 </ul>
-</section></section>
-<section>
-<section id="kapittel-3-en-markedsmodell-med-fullkommen-konkurranse" class="title-slide slide level1 center">
-<h1>Kapittel 3: En markedsmodell med fullkommen konkurranse</h1>
-
 </section>
-<section id="innledning" class="slide level2">
-<h2>Innledning</h2>
+</section>
+</section>
+<section id="kapittel-3-en-markedsmodell-med-fullkommen-konkurranse" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Kapittel 3: En markedsmodell med fullkommen konkurranse</h1>
+<hr>
+<section id="innledning" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="innledning"><span class="header-section-number">3.1</span> Innledning</h2>
 <ul>
 <li>Bytteøkonomi og markedsøkonomi: I en markedsøkonomi (pengeøkonomi) byttes varer <em>indirekte</em>.</li>
 <li>Et marked består av en tilbudsside og en etterspørselsside.</li>
@@ -788,9 +679,10 @@ Jørn I. Halvorsen og Joachim Thøgersen
 <li>Er en referansemodell som andre modeller og resultater kan sammenlignes mot.</li>
 </ul></li>
 </ul>
+<hr>
 </section>
-<section id="bakgrunn" class="slide level2">
-<h2>Bakgrunn</h2>
+<section id="bakgrunn" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="bakgrunn"><span class="header-section-number">3.2</span> Bakgrunn</h2>
 <ul>
 <li>Store deler av kurset vil handle om teorien bak denne modellen. MERK at oppbyggingen gir oss flere selvstendige modeller som er nyttige for økonomiske analyser.</li>
 <li>Modellen går langt tilbake:
@@ -803,9 +695,10 @@ Jørn I. Halvorsen og Joachim Thøgersen
 <li>Vi skal komme tilbake til forutsetningene bak denne modellen i kapittel 9.</li>
 <li>Men merk spesielt: Aktørene er <em>pristakere</em> og har ingen innflytelse på pris som enkeltaktør, men <em>summen</em> av aktørenes adferd bestemmer markedsprisen.</li>
 </ul>
+<hr>
 </section>
-<section id="markedsetterspørsel" class="slide level2">
-<h2>Markedsetterspørsel</h2>
+<section id="markedsetterspørsel" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="markedsetterspørsel"><span class="header-section-number">3.3</span> Markedsetterspørsel</h2>
 <ul>
 <li>Etterspørsel etter varer og tjenester. Ofte kalles varer + tjenester for goder.</li>
 <li>Hva bestemmer etterspørselen? Priser, inntekt med mer.</li>
@@ -817,10 +710,20 @@ Jørn I. Halvorsen og Joachim Thøgersen
 </ul></li>
 <li>Fra et individs etterspørsel til markedsetterspørsel.</li>
 </ul>
-
-<img data-src="drawio/ekurve.png" style="width:65.0%" class="r-stretch"></section>
-<section id="markedstilbud" class="slide level2">
-<h2>Markedstilbud</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/ekurve.png" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption>Figur 3.1</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="markedstilbud" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="markedstilbud"><span class="header-section-number">3.4</span> Markedstilbud</h2>
 <ul>
 <li>Tilbud av varer og tjenester. Tilbudet utgjøres av bedriftene eller produsentene. Tilbudet er altså produksjonen.</li>
 <li>Hva bestemmer tilbudet? Pris på ferdigvare og innsatsfaktorer.</li>
@@ -832,10 +735,20 @@ Jørn I. Halvorsen og Joachim Thøgersen
 </ul></li>
 <li>Fra en bedrifts tilbud til markedstilbud.</li>
 </ul>
-
-<img data-src="drawio/tkurve.png" style="width:65.0%" class="r-stretch"></section>
-<section id="markedslikevekt" class="slide level2">
-<h2>Markedslikevekt</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/tkurve.png" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption>Figur 3.2</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="markedslikevekt" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="markedslikevekt"><span class="header-section-number">3.5</span> Markedslikevekt</h2>
 <ul>
 <li>Utgangspunkt: markedets E-kurve og T-kurve.</li>
 <li>Likevekt: dersom ingen aktører ønsker å endre den eksisterende økonomiske tilpasning.
@@ -843,10 +756,17 @@ Jørn I. Halvorsen og Joachim Thøgersen
 <li><span class="math inline">\(X^S = X^D\)</span></li>
 </ul></li>
 </ul>
-
-<img data-src="drawio/telikevekt.png" class="quarto-figure quarto-figure-left r-stretch" style="width:50.0%"></section>
-<section class="slide level2">
-
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="drawio/telikevekt.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:50.0%"></p>
+<figcaption>Figur 3.3</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
 <ul>
 <li>Anta at prisen er lavere enn likevektspris (makspris).
 <ul>
@@ -858,9 +778,10 @@ Jørn I. Halvorsen og Joachim Thøgersen
 </ul></li>
 <li>Merk: Ingenting i modellen som tilsier stabilitet. Men utenfor modellen kan vi resonnere markedskreftene alltid bringer oss tilbake til likevekt, slik det er beskrevet av Adam Smith.</li>
 </ul>
+<hr>
 </section>
-<section id="konsument--produsent-og-sammfunnsøkonomisk-overskudd" class="slide level2">
-<h2>Konsument- produsent og sammfunnsøkonomisk overskudd</h2>
+<section id="konsument--produsent-og-sammfunnsøkonomisk-overskudd" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="konsument--produsent-og-sammfunnsøkonomisk-overskudd"><span class="header-section-number">3.6</span> Konsument- produsent og sammfunnsøkonomisk overskudd</h2>
 <ul>
 <li>I samfunnsøkonomi er vi naturlig nok opptatt av å vurdere om et marked eller et prosjekt eller politikkforslag er samfunnsøkonomisk lønnsomt. Når alt kommer til alt er det jo høyest mulig velferd for individene i samfunnet som er målet.</li>
 <li>For å vurdere velferden brukes begrepet samfunnsøkonomisk overskudd (SO).</li>
@@ -869,10 +790,9 @@ Jørn I. Halvorsen og Joachim Thøgersen
 SO=PO+KO
 \end{equation*}\]</span></li>
 </ul>
-</section>
-<section class="slide level2">
-
-<h3 id="konsumentoverskudd">Konsumentoverskudd</h3>
+<hr>
+<section id="konsumentoverskudd" class="level3" data-number="3.6.1">
+<h3 data-number="3.6.1" class="anchored" data-anchor-id="konsumentoverskudd"><span class="header-section-number">3.6.1</span> Konsumentoverskudd</h3>
 <ul>
 <li>Hvor mye du er villig til å betale for kalles Betalingsvillighet.</li>
 <li>Betalingsvilligheten avhenger av hvor mye du har i utgangspunktet: <span class="math inline">\(\Rightarrow B(X)\)</span></li>
@@ -881,11 +801,20 @@ SO=PO+KO
 <li><span class="math inline">\(\Rightarrow KO(X) = B(X) – PX\)</span></li>
 </ul></li>
 </ul>
-
-<img data-src="drawio/konso.png" style="width:50.0%" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="produsentoverskudd">Produsentoverskudd</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/konso.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Figur 3.4</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="produsentoverskudd" class="level3" data-number="3.6.2">
+<h3 data-number="3.6.2" class="anchored" data-anchor-id="produsentoverskudd"><span class="header-section-number">3.6.2</span> Produsentoverskudd</h3>
 <ul>
 <li>Produsentoverskudd defineres som summen av den ekstrainntekten som produsenten får, av å selge til en pris som er høyere enn den laveste de ville vært villige til å akseptere.</li>
 <li>Det vil si: differensen mellom produsentens samlede salgsinntekter og variable kostnader.
@@ -893,20 +822,31 @@ SO=PO+KO
 <li><span class="math inline">\(\Rightarrow PO(X) = PX-CV(x)\)</span></li>
 </ul></li>
 </ul>
-
-<img data-src="drawio/prodo.png" style="width:40.0%" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="samfunnsøkonomisk-overskudd-og-fullkommen-konkurranse">Samfunnsøkonomisk overskudd og fullkommen konkurranse</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/prodo.png" class="img-fluid figure-img" style="width:40.0%"></p>
+<figcaption>Figur 3.5</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="samfunnsøkonomisk-overskudd-og-fullkommen-konkurranse" class="level3" data-number="3.6.3">
+<h3 data-number="3.6.3" class="anchored" data-anchor-id="samfunnsøkonomisk-overskudd-og-fullkommen-konkurranse"><span class="header-section-number">3.6.3</span> Samfunnsøkonomisk overskudd og fullkommen konkurranse</h3>
 <ul>
 <li><p>Maksimalt SO finner vi ved <span class="math display">\[\begin{equation*}
 \underset{X}{\text{Maks}SO}=PO+KO=(PX-CV(X))+(B(X)-PX)
 \end{equation*}\]</span></p></li>
 <li><p>Er løsningen til dette problemet tilfredsstilt i en markedsmodell med fullkommen konkurranse? JA (vi vil se nærmere på løsningen senere i dette kurset)!</p></li>
 </ul>
+<hr>
 </section>
-<section id="komparativ-statikk-skift-i-kurvene" class="slide level2">
-<h2>Komparativ statikk/ skift i kurvene</h2>
+</section>
+<section id="komparativ-statikk-skift-i-kurvene" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="komparativ-statikk-skift-i-kurvene"><span class="header-section-number">3.7</span> Komparativ statikk/ skift i kurvene</h2>
 <ul>
 <li>Vi vet at tilbuds- og etterspørselskurvene er konstruert under en antagelse om at flere forhold antas konstante. Dersom det skjer endringer i noen av disse forholdene, vil kurvene forskyves i diagrammet. La oss se på noen av disse forholdene.</li>
 </ul>
@@ -933,9 +873,7 @@ SO=PO+KO
 </ul>
 </div>
 </div>
-</section>
-<section class="slide level2">
-
+<hr>
 <p><strong>Helningens betydning</strong></p>
 <ul>
 <li>Helningen på tilbuds- og etterspørselskurven påvirker hvordan endringer i markedet påvirker pris og mengde. La oss se på et eksempel der lavere pris på innsatsfaktorene har ført til et positivt skift i tilbudskurven.</li>
@@ -945,9 +883,10 @@ SO=PO+KO
 <p>Skiftanalyse (slak/prisfølsom etterspørselskurve)</p>
 <div class="cell">
 <div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="drawio/telikevekt_u.png" style="width:50.0%"></p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/telikevekt_u.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Figur 3.6</figcaption>
 </figure>
 </div>
 </div>
@@ -956,18 +895,20 @@ SO=PO+KO
 <p>Skiftanalyse (slak/prisufølsom etterspørselskurve)</p>
 <div class="cell">
 <div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="drawio/telikevekt_f.png" style="width:50.0%"></p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/telikevekt_f.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Figur 3.7</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </div>
 </div>
+<hr>
 </section>
-<section id="effekten-av-en-avgift" class="slide level2">
-<h2>Effekten av en avgift</h2>
+<section id="effekten-av-en-avgift" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="effekten-av-en-avgift"><span class="header-section-number">3.8</span> Effekten av en avgift</h2>
 <ul>
 <li><p>En avgift kan ha flere hensikter, men spesielt er to ting viktig:</p>
 <ol type="i">
@@ -977,27 +918,35 @@ SO=PO+KO
 <li><p>Avgiften kan pålegges kjøperne og selgerne.</p></li>
 <li><p>Anta nå at avgiften <span class="math inline">\(\tau\)</span> blir pålagt selgerne</p></li>
 </ul>
-</section>
-<section class="slide level2">
-
+<hr>
 <ul>
 <li>Dersom avgiften pålegges produsentene, vil kostnadene til bedriften stige. Dette skifter isolert sett tilbudskurven innover. Den vertikale størrelsen på skiftet er lik avgiften <span class="math inline">\(\tau\)</span>. Resultater:</li>
 <li>Staten får inn <span class="math inline">\(\tau\)</span> kr. pr. enhet.</li>
 <li>Konsumenten betaler: <span class="math inline">\(P^K\)</span></li>
 <li>Produsenten mottar: <span class="math inline">\(P^P\)</span> Produsenten ”sender” nå avgiften til staten, men begge bærer byrden!!</li>
 </ul>
-
-<img data-src="drawio/telikevekt_avg.png" style="width:45.0%" class="r-stretch"></section>
-<section id="maksimal--og-minsteprisen" class="slide level2">
-<h2>Maksimal- og minsteprisen</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/telikevekt_avg.png" class="img-fluid figure-img" style="width:45.0%"></p>
+<figcaption>Figur 3.8</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="maksimal--og-minsteprisen" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="maksimal--og-minsteprisen"><span class="header-section-number">3.9</span> Maksimal- og minsteprisen</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Maksimalpris</strong> har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et makspris som er <em>lavere</em> enn markedsprisen. <br> <br></p>
 <div class="cell">
 <div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="drawio/telikevekt_max.png" style="width:50.0%"></p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/telikevekt_max.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Figur 3.9</figcaption>
 </figure>
 </div>
 </div>
@@ -1006,436 +955,1063 @@ SO=PO+KO
 <p><strong>Minstrepris</strong> har vi dersom markedsprisen blir overtyrt ved at myndighetene setter et minstepris som er <em>høyere</em> enn markedsprisen.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="drawio/telikevekt_min.png" style="width:50.0%"></p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/telikevekt_min.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Figur 3.10</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </div>
 </div>
+<hr>
 </section>
-<section id="produksjonsmulighetskurven-pmk" class="slide level2">
-<h2>Produksjonsmulighetskurven (PMK)</h2>
+<section id="produksjonsmulighetskurven-pmk" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="produksjonsmulighetskurven-pmk"><span class="header-section-number">3.10</span> Produksjonsmulighetskurven (PMK)</h2>
 <ul>
 <li>Produksjonsmulighetskurven (PMK)</li>
 <li>PMK: kurven kan brukes til å illustrere hvordan produksjonsmulighetene er begrenset. Dette fører til et ressursallokeringsproblem. Videre skal vi illustrere forskjellen på kort og lang sikt.</li>
 <li>Kurven bygger på en antagelse om at alternativkostnadene øker ved stadige overføringer av ressurser mellom sektorer.</li>
 <li>Forutsetninger: to produkter, gitt mengde produksjonsfaktorer (kort sikt) og produksjonsteknologien er konstant.</li>
 </ul>
-
-
-
-<img data-src="drawio/pmk.png" style="width:60.0%" class="r-stretch"></section><div class="quarto-auto-generated-content">
-<div class="footer footer-default">
-<p>https://joernih.github.io/SFB10816Mikrooekonomi/</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/pmk.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Figur 3.11</figcaption>
+</figure>
 </div>
-</div></section>
-    </div>
-  </div>
+</div>
+</div>
+</section>
+</section>
+<section id="kapittel-4-5-og-6-innledning-til-produsentteorien" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Kapittel 4, 5 og 6: Innledning til produsentteorien</h1>
+<hr>
+<section id="produsentens-rolle-teknologiske-forhold-og-produksjon" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="produsentens-rolle-teknologiske-forhold-og-produksjon"><span class="header-section-number">4.1</span> Produsentens rolle, teknologiske forhold og produksjon</h2>
+<ul>
+<li><p>Produsentene eller bedriftene er en av hovedaktørene i en økonomi.</p></li>
+<li><p>Produsentens rolle: tilby de varer og tjenester som etterspørres i et samfunn. Basert på konsumentens ønsker må produsenten vite hva som skal produseres, mengde og lokalisering.</p></li>
+<li><p>Teknologisk perspektiv: Produsenten bruker innsatsfaktorer til å omforme råvarer til ferdige produkter.</p></li>
+<li><p>Vi forenkler produksjonsbildet ved å anta at produsenten bruker to innsatsfaktorer, <span class="math inline">\(N\)</span> og <span class="math inline">\(K\)</span>, til å produsere ett produkt, <span class="math inline">\(x\)</span>. <span class="math inline">\(N\)</span> er arbeidskraft og <span class="math inline">\(K\)</span> er realkapital.</p></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/prodbildetf.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Figur 4.1</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+<ul>
+<li><p>Bedriften må altså velge effektiv produksjonsprosess.</p></li>
+<li><p>Økonomisk perspektiv: Her består valget i å velge hvor mye bedriften skal produsere og tilby av produktet.</p></li>
+<li><p>For å kunne få størst mulig overskudd må vi kjenne til inntekter og kostnader. Kostnadene er igjen svært avhengig av det teknologiske valget.</p></li>
+<li><p>Vi må derfor sammenkoble elementer fra begge disse perspektivene.</p></li>
+<li><p>Vi tar utgangspunkt i produksjonsbildet med to innsatsfaktorer og ett produkt.</p>
+<ul>
+<li>Produktfunksjonen:
+<ul>
+<li><span class="math inline">\(x = f(N, K)\)</span></li>
+</ul></li>
+<li>Viser, for enhver mulig faktorkombinasjon, det maksimale antall enheter som kan produseres av produktet.</li>
+<li><span class="math inline">\(f\)</span> beskriver formen på avhengighetsforholdet mellom produksjonsmengden og innsatsfaktorene. Kan tolkes som forhold (faktorer) som endrer produksjonsmengden uten å endre mengden av innsatsfaktorene <span class="math inline">\(N\)</span> og <span class="math inline">\(K\)</span>.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="kapittel-4-5-og-6-produksjonsteori-på-kort-sikt" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Kapittel 4, 5 og 6: Produksjonsteori på kort sikt</h1>
+<hr>
+<section id="produksjon-og-teknologiske-forhold" class="level3" data-number="5.0.1">
+<h3 data-number="5.0.1" class="anchored" data-anchor-id="produksjon-og-teknologiske-forhold"><span class="header-section-number">5.0.1</span> Produksjon og teknologiske forhold</h3>
+<p><em>Talleksempel på en produktfunksjon</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="lightable-paper table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">Arbeidskraft (N)</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Kapital (K)</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Produksjon</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Grenseprodukt.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Gjennomsnittsprod.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="even">
+<td style="text-align: right; font-weight: bold;">4</td>
+<td style="text-align: right; font-weight: bold;">20</td>
+<td style="text-align: right; font-weight: bold;">52</td>
+<td style="text-align: right; font-weight: bold;">17</td>
+<td style="text-align: right; font-weight: bold;">13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right; font-weight: bold;">5</td>
+<td style="text-align: right; font-weight: bold;">20</td>
+<td style="text-align: right; font-weight: bold;">61</td>
+<td style="text-align: right; font-weight: bold;">9</td>
+<td style="text-align: right; font-weight: bold;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right; font-weight: bold;">6</td>
+<td style="text-align: right; font-weight: bold;">20</td>
+<td style="text-align: right; font-weight: bold;">66</td>
+<td style="text-align: right; font-weight: bold;">5</td>
+<td style="text-align: right; font-weight: bold;">11</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">-2</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">-8</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">-12</td>
+<td style="text-align: right;">4</td>
+</tr>
+</tbody>
+</table>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../site_libs/revealjs/dist/reveal.js"></script>
-  <!-- reveal.js plugins -->
-  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
-  
 
-  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+</div>
+</div>
+<hr>
+<p><strong>Forutsetninger om produktfunksjonen</strong></p>
+<ul>
+<li>For analytiske formål antas funksjonen kontinuerlig og to ganger deriverbar:</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Arbeidskraft</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/prodkl.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Figur 5KS.1</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><span class="math inline">\(\frac{\partial f}{\partial N} &gt; 0\)</span></li>
+<li><span class="math inline">\(\frac{\partial^2 f}{\partial N^2} &lt; 0\)</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Positive, men avtagende grenseproduktiviteter.</li>
+<li>De førsteordens partielle deriverte uttrykker grenseproduktiviteten: hvor mye produsert kvantum endres ved en liten endring i bruken av vedkommende innsatsfaktor.</li>
+<li>Loven om avtakende utbytte gjelder altså her.</li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+<section id="inntekter" class="level3" data-number="5.0.2">
+<h3 data-number="5.0.2" class="anchored" data-anchor-id="inntekter"><span class="header-section-number">5.0.2</span> Inntekter</h3>
+<ul>
+<li>Bedriftens inntekter bestemmes av antall enheter den selger, og prisen på disse enhetene.
+<ul>
+<li>Pris: <span class="math inline">\(p\)</span>. Mengde: <span class="math inline">\(x\)</span>.</li>
+<li>Inntekt: <span class="math inline">\(R=px\)</span>. Stigende i et <span class="math inline">\((x,R)\)</span>-diagram</li>
+<li>Grenseinntekt: endring i inntekt ved en marginal endring i solgt kvantum: <span class="math inline">\(R'(x)\)</span></li>
+<li>Gjennomsnitsinntekt: inntekt per produsert enhet: <span class="math inline">\(\overline{R}\)</span>.</li>
+</ul></li>
+</ul>
+<hr>
+<p><em>Talleksempel for salgsinntekter</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">Solge enheter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Pris per enhet</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Salgsinntekt</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Grenseinntekt</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Gjennomsnittsinntekt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">1000</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">2000</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">1000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">3000</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">1000</td>
+</tr>
+</tbody>
+</table>
 
-  <script>
 
-      // Full list of configuration options available at:
-      // https://revealjs.com/config/
-      Reveal.initialize({
-'controlsAuto': true,
-'previewLinksAuto': false,
-'pdfSeparateFragments': false,
-'autoAnimateEasing': "ease",
-'autoAnimateDuration': 1,
-'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
-'smaller': true,
- 
-        // Display controls in the bottom right corner
-        controls: false,
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/inntf.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Figur 5KS.2</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="kostnader" class="level3" data-number="5.0.3">
+<h3 data-number="5.0.3" class="anchored" data-anchor-id="kostnader"><span class="header-section-number">5.0.3</span> Kostnader</h3>
+<ul>
+<li>Kostnader: De beløp som påløper som følge av virksomhet.
+<ul>
+<li>Faste kostnader <span class="math inline">\((C_F)\)</span> : Kostnader som er uavhengige av produsert kvantum.</li>
+<li>Variable kostnader <span class="math inline">\((C_V\)</span>): Varierer i takt med produsert kvantum - <span class="math inline">\(C_V = C_{V}(x)\)</span></li>
+<li>Totale kostnader <span class="math inline">\((C)\)</span>: Summen av faste og variable kostnader - <span class="math inline">\(C = C_F + C_V\)</span></li>
+<li>Gjennomsnittskostnader (enhetskostnader): Disse finner vi ved å dividere de respektive kostnadene med antall produserte enheter. - <span class="math inline">\(\overline{C}=\frac{C_F}{x}+\frac{C_V}{x}=\overline{C}_F+\overline{C}_V\)</span></li>
+<li>Grensekostnader ( <span class="math inline">\(GK\)</span> eller <span class="math inline">\(C'\)</span> ): Endringen i bedriftens totale kostnader ved en liten endring i produsert kvantum - <span class="math inline">\(GK=\frac{dC(x)}{dx}=C'(x)\)</span></li>
+</ul></li>
+</ul>
+<hr>
+<p><strong>Sammenhengen mellom gjennomsnittskostnad og grensekostnad</strong></p>
+<p><em>Talleksempel a): med avtagende marginalproduktivitet (mest relevant for dette kurset) og uten faste kostnader</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">Produserte enheter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Lønnskostnader</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Antall arbeidere</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Variable kostnader</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1000</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">3.1</td>
+<td style="text-align: left;">3100</td>
+</tr>
+</tbody>
+</table>
 
-        // Help the user learn the controls by providing hints, for example by
-        // bouncing the down arrow when they first encounter a vertical slide
-        controlsTutorial: false,
 
-        // Determines where controls appear, "edges" or "bottom-right"
-        controlsLayout: 'edges',
+</div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Faste kostnader</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Totale kostnader</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Grensekostnader</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Gjennomsnittskostnad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">2000</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">1000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">3100</td>
+<td style="text-align: left;">1100</td>
+<td style="text-align: left;">1032</td>
+</tr>
+</tbody>
+</table>
 
-        // Visibility rule for backwards navigation arrows; "faded", "hidden"
-        // or "visible"
-        controlsBackArrows: 'faded',
 
-        // Display a presentation progress bar
-        progress: true,
+</div>
+</div>
+<hr>
+<p><em>Talleksempel b): med økende marginalproduktivitet (mindre relevant) og uten faste kostnader</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">Produserte enheter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Lønnskostnader</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Antall arbeidere</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Variable kostnader</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1000</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">2.9</td>
+<td style="text-align: left;">2900</td>
+</tr>
+</tbody>
+</table>
 
-        // Display the page number of the current slide
-        slideNumber: false,
 
-        // 'all', 'print', or 'speaker'
-        showSlideNumber: 'all',
+</div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Faste kostnader</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Totale kostnader</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Grensekostnader</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Gjennomsnittskostnad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">2000</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">1000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">2900</td>
+<td style="text-align: left;">900</td>
+<td style="text-align: left;">966</td>
+</tr>
+</tbody>
+</table>
 
-        // Add the current slide number to the URL hash so that reloading the
-        // page/copying the URL will return you to the same slide
-        hash: true,
 
-        // Start with 1 for the hash rather than 0
-        hashOneBasedIndex: false,
+</div>
+</div>
+<hr>
+<p><em>Talleksempel c): med avtagende marginalproduktivitet og med faste kostnader</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">Produserte enheter</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Lønnskostnader</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Antall arbeidere</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Variable kostnader</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1000</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">3.1</td>
+<td style="text-align: left;">3100</td>
+</tr>
+</tbody>
+</table>
 
-        // Flags if we should monitor the hash and change slides accordingly
-        respondToHashChanges: true,
 
-        // Push each slide change to the browser history
-        history: true,
+</div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Faste kostnader</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Totale kostnader</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Grensekostnader</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Gjennomsnittskostnad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2000</td>
+<td style="text-align: left;">3000</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">3000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2000</td>
+<td style="text-align: left;">4000</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">2000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2000</td>
+<td style="text-align: left;">5100</td>
+<td style="text-align: left;">1100</td>
+<td style="text-align: left;">1700</td>
+</tr>
+</tbody>
+</table>
 
-        // Enable keyboard shortcuts for navigation
-        keyboard: true,
 
-        // Enable the slide overview mode
-        overview: true,
+</div>
+</div>
+<hr>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><em>Grensekostnad og gjennomsnittskostnad uten faste kostnader</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/kostku.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Figur 5KS.3</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><em>Grensekostnad og gjennomsnittskostnad med faste kostnader</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/kostkm.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Figur 5KS.4</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="tilpasningen-i-gode-og-faktormarkedet" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="tilpasningen-i-gode-og-faktormarkedet"><span class="header-section-number">5.1</span> Tilpasningen i gode og faktormarkedet</h2>
+<ul>
+<li>Vi skal nå legge til grunn at bedriften har som mål å maksimere fortjenesten eller profitten.</li>
+<li>Vi skal også legge til grunn av bedriften betrakter alle priser som gitte (gode- og faktorpriser).</li>
+<li>Bedriften tilpasser seg på to markeder:
+<ul>
+<li>godemarkedet</li>
+<li>faktormarkedet: arbeidsmarkedet</li>
+</ul></li>
+<li>I faktormarkedet kjøper bedriften innsatsfaktorer og må velge de kvantum av faktorene som maksimerer fortjenesten.</li>
+<li>I godemarkedet må bedriften velge den produksjonsmengden som maksimerer fortjenesten. Altså: to valg!</li>
+</ul>
+<hr>
+<section id="hvor-stor-skal-produksjonen-være-og-bedriftens-tilbud-av-produktet" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="hvor-stor-skal-produksjonen-være-og-bedriftens-tilbud-av-produktet"><span class="header-section-number">5.1.1</span> Hvor stor skal produksjonen være og bedriftens tilbud av produktet</h3>
+<ul>
+<li>For å finne svar på dette, lar vi produksjonsmengden være variabel.</li>
+<li>Hensikten med denne tilnærmingen er å analysere hvordan bedriften varierer produsert kvantum/ antall enheter den produserer, for å oppnå høyest mulig fortjeneste.</li>
+<li>Produsentens valgvariabel er dermed kvantumet <span class="math inline">\(x\)</span>.</li>
+<li>En fordel med denne tilnærmingen er at den gir sammenhengen mellom pris og produsert kvantum på en enkel måte. Dette kan så brukes til å utlede bedriftens tilbudskurve, og i neste omgang markedets tilbudskurve.</li>
+</ul>
+<hr>
+<p><strong>Fortjenestemaksimering (kort sikt) med variabel produksjonsmengde</strong></p>
+<ul>
+<li>Produksjon: <span class="math inline">\(x = f(N)\)</span></li>
+<li>Kostnader: <span class="math inline">\(C(x) = C_V(x) + C_F\)</span></li>
+<li>Salgsinntekt: <span class="math inline">\(R = px\)</span></li>
+<li>Maks profitt: <span class="math inline">\(F = R – C\)</span> som gir <span class="math inline">\(F=px – C_V(x) – C_F\)</span></li>
+</ul>
+<p>Bedriften ønsker å maksimere dette uttrykket mhp. bruken av arbeidskraften. Formelt kan vi uttrykke dette som: <span class="math display">\[
+\underset{x}{\text{Maks }} F=px-C(x)
+\]</span></p>
+<hr>
+<p><strong>Løsning og tolkning</strong></p>
+<p>1.ordensbetingelsen er gitt ved <span class="math display">\[
+p = C'(x)
+\]</span> Produksjonen tilpasser seg der hvor produktprisen er lik grensekostnaden.</p>
+<p>2.ordensbetingelsen (som sikrer maksimum) <span class="math display">\[
+F''(x)=-C''(x) &lt; 0 \Leftrightarrow C''(x) &gt; 0
+\]</span></p>
+<p>Kostnadsfunksjonen må være konveks (som vi tidligere har sett at kan komme som et resultat av avtagende grenseproduktivitet mhp. bruken av arbeidskraft)</p>
+<hr>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><em>Uten faste kostnader</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/kgkufast.png" class="img-fluid figure-img" style="width:45.0%"></p>
+<figcaption>Figur 5KS.5</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><em>Med faste kostnader</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/kgkmfast.png" class="img-fluid figure-img" style="width:45.0%"></p>
+<figcaption>Figur 5KS.6</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<ul>
+<li>Tilbudet til bedriften må bestemmes gjennom profittmaksimering eller kostnadsminimering.<br>
+</li>
+<li>Ettersom dette krever at bedriften er på grensekostnadskurven, vil tilbudskurven være ”den samme” som grensekostnadskurven.</li>
+<li>På kort vil bedriftens tilbud være stigende i et (x,p)-diagram.</li>
+<li>Reservasjonsprisen (minsteprisen) vil være der hvor <span class="math inline">\(p_r=\overline{C}\)</span>
+<ul>
+<li>Dersom de faste kostnadene er irrreversible (har en alternativ anvendelse), vil <span class="math inline">\(\overline{C}=\overline{C}_V\)</span></li>
+<li>Dersom de faste kostnadene er reversible (har en alternativ anvendelse), vil <span class="math inline">\(\overline{C}=\overline{C}_V+\overline{C}_F\)</span></li>
+</ul></li>
+</ul>
+<hr>
+<p><strong>Øvelse om produksjonen</strong></p>
+<p>Anta at produktprisen er gitt ved 100 og kostnadsfunksjonen som <span class="math inline">\(C(x)=x^2\)</span>. Hva blir den optimale produksjon?</p>
+<hr>
+</section>
+<section id="hvor-stor-skal-etterspørselen-etter-arbeidskraft-være" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="hvor-stor-skal-etterspørselen-etter-arbeidskraft-være"><span class="header-section-number">5.1.2</span> Hvor stor skal etterspørselen etter arbeidskraft være?</h3>
+<ul>
+<li>For å finne svar på dette spørsmålet betrakter vi innsatsfaktoren arbeidskraft som variable, og at disse utgjør beslutningsvariablene til bedriften.</li>
+<li>Bedriften ønsker størst mulig overskudd.</li>
+<li>Produksjon: <span class="math inline">\(x = f(N)\)</span></li>
+<li>Kostnader: <span class="math inline">\(C = wN\)</span></li>
+<li>Salgsinntekt: <span class="math inline">\(R = px\)</span></li>
+<li>Profitten er gitt som inntekter (R) minus kostnader (C): <span class="math inline">\(F = R – C\)</span></li>
+</ul>
+<p>Bedriften ønsker å maksimere dette uttrykket mhp. bruken av arbeidskraften. Formelt kan vi uttrykke dette som: <span class="math display">\[
+\underset{N}{\text{Maks }} F=pf(N)-wN
+\]</span></p>
+<hr>
+<p><strong>Løsning og tolkning</strong></p>
+<p>1.ordensbetingelsen er gitt ved <span class="math display">\[
+pf'(N)=W
+\]</span> Bruken av arbeidskraften bestemmes der hvor verdien av grenseproduktiviteten er lik det nominelle lønnsnivået.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="drawio/klearb.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Figur 5KS.7</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>2.ordensbetingelsen (som sikrer optimum) <span class="math display">\[
+pf''(N) &lt; 0
+\]</span></p>
+<hr>
+<p><strong>Øvelse om bruk av arbeidskraft</strong></p>
+<p>Anta at produktprisen er gitt ved 10, lønnskostnadene gitt ved 1, og produktfunsjonen <span class="math inline">\(x=\sqrt{N}\)</span></p>
 
-        // Disables the default reveal.js slide layout (scaling and centering)
-        // so that you can use custom CSS layout
-        disableLayout: false,
 
-        // Vertical centering of slides
-        center: false,
+</section>
+</section>
+</section>
 
-        // Enables touch navigation on devices with touch input
-        touch: true,
-
-        // Loop the presentation
-        loop: false,
-
-        // Change the presentation direction to be RTL
-        rtl: false,
-
-        // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'linear',
-
-        // Randomizes the order of slides each time the presentation loads
-        shuffle: false,
-
-        // Turns fragments on and off globally
-        fragments: true,
-
-        // Flags whether to include the current fragment in the URL,
-        // so that reloading brings you to the same fragment position
-        fragmentInURL: false,
-
-        // Flags if the presentation is running in an embedded mode,
-        // i.e. contained within a limited portion of the screen
-        embedded: false,
-
-        // Flags if we should show a help overlay when the questionmark
-        // key is pressed
-        help: true,
-
-        // Flags if it should be possible to pause the presentation (blackout)
-        pause: true,
-
-        // Flags if speaker notes should be visible to all viewers
-        showNotes: false,
-
-        // Global override for autoplaying embedded media (null/true/false)
-        autoPlayMedia: null,
-
-        // Global override for preloading lazy-loaded iframes (null/true/false)
-        preloadIframes: null,
-
-        // Number of milliseconds between automatically proceeding to the
-        // next slide, disabled when set to 0, this value can be overwritten
-        // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
-
-        // Stop auto-sliding after user input
-        autoSlideStoppable: true,
-
-        // Use this method for navigation when auto-sliding
-        autoSlideMethod: null,
-
-        // Specify the average time in seconds that you think you will spend
-        // presenting each slide. This is used to show a pacing timer in the
-        // speaker view
-        defaultTiming: null,
-
-        // Enable slide navigation via mouse wheel
-        mouseWheel: false,
-
-        // The display mode that will be used to show slides
-        display: 'block',
-
-        // Hide cursor if inactive
-        hideInactiveCursor: true,
-
-        // Time before the cursor is hidden (in ms)
-        hideCursorTime: 5000,
-
-        // Opens links in an iframe preview overlay
-        previewLinks: false,
-
-        // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
-
-        // Transition speed (default/fast/slow)
-        transitionSpeed: 'default',
-
-        // Transition style for full page slide backgrounds
-        // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'none',
-
-        // Number of slides away from the current that are visible
-        viewDistance: 3,
-
-        // Number of slides away from the current that are visible on mobile
-        // devices. It is advisable to set this to a lower number than
-        // viewDistance in order to save resources.
-        mobileViewDistance: 2,
-
-        // The "normal" size of the presentation, aspect ratio will be preserved
-        // when the presentation is scaled to fit different resolutions. Can be
-        // specified using percentage units.
-        width: 1050,
-
-        height: 700,
-
-        // Factor of the display size that should remain empty around the content
-        margin: 0.1,
-
-        math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
-        // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
-
-          RevealMath,
-          RevealNotes,
-          RevealSearch,
-          RevealZoom
-        ]
-      });
-    </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
           }
         }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
           });
         }
-
-      })();
-    </script>
-
-    <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
-          }
-        }
-        return false;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
             }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
-          }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      });
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          return note.innerHTML;
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
         });
       }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
           }
-        } else {
-          return undefined;
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
         }
       };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
-              }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
-          });
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
         }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
       }
-    });
-    </script>
-    
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Jørn I. Halvorsen (jorn.i.halvorsen at hiof.no)</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
 
 </body></html>

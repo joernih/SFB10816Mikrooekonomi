@@ -1,4 +1,17 @@
+
+
+
+
+
 ## Tidligere eksamensoppgaver
+
+
+```{r, echo=F}
+knitr::knit_exit()
+```
+- [Eksamen våren 2023]()
+
+- [Eksamen våren 2022](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/eksamensoppgaver/eksamen_SFB10816_2022_V.pdf)
 
 - [Eksamen våren 2022](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/eksamensoppgaver/eksamen_SFB10816_2022_V.pdf)
   - [Eksamen våren 2022 (med losningsforslag)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/eksamensoppgaver/eksamen_SFB10816_2022_V_losning.pdf)
