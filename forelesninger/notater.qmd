@@ -10,6 +10,7 @@ format:
     smaller: true
     toc-depth: 3
     toc: false
+    fig-cap-location: bottom
 #execute: 
 #  cache: false
 footer: https://joernih.github.io/SFB10816Mikrooekonomi/
