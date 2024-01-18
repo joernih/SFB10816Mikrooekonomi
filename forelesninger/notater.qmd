@@ -916,7 +916,7 @@ $$
 
 **Øvelse om bruk av arbeidskraft**
 
-Anta at produktprisen er gitt ved 10, lønnskostnadene gitt ved 1, og produktfunsjonen $x=\sqrt{N}$
+Anta at produktprisen er gitt ved 10, lønnskostnadene gitt ved 1, og produktfunsjonen $x=\sqrt{N}$ Hva blir den optimale bruken av arbeidskraft?
 
 ::: {.content-visible when-profile="internal"}
 
