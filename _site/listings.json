@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/seminar/index.html",
-    "items": []
-  },
-  {
     "listing": "/seminar/posts.html",
     "items": [
       "/seminar/oppgaver/semoppg_1.html",

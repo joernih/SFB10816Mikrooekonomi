@@ -1,9 +1,11 @@
 {
-  "hash": "6332187a91ae2c91c01fa2385fc2b9a5",
+  "hash": "a069d6e08f38876c415d74bd70dab52f",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Seminar 6: Markedsteori: ufullkommen konkurranse og andre temaer\"\nformat:\n  html:\n    toc: true\n    css: css/OFF.css\n---\n\n::: {.cell}\n\n:::\n\n\nUke 16, ansvarlig: TAB\n\n::: {.content-visible when-profile=\"internal\"}\n\n# Oppgave 1: Monopolistens tilpasning\n# Oppgave 2: Andre temaer\n\n:::\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Seminar 6: Markedsteori: ufullkommen konkurranse og andre temaer\"\nformat:\n  html:\n    toc: true\n    css: css/OFF.css\n---\n\n::: {.cell}\n\n:::\n\n\nUke 16, ansvarlig: TAB\nFredag kl. 12:15-14:00(?)\n\n\n::: {.content-visible when-profile=\"internal\"}\n\n# Oppgave 1: Monopolistens tilpasning\n# Oppgave 2: Andre temaer\n\n:::\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "supporting": [
+      "semoppg_6_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
