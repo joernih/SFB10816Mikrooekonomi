@@ -6,3 +6,7 @@ output: github_document
 ### Forelesning 1 
 - Numerert de ulike figurene
 - Endret litt på figur 3.8 om avgifter.
+- Bytteom om forklaring på figur 3.6 og 3.7
+
+### Forelesning 2
+- Figur 5KS.4 satt inn.

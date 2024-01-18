@@ -25,7 +25,7 @@
     "href": "index.html#nyheter",
     "title": "Mikroøkonomi med anvendelser (våren 2024)",
     "section": "Nyheter",
-    "text": "Nyheter\nZoom lenke til dagens forelesning, torsdag 18.1 kl. 11:15\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-01-18"
+    "text": "Nyheter\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-01-18"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_6.html",
@@ -46,7 +46,7 @@
     "href": "seminar/oppgaver/semoppg_4.html",
     "title": "Seminar 4: Konsumentteori",
     "section": "",
-    "text": "Uke 10, ansvarlig: TAB"
+    "text": "Uke 10, ansvarlig: JIH"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_4.html#oppgave-3",
@@ -88,7 +88,7 @@
     "href": "seminar/oppgaver/semoppg_3.html",
     "title": "Seminar 3: Produsentteori",
     "section": "",
-    "text": "Uke 7, ansvarlig: TAB"
+    "text": "Uke 7, ansvarlig: JIH Torsdag kl. 09:15-14:00(?)"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_3.html#oppgave-1",
@@ -473,7 +473,7 @@
     "href": "log.html",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "",
-    "text": "Forelesning 1\n\nNumerert de ulike figurene\nEndret litt på figur 3.8 om avgifter."
+    "text": "Forelesning 1\n\nNumerert de ulike figurene\nEndret litt på figur 3.8 om avgifter.\nBytteom om forklaring på figur 3.6 og 3.7\n\n\n\nForelesning 2\n\nFigur 5KS.4 satt inn."
   },
   {
     "objectID": "oppgaver/arbeidskrav.html",
@@ -740,5 +740,12 @@
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Kostnader",
     "text": "Kostnader\n\nKostnader: De beløp som påløper som følge av virksomhet.\n\nFaste kostnader \\((C_F)\\) : Kostnader som er uavhengige av produsert kvantum.\nVariable kostnader \\((C_V\\)): Varierer i takt med produsert kvantum - \\(C_V = C_{V}(x)\\)\nTotale kostnader \\((C)\\): Summen av faste og variable kostnader - \\(C = C_F + C_V\\)\nGjennomsnittskostnader (enhetskostnader): Disse finner vi ved å dividere de respektive kostnadene med antall produserte enheter. - \\(\\overline{C}=\\frac{C_F}{x}+\\frac{C_V}{x}=\\overline{C}_F+\\overline{C}_V\\)\nGrensekostnader ( \\(GK\\) eller \\(C'\\) ): Endringen i bedriftens totale kostnader ved en liten endring i produsert kvantum - \\(GK=\\frac{dC(x)}{dx}=C'(x)\\)"
+  },
+  {
+    "objectID": "log.html#forelesning-2",
+    "href": "log.html#forelesning-2",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "### Forelesning 2",
+    "text": "### Forelesning 2"
   }
 ]

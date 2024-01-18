@@ -9,8 +9,6 @@ engine: knitr
 
 ## Nyheter
 
-[Zoom lenke til dagens forelesning, torsdag 18.1 kl. 11:15](https://hiof.zoom.us/j/63971925072?pwd=Vy9vQjltSnJOZUMrQ28xOFhmaDdvUT09)
-
 ### Pensumbøker
 
 ![](man/figures/pensum.jpg){width=20%}

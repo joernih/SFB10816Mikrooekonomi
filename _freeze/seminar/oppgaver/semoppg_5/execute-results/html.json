@@ -1,8 +1,8 @@
 {
-  "hash": "74055cea913080dfc309b9331685622b",
+  "hash": "a7fd8a953d601659f51bb378b4f76665",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Seminar 5: Markedsteori: Fullkommen konkurranse\"\nformat:\n  html:\n    toc: true\n    css: css/OFF.css\n---\n\n::: {.cell}\n\n:::\n\n\nUke 14, ansvarlig: TAB\n\n\n\n::: {.content-visible when-profile=\"internal\"}\n\n# Oppgave 1: Fullkommen konkurranse\n\n:::\n\n\n::: {.cell}\n\n:::\n",
+    "markdown": "---\ntitle: \"Seminar 5: Markedsteori: Fullkommen konkurranse\"\nformat:\n  html:\n    toc: true\n    css: css/OFF.css\n---\n\n::: {.cell}\n\n:::\n\n\n\nUke 14, ansvarlig: TAB\n\n\n\n\n::: {.content-visible when-profile=\"internal\"}\n\n# Oppgave 1: Fullkommen konkurranse\n\n:::\n\n\n::: {.cell}\n\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

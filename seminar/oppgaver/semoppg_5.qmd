@@ -14,7 +14,9 @@ eqpar <- list(meql=reticulate::py$modeql,meqs=reticulate::py$modeqs)
 eql <- eqpar$meql
 ```
 
-Uke `r md$regnv$sem5[2]`, ansvarlig: `r md$regnv$ansv[1]`
+
+Uke `r md$regnv$sem5[2]`, ansvarlig: `r md$regnv$ansv[5]`
+
 
 
 
