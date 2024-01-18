@@ -427,7 +427,7 @@ La oss se på et eksempel der lavere pris på innsatsfaktorene har ført til et 
 :::: {.columns}
 
 ::: {.column width="50%"}
-Skiftanalyse (slak/prisfølsom etterspørselskurve)
+Skiftanalyse (bratt/prisufølsom/prisuelastisk etterspørselskurve)
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 #| label: figur3.6
 #| fig-cap: "Figur 3.6"
@@ -436,7 +436,7 @@ knitr::include_graphics("drawio/telikevekt_u.png")
 :::
 
 ::: {.column width="50%"}
-Skiftanalyse (slak/prisufølsom etterspørselskurve)
+Skiftanalyse (slak/prisfølsom etterspørselskurve)
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 #| label: figur3.7
 #| fig-cap: "Figur 3.7"
