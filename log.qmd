@@ -4,4 +4,5 @@ output: github_document
 ---
 
 ### Forelesning 1 
-- Endret litt på figur om avgifter.
+- Numerert de ulike figurene
+- Endret litt på figur 3.8 om avgifter.
