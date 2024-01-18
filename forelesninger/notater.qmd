@@ -555,6 +555,16 @@ knitr::include_graphics(pf)
   	- $x = f(N, K)$
   - Viser, for enhver mulig faktorkombinasjon, det maksimale antall enheter som kan produseres av produktet.
   - $f$ beskriver formen på avhengighetsforholdet mellom produksjonsmengden og innsatsfaktorene. Kan tolkes som forhold (faktorer) som endrer produksjonsmengden uten å endre mengden av innsatsfaktorene $N$ og $K$.
+---
+
+Merk: Til forskjell fra læreboka, vil vi forelesningene først gjennomgå alle deler av produksjonsteorien på kort sikt, før vi ser på dette på lang sikt. 
+
+| Pensumbok         | Kort sikt| Lang sikt |
+|----------|----------|----------|
+| Teknolog/Produksjon   | Kap. 4   | Kap 4   |
+| Inntekter og kostnader   | Kap. 5   | Kap 5   |
+| Optimering i produkt og faktormarkedene   | Kap. 6   | Kap. 6  |
+
 
 # Kapittel 4, 5 og 6: Produksjonsteori på kort sikt `r #paste(substring(del[2],4),tema[2])`
 
