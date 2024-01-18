@@ -5,9 +5,9 @@
 
 ## Tidligere eksamensoppgaver
 
-- [Eksamen våren 2021]()
-- [Eksamen våren 2022]()
-- [Eksamen våren 2023]()
+- [Eksamen HiOF våren 2023](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/eksamensoppgaver/eksamen_SFB10816_2023_V.pdf)
+- [Eksamen HiOF våren 2022]()
+- [Eksamen HiOF våren 2021]()
 
 Kommer snart
 
