@@ -9,6 +9,8 @@ engine: knitr
 
 ## Nyheter
 
+[Zoom lenke til forelesning](https://hiof.zoom.us/j/63971925072?pwd=Vy9vQjltSnJOZUMrQ28xOFhmaDdvUT09)
+
 ### Pensumbøker
 
 ![](man/figures/pensum.jpg){width=20%}
