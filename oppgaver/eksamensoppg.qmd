@@ -6,14 +6,14 @@
 ## Tidligere eksamensoppgaver
 
 - [Eksamen HiOF våren 2023](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/eksamensoppgaver/eksamen_SFB10816_2023_V.pdf)
-- [Eksamen HiOF våren 2022]()
-- [Eksamen HiOF våren 2021]()
+- [Eksamen HiOF våren 2022](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/eksamensoppgaver/eksamen_SFB10816_2022_V.pdf)
 
-Kommer snart
+Kommer mer snart
 
 ```{r, echo=F}
 knitr::knit_exit()
 ```
+- [Eksamen HiOF våren 2021]()
 - [Eksamen våren 2023]()
 
 - [Eksamen våren 2022](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/eksamensoppgaver/eksamen_SFB10816_2022_V.pdf)
