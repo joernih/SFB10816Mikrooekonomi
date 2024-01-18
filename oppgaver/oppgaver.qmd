@@ -13,6 +13,7 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 #source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/econplot.R'))
 source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
 ```
+
 ## Anbefalte oppgaver
 
 ```{r, eval=T, echo=F}

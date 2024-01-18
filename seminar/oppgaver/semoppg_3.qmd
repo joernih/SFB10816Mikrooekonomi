@@ -15,6 +15,7 @@ eql <- eqpar$meql
 ```
 
 Uke `r md$regnv$sem3[2]`, ansvarlig: `r md$regnv$ansv[1]`
+Torsdag kl. 09:15-14:00(?)
 
 ::: {.content-visible when-profile="internal"}
 ## Oppgave 1: Produksjonsteori på kort sikt

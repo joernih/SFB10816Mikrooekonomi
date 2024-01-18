@@ -25,7 +25,7 @@
     "href": "index.html#nyheter",
     "title": "Mikroøkonomi med anvendelser (våren 2024)",
     "section": "Nyheter",
-    "text": "Nyheter\nZoom lenke til forelesning\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-01-17"
+    "text": "Nyheter\nZoom lenke til dagens forelesning\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-01-18"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_6.html",
@@ -116,7 +116,7 @@
     "href": "seminar/oppgaver/semoppg_1.html",
     "title": "Seminar 1: Introduksjon til markedsteori",
     "section": "",
-    "text": "Uke 4, ansvarlig: TAB"
+    "text": "Uke 4, ansvarlig: TAB Fredag kl. 12:15-14:00(?)"
   },
   {
     "objectID": "timeplan/timeplan.html#oppgaver",
@@ -130,7 +130,7 @@
     "href": "seminar/oppgaver/semoppg_2.html",
     "title": "Seminar 2: Matematikk for mikroøkonomi",
     "section": "",
-    "text": "Uke 5, ansvarlig: TAB"
+    "text": "Uke 5, ansvarlig: TAB Fredag kl. 12:15-14:00(?)"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_6.html#oppgave-6",
@@ -487,14 +487,14 @@
     "href": "oppgaver/eksamensoppg.html",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "",
-    "text": "knitr::knit_exit()"
+    "text": "Kommer snart"
   },
   {
     "objectID": "oppgaver/eksamensoppg.html#tidligere-eksamensoppgaver",
     "href": "oppgaver/eksamensoppg.html#tidligere-eksamensoppgaver",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "",
-    "text": "knitr::knit_exit()"
+    "text": "Kommer snart"
   },
   {
     "objectID": "oppgaver/eksamensoppg.html#tre-oppgavesett",

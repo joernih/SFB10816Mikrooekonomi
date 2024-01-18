@@ -5,6 +5,7 @@
 
 ## Tidligere eksamensoppgaver
 
+Kommer snart
 
 ```{r, echo=F}
 knitr::knit_exit()
