@@ -5,6 +5,10 @@
 
 ## Tidligere eksamensoppgaver
 
+- [Eksamen våren 2021]()
+- [Eksamen våren 2022]()
+- [Eksamen våren 2023]()
+
 Kommer snart
 
 ```{r, echo=F}
