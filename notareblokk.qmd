@@ -4,22 +4,15 @@ subtitle: "Forelesningsnotater (tast o for oversiktsbilde, e for utskriftsvennli
 #`r paste("Oppdatert:",Sys.Date())`
 author: "Jørn I. Halvorsen og Joachim Thøgersen"
 date: "`r Sys.Date()`"
-format:
-  revealjs: 
-    chalkboard: true
-    smaller: true
-    toc-depth: 2
-    toc: false
-    fig-cap-location: bottom
 #execute: 
 #  cache: false
-footer: <https://joernih.github.io/SFB10816Mikrooekonomi/>
+footer: https://joernih.github.io/SFB10816Mikrooekonomi/
 # Ekstratemaer: Tilbudet av arbeidskraft, Andre markedsformer: Cournout, Spillteori. Spillteori
-#format: 
-#  html:
-#    toc: true
-#    toc-depth: 3
-#    number-sections: true
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
 ---
 
 ```{r, echo=F, warning=F, message=F, eval=T, results='hide'}
@@ -565,7 +558,7 @@ knitr::knit_exit()
 ```
 
 
-## Produksjon og teknologiske forhold 
+### Produksjon og teknologiske forhold 
 
 *Talleksempel på en produktfunksjon*
 ```{r, echo=FALSE}
@@ -611,7 +604,7 @@ knitr::include_graphics(pkl)
 
 ---
 
-## Inntekter 
+### Inntekter 
 
 
 - Bedriftens inntekter bestemmes av antall enheter den selger, og prisen på disse enhetene.
@@ -643,7 +636,7 @@ knitr::include_graphics(innt)
 ---
 
 
-## Kostnader 
+### Kostnader 
 
 - Kostnader: De beløp som påløper som følge av virksomhet.
   - Faste kostnader  $(C_F)$ : Kostnader som er uavhengige av produsert kvantum.
@@ -6235,4 +6228,5 @@ knitr::include_graphics("drawio/int_tilpasning_inntnedgang.png")
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 knitr::include_graphics("drawio/opt_tilp_tid.png")
 ```
+
 

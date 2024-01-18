@@ -4,6 +4,7 @@ project:
     - "index.qmd"
     - "timeplan/timeplan.qmd"
     - "forelesninger/notater.qmd"
+    - "forelesninger/notaterblokk.qmd"
     - "forelesninger/presentations_hiof.Rmd"
     - "oppgaver/eksamensoppg.qmd"
     - "oppgaver/oppgaver.qmd"
