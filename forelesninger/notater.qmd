@@ -561,7 +561,7 @@ Merk: Til forskjell fra læreboka, vil vi forelesningene først gjennomgå alle 
 
 | Pensumbok         | Kort sikt| Lang sikt |
 |----------|----------|----------|
-| Teknolog/Produksjon   | Kap. 4   | Kap 4   |
+| Teknologi/Produksjon   | Kap. 4   | Kap 4   |
 | Inntekter og kostnader   | Kap. 5   | Kap 5   |
 | Optimering i produkt og faktormarkedene   | Kap. 6   | Kap. 6  |
 
@@ -845,9 +845,6 @@ knitr::include_graphics(kgkmfast)
 
 Anta at produktprisen er gitt ved 100 og kostnadsfunksjonen som $C(x)=x^2$. Hva blir den optimale produksjon?
 
-::: {.content-visible when-profile="internal"}
-
-
 **Løsning**
 
 Uttrykket for fortjeneste kan formuleres som 
@@ -871,8 +868,6 @@ Ved å sette $x=50$ tilbake i uttrykket for profitt finner vi at profitten er po
 $$
 F=100\cdot 50 - 50^2=2500
 $$
-
-:::
 
 ---
 
@@ -918,8 +913,6 @@ $$
 
 Anta at produktprisen er gitt ved 10, lønnskostnadene gitt ved 1, og produktfunsjonen $x=\sqrt{N}$ Hva blir den optimale bruken av arbeidskraft?
 
-::: {.content-visible when-profile="internal"}
-
 **Løsning**
 
 Uttrykket for fortjeneste kan formuleres som 
@@ -940,18 +933,21 @@ N=5^2 = 25
 2.ordensbetingelsen (som sikrer optimum) $-2.5\cdot N^{-1.5} < 0$, mens optimal forjeneste er positiv og gitt som 
 $F=10\cdot 25^{1/2}-25=25$
 
-:::
 
+
+::: {.content-visible when-profile="internal"}
+
+
+:::
 
 ```{r, echo=F, eval=T}
 knitr::knit_exit()
 ```
 
+
 ---
 
-# Kapittel 4, 5 og 6: `r paste(substring(del[2],4),tema[3])`
-
-`r paste("Oppdatert:",Sys.Date())`
+# Kapittel 4, 5 og 6: Produksjonsteori på lang sikt  `r #paste(substring(del[2],4),tema[3])`
 
 ---
 
@@ -962,6 +958,7 @@ knitr::knit_exit()
 	- $x = f(N, K)$
 - Viser, for enhver mulig faktorkombinasjon, det maksimale antall enheter som kan produseres av produktet.
 - $f$ beskriver formen på avhengighetsforholdet mellom produksjonsmengden og innsatsfaktorene. Kan tolkes som forhold (faktorer) som endrer produksjonsmengden uten å endre mengden av innsatsfaktorene $N$ og $K$.
+
 
 .pull-left[
 Arbeidskraft
@@ -1327,6 +1324,15 @@ Optimal løsning også her karakterisert ved tangeringspunktet mellom isokvant o
 Ved å sette inn for den optimale løsningen av $N$ og $K$ finner vi bedriftens kostnadsfunksjon (kostnaden som minimerer produksjonen for et gitt produksjonsnivå)
 
 ---
+
+```{r, echo=F, eval=T}
+knitr::knit_exit()
+```
+
+:::
+
+
+
 
 ```{r, echo=F,eval=F}
 knitr::knit_exit()

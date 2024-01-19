@@ -25,7 +25,7 @@
     "href": "index.html#nyheter",
     "title": "Mikroøkonomi med anvendelser (våren 2024)",
     "section": "Nyheter",
-    "text": "Nyheter\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-01-18"
+    "text": "Nyheter\n\nVideolenke tilhørende forelesning #2 er lagt ut nederst på Canvas-siden for kurset\nSvar på de to øvelsene i forlesningsnotatene om produksjonsteori på kort sikt er nå publisert.\n\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-01-19"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_6.html",
@@ -747,5 +747,33 @@
     "title": "Mikroøkonomi (SFB10816)",
     "section": "### Forelesning 2",
     "text": "### Forelesning 2"
+  },
+  {
+    "objectID": "forelesninger/notater.html#produksjon-og-teknologiske-forhold-1",
+    "href": "forelesninger/notater.html#produksjon-og-teknologiske-forhold-1",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Produksjon og teknologiske forhold",
+    "text": "Produksjon og teknologiske forhold\n\nVi tar utgangspunkt i produksjonsbildet med to innsatsfaktorer og ett produkt.\nProduktfunksjonen:\n\n\\(x = f(N, K)\\)\n\nViser, for enhver mulig faktorkombinasjon, det maksimale antall enheter som kan produseres av produktet.\n\\(f\\) beskriver formen på avhengighetsforholdet mellom produksjonsmengden og innsatsfaktorene. Kan tolkes som forhold (faktorer) som endrer produksjonsmengden uten å endre mengden av innsatsfaktorene \\(N\\) og \\(K\\).\n\n.pull-left[ Arbeidskraft\n\n\n\n\n\n\n\n\n\n\n\\(\\frac{\\partial f}{\\partial N} &gt; 0\\)\n\\(\\frac{\\partial^2 f}{\\partial N^2} &lt; 0\\)\n\n]\n.pull-right[ Kapital\n\n\n\n\n\n\n\n\n\n\n\\(\\frac{\\partial f}{\\partial K} &gt; 0\\)\n\\(\\frac{\\partial^2 f}{\\partial K^2} &lt; 0\\)\n\n]"
+  },
+  {
+    "objectID": "forelesninger/notater.html#inntekter-1",
+    "href": "forelesninger/notater.html#inntekter-1",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Inntekter",
+    "text": "Inntekter\n\nSammenlignet med den beskrivelsen som ble gitt for kort sikt, forekommer det her ingen endringer."
+  },
+  {
+    "objectID": "forelesninger/notater.html#kostnader-1",
+    "href": "forelesninger/notater.html#kostnader-1",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Kostnader",
+    "text": "Kostnader\n\nSammenlignet med den beskrivelsen som ble gitt for kort sikt, kan vi her se bort fra de faste kostnadene siden vi antar alle innsatsfaktorer for å være variable på lang sikt.\n\nKostnadslinjen og isokostlinja\n\nTotale kostnader for bedriften er summen av variable og faste kostnader. La oss nå se bort fra de faste, dette siden vi antar alle faktorer antas å være variable på lang sikt.\nVi antar at bedriftens kostnader kan uttrykkes ved summen av utgiftene på de to innsatsfaktorene.\n\nPris på N: w\nPris på K: r\n\n\\(C = wN + rK\\) Totale kostnader (C) er da gitt ved: \\[\nC = wN  +  rK\n\\]"
+  },
+  {
+    "objectID": "forelesninger/notater.html#tilpasningen-i-gode-og-faktormarkedet-1",
+    "href": "forelesninger/notater.html#tilpasningen-i-gode-og-faktormarkedet-1",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Tilpasningen i gode og faktormarkedet",
+    "text": "Tilpasningen i gode og faktormarkedet\nHvor stor skal produksjonen være og bedriftens tilbud av produktet\n\nTilbudet til bedriften må bestemmes gjennom profittmaksimering eller kostnadsminimering.\n\nEttersom dette krever at bedriften er på grensekostnadskurven, vil tilbudskurven være ”den samme” som grensekostnadskurven.\nPå lang sikt vil bedriftens tilbudskurve enten være\n\nStigende (ved avtagende skalautbytte) i et (x,p)-diagram\nHorisontal (ved konstant skalautbytte) i et (x,p)-diagram\nAvtagende (ved økende skalautbytte) i et (x,p)-diagram"
   }
 ]
