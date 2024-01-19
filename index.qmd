@@ -26,8 +26,6 @@ engine: knitr
 
 **Siste gang oppdatert: `r as.Date(Sys.time())`**
 
-
-
 ```{r, echo=F}
 knitr::knit_exit()
 ```
