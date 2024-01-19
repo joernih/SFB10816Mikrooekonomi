@@ -17,7 +17,6 @@ eql <- eqpar$meql
 Uke `r md$regnv$sem1[2]`, ansvarlig: `r md$regnv$ansv[1]`
 Fredag kl. 12:15-14:00(?)
 
-::: {.content-visible when-profile="internal"}
 ## Oppgave 1
 
 Anta at et marked med fullkommen konkurranse har slik etterspørsel og
@@ -86,6 +85,8 @@ b)  Vil dette ha betydning for leieprisen per kvadratmeter og hvor mange
     utslagene i leiepriser og/eller antall kvadratmeter til utleie være
     store eller små? Gi et faglig begrunnet svar, og vurder om svaret på
     alle spørsmål er entydige.
+
+::: {.content-visible when-profile="internal"}
 
 :::
 

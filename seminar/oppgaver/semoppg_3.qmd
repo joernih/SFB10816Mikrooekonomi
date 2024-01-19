@@ -1,17 +1,14 @@
 ---
-title: "Seminar 3: Produsentteori"
+title: "Seminar 3: Produsentteori på kort og lang sikt"
 format:
   html:
     toc: true
     css: css/OFF.css
 ---
 
+
 ```{r, echo=F}
 md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
-fdm <- paste0(rprojroot::find_rstudio_root_file(),'/seminar/oppgaver/mate.py')
-reticulate::source_python(fdm)
-eqpar <- list(meql=reticulate::py$modeql,meqs=reticulate::py$modeqs)
-eql <- eqpar$meql
 ```
 
 Uke `r md$regnv$sem3[2]`, ansvarlig: `r md$regnv$ansv[3]`
@@ -19,8 +16,9 @@ Torsdag kl. 09:15-11:00(?)
 
 ::: {.content-visible when-profile="internal"}
 ## Oppgave 1: Produksjonsteori på kort sikt
-## Oppgave 2: Produksjonsteori på lang sik
+## Oppgave 2: Produksjonsteori på lang sikt
 :::
+
 
 ```{r, echo=F}
 knitr::knit_exit()
