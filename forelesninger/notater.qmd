@@ -938,11 +938,6 @@ $F=10\cdot 25^{1/2}-25=25$
 ::: {.content-visible when-profile="internal"}
 
 
-:::
-
-```{r, echo=F, eval=T}
-knitr::knit_exit()
-```
 
 
 ---
@@ -953,40 +948,39 @@ knitr::knit_exit()
 
 ## Produksjon og teknologiske forhold  
 
+
 - Vi tar utgangspunkt i produksjonsbildet med to innsatsfaktorer og ett produkt.
 - Produktfunksjonen:
 	- $x = f(N, K)$
 - Viser, for enhver mulig faktorkombinasjon, det maksimale antall enheter som kan produseres av produktet.
 - $f$ beskriver formen på avhengighetsforholdet mellom produksjonsmengden og innsatsfaktorene. Kan tolkes som forhold (faktorer) som endrer produksjonsmengden uten å endre mengden av innsatsfaktorene $N$ og $K$.
 
+:::
 
-.pull-left[
+---
+
+:::: {.columns}
+
+::: {.column width="50%"}
 Arbeidskraft
-
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
 pkl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodkl.png')
 knitr::include_graphics(pkl)
 ```
-
 - $\frac{\partial f}{\partial N} > 0$
 - $\frac{\partial^2 f}{\partial N^2} < 0$
+:::
 
-]
-
-.pull-right[
+::: {.column width="50%"}
 Kapital
-
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
 pkk <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodkk.png')
 knitr::include_graphics(pkk)
 ```
-
 - $\frac{\partial f}{\partial K} > 0$
 - $\frac{\partial^2 f}{\partial K^2} < 0$
-
-]
-
-
+:::
+::::
 
 
 
@@ -997,7 +991,7 @@ knitr::include_graphics(pkk)
 - For å representere produktfunksjonen grafisk, skal vi bruke et redskap fra matteboka, nemlig nivåkurver.
 - Nivåkurven kalles her en *isokvant*: viser alle kombinasjoner av N og K som gir samme produserte kvantum.
 
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
 iso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/isokvant.png')
 knitr::include_graphics(iso)
 ```
@@ -1039,23 +1033,27 @@ $$
 - Dette kan fremstilles med formen på isokvanten.
 - Ytterkantene: perfekt substitusjon og ingen substitusjon (perfekte komplementer).
 
-.pull-left[
-Linær produksjonsteknologi (perfekte substitutter)
+:::: {.columns}
 
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
+::: {.column width="50%"}
+Linær produksjonsteknologi (perfekte substitutter)
+```{r, echo=FALSE, out.width="70%", fig.cap=""}
 pss <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/linsub.png')
 knitr::include_graphics(pss)
 ```
-]
+:::
 
-.pull-right[
+::: {.column width="50%"}
 Leontief produksjonsteknologi (ingen substitusjon)
-
-```{r, echo=FALSE, out.width="60%", fig.cap=""}
+```{r, echo=FALSE, out.width="70%", fig.cap=""}
 fss <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/lensub.png')
 knitr::include_graphics(fss)
 ```
-]
+:::
+
+::::
+
+
 
 
 ---
@@ -1073,7 +1071,7 @@ knitr::include_graphics(fss)
 - i) Konstant skalautbytte
   - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på y %.
 
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
 koskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/koskala.png')
 knitr::include_graphics(koskala)
 ```
@@ -1081,7 +1079,7 @@ knitr::include_graphics(koskala)
 - ii) Avtagende skalautbytte
   - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på mindre enn y %.
 
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
 avskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/avskala.png')
 knitr::include_graphics(avskala)
 ```
@@ -1089,7 +1087,7 @@ knitr::include_graphics(avskala)
 - iii) Økende skalautbytte
   - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på mer enn y %.
 
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
 okskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/okskala.png')
 knitr::include_graphics(okskala)
 ```
@@ -1116,6 +1114,7 @@ $$
 C = wN  +  rK
 $$
 ---
+
 
 - Isokost (låser totalkostnadene til et bestemt nivå) $C^o=C$
 $$
@@ -1169,7 +1168,7 @@ Optimal løsning er her karakterisert ved tangeringspunktet mellom isokvant og i
 
 ---
 
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
 kosmin <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kosmin.png')
 knitr::include_graphics(kosmin)
 ```
@@ -1180,7 +1179,7 @@ knitr::include_graphics(kosmin)
 #### Substitumalen: økonomisk substitusjon
 
 - Dersom vi tenker oss flere endringer i bedriftens kostnadsramme med tilhørende optimale isokvant, vil vi få frem en rekke tangeringspunkter. 
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
 submalen <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/submalen.png')
 knitr::include_graphics(submalen)
 ```
@@ -1228,22 +1227,7 @@ knitr::include_graphics(kosminka)
 Etterspør mer (mindre) av den innsatsfaktoren som har blitt billigere (dyrere).
 
 
----
-
-## Appendiks 
-### Diagramark benyttet under forelesning
-
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
-knitr::include_graphics("drawio/prod_lang_i.png")
-```
-
----
-
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
-knitr::include_graphics("drawio/prod_lang_ii.png")
-```
-
----
+## Appendiks
 
 ### MTSB: Formell utledning
 
@@ -1323,20 +1307,12 @@ Optimal løsning også her karakterisert ved tangeringspunktet mellom isokvant o
 
 Ved å sette inn for den optimale løsningen av $N$ og $K$ finner vi bedriftens kostnadsfunksjon (kostnaden som minimerer produksjonen for et gitt produksjonsnivå)
 
----
-
 ```{r, echo=F, eval=T}
 knitr::knit_exit()
 ```
 
 :::
 
-
-
-
-```{r, echo=F,eval=F}
-knitr::knit_exit()
-```
 
 # Kapittel 7: `r paste(substring(del[5],4),tema[4])`
 

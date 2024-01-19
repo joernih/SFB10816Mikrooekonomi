@@ -1710,6 +1710,393 @@ N^{0.5}=5 \\
 N=5^2 = 25
 \end{equation*}\]</span></p>
 <p>2.ordensbetingelsen (som sikrer optimum) <span class="math inline">\(-2.5\cdot N^{-1.5} &lt; 0\)</span>, mens optimal forjeneste er positiv og gitt som <span class="math inline">\(F=10\cdot 25^{1/2}-25=25\)</span></p>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="kapittel-4-5-og-6-produksjonsteori-på-lang-sikt" class="title-slide slide level1 center">
+<h1>Kapittel 4, 5 og 6: Produksjonsteori på lang sikt</h1>
+
+</section>
+<section id="produksjon-og-teknologiske-forhold-1" class="slide level2">
+<h2>Produksjon og teknologiske forhold</h2>
+<ul>
+<li>Vi tar utgangspunkt i produksjonsbildet med to innsatsfaktorer og ett produkt.</li>
+<li>Produktfunksjonen:
+<ul>
+<li><span class="math inline">\(x = f(N, K)\)</span></li>
+</ul></li>
+<li>Viser, for enhver mulig faktorkombinasjon, det maksimale antall enheter som kan produseres av produktet.</li>
+<li><span class="math inline">\(f\)</span> beskriver formen på avhengighetsforholdet mellom produksjonsmengden og innsatsfaktorene. Kan tolkes som forhold (faktorer) som endrer produksjonsmengden uten å endre mengden av innsatsfaktorene <span class="math inline">\(N\)</span> og <span class="math inline">\(K\)</span>.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Arbeidskraft</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="drawio/prodkl.png" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><span class="math inline">\(\frac{\partial f}{\partial N} &gt; 0\)</span></li>
+<li><span class="math inline">\(\frac{\partial^2 f}{\partial N^2} &lt; 0\)</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p>Kapital</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="drawio/prodkk.png" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><span class="math inline">\(\frac{\partial f}{\partial K} &gt; 0\)</span></li>
+<li><span class="math inline">\(\frac{\partial^2 f}{\partial K^2} &lt; 0\)</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="isokvanter-og-mtsb-for-produksjon">Isokvanter og MTSB for produksjon</h3>
+<ul>
+<li>For å representere produktfunksjonen grafisk, skal vi bruke et redskap fra matteboka, nemlig nivåkurver.</li>
+<li>Nivåkurven kalles her en <em>isokvant</em>: viser alle kombinasjoner av N og K som gir samme produserte kvantum.</li>
+</ul>
+
+<img data-src="drawio/isokvant.png" style="width:100.0%" class="r-stretch"></section>
+<section class="slide level2">
+
+<ul>
+<li>Isokvantens form bygger på følgende prinsipp: jo mer bedriften har av en innsatsfaktor, jo mer kan den bytte for én ekstra enhet av den andre faktoren, gitt at produksjonsmengden skal være den samme.</li>
+<li><em>MTSB (marginale tekniske substiusjonsbrøk)</em> beskriver <em>helningen</em> på en isokvant for en gitt faktorkombinasjon, dvs. i ett punkt på isokvanten.</li>
+<li>Merk: MTSB er gitt ved forholdet mellom grenseproduktivitetene (se appendiks for formell utledning) <span class="math display">\[\begin{equation*}
+MTSB \equiv -\frac{\Delta K}{\Delta N} =  \frac{f'_{N}(K,N)}{f'_{K}(K,N)}&gt;0
+\end{equation*}\]</span></li>
+<li>Formell utledning er vist i appendiks</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p><strong>Eksempel 4.2 fra pensumbok</strong></p>
+<p>Anta at produktfunksjonen er gitt ved: <span class="math inline">\(x = N^{0,7}+K^{0,3}\)</span> Regn ut MTSB for denne produktfunksjonen.</p>
+<p>Grenseproduktiviteten til arbeidskraften er gitt ved <span class="math display">\[
+\frac{\partial x}{\partial N} = 0,7N^{0,7-1} =  0,7N^{-0,3}
+\]</span></p>
+<p>Grenseproduktiviteten til kapitalen er gitt ved <span class="math display">\[
+\frac{\partial x}{\partial K} = 0,3K^{0,3-1} =  0,3K^{-0,7}
+\]</span></p>
+<p>MTSB blir derfor <span class="math display">\[
+MTSB \equiv - \frac{\Delta K}{\Delta N} = \frac{\frac{\partial x}{\partial N}}{\frac{\partial x}{\partial K}} = \frac{0,7N^{-0,3}}{0,3K^{-0,7}}
+\]</span></p>
+</section>
+<section class="slide level2">
+
+<h3 id="substitusjonsegenskaper">Substitusjonsegenskaper</h3>
+<ul>
+<li>Dette sier noe om hvor lett det er å erstatte innsatsfaktorer med hverandre.</li>
+<li>For eksempel: I noen bransjer er det lettere å erstatte arbeidskraft med kapital enn i andre.</li>
+<li>Dette kan fremstilles med formen på isokvanten.</li>
+<li>Ytterkantene: perfekt substitusjon og ingen substitusjon (perfekte komplementer).</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Linær produksjonsteknologi (perfekte substitutter)</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="drawio/linsub.png" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p>Leontief produksjonsteknologi (ingen substitusjon)</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="drawio/lensub.png" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="skalaegenskaper">Skalaegenskaper</h3>
+<ul>
+<li>Mens grenseprodukt viser endring i bruken av én innsatsfaktor, viser skalaendringer endringer i bruken av <em>alle</em> innsatsfaktorer.</li>
+<li>Definisjon: Skalaegenskapene sier noe om hvor mye produksjonsmengden endres ved <em>proporsjonale</em> endringer i bruken av innsatsfaktorene.</li>
+<li>Proporsjonale endringer innebærer at forholdet mellom N og K er konstant.</li>
+<li>Anta en proporsjonal økning på 100%.
+<ul>
+<li>Hva skjer med produksjonsmengden (merk: produksjonsprosesser kan variere i skala)?</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li><ol type="i">
+<li>Konstant skalautbytte</li>
+</ol>
+<ul>
+<li>Skalaøkning på y % <span class="math inline">\(\Rightarrow\)</span> økning i produsert kvantum på y %.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="drawio/koskala.png" style="width:50.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><ol start="2" type="i">
+<li>Avtagende skalautbytte</li>
+</ol>
+<ul>
+<li>Skalaøkning på y % <span class="math inline">\(\Rightarrow\)</span> økning i produsert kvantum på mindre enn y %.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="drawio/avskala.png" style="width:50.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><ol start="3" type="i">
+<li>Økende skalautbytte</li>
+</ol>
+<ul>
+<li>Skalaøkning på y % <span class="math inline">\(\Rightarrow\)</span> økning i produsert kvantum på mer enn y %.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="drawio/okskala.png" style="width:50.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="inntekter-1" class="slide level2">
+<h2>Inntekter</h2>
+<ul>
+<li>Sammenlignet med den beskrivelsen som ble gitt for kort sikt, forekommer det her ingen endringer.</li>
+</ul>
+</section>
+<section id="kostnader-1" class="slide level2">
+<h2>Kostnader</h2>
+<ul>
+<li>Sammenlignet med den beskrivelsen som ble gitt for kort sikt, kan vi her se bort fra de faste kostnadene siden vi antar alle innsatsfaktorer for å være variable på lang sikt.</li>
+</ul>
+<h3 id="kostnadslinjen-og-isokostlinja">Kostnadslinjen og isokostlinja</h3>
+<ul>
+<li>Totale kostnader for bedriften er summen av variable og faste kostnader. La oss nå se bort fra de faste, dette siden vi antar alle faktorer antas å være variable på lang sikt.</li>
+<li>Vi antar at bedriftens kostnader kan uttrykkes ved summen av utgiftene på de to innsatsfaktorene.
+<ul>
+<li>Pris på N: w</li>
+<li>Pris på K: r</li>
+</ul></li>
+<li><span class="math inline">\(C = wN + rK\)</span> Totale kostnader (C) er da gitt ved: <span class="math display">\[
+C = wN  +  rK
+\]</span></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Isokost (låser totalkostnadene til et bestemt nivå) <span class="math inline">\(C^o=C\)</span> <span class="math display">\[
+C^o= wN + rK
+\]</span>
+<ul>
+<li>Helningen på isokostlinja <span class="math display">\[\begin{equation}
+\Delta C^0= w\Delta N + r\Delta K = 0 \\
+r\Delta K = -w\Delta N  \\
+\frac{\Delta K}{\Delta N} = - \frac{w}{r}
+\end{equation}\]</span></li>
+<li>Bruker hele budsjettet på arbeidskraft <span class="math inline">\(\Rightarrow K=0\)</span> <span class="math display">\[\begin{equation}
+C^0= wN + r0 = wN \\
+C^0/w = N \\
+N = C^0/w
+\end{equation}\]</span></li>
+<li>Bruke hele budsjettet (kostnaden) på kapital <span class="math inline">\(\Rightarrow N=0\)</span> <span class="math display">\[\begin{equation}
+C^0= w0 + rK = wN \\
+C^0/r = K \\
+K = C^0/r
+\end{equation}\]</span></li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="maksimering-av-produksjonen-for-en-gitt-kostnadsramme-optimal-tilpasning">Maksimering av produksjonen for en gitt kostnadsramme (optimal tilpasning)</h3>
+<ul>
+<li>Målsetting er her å maksimere produsert kvantum innenfor en gitt kostnadsramme.</li>
+<li>Dette kan være typisk for en bedrift i offentlig sektor, der de økonomiske rammebetingelsene utgjøres av en gitt kostnadsramme eller et gitt budsjett som er blitt tildelt over de offentlige budsjetter.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Tar utgangspunkt i produktfunksjonen:
+<ul>
+<li><span class="math inline">\(x = f(N, K)\)</span></li>
+</ul></li>
+<li>Helningen er gitt ved MTSB.</li>
+<li>Tar så utgangspunkt i kostnadslinja:
+<ul>
+<li><span class="math inline">\(C = wN + rK\)</span></li>
+</ul></li>
+<li>Kombinerer disse for å finne optimal tilpasning.</li>
+</ul>
+<p>Max <span class="math inline">\(x=f(K,N)\)</span> gitt <span class="math inline">\(C^0=wN +rK\)</span> gitt (beskrankning)</p>
+<p>Dette problemet kan løses ved bruk av Lagrange-metode (se appendiks for formell utledning), hvor løsningen er gitt ved:</p>
+<p><span class="math display">\[\begin{equation}
+MTSB \equiv  \frac{f'_{N}}{f'_{K}} = \frac{w}{r} \\
+C^0=wN +rK
+\end{equation}\]</span></p>
+<p>Optimal løsning er her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.</p>
+</section>
+<section class="slide level2">
+
+
+<img data-src="drawio/kosmin.png" style="width:100.0%" class="r-stretch"></section>
+<section class="slide level2">
+
+<h4 id="substitumalen-økonomisk-substitusjon">Substitumalen: økonomisk substitusjon</h4>
+<ul>
+<li>Dersom vi tenker oss flere endringer i bedriftens kostnadsramme med tilhørende optimale isokvant, vil vi få frem en rekke tangeringspunkter.</li>
+</ul>
+
+<img data-src="drawio/submalen.png" style="width:100.0%" class="r-stretch"><ul>
+<li>Kurven gjennom alle disse punktene kalles <em>ekspansjonsveien</em> eller <em>substitumalen</em>.</li>
+<li>På ethvert punkt på denne kurven kan det leses av produksjonsmengde, tilhørende kostnader og etterspørsel etter innsatsfaktorer.</li>
+<li>Alle punktene på substitumalen viser tilpasninger der det ikke er mulig å øke produktmengden, uten at kostnadene øker. Det er heller ikke mulig å redusere kostnadene, uten samtidig å redusere produsert kvantum.</li>
+<li>Dersom bedriften er utenfor substitumalen kan den alltid bedre sin situasjon ved økonomisk substitusjon.</li>
+</ul>
+</section>
+<section id="tilpasningen-i-gode-og-faktormarkedet-1" class="slide level2">
+<h2>Tilpasningen i gode og faktormarkedet</h2>
+<h3 id="hvor-stor-skal-produksjonen-være-og-bedriftens-tilbud-av-produktet-1">Hvor stor skal produksjonen være og bedriftens tilbud av produktet</h3>
+<ul>
+<li>Tilbudet til bedriften må bestemmes gjennom profittmaksimering eller kostnadsminimering.<br>
+</li>
+<li>Ettersom dette krever at bedriften er på grensekostnadskurven, vil tilbudskurven være ”den samme” som grensekostnadskurven.</li>
+<li>På lang sikt vil bedriftens tilbudskurve enten være
+<ul>
+<li>Stigende (ved avtagende skalautbytte) i et (x,p)-diagram</li>
+<li>Horisontal (ved konstant skalautbytte) i et (x,p)-diagram</li>
+<li>Avtagende (ved økende skalautbytte) i et (x,p)-diagram</li>
+</ul></li>
+</ul>
+
+<img data-src="drawio/til_lang.png" style="width:25.0%" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="hvor-stor-skal-etterspørselen-etter-arbeidskraft-og-kapital-være">Hvor stor skal etterspørselen etter arbeidskraft og kapital være?</h3>
+<p><strong>Redusert pris på kapital</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="drawio/kosminkk.png" style="width:25.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Redusert pris på arbeidskraft</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="drawio/kosminka.png" style="width:25.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Etterspør mer (mindre) av den innsatsfaktoren som har blitt billigere (dyrere).</p>
+</section>
+<section id="appendiks" class="slide level2">
+<h2>Appendiks</h2>
+<h3 id="mtsb-formell-utledning">MTSB: Formell utledning</h3>
+<p>Formell utledning av MTSB. Ta utgangspunkt i produktfunksjonen og total differensier.</p>
+<p><span class="math display">\[
+\overline{x} = f(K,N)
+\]</span></p>
+<p>Dersom vi totaldifferensierer dette uttrykket får vi</p>
+<p><span class="math display">\[\begin{equation*}
+\Delta \overline{x} = f'_{K}(K,N)\Delta K + f'_{N}(K,N)\Delta N = 0
+\end{equation*}\]</span></p>
+<p>Uttrykket ovenfor kan skrives som</p>
+<p><span class="math display">\[\begin{equation*}
+f'_{K}(K,N)\Delta K =- f'_{N}(K,N)\Delta N \\
+\frac{\Delta K}{\Delta N} = - \frac{f'_{N}(K,N)}{f'_{K}(K,N)}
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+MTSB \equiv -\frac{\Delta K}{\Delta N} =  \frac{f'_{N}(K,N)}{f'_{K}(K,N)}&gt;0
+\end{equation*}\]</span></p>
+<p>Merk: MTSB er gitt ved forholdet mellom grenseproduktivitetene.</p>
+</section>
+<section class="slide level2">
+
+<h3 id="lagrange-produktmaksimering-for-en-gitt-kostnadsramme">Lagrange: Produktmaksimering for en gitt kostnadsramme</h3>
+<p>Maks <span class="math inline">\(x=f(K,N)\)</span> gitt <span class="math inline">\(C^0=wN +rK\)</span> gitt (beskrankning). Lagrange metode: <span class="math display">\[\begin{equation}
+L = f(K,N) - \lambda(wN+rK-C^0)
+\end{equation}\]</span> Første ordens betingelsen er gitt ved <span class="math display">\[\begin{equation}
+\partial L/\partial N = f'_{N} - \lambda w  =0 \\
+\partial L/\partial K = f'_{K} - \lambda r =0 \\
+C^0=wN +rK
+\end{equation}\]</span> Kombinerer de to første ordens betingelsene gir oss to likninger for å løse de to ukjente N,K <span class="math display">\[\begin{equation}
+MTSB \equiv  \frac{f'_{N}}{f'_{K}} = \frac{w}{r} \\
+C^0=wN +rK
+\end{equation}\]</span> Optimal løsning er her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.</p>
+</section>
+<section class="slide level2">
+
+<p>Ved å sette inn for den optimale løsningen av <span class="math inline">\(N\)</span> og <span class="math inline">\(K\)</span> finner vi det optimale produksnivået (sammensetningen av N og K som gjør produksjen størst mulig).</p>
+</section>
+<section class="slide level2">
+
+<h3 id="lagrange-kostnadsminimering-for-en-gitt-produksjon">Lagrange: Kostnadsminimering for en gitt produksjon</h3>
+<p>Min <span class="math inline">\(C=wN +rK\)</span> gitt <span class="math inline">\(x=f(K,N)\)</span> gitt (beskrankning). Lagrange metode: <span class="math display">\[\begin{equation}
+L = f(K,N) - \lambda(wN+rK-C^0)
+\end{equation}\]</span> Første ordens betingelsen er gitt ved <span class="math display">\[\begin{equation}
+\partial L/\partial N = f'_{N} - \lambda w  =0 \\
+\partial L/\partial K = f'_{K} - \lambda r =0 \\
+x=f(K,N)
+\end{equation}\]</span> Kombinerer de to første ordens betingelsene gir oss to likninger for å løse de to ukjente N,K <span class="math display">\[\begin{equation}
+MTSB \equiv  \frac{f'_{N}}{f'_{K}} = \frac{w}{r} \\
+x=f(K,N)
+\end{equation}\]</span> Optimal løsning også her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.</p>
+</section>
+<section class="slide level2">
+
+<p>Ved å sette inn for den optimale løsningen av <span class="math inline">\(N\)</span> og <span class="math inline">\(K\)</span> finner vi bedriftens kostnadsfunksjon (kostnaden som minimerer produksjonen for et gitt produksjonsnivå)</p>
 
 
 </section><div class="quarto-auto-generated-content">

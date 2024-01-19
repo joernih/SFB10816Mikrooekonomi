@@ -60,7 +60,7 @@
     "href": "seminar/posts.html",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "",
-    "text": "Seminar 1: Introduksjon til markedsteori\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 2: Matematikk for mikroøkonomi\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 3: Produsentteori på kort og lang sikt\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 4: Konsumentteori\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 5: Markedsteori: Fullkommen konkurranse\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 6: Markedsteori: ufullkommen konkurranse og andre temaer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Se Romplan for hvor seminarene finner sted.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 1: Introduksjon til markedsteori\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 2: Matematikk for mikroøkonomi\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 3: Produsentteori på kort og lang sikt\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 4: Konsumentteori\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 5: Markedsteori: Fullkommen konkurranse\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 6: Markedsteori: ufullkommen konkurranse og andre temaer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "timeplan/timeplan.html#regneverksted",
@@ -333,7 +333,7 @@
     "href": "forelesninger/notater.html#appendiks",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Appendiks",
-    "text": "Appendiks\nDiagramark benyttet under forelesning"
+    "text": "Appendiks\nMTSB: Formell utledning\nFormell utledning av MTSB. Ta utgangspunkt i produktfunksjonen og total differensier.\n\\[\n\\overline{x} = f(K,N)\n\\]\nDersom vi totaldifferensierer dette uttrykket får vi\n\\[\\begin{equation*}\n\\Delta \\overline{x} = f'_{K}(K,N)\\Delta K + f'_{N}(K,N)\\Delta N = 0\n\\end{equation*}\\]\nUttrykket ovenfor kan skrives som\n\\[\\begin{equation*}\nf'_{K}(K,N)\\Delta K =- f'_{N}(K,N)\\Delta N \\\\\n\\frac{\\Delta K}{\\Delta N} = - \\frac{f'_{N}(K,N)}{f'_{K}(K,N)}\n\\end{equation*}\\]\n\\[\\begin{equation*}\nMTSB \\equiv -\\frac{\\Delta K}{\\Delta N} =  \\frac{f'_{N}(K,N)}{f'_{K}(K,N)}&gt;0\n\\end{equation*}\\]\nMerk: MTSB er gitt ved forholdet mellom grenseproduktivitetene."
   },
   {
     "objectID": "forelesninger/notater.html#innledning",

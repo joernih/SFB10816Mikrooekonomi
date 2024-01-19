@@ -95,35 +95,3 @@ knitr::knit_exit()
 ```
 
 
-
-
-
-[Oppgave 1]{.underline}
-
-
-Politikerne ser med bekymring på situasjonen for studentene som må
-betale høye leiepriser for å bo på små hybler. Et politisk parti tar til
-orde for å bygge flere studenthybler for utleie.
-
-c)  Vil dette ha betydning for leieprisen per kvadratmeter og hvor mange
-    kvadratmeter som er til utleie, og eventuelt hvordan? Og vil
-    utslagene i leiepriser og/eller antall kvadratmeter til utleie være
-    store eller små? Gi et faglig begrunnet svar, og vurder om svaret på
-    alle spørsmål er entydig.
-
-Det tar tid å bygge studenthybelhus, så på kort sikt vil ikke dette
-hjelpe. Det er derfor ønske å komme med noen kortsiktige avbøtende
-tiltak. Ett slikt avbøtende tiltak kan være å øke stipendet til
-studentene slik at de har bedre råd til å betale høye leiepriser.
-
-d)  Vil dette ha betydning for leieprisen per kvadratmeter og hvor mange
-    kvadratmeter som er til utleie, og eventuelt hvordan? Gi et faglig
-    begrunnet svar.
-
-Et annet politisk part mener at man i stedet for å øke stipendet heller
-bør hjelpe studentene ved å innføre et pristak på leiepriser, altså en
-maksimalpris.
-
-e)  Hvilken effekt vil et pristak / maksimalpris for utleiehybler ha for
-    studentvelferden? Gi et faglig begrunnet svar.
-
