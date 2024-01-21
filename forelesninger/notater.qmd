@@ -940,8 +940,6 @@ $F=10\cdot 25^{1/2}-25=25$
 
 
 
----
-
 # Kapittel 4, 5 og 6: Produksjonsteori på lang sikt  `r #paste(substring(del[2],4),tema[3])`
 
 ---
@@ -964,6 +962,8 @@ $F=10\cdot 25^{1/2}-25=25$
 ::: {.column width="50%"}
 Arbeidskraft
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
+#| label: figur5LS.1
+#| fig-cap: "Figur 5LS.1"
 pkl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodkl.png')
 knitr::include_graphics(pkl)
 ```
@@ -974,6 +974,8 @@ knitr::include_graphics(pkl)
 ::: {.column width="50%"}
 Kapital
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
+#| label: figur5LS.2
+#| fig-cap: "Figur 5LS.2"
 pkk <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodkk.png')
 knitr::include_graphics(pkk)
 ```
@@ -981,7 +983,6 @@ knitr::include_graphics(pkk)
 - $\frac{\partial^2 f}{\partial K^2} < 0$
 :::
 ::::
-
 
 
 ---
@@ -992,6 +993,8 @@ knitr::include_graphics(pkk)
 - Nivåkurven kalles her en *isokvant*: viser alle kombinasjoner av N og K som gir samme produserte kvantum.
 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
+#| label: figur5LS.3
+#| fig-cap: "Figur 5LS.3"
 iso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/isokvant.png')
 knitr::include_graphics(iso)
 ```
@@ -1005,6 +1008,7 @@ knitr::include_graphics(iso)
 MTSB \equiv -\frac{\Delta K}{\Delta N} =  \frac{f'_{N}(K,N)}{f'_{K}(K,N)}>0
 \end{equation*}
 - Formell utledning er vist i appendiks
+
 
 ---
 
@@ -1036,8 +1040,10 @@ $$
 :::: {.columns}
 
 ::: {.column width="50%"}
-Linær produksjonsteknologi (perfekte substitutter)
+Lineær produksjonsteknologi (perfekte substitutter)
 ```{r, echo=FALSE, out.width="70%", fig.cap=""}
+#| label: figur5LS.4
+#| fig-cap: "Figur 5LS.4"
 pss <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/linsub.png')
 knitr::include_graphics(pss)
 ```
@@ -1046,6 +1052,8 @@ knitr::include_graphics(pss)
 ::: {.column width="50%"}
 Leontief produksjonsteknologi (ingen substitusjon)
 ```{r, echo=FALSE, out.width="70%", fig.cap=""}
+#| label: figur5LS.5
+#| fig-cap: "Figur 5LS.5"
 fss <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/lensub.png')
 knitr::include_graphics(fss)
 ```
@@ -1071,7 +1079,9 @@ knitr::include_graphics(fss)
 - i) Konstant skalautbytte
   - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på y %.
 
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
+```{r, echo=FALSE, out.width="30%", fig.cap=""}
+#| label: figur5LS.6
+#| fig-cap: "Figur 5LS.6"
 koskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/koskala.png')
 knitr::include_graphics(koskala)
 ```
@@ -1079,7 +1089,9 @@ knitr::include_graphics(koskala)
 - ii) Avtagende skalautbytte
   - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på mindre enn y %.
 
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
+```{r, echo=FALSE, out.width="30%", fig.cap=""}
+#| label: figur5LS.7
+#| fig-cap: "Figur 5LS.7"
 avskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/avskala.png')
 knitr::include_graphics(avskala)
 ```
@@ -1087,7 +1099,9 @@ knitr::include_graphics(avskala)
 - iii) Økende skalautbytte
   - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på mer enn y %.
 
-```{r, echo=FALSE, out.width="50%", fig.cap=""}
+```{r, echo=FALSE, out.width="30%", fig.cap=""}
+#| label: figur5LS.8
+#| fig-cap: "Figur 5LS.8"
 okskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/okskala.png')
 knitr::include_graphics(okskala)
 ```
@@ -1169,10 +1183,11 @@ Optimal løsning er her karakterisert ved tangeringspunktet mellom isokvant og i
 ---
 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
+#| label: figur5LS.9
+#| fig-cap: "Figur 5LS.9"
 kosmin <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kosmin.png')
 knitr::include_graphics(kosmin)
 ```
-
 
 ---
 
@@ -1180,9 +1195,12 @@ knitr::include_graphics(kosmin)
 
 - Dersom vi tenker oss flere endringer i bedriftens kostnadsramme med tilhørende optimale isokvant, vil vi få frem en rekke tangeringspunkter. 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
+#| label: figur5LS.10
+#| fig-cap: "Figur 5LS.10"
 submalen <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/submalen.png')
 knitr::include_graphics(submalen)
 ```
+
 - Kurven gjennom alle disse punktene kalles *ekspansjonsveien* eller *substitumalen*.
 - På ethvert punkt på denne kurven kan det leses av produksjonsmengde, tilhørende kostnader og etterspørsel etter innsatsfaktorer.
 - Alle punktene på substitumalen viser tilpasninger der det ikke er mulig å øke produktmengden, uten at kostnadene øker. Det er heller ikke mulig å redusere kostnadene, uten samtidig å redusere produsert kvantum.
@@ -1202,6 +1220,8 @@ knitr::include_graphics(submalen)
   - Avtagende (ved økende skalautbytte) i et (x,p)-diagram 
 
 ```{r, echo=FALSE, out.width="25%", fig.cap=""}
+#| label: figur5LS.11
+#| fig-cap: "Figur 5LS.11"
 kosminkk <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/til_lang.png')
 knitr::include_graphics(kosminkk)
 ```
@@ -1212,14 +1232,18 @@ knitr::include_graphics(kosminkk)
 
 **Redusert pris på kapital**
 
-```{r, echo=FALSE, out.width="25%", fig.cap=""}
+```{r, echo=FALSE, out.width="30%", fig.cap=""}
+#| label: figur5LS.12
+#| fig-cap: "Figur 5LS.12"
 kosminkk <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kosminkk.png')
 knitr::include_graphics(kosminkk)
 ```
 
 **Redusert pris på arbeidskraft**
 
-```{r, echo=FALSE, out.width="25%", fig.cap=""}
+```{r, echo=FALSE, out.width="30%", fig.cap=""}
+#| label: figur5LS.13
+#| fig-cap: "Figur 5LS.13"
 kosminka <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kosminka.png')
 knitr::include_graphics(kosminka)
 ```
@@ -1270,14 +1294,15 @@ Første ordens betingelsen er gitt ved
 \partial L/\partial K = f'_{K} - \lambda r =0 \\
 C^0=wN +rK
 \end{equation}
+
+---
+
 Kombinerer de to første ordens betingelsene gir oss to likninger for å løse de to ukjente N,K
 \begin{equation}
 MTSB \equiv  \frac{f'_{N}}{f'_{K}} = \frac{w}{r} \\
 C^0=wN +rK
 \end{equation}
 Optimal løsning er her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.
-
----
 
 Ved å sette inn for den optimale løsningen av $N$ og $K$ finner vi det optimale produksnivået (sammensetningen
 av N og K som gjør produksjen størst mulig).
@@ -1296,6 +1321,9 @@ Første ordens betingelsen er gitt ved
 \partial L/\partial K = f'_{K} - \lambda r =0 \\
 x=f(K,N)
 \end{equation}
+
+---
+
 Kombinerer de to første ordens betingelsene gir oss to likninger for å løse de to ukjente N,K
 \begin{equation}
 MTSB \equiv  \frac{f'_{N}}{f'_{K}} = \frac{w}{r} \\
@@ -1303,7 +1331,6 @@ x=f(K,N)
 \end{equation}
 Optimal løsning også her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.
 
----
 
 Ved å sette inn for den optimale løsningen av $N$ og $K$ finner vi bedriftens kostnadsfunksjon (kostnaden som minimerer produksjonen for et gitt produksjonsnivå)
 
