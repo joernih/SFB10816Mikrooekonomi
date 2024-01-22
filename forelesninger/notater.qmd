@@ -1331,18 +1331,19 @@ Optimal løsning også her karakterisert ved tangeringspunktet mellom isokvant o
 
 Ved å sette inn for den optimale løsningen av $N$ og $K$ finner vi bedriftens kostnadsfunksjon (kostnaden som minimerer produksjonen for et gitt produksjonsnivå)
 
-```{r, echo=F, eval=T}
-knitr::knit_exit()
-```
-
-:::
 
 
-# Kapittel 7: `r paste(substring(del[5],4),tema[4])`
+::: {.content-visible when-profile="internal"}
+
+
+# Kapittel 7: Konsumentteori  `r #paste(substring(del[5],4),tema[4])`
 
 `r paste("Oppdatert:",Sys.Date())`
 
 ---
+
+:::
+
 
 ## Innledning
 
@@ -1474,7 +1475,6 @@ knitr::include_graphics(subsperf)
 **Øvelse om MSB**
 
 Anta at $u(x_1,x_2) = 10x_1x_2$. Finn uttrykket for MSB.
-::: {.content-visible when-profile="internal"}
 
 **Svar**
 \begin{equation*}
@@ -1731,6 +1731,10 @@ Vi kan omskrive den første ligningen som (*Gossens lov*)
 \end{equation*}
 
 Den rasjonelle konsument vil fordele utgiftene slik at den siste krone gir den samme nyttendring uansett hvilket av de to godene den brukes til innkjøp av.
+
+```{r, echo=F, eval=T}
+knitr::knit_exit()
+```
 
 
 ---

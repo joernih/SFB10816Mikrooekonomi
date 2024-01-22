@@ -9,7 +9,9 @@ engine: knitr
 
 ## Nyheter
 
-- Videolenke tilhørende forelesning #2 er lagt ut nederst på Canvas-siden for kurset
+- Forelesning #3 onsdag 24.1: Legger opp til en kombinert fysisk og digital forelesning (så kan dere velge hva som
+  passer best for dere).
+- Videolenke tilhørende forelesning #2 er lagt ut nederst på Canvas-siden for kurset.
 - Svar på de to øvelsene i forlesningsnotatene om produksjonsteori på kort sikt er nå publisert.
 
 ### Pensumbøker

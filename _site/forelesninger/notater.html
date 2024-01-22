@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.4.533">
 
   <meta name="author" content="Jørn I. Halvorsen og Joachim Thøgersen">
-  <meta name="dcterms.date" content="2024-01-18">
+  <meta name="dcterms.date" content="2024-01-22">
   <title>Mikroøkonomi (SFB10816)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -342,7 +342,7 @@ Jørn I. Halvorsen og Joachim Thøgersen
 </div>
 </div>
 
-  <p class="date">2024-01-18</p>
+  <p class="date">2024-01-22</p>
 </section>
 <section>
 <section id="praktisk-informasjon" class="title-slide slide level1 center">
@@ -1076,7 +1076,7 @@ SO=PO+KO
 </thead>
 <tbody>
 <tr class="odd">
-<td>Teknolog/Produksjon</td>
+<td>Teknologi/Produksjon</td>
 <td>Kap. 4</td>
 <td>Kap 4</td>
 </tr>
@@ -1651,6 +1651,21 @@ F''(x)=-C''(x) &lt; 0 \Leftrightarrow C''(x) &gt; 0
 
 <p><strong>Øvelse om produksjonen</strong></p>
 <p>Anta at produktprisen er gitt ved 100 og kostnadsfunksjonen som <span class="math inline">\(C(x)=x^2\)</span>. Hva blir den optimale produksjon?</p>
+<p><strong>Løsning</strong></p>
+<p>Uttrykket for fortjeneste kan formuleres som <span class="math display">\[
+F=100\cdot x - x^2
+\]</span></p>
+<p>Vi ønsker å finne maksimal produksjon. Førsteordensbetingelsen vil hær være gitt ved <span class="math display">\[\begin{equation*}
+F'(x)=100-2x=0 \\
+2x=100 \\
+x=100/2=50
+\end{equation*}\]</span></p>
+<p>Andreordensbetingelsen for maksimum er oppfylt siden <span class="math display">\[
+F''(x)=-2&lt;0
+\]</span></p>
+<p>Ved å sette <span class="math inline">\(x=50\)</span> tilbake i uttrykket for profitt finner vi at profitten er positiv og gitt ved <span class="math display">\[
+F=100\cdot 50 - 50^2=2500
+\]</span></p>
 </section>
 <section class="slide level2">
 
@@ -1682,6 +1697,748 @@ pf''(N) &lt; 0
 
 <p><strong>Øvelse om bruk av arbeidskraft</strong></p>
 <p>Anta at produktprisen er gitt ved 10, lønnskostnadene gitt ved 1, og produktfunsjonen <span class="math inline">\(x=\sqrt{N}\)</span> Hva blir den optimale bruken av arbeidskraft?</p>
+<p><strong>Løsning</strong></p>
+<p>Uttrykket for fortjeneste kan formuleres som <span class="math display">\[
+F=10N^{0.5}-N
+\]</span></p>
+<p>Vi ønsker å finne maksimal bruk av arbeidskraft. Førsteordensbetingelsen vil være gitt ved</p>
+<p><span class="math display">\[\begin{equation*}
+F=1/2\cdot 10N^{0.5-1}-1=0 \\
+5\cdot N^{(-0.5)}=1 \\
+N^{-0.5}=1/5 \\
+N^{0.5}=5 \\
+N=5^2 = 25
+\end{equation*}\]</span></p>
+<p>2.ordensbetingelsen (som sikrer optimum) <span class="math inline">\(-2.5\cdot N^{-1.5} &lt; 0\)</span>, mens optimal forjeneste er positiv og gitt som <span class="math inline">\(F=10\cdot 25^{1/2}-25=25\)</span></p>
+</section></section>
+<section>
+<section id="kapittel-4-5-og-6-produksjonsteori-på-lang-sikt" class="title-slide slide level1 center">
+<h1>Kapittel 4, 5 og 6: Produksjonsteori på lang sikt</h1>
+
+</section>
+<section id="produksjon-og-teknologiske-forhold-1" class="slide level2">
+<h2>Produksjon og teknologiske forhold</h2>
+<ul>
+<li>Vi tar utgangspunkt i produksjonsbildet med to innsatsfaktorer og ett produkt.</li>
+<li>Produktfunksjonen:
+<ul>
+<li><span class="math inline">\(x = f(N, K)\)</span></li>
+</ul></li>
+<li>Viser, for enhver mulig faktorkombinasjon, det maksimale antall enheter som kan produseres av produktet.</li>
+<li><span class="math inline">\(f\)</span> beskriver formen på avhengighetsforholdet mellom produksjonsmengden og innsatsfaktorene. Kan tolkes som forhold (faktorer) som endrer produksjonsmengden uten å endre mengden av innsatsfaktorene <span class="math inline">\(N\)</span> og <span class="math inline">\(K\)</span>.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Arbeidskraft</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="drawio/prodkl.png" style="width:100.0%"></p>
+<figcaption>Figur 5LS.1</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><span class="math inline">\(\frac{\partial f}{\partial N} &gt; 0\)</span></li>
+<li><span class="math inline">\(\frac{\partial^2 f}{\partial N^2} &lt; 0\)</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p>Kapital</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="drawio/prodkk.png" style="width:100.0%"></p>
+<figcaption>Figur 5LS.2</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><span class="math inline">\(\frac{\partial f}{\partial K} &gt; 0\)</span></li>
+<li><span class="math inline">\(\frac{\partial^2 f}{\partial K^2} &lt; 0\)</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="isokvanter-og-mtsb-for-produksjon">Isokvanter og MTSB for produksjon</h3>
+<ul>
+<li>For å representere produktfunksjonen grafisk, skal vi bruke et redskap fra matteboka, nemlig nivåkurver.</li>
+<li>Nivåkurven kalles her en <em>isokvant</em>: viser alle kombinasjoner av N og K som gir samme produserte kvantum.</li>
+</ul>
+
+<img data-src="drawio/isokvant.png" style="width:100.0%" class="r-stretch quarto-figure-center"><p class="caption">Figur 5LS.3</p></section>
+<section class="slide level2">
+
+<ul>
+<li>Isokvantens form bygger på følgende prinsipp: jo mer bedriften har av en innsatsfaktor, jo mer kan den bytte for én ekstra enhet av den andre faktoren, gitt at produksjonsmengden skal være den samme.</li>
+<li><em>MTSB (marginale tekniske substiusjonsbrøk)</em> beskriver <em>helningen</em> på en isokvant for en gitt faktorkombinasjon, dvs. i ett punkt på isokvanten.</li>
+<li>Merk: MTSB er gitt ved forholdet mellom grenseproduktivitetene (se appendiks for formell utledning) <span class="math display">\[\begin{equation*}
+MTSB \equiv -\frac{\Delta K}{\Delta N} =  \frac{f'_{N}(K,N)}{f'_{K}(K,N)}&gt;0
+\end{equation*}\]</span></li>
+<li>Formell utledning er vist i appendiks</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p><strong>Eksempel 4.2 fra pensumbok</strong></p>
+<p>Anta at produktfunksjonen er gitt ved: <span class="math inline">\(x = N^{0,7}+K^{0,3}\)</span> Regn ut MTSB for denne produktfunksjonen.</p>
+<p>Grenseproduktiviteten til arbeidskraften er gitt ved <span class="math display">\[
+\frac{\partial x}{\partial N} = 0,7N^{0,7-1} =  0,7N^{-0,3}
+\]</span></p>
+<p>Grenseproduktiviteten til kapitalen er gitt ved <span class="math display">\[
+\frac{\partial x}{\partial K} = 0,3K^{0,3-1} =  0,3K^{-0,7}
+\]</span></p>
+<p>MTSB blir derfor <span class="math display">\[
+MTSB \equiv - \frac{\Delta K}{\Delta N} = \frac{\frac{\partial x}{\partial N}}{\frac{\partial x}{\partial K}} = \frac{0,7N^{-0,3}}{0,3K^{-0,7}}
+\]</span></p>
+</section>
+<section class="slide level2">
+
+<h3 id="substitusjonsegenskaper">Substitusjonsegenskaper</h3>
+<ul>
+<li>Dette sier noe om hvor lett det er å erstatte innsatsfaktorer med hverandre.</li>
+<li>For eksempel: I noen bransjer er det lettere å erstatte arbeidskraft med kapital enn i andre.</li>
+<li>Dette kan fremstilles med formen på isokvanten.</li>
+<li>Ytterkantene: perfekt substitusjon og ingen substitusjon (perfekte komplementer).</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Lineær produksjonsteknologi (perfekte substitutter)</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="drawio/linsub.png" style="width:70.0%"></p>
+<figcaption>Figur 5LS.4</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p>Leontief produksjonsteknologi (ingen substitusjon)</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="drawio/lensub.png" style="width:70.0%"></p>
+<figcaption>Figur 5LS.5</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="skalaegenskaper">Skalaegenskaper</h3>
+<ul>
+<li>Mens grenseprodukt viser endring i bruken av én innsatsfaktor, viser skalaendringer endringer i bruken av <em>alle</em> innsatsfaktorer.</li>
+<li>Definisjon: Skalaegenskapene sier noe om hvor mye produksjonsmengden endres ved <em>proporsjonale</em> endringer i bruken av innsatsfaktorene.</li>
+<li>Proporsjonale endringer innebærer at forholdet mellom N og K er konstant.</li>
+<li>Anta en proporsjonal økning på 100%.
+<ul>
+<li>Hva skjer med produksjonsmengden (merk: produksjonsprosesser kan variere i skala)?</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li><ol type="i">
+<li>Konstant skalautbytte</li>
+</ol>
+<ul>
+<li>Skalaøkning på y % <span class="math inline">\(\Rightarrow\)</span> økning i produsert kvantum på y %.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="drawio/koskala.png" style="width:30.0%"></p>
+<figcaption>Figur 5LS.6</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><ol start="2" type="i">
+<li>Avtagende skalautbytte</li>
+</ol>
+<ul>
+<li>Skalaøkning på y % <span class="math inline">\(\Rightarrow\)</span> økning i produsert kvantum på mindre enn y %.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="drawio/avskala.png" style="width:30.0%"></p>
+<figcaption>Figur 5LS.7</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><ol start="3" type="i">
+<li>Økende skalautbytte</li>
+</ol>
+<ul>
+<li>Skalaøkning på y % <span class="math inline">\(\Rightarrow\)</span> økning i produsert kvantum på mer enn y %.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="drawio/okskala.png" style="width:30.0%"></p>
+<figcaption>Figur 5LS.8</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="inntekter-1" class="slide level2">
+<h2>Inntekter</h2>
+<ul>
+<li>Sammenlignet med den beskrivelsen som ble gitt for kort sikt, forekommer det her ingen endringer.</li>
+</ul>
+</section>
+<section id="kostnader-1" class="slide level2">
+<h2>Kostnader</h2>
+<ul>
+<li>Sammenlignet med den beskrivelsen som ble gitt for kort sikt, kan vi her se bort fra de faste kostnadene siden vi antar alle innsatsfaktorer for å være variable på lang sikt.</li>
+</ul>
+<h3 id="kostnadslinjen-og-isokostlinja">Kostnadslinjen og isokostlinja</h3>
+<ul>
+<li>Totale kostnader for bedriften er summen av variable og faste kostnader. La oss nå se bort fra de faste, dette siden vi antar alle faktorer antas å være variable på lang sikt.</li>
+<li>Vi antar at bedriftens kostnader kan uttrykkes ved summen av utgiftene på de to innsatsfaktorene.
+<ul>
+<li>Pris på N: w</li>
+<li>Pris på K: r</li>
+</ul></li>
+<li><span class="math inline">\(C = wN + rK\)</span> Totale kostnader (C) er da gitt ved: <span class="math display">\[
+C = wN  +  rK
+\]</span></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Isokost (låser totalkostnadene til et bestemt nivå) <span class="math inline">\(C^o=C\)</span> <span class="math display">\[
+C^o= wN + rK
+\]</span>
+<ul>
+<li>Helningen på isokostlinja <span class="math display">\[\begin{equation}
+\Delta C^0= w\Delta N + r\Delta K = 0 \\
+r\Delta K = -w\Delta N  \\
+\frac{\Delta K}{\Delta N} = - \frac{w}{r}
+\end{equation}\]</span></li>
+<li>Bruker hele budsjettet på arbeidskraft <span class="math inline">\(\Rightarrow K=0\)</span> <span class="math display">\[\begin{equation}
+C^0= wN + r0 = wN \\
+C^0/w = N \\
+N = C^0/w
+\end{equation}\]</span></li>
+<li>Bruke hele budsjettet (kostnaden) på kapital <span class="math inline">\(\Rightarrow N=0\)</span> <span class="math display">\[\begin{equation}
+C^0= w0 + rK = wN \\
+C^0/r = K \\
+K = C^0/r
+\end{equation}\]</span></li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="maksimering-av-produksjonen-for-en-gitt-kostnadsramme-optimal-tilpasning">Maksimering av produksjonen for en gitt kostnadsramme (optimal tilpasning)</h3>
+<ul>
+<li>Målsetting er her å maksimere produsert kvantum innenfor en gitt kostnadsramme.</li>
+<li>Dette kan være typisk for en bedrift i offentlig sektor, der de økonomiske rammebetingelsene utgjøres av en gitt kostnadsramme eller et gitt budsjett som er blitt tildelt over de offentlige budsjetter.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Tar utgangspunkt i produktfunksjonen:
+<ul>
+<li><span class="math inline">\(x = f(N, K)\)</span></li>
+</ul></li>
+<li>Helningen er gitt ved MTSB.</li>
+<li>Tar så utgangspunkt i kostnadslinja:
+<ul>
+<li><span class="math inline">\(C = wN + rK\)</span></li>
+</ul></li>
+<li>Kombinerer disse for å finne optimal tilpasning.</li>
+</ul>
+<p>Max <span class="math inline">\(x=f(K,N)\)</span> gitt <span class="math inline">\(C^0=wN +rK\)</span> gitt (beskrankning)</p>
+<p>Dette problemet kan løses ved bruk av Lagrange-metode (se appendiks for formell utledning), hvor løsningen er gitt ved:</p>
+<p><span class="math display">\[\begin{equation}
+MTSB \equiv  \frac{f'_{N}}{f'_{K}} = \frac{w}{r} \\
+C^0=wN +rK
+\end{equation}\]</span></p>
+<p>Optimal løsning er her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.</p>
+</section>
+<section class="slide level2">
+
+
+<img data-src="drawio/kosmin.png" style="width:100.0%" class="r-stretch quarto-figure-center"><p class="caption">Figur 5LS.9</p></section>
+<section class="slide level2">
+
+<h4 id="substitumalen-økonomisk-substitusjon">Substitumalen: økonomisk substitusjon</h4>
+<ul>
+<li>Dersom vi tenker oss flere endringer i bedriftens kostnadsramme med tilhørende optimale isokvant, vil vi få frem en rekke tangeringspunkter.</li>
+</ul>
+
+<img data-src="drawio/submalen.png" style="width:100.0%" class="r-stretch quarto-figure-center"><p class="caption">Figur 5LS.10</p><ul>
+<li>Kurven gjennom alle disse punktene kalles <em>ekspansjonsveien</em> eller <em>substitumalen</em>.</li>
+<li>På ethvert punkt på denne kurven kan det leses av produksjonsmengde, tilhørende kostnader og etterspørsel etter innsatsfaktorer.</li>
+<li>Alle punktene på substitumalen viser tilpasninger der det ikke er mulig å øke produktmengden, uten at kostnadene øker. Det er heller ikke mulig å redusere kostnadene, uten samtidig å redusere produsert kvantum.</li>
+<li>Dersom bedriften er utenfor substitumalen kan den alltid bedre sin situasjon ved økonomisk substitusjon.</li>
+</ul>
+</section>
+<section id="tilpasningen-i-gode-og-faktormarkedet-1" class="slide level2">
+<h2>Tilpasningen i gode og faktormarkedet</h2>
+<h3 id="hvor-stor-skal-produksjonen-være-og-bedriftens-tilbud-av-produktet-1">Hvor stor skal produksjonen være og bedriftens tilbud av produktet</h3>
+<ul>
+<li>Tilbudet til bedriften må bestemmes gjennom profittmaksimering eller kostnadsminimering.<br>
+</li>
+<li>Ettersom dette krever at bedriften er på grensekostnadskurven, vil tilbudskurven være ”den samme” som grensekostnadskurven.</li>
+<li>På lang sikt vil bedriftens tilbudskurve enten være
+<ul>
+<li>Stigende (ved avtagende skalautbytte) i et (x,p)-diagram</li>
+<li>Horisontal (ved konstant skalautbytte) i et (x,p)-diagram</li>
+<li>Avtagende (ved økende skalautbytte) i et (x,p)-diagram</li>
+</ul></li>
+</ul>
+
+<img data-src="drawio/til_lang.png" style="width:25.0%" class="r-stretch quarto-figure-center"><p class="caption">Figur 5LS.11</p></section>
+<section class="slide level2">
+
+<h3 id="hvor-stor-skal-etterspørselen-etter-arbeidskraft-og-kapital-være">Hvor stor skal etterspørselen etter arbeidskraft og kapital være?</h3>
+<p><strong>Redusert pris på kapital</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="drawio/kosminkk.png" style="width:30.0%"></p>
+<figcaption>Figur 5LS.12</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Redusert pris på arbeidskraft</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="drawio/kosminka.png" style="width:30.0%"></p>
+<figcaption>Figur 5LS.13</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Etterspør mer (mindre) av den innsatsfaktoren som har blitt billigere (dyrere).</p>
+</section>
+<section id="appendiks" class="slide level2">
+<h2>Appendiks</h2>
+<h3 id="mtsb-formell-utledning">MTSB: Formell utledning</h3>
+<p>Formell utledning av MTSB. Ta utgangspunkt i produktfunksjonen og total differensier.</p>
+<p><span class="math display">\[
+\overline{x} = f(K,N)
+\]</span></p>
+<p>Dersom vi totaldifferensierer dette uttrykket får vi</p>
+<p><span class="math display">\[\begin{equation*}
+\Delta \overline{x} = f'_{K}(K,N)\Delta K + f'_{N}(K,N)\Delta N = 0
+\end{equation*}\]</span></p>
+<p>Uttrykket ovenfor kan skrives som</p>
+<p><span class="math display">\[\begin{equation*}
+f'_{K}(K,N)\Delta K =- f'_{N}(K,N)\Delta N \\
+\frac{\Delta K}{\Delta N} = - \frac{f'_{N}(K,N)}{f'_{K}(K,N)}
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+MTSB \equiv -\frac{\Delta K}{\Delta N} =  \frac{f'_{N}(K,N)}{f'_{K}(K,N)}&gt;0
+\end{equation*}\]</span></p>
+<p>Merk: MTSB er gitt ved forholdet mellom grenseproduktivitetene.</p>
+</section>
+<section class="slide level2">
+
+<h3 id="lagrange-produktmaksimering-for-en-gitt-kostnadsramme">Lagrange: Produktmaksimering for en gitt kostnadsramme</h3>
+<p>Maks <span class="math inline">\(x=f(K,N)\)</span> gitt <span class="math inline">\(C^0=wN +rK\)</span> gitt (beskrankning). Lagrange metode: <span class="math display">\[\begin{equation}
+L = f(K,N) - \lambda(wN+rK-C^0)
+\end{equation}\]</span> Første ordens betingelsen er gitt ved <span class="math display">\[\begin{equation}
+\partial L/\partial N = f'_{N} - \lambda w  =0 \\
+\partial L/\partial K = f'_{K} - \lambda r =0 \\
+C^0=wN +rK
+\end{equation}\]</span></p>
+</section>
+<section class="slide level2">
+
+<p>Kombinerer de to første ordens betingelsene gir oss to likninger for å løse de to ukjente N,K <span class="math display">\[\begin{equation}
+MTSB \equiv  \frac{f'_{N}}{f'_{K}} = \frac{w}{r} \\
+C^0=wN +rK
+\end{equation}\]</span> Optimal løsning er her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.</p>
+<p>Ved å sette inn for den optimale løsningen av <span class="math inline">\(N\)</span> og <span class="math inline">\(K\)</span> finner vi det optimale produksnivået (sammensetningen av N og K som gjør produksjen størst mulig).</p>
+</section>
+<section class="slide level2">
+
+<h3 id="lagrange-kostnadsminimering-for-en-gitt-produksjon">Lagrange: Kostnadsminimering for en gitt produksjon</h3>
+<p>Min <span class="math inline">\(C=wN +rK\)</span> gitt <span class="math inline">\(x=f(K,N)\)</span> gitt (beskrankning). Lagrange metode: <span class="math display">\[\begin{equation}
+L = f(K,N) - \lambda(wN+rK-C^0)
+\end{equation}\]</span> Første ordens betingelsen er gitt ved <span class="math display">\[\begin{equation}
+\partial L/\partial N = f'_{N} - \lambda w  =0 \\
+\partial L/\partial K = f'_{K} - \lambda r =0 \\
+x=f(K,N)
+\end{equation}\]</span></p>
+</section>
+<section class="slide level2">
+
+<p>Kombinerer de to første ordens betingelsene gir oss to likninger for å løse de to ukjente N,K <span class="math display">\[\begin{equation}
+MTSB \equiv  \frac{f'_{N}}{f'_{K}} = \frac{w}{r} \\
+x=f(K,N)
+\end{equation}\]</span> Optimal løsning også her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.</p>
+<p>Ved å sette inn for den optimale løsningen av <span class="math inline">\(N\)</span> og <span class="math inline">\(K\)</span> finner vi bedriftens kostnadsfunksjon (kostnaden som minimerer produksjonen for et gitt produksjonsnivå)</p>
+</section>
+<section id="innledning-1" class="slide level2">
+<h2>Innledning</h2>
+<ul>
+<li>Vi skal i det følgende forsøke å illustrere hvordan en konsument/husholdning tilpasser seg i et godemarked.</li>
+<li>Husholdning: gruppe av individer med samme preferanser.</li>
+<li>Selvbergingsøkonomi <span class="math inline">\(\Rightarrow\)</span> bytteøkonomi <span class="math inline">\(\Rightarrow\)</span> pengeøkonomi</li>
+<li>Vi skal anta at konsumenten tilpasser seg slik at nytten ved å forbruke de ulike godene blir størst mulig.</li>
+<li><strong>Men:</strong> konsumenten står ovenfor noen restriksjoner (betingelser).</li>
+</ul>
+</section>
+<section id="nytteteori" class="slide level2">
+<h2>Nytteteori</h2>
+<ul>
+<li>Vi kan dele nytteteori i to:
+<ol type="1">
+<li>Kardinal nytte:
+<ul>
+<li>Nytten kan måles.</li>
+</ul></li>
+<li>Ordinal nytte:
+<ul>
+<li>Ikke målbar nytte. Her forutsetter vi at konsumenten kan ordne eller rangere de ulike godekombinasjonene.</li>
+</ul></li>
+</ol></li>
+</ul>
+</section>
+<section id="hvilke-sentrale-faktorer-bestemmer-etterspørselen-etter-et-gode" class="slide level2">
+<h2>Hvilke sentrale faktorer bestemmer etterspørselen etter et gode?</h2>
+<p>Vi tar utgangspunkt i følgende spørsmål: Hvilke forhold vil være av <em>størst</em> betydning for en konsuments etterspørsel etter et gode? - Sentrale faktorer: - Konsumentens behovstruktur - Konsumentens inntekt - Prisen på godet - Prisen på andre goder</p>
+</section>
+<section id="forenklet-fremstilling-av-konsumentens-preferanser-og-behovsstruktur" class="slide level2">
+<h2>Forenklet fremstilling av konsumentens preferanser og behovsstruktur</h2>
+<ul>
+<li>Vi forenkler ved å anta at konsumenten kan velge mellom kun to goder: <span class="math inline">\(x_1\)</span> og <span class="math inline">\(x_2\)</span>.</li>
+<li>Ved å konsumere de to godene oppnår konsumenten en nytte: U.</li>
+<li>For å kunne behandle dette formelt, blir vi nødt å gjøre noen antagelser om konsumentens preferanser:
+<ol type="1">
+<li>Determinerthetsaksiomet</li>
+<li>Ikkemetningsaksiomet</li>
+<li>Transitivitetsaksiomet</li>
+</ol></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Når disse forutsetningene (aksiomene) er oppfylt, vil det i prinsippet være mulig å uttrykke hvilken nytte konsumenten får av å konsumere de to godene med en nyttefunksjon:
+<ul>
+<li><span class="math inline">\(U = u(x_1, x_2)\)</span></li>
+</ul></li>
+<li>En nyttefunksjon viser for enhver godekombinasjon den samlede nytte konsumenten oppnår ved å konsumere denne godekombinasjonen.</li>
+<li>For analytiske formål antas denne funksjonen å være kontinuerlig og to ganger deriverbar.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="grensenytte">Grensenytte</h3>
+<ul>
+<li>Grensenytten av et gode uttrykker den endring konsumenten får i sin nytte ved en liten endring i tilgangen på det godet.</li>
+<li>Vi skal anta at tilleggsnytten er positiv:
+<ul>
+<li><span class="math inline">\(u'_{x_{1}}(x_1,x_2)&gt;0\)</span> og <span class="math inline">\(u'_{x_{2}}(x_1,x_2)&gt;0\)</span></li>
+</ul></li>
+<li>Videre er det også vanlig å anta at nytteøkningen i tillegg er avtagende:
+<ul>
+<li><span class="math inline">\(u''_{x_{1}}(x_1,x_2)&lt;0\)</span> og <span class="math inline">\(u''_{x_{1}}(x_1,x_2)&lt;0\)</span></li>
+</ul></li>
+<li><strong>Altså</strong>: - Konsumenten har positive, men avtagende grensenytter.</li>
+</ul>
+
+<img data-src="drawio/grensenytte.png" style="width:45.0%" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="indifferenskurve">Indifferenskurve</h3>
+<ul>
+<li>Nyttefunksjonen kan representeres grafisk med indifferenskurver.</li>
+<li>OBS: Merk at nyttefunksjonen har tre ukjente. Vi må derfor operere med et tre-dimensjonalt diagram. Dette vil vi unngå. Ved å sette de uavhengige variablene ( <span class="math inline">\(x_{1},x_{2}\)</span> ) på aksene i et to-dimensjonalt diagram, kan funksjonen illustreres grafisk for gitte verdier på den tredje variabelen, U.</li>
+</ul>
+
+<img data-src="drawio/indkurve.png" style="width:45.0%" class="r-stretch"><ul>
+<li>Indifferenskurven viser altså alle kombinasjoner av de to godene som gir konsumenten samme totale nytte.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="forklaring-på-indifferenskurvens-form-og-marginal-substitusjonsbrøk-msb">Forklaring på indifferenskurvens form og marginal substitusjonsbrøk (MSB)</h3>
+<ul>
+<li>Kurven heller nedover pga. ikkemetningsaksiomet. Videre ser vi at kurven er konveks mot origo.</li>
+<li>Det skyldes følgende antagelse: Desto mer du har av <span class="math inline">\(x_1\)</span>, jo mindre vil du gi opp av <span class="math inline">\(x_2\)</span> for å få mer av <span class="math inline">\(x_1\)</span>.
+<ul>
+<li>Loven om fallende MSB.</li>
+</ul></li>
+<li>MTSB er gitt som (se appendiks for matematisk utledning) <span class="math display">\[\begin{equation*}
+MSB\equiv - \frac{\Delta x_{2}}{\Delta x_{1}}  = \frac{u'_{x_{1}}}{u'_{x_{2}}}
+\end{equation*}\]</span></li>
+</ul>
+<h3 id="indifferenskart">Indifferenskart</h3>
+<ul>
+<li>MSB viser altså antall enheter som en konsument er villig til å gi opp, for å få én ekstra enhet av det andre godet.
+<ul>
+<li>Bytteforholdet mellom to goder, gitt et konstant nyttenivå.</li>
+<li>For å få frem ulike nyttenivåer må vi således tegne et indifferenskart.</li>
+</ul></li>
+</ul>
+
+<img data-src="drawio/indkart.png" style="width:35.0%" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="andre-former-på-indifferenskurven">Andre former på indifferenskurven</h3>
+<p>.pull-left[ Ingen substitusjonsmuligheter</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="drawio/subsingen.png" style="width:50.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>] .pull-right[ Perfekte substitusjonsmuligheter</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="drawio/subsperf.png" style="width:50.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>]</p>
+</section>
+<section class="slide level2">
+
+<p><strong>Øvelse om MSB</strong></p>
+<p>Anta at <span class="math inline">\(u(x_1,x_2) = 10x_1x_2\)</span>. Finn uttrykket for MSB.</p>
+<p><strong>Svar</strong> <span class="math display">\[\begin{equation*}
+MSB = \frac{10x_2}{10x_1}= \frac{x_2}{x_1}
+\end{equation*}\]</span></p>
+<p>Beregn nyttenivået, vis og illustrer inndifferenskurven for de tre verdiene nedenfor:</p>
+<ul>
+<li><ol type="i">
+<li><span class="math inline">\(x_1=2,x_2=4\)</span></li>
+</ol></li>
+</ul>
+<p><span class="math display">\[\begin{equation*}
+U=10\cdot 2 \cdot 4 = 80 \\
+MSB =4/2=2
+\end{equation*}\]</span></p>
+<ul>
+<li><ol start="2" type="i">
+<li><span class="math inline">\(x_1=1,x_2=4\)</span></li>
+</ol></li>
+</ul>
+<p><span class="math display">\[\begin{equation*}
+U=10\cdot 1 \cdot 4 = 40 \\
+MSB =4/1=4
+\end{equation*}\]</span></p>
+<ul>
+<li><ol start="3" type="i">
+<li><span class="math inline">\(x_1=3,x_2=4\)</span>.</li>
+</ol></li>
+</ul>
+<p><span class="math display">\[\begin{equation*}
+U=10\cdot 3 \cdot 4 = 120 \\
+MSB =4/3=1.34
+\end{equation*}\]</span></p>
+<p>:::</p>
+</section>
+<section id="budsjettlinjen" class="slide level2">
+<h2>Budsjettlinjen</h2>
+<ul>
+<li>Vi har nå sett at konsumenten stadig vil trekke mot indifferenskurver som gir høyere nyttenivå.</li>
+<li>MEN: Konsumenten står ovenfor noen restriksjoner:</li>
+<li>Fast inntekt: <span class="math inline">\(m\)</span></li>
+<li>Pris på gode <span class="math inline">\(x_1: p_1\)</span></li>
+<li>Pris på gode <span class="math inline">\(x_2 : p_2\)</span></li>
+<li>Vi antar at konsumenten bruker hele sin inntekt på kjøp av de to godene:
+<ul>
+<li><span class="math inline">\(p_1x_1 + p_2x_2 = m\)</span></li>
+</ul></li>
+</ul>
+
+<img data-src="drawio/budsjbet.png" style="width:30.0%" class="r-stretch"><ul>
+<li>Budsjettlinja viser alle kombinasjoner av <span class="math inline">\(x_1\)</span> og <span class="math inline">\(x_2\)</span> som konsumenten kan kjøpe, når hele inntekten brukes.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="skjæringspunkter-og-helning.">Skjæringspunkter og helning.</h3>
+<p>Helningen på kurven er gitt ved (se appendisk for matetmatisk utledning)</p>
+<p><span class="math display">\[\begin{equation}
+\frac{\Delta x_{2}}{\Delta x_{1}}= - \frac{p_{1}}{p_{2}}/  \\
+\end{equation}\]</span></p>
+<p>Dersom vi kun velger <span class="math inline">\(x_1 \Rightarrow x_2=0\)</span></p>
+<p><span class="math display">\[\begin{equation}
+p_{1}x_{1}=m \\
+x_{1} =m/p_{1}
+\end{equation}\]</span></p>
+<p>Øvelse: Hva skjer dersom vi kun velger <span class="math inline">\(x_2\)</span>?</p>
+</section>
+<section class="slide level2">
+
+<p><strong>Øvelse om budsjettlinjen</strong></p>
+<p>Anta at du har en inntekt på 40 NOK som brukes på to goder. Gode 1 koster 10,- per enhet, og gode 2 koster 5,- per enhet.</p>
+<ol type="1">
+<li>Skriv ned budsjettbetingelsen.</li>
+<li>Hvor mye kan du kjøpe dersom du bruker all inntekten på gode 1?</li>
+<li>Hvor mye kan du kjøpe dersom du bruker all inntekten på gode 2?</li>
+<li>Tegn budsjettlinja.</li>
+<li>Anta at prisen på gode 1 faller til 5 NOK. Skriv ned ny budsjettbetingelse. Tegn inn denne i diagrammet du brukte i forrige spørsmål</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Skriv ned budsjettbetingelsen. <span class="math display">\[\begin{equation*}
+10x_{1}+5x_{2}=40
+\end{equation*}\]</span></li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Hvor mye kan du kjøpe dersom du bruker all inntekten på gode 1? <span class="math display">\[\begin{equation*}
+x_{1} = \frac{40}{10} = 4
+\end{equation*}\]</span></li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Hvor mye kan du kjøpe dersom du bruker all inntekten på gode 2? <span class="math display">\[\begin{equation*}
+x_{2} = \frac{40}{5} = 8
+\end{equation*}\]</span></li>
+</ol></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li><ol start="4" type="a">
+<li>Tegn budsjettlinja. Se diagramark</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>Anta at prisen på gode 1 faller til 5 NOK. Skriv ned ny budsjettbetingelse. Tegn inn denne i diagrammet du brukte i forrige spørsmål <span class="math display">\[\begin{equation*}
+5x_{1}+5x_{2}=40
+\end{equation*}\]</span></li>
+</ol></li>
+</ul>
+</section>
+<section id="konsumentens-optimale-tilpasning" class="slide level2">
+<h2>Konsumentens optimale tilpasning</h2>
+<ul>
+<li>Mål: tilpasse seg på høyest mulig nyttenivå for en gitt budsjettrestriksjon.</li>
+<li>Altså: Nyttemaksimering.</li>
+<li>Resultat: <span class="math display">\[\begin{equation*}
+MSB=\frac{u'({x_{1}})}{u'({x_{2}})}=\frac{p_1}{p_2} \Leftrightarrow \\
+\frac{u'({x_{1}})}{p_{1}}=\frac{u'({x_{2}})}{p_{2}}
+\end{equation*}\]</span></li>
+<li><em>Gossens lov</em>: Nyttetilskuddet av den siste krona brukt på det ene godet, skal være lik Nyttetilskuddet av den siste krona brukt på det andre godet.</li>
+</ul>
+
+<img data-src="drawio/opttilp.png" style="width:30.0%" class="r-stretch"></section>
+<section class="slide level2">
+
+<p><strong>Øvelse (til neste forelesning) om konsumentens optimale tilpasning</strong></p>
+<p>Benytt opplysningene fra de to foregående øvelsene (øvelse om MSB og budsjettlinjen), og skriv ned de to førsteordens betingelsene for konsumentens optimale tilpasning. Illustrer så tilpasningen grafisk ved bruk av et diagram.</p>
+<p><strong>Svar:</strong> <span class="math display">\[\begin{equation*}
+MSB=\frac{x_2}{x_1} = 2  \\
+10x_{1}+5x_{2}=40
+\end{equation*}\]</span> Vi kan løse det første uttrykket for <span class="math inline">\(x_2\)</span> <span class="math display">\[\begin{equation*}
+x_2 = 2x_1  \\
+\end{equation*}\]</span> Satt inn i budsjettbetingelsen og løst for <span class="math inline">\(x_1\)</span> <span class="math display">\[\begin{equation*}
+10x_{1}+5(2x{_1})=40 \Leftrightarrow
+x_{1}=\frac{40}{20}=2
+\end{equation*}\]</span> Som deretter kan løses for <span class="math inline">\(x_2\)</span> <span class="math display">\[\begin{equation*}
+x_2 = 2\cdot 2= 4  \\
+\end{equation*}\]</span></p>
+</section>
+<section id="appendiks-1" class="slide level2">
+<h2>Appendiks</h2>
+<h3 id="alle-figurene-samlet">Alle figurene samlet</h3>
+
+<img data-src="drawio/oversikt_kons_i.png" style="width:45.0%" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="matematisk-utledning-av-helingen-på-busjettkurven">Matematisk utledning av helingen på busjettkurven</h3>
+<p><span class="math display">\[\begin{equation}
+d(p_{1}x_{1}+p_{2}x_{2})=d(m)=0 \\
+p_{1}\Delta x_{1}+p_{2}\Delta x_{2}  = 0 \\
+p_{2}\Delta x_{2} =-p_{1}\Delta x_{1} \\
+\frac{\Delta x_{2}}{\Delta x_{1}}= - \frac{p_{1}}{p_{2}}  \\
+\end{equation}\]</span></p>
+</section>
+<section class="slide level2">
+
+<h3 id="matematisk-utledning-av-msb">Matematisk utledning av MSB</h3>
+<p><span class="math display">\[\begin{equation*}
+U=u(x_{1}, x_{2})  \\
+\text{Gitt nyttenivå} \\
+\overline{U}=u(x_{1},x_{2}) \\
+d\overline{U}=d(u(x_{1},x_{2})) \\
+0 = u'_{x_{1}}\Delta x_{1}+u'_{x_{2}}\Delta x_{2} \\
+-u'_{x_{2}}\Delta x_{2}  = u'_{x_{1}}\Delta x_{1}\\
+-\Delta x_{2}/\Delta x_{1}  = \frac{u'_{x_{1}}}{u'_{x_{2}}}\\
+MSB\equiv - \frac{\Delta x_{2}}{\Delta x_{1}}  = \frac{u'_{x_{1}}}{u'_{x_{2}}}
+\end{equation*}\]</span></p>
+</section>
+<section class="slide level2">
+
+<h3 id="lagrange-nyttemaksimering-for-et-gitt-budsjett">Lagrange: Nyttemaksimering for et gitt budsjett</h3>
+<p><strong>Utledning: Løsning av nyttemaksimeringsproblemet ved bruk av Lagrange-metode</strong></p>
+<p>Maks <span class="math display">\[\begin{equation*}
+U=u(x_{1}, x_{2})
+\end{equation*}\]</span></p>
+<p>Gitt at</p>
+<p><span class="math display">\[\begin{equation*}
+p_{1}x_{1}+p_{2}x_{2}=m
+\end{equation*}\]</span></p>
+<p>Lagrangefunksjonen vil derfor være gitt ved <span class="math display">\[\begin{equation*}
+L = u(x_{1},x_{2}) - \lambda(p_{1}x_{1}+p_{2}x_{2}-m)
+\end{equation*}\]</span></p>
+<p>Første ordens betingelsene (indre løsning)</p>
+<p><span class="math display">\[\begin{equation*}
+L'_{x1}=u'({x_{1}}) - \lambda p_{1} = 0 \\
+L'_{x2}=u'({x_{2}}) - \lambda p_{2} = 0 \\
+p_{1}x_{1}+p_{2}x_{2}=m
+\end{equation*}\]</span></p>
+</section>
+<section class="slide level2">
+
+<p>Som gir oss to likninger til løsing av to ukjente, <span class="math inline">\(X_{1}\)</span>, <span class="math inline">\(x_{2}\)</span>:</p>
+<p><span class="math display">\[\begin{equation*}
+MSB=\frac{u'({x_{1}})}{u'({x_{2}})} = \frac{p_{1}}{p_{2}}  \\
+p_{1}x_{1}+p_{2}x_{2}=m
+\end{equation*}\]</span></p>
+<p>Vi kan omskrive den første ligningen som (<em>Gossens lov</em>)</p>
+<p><span class="math display">\[\begin{equation*}
+\frac{u'({x_{1}})}{p_{1}}= \frac{u'({x_{2}})}{p_{2}}
+\end{equation*}\]</span></p>
+<p>Den rasjonelle konsument vil fordele utgiftene slik at den siste krone gir den samme nyttendring uansett hvilket av de to godene den brukes til innkjøp av.</p>
 
 
 </section><div class="quarto-auto-generated-content">

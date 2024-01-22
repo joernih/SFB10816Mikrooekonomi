@@ -25,7 +25,7 @@
     "href": "index.html#nyheter",
     "title": "Mikroøkonomi med anvendelser (våren 2024)",
     "section": "Nyheter",
-    "text": "Nyheter\n\nVideolenke tilhørende forelesning #2 er lagt ut nederst på Canvas-siden for kurset\nSvar på de to øvelsene i forlesningsnotatene om produksjonsteori på kort sikt er nå publisert.\n\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-01-19"
+    "text": "Nyheter\n\nForelesning #3 onsdag 24.1: Legger opp til en kombinert fysisk og digital forelesning (så kan dere velge hva som passer best for dere):\nVideolenke tilhørende forelesning #2 er lagt ut nederst på Canvas-siden for kurset.\nSvar på de to øvelsene i forlesningsnotatene om produksjonsteori på kort sikt er nå publisert.\n\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-01-22"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_6.html",
@@ -408,7 +408,7 @@
   {
     "objectID": "forelesninger/notater.html#appendiks-1",
     "href": "forelesninger/notater.html#appendiks-1",
-    "title": "Mikroøkonomi (BOEA203)",
+    "title": "Mikroøkonomi (SFB10816)",
     "section": "Appendiks",
     "text": "Appendiks\nAlle figurene samlet"
   },
@@ -789,5 +789,47 @@
     "title": "Seminar 1: Introduksjon til markedsteori",
     "section": "Oppgave 2",
     "text": "Oppgave 2\nBetrakt markedet for studenthybler på et studiested, og anta at dette kan betraktes som et marked med fullkommen konkurranse der antall kvadratmeter er mål på mengde og leiepris per kvadratmeter er mål på pris.\nJo høyere leiepris per kvadratmeter, jo flere hybeleiere vil ventelig finne det bryet verdt å leie ut sine hybler til studenter – derfor øker tilbudet av kvadratmeter til leie med leieprisen per kvadratmeter.\nJo høyere kvadratmeterpris, jo færre kvadratmeter vil studentene ventelig ønske å leie – dermed avtar etterspørselen etter kvadratmeter med leieprisen per kvadratmeter.\n\nAnta at det er mange studenter som ikke får leid det antall kvadratmeter de ønsker seg til den gjeldende leieprisen per kvadratmeter. Hva tror du vil skje med leieprisen på kvadratmeter – vil den falle, stige eller ingen av delene? Gi en faglig begrunnelse for ditt svar.\n\nAnta at høgskolen eller universitetet på studiestedet bestemmer seg for å øke opptaket av studenter og at det av den grunn blir flere studenter som etterspør hybel.\n\nVil dette ha betydning for leieprisen per kvadratmeter og hvor mange kvadratmeter som er til utleie, og eventuelt hvordan? Og vil utslagene i leiepriser og/eller antall kvadratmeter til utleie være store eller små? Gi et faglig begrunnet svar, og vurder om svaret på alle spørsmål er entydige."
+  },
+  {
+    "objectID": "forelesninger/notater.html#innledning-1",
+    "href": "forelesninger/notater.html#innledning-1",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Innledning",
+    "text": "Innledning\n\nVi skal i det følgende forsøke å illustrere hvordan en konsument/husholdning tilpasser seg i et godemarked.\nHusholdning: gruppe av individer med samme preferanser.\nSelvbergingsøkonomi \\(\\Rightarrow\\) bytteøkonomi \\(\\Rightarrow\\) pengeøkonomi\nVi skal anta at konsumenten tilpasser seg slik at nytten ved å forbruke de ulike godene blir størst mulig.\nMen: konsumenten står ovenfor noen restriksjoner (betingelser)."
+  },
+  {
+    "objectID": "forelesninger/notater.html#nytteteori",
+    "href": "forelesninger/notater.html#nytteteori",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Nytteteori",
+    "text": "Nytteteori\n\nVi kan dele nytteteori i to:\n\nKardinal nytte:\n\nNytten kan måles.\n\nOrdinal nytte:\n\nIkke målbar nytte. Her forutsetter vi at konsumenten kan ordne eller rangere de ulike godekombinasjonene."
+  },
+  {
+    "objectID": "forelesninger/notater.html#hvilke-sentrale-faktorer-bestemmer-etterspørselen-etter-et-gode",
+    "href": "forelesninger/notater.html#hvilke-sentrale-faktorer-bestemmer-etterspørselen-etter-et-gode",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Hvilke sentrale faktorer bestemmer etterspørselen etter et gode?",
+    "text": "Hvilke sentrale faktorer bestemmer etterspørselen etter et gode?\nVi tar utgangspunkt i følgende spørsmål: Hvilke forhold vil være av størst betydning for en konsuments etterspørsel etter et gode? - Sentrale faktorer: - Konsumentens behovstruktur - Konsumentens inntekt - Prisen på godet - Prisen på andre goder"
+  },
+  {
+    "objectID": "forelesninger/notater.html#forenklet-fremstilling-av-konsumentens-preferanser-og-behovsstruktur",
+    "href": "forelesninger/notater.html#forenklet-fremstilling-av-konsumentens-preferanser-og-behovsstruktur",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Forenklet fremstilling av konsumentens preferanser og behovsstruktur",
+    "text": "Forenklet fremstilling av konsumentens preferanser og behovsstruktur\n\nVi forenkler ved å anta at konsumenten kan velge mellom kun to goder: \\(x_1\\) og \\(x_2\\).\nVed å konsumere de to godene oppnår konsumenten en nytte: U.\nFor å kunne behandle dette formelt, blir vi nødt å gjøre noen antagelser om konsumentens preferanser:\n\nDeterminerthetsaksiomet\nIkkemetningsaksiomet\nTransitivitetsaksiomet"
+  },
+  {
+    "objectID": "forelesninger/notater.html#budsjettlinjen",
+    "href": "forelesninger/notater.html#budsjettlinjen",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Budsjettlinjen",
+    "text": "Budsjettlinjen\n\nVi har nå sett at konsumenten stadig vil trekke mot indifferenskurver som gir høyere nyttenivå.\nMEN: Konsumenten står ovenfor noen restriksjoner:\nFast inntekt: \\(m\\)\nPris på gode \\(x_1: p_1\\)\nPris på gode \\(x_2 : p_2\\)\nVi antar at konsumenten bruker hele sin inntekt på kjøp av de to godene:\n\n\\(p_1x_1 + p_2x_2 = m\\)\n\n\n\n\nBudsjettlinja viser alle kombinasjoner av \\(x_1\\) og \\(x_2\\) som konsumenten kan kjøpe, når hele inntekten brukes."
+  },
+  {
+    "objectID": "forelesninger/notater.html#konsumentens-optimale-tilpasning",
+    "href": "forelesninger/notater.html#konsumentens-optimale-tilpasning",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Konsumentens optimale tilpasning",
+    "text": "Konsumentens optimale tilpasning\n\nMål: tilpasse seg på høyest mulig nyttenivå for en gitt budsjettrestriksjon.\nAltså: Nyttemaksimering.\nResultat: \\[\\begin{equation*}\nMSB=\\frac{u'({x_{1}})}{u'({x_{2}})}=\\frac{p_1}{p_2} \\Leftrightarrow \\\\\n\\frac{u'({x_{1}})}{p_{1}}=\\frac{u'({x_{2}})}{p_{2}}\n\\end{equation*}\\]\nGossens lov: Nyttetilskuddet av den siste krona brukt på det ene godet, skal være lik Nyttetilskuddet av den siste krona brukt på det andre godet."
   }
 ]
