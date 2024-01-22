@@ -16,8 +16,10 @@ website:
             href: "forelesninger/notater.qmd"
           - text: "Forelesning 1: Introduksjon til mikroøkonomi"
             href: "forelesninger/notater.html#/kapittel-1-introduksjon-til-mikroøkonomi.-overblikk-over-fulllkomen-konkurranse"
-          - text: "Forelesning 2: Introduksjons til produksjonsteori. Produksjonsteori på kort sikt"
+          - text: "Forelesning 2-3: Introduksjons til produksjonsteori. Produksjonsteori på kort sikt"
             href: "forelesninger/notater.html#/kapittel-4-5-og-6-innledning-til-produsentteorien"
+          - text: "Forelesning 3-4: Introduksjons til produksjonsteori. Produksjonsteori på lang sikt"
+            href: "forelesninger/notater.html#/kapittel-4-5-og-6-produksjonsteori-p%C3%A5-lang-sikt"
       - text: "Oppgaver"
         menu:
           - text: "Anbefalte oppgaver"

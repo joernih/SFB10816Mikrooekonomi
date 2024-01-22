@@ -935,7 +935,6 @@ $F=10\cdot 25^{1/2}-25=25$
 
 
 
-::: {.content-visible when-profile="internal"}
 
 
 
@@ -952,8 +951,6 @@ $F=10\cdot 25^{1/2}-25=25$
 	- $x = f(N, K)$
 - Viser, for enhver mulig faktorkombinasjon, det maksimale antall enheter som kan produseres av produktet.
 - $f$ beskriver formen på avhengighetsforholdet mellom produksjonsmengden og innsatsfaktorene. Kan tolkes som forhold (faktorer) som endrer produksjonsmengden uten å endre mengden av innsatsfaktorene $N$ og $K$.
-
-:::
 
 ---
 
@@ -1473,9 +1470,11 @@ knitr::include_graphics(subsperf)
 ---
 
 
+
 **Øvelse om MSB**
 
 Anta at $u(x_1,x_2) = 10x_1x_2$. Finn uttrykket for MSB.
+::: {.content-visible when-profile="internal"}
 
 **Svar**
 \begin{equation*}
@@ -1528,6 +1527,7 @@ msb(vxy=c(3,4))
 # $msbv
 # [1] 1.333333
 ```
+::: 
 
 ---
 

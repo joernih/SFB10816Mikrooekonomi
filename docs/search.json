@@ -753,7 +753,7 @@
     "href": "forelesninger/notater.html#produksjon-og-teknologiske-forhold-1",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Produksjon og teknologiske forhold",
-    "text": "Produksjon og teknologiske forhold\n\nVi tar utgangspunkt i produksjonsbildet med to innsatsfaktorer og ett produkt.\nProduktfunksjonen:\n\n\\(x = f(N, K)\\)\n\nViser, for enhver mulig faktorkombinasjon, det maksimale antall enheter som kan produseres av produktet.\n\\(f\\) beskriver formen på avhengighetsforholdet mellom produksjonsmengden og innsatsfaktorene. Kan tolkes som forhold (faktorer) som endrer produksjonsmengden uten å endre mengden av innsatsfaktorene \\(N\\) og \\(K\\).\n\n.pull-left[ Arbeidskraft\n\n\n\n\n\n\n\n\n\n\n\\(\\frac{\\partial f}{\\partial N} &gt; 0\\)\n\\(\\frac{\\partial^2 f}{\\partial N^2} &lt; 0\\)\n\n]\n.pull-right[ Kapital\n\n\n\n\n\n\n\n\n\n\n\\(\\frac{\\partial f}{\\partial K} &gt; 0\\)\n\\(\\frac{\\partial^2 f}{\\partial K^2} &lt; 0\\)\n\n]"
+    "text": "Produksjon og teknologiske forhold\n\nVi tar utgangspunkt i produksjonsbildet med to innsatsfaktorer og ett produkt.\nProduktfunksjonen:\n\n\\(x = f(N, K)\\)\n\nViser, for enhver mulig faktorkombinasjon, det maksimale antall enheter som kan produseres av produktet.\n\\(f\\) beskriver formen på avhengighetsforholdet mellom produksjonsmengden og innsatsfaktorene. Kan tolkes som forhold (faktorer) som endrer produksjonsmengden uten å endre mengden av innsatsfaktorene \\(N\\) og \\(K\\)."
   },
   {
     "objectID": "forelesninger/notater.html#inntekter-1",
