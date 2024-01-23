@@ -1,0 +1,26 @@
+---
+title: "Alle"
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: false
+---
+
+```{r, echo=FALSE, results='asis',warning=F}
+pres <- paste0(rprojroot::find_rstudio_root_file(), '/forelesninger/notater.qmd')
+text <- readLines(pres)
+cat(knitr::knit_child(text = paste(text[25:length(text)], collapse = "\n"), quiet = TRUE))
+```
+
+
+
+
+
+
+
+
+
+
+
+

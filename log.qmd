@@ -9,4 +9,5 @@ output: github_document
 - Bytteom om forklaring på figur 3.6 og 3.7
 
 ### Forelesning 2
-- Figur 5KS.4 satt inn.
+- Figur 4KS.4 satt inn.
+- Endret på numereringen av figurene.

@@ -29,11 +29,11 @@ library(ggplot2)
 library(econocharts)
 md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
 # ../data-raw/metadata.json
-#source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/econplot.R'))
 source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
 ```
 
 # Praktisk informasjon
+
 
 ## Timeplan 
 
@@ -53,6 +53,7 @@ kableExtra::kbl(df_t,col.names=klnt) %>% kableExtra::kable_paper(full_width = F)
 klno <- c("Kapittel","Oppgavenummer")
 kableExtra::kbl(df_o,col.names=klno) %>% kableExtra::kable_paper(full_width = F) %>% kableExtra::kable_styling(font_size=24)
 ```
+
 
 ## Pensumliste 
 
@@ -570,9 +571,6 @@ Merk: Til forskjell fra læreboka, vil vi forelesningene først gjennomgå alle 
 
 ---
 
-```{r, echo=F,eval=F}
-knitr::knit_exit()
-```
 
 
 ## Produksjon og teknologiske forhold 
@@ -601,8 +599,8 @@ kableExtra::kbl(tabell_prodf, col.names=tipf_navn) %>% kableExtra::kable_paper(f
 Arbeidskraft
 
 ```{r, echo=FALSE, out.width="80%", fig.cap=""}
-#| label: figur5KS.1
-#| fig-cap: "Figur 5KS.1"
+#| label: figur4KS.1
+#| fig-cap: "Figur 4KS.1"
 pkl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodkl.png')
 knitr::include_graphics(pkl)
 ```
@@ -644,8 +642,8 @@ kableExtra::kbl(tabell_inntekt, col.names=ti_navn)
 
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-#| label: figur5KS.2
-#| fig-cap: "Figur 5KS.2"
+#| label: figur5KS.1
+#| fig-cap: "Figur 5KS.1"
 innt <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/inntf.png')
 knitr::include_graphics(innt)
 ```
@@ -808,8 +806,8 @@ Kostnadsfunksjonen må være konveks (som vi tidligere har sett at kan komme som
 ::: {.column width="50%"}
 *Uten faste kostnader*
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-#| label: figur5KS.5
-#| fig-cap: "Figur 5KS.5"
+#| label: figur6KS.1
+#| fig-cap: "Figur 6KS.1"
 kgkufast <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kgkufast.png')
 knitr::include_graphics(kgkufast)
 ```
@@ -818,8 +816,8 @@ knitr::include_graphics(kgkufast)
 ::: {.column width="50%"}
 *Med faste kostnader*
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-#| label: figur5KS.6
-#| fig-cap: "Figur 5KS.6"
+#| label: figur6KS.2
+#| fig-cap: "Figur 6KS.2"
 kgkmfast <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kgkmfast.png')
 knitr::include_graphics(kgkmfast)
 ```
@@ -896,8 +894,8 @@ $$
 Bruken av arbeidskraften bestemmes der hvor verdien av grenseproduktiviteten er lik det nominelle lønnsnivået.
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-#| label: figur5KS.7
-#| fig-cap: "Figur 5KS.7"
+#| label: figur6KS.4
+#| fig-cap: "Figur 6KS.4"
 arbktilp <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/klearb.png')
 knitr::include_graphics(arbktilp)
 ```
@@ -933,12 +931,6 @@ N=5^2 = 25
 2.ordensbetingelsen (som sikrer optimum) $-2.5\cdot N^{-1.5} < 0$, mens optimal forjeneste er positiv og gitt som 
 $F=10\cdot 25^{1/2}-25=25$
 
-
-
-
-
-
-
 # Kapittel 4, 5 og 6: Produksjonsteori på lang sikt  `r #paste(substring(del[2],4),tema[3])`
 
 ---
@@ -959,8 +951,8 @@ $F=10\cdot 25^{1/2}-25=25$
 ::: {.column width="50%"}
 Arbeidskraft
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
-#| label: figur5LS.1
-#| fig-cap: "Figur 5LS.1"
+#| label: figur4LS.1
+#| fig-cap: "Figur 4LS.1"
 pkl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodkl.png')
 knitr::include_graphics(pkl)
 ```
@@ -971,8 +963,8 @@ knitr::include_graphics(pkl)
 ::: {.column width="50%"}
 Kapital
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
-#| label: figur5LS.2
-#| fig-cap: "Figur 5LS.2"
+#| label: figur4LS.2
+#| fig-cap: "Figur 4LS.2"
 pkk <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/prodkk.png')
 knitr::include_graphics(pkk)
 ```
@@ -990,8 +982,8 @@ knitr::include_graphics(pkk)
 - Nivåkurven kalles her en *isokvant*: viser alle kombinasjoner av N og K som gir samme produserte kvantum.
 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
-#| label: figur5LS.3
-#| fig-cap: "Figur 5LS.3"
+#| label: figur4LS.3
+#| fig-cap: "Figur 4LS.3"
 iso <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/isokvant.png')
 knitr::include_graphics(iso)
 ```
@@ -1039,8 +1031,8 @@ $$
 ::: {.column width="50%"}
 Lineær produksjonsteknologi (perfekte substitutter)
 ```{r, echo=FALSE, out.width="70%", fig.cap=""}
-#| label: figur5LS.4
-#| fig-cap: "Figur 5LS.4"
+#| label: figur4LS.4
+#| fig-cap: "Figur 4LS.4"
 pss <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/linsub.png')
 knitr::include_graphics(pss)
 ```
@@ -1049,8 +1041,8 @@ knitr::include_graphics(pss)
 ::: {.column width="50%"}
 Leontief produksjonsteknologi (ingen substitusjon)
 ```{r, echo=FALSE, out.width="70%", fig.cap=""}
-#| label: figur5LS.5
-#| fig-cap: "Figur 5LS.5"
+#| label: figur4LS.5
+#| fig-cap: "Figur 4LS.5"
 fss <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/lensub.png')
 knitr::include_graphics(fss)
 ```
@@ -1077,8 +1069,8 @@ knitr::include_graphics(fss)
   - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på y %.
 
 ```{r, echo=FALSE, out.width="30%", fig.cap=""}
-#| label: figur5LS.6
-#| fig-cap: "Figur 5LS.6"
+#| label: figur4LS.6
+#| fig-cap: "Figur 4LS.6"
 koskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/koskala.png')
 knitr::include_graphics(koskala)
 ```
@@ -1087,8 +1079,8 @@ knitr::include_graphics(koskala)
   - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på mindre enn y %.
 
 ```{r, echo=FALSE, out.width="30%", fig.cap=""}
-#| label: figur5LS.7
-#| fig-cap: "Figur 5LS.7"
+#| label: figur4LS.7
+#| fig-cap: "Figur 4LS.7"
 avskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/avskala.png')
 knitr::include_graphics(avskala)
 ```
@@ -1097,8 +1089,8 @@ knitr::include_graphics(avskala)
   - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på mer enn y %.
 
 ```{r, echo=FALSE, out.width="30%", fig.cap=""}
-#| label: figur5LS.8
-#| fig-cap: "Figur 5LS.8"
+#| label: figur4LS.8
+#| fig-cap: "Figur 4LS.8"
 okskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/okskala.png')
 knitr::include_graphics(okskala)
 ```
@@ -1180,8 +1172,8 @@ Optimal løsning er her karakterisert ved tangeringspunktet mellom isokvant og i
 ---
 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
-#| label: figur5LS.9
-#| fig-cap: "Figur 5LS.9"
+#| label: figur5LS.1
+#| fig-cap: "Figur 5LS.1"
 kosmin <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kosmin.png')
 knitr::include_graphics(kosmin)
 ```
@@ -1192,8 +1184,8 @@ knitr::include_graphics(kosmin)
 
 - Dersom vi tenker oss flere endringer i bedriftens kostnadsramme med tilhørende optimale isokvant, vil vi få frem en rekke tangeringspunkter. 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
-#| label: figur5LS.10
-#| fig-cap: "Figur 5LS.10"
+#| label: figur5LS.2
+#| fig-cap: "Figur 5LS.2"
 submalen <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/submalen.png')
 knitr::include_graphics(submalen)
 ```
@@ -1217,11 +1209,12 @@ knitr::include_graphics(submalen)
   - Avtagende (ved økende skalautbytte) i et (x,p)-diagram 
 
 ```{r, echo=FALSE, out.width="25%", fig.cap=""}
-#| label: figur5LS.11
-#| fig-cap: "Figur 5LS.11"
+#| label: figur5LS.3
+#| fig-cap: "Figur 5LS.3"
 kosminkk <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/til_lang.png')
 knitr::include_graphics(kosminkk)
 ```
+
 
 ---
 
@@ -1230,8 +1223,8 @@ knitr::include_graphics(kosminkk)
 **Redusert pris på kapital**
 
 ```{r, echo=FALSE, out.width="30%", fig.cap=""}
-#| label: figur5LS.12
-#| fig-cap: "Figur 5LS.12"
+#| label: figur6LS.1
+#| fig-cap: "Figur 6LS.1"
 kosminkk <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kosminkk.png')
 knitr::include_graphics(kosminkk)
 ```
@@ -1239,8 +1232,8 @@ knitr::include_graphics(kosminkk)
 **Redusert pris på arbeidskraft**
 
 ```{r, echo=FALSE, out.width="30%", fig.cap=""}
-#| label: figur5LS.13
-#| fig-cap: "Figur 5LS.13"
+#| label: figur6LS.2
+#| fig-cap: "Figur 6LS.2"
 kosminka <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/kosminka.png')
 knitr::include_graphics(kosminka)
 ```
@@ -1331,8 +1324,6 @@ Optimal løsning også her karakterisert ved tangeringspunktet mellom isokvant o
 
 Ved å sette inn for den optimale løsningen av $N$ og $K$ finner vi bedriftens kostnadsfunksjon (kostnaden som minimerer produksjonen for et gitt produksjonsnivå)
 
-
-
 ::: {.content-visible when-profile="internal"}
 
 
@@ -1344,6 +1335,9 @@ Ved å sette inn for den optimale løsningen av $N$ og $K$ finner vi bedriftens 
 
 :::
 
+```{r}
+knitr::knit_exit()
+```
 
 ## Innledning
 
@@ -1352,7 +1346,6 @@ Ved å sette inn for den optimale løsningen av $N$ og $K$ finner vi bedriftens 
 - Selvbergingsøkonomi $\Rightarrow$ bytteøkonomi $\Rightarrow$ pengeøkonomi
 - Vi skal anta at konsumenten tilpasser seg slik at nytten ved å forbruke de ulike godene blir størst mulig.
 - **Men:** konsumenten står ovenfor noen restriksjoner (betingelser).
-
 
 ---
 
@@ -1406,10 +1399,13 @@ Hvilke forhold vil være av *størst* betydning for en konsuments etterspørsel 
  - **Altså**: 
         - Konsumenten har positive, men avtagende grensenytter.
 
-```{r, echo=FALSE, out.width="45%", fig.cap=""}
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
+#| label: figur7LS.1
+#| fig-cap: "Figur 7LS.1"
 grensenytte <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/grensenytte.png')
 knitr::include_graphics(grensenytte)
 ```
+
 
 
 ---
@@ -6259,4 +6255,5 @@ knitr::include_graphics("drawio/int_tilpasning_inntnedgang.png")
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 knitr::include_graphics("drawio/opt_tilp_tid.png")
 ```
+
 
