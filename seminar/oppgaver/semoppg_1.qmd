@@ -8,17 +8,12 @@ format:
 
 ```{r, echo=F}
 md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
-fdm <- paste0(rprojroot::find_rstudio_root_file(),'/seminar/oppgaver/mate.py')
-reticulate::source_python(fdm)
 eqpar <- list(meql=reticulate::py$modeql,meqs=reticulate::py$modeqs)
 eql <- eqpar$meql
-quarto::quarto_render(input = "semoppg_1.qmd", output_file = "sem1.html")
 ```
 
 Uke `r md$regnv$sem1[2]`, ansvarlig: `r md$regnv$ansv[1]`
 Fredag kl. 12:15-14:00
-
-::: {.content-visible when-profile="internal"}
 
 ## Oppgave 1
 
@@ -90,10 +85,6 @@ b)  Vil dette ha betydning for leieprisen per kvadratmeter og hvor mange
     alle spørsmål er entydige.
 
 
-:::
 
-```{r, echo=F}
-knitr::knit_exit()
-```
 
 
