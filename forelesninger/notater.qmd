@@ -34,7 +34,6 @@ source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
 
 # Praktisk informasjon
 
-
 ## Timeplan 
 
 ```{r, eval=T, echo=F}
@@ -619,7 +618,9 @@ knitr::include_graphics(pkl)
 
 ---
 
-## Inntekter 
+## Inntekter og kostnader
+
+### Inntekter 
 
 
 - Bedriftens inntekter bestemmes av antall enheter den selger, og prisen på disse enhetene.
@@ -651,7 +652,7 @@ knitr::include_graphics(innt)
 ---
 
 
-## Kostnader 
+### Kostnader 
 
 - Kostnader: De beløp som påløper som følge av virksomhet.
   - Faste kostnader  $(C_F)$ : Kostnader som er uavhengige av produsert kvantum.
@@ -1098,12 +1099,14 @@ knitr::include_graphics(okskala)
 
 ---
 
-## Inntekter 
+## Inntekter  og kostnader 
+
+### Inntekter
 - Sammenlignet med den beskrivelsen som ble gitt for kort sikt, forekommer det her ingen endringer.
 
 ---
 
-## Kostnader 
+### Kostnader 
 - Sammenlignet med den beskrivelsen som ble gitt for kort sikt, kan vi her se bort fra de faste kostnadene siden vi antar alle innsatsfaktorer for å være variable på lang sikt.
 
 ### Kostnadslinjen og isokostlinja
@@ -1203,18 +1206,21 @@ knitr::include_graphics(submalen)
 
 - Tilbudet til bedriften må bestemmes gjennom profittmaksimering eller kostnadsminimering.  
 - Ettersom dette krever at bedriften er på grensekostnadskurven, vil tilbudskurven være ”den samme” som grensekostnadskurven.
+
+---
+
 - På lang sikt vil bedriftens tilbudskurve enten være
   - Stigende (ved avtagende skalautbytte) i et (x,p)-diagram 
   - Horisontal (ved konstant skalautbytte) i et (x,p)-diagram 
   - Avtagende (ved økende skalautbytte) i et (x,p)-diagram 
 
-```{r, echo=FALSE, out.width="25%", fig.cap=""}
+
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
 #| label: figur5LS.3
 #| fig-cap: "Figur 5LS.3"
 kosminkk <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/til_lang.png')
 knitr::include_graphics(kosminkk)
 ```
-
 
 ---
 
@@ -1238,7 +1244,8 @@ kosminka <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/ko
 knitr::include_graphics(kosminka)
 ```
 
-Etterspør mer (mindre) av den innsatsfaktoren som har blitt billigere (dyrere).
+Generelt resultat: Etterspør mer (mindre) av den innsatsfaktoren som har blitt billigere (dyrere),
+og den kvantative effekten her er sterkere på langt sikt enn på kort sikt pga. substitusjonsegenskapene.
 
 
 ## Appendiks
