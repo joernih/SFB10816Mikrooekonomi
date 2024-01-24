@@ -1066,35 +1066,41 @@ knitr::include_graphics(fss)
 
 ---
 
+:::: {.columns}
+::: {.column width="30%"}
 - i) Konstant skalautbytte
   - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på y %.
 
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
+```{r, echo=FALSE, out.width="40%", fig.cap=""}
 #| label: figur4LS.6
 #| fig-cap: "Figur 4LS.6"
 koskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/koskala.png')
 knitr::include_graphics(koskala)
 ```
-
+:::
+::: {.column width="30%"}
 - ii) Avtagende skalautbytte
   - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på mindre enn y %.
 
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
+```{r, echo=FALSE, out.width="40%", fig.cap=""}
 #| label: figur4LS.7
 #| fig-cap: "Figur 4LS.7"
 avskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/avskala.png')
 knitr::include_graphics(avskala)
 ```
-
+:::
+::: {.column width="30%"}
 - iii) Økende skalautbytte
   - Skalaøkning på y % $\Rightarrow$ økning i produsert kvantum på mer enn y %.
 
-```{r, echo=FALSE, out.width="30%", fig.cap=""}
+```{r, echo=FALSE, out.width="40%", fig.cap=""}
 #| label: figur4LS.8
 #| fig-cap: "Figur 4LS.8"
 okskala <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/okskala.png')
 knitr::include_graphics(okskala)
 ```
+:::
+::::
 
 
 ---
@@ -1132,6 +1138,9 @@ $$
  r\Delta K = -w\Delta N  \\
 \frac{\Delta K}{\Delta N} = - \frac{w}{r} 
 \end{equation}
+
+---
+
   - Bruker hele budsjettet på arbeidskraft $\Rightarrow K=0$
 \begin{equation}
 C^0= wN + r0 = wN \\
@@ -1163,6 +1172,8 @@ K = C^0/r
 
 Max $x=f(K,N)$ gitt $C^0=wN +rK$ gitt (beskrankning)
 
+---
+
 Dette problemet kan løses ved bruk av Lagrange-metode (se appendiks for formell utledning), hvor løsningen er gitt ved:
 
 \begin{equation}
@@ -1171,8 +1182,6 @@ C^0=wN +rK
 \end{equation}
 
 Optimal løsning er her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.
-
----
 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
 #| label: figur5LS.1
@@ -1235,6 +1244,8 @@ kosminkk <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/ko
 knitr::include_graphics(kosminkk)
 ```
 
+---
+
 **Redusert pris på arbeidskraft**
 
 ```{r, echo=FALSE, out.width="30%", fig.cap=""}
@@ -1245,7 +1256,7 @@ knitr::include_graphics(kosminka)
 ```
 
 Generelt resultat: Etterspør mer (mindre) av den innsatsfaktoren som har blitt billigere (dyrere),
-og den kvantative effekten her er sterkere på langt sikt enn på kort sikt pga. substitusjonsegenskapene.
+og den kvantative effekten her er sterkere på langt sikt enn på kort sikt pga. substitusjonsegenskapene mellom arbeidskraft og kapital.
 
 
 ## Appendiks
