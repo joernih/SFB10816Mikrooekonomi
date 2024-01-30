@@ -9,7 +9,6 @@ engine: knitr
 
 ## Nyheter
 
-- Forelesning #3 onsdag 24.1 (09:15, Aud 4): Legger opp til en kombinert fysisk og [digital forelesning](https://hiof.zoom.us/j/69365515803?pwd=czZzSHNCQWtxY2FEcTRQdjk1L1NXUT09)
 - Oppgaver til [seminar #1](seminar/oppgaver/semoppg_1.html) på fredag 12:15 er nå lagt ( se under fanen oppgaver) ut.
 - Videolenke tilhørende forelesning #2 er lagt ut nederst på Canvas-siden for kurset.
 - Svar på de to øvelsene i forlesningsnotatene om produksjonsteori på kort sikt er nå publisert.

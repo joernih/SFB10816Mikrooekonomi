@@ -25,7 +25,7 @@
     "href": "index.html#nyheter",
     "title": "Mikroøkonomi med anvendelser (våren 2024)",
     "section": "Nyheter",
-    "text": "Nyheter\n\nForelesning #3 onsdag 24.1: Legger opp til en kombinert fysisk (i Aud 4) og digital forelesning.\nZoom lenke her\nOppgaver til seminar #1 (under fanen oppgaver) på fredag 12:15 er nå lagt ut.\nVideolenke tilhørende forelesning #2 er lagt ut nederst på Canvas-siden for kurset.\nSvar på de to øvelsene i forlesningsnotatene om produksjonsteori på kort sikt er nå publisert.\n\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-01-23"
+    "text": "Nyheter\n\nOppgaver til seminar #1 på fredag 12:15 er nå lagt ( se under fanen oppgaver) ut.\nVideolenke tilhørende forelesning #2 er lagt ut nederst på Canvas-siden for kurset.\nSvar på de to øvelsene i forlesningsnotatene om produksjonsteori på kort sikt er nå publisert.\n\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-01-30"
   },
   {
     "objectID": "seminar/index.html",
@@ -613,7 +613,7 @@
     "href": "forelesninger/notater.html#appendiks-1",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Appendiks",
-    "text": "Appendiks\nAlle figurene samlet"
+    "text": "Appendiks\nMatematisk utledning av helingen på busjettkurven\n\\[\\begin{equation}\nd(p_{1}x_{1}+p_{2}x_{2})=d(m)=0 \\\\\np_{1}\\Delta x_{1}+p_{2}\\Delta x_{2}  = 0 \\\\\np_{2}\\Delta x_{2} =-p_{1}\\Delta x_{1} \\\\\n\\frac{\\Delta x_{2}}{\\Delta x_{1}}= - \\frac{p_{1}}{p_{2}}  \\\\\n\\end{equation}\\]"
   },
   {
     "objectID": "forelesninger/notater.html#produsentens-rolle-teknologiske-forhold-og-produksjon",
@@ -634,7 +634,7 @@
     "href": "forelesninger/notater.html#appendiks-2",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Appendiks",
-    "text": "Appendiks\nDiagramark benyttet under forelesning"
+    "text": "Appendiks\nLøsningsforslag"
   },
   {
     "objectID": "forelesninger/notater.html#produksjon-og-teknologiske-forhold-1",
@@ -690,7 +690,7 @@
     "href": "forelesninger/notater.html#hvilke-sentrale-faktorer-bestemmer-etterspørselen-etter-et-gode",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Hvilke sentrale faktorer bestemmer etterspørselen etter et gode?",
-    "text": "Hvilke sentrale faktorer bestemmer etterspørselen etter et gode?\nVi tar utgangspunkt i følgende spørsmål: Hvilke forhold vil være av størst betydning for en konsuments etterspørsel etter et gode? - Sentrale faktorer: - Konsumentens behovstruktur - Konsumentens inntekt - Prisen på godet - Prisen på andre goder"
+    "text": "Hvilke sentrale faktorer bestemmer etterspørselen etter et gode?\nVi tar utgangspunkt i følgende spørsmål: Hvilke forhold vil være av størst betydning for en konsuments etterspørsel etter et gode?\n\nSentrale faktorer:\nKonsumentens behovstruktur\nKonsumentens inntekt\nPrisen på godet\nPrisen på andre goder"
   },
   {
     "objectID": "forelesninger/notater.html#forenklet-fremstilling-av-konsumentens-preferanser-og-behovsstruktur",
@@ -704,14 +704,14 @@
     "href": "forelesninger/notater.html#budsjettlinjen",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Budsjettlinjen",
-    "text": "Budsjettlinjen\n\nVi har nå sett at konsumenten stadig vil trekke mot indifferenskurver som gir høyere nyttenivå.\nMEN: Konsumenten står ovenfor noen restriksjoner:\nFast inntekt: \\(m\\)\nPris på gode \\(x_1: p_1\\)\nPris på gode \\(x_2 : p_2\\)\nVi antar at konsumenten bruker hele sin inntekt på kjøp av de to godene:\n\n\\(p_1x_1 + p_2x_2 = m\\)\n\n\n\n\nBudsjettlinja viser alle kombinasjoner av \\(x_1\\) og \\(x_2\\) som konsumenten kan kjøpe, når hele inntekten brukes."
+    "text": "Budsjettlinjen\n\nVi har nå sett at konsumenten stadig vil trekke mot indifferenskurver som gir høyere nyttenivå.\nMEN: Konsumenten står ovenfor noen restriksjoner:\nFast inntekt: \\(m\\)\nPris på gode \\(x_1: p_1\\)\nPris på gode \\(x_2 : p_2\\)"
   },
   {
     "objectID": "forelesninger/notater.html#konsumentens-optimale-tilpasning",
     "href": "forelesninger/notater.html#konsumentens-optimale-tilpasning",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Konsumentens optimale tilpasning",
-    "text": "Konsumentens optimale tilpasning\n\nMål: tilpasse seg på høyest mulig nyttenivå for en gitt budsjettrestriksjon.\nAltså: Nyttemaksimering.\nResultat: \\[\\begin{equation*}\nMSB=\\frac{u'({x_{1}})}{u'({x_{2}})}=\\frac{p_1}{p_2} \\Leftrightarrow \\\\\n\\frac{u'({x_{1}})}{p_{1}}=\\frac{u'({x_{2}})}{p_{2}}\n\\end{equation*}\\]\nGossens lov: Nyttetilskuddet av den siste krona brukt på det ene godet, skal være lik Nyttetilskuddet av den siste krona brukt på det andre godet."
+    "text": "Konsumentens optimale tilpasning\n\nMål: tilpasse seg på høyest mulig nyttenivå for en gitt budsjettrestriksjon.\nAltså: Nyttemaksimering.\nResultat: \\[\\begin{equation*}\nMSB=\\frac{u'({x_{1}})}{u'({x_{2}})}=\\frac{p_1}{p_2} \\Leftrightarrow \\\\\n\\frac{u'({x_{1}})}{p_{1}}=\\frac{u'({x_{2}})}{p_{2}}\n\\end{equation*}\\]"
   },
   {
     "objectID": "forelesninger/notater.html#appendiks-4",
@@ -1075,21 +1075,21 @@
     "href": "seminar/oppgaver/semoppg_2.html#del-i-modeller-i-mikroøkonomi",
     "title": "Seminar 2: Matematikk for mikroøkonomi",
     "section": "Del I: Modeller i mikroøkonomi",
-    "text": "Del I: Modeller i mikroøkonomi\n\n) Hva menes med en økonomisk modell?\n) Hva er forskjellen mellom eksogene og endogene variabler i en økonomisk modell?\n) Hva vil det si å utføre komparativ stikk i en økonomisk modell?"
+    "text": "Del I: Modeller i mikroøkonomi\n\n) Hva menes med en økonomisk modell?\n\nEn forenklet beskrivelse av virkeligheten. Bygger pr. definisjon på forutsetninger. Virkeligheten er kompliser, forenklingen gjør at vi kan rense vekk momenter som vi tror ikke har noen spesiell innvirkning på vårt spørsmål.\n\n) Hva er forskjellen mellom eksogene og endogene variabler i en økonomisk modell?\n\nI mikroøkonomi er endogene variable er de variablene som blir forklart av modellen. Eksogene variable er de variablen som inngår i modellen, men blir bestemt utenfor modellen.\n\n) Hva vil det si å utføre komparativ stikk i en økonomisk modell?\n\nInnebærer å analysere effekten av en isolert endring i en eller flere variabler (vanligvis ved bruk av derivasjon eller differensiering) i modellen og analysere hvordan dette påvirker de økonomiske resultatene."
   },
   {
     "objectID": "seminar/oppgaver/semoppg_2.html#del-ii-brøkregning-og-derivasjon",
     "href": "seminar/oppgaver/semoppg_2.html#del-ii-brøkregning-og-derivasjon",
     "title": "Seminar 2: Matematikk for mikroøkonomi",
     "section": "Del II: Brøkregning og derivasjon",
-    "text": "Del II: Brøkregning og derivasjon\n\nBrøkregning\nForenkl disse uttrykkene\n\n) \\[x^2 \\cdot x^3\\]\n\n3\n\n) \\[x \\cdot x^4\\]\n) \\[y+y\\]\n) \\[y^{2} + y\\]\n) \\[x^{0.5} \\left(x_{1} + x_{2}\\right)\\]\n) \\[\\frac{1}{x_1} \\cdot x_1^3\\]\n) \\[\\frac{x_{1}^{3}}{x_{2}}\\]\n\nLøs for \\(y\\):\n\n) \\[y^2 =a b\\]\n) \\[y^{0.5}=a + b\\]\n\n\n\nDerivasjon\n\n\nEn variabel\nDeriver med hensyn på \\(x\\):\n\n) \\[4 x^{3}\\]\n) \\[4 x^{5} + \\frac{2}{x^{3}}\\]\n) \\[\\frac{1}{6}x^6a\\]\n) \\[\\frac{1}{6}x^6+a\\]\n) \\[\\frac{5x}{2x^2}\\]\n\n\n\nTo variabler\nDeriver med hensyn på \\(x\\) og \\(y\\):\n\n) \\[5 x^{4} + 3 y^{0.5}\\]\n) \\[0.5 x^{0.5} + x y^{0.5}\\]\n) \\[3x^{1/6}y^{2}+y^{1/3}x^{3}\\]\n\nDeriver med hensyn på \\(x_1\\) og \\(x_2\\):\n\n) \\[3x_1^{1/6}+x_2^{1/3}\\]\n\n\n\nDiffrensiering\nTa utgangspunkt i funksjonen \\[\n\\overline{x} = f(x_1,x_2)\n\\] Hvor \\(\\overline{x}\\) er en konstant, og \\(x_1\\) og \\(x_2\\) er to variabler.\n\n) Total differensier uttrykket\n) Vis så at det er mulig å skrive dette som \\[\n\\frac{\\Delta x_{2}}{\\Delta x_{1}}  = \\frac{f'_{x_{1}}}{f'_{x_{2}}}\n\\]"
+    "text": "Del II: Brøkregning og derivasjon\n\nBrøkregning\nForenkl disse uttrykkene\n\n) \\[x^2 \\cdot x^3\\]\n\n\\[x^{2+3}=x^{5}\\]\n\n) \\[x \\cdot x^4\\]\n\n\\[x^{1}x^{4}=x^{1+4}=x^{5}\\]\n\n) \\[y+y\\]\n\n\\[2y\\]\n\n) \\[y^{2} + y\\]\n\n\\[yy+y=y(y+1)\\]\n\n) \\[x_{1}^{0.5} \\left(x_{1} + x_{2}\\right)\\]\n\n\\[x_1^{0.5}x_1^1+x_1^{0.5}x_2^1=x_1^{1.5}+x_1^{0.5}x_2\\]\n\n) \\[\\frac{1}{x_1} \\cdot x_1^3\\]\n\n\\[\\frac{x_1^{3}}{x_1^1}=x_1^{3-1}=x_1^{2}\\]\n\n) \\[\\frac{x_{1}^{3}}{x_{2}^{3}}\\]\n\n\\[(\\frac{x_1}{x_2})^{3}\\]\n\n\nLøs for \\(y\\):\n\n) \\[y^2 =a b\\]\n\n\\[\\sqrt{y^2}=\\sqrt{ab}\\] \\[y=\\sqrt{ab}\\]\n\n) \\[y^{0.5}=a + b\\]\n\n\\[(y^{0.5})^2=(a+b)^2\\] \\[y=(a+b)^2\\]\n\n\n\n\nDerivasjon\n\n\nEn variabel\nDeriver med hensyn på \\(x\\):\n\n) \\[4 x^{3}\\]\n\n\\[f'(x) = 12x^2 \\]\n\n) \\[4 x^{5} + \\frac{2}{x^{3}}\\]\n\n\\[f'(x) = 20x^4-6x^{-4}\\]\n\n) \\[\\frac{1}{6}x^6a\\]\n\n\\[f'(x) = x^5a\\]\n\n) \\[\\frac{1}{6}x^6+a \\]\n\n\\[f'(x) = x^{5}\\]\n\n) \\[\\frac{5x}{2x^2}\\]\n\n\\[f'(x) = \\frac{52x^2-5x4x}{(2x^2)^2}=\\frac{10x^2-20x^2}{(2x^4}=\\frac{-5x}{2x^2}\\]\n\n\n\n\nTo variabler\nDeriver med hensyn på \\(x\\) og \\(y\\):\n\n) \\[5 x^{4} + 3 y^{0.5}\\]\n\n\\[f'_x(x,y)=20x^3\\] \\[f'_y(x,y)=1.5y^{-0.5}\\]\n\n) \\[0.5 x^{0.5} + x y^{0.5}\\]\n\n\\[f'_x(x,y)=x+y^{0.5}\\] \\[f'_y(x,y)=0.5xy^{-0.5}\\]\n\n) \\[3x^{1/6}y^{2}+y^{1/3}x^{3}\\]\n\n\\[f'_x(x,y)=\\frac{1}{2}x^{-5/6}y^2+3y^{1/3}x^2\\] \\[f'_y(x,y)=6x^{1/6}y+\\frac{1}{3}y^{-2/3}x^3\\]\n\n\nDeriver med hensyn på \\(x_1\\) og \\(x_2\\):\n\n) \\[3x_1^{1/6}+x_2^{1/3}\\]\n\n\\[f'_x(x_1,x_2)=\\frac{1}{2}x_1^{-5/6}\\] \\[f'_y(x_1,x_2)=\\frac{1}{3}x_2^{-2/3}\\]\n\n\n\n\nDiffrensiering\nTa utgangspunkt i funksjonen \\[\n\\overline{x} = f(x_1,x_2)\n\\] Hvor \\(\\overline{x}\\) er en konstant, og \\(x_1\\) og \\(x_2\\) er to variabler.\n\n) Totaldifferensier uttrykket\n\n\\[\\Delta \\overline{x} = f'_{x_1}(x_1,x_2)\\Delta x_1 + f'_{x_2}(x_1,x_2)\\Delta x_2 = 0 \\]\n\n) Vis så at det er mulig å skrive dette som \\[\n-\\frac{\\Delta x_{2}}{\\Delta x_{1}}  = \\frac{f'_{x_{1}}}{f'_{x_{2}}}\n\\]\n\n\\[f'_{x_2}(x_1,x_2)\\Delta x_2 =- f'_{x_1}(x_1,x_2)\\Delta x_1 \\] \\[\\frac{\\Delta x_2}{\\Delta x_1} = -\\frac{f'_{x_1}(x_1,x_2)}{f'_{x_2}(x_1,x_2)}\\] \\[-\\frac{\\Delta x_2}{\\Delta x_1} = \\frac{f'_{x_1}(x_1,x_2)}{f'_{x_2}(x_1,x_2)}\\]"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_2.html#del-iii-system-av-ligninger-og-lagranges-metode",
     "href": "seminar/oppgaver/semoppg_2.html#del-iii-system-av-ligninger-og-lagranges-metode",
     "title": "Seminar 2: Matematikk for mikroøkonomi",
     "section": "Del III: System av ligninger og Lagranges metode",
-    "text": "Del III: System av ligninger og Lagranges metode\n\nSystem av likninger\nLøs systemet av likninger nedenfor for \\(x_1\\) og \\(x_2\\) \\[\\begin{eqnarray*}\n\\frac{x_2}{x_1} = 2  \\\\\n10x_{1}+5x_{2}=40\n\\end{eqnarray*}\\]\n\n\nLagrange-metode\nAnta at vi har at \\(u(x_1,x_2)=10x_1x_2\\) og at \\(10x_{1}+5x_{2}=40\\)\n\n) Vis ved bruk av Lagrange-metode at dette gir opphav til systemet av ligninger vist ovenfor"
+    "text": "Del III: System av ligninger og Lagranges metode\n\nSystem av likninger\nLøs systemet av likninger nedenfor for \\(x_1\\) og \\(x_2\\) \\[\\begin{eqnarray*}\n\\frac{x_2}{x_1} = 2  \\\\\n10x_{1}+5x_{2}=40\n\\end{eqnarray*}\\]\n\nVi kan løse det første uttrykket for \\(x_2\\) \\[\nx_2 = 2x_1  \n\\] Ved å sette inn i det andre uttrykket og løse for \\(x_1\\) \\[\n10x_{1}+5(2x{_1})=40\n\\] \\[\nx_{1}=\\frac{40}{20}=2\n\\] Som deretter kan løses for \\(x_2\\) ved å sette tilbake til det først (eller andre) uttrykket: \\[\nx_2 = 2\\cdot 2= 4  \\\\\n\\]\n\n\n\nLagranges metode\nAnta at vi har at \\(u(x_1,x_2)=10x_1x_2\\) og at \\(10x_{1}+5x_{2}=40\\)\n\n) Vis ved bruk av Lagrange-metode at dette gir opphav til systemet av ligninger vist ovenfor\n\nMaks \\[\\begin{equation*}\nu(x_1,x_2)=10x_1x_2\n\\end{equation*}\\] Gitt at \\[\\begin{equation*}\n10x_{1}+5x_{2}=40\n\\end{equation*}\\] Lagrangefunksjonen vil derfor være gitt ved \\[\\begin{equation*}\nL(x_1,x_2) = 10x_1x_2 - \\lambda(10x_{1}+5x_{2}-40)\n\\end{equation*}\\] De to første ordens betingelsene vil være gitt ved: \\[\\begin{eqnarray*}\nL'_{x_1}=10x_2 - \\lambda 10 = 0 \\\\\nL'_{x_2}=10x_1 - \\lambda 5 = 0\n\\end{eqnarray*}\\] Som sammen med budsjettbetingelsen gir oss to likninger til løsing av to ukjente, \\(x_{1}\\), \\(x_{2}\\): \\[\\begin{eqnarray*}\n\\frac{x_2}{x_1} = 2  \\\\\n10x_{1}+5x_{2}=40\n\\end{eqnarray*}\\]"
   },
   {
     "objectID": "oppgaver/eksamensoppg.html",
