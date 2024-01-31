@@ -1320,15 +1320,15 @@ av N og K som gjør produksjen størst mulig).
 
 ### Lagrange: Kostnadsminimering for en gitt produksjon
 
-Min $C=wN +rK$ gitt $x=f(K,N)$ gitt (beskrankning). Lagrange metode:
+Min $C=wN +rK$ gitt $x^0=f(K,N)$ gitt (beskrankning). Lagrange metode:
 \begin{equation}
-L = f(K,N) - \lambda(wN+rK-C^0)
+L =wN +rK - \lambda(f(K,N)-x^0)
 \end{equation}
 Første ordens betingelsen er gitt ved
 \begin{equation}
 \partial L/\partial N = f'_{N} - \lambda w  =0 \\ 
 \partial L/\partial K = f'_{K} - \lambda r =0 \\
-x=f(K,N)
+x^0=f(K,N)
 \end{equation}
 
 ---
@@ -1336,7 +1336,7 @@ x=f(K,N)
 Kombinerer de to første ordens betingelsene gir oss to likninger for å løse de to ukjente N,K
 \begin{equation}
 MTSB \equiv  \frac{f'_{N}}{f'_{K}} = \frac{w}{r} \\
-x=f(K,N)
+x^0=f(K,N)
 \end{equation}
 Optimal løsning også her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.
 
