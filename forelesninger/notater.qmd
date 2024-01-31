@@ -1248,6 +1248,7 @@ knitr::include_graphics(kosminkk)
 
 **Redusert pris på arbeidskraft**
 
+
 ```{r, echo=FALSE, out.width="30%", fig.cap=""}
 #| label: figur6LS.2
 #| fig-cap: "Figur 6LS.2"
