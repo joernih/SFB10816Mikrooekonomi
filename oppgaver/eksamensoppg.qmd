@@ -5,10 +5,14 @@
 
 ## Tidligere eksamensoppgaver
 
+### HIOF
 - [Eksamen HiOF våren 2023](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/eksamensoppgaver/eksamen_SFB10816_2023_V.pdf)
 - [Eksamen HiOF våren 2022](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/eksamensoppgaver/eksamen_SFB10816_2022_V.pdf)
 
-Kommer mer snart
+### HVL
+
+![](bilder/hvl2022.png)
+
 
 ```{r, echo=F}
 knitr::knit_exit()
