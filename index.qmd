@@ -9,9 +9,7 @@ engine: knitr
 
 ## Nyheter
 
-- Oppgaver til [seminar #1](seminar/oppgaver/semoppg_1.html) på fredag 12:15 er nå lagt ( se under fanen oppgaver) ut.
-- Videolenke tilhørende forelesning #2 er lagt ut nederst på Canvas-siden for kurset.
-- Svar på de to øvelsene i forlesningsnotatene om produksjonsteori på kort sikt er nå publisert.
+- Oppgaver til [seminar #2](seminar/oppgaver/semoppg_2.html) på fredag 12:15 er nå lagt ( se under fanen oppgaver) ut.
 
 ### Pensumbøker
 

@@ -1340,7 +1340,10 @@ x=f(K,N)
 Optimal løsning også her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.
 
 
-Ved å sette inn for den optimale løsningen av $N$ og $K$ finner vi bedriftens kostnadsfunksjon (kostnaden som minimerer produksjonen for et gitt produksjonsnivå)
+**Merk**: 
+
+- Ved å sette inn for den optimale løsningen av $N$ og $K$ finner vi bedriftens kostnadsfunksjon (kostnaden som minimerer produksjonen for et gitt produksjonsnivå). 
+- Grensekostnaden vil derfor framkomme ved å derivere den funksjonen mhp produsert kvantum (see figur 5LS.3).
 
 ::: {.content-visible when-profile="internal"}
 
@@ -6341,5 +6344,12 @@ knitr::include_graphics("drawio/int_tilpasning_inntnedgang.png")
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 knitr::include_graphics("drawio/opt_tilp_tid.png")
 ```
-
+```{r}
+N <- c(4:20)
+K <-64/N
+N <- c(4,8,12,20)
+K <-64/N
+# Plotte resultatene i et diagram
+plot(N,K)
+```
 
