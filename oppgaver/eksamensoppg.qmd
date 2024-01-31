@@ -11,8 +11,8 @@
 
 ### HVL
 
-![](bilder/hvl2022.png)
-
+- [HVL høsten 2022, oppgave 1](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/oppgaver/hvl2022.png)
+  - [HVL høsten 2022, oppgave 1(løsningsforslag)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/oppgaver/HVL_2022_oppgave1_losning.png)
 
 ```{r, echo=F}
 knitr::knit_exit()
