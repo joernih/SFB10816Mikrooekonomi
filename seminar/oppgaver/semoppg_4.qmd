@@ -12,5 +12,5 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 ```
 
 Uke `r md$regnv$sem4[2]`, ansvarlig: `r md$regnv$ansv[4]`
-Torsdag kl. 09:15-11:00(?)
+Torsdag kl. 09:15-11:00.
 

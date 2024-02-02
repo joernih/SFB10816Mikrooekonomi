@@ -1,8 +1,8 @@
 {
-  "hash": "50ad913e00f49b2a46e607da177ca10e",
+  "hash": "8f9e09e89ac1f8ac3b2cc553d8d32ac0",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Seminar 4: Konsumentteori\"\nformat:\n  html:\n    toc: true\n    css: css/OFF.css\n---\n\n::: {.cell}\n\n:::\n\n\nUke 10, ansvarlig: JIH\nTorsdag kl. 09:15-11:00(?)\n\n",
+    "markdown": "---\ntitle: \"Seminar 4: Konsumentteori\"\nformat:\n  html:\n    toc: true\n    css: css/OFF.css\n---\n\n::: {.cell}\n\n:::\n\n\nUke 10, ansvarlig: JIH\nTorsdag kl. 09:15-11:00.\n\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

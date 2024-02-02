@@ -1,11 +1,9 @@
 {
-  "hash": "e999f45f62c16bae3c83220e5cda5623",
+  "hash": "8b3205c7865da6ff3825b74933e71c93",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Seminar 3: Produsentteori\"\nformat:\n  html:\n    toc: true\n    css: css/OFF.css\n---\n\n::: {.cell}\n\n:::\n\n\nUke 7, ansvarlig: JIH\nTorsdag kl. 09:15-11:00(?)\n\n::: {.content-visible when-profile=\"internal\"}\n## Oppgave 1: Produksjonsteori på kort sikt\n## Oppgave 2: Produksjonsteori på lang sik\n:::\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n\n\n\n\n",
-    "supporting": [
-      "semoppg_3_files"
-    ],
+    "markdown": "---\ntitle: \"Seminar 3: Produsentteori på kort og lang sikt\"\nformat:\n  html:\n    enable_js: true\n    toc: true\n    css: css/OFF.css\n---\n\n::: {.cell}\n\n:::\n\n\nUke 7, ansvarlig: JIH\nTorsdag kl. 09:15-11:00.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nknitr::knit_exit()\n```\n:::\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

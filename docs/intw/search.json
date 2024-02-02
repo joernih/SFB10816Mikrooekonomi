@@ -25,7 +25,7 @@
     "href": "index.html#nyheter",
     "title": "Mikroøkonomi med anvendelser (våren 2024)",
     "section": "Nyheter",
-    "text": "Nyheter\n\nOppgaver til seminar #2 på fredag 12:15 er nå lagt ( se under fanen oppgaver) ut.\n\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-01-30"
+    "text": "Nyheter\n\nFor Seminar #1 og #2 er løsningsforslag lagt ut (trykk på knapp neders på siden for å få frem løsningen)\nOppgaver til seminar #2 på fredag 12:15 er nå lagt ( se under fanen oppgaver) ut.\n\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-02-02"
   },
   {
     "objectID": "seminar/index.html",
@@ -65,9 +65,9 @@
   {
     "objectID": "seminar/oppgaver/semoppg_3.html",
     "href": "seminar/oppgaver/semoppg_3.html",
-    "title": "Seminar 3: Produsentteori",
+    "title": "Seminar 3: Produsentteori på kort og lang sikt",
     "section": "",
-    "text": "Uke 7, ansvarlig: JIH Torsdag kl. 09:15-11:00(?)"
+    "text": "Uke 7, ansvarlig: JIH Torsdag kl. 09:15-11:00."
   },
   {
     "objectID": "seminar/oppgaver/semoppg_3.html#oppgave-1",
@@ -88,7 +88,7 @@
     "href": "seminar/oppgaver/semoppg_4.html",
     "title": "Seminar 4: Konsumentteori",
     "section": "",
-    "text": "Uke 10, ansvarlig: JIH Torsdag kl. 09:15-11:00(?)"
+    "text": "Uke 10, ansvarlig: JIH Torsdag kl. 09:15-11:00."
   },
   {
     "objectID": "seminar/oppgaver/semoppg_4.html#oppgave-3",
@@ -109,7 +109,7 @@
     "href": "seminar/oppgaver/semoppg_5.html",
     "title": "Seminar 5: Markedsteori: Fullkommen konkurranse",
     "section": "",
-    "text": "Uke 14, ansvarlig: TAB Fredag kl. 12:15-14:00(?)\n\nOppgave 1: Fullkommen konkurranse"
+    "text": "Uke 14, ansvarlig: TAB Fredag kl. 12:15-14:00.\n\nOppgave 1: Fullkommen konkurranse"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_5.html#oppgave-4",
@@ -123,7 +123,7 @@
     "href": "seminar/oppgaver/semoppg_6.html",
     "title": "Seminar 6: Markedsteori: ufullkommen konkurranse og andre temaer",
     "section": "",
-    "text": "Uke 16, ansvarlig: TAB Fredag kl. 12:15-14:00(?)\n\nOppgave 1: Monopolistens tilpasning\n\n\nOppgave 2: Andre temaer"
+    "text": "Uke 16, ansvarlig: TAB Fredag kl. 12:15-14:00.\n\nOppgave 1: Monopolistens tilpasning\n\n\nOppgave 2: Andre temaer"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_6.html#oppgave-5",
@@ -401,7 +401,7 @@
   {
     "objectID": "seminar/oppgaver/semoppg_3.html#oppgave-1-produksjonsteori-på-kort-sikt",
     "href": "seminar/oppgaver/semoppg_3.html#oppgave-1-produksjonsteori-på-kort-sikt",
-    "title": "Seminar 3: Produsentteori",
+    "title": "Seminar 3: Produsentteori på kort og lang sikt",
     "section": "Oppgave 1: Produksjonsteori på kort sikt",
     "text": "Oppgave 1: Produksjonsteori på kort sikt"
   },
@@ -1657,5 +1657,26 @@
     "title": "Alle",
     "section": "Appendiks",
     "text": "Appendiks\n\nMatematisk utledning av helingen på busjettkurven\n\\[\\begin{equation}\nd(p_{1}x_{1}+p_{2}x_{2})=d(m)=0 \\\\\np_{1}\\Delta x_{1}+p_{2}\\Delta x_{2}  = 0 \\\\\np_{2}\\Delta x_{2} =-p_{1}\\Delta x_{1} \\\\\n\\frac{\\Delta x_{2}}{\\Delta x_{1}}= - \\frac{p_{1}}{p_{2}}  \\\\\n\\end{equation}\\]\n\n\n\nMatematisk utledning av MSB\n\\[\\begin{equation*}\nU=u(x_{1}, x_{2})  \\\\\n\\text{Gitt nyttenivå} \\\\\n\\overline{U}=u(x_{1},x_{2}) \\\\\nd\\overline{U}=d(u(x_{1},x_{2})) \\\\\n0 = u'_{x_{1}}\\Delta x_{1}+u'_{x_{2}}\\Delta x_{2} \\\\\n-u'_{x_{2}}\\Delta x_{2}  = u'_{x_{1}}\\Delta x_{1}\\\\\n-\\Delta x_{2}/\\Delta x_{1}  = \\frac{u'_{x_{1}}}{u'_{x_{2}}}\\\\\nMSB\\equiv - \\frac{\\Delta x_{2}}{\\Delta x_{1}}  = \\frac{u'_{x_{1}}}{u'_{x_{2}}}\n\\end{equation*}\\]\n\n\n\nLagrange: Nyttemaksimering for et gitt budsjett\nUtledning: Løsning av nyttemaksimeringsproblemet ved bruk av Lagrange-metode\nMaks \\[\\begin{equation*}\nU=u(x_{1}, x_{2})\n\\end{equation*}\\]\nGitt at\n\\[\\begin{equation*}\np_{1}x_{1}+p_{2}x_{2}=m\n\\end{equation*}\\]\nLagrangefunksjonen vil derfor være gitt ved \\[\\begin{equation*}\nL = u(x_{1},x_{2}) - \\lambda(p_{1}x_{1}+p_{2}x_{2}-m)\n\\end{equation*}\\]\nFørste ordens betingelsene (indre løsning)\n\\[\\begin{equation*}\nL'_{x1}=u'({x_{1}}) - \\lambda p_{1} = 0 \\\\\nL'_{x2}=u'({x_{2}}) - \\lambda p_{2} = 0 \\\\\np_{1}x_{1}+p_{2}x_{2}=m\n\\end{equation*}\\]\n\nSom gir oss to likninger til løsing av to ukjente, \\(X_{1}\\), \\(x_{2}\\):\n\\[\\begin{equation*}\nMSB=\\frac{u'({x_{1}})}{u'({x_{2}})} = \\frac{p_{1}}{p_{2}}  \\\\\np_{1}x_{1}+p_{2}x_{2}=m\n\\end{equation*}\\]\nVi kan omskrive den første ligningen som (Gossens lov)\n\\[\\begin{equation*}\n\\frac{u'({x_{1}})}{p_{1}}= \\frac{u'({x_{2}})}{p_{2}}\n\\end{equation*}\\]\nDen rasjonelle konsument vil fordele utgiftene slik at den siste krone gir den samme nyttendring uansett hvilket av de to godene den brukes til innkjøp av.\n\nknitr::knit_exit()"
+  },
+  {
+    "objectID": "seminar/oppgaver/semoppg_3.html#produksjonsteori-kort-sikt",
+    "href": "seminar/oppgaver/semoppg_3.html#produksjonsteori-kort-sikt",
+    "title": "Seminar 3: Produsentteori på kort og lang sikt",
+    "section": "Produksjonsteori: kort sikt",
+    "text": "Produksjonsteori: kort sikt\nBedriften Ambå produserer bæreposer ved hjelp av arbeidskraft (\\(N\\)). Produksjonsprosessen kan beskrives ved hjelp av en produktfunksjon \\(x = 2 N^{0.5}\\). Produktprisen er \\(20\\) kroner, mens faktorprisen for arbeidskraft (\\(w\\)) er gitt ved \\(5\\) kroner.\n\nGi en forklaring om egenskapene tilhørende marginalproduktiviteten til arbeidskraften.\n\nSiden vi har at \\(f'(N)=\\frac{1.0}{\\sqrt{N}}&gt;0\\) og \\(f''(N)=- \\frac{0.5}{N^{\\frac{3}{2}}}&gt;0\\) kan vi si at produktfunksjonen er økende med avtagende grenseproduktivitet. Dvs. desto flere arbeidere, desto høyere produksjon, men hvor produksjonsbidraget som kommer som en følge av den siste enheten i bruken av arbeidskraft vil være mindre enn de foregående.\n\nSett opp uttrykket for fortjenesten til bedriften. Finn deretter betingelsen (førsteordens) for bruk av arbeidskraft som maksimerer fortjenesten til bedriften. Gi til slutt en økonomisk tolkning av denne tilpasningsbetingelsen.\n\nUttrykket for fortjenesten til bedriften er gitt ved: \\[\nF = 40.0 \\sqrt{N} - 5 N\n\\] Ved å maksimere dette uttrykket mhp. \\(N\\), finner vi at betingelsen (førsteordens) for bruk av arbeidskraft som gjør fortjenesten størst mulig er gitt ved: \\[ -5.0 + \\frac{20.0}{\\sqrt{N}} = 0\n\\] Tolkning: Bruken av arbeidskraft tilpasses slik at verdien av grenseproduktiviteten er lik faktorprisen for arbeidskraft. Dette er optimalt, siden dersom denne verdien er høyere (lavere) enn kostnaden, vil bedriften øke (redusere) sin fortjeneste ved å ansette flere (færre) arbeidere.\n\nHvor mye arbeidskraft vil bli benyttet og hvor mange bæreposer vil bli produsert dersom bedriften har som mål å maksimere sin fortjeneste?\n\nDersom vi løser førsteordensbetingelsen mhp. arbeidskraft finner vi at optimal bruk av arbeidskraft er gitt \\(N=16.0\\) enheter. Setter vi denne verdien tilbake i produktfunksjonen får vi at dette gjør det mulig å produsere \\(x = 8.0\\) enheter.\n\nHvor høy blir fortjenesten til bedriften i dette tilfellet?\n\nFortjenesten vil i dette tilfellet være gitt ved \\[\nF = 20.0 \\sqrt{16.0} - 16.0\n\\] \\[\nF = 80.0\n\\]\n\nVis ved bruk av en figur og forklar hva som skjer med etterspørselen til bedriften i arbeidsmarkedet i det faktorprisen for arbeidskraft reduseres.\n\nDersom faktorprisen for arbeidskraft går ned vil verdien av grenseproduktiviteten i utgangspunktet være høyere enn faktorprisen. Det vil gjøre det lønnsomt for bedriften å øke bruken av antal arbeidere helt inntil disse to verdiene er lik hverandre igjen."
+  },
+  {
+    "objectID": "seminar/oppgaver/semoppg_3.html#produksjonsteori-kort-sikt-abc",
+    "href": "seminar/oppgaver/semoppg_3.html#produksjonsteori-kort-sikt-abc",
+    "title": "Seminar 3: Produsentteori på kort og lang sikt",
+    "section": "Produksjonsteori: kort sikt abc",
+    "text": "Produksjonsteori: kort sikt abc\nBedriften Ambå produserer bæreposer ved hjelp av arbeidskraft (\\(N\\)). Produksjonsprosessen kan beskrives ved hjelp av en produktfunksjon \\(x = 2 N^{0.5}\\). Produktprisen er \\(20\\) kroner, mens faktorprisen for arbeidskraft (\\(w\\)) er gitt ved \\(5\\) kroner.\n\nGi en forklaring om egenskapene tilhørende marginalproduktiviteten til arbeidskraften.\n\nSiden vi har at \\(f'(N)=\\frac{1.0}{\\sqrt{N}}&gt;0\\) og \\(f''(N)=- \\frac{0.5}{N^{\\frac{3}{2}}}&gt;0\\) kan vi si at produktfunksjonen er økende med avtagende grenseproduktivitet. Dvs. desto flere arbeidere, desto høyere produksjon, men hvor produksjonsbidraget som kommer som en følge av den siste enheten i bruken av arbeidskraft vil være mindre enn de foregående.\n\nSett opp uttrykket for fortjenesten til bedriften. Finn deretter betingelsen (førsteordens) for bruk av arbeidskraft som maksimerer fortjenesten til bedriften. Gi til slutt en økonomisk tolkning av denne tilpasningsbetingelsen.\n\nUttrykket for fortjenesten til bedriften er gitt ved: \\[\nF = 40.0 \\sqrt{N} - 5 N\n\\] Ved å maksimere dette uttrykket mhp. \\(N\\), finner vi at betingelsen (førsteordens) for bruk av arbeidskraft som gjør fortjenesten størst mulig er gitt ved: \\[ -5.0 + \\frac{20.0}{\\sqrt{N}} = 0\n\\] Tolkning: Bruken av arbeidskraft tilpasses slik at verdien av grenseproduktiviteten er lik faktorprisen for arbeidskraft. Dette er optimalt, siden dersom denne verdien er høyere (lavere) enn kostnaden, vil bedriften øke (redusere) sin fortjeneste ved å ansette flere (færre) arbeidere.\n\nHvor mye arbeidskraft vil bli benyttet og hvor mange bæreposer vil bli produsert dersom bedriften har som mål å maksimere sin fortjeneste?\n\nDersom vi løser førsteordensbetingelsen mhp. arbeidskraft finner vi at optimal bruk av arbeidskraft er gitt \\(N=16.0\\) enheter. Setter vi denne verdien tilbake i produktfunksjonen får vi at dette gjør det mulig å produsere \\(x = 8.0\\) enheter.\n\nHvor høy blir fortjenesten til bedriften i dette tilfellet?\n\nFortjenesten vil i dette tilfellet være gitt ved \\[\nF = 20.0 \\sqrt{16.0} - 16.0\n\\] \\[\nF = 80.0\n\\]\n\nVis ved bruk av en figur og forklar hva som skjer med etterspørselen til bedriften i arbeidsmarkedet i det faktorprisen for arbeidskraft reduseres.\n\nDersom faktorprisen for arbeidskraft går ned vil verdien av grenseproduktiviteten i utgangspunktet være høyere enn faktorprisen. Det vil gjøre det lønnsomt for bedriften å øke bruken av antal arbeidere helt inntil disse to verdiene er lik hverandre igjen.\n\n\n\nknitr::knit_exit()"
+  },
+  {
+    "objectID": "seminar/oppgaver/semoppg_3.html#produksjonsteori-lang-sikt",
+    "href": "seminar/oppgaver/semoppg_3.html#produksjonsteori-lang-sikt",
+    "title": "Seminar 3: Produsentteori på kort og lang sikt",
+    "section": "Produksjonsteori: lang sikt",
+    "text": "Produksjonsteori: lang sikt\nBedriften Bambå produserer handlekurver (x) ved hjelp av arbeidskraft (N) og realkapital (K). Produksjonsprosessen følger denne produktfunksjonen: \\(x=10N^{0.5}K^{0.5}\\)\n\nFinn et uttrykk for grenseproduktet til de to innsatsfaktorene N og K.\n\nLøsning: \\[\ndx/dN = 0.5\\cdot 10 N^{0.5-1}K^{0.5} = 5(\\frac{K}{N})^{0.5} &gt; 0\n\\] \\[\ndx/dK = 0.5\\cdot 10 N^{0.5}K^{0.5-1} = 5(\\frac{N}{K})^{0.5} &gt; 0\n\\]\n\nFinn et uttrykk for den marginale tekniske substitusjonsbrøk (MTSB). Regn ut MTSB når N = 4 og K = 16. Gi en verbal forklaring for MTSB i dette punktet.\n\nLøsning: \\[\nMTSB\\equiv - \\frac{\\Delta K}{\\Delta N}= \\frac{f'_n}{f'_k} = \\frac{0.5\\cdot 10 N^{-0.5}K^{0.5}}{0.5\\cdot 10 N^{0.5}K^{-0.5}} = \\frac{K}{N}=\\frac{16}{4}=4\n\\] Tolkning: Når vi øker innsatsen av N fra 4 til 5, innebærer det at innsatsen av K kan reduseres med 4 for at vi samtidig skal opprettholde produksjonen på tilnærmet samme produksjonsnivå.\n\nLegg nå til grunn at prisen på arbeidskraft (w) er \\(4\\), mens brukerprisen på realkapital (r) er \\(1\\). Finn et uttrykk for isokostlinjen. Hva er stigningstallet til isokostlinjen?\n\n\nLøsning: Låser vi først totalkostnadene til et gitt nivå \\(C=C^{0}\\), så kan isokostlinjen uttrykkes som \\[\nC^{0} = 4N+1K\n\\] Stigningstallet finner vi ved å totaldifferensiere isokostlinjen: \\[\n0=4\\Delta N + 1\\Delta K \\\\\n-4 \\Delta K = 1\\Delta N \\\\\n\\frac{\\Delta K}{\\Delta N} = - 4/1 = - 4\n\\]\n\n\nFinn ved hjelp av regning og ved bruk av en figur den kostnadsminimerende bruken av hhv. arbeidskraft (N) og realkapital (K) i det bedriften produserer \\(80\\) enheter.\n\n\nKostnadsminimering for et gitt produksjonsnivå gir ved bruk av Lagrange-metode følgende førsteordensbetingelser\n\\[\\begin{aligned}\nMTSB= \\frac{f'_{N}}{f'_{K}}  = \\frac{w}{r}  \\\\\n80 = 10N^{0.5}K^{0.5}\n\\end{aligned}\\]\nI vårt tilfeller gir dette oss:\n\\[\\begin{aligned}\nMTSB= \\frac{K}{N}  = \\frac{4}{1} = 4  \\Rightarrow K =4N \\\\\n80 = 10N^{0.5}K^{0.5}\n\\end{aligned}\\]\nFølgende kombinasjon av de to uttrykken forteller oss at kostnadsminimerende bruk av arbeidskraft er gitt ved\n\\[\\begin{aligned}\n80 = 10N^{0.5}(4N)^{0.5}=10\\cdot4^{0.5}N \\Rightarrow  N=\\frac{40}{20} = 4 \\\\\n\\text{Mens kostnadsminimerende bruk av kapital er gitt ved} \\\\\n80 = 10(4)^{0.5}K^{0.5} \\Leftrightarrow K = (\\frac{80}{20})^{2}=16\n\\end{aligned}\\]\n\n\nknitr::knit_exit()"
   }
 ]

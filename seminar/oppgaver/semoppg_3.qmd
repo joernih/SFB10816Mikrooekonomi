@@ -2,32 +2,44 @@
 title: "Seminar 3: Produsentteori på kort og lang sikt"
 format:
   html:
+    enable_js: true
     toc: true
     css: css/OFF.css
 ---
 
 
 ```{r, echo=F}
+#fp <- 'python/oppgaver_h_2023.py'
+fp <- paste0(rprojroot::find_rstudio_root_file(),'/seminar/oppgaver/script/abc.py')
+reticulate::source_python(fp)
+meq <- reticulate::py$modeql
+nvb <- c("Ambå","Bambå","Cambå")
+prd <- c("bæreposer","handlekurver","handlevogner")
 md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
 ```
 
 Uke `r md$regnv$sem3[2]`, ansvarlig: `r md$regnv$ansv[3]`
-Torsdag kl. 09:15-11:00(?)
+Torsdag kl. 09:15-11:00.
+
+```{r, echo=F, eval=T}
+knitr::knit_exit()
+```
 
 ::: {.content-visible when-profile="internal"}
-## Oppgave 1: Produksjonsteori på kort sikt
-## Produksjonsteori: kort sikt
 
+
+## Oppgave 1: Produksjonsteori på kort sikt
+## Produksjonsteori: kort sikt 
 Bedriften `r nvb[1]` produserer `r prd[1]` ved hjelp av arbeidskraft  ($N$). Produksjonsprosessen kan beskrives ved hjelp av en produktfunksjon $`r meq$pf1`$. Produktprisen er $`r meq$pn1`$ kroner, mens faktorprisen for arbeidskraft ($w$) er gitt ved $`r meq$wn1`$ 
 kroner.
 
 a) Gi en forklaring om egenskapene tilhørende marginalproduktiviteten til arbeidskraften.
-<div class="sol">
+<div class="answer hidden">
 Siden vi har at $f'(N)=`r meq$dopdf1`>0$ og $f''(N)=`r meq$dtpdf1`>0$ kan vi si at produktfunksjonen er økende 
 med avtagende grenseproduktivitet. Dvs. desto flere arbeidere, desto høyere produksjon, men hvor produksjonsbidraget som kommer som en følge av den siste enheten i bruken av arbeidskraft vil være mindre enn de foregående.
 </div>
 a) Sett opp uttrykket for fortjenesten til bedriften. Finn deretter betingelsen (førsteordens) for bruk av arbeidskraft som maksimerer fortjenesten til bedriften. Gi til slutt en økonomisk tolkning av denne tilpasningsbetingelsen.
-<div class="sol">
+<div class="answer hidden">
 Uttrykket for fortjenesten til bedriften er gitt ved:
 $$
 `r meq$Fn1`
@@ -40,12 +52,12 @@ Tolkning: Bruken av arbeidskraft tilpasses slik at verdien av grenseproduktivite
 </div>
 a) Hvor mye arbeidskraft vil bli benyttet og hvor mange `r prd[1]` vil bli produsert dersom bedriften har som mål
 å maksimere sin fortjeneste?
-<div class="sol">
+<div class="answer hidden">
 Dersom vi løser førsteordensbetingelsen mhp. arbeidskraft finner vi at optimal bruk av arbeidskraft er gitt 
 $N=`r meq$ns1`$ enheter. Setter vi denne verdien tilbake i produktfunksjonen får vi at dette gjør det mulig å produsere $`r meq$xs1`$ enheter.
 </div>
 a) Hvor høy blir fortjenesten til bedriften i dette tilfellet?
-<div class="sol">
+<div class="answer hidden">
 Fortjenesten vil i dette tilfellet være gitt ved
 $$
 F = 20.0 \sqrt{`r meq$ns1`} - `r meq$ns1`
@@ -55,16 +67,16 @@ $$
 $$
 </div>
 a) Vis ved bruk av en figur og forklar hva som skjer med etterspørselen til bedriften i arbeidsmarkedet i det faktorprisen for arbeidskraft reduseres.
-<div class="sol">
+<div class="answer hidden">
 Dersom faktorprisen for arbeidskraft går ned vil verdien av grenseproduktiviteten i utgangspunktet være høyere enn
-faktorprisen. Det vil gjøre det lønnsomt for bedriften å øke bruken av antal arbeidere helt inntil disse to verdiene er lik hverandre igjen. </div>
+faktorprisen. Det vil gjøre det lønnsomt for bedriften å øke bruken av antal arbeidere helt inntil disse to verdiene er lik hverandre igjen. 
+</div>
 
-## Oppgave 2: Produksjonsteori på lang sikt
-Eksamensoppgaven to år siden
+## Produksjonsteori: lang sikt
 Bedriften Bambå produserer handlekurver (x) ved hjelp av arbeidskraft (N) og realkapital (K). Produksjonsprosessen følger denne produktfunksjonen: $x=10N^{0.5}K^{0.5}$
 
 a.  Finn et uttrykk for grenseproduktet til de to innsatsfaktorene N og K. 
-<div class="solution">
+<div class="answer hidden">
 Løsning:
 $$
 dx/dN = 0.5\cdot 10 N^{0.5-1}K^{0.5} = 5(\frac{K}{N})^{0.5} > 0
@@ -74,7 +86,7 @@ dx/dK = 0.5\cdot 10 N^{0.5}K^{0.5-1} = 5(\frac{N}{K})^{0.5} > 0
 $$
 </div>
 a.  Finn et uttrykk for den marginale tekniske substitusjonsbrøk (MTSB). Regn ut MTSB når N = 4 og K = 16. Gi en verbal forklaring for MTSB i dette punktet.
-<div class="solution">
+<div class="answer hidden">
 Løsning:
 $$
 MTSB\equiv - \frac{\Delta K}{\Delta N}= \frac{f'_n}{f'_k} = \frac{0.5\cdot 10 N^{-0.5}K^{0.5}}{0.5\cdot 10 N^{0.5}K^{-0.5}} = \frac{K}{N}=\frac{16}{4}=4
@@ -82,7 +94,8 @@ $$
 Tolkning: Når vi øker innsatsen av N fra 4 til 5, innebærer det at innsatsen av K kan reduseres med 4 for at vi samtidig skal opprettholde produksjonen på tilnærmet samme produksjonsnivå.
 </div>
 d.  Legg nå til grunn at prisen på arbeidskraft (w) er $4$, mens brukerprisen på realkapital (r) er $1$. Finn et uttrykk for isokostlinjen. Hva er stigningstallet til isokostlinjen?
-<div class="solution">
+
+<div class="answer hidden">
 Løsning: Låser vi først totalkostnadene til et gitt nivå $C=C^{0}$, så kan isokostlinjen uttrykkes som
 $$
 C^{0} = 4N+1K
@@ -95,34 +108,44 @@ $$
 $$
 </div>
 e.  Finn ved hjelp av regning og ved bruk av en figur den kostnadsminimerende bruken av hhv. arbeidskraft (N) og realkapital (K) i det bedriften produserer $80$ enheter.
-<div class="solution">
+
+<div class="answer hidden">
 Kostnadsminimering for et gitt produksjonsnivå gir ved bruk av Lagrange-metode følgende førsteordensbetingelser
-$$
+\begin{aligned}
 MTSB= \frac{f'_{N}}{f'_{K}}  = \frac{w}{r}  \\
 80 = 10N^{0.5}K^{0.5}
-$$
+\end{aligned}
 I vårt tilfeller gir dette oss:
-$$
+\begin{aligned}
 MTSB= \frac{K}{N}  = \frac{4}{1} = 4  \Rightarrow K =4N \\
-80 = 10N^{0.5}K^{0.5} \\
-\text{ Følgende kombinasjon av de to uttrykken forteller oss at kostnadsminimerende bruk av arbeidskraft er gitt ved } \\
+80 = 10N^{0.5}K^{0.5} 
+\end{aligned}
+Følgende kombinasjon av de to uttrykken forteller oss at kostnadsminimerende bruk av arbeidskraft er gitt ved 
+\begin{aligned}
 80 = 10N^{0.5}(4N)^{0.5}=10\cdot4^{0.5}N \Rightarrow  N=\frac{40}{20} = 4 \\ 
 \text{Mens kostnadsminimerende bruk av kapital er gitt ved} \\
 80 = 10(4)^{0.5}K^{0.5} \Leftrightarrow K = (\frac{80}{20})^{2}=16
-$$
-(Kontroll $K=4N=4\cdot 4=16$)
-<br>
-```{r, echo=FALSE, eval=T, out.width="30%", fig.cap=""}
-knitr::include_graphics("bilder/mtsbwr.png")
-```
+\end{aligned}
 </div>
 
-:::
+::: 
 
 
-```{r, echo=F}
-knitr::knit_exit()
-```
+<button id="show-all-answers">Vis svar</button>
 
+<style>
+  .answer {
+    color: blue;
+  }
+</style>
+<script>
+const answerToggles = document.querySelectorAll(".answer");
+const showAllButton = document.getElementById("show-all-answers");
 
+showAllButton.addEventListener("click", () => {
+  answerToggles.forEach(answer => {
+    answer.classList.toggle("hidden");
+  });
+});
+</script>
 

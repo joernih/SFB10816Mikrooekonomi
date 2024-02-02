@@ -16,7 +16,8 @@ eql <- eqpar$meql
 
 
 Uke `r md$regnv$sem5[2]`, ansvarlig: `r md$regnv$ansv[5]`
-Fredag kl. 12:15-14:00(?)
+Fredag kl. 12:15-14:00.
+
 
 
 
