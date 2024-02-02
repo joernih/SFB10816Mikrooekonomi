@@ -1348,11 +1348,6 @@ Optimal løsning også her karakterisert ved tangeringspunktet mellom isokvant o
 
 ::: {.content-visible when-profile="internal"}
 
-:::
-
-```{r, eval=T}
-knitr::knit_exit()
-```
 
 
 # Kapittel 7: Konsumentteori  `r #paste(substring(del[5],4),tema[4])`
@@ -1362,14 +1357,12 @@ knitr::knit_exit()
 
 ## Innledning
 
-:::
-
-
 - Vi skal i det følgende forsøke å illustrere hvordan en konsument/husholdning tilpasser seg i et godemarked.
 - Husholdning: gruppe av individer med samme preferanser.
 - Selvbergingsøkonomi $\Rightarrow$ bytteøkonomi $\Rightarrow$ pengeøkonomi
 - Vi skal anta at konsumenten tilpasser seg slik at nytten ved å forbruke de ulike godene blir størst mulig.
 - **Men:** konsumenten står ovenfor noen restriksjoner (betingelser).
+
 
 
 ---
@@ -1798,6 +1791,13 @@ Vi kan omskrive den første ligningen som (*Gossens lov*)
 \end{equation*}
 
 Den rasjonelle konsument vil fordele utgiftene slik at den siste krone gir den samme nyttendring uansett hvilket av de to godene den brukes til innkjøp av.
+
+:::
+
+```{r, eval=T}
+knitr::knit_exit()
+```
+
 
 ---
 

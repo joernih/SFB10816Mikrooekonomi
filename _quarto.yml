@@ -10,6 +10,7 @@ project:
     - "oppgaver/oppgaver.qmd"
     - "oppgaver/arbeidskrav.qmd"
     - "seminar/posts.qmd"
+    - "!seminar/oppgaver/abc.qmd"
     - "seminar/oppgaver/*.qmd"
     - "utskrifter/utskrifter.qmd"
     - "log.qmd"

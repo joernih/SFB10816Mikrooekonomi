@@ -1721,6 +1721,8 @@ MTSB \equiv - \frac{\Delta K}{\Delta N} = \frac{\frac{\partial x}{\partial N}}{\
 </ul></li>
 </ul>
 <hr>
+<div class="columns">
+<div class="column" style="width:30%;">
 <ul>
 <li><ol type="i">
 <li>Konstant skalautbytte</li>
@@ -1733,12 +1735,13 @@ MTSB \equiv - \frac{\Delta K}{\Delta N} = \frac{\frac{\partial x}{\partial N}}{\
 <div class="cell-output-display">
 <div class="img-fluid quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="drawio/koskala.png" class="img-fluid figure-img" style="width:30.0%"></p>
+<p><img src="drawio/koskala.png" class="img-fluid figure-img" style="width:40.0%"></p>
 <figcaption>Figur 4LS.6</figcaption>
 </figure>
 </div>
 </div>
 </div>
+</div><div class="column" style="width:30%;">
 <ul>
 <li><ol start="2" type="i">
 <li>Avtagende skalautbytte</li>
@@ -1751,12 +1754,13 @@ MTSB \equiv - \frac{\Delta K}{\Delta N} = \frac{\frac{\partial x}{\partial N}}{\
 <div class="cell-output-display">
 <div class="img-fluid quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="drawio/avskala.png" class="img-fluid figure-img" style="width:30.0%"></p>
+<p><img src="drawio/avskala.png" class="img-fluid figure-img" style="width:40.0%"></p>
 <figcaption>Figur 4LS.7</figcaption>
 </figure>
 </div>
 </div>
 </div>
+</div><div class="column" style="width:30%;">
 <ul>
 <li><ol start="3" type="i">
 <li>Økende skalautbytte</li>
@@ -1769,9 +1773,11 @@ MTSB \equiv - \frac{\Delta K}{\Delta N} = \frac{\frac{\partial x}{\partial N}}{\
 <div class="cell-output-display">
 <div class="img-fluid quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="drawio/okskala.png" class="img-fluid figure-img" style="width:30.0%"></p>
+<p><img src="drawio/okskala.png" class="img-fluid figure-img" style="width:40.0%"></p>
 <figcaption>Figur 4LS.8</figcaption>
 </figure>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1817,6 +1823,10 @@ C^o= wN + rK
 r\Delta K = -w\Delta N  \\
 \frac{\Delta K}{\Delta N} = - \frac{w}{r}
 \end{equation}\]</span></li>
+</ul></li>
+</ul>
+<hr>
+<ul>
 <li>Bruker hele budsjettet på arbeidskraft <span class="math inline">\(\Rightarrow K=0\)</span> <span class="math display">\[\begin{equation}
 C^0= wN + r0 = wN \\
 C^0/w = N \\
@@ -1827,7 +1837,6 @@ C^0= w0 + rK = wN \\
 C^0/r = K \\
 K = C^0/r
 \end{equation}\]</span></li>
-</ul></li>
 </ul>
 <hr>
 </section>
@@ -1851,13 +1860,13 @@ K = C^0/r
 <li>Kombinerer disse for å finne optimal tilpasning.</li>
 </ul>
 <p>Max <span class="math inline">\(x=f(K,N)\)</span> gitt <span class="math inline">\(C^0=wN +rK\)</span> gitt (beskrankning)</p>
+<hr>
 <p>Dette problemet kan løses ved bruk av Lagrange-metode (se appendiks for formell utledning), hvor løsningen er gitt ved:</p>
 <p><span class="math display">\[\begin{equation}
 MTSB \equiv  \frac{f'_{N}}{f'_{K}} = \frac{w}{r} \\
 C^0=wN +rK
 \end{equation}\]</span></p>
 <p>Optimal løsning er her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.</p>
-<hr>
 <div class="cell">
 <div class="cell-output-display">
 <div class="img-fluid quarto-figure quarto-figure-center">
@@ -1925,6 +1934,7 @@ C^0=wN +rK
 </div>
 </div>
 </div>
+<hr>
 <p><strong>Redusert pris på arbeidskraft</strong></p>
 <div class="cell">
 <div class="cell-output-display">
@@ -1936,7 +1946,7 @@ C^0=wN +rK
 </div>
 </div>
 </div>
-<p>Generelt resultat: Etterspør mer (mindre) av den innsatsfaktoren som har blitt billigere (dyrere), og den kvantative effekten her er sterkere på langt sikt enn på kort sikt pga. substitusjonsegenskapene.</p>
+<p>Generelt resultat: Etterspør mer (mindre) av den innsatsfaktoren som har blitt billigere (dyrere), og den kvantative effekten her er sterkere på langt sikt enn på kort sikt pga. substitusjonsegenskapene mellom arbeidskraft og kapital.</p>
 </section>
 </section>
 <section id="appendiks" class="level2">
@@ -1981,19 +1991,23 @@ C^0=wN +rK
 </section>
 <section id="lagrange-kostnadsminimering-for-en-gitt-produksjon" class="level3">
 <h3 class="anchored" data-anchor-id="lagrange-kostnadsminimering-for-en-gitt-produksjon">Lagrange: Kostnadsminimering for en gitt produksjon</h3>
-<p>Min <span class="math inline">\(C=wN +rK\)</span> gitt <span class="math inline">\(x=f(K,N)\)</span> gitt (beskrankning). Lagrange metode: <span class="math display">\[\begin{equation}
-L = f(K,N) - \lambda(wN+rK-C^0)
+<p>Min <span class="math inline">\(C=wN +rK\)</span> gitt <span class="math inline">\(x^0=f(K,N)\)</span> gitt (beskrankning). Lagrange metode: <span class="math display">\[\begin{equation}
+L =wN +rK - \lambda(f(K,N)-x^0)
 \end{equation}\]</span> Første ordens betingelsen er gitt ved <span class="math display">\[\begin{equation}
 \partial L/\partial N = f'_{N} - \lambda w  =0 \\
 \partial L/\partial K = f'_{K} - \lambda r =0 \\
-x=f(K,N)
+x^0=f(K,N)
 \end{equation}\]</span></p>
 <hr>
 <p>Kombinerer de to første ordens betingelsene gir oss to likninger for å løse de to ukjente N,K <span class="math display">\[\begin{equation}
 MTSB \equiv  \frac{f'_{N}}{f'_{K}} = \frac{w}{r} \\
-x=f(K,N)
+x^0=f(K,N)
 \end{equation}\]</span> Optimal løsning også her karakterisert ved tangeringspunktet mellom isokvant og isokostlinjen.</p>
-<p>Ved å sette inn for den optimale løsningen av <span class="math inline">\(N\)</span> og <span class="math inline">\(K\)</span> finner vi bedriftens kostnadsfunksjon (kostnaden som minimerer produksjonen for et gitt produksjonsnivå)</p>
+<p><strong>Merk</strong>:</p>
+<ul>
+<li>Ved å sette inn for den optimale løsningen av <span class="math inline">\(N\)</span> og <span class="math inline">\(K\)</span> finner vi bedriftens kostnadsfunksjon (kostnaden som minimerer produksjonen for et gitt produksjonsnivå).</li>
+<li>Grensekostnaden vil derfor framkomme ved å derivere den funksjonen mhp produsert kvantum (see figur 5LS.3).</li>
+</ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">knit_exit</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
