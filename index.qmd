@@ -9,6 +9,7 @@ engine: knitr
 
 ## Nyheter
 
+- For Seminar #1 og #2 er løsningsforslag lagt ut (trykk på knapp neders på siden for å få frem løsningen)
 - Oppgaver til [seminar #2](seminar/oppgaver/semoppg_2.html) på fredag 12:15 er nå lagt ( se under fanen oppgaver) ut.
 
 ### Pensumbøker
