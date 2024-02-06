@@ -684,6 +684,7 @@ kableExtra::kbl(tabell_inntekt_i, col.names=ti_navn_i)
 kableExtra::kbl(tabell_inntekt_ii, col.names=ti_navn_ii) 
 ```
 
+
 ---
 
 *Talleksempel b): med økende marginalproduktivitet (mindre relevant) og uten faste kostnader*
@@ -1346,13 +1347,11 @@ Optimal løsning også her karakterisert ved tangeringspunktet mellom isokvant o
 - Ved å sette inn for den optimale løsningen av $N$ og $K$ finner vi bedriftens kostnadsfunksjon (kostnaden som minimerer produksjonen for et gitt produksjonsnivå). 
 - Grensekostnaden vil derfor framkomme ved å derivere den funksjonen mhp produsert kvantum (see figur 5LS.3).
 
-::: {.content-visible when-profile="internal"}
-
-
 
 # Kapittel 7: Konsumentteori  `r #paste(substring(del[5],4),tema[4])`
 
 ---
+
 
 
 ## Innledning
@@ -1387,6 +1386,7 @@ Vi tar utgangspunkt i følgende spørsmål: Hvilke forhold vil være av *størst
  - Prisen på godet
  - Prisen på andre goder
 
+
 ---
 
 ## Forenklet fremstilling av konsumentens preferanser og behovsstruktur
@@ -1398,6 +1398,7 @@ Vi tar utgangspunkt i følgende spørsmål: Hvilke forhold vil være av *størst
   1. Determinerthetsaksiomet
   1. Ikkemetningsaksiomet
   1. Transitivitetsaksiomet
+
 
 
 ---
@@ -1515,35 +1516,40 @@ knitr::include_graphics(subsperf)
 
 Anta at $u(x_1,x_2) = 10x_1x_2$. Finn uttrykket for MSB.
 
+<!--
 **Svar**
 \begin{equation*}
 MSB = \frac{10x_2}{10x_1}= \frac{x_2}{x_1}
 \end{equation*}
-
----
+-->
 
 Beregn nyttenivået, vis og illustrer inndifferenskurven for de tre verdiene nedenfor:
 
 - (i)  $x_1=2,x_2=4$
-
+- (ii) $x_1=1,x_2=4$
+- (iii) $x_1=3,x_2=4$.
+<!--
 \begin{equation*}
 U=10\cdot 2 \cdot 4 = 80 \\
 MSB =4/2=2
 \end{equation*}
+-->
 
-- (ii) $x_1=1,x_2=4$
 
+<!--
 \begin{equation*}
 U=10\cdot 1 \cdot 4 = 40 \\
 MSB =4/1=4
 \end{equation*}
+-->
 
-- (iii) $x_1=3,x_2=4$.
 
+<!--
 \begin{equation*}
 U=10\cdot 3 \cdot 4 = 120 \\
 MSB =4/3=1.34
 \end{equation*}
+-->
 
 ---
 
@@ -1603,7 +1609,7 @@ knitr::include_graphics(budsjbet)
 Helningen på kurven er gitt ved (se appendisk for matetmatisk utledning)
 
 \begin{equation}
-\frac{\Delta x_{2}}{\Delta x_{1}}= - \frac{p_{1}}{p_{2}}/  
+\frac{\Delta x_{2}}{\Delta x_{1}}= - \frac{p_{1}}{p_{2}}
 \end{equation}
 
 Dersom vi kun velger $x_1 \Rightarrow x_2=0$
@@ -1613,7 +1619,8 @@ p_{1}x_{1}=m \\
 x_{1} =m/p_{1}
 \end{equation}
 
-**Øvelse**: Hva skjer dersom vi kun velger $x_2$?
+**Øvelse**: 
+Hva skjer dersom vi kun velger $x_2$?
 
 ---
 
@@ -1630,7 +1637,7 @@ Anta at du har en inntekt på 40 NOK som brukes på to goder. Gode 1 koster 10,-
 
 ---
 
-**Svar**
+**Svar vil bli lagt inn her**
 
 <!--
 - (a) Skriv ned budsjettbetingelsen.
@@ -1777,7 +1784,7 @@ p_{1}x_{1}+p_{2}x_{2}=m
 
 ---
 
-Som gir oss to likninger til løsing av to ukjente, $X_{1}$, $x_{2}$:
+Som gir oss to likninger til løsing av to ukjente, $x_{1}$, $x_{2}$:
 
 \begin{equation*}
 MSB=\frac{u'({x_{1}})}{u'({x_{2}})} = \frac{p_{1}}{p_{2}}  \\
@@ -1792,9 +1799,11 @@ Vi kan omskrive den første ligningen som (*Gossens lov*)
 
 Den rasjonelle konsument vil fordele utgiftene slik at den siste krone gir den samme nyttendring uansett hvilket av de to godene den brukes til innkjøp av.
 
+::: {.content-visible when-profile="internal"}
+
 :::
 
-```{r, eval=T}
+```{r, eval=T, echo=F}
 knitr::knit_exit()
 ```
 

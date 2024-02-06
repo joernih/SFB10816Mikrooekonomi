@@ -20,6 +20,8 @@ website:
             href: "forelesninger/notater.html#/kapittel-4-5-og-6-innledning-til-produsentteorien"
           - text: "Forelesning 3-4: Introduksjons til produksjonsteori. Produksjonsteori på lang sikt"
             href: "forelesninger/notater.html#/kapittel-4-5-og-6-produksjonsteori-p%C3%A5-lang-sikt"
+          - text: "Forelesning 5: Konsumentteori"
+            href: "forelesninger/notater.html#/kapittel-7-konsumentteori"
       - text: "Oppgaver"
         menu:
           - text: "Anbefalte oppgaver"
@@ -38,5 +40,3 @@ page-footer:
      right: 
        - icon: github
          href: https://github.com/joernih/OEKA201ProgrammingWebPage
-
-
