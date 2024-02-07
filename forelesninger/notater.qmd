@@ -1416,7 +1416,7 @@ Vi tar utgangspunkt i følgende spørsmål: Hvilke forhold vil være av *størst
  - Vi skal anta at tilleggsnytten er positiv: 
    	-  $u'_{x_{1}}(x_1,x_2)>0$ og  $u'_{x_{2}}(x_1,x_2)>0$
  - Videre er det også vanlig å anta at nytteøkningen i tillegg er avtagende:
-   	-  $u''_{x_{1}}(x_1,x_2)<0$ og $u''_{x_{1}}(x_1,x_2)<0$ 
+   	-  $u''_{x_{1}}(x_1,x_2)<0$ og $u''_{x_{2}}(x_1,x_2)<0$ 
  - **Altså**: 
         - Konsumenten har positive, men avtagende grensenytter.
 
@@ -1514,7 +1514,7 @@ knitr::include_graphics(subsperf)
 
 **Øvelse om MSB**
 
-Anta at $u(x_1,x_2) = 10x_1x_2$. Finn uttrykket for MSB.
+1. Anta at $u(x_1,x_2) = 10x_1x_2$. Finn uttrykket for MSB.
 
 <!--
 **Svar**
@@ -1523,7 +1523,7 @@ MSB = \frac{10x_2}{10x_1}= \frac{x_2}{x_1}
 \end{equation*}
 -->
 
-Beregn nyttenivået, vis og illustrer inndifferenskurven for de tre verdiene nedenfor:
+2. Beregn nyttenivået, vis og illustrer inndifferenskurven for de tre verdiene nedenfor:
 
 - (i)  $x_1=2,x_2=4$
 - (ii) $x_1=1,x_2=4$

@@ -21,9 +21,6 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 Uke `r md$regnv$sem3[2]`, ansvarlig: `r md$regnv$ansv[3]`
 Torsdag kl. 09:15-11:00.
 
-```{r, echo=F, eval=T}
-knitr::knit_exit()
-```
 
 ::: {.content-visible when-profile="internal"}
 
