@@ -7,7 +7,9 @@
 
 ### HIOF
 - [Eksamen HiOF våren 2023](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/eksamensoppgaver/eksamen_SFB10816_2023_V.pdf)
+	- [Eksamen HiOF våren 2023 (løsningsforslag)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/eksamensoppgaver/Eksamen_SFB10816_2023_V_bokmal_losningsforslag.pdf)
 - [Eksamen HiOF våren 2022](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/eksamensoppgaver/eksamen_SFB10816_2022_V.pdf)
+	- [Eksamen HiOF våren 2022 (løsningsforslag)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/eksamensoppgaver/eksamen_SFB10816_2022_V_losning.pdf)
 
 ### HVL
 
