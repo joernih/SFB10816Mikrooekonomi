@@ -22,9 +22,6 @@ Uke `r md$regnv$sem3[2]`, ansvarlig: `r md$regnv$ansv[3]`
 Torsdag kl. 09:15-11:00.
 
 
-::: {.content-visible when-profile="internal"}
-
-
 ## Oppgave 1: Produksjonsteori på kort sikt
 ## Produksjonsteori: kort sikt 
 Bedriften `r nvb[1]` produserer `r prd[1]` ved hjelp av arbeidskraft  ($N$). Produksjonsprosessen kan beskrives ved hjelp av en produktfunksjon $`r meq$pf1`$. Produktprisen er $`r meq$pn1`$ kroner, mens faktorprisen for arbeidskraft ($w$) er gitt ved $`r meq$wn1`$ 
@@ -124,25 +121,4 @@ Følgende kombinasjon av de to uttrykken forteller oss at kostnadsminimerende br
 80 = 10(4)^{0.5}K^{0.5} \Leftrightarrow K = (\frac{80}{20})^{2}=16
 \end{aligned}
 </div>
-
-::: 
-
-
-<button id="show-all-answers">Vis svar</button>
-
-<style>
-  .answer {
-    color: blue;
-  }
-</style>
-<script>
-const answerToggles = document.querySelectorAll(".answer");
-const showAllButton = document.getElementById("show-all-answers");
-
-showAllButton.addEventListener("click", () => {
-  answerToggles.forEach(answer => {
-    answer.classList.toggle("hidden");
-  });
-});
-</script>
 
