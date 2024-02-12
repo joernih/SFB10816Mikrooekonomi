@@ -10,7 +10,6 @@ engine: knitr
 ## Nyheter
 - Oppgaver til seminar #3 denne uken (produksjonsteori på kort og lang sikt) er nå lagt ut.
 - For Seminar #1 og #2 er løsningsforslag lagt ut (trykk på knapp nederst på siden for å få frem løsningen)
-- Oppgaver til [seminar #2](seminar/oppgaver/semoppg_2.html) på fredag 12:15 er nå lagt ( se under fanen oppgaver) ut.
 
 ### Pensumbøker
 
