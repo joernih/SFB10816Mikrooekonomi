@@ -1633,7 +1633,6 @@ Anta at du har en inntekt på 40 NOK som brukes på to goder. Gode 1 koster 10,-
 
 **Svar vil bli lagt inn her**
 
-<!--
 - (a) Skriv ned budsjettbetingelsen.
 \begin{equation*}
 10x_{1}+5x_{2}=40
@@ -1653,7 +1652,6 @@ x_{2} = \frac{40}{5} = 8
 \begin{equation*}
 5x_{1}+5x_{2}=40
 \end{equation*}
--->
 
 ---
 
@@ -1691,8 +1689,6 @@ Benytt opplysningene fra de to foregående øvelsene (øvelse om MSB og budsjett
 
 **Svar:**
 
-<!--
-
 \begin{equation*}
 MSB=\frac{x_2}{x_1} = 2  \\
 10x_{1}+5x_{2}=40
@@ -1710,10 +1706,6 @@ Som deretter kan løses for $x_2$
 \begin{equation*}
 x_2 = 2\cdot 2= 4  \\
 \end{equation*}
-
--->
-
-
 
 
 ---
@@ -1795,14 +1787,6 @@ Den rasjonelle konsument vil fordele utgiftene slik at den siste krone gir den s
 
 ::: {.content-visible when-profile="internal"}
 
-:::
-
-```{r, eval=T, echo=F}
-knitr::knit_exit()
-```
-
-
----
 
 class: inverse, center, middle
 
@@ -2001,7 +1985,9 @@ knitr::include_graphics(utletter)
 ekonsum <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/ekonsum.png')
 knitr::include_graphics(ekonsum)
 ```
+
 - Kurven har negativ helning: $\frac{dx_1^D}{dp_1}<0$ (gjelder alltid, bortsett fra i Giffen-tilfellet).
+
 ---
 
 ### Tilbudsfunksjonen etter arbeid 
@@ -2051,41 +2037,37 @@ knitr::include_graphics(tarbeid)
 **Løsningsforslag**
 
 ```{r, echo=F,eval=F}
-#
 #Optimal løsning er kjennetegnet ved
-#\begin{equation*}
-#MSB = \frac{p_{1}}{p_{2}}\\
-#p_{1}x_{1}+p_{2}x_{2}= m 
-#\end{equation*}
-#
+\begin{equation*}
+MSB = \frac{p_{1}}{p_{2}}\\
+p_{1}x_{1}+p_{2}x_{2}= m 
+\end{equation*}
+
 #Som gir oss
-#\begin{equation*}
-#MSB = \frac{U'_{1}}{U'_{2}}= \frac{1+x_{2}}{1+x_{1}} = \frac{p_{1}}{p_{2}}\\
-#p_{2}x_{2} =p_1+p_1x_1-p_2 \\ 
-#\text{I budsjettbetingelsen kan vi sette inn for } p_{2}x_{2} \\
-#R=p_1x_1+p_1+p_1x_1-p_2\\
-#2p_{1}x_{1} = R-p_1+p_2 \\
-#\text{Som gir oss etterspørselsfunksjonen}  \\
-#x_{1} = \frac{R-p_1+p_2}{2p_{1}}   \\ 
-#\end{equation*}
-#---
-#
-#b) Med *normalt gode* menes goder hvor etterspørselen øker når inntekten øker. For *mindreverdige goder* gjelder det motsatte.
-#\begin{equation*}
-#\frac{\partial  x_{1}}{\partial R} = \frac{1}{2p_1} > 0 \text{ dvs. normal gode}
-#\end{equation*}
-# 
-#c) For *komplementære goder* vil etterspørselen etter gode reduseres når prisen på det andre goder øker. For *alternative* goder gjelder det motsatte.
-#\begin{equation*}
-#\frac{\partial  x_{1}}{\partial p_{2}} = \frac{1}{2p_1}  > 0 \text{ dvs. alternative goder}
-#\end{equation*}
+\begin{equation*}
+MSB = \frac{U'_{1}}{U'_{2}}= \frac{1+x_{2}}{1+x_{1}} = \frac{p_{1}}{p_{2}}\\
+p_{2}x_{2} =p_1+p_1x_1-p_2 \\ 
+\text{I budsjettbetingelsen kan vi sette inn for } p_{2}x_{2} \\
+R=p_1x_1+p_1+p_1x_1-p_2\\
+2p_{1}x_{1} = R-p_1+p_2 \\
+\text{Som gir oss etterspørselsfunksjonen}  \\
+x_{1} = \frac{R-p_1+p_2}{2p_{1}}   \\ 
+\end{equation*}
+b) Med *normalt gode* menes goder hvor etterspørselen øker når inntekten øker. For *mindreverdige goder* gjelder det motsatte.
+\begin{equation*}
+\frac{\partial  x_{1}}{\partial R} = \frac{1}{2p_1} > 0 \text{ dvs. normal gode}
+\end{equation*}
+c) For *komplementære goder* vil etterspørselen etter gode reduseres når prisen på det andre goder øker. For *alternative* goder gjelder det motsatte.
+\begin{equation*}
+\frac{\partial  x_{1}}{\partial p_{2}} = \frac{1}{2p_1}  > 0 \text{ dvs. alternative goder}
+\end{equation*}
 ```
 
-```{r, eval=T}
+:::
+
+```{r, eval=T, echo=F}
 knitr::knit_exit()
 ```
-
-
 
 ---
 
