@@ -5,7 +5,7 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 
 ### Timeplan ###
 ukr <- c(2,3,4,5,6,7,9,10,11,12,14,15,16)
-dnr <- 3
+dnr <- 4
 ynr <- 2024
 wdn <- get_date(week = ukr, day=dnr, year = ynr)
 ant <- seq(1,length(ukr))

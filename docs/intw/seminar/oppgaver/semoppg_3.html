@@ -147,6 +147,10 @@ window.Quarto = {
  <span class="dropdown-text">Forelesning 5: Konsumentteori</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-8-konsumentens-økonomiske-adferd-i-gode--og-arbeidsmarkedet">
+ <span class="dropdown-text">Forelesning 6: Konsumentens øknomiske adferd i gode- og arbeidsmarkedet</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../../forelesninger/allenotater.html">
  <span class="dropdown-text">Notatblokk for alle notater (betaversjon)</span></a>
   </li>  
@@ -334,6 +338,26 @@ Følgende kombinasjon av de to uttrykken forteller oss at kostnadsminimerende br
 80 = 10(4)^{0.5}K^{0.5} \Leftrightarrow K = (\frac{80}{20})^{2}=16
 \end{aligned}\]</span>
 </div>
+<button id="show-all-answers">
+Vis svar
+</button>
+<p class="answer hidden">
+</p>
+<style>
+  .answer {
+    color: blue;
+  }
+</style>
+<script>
+const answerToggles = document.querySelectorAll(".answer");
+const showAllButton = document.getElementById("show-all-answers");
+
+showAllButton.addEventListener("click", () => {
+  answerToggles.forEach(answer => {
+    answer.classList.toggle("hidden");
+  });
+});
+</script>
 
 
 </section>

@@ -122,3 +122,31 @@ Følgende kombinasjon av de to uttrykken forteller oss at kostnadsminimerende br
 \end{aligned}
 </div>
 
+::: {.content-visible when-profile="internal"}
+
+<button id="show-all-answers">Vis svar</button>
+<p class="answer hidden">
+</p>
+
+<style>
+  .answer {
+    color: blue;
+  }
+</style>
+<script>
+const answerToggles = document.querySelectorAll(".answer");
+const showAllButton = document.getElementById("show-all-answers");
+
+showAllButton.addEventListener("click", () => {
+  answerToggles.forEach(answer => {
+    answer.classList.toggle("hidden");
+  });
+});
+</script>
+
+:::
+
+
+
+
+

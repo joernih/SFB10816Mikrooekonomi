@@ -1785,9 +1785,6 @@ Vi kan omskrive den første ligningen som (*Gossens lov*)
 
 Den rasjonelle konsument vil fordele utgiftene slik at den siste krone gir den samme nyttendring uansett hvilket av de to godene den brukes til innkjøp av.
 
-::: {.content-visible when-profile="internal"}
-
-
 class: inverse, center, middle
 
 # Kapittel 8: Konsumentens økonomiske adferd i gode- og arbeidsmarkedet `r #paste(substring(del[5],4),tema[5])`
@@ -1843,6 +1840,7 @@ e_{ij} \equiv \frac{\frac{\Delta X_{i}}{X_{1}}}{\frac{\Delta P{j}}{P_{j}}}=\frac
 - Budsjettrommet blir mindre ettersom budsjettlinja vris innover langs den horisontale aksen.
   - Normaltilfellet (vist i figur): pris og etterspørsel går motsatt vei. Økt pris fører til lavere etterspørsel, og motsatt.
   - Giffen-tilfellet pris og etterspørsel går samme vei. Økt pris fører til økt etterspørsel, og motsatt.
+
 
 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
@@ -1920,6 +1918,7 @@ inntel <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/innt
 knitr::include_graphics(inntel)
 ```
 
+
 ---
 
 **Inntektselastisitet**
@@ -1928,6 +1927,7 @@ knitr::include_graphics(inntel)
 \begin{equation*}
 E_1 \equiv \frac{\frac{\Delta X_{1}}{X_{1}}}{\frac{\Delta Y}{Y}}=\frac{\Delta X_{1} Y }{\Delta Y X_{1}}
 \end{equation*}
+
   - $E_1 > 1$: Inntektselastisk gode
   - $E_1 = 1$: Inntektsnøytralt gode
   - $0 < E_1 < 1$: Inntektsuelastisk gode
@@ -1957,6 +1957,7 @@ $\Rightarrow$ Nyttenivået opprettholdes.
 utletter <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/utletter.png')
 knitr::include_graphics(utletter)
 ```
+
 
 ---
 
@@ -1990,7 +1991,10 @@ knitr::include_graphics(ekonsum)
 
 ---
 
+
+
 ### Tilbudsfunksjonen etter arbeid 
+
 
 Budsjettbetingelsen
 \begin{equation*}
@@ -2008,6 +2012,7 @@ U=u(x,L) \text{ } u^{'}_{x} >0, u^{''}_{x} <0, u^{'}_{L} >0, u^{''}_{L} <0
 \end{equation*}
 
 ---
+
 
 **Optimal tilpasning**
 
@@ -2031,19 +2036,23 @@ tarbeid <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/tar
 knitr::include_graphics(tarbeid)
 ```
 
+```{r, eval=T, echo=F}
+knitr::knit_exit()
+```
+
+
 ---
 
 ## Appendiks 
 **Løsningsforslag**
 
-```{r, echo=F,eval=F}
-#Optimal løsning er kjennetegnet ved
+Optimal løsning er kjennetegnet ved
 \begin{equation*}
 MSB = \frac{p_{1}}{p_{2}}\\
 p_{1}x_{1}+p_{2}x_{2}= m 
 \end{equation*}
 
-#Som gir oss
+Som gir oss
 \begin{equation*}
 MSB = \frac{U'_{1}}{U'_{2}}= \frac{1+x_{2}}{1+x_{1}} = \frac{p_{1}}{p_{2}}\\
 p_{2}x_{2} =p_1+p_1x_1-p_2 \\ 
@@ -2053,6 +2062,9 @@ R=p_1x_1+p_1+p_1x_1-p_2\\
 \text{Som gir oss etterspørselsfunksjonen}  \\
 x_{1} = \frac{R-p_1+p_2}{2p_{1}}   \\ 
 \end{equation*}
+
+---
+
 b) Med *normalt gode* menes goder hvor etterspørselen øker når inntekten øker. For *mindreverdige goder* gjelder det motsatte.
 \begin{equation*}
 \frac{\partial  x_{1}}{\partial R} = \frac{1}{2p_1} > 0 \text{ dvs. normal gode}
@@ -2061,13 +2073,8 @@ c) For *komplementære goder* vil etterspørselen etter gode reduseres når pris
 \begin{equation*}
 \frac{\partial  x_{1}}{\partial p_{2}} = \frac{1}{2p_1}  > 0 \text{ dvs. alternative goder}
 \end{equation*}
-```
 
-:::
 
-```{r, eval=T, echo=F}
-knitr::knit_exit()
-```
 
 ---
 
