@@ -1827,7 +1827,7 @@ Prisendring i prosent:
 
 Elastisiteter:
 \begin{equation*}
-e_{ij} \equiv \frac{\frac{\Delta X_{i}}{X_{1}}}{\frac{\Delta P{j}}{P_{j}}}=\frac{\Delta X_{i} P_{j} }{\Delta P_{j} X_{i}}
+e_{ij} \equiv \frac{\frac{\Delta X_{i}}{X_{i}}}{\frac{\Delta P{j}}{P_{j}}}=\frac{\Delta X_{i} P_{j} }{\Delta P_{j} X_{i}}
 \end{equation*}
 
 ---
@@ -1859,7 +1859,7 @@ knitr::include_graphics(egenel)
    - Viser %-vis endring i etterspørselen etter gode $x_1$ ved en endring i prisen på gode $x_1$. (eventuelt for gode 2)
 - Formelt:
 \begin{equation*}
-e_{11} \equiv \frac{\frac{\Delta X_{1}}{X_{1}}}{\frac{\Delta P{1}}{P_{1}}}=\frac{\Delta X_{1} P_{1} }{\Delta P_{1} X_{1}}
+e_{11} \equiv \frac{\frac{\Delta X_{1}}{X_{1}}}{\frac{\Delta P_{1}}{P_{1}}}=\frac{\Delta X_{1} P_{1} }{\Delta P_{1} X_{1}}
 \end{equation*}
   - $e_{11} < -1$: Priselastisk 
   - $e_{11} = -1$: Prisnøytralt 
@@ -1896,7 +1896,7 @@ knitr::include_graphics(kryssel)
 - Viser %-vis endring i etterspørselen etter gode $x_1$, ved en endring i prisen på gode $x_2$. Eller motsatt.
 - Formelt: 
 \begin{equation*}
-e_{12} \equiv \frac{\frac{\Delta X_{1}}{X_{1}}}{\frac{\Delta P{2}}{P_{2}}}=\frac{\Delta X_{1} P_{2} }{\Delta P_{2} X_{1}}
+e_{12} \equiv \frac{\frac{\Delta X_{1}}{X_{1}}}{\frac{\Delta P_{2}}{P_{2}}}=\frac{\Delta X_{1} P_{2} }{\Delta P_{2} X_{1}}
 \end{equation*}
   - $e_{12} < 0$: Komplementært til $x_2$
   - $e_{12} > 0$: Alternativ til $x_2$
