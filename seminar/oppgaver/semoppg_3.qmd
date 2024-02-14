@@ -29,7 +29,7 @@ kroner.
 
 a) Gi en forklaring om egenskapene tilhørende marginalproduktiviteten til arbeidskraften.
 <div class="answer hidden">
-Siden vi har at $f'(N)=`r meq$dopdf1`>0$ og $f''(N)=`r meq$dtpdf1`>0$ kan vi si at produktfunksjonen er økende 
+Siden vi har at $f'(N)=`r meq$dopdf1`>0$ og $f''(N)=`r meq$dtpdf1`>0$ kan vi si at produktfunksjonen er positiv
 med avtagende grenseproduktivitet. Dvs. desto flere arbeidere, desto høyere produksjon, men hvor produksjonsbidraget som kommer som en følge av den siste enheten i bruken av arbeidskraft vil være mindre enn de foregående.
 </div>
 a) Sett opp uttrykket for fortjenesten til bedriften. Finn deretter betingelsen (førsteordens) for bruk av arbeidskraft som maksimerer fortjenesten til bedriften. Gi til slutt en økonomisk tolkning av denne tilpasningsbetingelsen.
