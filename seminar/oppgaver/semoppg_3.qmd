@@ -29,7 +29,7 @@ kroner.
 
 a) Gi en forklaring om egenskapene tilhørende marginalproduktiviteten til arbeidskraften.
 <div class="answer hidden">
-Siden vi har at $f'(N)=`r meq$dopdf1`>0$ og $f''(N)=`r meq$dtpdf1`>0$ kan vi si at produktfunksjonen er positiv
+Siden vi har at $f'(N)=`r meq$dopdf1`>0$ og $f''(N)=`r meq$dtpdf1`<0$ kan vi si at produktfunksjonen er positiv
 med avtagende grenseproduktivitet. Dvs. desto flere arbeidere, desto høyere produksjon, men hvor produksjonsbidraget som kommer som en følge av den siste enheten i bruken av arbeidskraft vil være mindre enn de foregående.
 </div>
 a) Sett opp uttrykket for fortjenesten til bedriften. Finn deretter betingelsen (førsteordens) for bruk av arbeidskraft som maksimerer fortjenesten til bedriften. Gi til slutt en økonomisk tolkning av denne tilpasningsbetingelsen.
@@ -54,7 +54,7 @@ a) Hvor høy blir fortjenesten til bedriften i dette tilfellet?
 <div class="answer hidden">
 Fortjenesten vil i dette tilfellet være gitt ved
 $$
-F = 20.0 \sqrt{`r meq$ns1`} - `r meq$ns1`
+F = 20.0 \sqrt{`r meq$ns1`} - 160
 $$
 $$
 `r meq$Fnv1`
@@ -95,11 +95,11 @@ $$
 C^{0} = 4N+1K
 $$
 Stigningstallet finner vi ved å totaldifferensiere isokostlinjen:
-$$
+\begin{aligned}
 0=4\Delta N + 1\Delta K \\
 -4 \Delta K = 1\Delta N \\
 \frac{\Delta K}{\Delta N} = - 4/1 = - 4
-$$
+\end{aligned}
 </div>
 e.  Finn ved hjelp av regning og ved bruk av en figur den kostnadsminimerende bruken av hhv. arbeidskraft (N) og realkapital (K) i det bedriften produserer $80$ enheter.
 
@@ -118,11 +118,12 @@ Følgende kombinasjon av de to uttrykken forteller oss at kostnadsminimerende br
 \begin{aligned}
 80 = 10N^{0.5}(4N)^{0.5}=10\cdot4^{0.5}N \Rightarrow  N=\frac{40}{20} = 4 \\ 
 \text{Mens kostnadsminimerende bruk av kapital er gitt ved} \\
+K=4N=4(4)=16 \\
+\text{Alternativt} \\
 80 = 10(4)^{0.5}K^{0.5} \Leftrightarrow K = (\frac{80}{20})^{2}=16
 \end{aligned}
 </div>
 
-::: {.content-visible when-profile="internal"}
 
 <button id="show-all-answers">Vis svar</button>
 <p class="answer hidden">
@@ -144,7 +145,6 @@ showAllButton.addEventListener("click", () => {
 });
 </script>
 
-:::
 
 
 

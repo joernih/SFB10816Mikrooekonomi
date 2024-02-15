@@ -238,7 +238,7 @@ window.Quarto = {
 <ol type="a">
 <li>Gi en forklaring om egenskapene tilhørende marginalproduktiviteten til arbeidskraften.
 <div class="answer hidden">
-<p>Siden vi har at <span class="math inline">\(f'(N)=\frac{1.0}{\sqrt{N}}&gt;0\)</span> og <span class="math inline">\(f''(N)=- \frac{0.5}{N^{\frac{3}{2}}}&gt;0\)</span> kan vi si at produktfunksjonen er økende med avtagende grenseproduktivitet. Dvs. desto flere arbeidere, desto høyere produksjon, men hvor produksjonsbidraget som kommer som en følge av den siste enheten i bruken av arbeidskraft vil være mindre enn de foregående.</p>
+<p>Siden vi har at <span class="math inline">\(f'(N)=\frac{1.0}{\sqrt{N}}&gt;0\)</span> og <span class="math inline">\(f''(N)=- \frac{0.5}{N^{\frac{3}{2}}}&lt;0\)</span> kan vi si at produktfunksjonen er positiv med avtagende grenseproduktivitet. Dvs. desto flere arbeidere, desto høyere produksjon, men hvor produksjonsbidraget som kommer som en følge av den siste enheten i bruken av arbeidskraft vil være mindre enn de foregående.</p>
 </div></li>
 <li>Sett opp uttrykket for fortjenesten til bedriften. Finn deretter betingelsen (førsteordens) for bruk av arbeidskraft som maksimerer fortjenesten til bedriften. Gi til slutt en økonomisk tolkning av denne tilpasningsbetingelsen.
 <div class="answer hidden">
@@ -254,7 +254,7 @@ F = 40.0 \sqrt{N} - 5 N
 <li>Hvor høy blir fortjenesten til bedriften i dette tilfellet?
 <div class="answer hidden">
 <p>Fortjenesten vil i dette tilfellet være gitt ved <span class="math display">\[
-F = 20.0 \sqrt{16.0} - 16.0
+F = 20.0 \sqrt{16.0} - 160
 \]</span> <span class="math display">\[
 F = 80.0
 \]</span></p>
@@ -286,13 +286,14 @@ MTSB\equiv - \frac{\Delta K}{\Delta N}= \frac{f'_n}{f'_k} = \frac{0.5\cdot 10 N^
 <li>Legg nå til grunn at prisen på arbeidskraft (w) er <span class="math inline">\(4\)</span>, mens brukerprisen på realkapital (r) er <span class="math inline">\(1\)</span>. Finn et uttrykk for isokostlinjen. Hva er stigningstallet til isokostlinjen?</li>
 </ol>
 <div class="answer hidden">
-<p>Løsning: Låser vi først totalkostnadene til et gitt nivå <span class="math inline">\(C=C^{0}\)</span>, så kan isokostlinjen uttrykkes som <span class="math display">\[
+Løsning: Låser vi først totalkostnadene til et gitt nivå <span class="math inline">\(C=C^{0}\)</span>, så kan isokostlinjen uttrykkes som <span class="math display">\[
 C^{0} = 4N+1K
-\]</span> Stigningstallet finner vi ved å totaldifferensiere isokostlinjen: <span class="math display">\[
+\]</span> Stigningstallet finner vi ved å totaldifferensiere isokostlinjen:
+<span class="math display">\[\begin{aligned}
 0=4\Delta N + 1\Delta K \\
 -4 \Delta K = 1\Delta N \\
 \frac{\Delta K}{\Delta N} = - 4/1 = - 4
-\]</span></p>
+\end{aligned}\]</span>
 </div>
 <ol start="5" type="a">
 <li>Finn ved hjelp av regning og ved bruk av en figur den kostnadsminimerende bruken av hhv. arbeidskraft (N) og realkapital (K) i det bedriften produserer <span class="math inline">\(80\)</span> enheter.</li>
@@ -312,9 +313,31 @@ Følgende kombinasjon av de to uttrykken forteller oss at kostnadsminimerende br
 <span class="math display">\[\begin{aligned}
 80 = 10N^{0.5}(4N)^{0.5}=10\cdot4^{0.5}N \Rightarrow  N=\frac{40}{20} = 4 \\
 \text{Mens kostnadsminimerende bruk av kapital er gitt ved} \\
+K=4N=4(4)=16 \\
+\text{Alternativt} \\
 80 = 10(4)^{0.5}K^{0.5} \Leftrightarrow K = (\frac{80}{20})^{2}=16
 \end{aligned}\]</span>
 </div>
+<button id="show-all-answers">
+Vis svar
+</button>
+<p class="answer hidden">
+</p>
+<style>
+  .answer {
+    color: blue;
+  }
+</style>
+<script>
+const answerToggles = document.querySelectorAll(".answer");
+const showAllButton = document.getElementById("show-all-answers");
+
+showAllButton.addEventListener("click", () => {
+  answerToggles.forEach(answer => {
+    answer.classList.toggle("hidden");
+  });
+});
+</script>
 
 
 </section>
