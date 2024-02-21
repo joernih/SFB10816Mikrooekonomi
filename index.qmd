@@ -8,8 +8,7 @@ engine: knitr
 ![](man/figures/abc.jpg)
 
 ## Nyheter
-- Undervisningsfri denne uken, men allerede lagt ut arbeidskravet til de som allerede ønsker å begynne å se på dett
-  e.
+- Undervisningsfri denne uken, men allerede lagt ut arbeidskravet til de som allerede ønsker å begynne å se på dette.
 - Oppgaver til seminar #3 (pluss løsningsforslag) denne uken (produksjonsteori på kort og lang sikt) er nå lagt ut
 - For Seminar #1 og #2 er løsningsforslag lagt ut (trykk på knapp nederst på siden for å få frem løsningen)
 
