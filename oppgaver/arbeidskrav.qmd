@@ -19,7 +19,6 @@ Utlevert: **`r md$kursg$arbkutl`**.
 
 Innleveringsfrist: **`r md$kursg$arbkinl`**.
 
-::: {.content-visible when-profile="internal"}
 
 ```{r, echo=FALSE, results='asis',warning=F}
 app1_fil <- paste0("/home/joernih/homepageJIH/nonpublic/templates/mikro/Arbeidskrav_SFB10816_Mikro_2024_V.qmd")
@@ -27,6 +26,7 @@ text <- readLines(app1_fil)
 cat(knitr::knit_child(text = paste(text[25:length(text)], collapse = "\n"), quiet = TRUE))
 ```
 
+::: {.content-visible when-profile="internal"}
 
 <button id="show-all-answers">Vis svar</button>
 
@@ -48,5 +48,7 @@ showAllButton.addEventListener("click", () => {
 
 :::
 
-
+<!--
 [Trykk her for pdf-versjon]()
+-->
+
