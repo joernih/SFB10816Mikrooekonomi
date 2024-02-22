@@ -2114,6 +2114,7 @@ markl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/markl
 knitr::include_graphics(markl)
 ```
 
+
 ---
 
 ## Velferdsøkonomi og samfunnsøkonomisk overskudd
@@ -2208,8 +2209,9 @@ SO’(X) = KO’(X) + PO’(X) = 0 \\
 
 :::: {.columns}
 
-::: {.column width="40%"}
+::: {.column width="50%"}
 *Sosial planlegger*
+
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
 planl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/planl.png')
@@ -2217,7 +2219,7 @@ knitr::include_graphics(planl)
 ```
 :::
 
-::: {.column width="60%"}
+::: {.column width="50%"}
 *Fullkommen konkurranse*
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
@@ -2244,15 +2246,17 @@ knitr::include_graphics(avgfk)
 
 - Av analysen kommer det frem at tapet til konsumenten og produsenten er større enn gevinsten til myndighetene. Denne reduksjonen i det samfunnsøkonomiske overskuddet kalles for dødvektstap eller effektivitetstap.
 
+
 ---
 
 **Øvelse**
+
 - Etterspørsel (MBV): $P = 20 – X$. Tilbud (GK): $P = 2 + 2X$
-  - a) Finn likevektspris, omsatt kvantum og vis tilpasningen grafisk.
-  - b) Regn ut KO, PO og SO.
-  - c) Det innføres en skatt på 3 kroner per produserte enhet. Sett opp ny tilbudsfunksjon og regn ut $P_K$ (pris til konsument), $P_P$ (pris til produsent) og omsatt kvantum $X$.
-  - d) Hva blir KO, PO nå?
-  - e) Regn ut avgiftsinntekten for staten og effektivitetstapet (antar her at skatteinntektene blir
+  a. Finn likevektspris, omsatt kvantum og vis tilpasningen grafisk.
+  a. Regn ut KO, PO og SO.
+  a. Det innføres en skatt på 3 kroner per produserte enhet. Sett opp ny tilbudsfunksjon og regn ut $P_K$ (pris til konsument), $P_P$ (pris til produsent) og omsatt kvantum $X$.
+  a. Hva blir KO, PO nå?
+  a. Regn ut avgiftsinntekten for staten og effektivitetstapet (antar her at skatteinntektene blir
     betalt tilbake igjen til både konsument og produsent)..
 
 ---
@@ -2260,6 +2264,9 @@ knitr::include_graphics(avgfk)
 **Løsningsforslag**
 
 a)
+
+<!--
+
 <br>
 Vi starter med omsatt kvantum. I fullkommen  vil løsningen være karakterisert ved
 at MBV=GK, det gir oss
@@ -2276,9 +2283,13 @@ MBV: P = 20-6=14 \\
 (GK: P = 2+26 = 14)
 \end{equation*}
 
+-->
+
 ---
 
 b)
+
+<!--
 
 <br>
 Konsumentoverskuddet er gitt ved arealet til trekanten
@@ -2294,9 +2305,14 @@ Samfunnsøkonomisk overskudd blir derfor
 SO = PO+KO =36+18=54
 \end{equation*}
 
+-->
+
 ---
 
 c)
+
+<!--
+
 
 <br>
 Skatt per enhet gjør at tilbudskurven kan skrives som
@@ -2315,9 +2331,14 @@ Mens pris til produsent blir
 P_p=2+2\cdot5 = 2+10 = 12
 \end{equation*}
 
+-->
+
 ---
 
 d)
+
+<!--
+
 <br>
 Konsument- , produsentoverskudd og samfunnsøkonomisk overskudd er nått gitt ved
 \begin{equation*}
@@ -2325,9 +2346,13 @@ KO = \frac{(5\cdot (20-15))}{2}  = 12.5\\
 PO = (5\cdot (12-2))/2 = 25\\
 \end{equation*}
 
+-->
+
 ---
 
 e) Staten
+
+<!--
 
 <br>
 Avgiftsinntekten (SI) og Dødvektstapet (DT):
@@ -2336,6 +2361,8 @@ SI = (5-0)(15-12)= 15 \\
 DT =((15-12)\cdot 1)/2 =  3/2 = 1.5 \\
 SO (\text{med tilbakebetaling av SI til KO og PO})= 12.5+25 =  37.5 + 15 = 52.5
 \end{equation*}
+
+-->
 
 ---
 
