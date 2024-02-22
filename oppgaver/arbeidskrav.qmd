@@ -14,9 +14,9 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 #source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
 ```
 
-### Obligatorisk innleveringsoppgaver
+\newpage 
 
-Utlevert: **`r md$kursg$arbkutl`**.
+### Obligatorisk innleveringsoppgaver
 
 Innleveringsfrist: **`r md$kursg$arbkinl`**.
 
@@ -47,9 +47,8 @@ showAllButton.addEventListener("click", () => {
 });
 </script>
 
+[Trykk her for pdf-versjon]()
+
 :::
 
-<!--
-[Trykk her for pdf-versjon]()
--->
 

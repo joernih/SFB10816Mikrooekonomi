@@ -1,5 +1,5 @@
 ---
-title: "Seminar 5: Markedsteori: Fullkommen konkurranse"
+title: "Seminar 5: Markedsteori: Fullkommen konkurranse uten og med avgifter"
 format:
   html:
     toc: true

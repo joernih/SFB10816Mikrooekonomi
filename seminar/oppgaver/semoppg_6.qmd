@@ -8,10 +8,6 @@ format:
 
 ```{r, echo=F}
 md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
-fdm <- paste0(rprojroot::find_rstudio_root_file(),'/seminar/oppgaver/mate.py')
-reticulate::source_python(fdm)
-eqpar <- list(meql=reticulate::py$modeql,meqs=reticulate::py$modeqs)
-eql <- eqpar$meql
 ```
 
 Uke `r md$regnv$sem6[2]`, ansvarlig: `r md$regnv$ansv[6]`
@@ -21,15 +17,6 @@ Fredag kl. 12:15-14:00.
 ::: {.content-visible when-profile="internal"}
 
 # Oppgave 1: Monopolistens tilpasning
-# Oppgave 2: Andre temaer
-
-:::
-
-```{r, echo=F}
-knitr::knit_exit()
-```
-
-## Oppgave 6
 (a) Anta at en monopolist står overfor følgende etterspørselsfunksjon: $P(X)=5.000-2X$. Totalkostnadene er gitt ved: $C(X)=100.000+3.000X$. I dette tilfellet er X omsatt mengde av produktet.
 Forklar med utgangspunkt i dette talleksempelet hva vi mener med grenseinntekt for monopolisten. Hvorfor er grenseinntekten for monopolisten ikke lik prisen på produktet?
 <div class="sol">
@@ -49,36 +36,41 @@ Ved omsatt mengde lik 600, har vi høyere produksjon enn det som svarer til fort
 </div>
 
 
+## Oppgave 2
+
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-#knitr::include_graphics("bilder/kap13.png")
+knitr::include_graphics("bilder/kap13.png")
 ```
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-#knitr::include_graphics("bilder/kap13_I_losn.png")
+knitr::include_graphics("bilder/kap13_I_losn.png")
 ```
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-#knitr::include_graphics("bilder/kap13_II_losn.png")
+knitr::include_graphics("bilder/kap13_II_losn.png")
 ```
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-#knitr::include_graphics("bilder/kap13_III_losn.png")
+knitr::include_graphics("bilder/kap13_III_losn.png")
 ```
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-#knitr::include_graphics("bilder/kap13_IV_losn.png")
+knitr::include_graphics("bilder/kap13_IV_losn.png")
 ```
 
-## Oppgave 7
+## Oppgave 3
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-#knitr::include_graphics("bilder/kap14.png")
+knitr::include_graphics("bilder/kap14.png")
 ```
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-#knitr::include_graphics("bilder/kap14_I_losn.png")
+knitr::include_graphics("bilder/kap14_I_losn.png")
 ```
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-#knitr::include_graphics("bilder/kap14_II_losn.png")
+knitr::include_graphics("bilder/kap14_II_losn.png")
 ```
 
-```{r, eval=T, echo=F}
+:::
+
+```{r, echo=F}
 knitr::knit_exit()
 ```
+
 
 
 

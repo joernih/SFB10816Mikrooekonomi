@@ -46,7 +46,7 @@
     "href": "seminar/posts.html",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "",
-    "text": "Se Romplan for hvor seminarene finner sted.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 1: Introduksjon til markedsteori\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 2: Matematikk for mikroøkonomi\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 3: Produsentteori på kort og lang sikt\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 4: Konsumentteori\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 5: Markedsteori: Fullkommen konkurranse\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 6: Markedsteori: ufullkommen konkurranse og andre temaer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Se Romplan for hvor seminarene finner sted.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 1: Introduksjon til markedsteori\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 2: Matematikk for mikroøkonomi\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 3: Produsentteori på kort og lang sikt\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 4: Konsumentteori\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 5: Markedsteori: Fullkommen konkurranse uten og med avgifter\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 6: Markedsteori: ufullkommen konkurranse og andre temaer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "seminar/posts/akt_h_i/index.html",
@@ -123,7 +123,7 @@
     "href": "seminar/oppgaver/semoppg_6.html",
     "title": "Seminar 6: Markedsteori: ufullkommen konkurranse og andre temaer",
     "section": "",
-    "text": "Uke 16, ansvarlig: TAB Fredag kl. 12:15-14:00.\n\nOppgave 1: Monopolistens tilpasning\n\n\nOppgave 2: Andre temaer"
+    "text": "Uke 16, ansvarlig: TAB Fredag kl. 12:15-14:00."
   },
   {
     "objectID": "seminar/oppgaver/semoppg_6.html#oppgave-5",
@@ -1741,5 +1741,19 @@
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Oppgave 4: Markedsteori: Fullkommen konkurranse med og uten avgift",
     "text": "Oppgave 4: Markedsteori: Fullkommen konkurranse med og uten avgift\nVi ser på et marked under fullkommen konkurranse. Etterspørselen er gitt ved (den marginale betalingsvillighet) \\(P = 24 – 2X\\) og tilbudet (grensekostnaden) som \\(P = 4X\\).\n\nFinn likevektspris og omsatt kvantum. Vis tilpasningen grafisk.\n\nVi starter med omsatt kvantum. I fullkommen vil løsningen være karakterisert ved at MBV=GK, det gir oss\n\\[\\begin{aligned}\n24-2x=4x \\\\\n6x   =24 \\\\\nx^{FK}=x =\\frac{24}{6} = 4\n\\end{aligned}\\]\nSetter vi dette kvantumet inn i enten etterspørs- eller tilbudskurven vil vi finne produktprisen\n\\[\\begin{aligned}\nMBV: P = 24-2\\cdot 4=16 \\\\\n(GK: P = 4\\cdot 4= 16)\n\\end{aligned}\\]\n\nRegn ut konsumentoverskuddet (KO), produsentoverskuddet (PO) og samfunnsøkonomisk overskudd (SO).\n\nKonsumentoverskuddet er gitt ved arealet til trekanten\n\\[\\begin{aligned}\nKO = (4-0)\\cdot(24-16)/2 = 16\n\\end{aligned}\\]\nMens produsentoverskudet er gitt ved\n\\[\\begin{aligned}\nPO = (4-0)(16)/2 = 32\n\\end{aligned}\\]\nSamfunnsøkonomisk overskudd blir derfor\n\\[\\begin{aligned}\nSO = PO+KO =36+16= 48\n\\end{aligned}\\]\n\nFor å skaffe inntekter til statskassen, innføres en skatt på 6 kroner per produsert enhet. Regn ut \\(P_K\\) (pris til konsument), \\(P_P\\) (pris til produsent) og omsatt kvantum \\(X\\).\n\nSkatt per enhet gjør at tilbudskurven kan skrives som \\begin{aligned*} P = 4x + 6 \\ 24-2x=4x+6 \\ 6x =18 \\ x = 3 \\end{aligned} Prisen til konsument blir derfor\n\\[\\begin{aligned}\nP_k = 24 - 2\\cdot 3 = 18\n\\end{aligned}\\]\nMens pris til produsent blir\n\\[\\begin{aligned}\nP_p=4\\cdot3 = 12\n\\end{aligned}\\]\n\nHva blir KO, PO og SO denne gangen? Vi antar her at skatteinntekten inngår i det samfunnsøkonomiske overskuddet.\n\nKonsument- , produsentoverskudd og samfunnsøkonomisk overskudd er nå gitt ved\n\\[\\begin{aligned}\nKO = \\frac{(3\\cdot (24-18))}{2}  = 9\\\\\nPO = (3\\cdot (12-0))/2 = 18\\\\\nSI = 3\\cdot (18-12)= 18 \\\\\nSO (\\text{med tilbakebetaling av SI til KO og PO})= 9+18+18=45\n\\end{aligned}\\]\n\nRegn ut effektivitetstapet og illustrer denne tilpasningen ved hjelp av en figur.\n\n\\[\\begin{equation}\nDT = \\frac{(4-3)\\cdot (18-12)}{2}=3\n\\end{equation}\\] \n\nVil de samfunnsøkonomiske konsekvensene av avgiften bli påvirket av etterspørselens og tilbudets prisfølsomhet (priselastisitet)? Begrunn svaret.\n\nEssensen med stykkavgiften på 6 kroner er at den medfører et effektivitetstap som følge av at den skaper en kile mellom den prisen som kundene betaler og den pris produsentene mottar. Generelt vil det være slik at desto mer priselastisk etterspørselen og tilbudet er, desto større vil effektivitetstapet være."
+  },
+  {
+    "objectID": "seminar/oppgaver/semoppg_6.html#oppgave-2",
+    "href": "seminar/oppgaver/semoppg_6.html#oppgave-2",
+    "title": "Seminar 6: Markedsteori: ufullkommen konkurranse og andre temaer",
+    "section": "Oppgave 2",
+    "text": "Oppgave 2"
+  },
+  {
+    "objectID": "seminar/oppgaver/semoppg_6.html#oppgave-3",
+    "href": "seminar/oppgaver/semoppg_6.html#oppgave-3",
+    "title": "Seminar 6: Markedsteori: ufullkommen konkurranse og andre temaer",
+    "section": "Oppgave 3",
+    "text": "Oppgave 3"
   }
 ]
