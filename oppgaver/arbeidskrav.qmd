@@ -18,8 +18,9 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 
 ### Obligatorisk innleveringsoppgaver
 
-Innleveringsfrist: **`r md$kursg$arbkinl`**.
-
+- Innleveringsfrist: **`r md$kursg$arbkinl`**.
+  - [Canvas]()
+- Versjon 1.0
 
 ```{r, echo=FALSE, results='asis',warning=F}
 app1_fil <- paste0("/home/joernih/homepageJIH/nonpublic/templates/mikro/Arbeidskrav_SFB10816_Mikro_2024_V.qmd")
@@ -47,7 +48,9 @@ showAllButton.addEventListener("click", () => {
 });
 </script>
 
-[Trykk her for pdf-versjon]()
+[Trykk her for pdf-versjon](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/utskrifter/Arbeidskrav_2024_V.pdf)
+
+\newpage 
 
 :::
 
