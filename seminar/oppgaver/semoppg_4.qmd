@@ -16,7 +16,6 @@ Uke `r md$regnv$sem4[2]`, ansvarlig: `r md$regnv$ansv[4]`
 Torsdag kl. 09:15-11:00.
 
 
-::: {.content-visible when-profile="internal"}
 
 # Husholdningens tilpasning 
 
@@ -225,6 +224,8 @@ samlede virkningen være en økt etterspørsel etter kaker. Dersom kaker er et s
 mindreverdig gode, kan vi oppleve den situasjonen at en prisnedgang på kaker fører til
 lavere etterspørsel etter godet. I så fall betegner vi kaker som et giffengode.
 </div>
+
+::: {.content-visible when-profile="internal"}
 
 <button id="show-all-answers">Vis svar</button>
 <p class="answer hidden">
