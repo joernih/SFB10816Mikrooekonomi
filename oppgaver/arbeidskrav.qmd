@@ -19,7 +19,7 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 ### Obligatorisk innleveringsoppgaver
 
 - Innleveringsfrist: **`r md$kursg$arbkinl`**.
-  - [Canvas]()
+  - [Canvas](https://hiof.instructure.com/courses/8577/assignments/38559)
 - Versjon 1.0
 
 ```{r, echo=FALSE, results='asis',warning=F}
