@@ -2269,7 +2269,6 @@ knitr::include_graphics(avgfk)
 **Løsningsforslag**
 
 a)
-::: {.content-visible when-profile="internal"}
 <br>
 Vi starter med omsatt kvantum. I fullkommen  vil løsningen være karakterisert ved
 at MBV=GK, det gir oss
@@ -2285,12 +2284,10 @@ x = 6 \\
 MBV: P = 20-6=14 \\
 (GK: P = 2+26 = 14)
 \end{equation*}
-:::
 
 ---
 
 b)
-::: {.content-visible when-profile="internal"}
 <br>
 Konsumentoverskuddet er gitt ved arealet til trekanten
 \begin{equation*}
@@ -2304,13 +2301,11 @@ Samfunnsøkonomisk overskudd blir derfor
 \begin{equation*}
 SO = PO+KO =36+18=54
 \end{equation*}
-:::
 
 ---
 
 c)
 
-::: {.content-visible when-profile="internal"}
 <br>
 Skatt per enhet gjør at tilbudskurven kan skrives som
 \begin{equation*}
@@ -2327,37 +2322,30 @@ Mens pris til produsent blir
 \begin{equation*}
 P_p=2+2\cdot5 = 2+10 = 12
 \end{equation*}
-:::
 
 ---
 
 d)
-::: {.content-visible when-profile="internal"}
 <br>
 Konsument- , produsentoverskudd og samfunnsøkonomisk overskudd er nått gitt ved
 \begin{equation*}
 KO = \frac{(5\cdot (20-15))}{2}  = 12.5\\
 PO = (5\cdot (12-2))/2 = 25\\
 \end{equation*}
-:::
-
-
 
 
 ---
 
 e) 
 
-::: {.content-visible when-profile="internal"}
 <!-- Staten -->
 <br>
 Avgiftsinntekten (SI) og Dødvektstapet (DT):
 \begin{equation*}
 SI = (5-0)(15-12)= 15 \\
 DT =((15-12)\cdot 1)/2 =  3/2 = 1.5 \\
-SO (\text{med tilbakebetaling av SI til KO og PO})= 12.5+25 =  37.5 + 15 = 52.5
+SO (\text{med tilbakebetaling av SI til KO og PO})= 12.5+25 + 15 =  37.5 + 15 = 52.5
 \end{equation*}
-:::
 
 ---
 
@@ -2369,6 +2357,8 @@ SO (\text{med tilbakebetaling av SI til KO og PO})= 12.5+25 =  37.5 + 15 = 52.5
 - Ved en avgift, vil dette innebære at:
   - Dødvektstap blir større (mindre)
   - En større (mindre) andel av avgiftsinntektene blir betalt av produsenten
+
+---
 
 - En mer horisontal (vertikal) tilbudskurve innebærer en mer prisfølsom/elastisk (uelastisk) tilbud.
 - Ved skiftanalsye
