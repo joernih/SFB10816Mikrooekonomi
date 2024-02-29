@@ -21,12 +21,17 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 - Innleveringsfrist: **`r md$kursg$arbkinl`**.
   - [Canvas](https://hiof.instructure.com/courses/8577/assignments/38559)
 - Versjon 1.0
+- Kan jobbe alene, eller levere som gruppe (bestemmer selv antallet, men utbytte av
+  arbeidskravet vil nok være større ved en mindre gruppe)
+
 
 ```{r, echo=FALSE, results='asis',warning=F}
 app1_fil <- paste0("/home/joernih/homepageJIH/nonpublic/templates/mikro/Arbeidskrav_SFB10816_Mikro_2024_V.qmd")
 text <- readLines(app1_fil)
 cat(knitr::knit_child(text = paste(text[25:length(text)], collapse = "\n"), quiet = TRUE))
 ```
+
+[Trykk her for pdf-versjon](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/utskrifter/Arbeidskrav_2024_V.pdf)
 
 ::: {.content-visible when-profile="internal"}
 
@@ -48,7 +53,6 @@ showAllButton.addEventListener("click", () => {
 });
 </script>
 
-[Trykk her for pdf-versjon](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/utskrifter/Arbeidskrav_2024_V.pdf)
 
 \newpage 
 

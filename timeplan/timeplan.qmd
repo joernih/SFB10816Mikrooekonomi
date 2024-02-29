@@ -39,3 +39,5 @@ semnr <- 1
 kableExtra::kbl(df_o,col.names=c("Oppgaver bok"))
 ```
 
+
+
