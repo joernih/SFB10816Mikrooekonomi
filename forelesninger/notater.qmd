@@ -2384,15 +2384,11 @@ SO (\text{med tilbakebetaling av SI til KO og PO})= 12.5+25 + 15 =  37.5 + 15 = 
 
 ---
 
-::: {.content-visible when-profile="internal"}
-
 
 
 class: inverse, center, middle
 
 # Kapittel 10: Markedsteori: Ufullkommen konkurranse - Monopol
-
-`r paste("Oppdatert:",Sys.Date())`
 
 ---
 
@@ -2445,6 +2441,8 @@ class: inverse, center, middle
 - Det kan vises at dersom etterspørselskurven er fallende og lineær, vil $R’(X)$-kurven skjære prisaksen i samme punkt som etterspørselskurven, og være dobbelt så bratt. Neste side viser dette matematisk.
 
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
+#| label: figur10.1
+#| fig-cap: "Figur 10.1"
 monoe <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/monoe.png')
 knitr::include_graphics(monoe)
 ```
@@ -2492,10 +2490,15 @@ knitr::include_graphics(monoe)
 - Redusert SO!
  - Skyldes at $B’(X) > C’(X)$. Monopolisten begrenser tilbudet for å presse prisen oppover.
 
+---
+
 ```{r, echo=FALSE, out.width="40%", fig.cap=""}
+#| label: figur10.2
+#| fig-cap: "Figur 10.2"
 monop <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/monop.png')
 knitr::include_graphics(monop)
 ```
+
 
 ---
 
@@ -2511,7 +2514,7 @@ knitr::include_graphics("drawio/10.2.png")
 
 ---
 
-<!--
+::: {.content-visible when-profile="internal"}
 
 **Løsningsforslag 10.2: a)**
 
@@ -2554,9 +2557,13 @@ Og ved å sette inn i grenseinntektsfunksjone vil vi finne (trenger denne til ut
 p^{I}= 500-4\cdot 50 = 300
 \end{equation*}
 
+:::
+
 ---
 
 **Løsningsforslag 10.2: f)**
+
+::: {.content-visible when-profile="internal"}
 
 $P=MBV(X)=C'(X)$ innbærer at kvantumer gitt ved
 
@@ -2590,8 +2597,12 @@ KO=\frac{(50-0)(500-400)}{2}=2500
 PO=\frac{(50-0)(300-100)}{2}+(50-0)(400-300)=10000
 \end{equation*}
 
+:::
+
 
 ---
+
+::: {.content-visible when-profile="internal"}
 
 :::: {.columns}
 
@@ -2620,9 +2631,13 @@ knitr::include_graphics(mp103)
 
 ::::
 
+:::
+
 ---
 
 **Løsningsforslag 10.2: b), c) **
+
+::: {.content-visible when-profile="internal"}
 
 **b)**
 Priselastisiteten er definert som:
@@ -2645,9 +2660,13 @@ Forholdet mellom pris og grensekostnad:
 \frac{P}{C'(X)}= \frac{400}{100+4X}=\frac{400}{100+4\cdot 50}=\frac{400}{300}=1.33
 \end{equation*}
 
+:::
+
 ---
 
 **Løsningsforslag 10.2: d), e) **
+
+::: {.content-visible when-profile="internal"}
 
 **d)**
 Vi har at sammenhengen mellom pris, grensekostnad og priselastisitet er gitt ved
@@ -2663,9 +2682,16 @@ Eller
 **e)**
 Mark-up eller påslag er relativt lite (25%). Dette skyldes at markedsmakten blir begrenset siden etterspørselen er svært elastisk.
 
--->
+:::
+
+```{r, echo=F,eval=T}
+knitr::knit_exit()
+```
+
 
 ---
+
+::: {.content-visible when-profile="internal"}
 
 
 # Kapittel 11: Ufullkommen konkurranse - monopolistisk konkurranse
@@ -2868,6 +2894,8 @@ P=60-(15+30)= 15
 #monk_ls <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/monk_ls.png')
 #knitr::include_graphics(monk_ls)
 ```
+
+::: 
 
 ---
 
@@ -3281,4 +3309,4 @@ knitr::include_graphics("drawio/int_tilpasning_inntnedgang.png")
 ```
 
 
-
+::: 

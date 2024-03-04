@@ -1083,5 +1083,47 @@
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Elastisiteter, avgifter og velferdsøkonomi",
     "text": "Elastisiteter, avgifter og velferdsøkonomi\n\nEn mer horisontal (vertikal) etterspørselkurve innebærer en mer prisfølsom/elastisk (uelastisk) etterspørsel.\nVed skiftanalsye\n\nStørre (mindre) effekt på produksjonen\n\nVed en avgift, vil dette innebære at:\n\nDødvektstap blir større (mindre)\nEn større (mindre) andel av avgiftsinntektene blir betalt av produsenten"
+  },
+  {
+    "objectID": "forelesninger/notater.html#innledning-4",
+    "href": "forelesninger/notater.html#innledning-4",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Innledning",
+    "text": "Innledning\n\nVi skal her se nærmere på følgende:\n\nÅrsaker til monopol\nMonopolistens tilpasning\nSamfunnsøkonomisk overskudd under monopol\n\nVed monopol antas det fremdeles mange kjøpere, men bare én tilbyder.\nDet å være en gir bedriften økt kontroll mht. pris og produksjonsmengde.\nMerk imidlertid at bedriften må ta hensyn til konsumentenes etterspørsel, slik at helt fritt kan den ikke tilpasse seg.\nBegrensningen for monopolisten ligger altså i hva folk ønsker seg, og hvor mye de er villige til å betale.\nMen konkurranse fra andre (tilbydere) slipper monopolisten (pr. definisjon)."
+  },
+  {
+    "objectID": "forelesninger/notater.html#årsaker-til-monopol",
+    "href": "forelesninger/notater.html#årsaker-til-monopol",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Årsaker til monopol",
+    "text": "Årsaker til monopol\n\nFor at et monopol skal kunne opprettholdes over tid, må det eksistere en form for etableringshinder i markedet.\nVed et monopol har produsenten større kontroll over prisen (prislager eller «pricemaker»), dette skaper en genuin profittmulighet.\nProfittmuligheten vil i utgangspunktet trekke til seg andre konkurrenter, men markedshindrene gjør dette umulig.\nMerk at dette skiller monopolet fra den enkelte bedrift i fullkommen konkurranse, som sies å være pristaker (pricetaker)."
+  },
+  {
+    "objectID": "forelesninger/notater.html#etableringshindre",
+    "href": "forelesninger/notater.html#etableringshindre",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Etableringshindre",
+    "text": "Etableringshindre\n\nForbud mot nyetableringer: postverket, vinmonopolet.\nPatentrettigheter eller vanlige rettigheter: eksklusiv rettighet på produkt eller produksjonsteknikk.\nKontroll over sentrale produksjonsfaktorer/råvarer.\nLokale markeder: butikker som ligger i betydelig avstand til konkurrenter.\nStordriftsfordeler. Innebærer fallende enhetskostnader: jernbane (NSB)."
+  },
+  {
+    "objectID": "forelesninger/notater.html#monopolistens-tilpasning",
+    "href": "forelesninger/notater.html#monopolistens-tilpasning",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Monopolistens tilpasning",
+    "text": "Monopolistens tilpasning\nMonopolistens tilpasning: intuitiv forklaring\n\nDet er naturlig å anta at monopolisten vil maksimere fortjenesten. Spørsmålet er hvilket kvantum som gir maksimal fortjeneste.\nSvaret er: bedriften vil produsere inntil inntekten ved å produsere en ekstra enhet er lik kostnaden ved å produsere en enhet til.\nInntekten (merk at det står inntekt og ikke profitt) bedriften får ved å produsere og selge en enhet til kalles grenseinntekten, R’(X).\nKostnaden ved å produsere en enhet til kjenner vi som grensekostnaden, C’(X)."
+  },
+  {
+    "objectID": "forelesninger/notater.html#samfunnsøkonomisk-overskudd-ved-monopol",
+    "href": "forelesninger/notater.html#samfunnsøkonomisk-overskudd-ved-monopol",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Samfunnsøkonomisk overskudd ved monopol",
+    "text": "Samfunnsøkonomisk overskudd ved monopol\n\nVi har allerede sett at produsenten ved monopol tar en pris som er større enn grensekostnaden.\nDette betyr at prisen er større ved monopol enn ved fullkommen konkurranse.\nVirker rimelig at produsentoverskuddet er større. Enn ved fullkommen konkurranse. Men: er PO såpass stort at det oppveier for de ekstra kostnadene som konsumenten påføres???"
+  },
+  {
+    "objectID": "forelesninger/notater.html#sammenligning-av-monopol-og-fullkommen-konkurranse",
+    "href": "forelesninger/notater.html#sammenligning-av-monopol-og-fullkommen-konkurranse",
+    "title": "Mikroøkonomi (SFB10816)",
+    "section": "Sammenligning av monopol og fullkommen konkurranse",
+    "text": "Sammenligning av monopol og fullkommen konkurranse\n\nSer at:\n\n\\(p_M &gt; p_{FK}\\) og \\(X_{M} &lt; X_{FK}\\)\n\nAnalyse av effektivitet: Grafisk framstilling på tavla.\n\nHva skjer med det samfunnsøkonomiske overskuddet?\nRedusert KO og økt PO. Omfordeling. Men hva med\n\neffektivitet?\n\nØkningen i PO er mindre enn nedgangen i KO. Dvs.\n\nRedusert SO!\nSkyldes at \\(B’(X) &gt; C’(X)\\). Monopolisten begrenser tilbudet for å presse prisen oppover."
   }
 ]
