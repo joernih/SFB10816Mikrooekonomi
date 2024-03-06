@@ -2517,8 +2517,6 @@ knitr::include_graphics("drawio/10.2.png")
 
 ---
 
-::: {.content-visible when-profile="internal"}
-
 **Løsningsforslag 10.2: a)**
 
 <br>
@@ -2560,13 +2558,9 @@ Og ved å sette inn i grenseinntektsfunksjone vil vi finne (trenger denne til ut
 p^{I}= 500-4\cdot 50 = 300
 \end{equation*}
 
-:::
-
 ---
 
 **Løsningsforslag 10.2: f)**
-
-::: {.content-visible when-profile="internal"}
 
 $P=MBV(X)=C'(X)$ innbærer at kvantumer gitt ved
 
@@ -2600,12 +2594,7 @@ KO=\frac{(50-0)(500-400)}{2}=2500
 PO=\frac{(50-0)(300-100)}{2}+(50-0)(400-300)=10000
 \end{equation*}
 
-:::
-
-
 ---
-
-::: {.content-visible when-profile="internal"}
 
 :::: {.columns}
 
@@ -2634,13 +2623,9 @@ knitr::include_graphics(mp103)
 
 ::::
 
-:::
-
 ---
 
 **Løsningsforslag 10.2: b), c) **
-
-::: {.content-visible when-profile="internal"}
 
 **b)**
 Priselastisiteten er definert som:
@@ -2663,13 +2648,9 @@ Forholdet mellom pris og grensekostnad:
 \frac{P}{C'(X)}= \frac{400}{100+4X}=\frac{400}{100+4\cdot 50}=\frac{400}{300}=1.33
 \end{equation*}
 
-:::
-
 ---
 
 **Løsningsforslag 10.2: d), e) **
-
-::: {.content-visible when-profile="internal"}
 
 **d)**
 Vi har at sammenhengen mellom pris, grensekostnad og priselastisitet er gitt ved
@@ -2685,11 +2666,7 @@ Eller
 **e)**
 Mark-up eller påslag er relativt lite (25%). Dette skyldes at markedsmakten blir begrenset siden etterspørselen er svært elastisk.
 
-:::
 
-```{r, echo=F,eval=T}
-knitr::knit_exit()
-```
 
 
 ---
@@ -2897,8 +2874,6 @@ P=60-(15+30)= 15
 #monk_ls <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/monk_ls.png')
 #knitr::include_graphics(monk_ls)
 ```
-
-::: 
 
 ---
 
