@@ -8,8 +8,8 @@ engine: knitr
 ![](man/figures/abc.jpg)
 
 ## Nyheter
-- Arbeidskravet til de som allerede ønsker å begynne å se på dette er nå lagt ut
-- Oppgaver til seminar #4 er allerede lagt ut
+- Oppgaver til seminar #4 (på torsdag) er lagt ut
+- Arbeidskravet er lagt ut
 
 ### Pensumbøker
 
