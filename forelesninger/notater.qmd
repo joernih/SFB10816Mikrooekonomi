@@ -2330,7 +2330,7 @@ d)
 Konsument- , produsentoverskudd og samfunnsøkonomisk overskudd er nått gitt ved
 \begin{equation*}
 KO = \frac{(5\cdot (20-15))}{2}  = 12.5\\
-PO = (5\cdot (12-2))/2 = 25\\
+PO = \frac{(5\cdot (12-2))}{2} = 25
 \end{equation*}
 
 
@@ -2343,7 +2343,7 @@ e)
 Avgiftsinntekten (SI) og Dødvektstapet (DT):
 \begin{equation*}
 SI = (5-0)(15-12)= 15 \\
-DT =((15-12)\cdot 1)/2 =  3/2 = 1.5 \\
+DT =\frac{((6-5))(15-12)}{2} = \frac{1 \cdot 3}{2} = 1.5 \\
 SO (\text{med tilbakebetaling av SI til KO og PO})= 12.5+25 + 15 =  37.5 + 15 = 52.5
 \end{equation*}
 
