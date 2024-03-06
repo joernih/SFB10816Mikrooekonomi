@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
@@ -39,11 +40,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -71,11 +72,106 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body>
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Mikroøkonomi (SFB10816)</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../timeplan/timeplan.html" aria-current="page"> 
+<span class="menu-text">Timeplan</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-forelesninger" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Forelesninger</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-forelesninger">    
+        <li>
+    <a class="dropdown-item" href="../forelesninger/notater.html">
+ <span class="dropdown-text">Praktisk informasjon</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../forelesninger/notater.html#/kapittel-1-introduksjon-til-mikroøkonomi.-overblikk-over-fulllkomen-konkurranse">
+ <span class="dropdown-text">Forelesning 1: Introduksjon til mikroøkonomi</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../forelesninger/notater.html#/kapittel-4-5-og-6-innledning-til-produsentteorien">
+ <span class="dropdown-text">Forelesning 2-3: Introduksjons til produksjonsteori. Produksjonsteori på kort sikt</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../forelesninger/notater.html#/kapittel-4-5-og-6-produksjonsteori-på-lang-sikt">
+ <span class="dropdown-text">Forelesning 3-4: Introduksjons til produksjonsteori. Produksjonsteori på lang sikt</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../forelesninger/notater.html#/kapittel-7-konsumentteori">
+ <span class="dropdown-text">Forelesning 5: Konsumentteori</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../forelesninger/notater.html#/kapittel-8-konsumentens-økonomiske-adferd-i-gode--og-arbeidsmarkedet">
+ <span class="dropdown-text">Forelesning 6: Konsumentens øknomiske adferd i gode- og arbeidsmarkedet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../forelesninger/notater.html#/kapittel-9-markedsteori-fullkommen-konkurranse">
+ <span class="dropdown-text">Forelesning 7: Fullkommen konkurranse</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../forelesninger/notater.html#/kapittel-10-markedsteori-ufullkommen-konkurranse---monopol">
+ <span class="dropdown-text">Forelesning 8: Monopol</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-oppgaver" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Oppgaver</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-oppgaver">    
+        <li>
+    <a class="dropdown-item" href="../oppgaver/oppgaver.html">
+ <span class="dropdown-text">Anbefalte oppgaver</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../seminar/posts.html">
+ <span class="dropdown-text">Seminar</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../oppgaver/arbeidskrav.html">
+ <span class="dropdown-text">Arbeidskrav</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../oppgaver/eksamensoppg.html">
+ <span class="dropdown-text">Tidligere eksamensoppgaver</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../utskrifter/utskrifter.html"> 
+<span class="menu-text">Utskrifter</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../log.html"> 
+<span class="menu-text">Endringslog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -175,20 +271,20 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">2024-02-15</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right; font-weight: bold;">7</td>
-<td style="text-align: left; font-weight: bold;">Fullkommen konkurranse</td>
-<td style="text-align: left; font-weight: bold;">Kap. 9</td>
-<td style="text-align: left; font-weight: bold;">JIH</td>
-<td style="text-align: right; font-weight: bold;">9</td>
-<td style="text-align: left; font-weight: bold;">2024-02-29</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Fullkommen konkurranse</td>
+<td style="text-align: left;">Kap. 9</td>
+<td style="text-align: left;">JIH</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2024-02-29</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;">8</td>
-<td style="text-align: left;">Ufullkommen konkurranse: monopol</td>
-<td style="text-align: left;">Kap. 10</td>
-<td style="text-align: left;">JIH</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: left;">2024-03-07</td>
+<td style="text-align: right; font-weight: bold;">8</td>
+<td style="text-align: left; font-weight: bold;">Ufullkommen konkurranse: monopol</td>
+<td style="text-align: left; font-weight: bold;">Kap. 10</td>
+<td style="text-align: left; font-weight: bold;">JIH</td>
+<td style="text-align: right; font-weight: bold;">10</td>
+<td style="text-align: left; font-weight: bold;">2024-03-07</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">9</td>

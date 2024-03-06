@@ -2457,7 +2457,10 @@ knitr::include_graphics(monoe)
 - Vi ser da at stigningstallet til etterspørselskurven er
 	- $–b$, mens stigningstallet til $R’(X) er -2b$. Altså er $R’(X)$
 	- dobbelt så bratt.
-- Fra skjæringspunktet (mellom $R’(X) og C’(X)$) i figuren kan vi lese av optimalt kvantum for monopolisten på X-aksen, $X_1$.
+
+---
+
+- Fra skjæringspunktet (mellom $R’(X)$ og $C’(X)$) i figuren kan vi lese av optimalt kvantum for monopolisten på X-aksen, $X_1$.
 - Selve betingelsen, nemlig at $R’(X) = C’(X)$, som er uttrykt i kroner, leser vi av på loddrett akse.
 - For å finne monopolprisen går vi fra skjæringspunktet og opp til etterspørselskurven, og inntil p-aksen. Der kan lese vi av monopolprisen som $p_1$.
 - Merk fra figuren av $p_1 > C’(X)$. Dette betyr at monopolisten tar en pris for siste produserte enhet som er større enn kostnaden ved å produsere denne enheten. Dette er en viktig forskjell fra fullkommen konkurranse.
