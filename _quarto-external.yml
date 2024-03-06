@@ -28,6 +28,8 @@ website:
             href: "forelesninger/notater.html#/kapittel-9-markedsteori-fullkommen-konkurranse"
           - text: "Forelesning 8: Monopol"
             href: "forelesninger/notater.html#/kapittel-10-markedsteori-ufullkommen-konkurranse---monopol"
+          - text: "Figurpakke"
+            href: "https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/forelesninger/drawio/alle.pdf"
       - text: "Oppgaver"
         menu:
           - text: "Anbefalte oppgaver"
