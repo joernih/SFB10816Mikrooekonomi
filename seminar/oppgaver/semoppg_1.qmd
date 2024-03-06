@@ -115,7 +115,7 @@ Dette kan beregnes på ulike vis. En mulighet er å operere med ulike priser for
 \end{aligned}
 Vi vet at differansen mellom de to prisene tilsvarer stykkavgiften på kr 60,-. Vi har derfor at $p^D = p^S + 60$. Erstatter vi $p^D$ med $p^S + 60$ får vi:
 \begin{aligned}
-2p^S-100=800-4p^S+60 \\
+2p^S-100=800-4(p^S+60) \\
 2p^S+4p^S=800+100-240=660 \\
 p^S=\frac{660}{6}=110
 \end{aligned}

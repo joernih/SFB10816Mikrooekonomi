@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.533">
+<meta name="generator" content="quarto-1.5.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mikroøkonomi (SFB10816) - Seminar 1: Introduksjon til markedsteori</title>
+<title>Mikroøkonomi (SFB10816) – Seminar 1: Introduksjon til markedsteori</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -141,6 +141,26 @@ window.Quarto = {
         <li>
     <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-4-5-og-6-produksjonsteori-på-lang-sikt">
  <span class="dropdown-text">Forelesning 3-4: Introduksjons til produksjonsteori. Produksjonsteori på lang sikt</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-7-konsumentteori">
+ <span class="dropdown-text">Forelesning 5: Konsumentteori</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-8-konsumentens-økonomiske-adferd-i-gode--og-arbeidsmarkedet">
+ <span class="dropdown-text">Forelesning 6: Konsumentens øknomiske adferd i gode- og arbeidsmarkedet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-9-markedsteori-fullkommen-konkurranse">
+ <span class="dropdown-text">Forelesning 7: Fullkommen konkurranse</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-10-markedsteori-ufullkommen-konkurranse---monopol">
+ <span class="dropdown-text">Forelesning 8: Monopol</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/forelesninger/drawio/alle.pdf">
+ <span class="dropdown-text">Figurpakke</span></a>
   </li>  
     </ul>
   </li>
@@ -281,7 +301,7 @@ Dette kan beregnes på ulike vis. En mulighet er å operere med ulike priser for
 \end{aligned}\]</span>
 Vi vet at differansen mellom de to prisene tilsvarer stykkavgiften på kr 60,-. Vi har derfor at <span class="math inline">\(p^D = p^S + 60\)</span>. Erstatter vi <span class="math inline">\(p^D\)</span> med <span class="math inline">\(p^S + 60\)</span> får vi:
 <span class="math display">\[\begin{aligned}
-2p^S-100=800-4p^S+60 \\
+2p^S-100=800-4(p^S+60) \\
 2p^S+4p^S=800+100-240=660 \\
 p^S=\frac{660}{6}=110
 \end{aligned}\]</span>
@@ -495,7 +515,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
