@@ -2376,11 +2376,15 @@ SO (\text{med tilbakebetaling av SI til KO og PO})= 12.5+25 + 15 =  37.5 + 15 = 
 ---
 
 
-### Appendiks (Friedman om prismekanismen)
+### Appendiks (Prismekanismen)
 
-[Friedman om prismekanismen (kort versjon)](https://www.youtube.com/watch?v=R5Gppi-O3a8)
+**Friedman om prismekanismen (kort versjon)**
 
-[Friedman om prismekanismen (lengre versjon)](https://www.youtube.com/watch?v=4ERbC7JyCfU&t=3s)
+{{< video https://www.youtube.com/watch?v=R5Gppi-O3a8 >}}
+
+**Friedman om prismekanismen (lengre versjon)**
+
+{{< video https://www.youtube.com/watch?v=4ERbC7JyCfU&t=3s >}}
 
 ---
 
