@@ -5,11 +5,24 @@ output:
 engine: knitr
 ---
 
+```{r, echo=F, warning=F, message=F, eval=T, results='hide'}
+library(dplyr)
+library(dplyr)
+library(ggplot2)
+library(econocharts)
+md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
+## ../data-raw/metadata.json
+##source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/econplot.R'))
+#source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
+```
+
 ![](man/figures/abc.jpg)
 
 ## Nyheter
-- Oppgaver til seminar #4 (på torsdag) er lagt ut
-- Arbeidskravet er lagt ut
+
+- [Arbeidskrav er lagt ut](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/utskrifter/Arbeidskrav_2024_V.pdf)
+  - Innleveringsfrist: **`r md$kursg$arbkinl`** [Canvas](https://hiof.instructure.com/courses/8577/assignments/38559)
+- Løsningsforslag til seminar #4 har nå blitt publisert
 
 ### Pensumbøker
 
