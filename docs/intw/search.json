@@ -25,7 +25,7 @@
     "href": "index.html#nyheter",
     "title": "Mikroøkonomi med anvendelser (våren 2024)",
     "section": "Nyheter",
-    "text": "Nyheter\n\nOppgaver til seminar #4 (på torsdag) er lagt ut\nArbeidskravet er lagt ut\n\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-03-06"
+    "text": "Nyheter\n\nArbeidskrav er lagt ut\n\nInnleveringsfrist: 31.3 Canvas\n\nLøsningsforslag til seminar #4 har nå blitt publisert\n\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-03-07"
   },
   {
     "objectID": "seminar/index.html",
@@ -46,7 +46,7 @@
     "href": "seminar/posts.html",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "",
-    "text": "Se Romplan for hvor seminarene finner sted.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 1: Introduksjon til markedsteori\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 2: Matematikk for mikroøkonomi\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 3: Produsentteori på kort og lang sikt\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 4: Konsumentteori\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 5: Markedsteori: Fullkommen konkurranse uten og med avgifter\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 6: Markedsteori: ufullkommen konkurranse og andre temaer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Se Romplan for hvor seminarene finner sted.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 1: Introduksjon til markedsteori\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 2: Matematikk for mikroøkonomi\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 3: Produsentteori på kort og lang sikt\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 4: Konsumentteori\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 5: Markedsteori: Fullkommen konkurranse uten og med avgifter og monopol\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 6: Markedsteori: Andre emner\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "seminar/posts/akt_h_i/index.html",
@@ -107,9 +107,9 @@
   {
     "objectID": "seminar/oppgaver/semoppg_5.html",
     "href": "seminar/oppgaver/semoppg_5.html",
-    "title": "Seminar 5: Markedsteori: Fullkommen konkurranse",
+    "title": "Seminar 5: Markedsteori: Fullkommen konkurranse uten og med avgifter og monopol",
     "section": "",
-    "text": "Uke 14, ansvarlig: TAB Fredag kl. 12:15-14:00.\n\nOppgave 1: Fullkommen konkurranse"
+    "text": "Uke 14, ansvarlig: TAB Fredag kl. 12:15-14:00.\n\nOppgave 1: Markedsteori – fullkommen konkurranse og monopol (25 prosent)\nAnta at markedets etterspørsel etter et bestemt konsumgode er gitt ved: \\[\nX^D = 600 – 6p\n\\] der \\(p\\) er prisen på godet og \\(X^D\\) er markedets totale etterspørsel etter gode. Markedets tilbudskurve er gitt ved: \\[X^S = 2p\n\\] hvor \\(X^s\\) er antall tilbudte enheter av godet.\n\nFinn markedslikevekten (pris og kvantum) under fullkommen konkurranse.\n\nAnta nå at det bare er én tilbyder i markedet som dermed har monopol. Den oppgitte tilbudskurven vil da gjenspeile monopolets grensekostnad som er lik \\(\\frac{1}{2}X^{s}\\).\n\nDersom denne aktøren ønsker å maksimere fortjenesten, hvor mye bør den produsere og hva blir prisen?\n\nRegn ut og forklar effektivitetstapet (dødvektstapet) ved denne tilpasningen.\nHva blir produsentoverskuddet? \nIllustrer til slutt markedsløsningen ved fullkommen konkurranse og monopol ved bruk av to figurer.\n\n\n\nOppgave 2: Andre temaer (HVL 202X)\n\nMan snakker gjerne om tre ulike former for prisdiskriminering. Gjør kort rede for hvorfor prisdiskriminering av tredje orden vil skille seg fra monopol uten prisdiskriminering.\n\nPrisdiskriminering av tredje orden har vi når en produsent kan selge et gode til forskjellige priser til ulike grupper av konsumenter. Et typisk eksempel på tredjeordens prisdiskriminering kan være et busselskap som tar ulik pris fra forskjellige kundegrupper (voksen-, barne-, student- og honnørpriser). Det er tre betingelser som må være oppfylt for at tredje ordens prisdiskriminering kan gjennomføres:\n\n\nForskjellige kundegrupper må ha ulik etterspørselselastisitet\n\n\nMonopolisten må kunne skaffe seg informasjon om disse ulikhetene\n\n\nMonopolisten må klare å skille de enkelte kundegruppene (delmarkedene) fra hverandre.\n\n\nMonopol uten prisdiskriminering: Det er kun en produsent (en tilbyder) av en vare eller tjeneste på et marked.\n Forskjellen er at ved tredjeordens prisdiskriminering deler produsenten selv markedet inn i en rekke delmonopolmarkeder; ett delmarked for hver kundegruppe og i hvert av disse delmonopolmarkedene tilpasser han seg slik at grenseinntekt er lik grensekostnad. Dette innebærer således at han tar høyest pris og tilbyr færrest varer i de delmarkeder der etterspørselen er mest uelastisk (minst prisfølsom). Da henter han ut maksimal monopolgevinst. Ved monopol uten prisdiskriminering har ikke produsenten mulighet til å dele kundegruppene inn etter grad av etterspørseIselastisitet, han må derimot ta samme pris fra alle kunder. Dermed vil monopolgevinsten uten prisdiskriminering, under ellers like forhold, bli mindre enn med prisdiskriminering.\n\nDefiner hva som menes med positive eksternaliteter. Hvordan kan myndighetene korrigere for markedssvikten som følger av dette?\n\nEr bivirkninger av andres konsum eller produksjon som den som forårsaker bivirkninger ikke tar hensyn til når man skal fatte beslutningen om hvor mye man skal produsere eller konsumere. Har den utilsiktede effekten en positiv virkning på en annen part, har vi å gjør med positive eksternaliteter. Det er effektivitetstap ved en positiv eksternalitet i form av at det blir produsert for lite av gode. Myndighetene kan korrigere for manglende produksjon ved innføring av et subsidie.\n\n\n\n\nOppgave 3 (HVL, 202)\nKva er skilnaden mellom eit kollektivt og eit privat gode?\nLegg til grunn at produsenten av eit kollektivt gode har denne grensekostnadsfunksjonen: C’(X)=225 � ′ � = 225 . Legg vidare til grunn at det er to konsumentar av godet og at konsument 1 har følgjande marginale betalingsvilje:\nMarginal betalingsvilje for den 1. eininga: 125 kr. Marginal betalingsvilje for den 2. eininga: 100 kr.\nMarginal betalingsvilje for den 3. eininga: 80 kr.\nKonsument 2 har følgjande marginale betalingsvilje:\nMarginal betalingsvilje for den 1. eininga: 150 kr.\nMarginal betalingsvilje for den 2. eininga: 125 kr.\nMarginal betalingsvilje for den 3. eininga: 100 kr.\nOppgåve: Finn den samfunnsøkonomisk effektive produksjonen av dette godet."
   },
   {
     "objectID": "seminar/oppgaver/semoppg_5.html#oppgave-4",
@@ -121,7 +121,7 @@
   {
     "objectID": "seminar/oppgaver/semoppg_6.html",
     "href": "seminar/oppgaver/semoppg_6.html",
-    "title": "Seminar 6: Markedsteori: ufullkommen konkurranse og andre temaer",
+    "title": "Seminar 6: Markedsteori: Andre emner",
     "section": "",
     "text": "Uke 16, ansvarlig: TAB Fredag kl. 12:15-14:00."
   },
@@ -865,7 +865,7 @@
     "href": "forelesninger/notater.html#innledning-5",
     "title": "Mikroøkonomi (SFB10816)",
     "section": "Innledning",
-    "text": "Innledning\n\nI praksis vil de fleste produkter hverken bli omsatt i et marked preget av (1) fullkommen konkurranse eller (2) monopol.\nDet er spesielt to forhold som kan variere.\n\nProduktene er differensierte\nAntall konkurrenter kan endre seg over tid. Spesielt hvis det er lønnsomt og tre inn og ut av markedet.\n\nTar vi høyde for variasjonsmulighetene for disse to faktorene, kan vi plassere de ulike markedsformene som inngår i dette kapittelet ved bruk av følgende diagram."
+    "text": "Innledning\n\nI praksis vil de fleste produkter hverken bli omsatt i et marked preget av (1) fullkommen konkurranse eller (2) monopol.\nDet er spesielt to forhold som kan variere.\n\nProduktene er differensierte\nAntall konkurrenter kan endre seg over tid. Spesielt hvis det er lønnsomt og tre inn og ut av markedet.\n\nTar vi høyde for variasjonsmulighetene for disse to faktorene, kan vi plassere de ulike markedsformene som inngår i dette kapittelet ved bruk av følgende diagram.\n\n\nFigur 11.1"
   },
   {
     "objectID": "forelesninger/notater.html#differensierte-produkter",
@@ -1745,14 +1745,14 @@
   {
     "objectID": "seminar/oppgaver/semoppg_6.html#oppgave-2",
     "href": "seminar/oppgaver/semoppg_6.html#oppgave-2",
-    "title": "Seminar 6: Markedsteori: ufullkommen konkurranse og andre temaer",
+    "title": "Seminar 6: Markedsteori: Andre emner",
     "section": "Oppgave 2",
     "text": "Oppgave 2"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_6.html#oppgave-3",
     "href": "seminar/oppgaver/semoppg_6.html#oppgave-3",
-    "title": "Seminar 6: Markedsteori: ufullkommen konkurranse og andre temaer",
+    "title": "Seminar 6: Markedsteori: Andre emner",
     "section": "Oppgave 3",
     "text": "Oppgave 3"
   }

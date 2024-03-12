@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mikroøkonomi (SFB10816) – Seminar 5: Markedsteori: Fullkommen konkurranse</title>
+<title>Mikroøkonomi (SFB10816) – Seminar 5: Markedsteori: Fullkommen konkurranse uten og med avgifter og monopol</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="css/OFF.css">
 </head>
@@ -126,8 +155,21 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Forelesning 7: Fullkommen konkurranse</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-10-markedsteori-ufullkommen-konkurranse---monopol">
+ <span class="dropdown-text">Forelesning 8: Monopol</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-11-ufullkommen-konkurranse---monopolistisk-konkurranse">
+ <span class="dropdown-text">Forelesning 9: Ufullkommen konkurranse - monopolistisk konkurranse</span></a>
+  </li>  
+        <li class="dropdown-header">Forelesning 10:Markedsteori: Ufullkommen konkurranse - prisdiskriminering</li>
+        <li>
     <a class="dropdown-item" href="../../forelesninger/allenotater.html">
  <span class="dropdown-text">Notatblokk for alle notater (betaversjon)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/forelesninger/drawio/alle.pdf">
+ <span class="dropdown-text">Figurpakke</span></a>
   </li>  
     </ul>
   </li>
@@ -192,7 +234,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Seminar 5: Markedsteori: Fullkommen konkurranse</h1>
+      <h1 class="title">Seminar 5: Markedsteori: Fullkommen konkurranse uten og med avgifter og monopol</h1>
                       </div>
   </div>
     
@@ -213,7 +255,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#oppgave-1-fullkommen-konkurranse" id="toc-oppgave-1-fullkommen-konkurranse" class="nav-link active" data-scroll-target="#oppgave-1-fullkommen-konkurranse">Oppgave 1: Fullkommen konkurranse</a></li>
+  <li><a href="#oppgave-1-markedsteori-fullkommen-konkurranse-og-monopol-25-prosent" id="toc-oppgave-1-markedsteori-fullkommen-konkurranse-og-monopol-25-prosent" class="nav-link active" data-scroll-target="#oppgave-1-markedsteori-fullkommen-konkurranse-og-monopol-25-prosent">Oppgave 1: Markedsteori – fullkommen konkurranse og monopol (25 prosent)</a></li>
+  <li><a href="#oppgave-2-andre-temaer-hvl-202x" id="toc-oppgave-2-andre-temaer-hvl-202x" class="nav-link" data-scroll-target="#oppgave-2-andre-temaer-hvl-202x">Oppgave 2: Andre temaer (HVL 202X)</a></li>
+  <li><a href="#oppgave-3-hvl-202" id="toc-oppgave-3-hvl-202" class="nav-link" data-scroll-target="#oppgave-3-hvl-202">Oppgave 3 (HVL, 202)</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/joernih/https://github.com/joernih/SFB10816Mikrooekonomi/edit/main/seminar/oppgaver/semoppg_5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -225,8 +269,61 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Uke 14, ansvarlig: TAB Fredag kl. 12:15-14:00.</p>
-<section id="oppgave-1-fullkommen-konkurranse" class="level1">
-<h1>Oppgave 1: Fullkommen konkurranse</h1>
+<section id="oppgave-1-markedsteori-fullkommen-konkurranse-og-monopol-25-prosent" class="level1">
+<h1>Oppgave 1: Markedsteori – fullkommen konkurranse og monopol (25 prosent)</h1>
+<p>Anta at markedets etterspørsel etter et bestemt konsumgode er gitt ved: <span class="math display">\[
+X^D = 600 – 6p
+\]</span> der <span class="math inline">\(p\)</span> er prisen på godet og <span class="math inline">\(X^D\)</span> er markedets totale etterspørsel etter gode. Markedets tilbudskurve er gitt ved: <span class="math display">\[X^S = 2p
+\]</span> hvor <span class="math inline">\(X^s\)</span> er antall tilbudte enheter av godet.</p>
+<ol type="a">
+<li>Finn markedslikevekten (pris og kvantum) under fullkommen konkurranse.</li>
+</ol>
+<p>Anta nå at det bare er én tilbyder i markedet som dermed har monopol. Den oppgitte tilbudskurven vil da gjenspeile monopolets grensekostnad som er lik <span class="math inline">\(\frac{1}{2}X^{s}\)</span>.</p>
+<ol start="2" type="a">
+<li>Dersom denne aktøren ønsker å maksimere fortjenesten, hvor mye bør den produsere og hva blir prisen?<br>
+</li>
+<li>Regn ut og forklar effektivitetstapet (dødvektstapet) ved denne tilpasningen.</li>
+<li>Hva blir produsentoverskuddet? <br></li>
+<li>Illustrer til slutt markedsløsningen ved fullkommen konkurranse og monopol ved bruk av to figurer.</li>
+</ol>
+</section>
+<section id="oppgave-2-andre-temaer-hvl-202x" class="level1">
+<h1>Oppgave 2: Andre temaer (HVL 202X)</h1>
+<ol type="a">
+<li>Man snakker gjerne om tre ulike former for prisdiskriminering. Gjør kort rede for hvorfor prisdiskriminering av tredje orden vil skille seg fra monopol uten prisdiskriminering.
+<div class="sol">
+<em>Prisdiskriminering av tredje orden</em> har vi når en produsent kan selge et gode til forskjellige priser til ulike grupper av konsumenter. Et typisk eksempel på tredjeordens prisdiskriminering kan være et busselskap som tar ulik pris fra forskjellige kundegrupper (voksen-, barne-, student- og honnørpriser). Det er tre betingelser som må være oppfylt for at tredje ordens prisdiskriminering kan gjennomføres:
+<ol>
+<li>
+Forskjellige kundegrupper må ha ulik etterspørselselastisitet
+</li>
+<li>
+Monopolisten må kunne skaffe seg informasjon om disse ulikhetene
+</li>
+<li>
+Monopolisten må klare å skille de enkelte kundegruppene (delmarkedene) fra hverandre.
+</li>
+</ol>
+<p><em>Monopol uten prisdiskriminering:</em> Det er kun en produsent (en tilbyder) av en vare eller tjeneste på et marked.<br>
+<br> Forskjellen er at ved tredjeordens prisdiskriminering deler produsenten selv markedet inn i en rekke delmonopolmarkeder; ett delmarked for hver kundegruppe og i hvert av disse delmonopolmarkedene tilpasser han seg slik at grenseinntekt er lik grensekostnad. Dette innebærer således at han tar høyest pris og tilbyr færrest varer i de delmarkeder der etterspørselen er mest uelastisk (minst prisfølsom). Da henter han ut maksimal monopolgevinst. Ved monopol uten prisdiskriminering har ikke produsenten mulighet til å dele kundegruppene inn etter grad av etterspørseIselastisitet, han må derimot ta samme pris fra alle kunder. Dermed vil monopolgevinsten uten prisdiskriminering, under ellers like forhold, bli mindre enn med prisdiskriminering.</p>
+</div></li>
+<li>Definer hva som menes med positive eksternaliteter. Hvordan kan myndighetene korrigere for markedssvikten som følger av dette?
+<div class="sol">
+<p>Er bivirkninger av andres konsum eller produksjon som den som forårsaker bivirkninger ikke tar hensyn til når man skal fatte beslutningen om hvor mye man skal produsere eller konsumere. Har den utilsiktede effekten en positiv virkning på en annen part, har vi å gjør med positive eksternaliteter. Det er effektivitetstap ved en positiv eksternalitet i form av at det blir produsert for lite av gode. Myndighetene kan korrigere for manglende produksjon ved innføring av et subsidie.</p>
+</div></li>
+</ol>
+</section>
+<section id="oppgave-3-hvl-202" class="level1">
+<h1>Oppgave 3 (HVL, 202)</h1>
+<p>Kva er skilnaden mellom eit kollektivt og eit privat gode?</p>
+<p>Legg til grunn at produsenten av eit kollektivt gode har denne grensekostnadsfunksjonen: C’(X)=225 � ′ � = 225 . Legg vidare til grunn at det er to konsumentar av godet og at konsument 1 har følgjande marginale betalingsvilje:</p>
+<p>Marginal betalingsvilje for den 1. eininga: 125 kr. Marginal betalingsvilje for den 2. eininga: 100 kr.<br>
+Marginal betalingsvilje for den 3. eininga: 80 kr.</p>
+<p>Konsument 2 har følgjande marginale betalingsvilje:</p>
+<p>Marginal betalingsvilje for den 1. eininga: 150 kr.</p>
+<p>Marginal betalingsvilje for den 2. eininga: 125 kr.</p>
+<p>Marginal betalingsvilje for den 3. eininga: 100 kr.</p>
+<p>Oppgåve: Finn den samfunnsøkonomisk effektive produksjonen av dette godet.</p>
 
 
 </section>

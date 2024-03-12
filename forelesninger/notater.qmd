@@ -22,6 +22,7 @@ footer: <https://joernih.github.io/SFB10816Mikrooekonomi/>
 #    number-sections: true
 ---
 
+
 ```{r, echo=F, warning=F, message=F, eval=T, results='hide'}
 library(dplyr)
 library(dplyr)
@@ -2386,11 +2387,6 @@ SO (\text{med tilbakebetaling av SI til KO og PO})= 12.5+25 + 15 =  37.5 + 15 = 
 
 {{< video https://www.youtube.com/watch?v=4ERbC7JyCfU&t=3s >}}
 
----
-
-
-
-class: inverse, center, middle
 
 # Kapittel 10: Markedsteori: Ufullkommen konkurranse - Monopol
 
@@ -2672,12 +2668,6 @@ Mark-up eller påslag er relativt lite (25%). Dette skyldes at markedsmakten bli
 
 
 
-
----
-
-::: {.content-visible when-profile="internal"}
-
-
 # Kapittel 11: Ufullkommen konkurranse - monopolistisk konkurranse
 
 ---
@@ -2691,9 +2681,11 @@ Mark-up eller påslag er relativt lite (25%). Dette skyldes at markedsmakten bli
 
 - Tar vi høyde for variasjonsmulighetene for disse to faktorene, kan vi plassere de ulike markedsformene som inngår i dette kapittelet ved bruk av følgende diagram.
 
-```{r, echo=FALSE, out.width="40%", fig.cap=""}
-#markedsformer <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/markedsf.png')
-#knitr::include_graphics(markedsformer)
+```{r, echo=FALSE, out.width="60%", fig.cap=""}
+#| label: figur11.1
+#| fig-cap: "Figur 11.1"
+markedsformer <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/markedsf.png')
+knitr::include_graphics(markedsformer)
 ```
 
 ---
@@ -2750,8 +2742,10 @@ X_{2} = 30 - \frac{1}{2}X_{1}
 
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-#cournot <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/cournotl.png')
-#knitr::include_graphics(cournot)
+#| label: figur11.2
+#| fig-cap: "Figur 11.2"
+cournot <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/cournotl.png')
+knitr::include_graphics(cournot)
 ```
 
 Cournotlikevekten kan vi finne i skjæringspunktet mellom de to reaksjonsligningene
@@ -2825,8 +2819,10 @@ P=60-(15+30)= 15
 ---
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-#stackberg <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/stackbergl.png')
-#knitr::include_graphics(stackberg)
+#| label: figur11.3
+#| fig-cap: "Figur 11.3"
+stackberg <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/stackbergl.png')
+knitr::include_graphics(stackberg)
 ```
 
 ---
@@ -2842,8 +2838,10 @@ P=60-(15+30)= 15
 - Samfunnsøkonomisk optimal løsning
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-#bertrandl <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/bertrandl.png')
-#knitr::include_graphics(bertrandl)
+#| label: figur11.4
+#| fig-cap: "Figur 11.4"
+bertrandl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/bertrandl.png')
+knitr::include_graphics(bertrandl)
 ```
 
 ---
@@ -2863,8 +2861,10 @@ P=60-(15+30)= 15
 	- Hvor stor markedsmakten er vil avhenge av elastisk etterspørselen er
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-#monk_ks <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/monk_ks.png')
-#knitr::include_graphics(monk_ks)
+#| label: figur11.5
+#| fig-cap: "Figur 11.5"
+monk_ks <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/monk_ks.png')
+knitr::include_graphics(monk_ks)
 ```
 
 ---
@@ -2875,11 +2875,14 @@ P=60-(15+30)= 15
 	  tilnærmet lik null på lang sikt.
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
-#monk_ls <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/monk_ls.png')
-#knitr::include_graphics(monk_ls)
+#| label: figur11.6
+#| fig-cap: "Figur 11.6"
+monk_ls <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/monk_ls.png')
+knitr::include_graphics(monk_ls)
 ```
 
----
+
+::: {.content-visible when-profile="internal"}
 
 
 # Kapittel 12: Markedsteori: Ufullkommen konkurranse - prisdiskriminering
@@ -2907,6 +2910,8 @@ Betingelser som må være oppfylt for å kunne utføre prisdiskriminering i et m
 - Det innebærer at konsumentoverskuddet er lik null, mens produsenten sitter igjen med et produsentoverskudd som nøyaktig lik det samfunnsøkonomiske overskuddet.
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
+#| label: figur12.1
+#| fig-cap: "Figur 12.1"
 f_grads <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/1_grads.png')
 knitr::include_graphics(f_grads)
 ```
@@ -2924,6 +2929,8 @@ knitr::include_graphics(f_grads)
 
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
+#| label: figur12.2
+#| fig-cap: "Figur 12.2"
 a_grads <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/2_grads.png')
 knitr::include_graphics(a_grads)
 ```
@@ -2937,6 +2944,8 @@ knitr::include_graphics(a_grads)
 
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
+#| label: figur12.3
+#| fig-cap: "Figur 12.3"
 t_grads <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/3_grads.png')
 knitr::include_graphics(t_grads)
 ```
@@ -2946,6 +2955,8 @@ knitr::include_graphics(t_grads)
 - Som vist i diagrammet nedenfor, konsumenten vil her oppnå større produsentoverskudd som monopolist ved avgrensning enn dersom en bare forholdt seg til én konsumentgruppe.
 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
+#| label: figur12.4
+#| fig-cap: "Figur 12.4"
 t_grads_kl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/3_gradskl.png')
 knitr::include_graphics(t_grads_kl)
 ```
@@ -3097,8 +3108,6 @@ Informasjonsfordelingen mellom aktøren er skjev.
   
 ---
 
-
----
 
 # Kapittel 14: Andre emner: Litt spillteori 
 
