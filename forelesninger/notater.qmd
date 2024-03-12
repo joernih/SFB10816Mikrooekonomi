@@ -2856,9 +2856,17 @@ knitr::include_graphics(bertrandl)
 
 ---
 
+:::: {.columns}
+
+::: {.column width="50%"}
 - Kort sikt
 	- Produsenten vil tilpasse seg der hvor grenseinntekt er lik grensekostnad.
 	- Hvor stor markedsmakten er vil avhenge av elastisk etterspørselen er
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 #| label: figur11.5
@@ -2866,20 +2874,27 @@ knitr::include_graphics(bertrandl)
 monk_ks <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/monk_ks.png')
 knitr::include_graphics(monk_ks)
 ```
+:::
 
----
-
+::: {.column width="50%"}
 - Lang sikt
 	- Uten adgangsbegrensninnger, så vil positiv fortjeneste lokke nye produsenter inn i markedet.
 	- Det fører til redusert etterspørsel etter det produktet vi betrakter, og fortjenesten vil dermed bli redusert til 
 	  tilnærmet lik null på lang sikt.
-
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 #| label: figur11.6
 #| fig-cap: "Figur 11.6"
 monk_ls <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/monk_ls.png')
 knitr::include_graphics(monk_ls)
 ```
+:::
+
+::::
+
+
+
+
+
 
 
 ::: {.content-visible when-profile="internal"}
