@@ -6,16 +6,13 @@ format:
     css: css/ON.css
 ---
 
-```{r, echo=F}
-md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
-#fdm <- paste0(rprojroot::find_rstudio_root_file(),'/seminar/oppgaver/mate.py')
-#reticulate::source_python(fdm)
-#eqpar <- list(meql=reticulate::py$modeql,meqs=reticulate::py$modeqs)
-#eql <- eqpar$meql
-```
+::: {.cell}
+
+:::
 
 
-Uke `r md$regnv$sem5[2]`, ansvarlig: `r md$regnv$ansv[5]`
+
+Uke 14, ansvarlig: TAB
 Fredag kl. 12:15-14:00.
 
 
@@ -94,7 +91,8 @@ godet.
 
 :::
 
-```{r, echo=F}
-knitr::knit_exit()
-```
+
+::: {.cell}
+
+:::
 
