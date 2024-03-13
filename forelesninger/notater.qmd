@@ -2534,7 +2534,7 @@ R'(X)=500-4X
 \end{equation*}
 Grensekostnadsfunksjonen (tilbudsfunksjone) finner vi ved å derivere kostnadsfunksjoen mhp. X
 \begin{equation*}
-C'(x) = 100+4x
+C'(X) = 100+4X
 \end{equation*}
 
 
@@ -2834,9 +2834,9 @@ knitr::include_graphics(stackberg)
 
 - To produsenter som begge ønsker å maksimere forjenesten
 - Valgvariabel, $p_{1}$ og $p_{2}$
-- Gitt at $p_{1}<p_{2}$ $\Rightarrow$ $x_{1}$ tar hele markedet
-- Gitt at $p_{1}>p_{2}$ $\Rightarrow$ $x_{2}$ tar hele markedet
-- Gitt at $p_{1}=p_{2}$ $\Rightarrow$ begge kan produsere til null profit
+- Gitt at $P_{1}<P_{2}$ $\Rightarrow$ $X_{1}$ tar hele markedet
+- Gitt at $P_{1}>P_{2}$ $\Rightarrow$ $x_{2}$ tar hele markedet
+- Gitt at $P_{1}=P_{2}$ $\Rightarrow$ begge kan produsere til null profit
 - Likevektsløsning $p_{1}=p_{2}=c'(X)$ (pris = grensekotnad)
 - Samfunnsøkonomisk optimal løsning
 
