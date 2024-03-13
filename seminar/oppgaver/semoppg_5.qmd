@@ -35,14 +35,29 @@ $$
 hvor $X^s$ er antall tilbudte enheter av godet.
 
 a. Finn markedslikevekten (pris og kvantum) under fullkommen konkurranse.
+<div class="sol">
+Svar
+</div>
 
 Anta nå at det bare er én tilbyder i markedet som dermed har monopol. Den oppgitte tilbudskurven vil da gjenspeile monopolets grensekostnad som er lik $\frac{1}{2}X^{s}$. 
 
 b. Dersom denne aktøren ønsker å maksimere fortjenesten, hvor mye bør den produsere og hva blir prisen?   
+<div class="sol">
+Svar
+</div>
 c. Regn ut og forklar effektivitetstapet (dødvektstapet) ved denne tilpasningen.
+<div class="sol">
+Svar
+</div>
 d. Hva blir produsentoverskuddet?
 <br>
+<div class="sol">
+Svar
+</div>
 e. Illustrer til slutt markedsløsningen ved fullkommen konkurranse og monopol ved bruk av to figurer.
+<div class="sol">
+Svar
+</div>
 
 # Oppgave 2: Prisdiskriminering (HVL 202X)
 a. Man snakker gjerne om tre ulike former for prisdiskriminering. Gjør kort rede for hvorfor prisdiskriminering av tredje orden vil skille seg fra monopol uten prisdiskriminering.
@@ -67,28 +82,28 @@ Er bivirkninger av andres konsum eller produksjon som den som forårsaker bivirk
 [Kollektive goder]{.underline}
 
 a)  Hva er forskjellen mellom et kollektivt og et privat gode?
+<div class="sol">
+Svar
+</div>
 
 b)  Anta at produsenten av et kollektivt gode har denne
     grensekostnadsfunksjonen: $C'(X) = 225$. Legg videre til grunn at
     det er to konsumenter av godet og at konsument 1 har følgende
     marginale betalingsvillighet:
-
-Marginal betalingsvillighet for den 1. enheten: 125 kr.
-
-Marginal betalingsvillighet for den 2. enheten: 100 kr.
-
-Marginal betalingsvillighet for den 3. enheten: 80 kr.
+- Marginal betalingsvillighet for den 1. enheten: 125 kr.
+- Marginal betalingsvillighet for den 2. enheten: 100 kr.
+- Marginal betalingsvillighet for den 3. enheten: 80 kr.
 
 Konsument 2 har følgende marginale betalingsvillighet:
-
-Marginal betalingsvillighet for den 1. enheten: 150 kr.
-
-Marginal betalingsvillighet for den 2. enheten: 125 kr.
-
-Marginal betalingsvillighet for den 3. enheten: 100 kr.
+- Marginal betalingsvillighet for den 1. enheten: 150 kr.
+- Marginal betalingsvillighet for den 2. enheten: 125 kr.
+- Marginal betalingsvillighet for den 3. enheten: 100 kr.
 
 Oppgave: Finn den samfunnsøkonomisk effektive produksjonen av dette
 godet.
+<div class="sol">
+Svar
+</div>
 
 
 

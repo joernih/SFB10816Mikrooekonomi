@@ -2542,7 +2542,7 @@ C'(x) = 100+4x
 ---
 
 <bR>
-Optimum er karakterisert ved at $R'(X)=C'(X)$:
+Optimal produksjon er karakterisert ved at $R'(X)=C'(X)$:
 \begin{equation*}
 500-4X = 100+4X \\ 
 8X = 400 \\
@@ -2591,7 +2591,7 @@ DT=\frac{(66.7-50)(400-300)}{2}=835
 KO=\frac{(50-0)(500-400)}{2}=2500
 \end{equation*}
 \begin{equation*}
-PO=\frac{(50-0)(300-100)}{2}+(50-0)(400-300)=10000
+PO=PO_{I}+PO_{II}=\frac{(50-0)(300-100)}{2}+(50-0)(400-300)=10000
 \end{equation*}
 
 ---
@@ -2634,8 +2634,11 @@ e_p = \frac{\Delta X}{\Delta P}\frac{P}{X}
 \end{equation*}
 Vi har at MBV løse mhp. X gir
 \begin{equation*}
-X=250-\frac{1}{2}P \Rightarrow 
-\frac{\Delta X}{\Delta P} = -\frac{1}{2}
+X=250-\frac{1}{2}P 
+\end{equation*}
+Som ved differensiering gir
+\begin{equation*}
+\Delta X=-\frac{1}{2}\Delta \Rightarrow \frac{\Delta X}{\Delta P} = -\frac{1}{2} = -0.5
 \end{equation*}
 Som gir
 \begin{equation*}
