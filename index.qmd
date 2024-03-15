@@ -21,7 +21,7 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 ## Nyheter
 
 - [Arbeidskrav er lagt ut](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/utskrifter/Arbeidskrav_2024_V.pdf)
-  - **Merk:** I opppgave 2 f. skal det væer at lønnskostnaden per arbeider er lik  ~~1~~ 2 kroner.
+  - **Merk:** I opppgave 2 f. skal det være at lønnskostnaden per arbeider er lik  ~~1~~ 2 kroner.
   - Innleveringsfrist: **`r md$kursg$arbkinl`** [Canvas](https://hiof.instructure.com/courses/8577/assignments/38559)
 - Løsningsforslag til seminar #4 har nå blitt publisert
 
