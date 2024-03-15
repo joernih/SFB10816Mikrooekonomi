@@ -664,8 +664,6 @@ knitr::include_graphics(innt)
   - Gjennomsnittskostnader (enhetskostnader): Disse finner vi ved å dividere de respektive kostnadene med antall produserte enheter. 
     	- $\overline{C}=\frac{C_F}{x}+\frac{C_V}{x}=\overline{C}_F+\overline{C}_V$
   - Grensekostnader ( $GK$ eller $C'$ ): Endringen i bedriftens totale kostnader ved en liten endring i produsert kvantum 
-    	- $GK=\frac{dC(x)}{dx}=C'(x)$
-
 ---
 
 **Sammenhengen mellom gjennomsnittskostnad og grensekostnad**
@@ -2979,13 +2977,179 @@ t_grads_kl <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/
 knitr::include_graphics(t_grads_kl)
 ```
 
+# Kapittel 14: Andre emner: Litt spillteori 
+
+`r paste("Oppdatert:",Sys.Date())`
+
 ---
 
-::: 
+### Spillteori 
+
+Situasjoner der aktørene påvirker hverandres tilpasningsforhold.
+
+**To sentrale konsepter**
+
+- *Nash-likevekter*
+> En situasjon hvor ingen aktør har interesse av å endre egen tilpasning, gitt den andres tilpasning 
+- *Dominante strategier*
+> Dersom aktøren kommer best ut ved å velge denne strategien uavhengig av hva den andre aktøren gjør. 
+
+---
+
+**Eksempel 1: Fangens dilemma**
+
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
+knitr::include_graphics("drawio/tabell_14.1.png")
+```
+
+- Aktørene ønsker seg lavest mulig fengselsstraff.
+
+---
+
+**Eksempel 2: Kartellsammarbeid**
+
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
+knitr::include_graphics("drawio/tabell_14.2.png")
+```
+
+- Aktørene ønsker seg høyest mulig overskudd.
+
+---
+
+**Eksempel 3: Reklamekampanje**
+
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
+knitr::include_graphics("drawio/tabell_14.3.png")
+```
+
+- Aktørene ønsker seg høyest mulig overskudd.
 
 
-```{r, echo=F,eval=T}
-knitr::knit_exit()
+# Kapittel 15: Andre emner: arbeidsmarkedet 
+
+---
+
+## Litt om arbeidsmarkedet
+
+### Et arbeidsmarked med fullkommen konkurranse (15.2)
+
+- Etterspørselsfunksjonen i arbeidsmarkedet framkommer ved å summere de ulike bedrifters etterspøresl på de ulike lønnsnivåene.
+- Tilbudsfunksjonen i arbeidsmarkedet framkommer ved å summere de ulike husholdningers tilbud på ulike lønnsnivåene..
+- Lønnsdannelsen under fullkommen konkurranse skjer i skjæringsinspunktet mellom tilbuds- og etterspørselsfunksjonen, hvor markedsmekanismen for å komme dette er analogt med hva som gjelder i produktmarkedet.  
+- Endring i andre faktorer enn lønn som påvirker enten etterspørsel- eller tilbudsfunksjonen vil påkalle skift i kurvene.
+---
+
+**Øvelse om arbeidsmarkedet**
+
+1. Vis ved hjelp av en figur markedslikvekten i dette markedet.
+1. Hva skjer i dette markedet dersom det innføres en minstelønn (vis og forklar)
+1. Vise hva som skjer i dette diagrammet dersom husholdningens inntekt øker?
+
+**Svar:**
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+#ov_arbm <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/oppg_arbm.png')
+#knitr::include_graphics(ov_arbm)
+```
+
+# Kapittel 18: Andre emner: Tilpasninger over tid
+
+`r paste("Oppdatert:",Sys.Date())`
+
+---
+
+## Konsumentens fordeling av konsum over tid
+
+**Den intertemporale nyttefunksjonen er gitt ved**
+
+$$
+U = u(c_1,c_2) \text{ hvor } u'(c_1) \text{ og } u'(c_2) >0
+$$
+
+Hvor $c_1$ er konsum i periode 1, og $c_2$ er konsum i periode 2
+
+```{r, echo=FALSE, out.width="35%", fig.cap=""}
+knitr::include_graphics("drawio/int_nytte.png")
+```
+
+---
+
+**Den intertemporale budsjettlinjen**
+
+- Starter med å la utgifter i de to periodene være gitt ved
+$$
+c_1=p_1x_1 \text{ og } c_2=p_2x_2
+$$
+
+- Videre lar vi de to prisene være uendret mellom de to perioden:
+$$
+p_1=p_2=1 \Leftrightarrow  p_1/p_2 = 1
+$$
+
+- Inntektene i de to periodene er gitt ved hhv. $m_1$ og $m_2$
+	- I første periode vil vi derfor ha at sparing ( $s_1$ ) er gitt som
+$$
+s_1 = m_1 -c_1 \\
+$$
+	- Mens utgiftene i periode 2 er gitt ved
+$$
+c_2 = m_2 + s_1(1+i) \\
+$$
+
+Hvor $i$ utgjør rentenivået
+
+---
+
+- Vurdert fra periode 1, kan den intertemporale budsjettbetingelsen skrives som 
+$$
+c_1(1+i)+ c_2 = m_1(1+i)+ m_2  \\
+$$ 
+
+- Mens vurdert fra periode 2, kan skrives som 
+$$
+c_1+ c_2/(1+i) = m_1+ m_2/(1+i)  
+$$
+
+```{r, echo=FALSE, out.width="35%", fig.cap=""}
+knitr::include_graphics("drawio/int_budsj.png")
+```
+
+---
+
+### Optimal tilpasning over tid
+
+\begin{equation*}
+\text{ Maks } U = u(c_1,c_2) \text{ gitt at } c_1(1+i)+ c_2 = m_1(1+i)+ m_2 
+\end{equation*}
+
+Hvor løsningen er gitt ved:
+
+\begin{equation*}
+MSB = \frac{u'(c_1)}{u'(c_2)} = (1+i) \\
+c_1(1+i)+ c_2 = m_1(1+i)+ m_2 
+\end{equation*}
+
+```{r, echo=FALSE, out.width="55%", fig.cap=""}
+knitr::include_graphics("drawio/opt_tilpasning.png")
+```
+
+---
+
+**Komparativ statikk: Renteøkning**
+
+```{r, echo=FALSE, out.width="55%", fig.cap=""}
+knitr::include_graphics("drawio/int_tilpasning_renteokning.png")
+```
+
+- Utolmodig husholding: Periode 1, inntekt og subseffekt går samme vei i periode 1 (negativ)
+- Tålmodig husholding: Periode 2, inntekt og subseffekt går samme vei i periode 2 (positiv)
+
+---
+
+**Komparativ statikk: Nedgang i framtidig inntekt**
+
+```{r, echo=FALSE, out.width="55%", fig.cap=""}
+knitr::include_graphics("drawio/int_tilpasning_inntnedgang.png")
 ```
 
 
@@ -3124,198 +3288,10 @@ Informasjonsfordelingen mellom aktøren er skjev.
   - Ufullstendig informasjon om egenskapene til gode
   - Mangelfull prisinformasjon
   
----
 
-
-# Kapittel 14: Andre emner: Litt spillteori 
-
-`r paste("Oppdatert:",Sys.Date())`
-
----
-
-### Spillteori 
-
-Situasjoner der aktørene påvirker hverandres tilpasningsforhold.
-
-**To sentrale konsepter**
-
-- *Nash-likevekter*
-> En situasjon hvor ingen aktør har interesse av å endre egen tilpasning, gitt den andres tilpasning 
-- *Dominante strategier*
-> Dersom aktøren kommer best ut ved å velge denne strategien uavhengig av hva den andre aktøren gjør. 
-
----
-
-**Eksempel 1: Fangens dilemma**
-
-```{r, echo=FALSE, out.width="100%", fig.cap=""}
-knitr::include_graphics("drawio/tabell_14.1.png")
-```
-
-- Aktørene ønsker seg lavest mulig fengselsstraff.
-
----
-
-**Eksempel 2: Kartellsammarbeid**
-
-```{r, echo=FALSE, out.width="100%", fig.cap=""}
-knitr::include_graphics("drawio/tabell_14.2.png")
-```
-
-- Aktørene ønsker seg høyest mulig overskudd.
-
----
-
-**Eksempel 3: Reklamekampanje**
-
-```{r, echo=FALSE, out.width="100%", fig.cap=""}
-knitr::include_graphics("drawio/tabell_14.3.png")
-```
-
-- Aktørene ønsker seg høyest mulig overskudd.
-
----
-
-## Appendiks (diagramark benyttet under forelesning)
-
-```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics("drawio/spillteori.png")
-```
-
----
-
-class: inverse, center, middle
-
-# Kapittel 15: Andre emner: arbeidsmarkedet 
-
-`r paste("Oppdatert:",Sys.Date())`
-
----
-
-## Litt om arbeidsmarkedet
-
-### Et arbeidsmarked med fullkommen konkurranse (15.2)
-
-- Etterspørselsfunksjonen i arbeidsmarkedet framkommer ved å summere de ulike bedrifters etterspøresl på de ulike lønnsnivåene.
-- Tilbudsfunksjonen i arbeidsmarkedet framkommer ved å summere de ulike husholdningers tilbud på ulike lønnsnivåene..
-- Lønnsdannelsen under fullkommen konkurranse skjer i skjæringsinspunktet mellom tilbuds- og etterspørselsfunksjonen, hvor markedsmekanismen for å komme dette er analogt med hva som gjelder i produktmarkedet.  
-- Endring i andre faktorer enn lønn som påvirker enten etterspørsel- eller tilbudsfunksjonen vil påkalle skift i kurvene.
----
-
-**Øvelse om arbeidsmarkedet**
-
-1. Vis ved hjelp av en figur markedslikvekten i dette markedet.
-1. Hva skjer i dette markedet dersom det innføres en minstelønn (vis og forklar)
-1. Vise hva som skjer i dette diagrammet dersom husholdningens inntekt øker?
-
-**Svar:**
-
-```{r, echo=FALSE, out.width="65%", fig.cap=""}
-#ov_arbm <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/oppg_arbm.png')
-#knitr::include_graphics(ov_arbm)
-```
-
----
-
-class: inverse, center, middle
-
-# Kapittel 15: Andre emner: Tilpasninger over tid
-
-`r paste("Oppdatert:",Sys.Date())`
-
----
-
-## Konsumentens fordeling av konsum over tid
-
-**Den intertemporale nyttefunksjonen er gitt ved**
-
-$$
-U = u(c_1,c_2) \text{ hvor } u'(c_1) \text{ og } u'(c_2) >0
-$$
-
-Hvor $c_1$ er konsum i periode 1, og $c_2$ er konsum i periode 2
-
-```{r, echo=FALSE, out.width="35%", fig.cap=""}
-knitr::include_graphics("drawio/int_nytte.png")
-```
-
----
-
-**Den intertemporale budsjettlinjen**
-
-- Starter med å la utgifter i de to periodene være gitt ved
-$$
-c_1=p_1x_1 \text{ og } c_2=p_2x_2
-$$
-
-- Videre lar vi de to prisene være uendret mellom de to perioden:
-$$
-p_1=p_2=1 \Leftrightarrow  p_1/p_2 = 1
-$$
-
-- Inntektene i de to periodene er gitt ved hhv. $m_1$ og $m_2$
-	- I første periode vil vi derfor ha at sparing ( $s_1$ ) er gitt som
-$$
-s_1 = m_1 -c_1 \\
-$$
-	- Mens utgiftene i periode 2 er gitt ved
-$$
-c_2 = m_2 + s_1(1+i) \\
-$$
-
-Hvor $i$ utgjør rentenivået
-
----
-
-- Vurdert fra periode 1, kan den intertemporale budsjettbetingelsen skrives som 
-$$
-c_1(1+i)+ c_2 = m_1(1+i)+ m_2  \\
-$$ 
-
-- Mens vurdert fra periode 2, kan skrives som 
-$$
-c_1+ c_2/(1+i) = m_1+ m_2/(1+i)  
-$$
-
-```{r, echo=FALSE, out.width="35%", fig.cap=""}
-knitr::include_graphics("drawio/int_budsj.png")
-```
-
----
-
-### Optimal tilpasning over tid
-
-\begin{equation*}
-\text{ Maks } U = u(c_1,c_2) \text{ gitt at } c_1(1+i)+ c_2 = m_1(1+i)+ m_2 
-\end{equation*}
-
-Hvor løsningen er gitt ved:
-
-\begin{equation*}
-MSB = \frac{u'(c_1)}{u'(c_2)} = (1+i) \\
-c_1(1+i)+ c_2 = m_1(1+i)+ m_2 
-\end{equation*}
-
-```{r, echo=FALSE, out.width="55%", fig.cap=""}
-knitr::include_graphics("drawio/opt_tilpasning.png")
-```
-
----
-
-**Komparativ statikk: Renteøkning**
-
-```{r, echo=FALSE, out.width="55%", fig.cap=""}
-knitr::include_graphics("drawio/int_tilpasning_renteokning.png")
-```
-
-- Utolmodig husholding: Periode 1, inntekt og subseffekt går samme vei i periode 1 (negativ)
-- Tålmodig husholding: Periode 2, inntekt og subseffekt går samme vei i periode 2 (positiv)
-
-**Komparativ statikk: Nedgang i framtidig inntekt**
-
-```{r, echo=FALSE, out.width="55%", fig.cap=""}
-knitr::include_graphics("drawio/int_tilpasning_inntnedgang.png")
-```
 
 
 ::: 
+
+
+
