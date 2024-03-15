@@ -60,8 +60,21 @@ Kommer mer senere
 
 ::: {.content-visible when-profile="internal"}
 
+# Oppgave 1: Interaksjon (selvvalgt)
 
-# Oppgave 2: Prisdiskriminering (HVL 202X)
+## Oppgave 2
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+knitr::include_graphics("bilder/kap14.png")
+```
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+knitr::include_graphics("bilder/kap14_I_losn.png")
+```
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+knitr::include_graphics("bilder/kap14_II_losn.png")
+```
+
+
+# Oppgave 3: Prisdiskriminering (HVL 202X)
 a. Man snakker gjerne om tre ulike former for prisdiskriminering. Gjør kort rede for hvorfor prisdiskriminering av tredje orden vil skille seg fra monopol uten prisdiskriminering.
 <div class="sol">
 *Prisdiskriminering av tredje orden* har vi når en produsent kan selge et gode til forskjellige priser til ulike grupper av konsumenter. Et typisk eksempel på tredjeordens prisdiskriminering kan være et busselskap som tar ulik pris fra forskjellige kundegrupper (voksen-, barne-, student- og honnørpriser). Det er tre betingelser som må være oppfylt for at tredje ordens prisdiskriminering kan gjennomføres: 
@@ -74,40 +87,6 @@ a. Man snakker gjerne om tre ulike former for prisdiskriminering. Gjør kort red
 <br>
 Forskjellen er at ved tredjeordens prisdiskriminering deler produsenten selv markedet inn i en rekke delmonopolmarkeder; ett delmarked for hver kundegruppe og i hvert av disse delmonopolmarkedene tilpasser han seg slik at grenseinntekt er lik grensekostnad. Dette innebærer således at han tar høyest pris og tilbyr færrest varer i de delmarkeder der etterspørselen er mest uelastisk (minst prisfølsom). Da henter han ut maksimal monopolgevinst. Ved monopol uten prisdiskriminering har ikke produsenten mulighet til å dele kundegruppene inn etter grad av etterspørseIselastisitet, han må derimot ta samme pris fra alle kunder. Dermed vil monopolgevinsten uten prisdiskriminering, under ellers like forhold, bli mindre enn med prisdiskriminering.   
 </div>
-b. Definer hva som menes med positive eksternaliteter. Hvordan kan myndighetene korrigere for markedssvikten som følger av dette?
-<div class="sol">
-Er bivirkninger av andres konsum eller produksjon som den som forårsaker bivirkninger ikke tar hensyn til når man skal fatte beslutningen om hvor mye man skal produsere eller konsumere. Har den utilsiktede effekten en positiv virkning på en annen part, har vi å gjør med positive eksternaliteter. Det er effektivitetstap ved en positiv eksternalitet i form av at det blir produsert for lite av gode. Myndighetene kan korrigere for manglende produksjon ved innføring av et subsidie.
-</div>
-
-# Oppgave 3: Kollektive goder (HVL, 202)
-
-[Kollektive goder]{.underline}
-
-a)  Hva er forskjellen mellom et kollektivt og et privat gode?
-<div class="sol">
-Svar
-</div>
-
-b)  Anta at produsenten av et kollektivt gode har denne
-    grensekostnadsfunksjonen: $C'(X) = 225$. Legg videre til grunn at
-    det er to konsumenter av godet og at konsument 1 har følgende
-    marginale betalingsvillighet:
-- Marginal betalingsvillighet for den 1. enheten: 125 kr.
-- Marginal betalingsvillighet for den 2. enheten: 100 kr.
-- Marginal betalingsvillighet for den 3. enheten: 80 kr.
-
-Konsument 2 har følgende marginale betalingsvillighet:
-- Marginal betalingsvillighet for den 1. enheten: 150 kr.
-- Marginal betalingsvillighet for den 2. enheten: 125 kr.
-- Marginal betalingsvillighet for den 3. enheten: 100 kr.
-
-Oppgave: Finn den samfunnsøkonomisk effektive produksjonen av dette
-godet.
-<div class="sol">
-Svar
-</div>
-
-
 
 :::
 
