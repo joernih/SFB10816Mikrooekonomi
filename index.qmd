@@ -39,8 +39,18 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 
 **Siste gang oppdatert: `r as.Date(Sys.time())`**
 
+::: {.content-visible when-profile="internal"}
+
+<a href="abc.pdf">pdfabc</a>
+
+:::
+
+
 ```{r, echo=F}
 knitr::knit_exit()
 ```
+
+
+
 
 

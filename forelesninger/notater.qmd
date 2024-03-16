@@ -3156,6 +3156,128 @@ knitr::include_graphics("drawio/int_tilpasning_inntnedgang.png")
 
 # Kapittel 13: Andre emner: Velferd og markedssvikt
 
+---
+
+## Effektivitet og velferdsøkonomi
+
+- **Allokering**: 
+	- Forteller oss hvordan ressursene blir fordelt
+
+- **Paretoeffektivitet:**
+	- Kriterium for samfunnsøkonomisk effektivitet
+
+---
+
+- Definisjon av *paretoforbedring*:
+
+> En endring i allokering av gode som fører til at noen får det bedre (økt nytte) uten at andre får det værre (redusert nytte) .
+
+
+- Definisjon av *paretoeffektivitet*
+
+> En allokering er *paretoeffektiv* dersom det for a) gitt ressurser, b) teknologi og c)
+organisatorisk kunnskapsnivå ikke er mulig å frembringe en annen måte å allokere ressursene på som gjør at noen konsumenter får det bedre (økt nytte) uten at andre konsumenter får det værre (redusert nytte).
+
+- For å få dette til må tre hovedkategorier være oppfylt:
+	1. *Produksjonseffektivitet*: $MTSB$ være like for alle produsenter
+	1. *Bytteeffektivitet*: $MSB$ skal være lik for alle konsumenter
+	1. *Sammensetningseffektivitet*: $MTSB=MSB$
+
+---
+
+### Produksjonseffektivitet for bedrift 1 og 2 med bruk av arbeidskraft (N) og kapial (K)
+
+.pull-left[
+
+Produksjonseffektivitet:<br>
+$MTSB_{1,N,K}=MTSB_{2,N,K}=\overline{MTSB}$
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics(c("drawio/produ_eff.png","drawio/produ_eff.png")[1])
+```
+]
+.pull-right[
+
+Markedsøkonomi:<br> 
+$\overline{MTSB}=\frac{w}{r}$
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics(c("drawio/produ_eff.png","drawio/produ_eff_m.png")[2])
+```
+]
+---
+
+### Bytteeffektivitet for husholning A og B med bruk av konsumgode 1 ( $C_A$ ) og konsumgode 2 ( $C_B$ )
+
+.pull-left[
+
+Bytteeffektivitet:<br> 
+$MSB_{A,1,2}=MSB_{B,1,2}=\overline{MSB}$
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics(c("drawio/bytte_eff.png","drawio/bytte_eff_m.png")[1])
+```
+]
+.pull-right[
+
+Markedsøkonomi:<br> 
+$\overline{MSB}=\frac{P_1}{P_2}$
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics(c("drawio/bytte_eff.png","drawio/bytte_eff_m.png")[2])
+```
+]
+
+---
+
+### Sammensetningseffektivitet (av produksjon og konsumgodet)
+
+.pull-left[
+
+Sammensetningseffektivitet:<br> 
+$\overline{MSB}=\overline{MTB}=\frac{C'_1}{C'_2}$
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics(c("drawio/samm_eff.png","drawio/samm_eff_m.png")[1])
+```
+]
+.pull-right[
+
+Markedsøkonomi:<br> 
+$\overline{MSB}=\overline{MTB}=\frac{C'_1}{C'_2}=\frac{P_1}{P_2}$
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics(c("drawio/samm_eff.png","drawio/samm_eff_m.png")[2])
+```
+]
+
+---
+
+**Velferdsøkonomiens første hovedteorem:**
+
+> Frikonkurranselikevekten er paretooptimal/paretoeffektiv.
+
+[Israeli company converts passenger planes to cargo](https://www.i24news.tv/en/news/israel/economy/1645636837-israeli-company-converts-passenger-planes-to-cargo)
+
+
+**Velferdsøkonomiens andre hovedteorem:**
+
+> Ved å foreta passende endringer av intialbeholdningene, kan enhver paretfordeling av ressursene kan realiseres som en likevekt under fullkommen konkurranse.
+
+---
+
+## Markedssvikt
+
+Avvik fra forutsetningene om fullkommen konkurranse
+
+Vi skal se nærmere på fem årsaker:
+
+1. Ufullkommen konkurranse og anvendelse av markedsmakt (10-12)
+1. Eksterne virkninger
+1. Kollektive goder
+1. Formyndergoder
+1. Ufullstendig informasjon
+
 
 ---
 
@@ -3292,6 +3414,12 @@ Informasjonsfordelingen mellom aktøren er skjev.
 
 
 ::: 
+
+## Appendiks (Pandemihåndteringen under Covid-19)
+
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
+knitr::include_graphics("drawio/cost_ben.jpeg")
+```
 
 
 
