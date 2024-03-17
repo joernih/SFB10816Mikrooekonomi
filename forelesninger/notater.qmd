@@ -2999,6 +2999,8 @@ Situasjoner der aktørene påvirker hverandres tilpasningsforhold.
 **Eksempel 1: Fangens dilemma**
 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
+#| label: figur14.1
+#| fig-cap: "Figur 14.1"
 knitr::include_graphics("drawio/tabell_14.1.png")
 ```
 
@@ -3009,6 +3011,8 @@ knitr::include_graphics("drawio/tabell_14.1.png")
 **Eksempel 2: Kartellsammarbeid**
 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
+#| label: figur14.2
+#| fig-cap: "Figur 14.2"
 knitr::include_graphics("drawio/tabell_14.2.png")
 ```
 
@@ -3019,6 +3023,8 @@ knitr::include_graphics("drawio/tabell_14.2.png")
 **Eksempel 3: Reklamekampanje**
 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
+#| label: figur14.3
+#| fig-cap: "Figur 14.3"
 knitr::include_graphics("drawio/tabell_14.3.png")
 ```
 
@@ -3048,6 +3054,8 @@ knitr::include_graphics("drawio/tabell_14.3.png")
 **Svar:**
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
+#| label: figur15.1
+#| fig-cap: "Figur 15.1"
 #ov_arbm <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/oppg_arbm.png')
 #knitr::include_graphics(ov_arbm)
 ```
@@ -3069,6 +3077,8 @@ $$
 Hvor $c_1$ er konsum i periode 1, og $c_2$ er konsum i periode 2
 
 ```{r, echo=FALSE, out.width="35%", fig.cap=""}
+#| label: figur18.1
+#| fig-cap: "Figur 18.1"
 knitr::include_graphics("drawio/int_nytte.png")
 ```
 
@@ -3111,6 +3121,8 @@ c_1+ c_2/(1+i) = m_1+ m_2/(1+i)
 $$
 
 ```{r, echo=FALSE, out.width="35%", fig.cap=""}
+#| label: figur18.2
+#| fig-cap: "Figur 18.2"
 knitr::include_graphics("drawio/int_budsj.png")
 ```
 
@@ -3130,6 +3142,8 @@ c_1(1+i)+ c_2 = m_1(1+i)+ m_2
 \end{equation*}
 
 ```{r, echo=FALSE, out.width="55%", fig.cap=""}
+#| label: figur18.3
+#| fig-cap: "Figur 18.3"
 knitr::include_graphics("drawio/opt_tilpasning.png")
 ```
 
@@ -3138,6 +3152,8 @@ knitr::include_graphics("drawio/opt_tilpasning.png")
 **Komparativ statikk: Renteøkning**
 
 ```{r, echo=FALSE, out.width="55%", fig.cap=""}
+#| label: figur18.4
+#| fig-cap: "Figur 18.4"
 knitr::include_graphics("drawio/int_tilpasning_renteokning.png")
 ```
 
@@ -3149,6 +3165,8 @@ knitr::include_graphics("drawio/int_tilpasning_renteokning.png")
 **Komparativ statikk: Nedgang i framtidig inntekt**
 
 ```{r, echo=FALSE, out.width="55%", fig.cap=""}
+#| label: figur18.5
+#| fig-cap: "Figur 18.5"
 knitr::include_graphics("drawio/int_tilpasning_inntnedgang.png")
 ```
 
@@ -3187,69 +3205,88 @@ organisatorisk kunnskapsnivå ikke er mulig å frembringe en annen måte å allo
 
 ### Produksjonseffektivitet for bedrift 1 og 2 med bruk av arbeidskraft (N) og kapial (K)
 
-.pull-left[
+:::: {.columns}
 
+::: {.column width="50%"}
 Produksjonseffektivitet:<br>
 $MTSB_{1,N,K}=MTSB_{2,N,K}=\overline{MTSB}$
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
+#| label: figur13.1
+#| fig-cap: "Figur 13.1"
 knitr::include_graphics(c("drawio/produ_eff.png","drawio/produ_eff.png")[1])
 ```
-]
-.pull-right[
+:::
 
+::: {.column width="50%"}
 Markedsøkonomi:<br> 
 $\overline{MTSB}=\frac{w}{r}$
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
+#| label: figur13.2
+#| fig-cap: "Figur 13.2"
 knitr::include_graphics(c("drawio/produ_eff.png","drawio/produ_eff_m.png")[2])
 ```
-]
+:::
+
+::::
+
 ---
 
 ### Bytteeffektivitet for husholning A og B med bruk av konsumgode 1 ( $C_A$ ) og konsumgode 2 ( $C_B$ )
 
-.pull-left[
-
+:::: {.columns}
+::: {.column width="50%"}
 Bytteeffektivitet:<br> 
 $MSB_{A,1,2}=MSB_{B,1,2}=\overline{MSB}$
-
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
+#| label: figur13.3
+#| fig-cap: "Figur 13.3"
 knitr::include_graphics(c("drawio/bytte_eff.png","drawio/bytte_eff_m.png")[1])
 ```
-]
-.pull-right[
-
+:::
+::: {.column width="50%"}
 Markedsøkonomi:<br> 
 $\overline{MSB}=\frac{P_1}{P_2}$
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
+#| label: figur13.4
+#| fig-cap: "Figur 13.4"
 knitr::include_graphics(c("drawio/bytte_eff.png","drawio/bytte_eff_m.png")[2])
 ```
-]
+:::
+::::
+
+
 
 ---
 
 ### Sammensetningseffektivitet (av produksjon og konsumgodet)
+:::: {.columns}
 
-.pull-left[
-
+::: {.column width="50%"}
 Sammensetningseffektivitet:<br> 
 $\overline{MSB}=\overline{MTB}=\frac{C'_1}{C'_2}$
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
+#| label: figur13.5
+#| fig-cap: "Figur 13.5"
 knitr::include_graphics(c("drawio/samm_eff.png","drawio/samm_eff_m.png")[1])
 ```
-]
-.pull-right[
+:::
 
+::: {.column width="50%"}
 Markedsøkonomi:<br> 
 $\overline{MSB}=\overline{MTB}=\frac{C'_1}{C'_2}=\frac{P_1}{P_2}$
 
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
+#| label: figur13.6
+#| fig-cap: "Figur 13.6"
 knitr::include_graphics(c("drawio/samm_eff.png","drawio/samm_eff_m.png")[2])
 ```
-]
+:::
+
+::::
 
 ---
 
@@ -3311,6 +3348,8 @@ Vi skal se nærmere på fem årsaker:
 Er *bivirkninger* av andres konsum eller produksjon som den som forårsaker bivirkninger ikke tar hensyn til når man skal fatte beslutningen om hvor mye man skal produsere eller konsumere.
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
+#| label: figur13.7
+#| fig-cap: "Figur 13.7"
 knitr::include_graphics(c("drawio/eks_ill.png","drawio/eks_dia.png"))
 ```
 
@@ -3319,12 +3358,16 @@ knitr::include_graphics(c("drawio/eks_ill.png","drawio/eks_dia.png"))
 **Negative eksternaliteter**
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
+#| label: figur13.8
+#| fig-cap: "Figur 13.8"
 knitr::include_graphics("drawio/eks_neg.png")
 ```
 
 **Positive eksternaliteter**
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
+#| label: figur13.9
+#| fig-cap: "Figur 13.9"
 knitr::include_graphics("drawio/eks_pos.png")
 ```
 
@@ -3335,10 +3378,14 @@ knitr::include_graphics("drawio/eks_pos.png")
 - Offentlige myndigheter
   - **Avgifter og subsidier**<br>
 ```{r, echo=FALSE, out.width="35%", fig.cap=""}
+#| label: figur13.10
+#| fig-cap: "Figur 13.10"
 knitr::include_graphics(c("drawio/eks_avg.png"))
 ```
   - **Direkte reguleringer**<br>
 ```{r, echo=FALSE, out.width="35%", fig.cap=""}
+#| label: figur13.11
+#| fig-cap: "Figur 13.11"
 knitr::include_graphics(c("drawio/eks_kvo.png"))
 ```
 
@@ -3355,6 +3402,8 @@ knitr::include_graphics(c("drawio/eks_kvo.png"))
     	- Det må kunne tildeles klare definerte eiendomsrettigheter
 
 ```{r, echo=FALSE, out.width="35%", fig.cap=""}
+#| label: figur13.12
+#| fig-cap: "Figur 13.12"
 knitr::include_graphics(c("drawio/eks_int.png"))
 ```
 
@@ -3374,6 +3423,8 @@ knitr::include_graphics(c("drawio/eks_int.png"))
 - Det offentlige blir produsere helt opp til der hvor *summen* av den marginale betalingsvilligheten er lik grensekostnaden.
 
 ```{r, echo=FALSE, out.width="25%", fig.cap=""}
+#| label: figur13.13
+#| fig-cap: "Figur 13.13"
 knitr::include_graphics(c("drawio/eks_mbv.png"))
 ```
 

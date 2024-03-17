@@ -36,7 +36,7 @@ website:
           - text: "Notatblokk for alle notater (betaversjon)"
             href: "forelesninger/allenotater.qmd"
           - text: "Figurpakke"
-            href: "https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/forelesninger/drawio/alle.pdf"
+            href: "forelesninger/drawio/alle.pdf"
       - text: "Oppgaver"
         menu:
           - text: "Anbefalte oppgaver"
