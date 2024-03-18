@@ -2958,7 +2958,6 @@ knitr::include_graphics(a_grads)
 - Produsent selger ett gode til forskjellige priser ovenfor nærmest avgrensede konsumenter eller konsumentgrupper. 
 - Et typisk eksempel på tredjegrads prisdiskriminering kan være et busselskap som tar ulik pris fra forskjellige grupper (voksen-, barne-, student- og honnørpriser).
 
-
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
 #| label: figur12.3
 #| fig-cap: "Figur 12.3"
@@ -2998,7 +2997,7 @@ Situasjoner der aktørene påvirker hverandres tilpasningsforhold.
 
 **Eksempel 1: Fangens dilemma**
 
-```{r, echo=FALSE, out.width="100%", fig.cap=""}
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
 #| label: figur14.1
 #| fig-cap: "Figur 14.1"
 knitr::include_graphics("drawio/tabell_14.1.png")
@@ -3010,7 +3009,7 @@ knitr::include_graphics("drawio/tabell_14.1.png")
 
 **Eksempel 2: Kartellsammarbeid**
 
-```{r, echo=FALSE, out.width="100%", fig.cap=""}
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
 #| label: figur14.2
 #| fig-cap: "Figur 14.2"
 knitr::include_graphics("drawio/tabell_14.2.png")
@@ -3056,8 +3055,8 @@ knitr::include_graphics("drawio/tabell_14.3.png")
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
 #| label: figur15.1
 #| fig-cap: "Figur 15.1"
-#ov_arbm <- paste0(rprojroot::find_rstudio_root_file(),'/inst/forelesningsnotater/drawio/oppg_arbm.png')
-#knitr::include_graphics(ov_arbm)
+# ov_arbm <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/oppg_arbm.png')
+# knitr::include_graphics(ov_arbm)
 ```
 
 # Kapittel 18: Andre emner: Tilpasninger over tid
@@ -3090,12 +3089,10 @@ knitr::include_graphics("drawio/int_nytte.png")
 $$
 c_1=p_1x_1 \text{ og } c_2=p_2x_2
 $$
-
 - Videre lar vi de to prisene være uendret mellom de to perioden:
 $$
 p_1=p_2=1 \Leftrightarrow  p_1/p_2 = 1
 $$
-
 - Inntektene i de to periodene er gitt ved hhv. $m_1$ og $m_2$
 	- I første periode vil vi derfor ha at sparing ( $s_1$ ) er gitt som
 $$
@@ -3105,7 +3102,6 @@ $$
 $$
 c_2 = m_2 + s_1(1+i) \\
 $$
-
 Hvor $i$ utgjør rentenivået
 
 ---
@@ -3125,6 +3121,7 @@ $$
 #| fig-cap: "Figur 18.2"
 knitr::include_graphics("drawio/int_budsj.png")
 ```
+
 
 ---
 
@@ -3169,7 +3166,6 @@ knitr::include_graphics("drawio/int_tilpasning_renteokning.png")
 #| fig-cap: "Figur 18.5"
 knitr::include_graphics("drawio/int_tilpasning_inntnedgang.png")
 ```
-
 
 
 # Kapittel 13: Andre emner: Velferd og markedssvikt
@@ -3256,7 +3252,6 @@ knitr::include_graphics(c("drawio/bytte_eff.png","drawio/bytte_eff_m.png")[2])
 ```
 :::
 ::::
-
 
 
 ---
@@ -3347,11 +3342,12 @@ Vi skal se nærmere på fem årsaker:
 
 Er *bivirkninger* av andres konsum eller produksjon som den som forårsaker bivirkninger ikke tar hensyn til når man skal fatte beslutningen om hvor mye man skal produsere eller konsumere.
 
-```{r, echo=FALSE, out.width="45%", fig.cap=""}
+```{r, echo=FALSE, out.width="35%", fig.cap=""}
 #| label: figur13.7
 #| fig-cap: "Figur 13.7"
-knitr::include_graphics(c("drawio/eks_ill.png","drawio/eks_dia.png"))
+knitr::include_graphics(c("drawio/eks_ill.png","drawio/eks_dia.png")[2])
 ```
+
 
 ---
 
@@ -3377,13 +3373,13 @@ knitr::include_graphics("drawio/eks_pos.png")
 
 - Offentlige myndigheter
   - **Avgifter og subsidier**<br>
-```{r, echo=FALSE, out.width="35%", fig.cap=""}
+```{r, echo=FALSE, out.height="45%", fig.cap=""}
 #| label: figur13.10
 #| fig-cap: "Figur 13.10"
 knitr::include_graphics(c("drawio/eks_avg.png"))
 ```
   - **Direkte reguleringer**<br>
-```{r, echo=FALSE, out.width="35%", fig.cap=""}
+```{r, echo=FALSE, out.height="45%", fig.cap=""}
 #| label: figur13.11
 #| fig-cap: "Figur 13.11"
 knitr::include_graphics(c("drawio/eks_kvo.png"))
@@ -3461,9 +3457,6 @@ Informasjonsfordelingen mellom aktøren er skjev.
   - Ufullstendig informasjon om egenskapene til gode
   - Mangelfull prisinformasjon
   
-
-
-
 ::: 
 
 ## Appendiks (Pandemihåndteringen under Covid-19)
