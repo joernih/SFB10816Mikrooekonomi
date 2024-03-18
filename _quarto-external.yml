@@ -30,8 +30,12 @@ website:
             href: "forelesninger/notater.html#/kapittel-10-markedsteori-ufullkommen-konkurranse---monopol"
           - text: "Forelesning 9: Ufullkommen konkurranse - monopolistisk konkurranse"
             href: "forelesninger/notater.html#/kapittel-11-ufullkommen-konkurranse---monopolistisk-konkurranse"
+          - text: "Forelesning 10: Andre emner: Prisdiskriminering, Litt spillteori, Arbeidsmarkedet og Tilpasninger over tid"
+            href: "forelesninger/notater.html#/kapittel-14-andre-emner-litt-spillteori"
+          - text: "Forelesning 11: Velferd og markedssvikt"
+            #href: "forelesninger/notater.html#/kapittel-13-andre-emner-velferd-og-markedssvikt"
           - text: "Figurpakke"
-            href: "https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/forelesninger/drawio/alle.pdf"
+            href: "forelesninger/drawio/alle.pdf"
       - text: "Oppgaver"
         menu:
           - text: "Anbefalte oppgaver"

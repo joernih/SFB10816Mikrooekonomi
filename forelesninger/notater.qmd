@@ -2894,13 +2894,6 @@ knitr::include_graphics(monk_ls)
 
 
 
-
-
-
-
-::: {.content-visible when-profile="internal"}
-
-
 # Kapittel 12: Markedsteori: Ufullkommen konkurranse - prisdiskriminering
 
 
@@ -3166,6 +3159,8 @@ knitr::include_graphics("drawio/int_tilpasning_renteokning.png")
 #| fig-cap: "Figur 18.5"
 knitr::include_graphics("drawio/int_tilpasning_inntnedgang.png")
 ```
+
+::: {.content-visible when-profile="internal"}
 
 
 # Kapittel 13: Andre emner: Velferd og markedssvikt
