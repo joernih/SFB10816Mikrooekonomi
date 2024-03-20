@@ -1,7 +1,12 @@
 ---
 title: ""
+format: 
+  html:
+   theme: default
+  pdf:
+    toc: false
+    toc-depth: 3
 ---
-
 
 
 ```{r, echo=F, warning=F, message=F, eval=T, results='hide'}
@@ -17,13 +22,16 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 
 \newpage 
 
+
+
 ### Obligatorisk innleveringsoppgaver
 
 - Innleveringsfrist: **`r md$kursg$arbkinl`**.
   - [Canvas](https://hiof.instructure.com/courses/8577/assignments/38559)
-- Versjon 1.0
+- Versjon 1.1
 - Kan jobbe alene, eller levere som gruppe (bestemmer selv antallet, men utbytte av
   arbeidskravet vil nok være større ved en mindre gruppe)
+
 
 
 ```{r, echo=FALSE, results='asis',warning=F}

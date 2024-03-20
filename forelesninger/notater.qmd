@@ -2951,13 +2951,6 @@ knitr::include_graphics(a_grads)
 - Produsent selger ett gode til forskjellige priser ovenfor nærmest avgrensede konsumenter eller konsumentgrupper. 
 - Et typisk eksempel på tredjegrads prisdiskriminering kan være et busselskap som tar ulik pris fra forskjellige grupper (voksen-, barne-, student- og honnørpriser).
 
-```{r, echo=FALSE, out.width="45%", fig.cap=""}
-#| label: figur12.3
-#| fig-cap: "Figur 12.3"
-t_grads <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/3_grads.png')
-knitr::include_graphics(t_grads)
-```
-
 ---
 
 - Som vist i diagrammet nedenfor, konsumenten vil her oppnå større produsentoverskudd som monopolist ved avgrensning enn dersom en bare forholdt seg til én konsumentgruppe.
@@ -3099,12 +3092,12 @@ Hvor $i$ utgjør rentenivået
 
 ---
 
-- Vurdert fra periode 1, kan den intertemporale budsjettbetingelsen skrives som 
+- Vurdert fra periode 2, kan den intertemporale budsjettbetingelsen skrives som 
 $$
 c_1(1+i)+ c_2 = m_1(1+i)+ m_2  \\
 $$ 
 
-- Mens vurdert fra periode 2, kan skrives som 
+- Mens vurdert fra periode 1, kan skrives som 
 $$
 c_1+ c_2/(1+i) = m_1+ m_2/(1+i)  
 $$
@@ -3152,12 +3145,12 @@ knitr::include_graphics("drawio/int_tilpasning_renteokning.png")
 
 ---
 
-**Komparativ statikk: Nedgang i framtidig inntekt**
+**Komparativ statikk: Økning i framtidig inntekt**
 
 ```{r, echo=FALSE, out.width="55%", fig.cap=""}
 #| label: figur18.5
 #| fig-cap: "Figur 18.5"
-knitr::include_graphics("drawio/int_tilpasning_inntnedgang.png")
+knitr::include_graphics("drawio/int_tilpasning_inntokning.png")
 ```
 
 ::: {.content-visible when-profile="internal"}
@@ -3452,13 +3445,13 @@ Informasjonsfordelingen mellom aktøren er skjev.
   - Ufullstendig informasjon om egenskapene til gode
   - Mangelfull prisinformasjon
   
-::: 
-
 ## Appendiks (Pandemihåndteringen under Covid-19)
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 knitr::include_graphics("drawio/cost_ben.jpeg")
 ```
+::: 
+
 
 
 

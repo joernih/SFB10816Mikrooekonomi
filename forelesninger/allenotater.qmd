@@ -7,6 +7,7 @@ format:
     number-sections: false
 ---
 
+
 ```{r, echo=FALSE, results='asis',warning=F}
 pres <- paste0(rprojroot::find_rstudio_root_file(), '/forelesninger/notater.qmd')
 text <- readLines(pres)
