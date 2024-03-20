@@ -1,9 +1,14 @@
 ---
 title: "Seminar 5: Markedsteori: Fullkommen konkurranse, monopoltilpasning, prisdiskriminering og kollektive goder"
-format:
+format: 
   html:
     toc: true
+    toc-depth: 1
     css: css/OFF.css
+#  pdf:
+#    documentclass: scrreport
+#    toc: false
+#    css: css/OFF.css
 ---
 
 ```{r, echo=F}
@@ -54,8 +59,8 @@ e. Illustrer til slutt markedsløsningen ved fullkommen konkurranse og monopol v
 Svar
 </div>
 
-## Oppgave 2
-```{r, echo=FALSE, out.width="45%", fig.cap=""}
+# Oppgave 2
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
 knitr::include_graphics("bilder/kap14.png")
 ```
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
@@ -67,6 +72,12 @@ knitr::include_graphics("bilder/kap14.png")
 
 # Oppgave 3: Prisdiskriminering (HVL 202X)
 a. Man snakker gjerne om tre ulike former for prisdiskriminering. Gjør kort rede for hvorfor prisdiskriminering av tredje orden vil skille seg fra monopol uten prisdiskriminering.
+
+```{r, eval=T, echo=F}
+knitr::knit_exit()
+```
+
+
 <div class="sol">
 *Prisdiskriminering av tredje orden* har vi når en produsent kan selge et gode til forskjellige priser til ulike grupper av konsumenter. Et typisk eksempel på tredjeordens prisdiskriminering kan være et busselskap som tar ulik pris fra forskjellige kundegrupper (voksen-, barne-, student- og honnørpriser). Det er tre betingelser som må være oppfylt for at tredje ordens prisdiskriminering kan gjennomføres: 
 <ol>
