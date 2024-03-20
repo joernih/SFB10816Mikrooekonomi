@@ -25,7 +25,7 @@
     "href": "index.html#nyheter",
     "title": "Mikroøkonomi med anvendelser (våren 2024)",
     "section": "Nyheter",
-    "text": "Nyheter\n\nArbeidskrav er lagt ut\n\nMerk: I opppgave 2 f. skal det være at lønnskostnaden per arbeider er lik 1 2 kroner.\nInnleveringsfrist: 31.3 Canvas\n\nLøsningsforslag til seminar #4 har nå blitt publisert\n\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-03-18"
+    "text": "Nyheter\n\nArbeidskrav er lagt ut\n\nMerk: I opppgave 2 f. skal det være at lønnskostnaden per arbeider er lik 1 2 kroner.\nInnleveringsfrist: 31.3 Canvas\n\nOppgaver til seminar #5 har nå blitt publisert\n\n\nPensumbøker\n  Pensumbok (Andreassen, Bredesen og Thøgersen) \n\nOppgavebok (Andreassen, Bredesen og Thøgersen) \nSiste gang oppdatert: 2024-03-20"
   },
   {
     "objectID": "seminar/oppgaver/semoppg_6.html",
@@ -109,7 +109,7 @@
     "href": "seminar/oppgaver/semoppg_5.html",
     "title": "Seminar 5: Markedsteori: Fullkommen konkurranse, monopoltilpasning, prisdiskriminering og kollektive goder",
     "section": "",
-    "text": "Uke 14, ansvarlig: TAB Fredag kl. 12:15-14:00.\n\nOppgave 1: Markedsteori – fullkommen konkurranse og monopol (Eksamen HVL, høsten 2023)\nAnta at markedets etterspørsel etter et bestemt konsumgode er gitt ved: \\[\nX^D = 600 – 6p\n\\] der \\(p\\) er prisen på godet og \\(X^D\\) er markedets totale etterspørsel etter gode. Markedets tilbudskurve er gitt ved: \\[X^S = 2p\n\\] hvor \\(X^s\\) er antall tilbudte enheter av godet.\n\nFinn markedslikevekten (pris og kvantum) under fullkommen konkurranse.\n\nSvar\n\n\nAnta nå at det bare er én tilbyder i markedet som dermed har monopol. Den oppgitte tilbudskurven vil da gjenspeile monopolets grensekostnad som er lik \\(\\frac{1}{2}X^{s}\\).\n\nDersom denne aktøren ønsker å maksimere fortjenesten, hvor mye bør den produsere og hva blir prisen?\n\n\nSvar\n\nRegn ut og forklar effektivitetstapet (dødvektstapet) ved denne tilpasningen.\n\nSvar\n\nHva blir produsentoverskuddet? \n\nSvar\n\nIllustrer til slutt markedsløsningen ved fullkommen konkurranse og monopol ved bruk av to figurer.\n\nSvar\n\n\nKommer mer senere"
+    "text": "Uke 14, ansvarlig: TAB Fredag kl. 12:15-14:00."
   },
   {
     "objectID": "seminar/oppgaver/semoppg_1.html",
@@ -1678,5 +1678,12 @@
     "title": "Alle",
     "section": "Markedssvikt",
     "text": "Markedssvikt\nAvvik fra forutsetningene om fullkommen konkurranse\nVi skal se nærmere på fem årsaker:\n\nUfullkommen konkurranse og anvendelse av markedsmakt (10-12)\nEksterne virkninger\nKollektive goder\nFormyndergoder\nUfullstendig informasjon\n\n\n\nMarkedssvikt #1: Ufullkommen konkurranse og anvendelse av markedsmakt\n\nSe forelesning #8-#10 (kapittel 10-12)\n\n\nMulige løsninger\n\nLover og regler\nInstitusjoner og tilsyn\n\n\n\n\n\nMarkedssvikt #2:Eksterne virkninger\nEr bivirkninger av andres konsum eller produksjon som den som forårsaker bivirkninger ikke tar hensyn til når man skal fatte beslutningen om hvor mye man skal produsere eller konsumere.\n\n\n\n\n\nFigur 13.7\n\n\n\n\n\nNegative eksternaliteter\n\n\n\n\n\nFigur 13.8\n\n\n\n\nPositive eksternaliteter\n\n\n\n\n\nFigur 13.9\n\n\n\n\n\n\nMulige løsninger\n\nOffentlige myndigheter\n\nAvgifter og subsidier ::: {.cell} ::: {.cell-output-display}  ::: :::\nDirekte reguleringer ::: {.cell} ::: {.cell-output-display}  ::: :::\n\n\n\n\n\nMulige løsninger\n\nPrivate aktører\n\nInternalisering av eksternaliteten En av aktørene vokser seg så stor at den eksterne virkningene skjer innenfor den samme enheten.\nEtablere eiendomsrettigheter (Coase teorem) Forutsetter: - Aktørene kan gjennomføre forhandlinger/møter med lave transaksjonskostnader - Det må kunne tildeles klare definerte eiendomsrettigheter\n\n\n\n\n\n\n\nFigur 13.12\n\n\n\n\n\n\n\n\nMarkedssvikt #3: Kollektive goder\n\nKollektive goder er innen samfunnsøkonomi en betegnelse på goder som kjennetegnes ved at de er ikke-rivaliserende og ikke-ekskluderende\n\nIkke-rivaliserende: Godet blir ikke brukt opp\nIkke-ekskluerende: Man kan ikke stenge noen ute fra å benytte godet\nEks. Fyrtårn\n\n\n\n\nMatematisk finner man etterspørselen ved vertikal summering av den enkelte konsuments etterspørselsfunksjon.\nSiden man ikke kan stenge noen fra å benytte godet, er det vanskelig å ta betalt for bruken, noe som gjør at det blir produsert for lite i privat regi.\nDet offentlige blir produsere helt opp til der hvor summen av den marginale betalingsvilligheten er lik grensekostnaden.\n\n\n\n\n\n\nFigur 13.13\n\n\n\n\n\n\n\nMarkedssvikt #4: Formyndergoder\nForutsetning om konsumentsuverenitet gjelder ikke lengre.\n\nMerit goods\n\nFolk innser ikke den sanne nytten av godet\nDisse godene har vanligvis positive eksternaliteter\n\nMerit bads\nGodene skader forbrukeren\nDisse godene har vanligvis negative eksternaliteter\n\n\nMulige løsninger\n\nØkt skatt \\(\\Rightarrow\\) reduserer produksjonen\nRedusert skatt \\(\\Rightarrow\\) øker produksjonen\n\n\n\n\n\nMarkedssvikt #5: Ufullstendig informasjon\nTo typer ufullstendig informasjon\n\nAssymetrisk informasjon: Informasjonsfordelingen mellom aktøren er skjev.\nUfullstendig informasjon som påviker konsumentens beslutningsgrunnlag\n\n\nMangelfull informasjon om goders eksistens\nUfullstendig informasjon om egenskapene til gode\nMangelfull prisinformasjon\n\n:::"
+  },
+  {
+    "objectID": "seminar/oppgaver/semoppg_5.html#oppgave-2",
+    "href": "seminar/oppgaver/semoppg_5.html#oppgave-2",
+    "title": "Seminar 5: Markedsteori: Fullkommen konkurranse, monopoltilpasning, prisdiskriminering og kollektive goder",
+    "section": "Oppgave 2",
+    "text": "Oppgave 2"
   }
 ]
