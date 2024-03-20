@@ -3041,8 +3041,8 @@ knitr::include_graphics("drawio/tabell_14.3.png")
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
 #| label: figur15.1
 #| fig-cap: "Figur 15.1"
-# ov_arbm <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/oppg_arbm.png')
-# knitr::include_graphics(ov_arbm)
+ov_arbm <- paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/drawio/oppg_arbm.png')
+knitr::include_graphics(ov_arbm)
 ```
 
 # Kapittel 18: Andre emner: Tilpasninger over tid
