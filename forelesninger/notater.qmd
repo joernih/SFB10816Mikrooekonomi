@@ -3047,8 +3047,6 @@ knitr::include_graphics("drawio/tabell_14.3.png")
 
 # Kapittel 18: Andre emner: Tilpasninger over tid
 
-`r paste("Oppdatert:",Sys.Date())`
-
 ---
 
 ## Konsumentens fordeling av konsum over tid
