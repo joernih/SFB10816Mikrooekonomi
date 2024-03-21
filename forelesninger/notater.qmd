@@ -3151,8 +3151,6 @@ knitr::include_graphics("drawio/int_tilpasning_renteokning.png")
 knitr::include_graphics("drawio/int_tilpasning_inntokning.png")
 ```
 
-::: {.content-visible when-profile="internal"}
-
 
 # Kapittel 13: Andre emner: Velferd og markedssvikt
 
@@ -3269,14 +3267,13 @@ knitr::include_graphics(c("drawio/samm_eff.png","drawio/samm_eff_m.png")[2])
 
 ::::
 
+[Israeli company converts passenger planes to cargo](https://www.i24news.tv/en/news/israel/economy/1645636837-israeli-company-converts-passenger-planes-to-cargo)
+
 ---
 
 **Velferdsøkonomiens første hovedteorem:**
 
 > Frikonkurranselikevekten er paretooptimal/paretoeffektiv.
-
-[Israeli company converts passenger planes to cargo](https://www.i24news.tv/en/news/israel/economy/1645636837-israeli-company-converts-passenger-planes-to-cargo)
-
 
 **Velferdsøkonomiens andre hovedteorem:**
 
@@ -3448,7 +3445,6 @@ Informasjonsfordelingen mellom aktøren er skjev.
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 knitr::include_graphics("drawio/cost_ben.jpeg")
 ```
-::: 
 
 
 

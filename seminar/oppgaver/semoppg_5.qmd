@@ -20,6 +20,7 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 ```
 
 
+
 Uke `r md$regnv$sem5[2]`, ansvarlig: `r md$regnv$ansv[5]`
 Fredag kl. 12:15-14:00.
 
@@ -59,7 +60,9 @@ e. Illustrer til slutt markedsløsningen ved fullkommen konkurranse og monopol v
 Svar
 </div>
 
-# Oppgave 2
+\newpage
+
+# Oppgave 2: Spillteori
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
 knitr::include_graphics("bilder/kap14.png")
 ```

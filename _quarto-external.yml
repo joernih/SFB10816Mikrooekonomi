@@ -33,7 +33,7 @@ website:
           - text: "Forelesning 10: Andre emner: Prisdiskriminering, Litt spillteori, Arbeidsmarkedet og Tilpasninger over tid"
             href: "forelesninger/notater.html#/kapittel-14-andre-emner-litt-spillteori"
           - text: "Forelesning 11: Velferd og markedssvikt"
-            #href: "forelesninger/notater.html#/kapittel-13-andre-emner-velferd-og-markedssvikt"
+            href: "forelesninger/notater.html#/kapittel-13-andre-emner-velferd-og-markedssvikt"
           - text: "Figurpakke"
             href: "forelesninger/drawio/alle.pdf"
       - text: "Oppgaver"
