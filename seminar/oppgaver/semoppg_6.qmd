@@ -21,23 +21,25 @@ Fredag kl. 12:15-14:00.
 
 # Oppgave 1: Andre
 
+# Oppgave 2: Velferdsteori
+
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
 knitr::include_graphics("bilder/kap13.png")
 ```
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics("bilder/kap13_I_losn.png")
+#knitr::include_graphics("bilder/kap13_I_losn.png")
 ```
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics("bilder/kap13_II_losn.png")
+#knitr::include_graphics("bilder/kap13_II_losn.png")
 ```
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics("bilder/kap13_III_losn.png")
+#knitr::include_graphics("bilder/kap13_III_losn.png")
 ```
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics("bilder/kap13_IV_losn.png")
+#knitr::include_graphics("bilder/kap13_IV_losn.png")
 ```
 
-# Oppgave 2: Kollektive goder (HVL, 202X)
+# Oppgave 3: Kollektive goder (HVL, 202X)
 
 [Kollektive goder]{.underline}
 
@@ -45,6 +47,7 @@ a)  Hva er forskjellen mellom et kollektivt og et privat gode?
 <div class="sol">
 Svar
 </div>
+
 
 b)  Anta at produsenten av et kollektivt gode har denne
     grensekostnadsfunksjonen: $C'(X) = 225$. Legg videre til grunn at
