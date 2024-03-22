@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mikroøkonomi (SFB10816) – Seminar 6: Markedsteori: Andre emner</title>
+<title>Mikroøkonomi (SFB10816) – Seminar 6: Velferdsteori, kollektive goder og andre emner</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,8 +67,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="css/OFF.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="css/ON.css">
 </head>
 
 <body class="nav-fixed">
@@ -189,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Seminar 6: Markedsteori: Andre emner</h1>
+      <h1 class="title">Seminar 6: Velferdsteori, kollektive goder og andre emner</h1>
                       </div>
   </div>
     
@@ -205,8 +234,16 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#oppgave-1" id="toc-oppgave-1" class="nav-link active" data-scroll-target="#oppgave-1">Oppgave 1:</a></li>
+  <li><a href="#oppgave-2-velferdsteori" id="toc-oppgave-2-velferdsteori" class="nav-link" data-scroll-target="#oppgave-2-velferdsteori">Oppgave 2: Velferdsteori</a></li>
+  <li><a href="#oppgave-3-kollektive-goder-hvl-høsten-2023" id="toc-oppgave-3-kollektive-goder-hvl-høsten-2023" class="nav-link" data-scroll-target="#oppgave-3-kollektive-goder-hvl-høsten-2023">Oppgave 3: Kollektive goder (HVL, høsten 2023)</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -216,8 +253,38 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Uke 16, ansvarlig: TAB Fredag kl. 12:15-14:00.</p>
+<section id="oppgave-1" class="level1">
+<h1>Oppgave 1:</h1>
+</section>
+<section id="oppgave-2-velferdsteori" class="level1">
+<h1>Oppgave 2: Velferdsteori</h1>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="bilder/kap13.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="oppgave-3-kollektive-goder-hvl-høsten-2023" class="level1">
+<h1>Oppgave 3: Kollektive goder (HVL, høsten 2023)</h1>
+<p><u>Kollektive goder</u></p>
+<ol type="a">
+<li><p>Hva er forskjellen mellom et kollektivt og et privat gode?</p></li>
+<li><p>Anta at produsenten av et kollektivt gode har denne grensekostnadsfunksjonen: <span class="math inline">\(C'(X) = 225\)</span>. Legg videre til grunn at det er to konsumenter av godet og at konsument 1 har følgende marginale betalingsvillighet:</p></li>
+</ol>
+<ul>
+<li>Marginal betalingsvillighet for den 1. enheten: 125 kr.</li>
+<li>Marginal betalingsvillighet for den 2. enheten: 100 kr.</li>
+<li>Marginal betalingsvillighet for den 3. enheten: 80 kr.</li>
+</ul>
+<p>Konsument 2 har følgende marginale betalingsvillighet: - Marginal betalingsvillighet for den 1. enheten: 150 kr. - Marginal betalingsvillighet for den 2. enheten: 125 kr. - Marginal betalingsvillighet for den 3. enheten: 100 kr.</p>
+<p>Oppgave: Finn den samfunnsøkonomisk effektive produksjonen av dette godet.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
