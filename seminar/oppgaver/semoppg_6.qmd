@@ -14,11 +14,6 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 Uke `r md$regnv$sem6[2]`, ansvarlig: `r md$regnv$ansv[6]`
 Fredag kl. 12:15-14:00.
 
-
-
-
-
-
 # Oppgave 1: 
 
 # Oppgave 2: Velferdsteori
@@ -27,12 +22,35 @@ Fredag kl. 12:15-14:00.
 knitr::include_graphics("bilder/kap13.png")
 ```
 
+<div class="answer hidden">
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+knitr::include_graphics("bilder/kap13_I_losn.png")
+```
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+knitr::include_graphics("bilder/kap13_II_losn.png")
+```
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+knitr::include_graphics("bilder/kap13_III_losn.png")
+```
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+knitr::include_graphics("bilder/kap13_IV_losn.png")
+```
+</div>
+
 # Oppgave 3: Kollektive goder (HVL, høsten 2023)
 
 [Kollektive goder]{.underline}
 
 a)  Hva er forskjellen mellom et kollektivt og et privat gode?
 
+<div class="answer hidden">
+Svar: Et kollektivt gode er ikke-rivaliserende. Den nytten du har av et kollektivt gode påvirker ikke andres nytte av det samme godet. Den nytten jeg har av å bivåne et nyttårsfyrverkeri påvirker ikke din, eller andres, nytte av å betrakte det samme fyrverkeriet.  
+
+Et privat gode er derimot rivaliserende. Den nytten jeg har av et privat gode påvirker andres nytte av det samme godet. Den nytten jeg har av å fortære et bestemt skolebrød innebærer at jeg fratar alle andre muligheten til å dra nytte av eksakt det samme skolebrødet.  
+
+Et kollektivt gode er ikke-ekskluderende. Det er ikke praktisk mulig for eieren av nyttårsfyrverkeriet å hindre noen fra å ha nytte av det.  Ikke-ekskludering innebærer samtidig at det ikke er mulig å ta betalt for bruken av godet.  
+Et privat gode derimot er ekskluderende. Det er mulig for eieren av et privat gode å nekte andre å konsumere det samme godet. Et privat gode kan «stykkes opp» og selges for personlig forbruk i et marked. Jeg har kjøpt et bestemt skolebrød og kan derfor fortære akkurat dette skolebrødet. Dermed fratar jeg alle andre muligheten til å spise eksakt det samme skolebrødet.  
+</div>
 
 b)  Anta at produsenten av et kollektivt gode har denne
     grensekostnadsfunksjonen: $C'(X) = 225$. Legg videre til grunn at
@@ -49,37 +67,7 @@ Konsument 2 har følgende marginale betalingsvillighet:
 
 Oppgave: Finn den samfunnsøkonomisk effektive produksjonen av dette
 godet.
-
-
-::: {.content-visible when-profile="internal"}
-
-# Oppgave 1: 
-
-# Oppgave 2: Velferdsteori
-
-```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics("bilder/kap13_I_losn.png")
-```
-```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics("bilder/kap13_II_losn.png")
-```
-```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics("bilder/kap13_III_losn.png")
-```
-```{r, echo=FALSE, out.width="45%", fig.cap=""}
-knitr::include_graphics("bilder/kap13_IV_losn.png")
-```
-
-# Oppgave 3: Kollektive goder (HVL, 202X)
-<div class="sol">
-Svar: Et kollektivt gode er ikke-rivaliserende. Den nytten du har av et kollektivt gode påvirker ikke andres nytte av det samme godet. Den nytten jeg har av å bivåne et nyttårsfyrverkeri påvirker ikke din, eller andres, nytte av å betrakte det samme fyrverkeriet.  
-
-Et privat gode er derimot rivaliserende. Den nytten jeg har av et privat gode påvirker andres nytte av det samme godet. Den nytten jeg har av å fortære et bestemt skolebrød innebærer at jeg fratar alle andre muligheten til å dra nytte av eksakt det samme skolebrødet.  
-
-Et kollektivt gode er ikke-ekskluderende. Det er ikke praktisk mulig for eieren av nyttårsfyrverkeriet å hindre noen fra å ha nytte av det.  Ikke-ekskludering innebærer samtidig at det ikke er mulig å ta betalt for bruken av godet.  
-Et privat gode derimot er ekskluderende. Det er mulig for eieren av et privat gode å nekte andre å konsumere det samme godet. Et privat gode kan «stykkes opp» og selges for personlig forbruk i et marked. Jeg har kjøpt et bestemt skolebrød og kan derfor fortære akkurat dette skolebrødet. Dermed fratar jeg alle andre muligheten til å spise eksakt det samme skolebrødet.  
-</div>
-<div class="sol">
+<div class="answer hidden">
 Svar: Den samfunnsøkonomisk optimale tilpasningen for et privat gode finner sted der B’ (X)= C’(X), dvs der markedets marginale betalingsvillighet (betalingsvilligheten for den siste enheten produsert og solgt) er lik kostnaden ved å produsere denne enheten (C’(X)). B’ fremkommer som summen av de enkelte konsumenters betalingsvillighet for enhver tenkelig pris.   
 
 Den samfunnsøkonomisk optimale tilpasningen for et kollektivt gode finner sted der SUM B’ (X)= C’(X), dvs der summen av konsumentenes marginale betalingsvillighet er lik kostnaden ved å produsere denne enheten (C’(X)). B’ fremkommer som summen av de enkelte konsumenters betalingsvillighet for enhver tenkelig mengde.   
@@ -87,12 +75,32 @@ Den samfunnsøkonomisk optimale tilpasningen for et kollektivt gode finner sted 
 I denne oppgaven er C’(X) = 225.  Vi ser at konsument 1 maksimalt er villig til å betale 125 kr for den første enheten av det kollektive godet, mens konsument 2 vil maksimalt betale 150 kr for den samme enheten. Til sammen vil de ta maksimalt betale 275 kr for den første enheten. Summen av konsumentenes betalingsvillighet for den første enheten (275 kr) er da høyere enn hva det koster å produsere den (225 kr), dvs SUM B’(1) > C’(1). For den 2. enheten er summen av de to konsumentenes betalingsvillighet lik 100 + 125 = 225 kr). Grensekostnaden er som alltid lik 225.  Summen av konsumentenes betalingsvillighet for den andre enheten (225 kr) er dermed identisk med hva det koster å produsere den (225 kr), dvs SUM B’(3) = C’(3) = 225 kr.   
 
 Løsning: x =2 enheter er derfor det optimale nivået på det kollektive godet.   
+
 </div>
+
+::: {.content-visible when-profile="internal"}
+<br>
+<button id="show-all-answers">Vis svar</button>
+<p class="answer hidden">
+</p>
+
+<style>
+  .answer {
+    color: blue;
+  }
+</style>
+<script>
+const answerToggles = document.querySelectorAll(".answer");
+const showAllButton = document.getElementById("show-all-answers");
+
+showAllButton.addEventListener("click", () => {
+  answerToggles.forEach(answer => {
+    answer.classList.toggle("hidden");
+  });
+});
+</script>
 :::
 
-```{r, echo=F}
-knitr::knit_exit()
-```
 
 
 

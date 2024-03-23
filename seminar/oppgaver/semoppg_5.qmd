@@ -23,8 +23,6 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 #eql <- eqpar$meql
 ```
 
-
-
 Uke `r md$regnv$sem5[2]`, ansvarlig: `r md$regnv$ansv[5]`
 Fredag kl. 12:15-14:00.
 
@@ -40,28 +38,7 @@ $$
 hvor $X^s$ er antall tilbudte enheter av godet.
 
 a. Finn markedslikevekten (pris og kvantum) under fullkommen konkurranse.
-
-Anta nå at det bare er én tilbyder i markedet som dermed har monopol. Den oppgitte tilbudskurven vil da gjenspeile monopolets grensekostnad som er lik $\frac{1}{2}X^{s}$. 
-
-b. Dersom denne aktøren ønsker å maksimere fortjenesten, hvor mye bør den produsere og hva blir prisen?   
-c. Regn ut og forklar effektivitetstapet (dødvektstapet) ved denne tilpasningen.
-d. Hva blir produsentoverskuddet?
-e. Illustrer til slutt markedsløsningen ved fullkommen konkurranse og monopol ved bruk av to figurer.
-
-\newpage
-
-# Oppgave 2: Spillteori
-```{r, echo=FALSE, out.width="100%", fig.cap=""}
-knitr::include_graphics("bilder/kap14.png")
-```
-
-# Oppgave 3: Prisdiskriminering (HVL, våren 2023)
-a. Man snakker gjerne om tre ulike former for prisdiskriminering. Gjør kort rede for hvorfor prisdiskriminering av tredje orden vil skille seg fra monopol uten prisdiskriminering.
-
-::: {.content-visible when-profile="internal"}
-# Oppgave 1: Markedsteori -- fullkommen konkurranse og monopol (Eksamen HVL, høsten 2023)
-a.
-<div class="sol">
+<div class="answer hidden">
 Fullkommen konkurranse tilsier markedsklarering, som betyr at $X^d=X^s=X$. Vi kan derfor ta i bruk de oppgitte funksjonssammenhengene for først å finne likevektsprisen i markedet:
 $$
 600 – 6p= 2p \\
@@ -74,8 +51,9 @@ $$
 X^s=X=2\cdot75 = 150
 $$
 </div>
-b.
-<div class="sol">
+Anta nå at det bare er én tilbyder i markedet som dermed har monopol. Den oppgitte tilbudskurven vil da gjenspeile monopolets grensekostnad som er lik $\frac{1}{2}X^{s}$. 
+b. Dersom denne aktøren ønsker å maksimere fortjenesten, hvor mye bør den produsere og hva blir prisen?   
+<div class="answer hidden">
 Optimal tilpasning til en monpolist er gitt ved den produksjonen hvor grenseinntekt lik grensekostnad.
 Grenseinntekten framkommer ved å derivere inntektsfunksjonen som er git ved $I(x)=pX=(100-(1/6)X)X = 100X-(1/6)(X)^{2}$
 Vi har derfor:
@@ -95,12 +73,14 @@ X(5/6) = 100 \\
 X = 120
 $$
 Monpolprisen er gitt ved
-<div class="solution">
+<div class="answer hidden">
 $$p^m=100−(1/6)120=80
 $$
 </div>
-c.
-<div class="sol">
+
+c. Regn ut og forklar effektivitetstapet (dødvektstapet) ved denne tilpasningen.
+
+<div class="answer hidden">
 Kvantum på $120$ gir grensinntekt på
 $$
 GI=100-(1/3)60=60
@@ -110,27 +90,33 @@ $$
 ((150-120)(80-60))/2 = 300
 $$
 Fullkommen konkurranse innebærer at det omsettes $X = 150$ enheter. Denne mengden er samfunnsøkonomisk effektiv mengde der marginal betalingsvilje (gjenspeilt i etterspørselskurven) er lik grensekostnaden (gjenspeilt i tilbudskurven). Den høye monopolprisen vil bidra til at omsatt mengde reduseres til $X=120$. De 30 enhetene som faller bort pga den høye monopolprisen skyldes at under fullkommen konkurranse vil $I’(X^{FK})< C’(X^FK{})$,  Monopolisten begrenser tilbudet for å presse prisen oppover inntil $I’(X^{M})=C’(X^{M})$, siden det er dette kvantumet som maksimerer fortjenesten.
-d.
-<div class="sol">
-<br>
+</div>
+
+d. Hva blir produsentoverskuddet?
+
+<div class="answer hidden">
 Produsentoverskuddet under monpol
 $$
 PO=PO_{I}+PO_{II}=(120\cdot(60))/2+120\cdot(80-60)= 6000
 $$
 </div>
-e.
-<div class="sol">
-```{r, echo=FALSE, out.width="50%", fig.cap="",fig.align = 'center'}
-#SETT INN FIGUR 3_fk HER
-eks_fk <- paste0('figurer/eks_fk.png')
-knitr::include_graphics(eks_fk)
+
+e. Illustrer til slutt markedsløsningen ved fullkommen konkurranse og monopol ved bruk av to figurer.
+
+<div class="answer hidden">
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+knitr::include_graphics("figurer/eks_fk.png")
 ```
-```{r, echo=FALSE, out.width="50%", fig.cap="",fig.align = 'center'}
-#SETT INN FIGUR 3_fk HER
-eks_mp <- paste0('figurer/eks_mp.png')
-knitr::include_graphics(eks_mp)
+```{r, echo=FALSE, out.width="45%", fig.cap=""}
+knitr::include_graphics("figurer/eks_mp.png")
 ```
+</div>
+
 # Oppgave 2: Spillteori
+```{r, echo=FALSE, out.width="100%", fig.cap=""}
+knitr::include_graphics("bilder/kap14.png")
+```
+<div class="answer hidden">
 
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
 knitr::include_graphics("bilder/kap14_I_losn.png")
@@ -138,9 +124,11 @@ knitr::include_graphics("bilder/kap14_I_losn.png")
 ```{r, echo=FALSE, out.width="45%", fig.cap=""}
 knitr::include_graphics("bilder/kap14_II_losn.png")
 ```
+</div>
 
-# Oppgave 3: Prisdiskriminering (HVL 202X)
-<div class="sol">
+# Oppgave 3: Prisdiskriminering (HVL, våren 2023)
+a. Man snakker gjerne om tre ulike former for prisdiskriminering. Gjør kort rede for hvorfor prisdiskriminering av tredje orden vil skille seg fra monopol uten prisdiskriminering.
+<div class="answer hidden">
 *Prisdiskriminering av tredje orden* har vi når en produsent kan selge et gode til forskjellige priser til ulike grupper av konsumenter. Et typisk eksempel på tredjeordens prisdiskriminering kan være et busselskap som tar ulik pris fra forskjellige kundegrupper (voksen-, barne-, student- og honnørpriser). Det er tre betingelser som må være oppfylt for at tredje ordens prisdiskriminering kan gjennomføres: 
 <ol>
   <li>Forskjellige kundegrupper må ha ulik etterspørselselastisitet</li>
@@ -151,8 +139,31 @@ knitr::include_graphics("bilder/kap14_II_losn.png")
 <br>
 Forskjellen er at ved tredjeordens prisdiskriminering deler produsenten selv markedet inn i en rekke delmonopolmarkeder; ett delmarked for hver kundegruppe og i hvert av disse delmonopolmarkedene tilpasser han seg slik at grenseinntekt er lik grensekostnad. Dette innebærer således at han tar høyest pris og tilbyr færrest varer i de delmarkeder der etterspørselen er mest uelastisk (minst prisfølsom). Da henter han ut maksimal monopolgevinst. Ved monopol uten prisdiskriminering har ikke produsenten mulighet til å dele kundegruppene inn etter grad av etterspørseIselastisitet, han må derimot ta samme pris fra alle kunder. Dermed vil monopolgevinsten uten prisdiskriminering, under ellers like forhold, bli mindre enn med prisdiskriminering.   
 </div>
-:::
 
+
+::: {.content-visible when-profile="internal"}
+
+<button id="show-all-answers">Vis svar</button>
+<p class="answer hidden">
+</p>
+
+<style>
+  .answer {
+    color: blue;
+  }
+</style>
+<script>
+const answerToggles = document.querySelectorAll(".answer");
+const showAllButton = document.getElementById("show-all-answers");
+
+showAllButton.addEventListener("click", () => {
+  answerToggles.forEach(answer => {
+    answer.classList.toggle("hidden");
+  });
+});
+</script>
+
+:::
 
 
 
