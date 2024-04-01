@@ -3176,6 +3176,9 @@ knitr::include_graphics("drawio/int_tilpasning_inntokning.png")
 > En allokering er *paretoeffektiv* dersom det for a) gitt ressurser, b) teknologi og c)
 organisatorisk kunnskapsnivå ikke er mulig å frembringe en annen måte å allokere ressursene på som gjør at noen konsumenter får det bedre (økt nytte) uten at andre konsumenter får det værre (redusert nytte).
 
+---
+
+
 - For å få dette til må tre hovedkategorier være oppfylt:
 	1. *Produksjonseffektivitet*: $MTSB$ være like for alle produsenter
 	1. *Bytteeffektivitet*: $MSB$ skal være lik for alle konsumenter
@@ -3191,10 +3194,10 @@ organisatorisk kunnskapsnivå ikke er mulig å frembringe en annen måte å allo
 Produksjonseffektivitet:<br>
 $MTSB_{1,N,K}=MTSB_{2,N,K}=\overline{MTSB}$
 
-```{r, echo=FALSE, out.width="65%", fig.cap=""}
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
 #| label: figur13.1
 #| fig-cap: "Figur 13.1"
-knitr::include_graphics(c("drawio/produ_eff.png","drawio/produ_eff.png")[1])
+knitr::include_graphics(c("drawio/produ_eff.png")[1])
 ```
 :::
 
@@ -3202,7 +3205,7 @@ knitr::include_graphics(c("drawio/produ_eff.png","drawio/produ_eff.png")[1])
 Markedsøkonomi:<br> 
 $\overline{MTSB}=\frac{w}{r}$
 
-```{r, echo=FALSE, out.width="65%", fig.cap=""}
+```{r, echo=FALSE, out.width="50%", fig.cap=""}
 #| label: figur13.2
 #| fig-cap: "Figur 13.2"
 knitr::include_graphics(c("drawio/produ_eff.png","drawio/produ_eff_m.png")[2])
@@ -3222,7 +3225,7 @@ $MSB_{A,1,2}=MSB_{B,1,2}=\overline{MSB}$
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
 #| label: figur13.3
 #| fig-cap: "Figur 13.3"
-knitr::include_graphics(c("drawio/bytte_eff.png","drawio/bytte_eff_m.png")[1])
+knitr::include_graphics(c("drawio/bytte_eff.png"))
 ```
 :::
 ::: {.column width="50%"}
@@ -3232,10 +3235,11 @@ $\overline{MSB}=\frac{P_1}{P_2}$
 ```{r, echo=FALSE, out.width="65%", fig.cap=""}
 #| label: figur13.4
 #| fig-cap: "Figur 13.4"
-knitr::include_graphics(c("drawio/bytte_eff.png","drawio/bytte_eff_m.png")[2])
+knitr::include_graphics("drawio/bytte_eff_m.png")
 ```
 :::
 ::::
+
 
 
 ---
@@ -3440,7 +3444,7 @@ Informasjonsfordelingen mellom aktøren er skjev.
   - Ufullstendig informasjon om egenskapene til gode
   - Mangelfull prisinformasjon
   
-## Appendiks (Pandemihåndteringen under Covid-19)
+## Appendiks: Pandemihåndteringen under Covid-19
 
 ```{r, echo=FALSE, out.width="50%", fig.cap=""}
 knitr::include_graphics("drawio/cost_ben.jpeg")
