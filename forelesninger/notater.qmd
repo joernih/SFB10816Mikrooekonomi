@@ -3332,8 +3332,10 @@ Er *bivirkninger* av andres konsum eller produksjon som den som forårsaker bivi
 ```{r, echo=FALSE, out.width="35%", fig.cap=""}
 #| label: figur13.7
 #| fig-cap: "Figur 13.7"
-knitr::include_graphics(c("drawio/eks_ill.png","drawio/eks_dia.png")[2])
+knitr::include_graphics(c("drawio/eks_mrk.png")[1])
 ```
+
+
 
 
 ---
@@ -3372,6 +3374,7 @@ knitr::include_graphics(c("drawio/eks_avg.png"))
 knitr::include_graphics(c("drawio/eks_kvo.png"))
 ```
 
+
 ---
 
 #### Mulige løsninger
@@ -3397,7 +3400,7 @@ knitr::include_graphics(c("drawio/eks_int.png"))
 - Kollektive goder er innen samfunnsøkonomi en betegnelse på goder som kjennetegnes ved at de er *ikke-rivaliserende* og *ikke-ekskluderende*
 	- *Ikke-rivaliserende*: Godet blir ikke brukt opp
 	- *Ikke-ekskluerende*: Man kan ikke stenge noen ute fra å benytte godet
-	- Eks. Fyrtårn
+	- Eks. Fyrtårn, forsvaret, rettsvesenet.
 
 ---
 
