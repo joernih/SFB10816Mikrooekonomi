@@ -3168,7 +3168,7 @@ knitr::include_graphics("drawio/int_tilpasning_inntokning.png")
 
 - Definisjon av *paretoforbedring*:
 
-> En endring i allokering av gode som fører til at noen får det bedre (økt nytte) uten at andre får det værre (redusert nytte) .
+> En endring i allokering av gode som fører til at noen får det bedre (økt nytte/økt fortjenteste) uten at andre får det værre (redusert nytte/redusert fortenste) .
 
 
 - Definisjon av *paretoeffektivitet*
@@ -3271,13 +3271,14 @@ knitr::include_graphics(c("drawio/samm_eff.png","drawio/samm_eff_m.png")[2])
 
 ::::
 
-[Israeli company converts passenger planes to cargo](https://www.i24news.tv/en/news/israel/economy/1645636837-israeli-company-converts-passenger-planes-to-cargo)
 
 ---
 
 **Velferdsøkonomiens første hovedteorem:**
 
 > Frikonkurranselikevekten er paretooptimal/paretoeffektiv.
+
+[Illustrerende eksempel: Israeli company converts passenger planes to cargo](https://www.i24news.tv/en/news/israel/economy/1645636837-israeli-company-converts-passenger-planes-to-cargo)
 
 **Velferdsøkonomiens andre hovedteorem:**
 
