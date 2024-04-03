@@ -3168,7 +3168,7 @@ knitr::include_graphics("drawio/int_tilpasning_inntokning.png")
 
 - Definisjon av *paretoforbedring*:
 
-> En endring i allokering av gode som fører til at noen får det bedre (økt nytte/økt fortjenteste) uten at andre får det værre (redusert nytte/redusert fortenste) .
+> En endring i allokering av gode som fører til at noen får det bedre (økt nytte/økt produksjon) uten at andre får det værre (redusert nytte/redusert produksjon) .
 
 
 - Definisjon av *paretoeffektivitet*
