@@ -14,9 +14,8 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 Uke `r md$regnv$sem6[2]`, ansvarlig: `r md$regnv$ansv[6]`
 Fredag kl. 12:15-14:00.
 
-# Oppgave 1: 
 
-# Oppgave 2: Velferdsteori
+# Oppgave 1: Velferdsteori
 
 ```{r, echo=FALSE, out.width="100%", fig.cap=""}
 knitr::include_graphics("bilder/kap13.png")
@@ -37,7 +36,7 @@ knitr::include_graphics("bilder/kap13_IV_losn.png")
 ```
 </div>
 
-# Oppgave 3: Kollektive goder (HVL, høsten 2023)
+# Oppgave 2: Kollektive goder (HVL, høsten 2023)
 
 [Kollektive goder]{.underline}
 
@@ -78,6 +77,33 @@ Løsning: x =2 enheter er derfor det optimale nivået på det kollektive godet.�
 
 </div>
 
+# Oppgave 3 (bonusoppgave): Priskonkurranse 
+
+**Statiske konkurransesituasjoner**
+
+Tenk at to bedrifter konkurrerer. De kan velge mellom å sette sin produktpris høyt eller lavt . Profitten som følger disse handlingsalternativene er gitt i spillmatisen nedenfor. De to bedriftene har mål om å maksimere profitt. 
+
+![](spill.png)
+
+Forutsetningene for et statisk ikke-kooperativt spill gitt i boka antas oppfylt. 
+(Hint: Du skal se på bedriftenes prispolitikk og finne bedriftenes optimale pris)  
+
+1) Ta utgangpunkt i konkurransematisen og finn
+  - (i) Dominerende strategier for bedrift 1 og bedrift 2 
+  - (ii) Nash likevekt (markedslikevekt) Tenk at to bedrifter konkurrerer. De kan velge mellom å sette sin produktpris høyt eller lavt . Profitten som følger disse handlingsalternativene er gitt i spillmatisen nedenfor. De to bedriftene har mål om å maksimere profitt. 
+
+
+**Prismatch-strategier**
+
+Tenk at begge bedrifter innfører følgende prismatch-strategi:
+
+Hvis du innen 30 dager etter kjøp av en vare hos oss finner samme vare billigere andre steder kan du komme tilbake så utbetaler vi prisdifferansen 
+ (Hint: Slike strategier er vanlig i sports- og elektronikk bransjen)
+
+1. Hvilken forutsetning endres når vi åpner opp for en slik strategi?
+1. Hva blir markedslikevekten når begge aktører har en slik strategi? 
+
+
 ::: {.content-visible when-profile="internal"}
 <br>
 <button id="show-all-answers">Vis svar</button>
@@ -100,6 +126,8 @@ showAllButton.addEventListener("click", () => {
 });
 </script>
 :::
+
+
 
 
 
