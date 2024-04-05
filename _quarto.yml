@@ -26,13 +26,10 @@ format:
   html:
     theme: default
     toc: true
+########################################################################
 # oppgaver/arbeidskrav.qmd
 # Tasks internal
 # forelesninger/timeplan.R
 # _quarto-internal.yml
 # _quarto-external.yml
-# data-raw/metadata.json
-# Tasks:
-# Ukenr Regneverksted
-# Numerering av figurer
-# render.R
+########################################################################
