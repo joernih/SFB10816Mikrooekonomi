@@ -91,6 +91,9 @@ Forutsetningene for et statisk ikke-kooperativt spill gitt i boka antas oppfylt.
 1) Ta utgangpunkt i konkurransematisen og finn
   - (i) Dominerende strategier for bedrift 1 og bedrift 2 
   - (ii) Nash likevekt (markedslikevekt) Tenk at to bedrifter konkurrerer. De kan velge mellom å sette sin produktpris høyt eller lavt . Profitten som følger disse handlingsalternativene er gitt i spillmatisen nedenfor. De to bedriftene har mål om å maksimere profitt. 
+<div class="answer hidden">
+![](def.png)
+</div>
 
 
 **Prismatch-strategier**
@@ -102,6 +105,10 @@ Hvis du innen 30 dager etter kjøp av en vare hos oss finner samme vare billiger
 
 1. Hvilken forutsetning endres når vi åpner opp for en slik strategi?
 1. Hva blir markedslikevekten når begge aktører har en slik strategi? 
+
+<div class="answer hidden">
+![](ghi.png)
+</div>
 
 
 ::: {.content-visible when-profile="internal"}
