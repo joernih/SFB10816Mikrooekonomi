@@ -47,7 +47,7 @@ website:
           - text: "Tidligere eksamensoppgaver"
             href: "oppgaver/eksamensoppg.qmd"
       - text: "Utskrifter"
-        href: "utskrifter/utskrifter.qmd"
+        href: "forelesninger/slides.pdf"
       - text: "Endringslog"
         href: "log.qmd"
 page-footer: 

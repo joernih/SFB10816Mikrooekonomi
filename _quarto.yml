@@ -6,13 +6,14 @@ project:
     - "forelesninger/notater.qmd"
     - "forelesninger/allenotater.qmd"
     - "forelesninger/presentations_hiof.Rmd"
+    - "forelesninger/repetisjonsnotat.qmd"
     - "oppgaver/eksamensoppg.qmd"
     - "oppgaver/oppgaver.qmd"
     - "oppgaver/arbeidskrav.qmd"
     - "seminar/posts.qmd"
     - "!seminar/oppgaver/abc.qmd"
     - "seminar/oppgaver/*.qmd"
-    - "utskrifter/utskrifter.qmd"
+    - "forelesninger/utskrifter.qmd"
     - "log.qmd"
     - "teknisk.qmd"
     - "abc2.qmd"
@@ -33,3 +34,6 @@ format:
 # _quarto-internal.yml
 # _quarto-external.yml
 ########################################################################
+# Legge ut flere eksamensoppgaver
+# 2022 Mai, HIOF oppgave 2
+# /home/joernih/homepageJIH/nonpublic/templates/mikro/Arbeidskrav_SFB10816_Mikro_2024_V.qmd

@@ -1,0 +1,10 @@
+---
+title: "Alle notater (beta-versjon)"
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+---
+
+[abc](slides.pdf)

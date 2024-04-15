@@ -39,6 +39,8 @@ website:
             href: "forelesninger/allenotater.qmd"
           - text: "Figurpakke"
             href: "forelesninger/drawio/alle.pdf"
+          - text: "Repetisjonsnotat"
+            href: "forelesninger/repetisjonsnotat.qmd"
       - text: "Oppgaver"
         menu:
           - text: "Anbefalte oppgaver"
@@ -50,7 +52,7 @@ website:
           - text: "Tidligere eksamensoppgaver"
             href: "oppgaver/eksamensoppg.qmd"
       - text: "Utskrifter"
-        href: "utskrifter/utskrifter.qmd"
+        href: "forelesninger/slides.pdf"
       - text: "Endringslog"
         href: "log.qmd"
       - text: "Appendiks"

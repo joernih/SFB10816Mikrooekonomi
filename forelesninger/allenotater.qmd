@@ -3,8 +3,16 @@ title: "Alle"
 format: 
   html:
     toc: true
-    toc-depth: 2
-    number-sections: false
+    toc-depth: 3
+    number-sections: true
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+  docx:
+    toc: true
+    toc-depth: 3
+    number-sections: true
 ---
 
 

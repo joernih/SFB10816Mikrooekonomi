@@ -22,7 +22,7 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 
 ## Nyheter
 
-- Oppgaver til seminar #5 og #6 har nå blitt publisert
+- Oppgaver til seminar #6 førstkommende fredag er nå blitt publisert
 
 ### Pensumbøker
 

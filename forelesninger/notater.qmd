@@ -11,16 +11,17 @@ format:
     toc-depth: 2
     toc: false
     fig-cap-location: bottom
-#execute: 
+##execute: 
 #  cache: false
 footer: <https://joernih.github.io/SFB10816Mikrooekonomi/>
-# Ekstratemaer: Tilbudet av arbeidskraft, Andre markedsformer: Cournout, Spillteori. Spillteori
-#format: 
-#  html:
-#    toc: true
-#    toc-depth: 3
-#    number-sections: true
 ---
+
+
+
+
+
+
+
 
 
 ```{r, echo=F, warning=F, message=F, eval=T, results='hide'}
