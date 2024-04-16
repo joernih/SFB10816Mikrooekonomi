@@ -16,9 +16,20 @@
 - [HVL høsten 2022, oppgave 1](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/oppgaver/hvl2022.png)
   - [HVL høsten 2022, oppgave 1(løsningsforslag)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/oppgaver/HVL_2022_oppgave1_losning.png)
 
+## Tre oppgavesett
+- [Oppgavesett 1](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/oppgaver/Oppgavesett%201.pdf)
+	- Løsningsforslag kommer snart
+- [Oppgavesett 2](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/oppgaver/Oppgavesett%202.pdf)
+	- Løsningsforslag kommer snart
+- [Oppgavesett 3](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/oppgaver/Oppgavesett%203.pdf)
+	- Løsningsforslag kommer snart
+
 ```{r, echo=F}
 knitr::knit_exit()
 ```
+
+## Erstatning
+
 - [Eksamen HiOF våren 2021]()
 - [Eksamen våren 2023]()
 
@@ -29,9 +40,7 @@ knitr::knit_exit()
 - [Eksamen våren 2021](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/eksamensoppgaver/eksamen_SFB10816_2021_V.pdf)
   - [Eksamen våren 2021 (med losningsforslag)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/eksamensoppgaver/eksamen_SFB10816_2021_V_losning.pdf)
 
-## Tre oppgavesett
 
-- [Oppgavesett 1](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/oppgaver/Oppgavesett%201.pdf)
   - [Oppgavesett 1 (losningsforslag)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/oppgaver/arbeidsoppgaver_sett1_losningsforslag.pdf)
 
 - [Oppgavesett 2](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/inst/oppgaver/Oppgavesett%202.pdf)

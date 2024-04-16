@@ -60,9 +60,12 @@ website:
       - text: "Teknisk"
         menu:
         - text: "abc1"
-          href: "abc1.html"
+          href: "eksamensoppgaver/qmdconvert/Eksamen_SFB10816_2022_V.Rmd"
         - text: "abc2"
-          href: "abc2.qmd"
+          href: "eksamensoppgaver/qmdconvert/Eksamen_SFB10816_Mikro_2023_V.qmd"
+        - text: "abc3"
+          href: "eksamensoppgaver/qmdconvert/Eksamen_SFB10816_Mikro_2023_H_K.qmd"
+
 page-footer: 
      right: 
        - icon: github

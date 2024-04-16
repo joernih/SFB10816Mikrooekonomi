@@ -17,6 +17,9 @@ project:
     - "log.qmd"
     - "teknisk.qmd"
     - "abc2.qmd"
+    - "eksamensoppgaver/qmdconvert/Eksamen_SFB10816_2022_V.Rmd"
+    - "eksamensoppgaver/qmdconvert/Eksamen_SFB10816_Mikro_2023_V.qmd"
+    - "eksamensoppgaver/qmdconvert/Eksamen_SFB10816_Mikro_2023_H_K.qmd"
 
 website:
   title: "Mikroøkonomi (SFB10816)"

@@ -1,0 +1,210 @@
+---
+title: ""
+format: 
+  html:
+    page-layout: article
+    css: css/ON.css
+---
+
+
+```{r, echo=F}
+fp <- '/home/joernih/teaching/Templates/SFB10816_BOEA203_Mikro_Plates/python/S_H_2023.py'
+reticulate::source_python(fp)
+meq <- reticulate::py$modeql
+```
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } },
+  });
+</script>
+<style>
+.mjx-mrow a {
+  color: black;
+  pointer-events: none;
+  cursor: default;
+}
+</style>
+
+```{r, echo=FALSE, out.width="50%", fig.cap="",fig.align = 'center'}
+#logo <- paste0(rprojroot::find_rstudio_root_file(),'/SFB10816_BOEA203_Mikro_Plates/bilder/hiø.png')
+# knitr::include_graphics(logo)
+vkt <- c(30,25,25,20)
+```
+
+```{r}
+knitr::knit_exit()
+```
+
+<h1><center>**Eksamen (kontinuasjon)**</center></h1>
+
+<div class="sol">
+<p style="text-align:center">SENSORVEILEDNING</p>
+</div>
+
+<h2>**Emnekode**: SFB10816</h2> 
+
+<h2>**Eksamensdato**: 13.09.2023.</h2> 
+
+<h2>**Målform**: Bokmål.</h2> 
+
+<h2>**Tillatte hjelpemidler**: Godkjent kalkulator.</h2> 
+
+<h2>**Generell informasjon:**
+Eksamen består av fire oppgaver. Det er mulig å svare fullstendig på alle spørsmålene gjennom korte og poengterte svar.</h2>
+
+<P style="page-break-before: always">
+
+# Oppgave 1: Generell forståelse (`r vkt[1]` prosent)
+
+1. Nevn noen grunnleggende forskjeller mellom mikro og makroøkonomi som fag.
+<div class="sol">
+Mikroøkonomi: Søker å forklare aktørers beslutninger,
+tilpasning og interaksjon.
+Aktører: Bedrifter, konsumenter, markeder.
+Makroøkonomi: Søker å studere og forklare aggregerte
+størrelser. Økonomien under ett.
+</div>
+1. Hva menes med alternativkostnaden til en ressurs, og kan du gi noen eksempler på dette?
+<div class="sol">
+Alternativkostnaden er lik verdien til den neste beste anvendelsen som en ressurs har. For et jordbruksareal, kan en golfbane utgjøre neste beste alternativ. En datamaskin til en arbeider, kan enten plasseres hjemme eller på kontoret. For en helsearbeider i offentlige sektor, jobb i privat klinikk.
+</div>
+1. Fra produksjonsteorien på kort sikt har vi at egenskapene til grenseproduktiviteten til kapital vil påvirke grensekostnadene til bedriften. Hva er årsaken til dette?
+<div class="sol">
+Grenseproduktiviteten til arbeidskraft angir økningen i produksjonen av én ekstra kapitalenhet. Grensekostnaden angir økningen i kostnaden av én ekstra produsert enhet. Gitt at grenseproduktiviteten er fallende, vil man hele tiden kreve flere kapitalenheter for å øke produksjonen med en ekstra enhet. Dette medfører økte totalkostnader, som betyr at fallende grenseproduktivitet er sammenfallende med økende grensekostnader.
+</div>
+1. Gi en verbal forklaring for hvorfor det er optimalt for en monopolist å tilpasse produksjonen der hvor grenseinntekt er lik grensekostnad.
+<div class="sol">
+Løsning: Dersom grenseinntekten er høyere enn grensekostnaden, vil overskuddet øke dersom bedriften produserer mer. Dersom grenseinntekten er lave enn grensekostnaden, vil overskuddet øke dersom bedriften reduserer produksjonen. Optimalt produksjon der hvor grenseinntekt er lik grensekostnad.
+</div>
+1. Hvorfor vil det under monopolistisk konkurranse være krevende for en bedrift over tid å opprettholde fortjenesten? 
+<div class="sol">
+Løsning: Økt konkurranse vil føre til redusert etterspørselkurven hos bedriften. Det vil skifte etterspørselskurven innover, noe som vil bidra til å redusere bedriftens fortjeneste.
+</div>
+
+# Oppgave 2: Produsentteori (`r vkt[2]` prosent)
+
+Bedriften Bambå produserer handlekurver (x) ved hjelp av arbeidskraft (N) og realkapital (K). Produksjonsprosessen følger denne produktfunksjonen: $`r meq$pf`$
+
+a.  Finn et uttrykk for grenseproduktet til de to innsatsfaktorene N og K. 
+<div class="sol">
+Løsning:
+$$
+dx/dN =`r meq$pfdn`
+$$
+$$
+dx/dN =`r meq$pfdk`
+$$
+</div>
+a.  Finn et uttrykk for den marginale tekniske substitusjonsbrøk (MTSB). Regn ut MTSB når N = 4 og K = 4. Gi en verbal forklaring for MTSB i dette punktet.
+<div class="sol">
+Løsning:
+\begin{equation*}
+MTSB\equiv - \frac{\Delta K}{\Delta N}= \frac{f'_n}{f'_k} = `r meq$MTSB` \\
+\end{equation*}
+For de oppgitte verdiene av N og K gir dette en MTSB $`r meq$MTSBn`$. Tolkning: Når vi øker innsatsen av N fra 4 til 5, innebærer det at innsatsen av K kan reduseres med 3 for at vi samtidig skal opprettholde produksjonen på tilnærmet samme produksjonsnivå.
+</div>
+a.  Legg nå til grunn at prisen på arbeidskraft (w) er $`r meq$wn`$, mens brukerprisen på realkapital (r) er 
+$`r meq$rn`$. Finn et uttrykk for isokostlinjen. Hva er stigningstallet til isokostlinjen?
+<div class="sol">
+Løsning: Låser vi først totalkostnadene til et gitt nivå $C=C^{0}$, så kan isokostlinjen uttrykkes som
+$$
+`r meq$iscn`
+$$
+Stigningstallet finner vi ved å totaldifferensiere isokostlinjen:
+$$
+0=30\Delta N + 10\Delta K \\
+-30 \Delta K = 10\Delta N \\
+\frac{\Delta K}{\Delta N} = - 30/10 = - 3
+$$
+</div>
+a.  Finn ved hjelp av regning og ved bruk av en figur den kostnadsminimerende bruken av hhv. arbeidskraft (N) og realkapital (K) i det bedriften produserer `r meq$xn` enheter.
+
+<div class="sol">
+Kostnadsminimering for et gitt produksjonsnivå gir ved bruk av Lagrange-metode følgende førsteordensbetingelser
+$$
+`r meq$foc` 
+$$
+$$
+`r meq$pf` 
+$$
+I vårt tilfeller gir dette oss:
+</div>
+# Oppgave 3: Markedsteori: Fullkommen konkurranse (`r vkt[3]` prosent)
+Vi ser på et marked under fullkommen konkurranse. Etterspørselen er gitt ved (den marginale betalingsvillighet) $P = 24 – 2X$ og tilbudet (grensekostnaden) som $P = 4X$.
+
+a) Finn likevektspris og omsatt kvantum. Vis tilpasningen grafisk.
+<div class="sol">
+Vi starter med omsatt kvantum. I fullkommen  vil løsningen være karakterisert ved
+at MBV=GK, det gir oss
+\begin{equation*}
+24-2x=4x \\
+6x   =24 \\
+x^{FK}=x =\frac{24}{6} = 4
+\end{equation*}
+Setter vi dette kvantumet inn i enten etterspørs- eller tilbudskurven vil vi finne produktprisen
+\begin{equation*}
+MBV: P = 24-2\cdot 4=16 \\
+(GK: P = 4\cdot 4= 16)
+\end{equation*}
+<br>
+</div>
+b) Regn ut konsumentoverskuddet (KO), produsentoverskuddet (PO) og samfunnsøkonomisk overskudd (SO).
+<div class="sol">
+Konsumentoverskuddet er gitt ved arealet til trekanten
+\begin{equation*}
+KO = (4-0)\cdot(24-16)/2 = 16
+\end{equation*}
+Mens produsentoverskudet er gitt ved
+\begin{equation*}
+PO = (4-0)(16)/2 = 32
+\end{equation*}
+Samfunnsøkonomisk overskudd blir derfor 
+\begin{equation*}
+SO = PO+KO =36+16= 48
+\end{equation*}
+</div>
+c) 
+For å skaffe inntekter til statskassen, innføres en skatt på 6 kroner per produsert enhet. Regn ut $P_K$ (pris til konsument), $P_P$ (pris til produsent) og omsatt kvantum $X$.
+<div class="sol">
+Skatt per enhet gjør at tilbudskurven kan skrives som
+\begin{equation*}
+P = 4x + 6 \\
+24-2x=4x+6 \\
+6x   =18 \\
+x = 3
+\end{equation*}
+Prisen til konsument blir derfor 
+\begin{equation*}
+P_k = 24 - 2\cdot 3 = 18
+\end{equation*}
+Mens pris til produsent blir
+\begin{equation*}
+P_p=4\cdot3 = 12
+\end{equation*}
+</div>
+d) 
+Rekn ut effektivitetstapet og illustrer denne tilpassinga ved hjelp av ein figur.
+<div class="sol">
+\begin{equation*}
+DT = \frac{(4-3)\cdot (18-12)}{2}=3
+\end{equation*}
+</div>
+
+# Oppgave 4: Andre temaer (`r vkt[4]` prosent)
+
+a. Man snakker gjerne om tre ulike former for prisdiskriminering. Gjør kort rede for hvorfor prisdiskriminering av tredje orden vil skille seg fra monopol uten prisdiskriminering.
+<div class="sol">
+*Prisdiskriminering av tredje orden* har vi når en produsent kan selge et gode til forskjellige priser til ulike grupper av konsumenter. Et typisk eksempel på tredjeordens prisdiskriminering kan være et busselskap som tar ulik pris fra forskjellige kundegrupper (voksen-, barne-, student- og honnørpriser). Det er tre betingelser som må være oppfylt for at tredje ordens prisdiskriminering kan gjennomføres: 
+<ol>
+  <li> Forskjellige kundegrupper må ha ulik etterspørselselastisitet</li>
+  <li> Monopolisten må kunne skaffe seg informasjon om disse ulikhetene </li>
+  <li> Monopolisten må klare å skille de enkelte kundegruppene (delmarkedene) fra hverandre. </li>
+</ol>
+*Monopol uten prisdiskriminering:* Det er kun en produsent (en tilbyder) av en vare eller tjeneste på et marked.   
+Forskjellen er at ved tredjeordens prisdiskriminering deler produsenten selv markedet inn i en rekke delmonopolmarkeder; ett delmarked for hver kundegruppe og i hvert av disse delmonopolmarkedene tilpasser han seg slik at grenseinntekt er lik grensekostnad. Dette innebærer således at han tar høyest pris og tilbyr færrest varer i de delmarkeder der etterspørselen er mest uelastisk (minst prisfølsom). Da henter han ut maksimal monopolgevinst. Ved monopol uten prisdiskriminering har ikke produsenten mulighet til å dele kundegruppene inn etter grad av etterspørseIselastisitet, han må derimot ta samme pris fra alle kunder. Dermed vil monopolgevinsten uten prisdiskriminering, under ellers like forhold, bli mindre enn med prisdiskriminering.   
+</div>
+a. Definer hva som menes med positive eksternaliteter. Hvordan kan myndighetene korrigere for markedssvikten som følger av dette?
+<div class="sol">
+Er bivirkninger av andres konsum eller produksjon som den som forårsaker bivirkninger ikke tar hensyn til når man skal fatte beslutningen om hvor mye man skal produsere eller konsumere. Har den utilsiktede effekten en positiv virkning på en annen part, har vi å gjør med positive eksternaliteter. Det er effektivitetstap ved en positiv eksternalitet i form av at det blir produsert for lite av gode. Myndighetene kan korrigere for manglende produksjon ved innføring av et subsidie.
+</div>
+

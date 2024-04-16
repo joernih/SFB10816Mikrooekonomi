@@ -1,0 +1,299 @@
+---
+#output:
+#  html_document:
+format: 
+  html:
+   css: css/ON.css
+  pdf:
+    documentclass: scrreport
+    toc: true
+    toc-depth: 3
+---
+
+```{r ,echo=F, eval=F}
+#title <- 'eksamen_SFB10816_2022_V.Rmd'
+#title_exam <- 'eksamen_SFB10816_2022_V'
+#rmarkdown::render(title, output_format=rmarkdown::html_document(css="css/OFF.css"), output_file=paste0(title_exam))
+#system('brave eksamen_SFB10816_2022_V.html')
+##30+30+30+10
+```
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } },
+  });
+</script>
+<style>
+.mjx-mrow a {
+  color: black;
+  pointer-events: none;
+  cursor: default;
+}
+</style>
+
+![](bilder/hiø.png)
+
+
+
+<h1><center>**Eksamen**</center></h1>
+
+<div class="Løsningsforslag">
+<p style="text-align:center">SENSORVEILEDNING</p>
+</div>
+
+<h2>**Emnekode**: BØA203.</h2> 
+
+<h2>**Eksamensdato**: 03.05.2022.</h2> 
+
+<h2>**Målform**: Bokmål.</h2> 
+
+<h2>**Tillatte hjelpemidler**: Godkjent kalkulator.</h2> 
+
+<!--<h2>**Kursansvarlige**: Jørn I. Halvorsen (41611857).</h2>  -->
+
+<h2>**Generell informasjon:**
+Eksamen består av fire oppgaver. Det er mulig å svare fullstendig på alle spørsmålene gjennom korte og poengterte svar.</h2>
+
+
+<div class="abc">
+</div>
+
+ <P style="page-break-before: always">
+
+# Oppgave 1: Generell forståelse (30 prosent)
+
+1. Hva menes med at man innenfor mikroøkonomi legger til grunn konsumentsuverenitet?
+<div class="solution">
+Løsning: At enkeltpersoner er de som vet best hva som er best for en selv.
+</div>
+1. Tilhørende en produsent med faste priser på sine innsatsfaktorer, forklar hvorfor konstant skalautbytte vil medføre at grensekostnadene vil være konstante. 
+<div class="solution">
+Løsning: Ved konstant skalautbytte, vil en dobling av bruken av innsatsfaktorene hele tiden føre til en dobling av produksjonen. Kostnadene vil derfor øke like mye når produksjonen øker, noe som vil gjøre grensekostnadene konstante.
+</div>
+1. Hva er effekten av en lønnsøkning på etterspørselen etter arbeidskraft, og hvorfor vil denne trolig være sterkere på lang sikt enn på kort sikt?
+<div class="solution">
+Løsning: Det vil redusere etterspørselen etter arbeidskraft. På kort sikt skyldes dette at grenseproduktiviteten vil måtte øke for å sikre at den er lik reallønna. På lang sikt kommer en tilleggseffekt i form av at vi får substitusjon vekk fra arbeidskraft og over til kapital siden kapital nå har blitt relativt billigere.
+</div>
+1. Gi en verbal forklaring for hvorfor det er optimalt for en monopolist å tilpasse produksjonen der hvor grenseinntekt er lik grensekostnad.
+<div class="solution">
+Løsning: Dersom grenseinntekten er høyere enn grensekostnaden, vil overskuddet øke dersom bedriften produserer mer. Dersom grenseinntekten er lave enn grensekostnaden, vil overskuddet øke dersom bedriften reduserer produksjonen. Optimalt produksjon der hvor grenseinntekt er lik grensekostnad.
+</div>
+1. Hvorfor vil det under monopolistisk konkurranse være krevende for en bedrift over tid å opprettholde fortjenesten? 
+<div class="solution">
+Løsning: Økt konkurranse vil føre til redusert etterspørselkurven hos bedriften. Det vil skifte etterspørselskurven innover, noe som vil bidra til å redusere bedriftens fortjeneste.
+</div>
+
+
+
+# Oppgave 2: Produsentteori (30 prosent)
+Bedriften Bambå produserer handlekurver (x) ved hjelp av arbeidskraft (N) og realkapital (K). Produksjonsprosessen følger denne produktfunksjonen: $x=10N^{0.5}K^{0.5}$
+
+a.  Finn et uttrykk for grenseproduktet til de to innsatsfaktorene N og K. 
+<div class="solution">
+Løsning:
+$$
+dx/dN = 0.5\cdot 10 N^{0.5-1}K^{0.5} = 5(\frac{K}{N})^{0.5} > 0
+$$
+$$
+dx/dK = 0.5\cdot 10 N^{0.5}K^{0.5-1} = 5(\frac{N}{K})^{0.5} > 0
+$$
+</div>
+a.  Finn et uttrykk for den marginale tekniske substitusjonsbrøk (MTSB). Regn ut MTSB når N = 4 og K = 16. Gi en verbal forklaring for MTSB i dette punktet.
+<div class="solution">
+Løsning:
+$$
+MTSB\equiv - \frac{\Delta K}{\Delta N}= \frac{f'_n}{f'_k} = \frac{0.5\cdot 10 N^{-0.5}K^{0.5}}{0.5\cdot 10 N^{0.5}K^{-0.5}} = \frac{K}{N}=\frac{16}{4}=4
+$$
+Tolkning: Når vi øker innsatsen av N fra 4 til 5, innebærer det at innsatsen av K kan reduseres med 4 for at vi samtidig skal opprettholde produksjonen på tilnærmet samme produksjonsnivå.
+</div>
+d.  Legg nå til grunn at prisen på arbeidskraft (w) er $4$, mens brukerprisen på realkapital (r) er $1$. Finn et uttrykk for isokostlinjen. Hva er stigningstallet til isokostlinjen?
+<div class="solution">
+Løsning: Låser vi først totalkostnadene til et gitt nivå $C=C^{0}$, så kan isokostlinjen uttrykkes som
+$$
+C^{0} = 4N+1K
+$$
+Stigningstallet finner vi ved å totaldifferensiere isokostlinjen:
+$$
+0=4\Delta N + 1\Delta K \\
+-4 \Delta K = 1\Delta N \\
+\frac{\Delta K}{\Delta N} = - 4/1 = - 4
+$$
+</div>
+e.  Finn ved hjelp av regning og ved bruk av en figur den kostnadsminimerende bruken av hhv. arbeidskraft (N) og realkapital (K) i det bedriften produserer $80$ enheter.
+<div class="solution">
+Kostnadsminimering for et gitt produksjonsnivå gir ved bruk av Lagrange-metode følgende førsteordensbetingelser
+$$
+MTSB= \frac{f'_{N}}{f'_{K}}  = \frac{w}{r}  \\
+80 = 10N^{0.5}K^{0.5}
+$$
+I vårt tilfeller gir dette oss:
+$$
+MTSB= \frac{K}{N}  = \frac{4}{1} = 4  \Rightarrow K =4N \\
+80 = 10N^{0.5}K^{0.5} \\
+\text{ Følgende kombinasjon av de to uttrykken forteller oss at kostnadsminimerende bruk av arbeidskraft er gitt ved } \\
+80 = 10N^{0.5}(4N)^{0.5}=10\cdot4^{0.5}N \Rightarrow  N=\frac{40}{20} = 4 \\ 
+\text{Mens kostnadsminimerende bruk av kapital er gitt ved} \\
+80 = 10(4)^{0.5}K^{0.5} \Leftrightarrow K = (\frac{80}{20})^{2}=16
+$$
+(Kontroll $K=4N=4\cdot 4=16$)
+<br>
+```{r, echo=FALSE, eval=T, out.width="30%", fig.cap=""}
+# knitr::include_graphics("bilder/mtsbwr.png")
+```
+</div>
+# Oppgave 3: Markedsteori -- fullkommen konkurranse og avgifter (30 prosent)
+Ta utgangspunkt i et marked med fullkommen konkurranse, der markedets etterspørsel er
+kjent ved en fallende etterspørselskurve i et pris-mengde diagram.
+
+a. Anta at markedets etterspørsel og markedets tilbud er gitt ved henholdsvis:
+Etterspørsel: $X^D = 400 – 2p$  og Tilbud: $X^S = 2p$. Finn etterspørsel og tilbud på "pris-format" (dvs. du skal løse likningene over for p) og gi en tolkning av de to uttrykkene.
+<div class="solution">
+Løsning:
+$$
+X^D = 400 – 2p \\
+2p = 400-X^D \\
+p = 200-X^D/2
+$$
+$$
+X^S = 2p \\
+2p = X^S \\
+p = (1/2)X^S
+$$
+Tolkning: Etterpørselsfunksjon løst mhp. på pris gir oss den marginale betalingsvilligheten for ulike kvanta, mens tilbudsfunksjone forteller oss at bedriften tilpasser produksjonen der hvor pris er lik grensekostnad.
+</div>
+a. Vis etterspørselskurven og tilbudskurven i et pris-mengde diagram, og regn ut
+likevektspris og omsatt kvantum
+<div class="solution">
+Løsning:
+Likevekt innebærer at $X^s=X^d=X/MBV=GK$. Vi har derfor ved bruk av sistnevnte at
+$$
+200-X/2=(1/2)X \\
+200 = (1/2)x+(1/2)x \\
+X = 200 
+$$
+Som gir likevektspris på
+$$
+p = 200/2=100
+$$
+```{r, echo=FALSE, eval=T, out.width="30%", fig.cap=""}
+# knitr::include_graphics("bilder/fkl.png")
+```
+</div>
+c. Anta at selgeren blir pålagt en avgift lik 10 kroner pr. solgte enhet. Ny tilbudsfunksjon
+blir da $p = 10 + (1/2)X^S$. Illustrer denne endringen i en ny figur basert på figuren du har brukt i oppgave (b).
+Regn også ut ny likevektspris og omsatt kvantum.
+<div class="solution">
+Løsning:
+Likevektskvantum
+$$
+200-(1/2)X = 10+(1/2)X  \\
+200-10 = (1/2)X+(1/2)X  \\
+X = 190  
+$$
+Likevektsprisen i markedet
+$$
+p = 200-190/2=105
+$$
+Produsentprisen er lik p-avg: $105-10=95$.
+</div>
+a. Regn ut dødvektstapet (effektivitetstapet) som følger av avgiften.
+<div class="solution">
+Løsning:
+Dødvektstap
+$$
+(105-95)(200-190)/2=50
+$$
+```{r, echo=FALSE, eval=T, out.width="30%", fig.cap=""}
+# knitr::include_graphics("bilder/avl.png")
+```
+</div>
+
+# Oppgave 4: Negative eksternaliteter og offentlig inngripen (10 prosent)
+Anta samme opplysninger som i oppgave 3, men at det nå er knyttet en eksternalitet i produksjonen som har en samfunnsøkonnomisk kostnad på $10$ kroner per produsert enhet.
+
+a. Forklar og eventuelt vis ved bruk av en figur hvordan dette vil endre resultatene fra oppgave 3.
+<div class="solution">
+<br>
+Løsning: Bivirkningene fra eksternaliteten vil føre til for stor produksjon, noe som vil gjøre at FK-løsningen inneha et effektivitetstap.
+Avgiften vil i dette tilfelle eliminere hele dette tapet pga dens effekt på å redusere produksjonen.
+</div>
+a. Hvorfor tror du offentlige sektor vil vurdere skattlegging i dette tilfelle som mer gunstig enn hva som var tilfelle under oppgave 3?
+<div class="solution">
+Løsning: I motsetning til oppgave 3, vil det offentlige her motta skatteinntekter uten at det fører til noe effektivitetstap for økonomien.
+</div>
+
+```{r include=FALSE}
+knitr::knit_exit()
+```
+## Appendiks Python
+
+```{r}
+reticulate::repl_python()
+import sympy
+from sympy import *
+# Oppgave 2
+x, n, k = sympy.symbols('x n k')
+C, w, r, A = sympy.symbols('C w r A')
+An=10
+wn=4
+rn=1
+xn=80
+cobbd = Eq(x,An*n**0.5*k**0.5).subs(A,An)
+totkos = Eq(C,wn*n+rn*k)
+## 2a
+dxn =diff(solve(cobbd,x)[0],n)
+dxk =diff(solve(cobbd,x)[0],k)
+## 2b
+MTSB = dxn/dxk
+## 2c
+isokos=totkos
+dcn =diff(solve(isokos,C)[0],n)
+dck =diff(solve(isokos,C)[0],k)
+heliso = -dcn/dck
+## 2d
+lagtan=Eq(MTSB,wn/rn)
+lagout=cobbd.subs(x,xn)
+nsol = solve(lagout.subs(k,solve(lagtan,k)[0]),n)[0]
+ksol = solve(lagout.subs(n,nsol),k)[0]
+exit
+```	
+
+```{r}
+reticulate::repl_python()
+import sympy
+from sympy import *
+# Oppgave 3	
+x, xd, xs, p = sympy.symbols('x xd xs p')
+XD=Eq(xd,400-2*p)
+XS=Eq(xs,2*p)
+## 3a
+XDp=solve(XD,p)[0]
+XSp=solve(XS,p)[0]
+## 3b
+xfk=solve(Eq(XDp,XSp).subs(xs,x).subs(xd,x),x)[0]
+pfk=XDp.subs(xd,xfk)
+xfk
+pfk
+## 3c
+avgn = 10
+XSpa=solve(Eq(p,XSp+avgn),p)[0]
+xfka=solve(Eq(XDp,XSpa).subs(xs,x).subs(xd,x),x)[0]
+pfka=XDp.subs(xd,xfka)
+pfku=XSp.subs(xs,xfka)
+## 3d
+dv=(pfka-pfku)*(xfk-xfka)/2
+```
+
+## Appendiks R
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics("bilder/mtsbwr.png")
+```
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics("bilder/abc.png")
+```
+
+```{r, echo=FALSE, out.width="65%", fig.cap=""}
+knitr::include_graphics("bilder/def.png")
+```

@@ -9,17 +9,25 @@ format:
     toc: true
     toc-depth: 3
     number-sections: true
-  docx:
-    toc: true
-    toc-depth: 3
-    number-sections: true
+    lof: true
+    lot: true
 ---
+
+```{r, echo=F, warning=F, message=F, eval=T, results='hide'}
+library(dplyr)
+library(dplyr)
+library(ggplot2)
+library(econocharts)
+md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
+# ../data-raw/metadata.json
+source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
+```
 
 
 ```{r, echo=FALSE, results='asis',warning=F}
 pres <- paste0(rprojroot::find_rstudio_root_file(), '/forelesninger/notater.qmd')
 text <- readLines(pres)
-cat(knitr::knit_child(text = paste(text[25:length(text)], collapse = "\n"), quiet = TRUE))
+cat(knitr::knit_child(text = paste(text[103:length(text)], collapse = "\n"), quiet = TRUE))
 ```
 
 

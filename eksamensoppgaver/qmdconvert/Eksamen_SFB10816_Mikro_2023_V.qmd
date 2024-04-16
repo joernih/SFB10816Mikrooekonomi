@@ -1,0 +1,227 @@
+---
+params:
+   pngs: F
+format: 
+  html:
+    page-layout: article
+    css: css/OFF.css
+# Eksamen_SFB30820_Finansteori_C_H_2022.qmd
+---
+
+
+```{r, echo=F}
+fp <- 'script/S_V_2023.py'
+reticulate::source_python(fp)
+meq <- reticulate::py$modeql
+```
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } },
+  });
+</script>
+<style>
+.mjx-mrow a {
+  color: black;
+  pointer-events: none;
+  cursor: default;
+}
+</style>
+
+
+```{r, echo=FALSE, out.width="50%", fig.cap="",fig.align = 'center'}
+#logo <- paste0(rprojroot::find_rstudio_root_file(),'/SFB10816_BOEA203_Mikro_Plates/bilder/hiø.png')
+#knitr::include_graphics(logo)
+vkt <- c(30,30,30,10)
+#sum(vkt)
+```
+
+<h1><center>**Eksamen**</center></h1>
+
+<div class="sol">
+<p style="text-align:center">SENSORVEILEDNING</p>
+</div>
+
+<h2>**Emnekode**: SFB10816</h2> 
+
+<h2>**Eksamensdato**: 03.05.2023.</h2> 
+
+<h2>**Målform**: Bokmål.</h2> 
+
+<h2>**Tillatte hjelpemidler**: Godkjent kalkulator.</h2> 
+
+<!--<h2>**Kursansvarlige**: Jørn I. Halvorsen (41611857).</h2>  -->
+
+<h2>**Generell informasjon:**
+Eksamen består av fire oppgaver. Det er mulig å svare fullstendig på alle spørsmålene gjennom korte og poengterte svar.</h2>
+
+
+<div class="abc">
+</div>
+
+ <P style="page-break-before: always">
+
+# Oppgave 1: Generell forståelse (`r vkt[1]` prosent)
+
+
+1. Innenfor mikroøkonomi vil aktørene vanligvis finne sin optimale tilpasning ved å foreta vurderinger av valg på marginen. Forklar hvorfor det forholder seg slik.
+<div class="sol">
+Ved å foreta valg på marginen, vil man generelt vurdere økningen i nytte av noe opp mot kostnaden av noe annet. Ved en optimal tilpasning vil det være slik at størrelsen på disse effekten vil utligne hverandre.
+</div>
+1. Fra produksjonsteorien på kort sikt har vi at egenskapene til grenseproduktiviteten til arbeidskraft vil påvirke grensekostnadene til bedriften. Hva er årsaken til dette?
+<div class="sol">
+Grenseproduktiviteten til arbeidskraft angir økningen i produksjonen av én ekstra arbeider. Grensekostnaden angir økningen i kostnaden av én ekstra produsert enhet. Gitt at grenseproduktiviteten er fallende, vil man hele tiden kreve flere arbeider for å øke produksjonen med en ekstra enhet. Dette medfører økte lønnskostnader, som betyr at fallende grenseproduktivitet er sammenfallende med økende grensekostnader.
+</div>
+1. I markedet for forbruksgoder er det vanlig å anta en fallende etterspørselskurve for husholdningen, dette fordi det virker rimelig å anta at priseffekten av en prisendring alltid vil dominere inntektseffekten. For arbeidsmarkedet er man imidlertid mer usikker på totaleffekten ved en prisendring i form av en endring i reallønna på tilbudet av arbeidskraft. Kan du gi en forklaring på hvorfor?
+<div class="sol">
+Ved tilbudet av arbeidskraft vil en husholdning stå ovenfor valg mellom goder og fritid. En økning reallønna vil gjøre alternativkostnaden av mer i fritid i form av tapt arbeidsinntekt dyrere. Substitusjonseffekten av økt reallønna vil derfor være mer arbeid. Økt reallønna vil også gi en inntektseffekt. Synes det synes rimelig å anta at inntekt alltid utgjør et normal gode, vil denne trekke i motsatt retning av priseffekten. Totaleffekten vil derfor her i utgangspunktet være usikker.
+</div>
+1. Effekten på etterspørselen av endringer i pris og inntekt ønsker økonomer i mange sammenhenger å uttrykke i form av elastisiteter. Gi en forklaring hvorfor det forholder seg slik? Videre, ved bruk av et pris-mengde diagram, vis effekten på etterspørselskurven av en inntektsøkning dersom vi har å gjøre med et mindreverdig gode.
+<div class="sol">
+Ved å operere med elastisiteter omgjør man kvantitative endringer om til prosenter. En slik standardisering gjør at man kan sammenligne prisfølsomheten av forskjellige goder med hverandre. Gitt at vi har å gjøre med et mindreverdig gode, vil effekten av en inntektsøkning være at etterspørselskurven skifter til venstre.
+</div>
+1. Gi et eksempel på et tilfelle av markedssvikt, samt hvordan offentlig inngripen kan bidra til å korrigere for effektivitetstapet som følger av denne svikten.
+<div class="sol">
+Pensum i kurset inneholder fem typer av markedssvikt:
+<ul>
+ <li>Markedsmakt $\rightarrow$ Konkurransetilsyn, lover og regler.</li>
+  <li>Eksterne virkninger $\rightarrow$ Negative: Avgifter/Kvoter, Positive: Subsidier</li>
+  <li>Kollektive goder $\rightarrow$ Offentlige kan selv produsere.</li>
+  <li>Mangelfull informasjon $\rightarrow$ Lover og regler om opplysningsplikt.</li>
+  <li>Formyndergoder i form av (1) merit goods: kjøper for lite av, (2) merit bads: kjøpe for mye av. $\rightarrow$ (1) prissubsidiering (2) forbud, avgifter, informasjoskampanjger. </li>
+</ul>
+</div>
+
+
+# Oppgave 2: Konsumentteori (`r vkt[2]` prosent)
+
+En konsument Alf-Inge skal gjøre innkjøp til en fotballkampen som skal feires sammen med venner på lørdag. Fokuset er rettet mot gode 1 pizza og gode 2 cola, hvor prisen på en pizza
+`r meq$p0_1` kroner, mens prisen for en cola er `r meq$p0_2` kroner. Budsjettet til Alf-Inge er på `r meq$m0` kroner
+
+a. Formuler Alf-Inges budsjettbetingelse. Hva er helningen på denne budsjettbetingelsen? Hvor mange enheter vil han kjøpe dersom hele budsjettet skal benyttes på enten pizza eller cola? 
+<div class="sol">
+<ul>
+  <li>Hele budsjettet på pizza gjør at antall enheter blir $\frac{m}{p_1}=\frac{`r meq$m0`}{`r meq$p0_1`}$ = `r meq$alt_1`</li>
+  <li>Hele budsjettet på cola gjør at antall enheter blir $\frac{m}{p_2}=\frac{`r meq$m0`}{`r meq$p0_2`}$ = `r meq$alt_2`</li>
+  <li>Helningen gitt ved $-\frac{p_1}{p_2}=-\frac{`r meq$p0_1`}{`r meq$p0_2`}=-`r meq$heln`$</li>
+</ul>
+</div>
+Vi tenker oss nå videre at nyttefunksjon til Alf-Inge er gitt ved  $`r meq$Un`$.
+
+b. Still først opp de to førsteordensbetingelsene for optimal konsum av de to godene. Basert på opplysningene i oppgaven, vis så innholdet i disse to betingelsene.
+<div class="sol">
+Betingelsen for optimal tilpasning
+\begin{equation*}
+MSB=\frac{U_1'(x_1,x_2)}{U_2'(x_1,x_2)}=\frac{p_1}{p_2} \text{ MSB (dvs. helningen på indifferenskurven) er lik prisforholdet} \\
+m=p_1x_1+p_2x_2 \text{ Budsjettbetingelsen}
+\end{equation*}
+Som ved bruk av opplysningene i oppgave gir oss:
+\begin{equation*}
+`r meq$S1`
+\end{equation*}
+\begin{equation*}
+`r meq$S2`
+\end{equation*}
+</div>
+c. Finn løsningen for optimal forbruk av de to forbruksgodene.
+<div class="sol">
+Vi har derfor at optimal forbruk av de to godene er gitt ved:
+\begin{equation*}
+x_1=`r meq$s0x_1` \\
+x_2=`r meq$s0x_2` 
+\end{equation*}
+</div>
+d. Hva blir nyttenivået ved optimal forbrukssammensetning, og hva forteller dette tallet oss? 
+<div class="sol">
+\begin{equation*}
+`r meq$Un`=`r meq$Ul`
+\end{equation*}
+Siden vi har å gjøre med en ordinal nyttefunksjon, vil nyttenivået gi uttrykk for en rangering for ulike godekombinasjoner hvor høyere nyttenivå er å foretrekke framfor et lavere nyttenivå.
+</div>
+e. Illustrer resultatene fra de fire foregående spørsmålene ved bruk av en figur.
+<div class="sol">
+</div>
+
+```{r, echo=F}
+knitr::knit_exit()
+```
+
+
+
+# Oppgave 3: Markedsteori: Monopol (`r vkt[3]` prosent)
+Offentlig myndigheter har tilbudt busselskapet Ty enerett til bussreiser på en bestemt geografisk strekning.
+Vi antar at kostnadsfunksjonen til busselskapet er gitt ved $C(X)=`r meq$CXs`$, hvor $X$ utgjør antall bussreiser.
+
+a. Vis formelt hvorfor denne kostnadsfunksjonen innebærer at grensekostnaden til busselskapet er gitt ved $C'(X)=`r meq$cx`$
+<div class="sol">
+Grensekostnadsfunksjonen framkommer ved å derivere kostnadsfunksjonen mhp. x:
+\begin{equation*}
+C'(X)=`r meq$cx`
+\end{equation*}
+</div>
+b. Vi antar at etterspørselsfunksjonen (MBV) er gitt ved `r meq$MBV`. Gitt at Ty ønsker å maksimere fortjenesten, 
+hva blir optimal antall bussreiser med tilhørende billettpriser på strekningen? 
+
+<div class="sol">
+Optimal kvantum er der hvor grensekostnad er lik grenseinntekt.
+\begin{equation*}
+`r meq$GIGK` \\
+X^{M}= `r meq$xmeq`
+\end{equation*}
+Ved å sette kvantumet som optimerer fortjenesten inn i etterspørselfunksjonen finner vi monopolprisen som er gitt ved
+\begin{equation*}
+P^{M}=`r meq$pmeq`
+\end{equation*}
+</div>
+c. Basert på monopoltilpasningen,  sett opp en figur og regn ut konsumentoverskudd (KO), produsentoverskudd (PO) og dødvektstap (DT).
+<div class="sol">
+\begin{equation*}
+KO=(`r meq$xmeq`)\cdot(`r meq$MBV0`-`r meq$pmeq`)/2= =`r meq$ko` \\
+PO=(`r meq$xmeq`)\cdot(`r meq$pmeq`-`r meq$cx`)=`r meq$po` \\
+DT=(`r meq$xeq`-`r meq$xmeq`)\cdot(`r meq$pmeq`-`r meq$cx`)/2=`r meq$dt` 
+\end{equation*}
+</div>
+d. Anta at Ty får tillatelse av myndighetene til å ta ulik pris mellom forskjellige kundegrupper. Hva kalles den formen for prisdiskriminering?
+Virker det rimelig at selskapet vil ta i bruk en slik mulighet?
+<div class="sol">
+Prisdiskriminering av 3. orden. Ja, det vil være lønnsomt å ta i bruk en slik mulighet så lenge etterspørselsfunksjonen til de
+ulike kundegruppene har forskjellig elastisitet.
+</div>
+
+# Oppgave 4: Effektivitet, velferd og markedssvikt (`r vkt[4]` prosent)
+
+1. Forklar hva som er kriteriet for samfunnsøkonomisk effektivitet for både ett eller alle markedene i økonomien.
+<div class="sol">
+Ett marked: $MBV=GK$
+Mange markeder: Parete effektivitet. Dvs. en tilstand hvor alle paret-forbedringer er uttømt. Med en paret-forbedring menes at en aktørene får det bedre (dvs. økt nytte) uten at de andre aktøren får det verre.
+</div>
+1. Gitt at alle markedene i økonomien er kjennetegnet ved fullkommen konkurranse, hva forteller første velferdsteorem oss om samfunnsøkonomisk effektivitet i denne økonomien? Videre, ved bruk av en figur, vis sammensetningen av produksjonen dersom økonomien har en produksjon av to konsumgoder.
+<div class="sol">
+Første velferdsteorem forteller oss at dersom kravene til fullkommen konkurranse er oppfylt i alle markeder, vil markedsøkonomien sørge for en paret-effektiv ressursallokering av alle gode og innsatsfaktorene. For sammensetning av produksjonen, vil dette innebære at $MTB$ (marginale transformasjonbrøk) er lik $MSB$ (marginale substitusjonsbrøk).  
+</div>
+
+```{r, echo=F}
+knitr::knit_exit()
+```
+
+```{r ,echo=F, eval=F}
+title <- 'eksamen_SFB10816_2022_V.Rmd'
+title_exam <- 'eksamen_SFB10816_2022_V'
+rmarkdown::render(title, output_format=rmarkdown::html_document(css="css/OFF.css"), output_file=paste0(title_exam))
+system('brave eksamen_SFB10816_2022_V.html')
+```
+```{r ,echo=FALSE, out.width="50%", include= params$pngs, fig.align='left'}
+#v4 <- paste0(rprojroot::find_rstudio_root_file(),'/SFB10816_BOEA203_Mikro_Plates/bilder/S_2023_V_velftilp.png')
+#knitr::include_graphics(v4)
+```
+```{r ,echo=FALSE, out.width="50%", include= params$pngs, fig.align='left'}
+#m3 <- paste0(rprojroot::find_rstudio_root_file(),'/SFB10816_BOEA203_Mikro_Plates/bilder/S_2023_V_montilp.png')
+#knitr::include_graphics(m3)
+```
+
+```{r ,echo=FALSE, out.width="50%", include= params$pngs, fig.align='left'}
+k2 <- paste0(rprojroot::find_rstudio_root_file(),'/SFB10816_BOEA203_Mikro_Plates/bilder/S_2023_V_konstilp.png')
+knitr::include_graphics(k2)
+```
