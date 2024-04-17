@@ -43,7 +43,7 @@ cat(knitr::knit_child(text = paste(text[25:length(text)], collapse = "\n"), quie
 
 [Trykk her for pdf-versjon](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/utskrifter/Arbeidskrav_2024_V.pdf)
 
-<button id="show-all-answers">Vis svar</button>
+<button id="show-all-answers">Vis svar (figurer vil bli lagt til snart)</button>
 
 <style>
   .answer {
