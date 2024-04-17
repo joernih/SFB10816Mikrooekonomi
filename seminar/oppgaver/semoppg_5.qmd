@@ -141,7 +141,6 @@ Forskjellen er at ved tredjeordens prisdiskriminering deler produsenten selv mar
 </div>
 
 
-::: {.content-visible when-profile="internal"}
 
 <button id="show-all-answers">Vis svar</button>
 <p class="answer hidden">
@@ -163,7 +162,6 @@ showAllButton.addEventListener("click", () => {
 });
 </script>
 
-:::
 
 
 
