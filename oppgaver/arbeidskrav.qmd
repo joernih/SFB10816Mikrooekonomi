@@ -2,69 +2,23 @@
 title: ""
 format: 
   html:
-   theme: default
+    toc: true
+    toc-depth: 1
+    css: css/ON.css
   pdf:
     toc: false
     toc-depth: 3
 ---
 
-
-
-```{r, echo=F, warning=F, message=F, eval=T, results='hide'}
-library(dplyr)
-library(dplyr)
-library(ggplot2)
-library(econocharts)
-md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
-## ../data-raw/metadata.json
-##source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/econplot.R'))
-#source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
-```
-
 \newpage 
 
-```{r, echo=F}
-library(ggplot2)
 
-# Define the function
-cost_function <- function(x) {
-  2 * x^2
-}
+# Obligatorisk innleveringsoppgaver
 
-# Generate data for positive x values only
-data <- data.frame(x = seq(0, 10, by = 0.1))
-data$y <- cost_function(data$x)
-
-# Optimal levels of output for positive x values
-x_optimal_100 <- sqrt(50)
-x_optimal_150 <- sqrt(75)
-
-# Create the plot
-plot <- ggplot(data, aes(x = x, y = y)) +
-  geom_line() + # Adds a line plot
-  geom_hline(yintercept = 100, linetype = "dashed", color = "blue", size = 1) +
-  geom_hline(yintercept = 150, linetype = "dotted", color = "red", size = 1) +
-  geom_vline(xintercept = x_optimal_100, linetype = "dashed", color = "green", size = 1) +
-  geom_vline(xintercept = x_optimal_150, linetype = "dotted", color = "purple", size = 1) +
-  ggtitle("Cost Function c(x) = 2x^2 (Positive x) with Price and Optimal Output Levels") +
-  xlab("x") +
-  ylab("c(x)") +
-  theme_minimal() # Adds a minimal theme
-
-# Print the plot
-print(plot)
-```
-
-
-
-### Obligatorisk innleveringsoppgaver
-
-- Innleveringsfrist: **`r md$kursg$arbkinl`**.
   - [Canvas](https://hiof.instructure.com/courses/8577/assignments/38559)
 - Versjon 1.1
 - Kan jobbe alene, eller levere som gruppe (bestemmer selv antallet, men utbytte av
   arbeidskravet vil nok være større ved en mindre gruppe)
-
 
 
 ```{r, echo=F}
@@ -78,7 +32,7 @@ prd <- c("bæreposer","handlekurver","handlevogner")
 
 
 
-## Oppgave 1: Generell forståelse
+# Oppgave 1: Generell forståelse
 
 I. Er følgende påstander riktig eller gale? Begrunn svaret ditt med økonomisk teori. 
 
@@ -128,16 +82,19 @@ III. Ta utgangspunkt i en fallende etterspørselskurve i et pris-mengde diagram.
 a. Vis hvordan etterspørselskurven påvirkes av økt inntekt blant konsumentene dersom
 godet er normalt, og mindreverdig.
 <div class="answer hidden">
-<!-- ![](png/1.png) -->
 Ved normalt gode, etterspørselskurven skifter til høyre. Ved mindreverdig gode, skifter til venstre.
+<br>
+![](bilder/arb_iiia.png){width=50%}
 </div>
 a. Vis hvordan etterspørselskurven påvirkes av økt pris på en alternativ vare.
 <div class="answer hidden">
 <!-- ![](png/2.png) -->
 Ved økt pris på alternativ vare, etterspørselskurven skifter til høyre. 
+<br>
+![](bilder/arb_iiib.png){width=50%}
 </div>
 
-## Oppgave 2: Produksjonsteori på kort sikt
+# Oppgave 2: Produksjonsteori på kort sikt
 
 Bedriften `r nvb[3]` produserer `r prd[3]` hvor kostnadsfunksjonen  gitt ved $`r meq$cf3`$. Produktprisen er gitt ved $`r meq$p3`$ kroner.
 
@@ -175,7 +132,10 @@ Fortjenesten vil derfor her være gitt ved
 </div>
 a) Vis ved bruk av en figur og forklar hva som skjer med tilbudet til bedriften i produktmarkedet dersom prisen øker. 
 <div class="answer hidden">
-Dersom produktprisen øker, vil grensekostnaden i utgangspunktet være lavere enn produktprisen. Det vil gjøre det lønnsomt for bedriften å øke tilbudet helt inntil betingelsen om at grensekostnad skal være like produktpris er oppfylt.</div>
+Dersom produktprisen øker (eks. fra 100 til 150), vil grensekostnaden i utgangspunktet være lavere enn produktprisen. Det vil gjøre det lønnsomt for bedriften å øke tilbudet helt inntil betingelsen om at grensekostnad skal være like produktpris er oppfylt.
+<br>
+![](bilder/arb_2_f.png){width=50%}
+</div>
 a) Vi lar bruken av arbeidskraft være representert ved N. Vis at produksjonsfunksjonen  
 $`r meq$pn3`$ gir opphav til de variable kostnadene som er lik $`r meq$vk3`$ gitt at lønnskostnaden per arbeider er lik ~~1~~ 2 kroner.
 <div class="answer hidden">
@@ -191,7 +151,7 @@ C_v=wN=2X^2
 </div>
 
 
-## Oppgave 3: Konsumentteori
+# Oppgave 3: Konsumentteori
 Anta en konsument med følgende nyttefunksjon:
 \begin{equation}
 U(x_{1}, x_{2}) = 7x_{1}x_{2}
@@ -242,7 +202,7 @@ c. Regn ut egenpriselastisiteten basert på %-vis endring i etterspørsel og pri
 Siden verdien ligger i intervallet mellom -1 og 0 $\rightarrow$ godet er prisuelastisk.
 </div>
 
-## Oppgave 4: Markedsteori: Fullkommen konkurranse med og uten avgift
+# Oppgave 4: Markedsteori: Fullkommen konkurranse med og uten avgift
 Vi ser på et marked under fullkommen konkurranse. Etterspørselen er gitt ved (den marginale betalingsvillighet) $P = 24 – 2X$ og tilbudet (grensekostnaden) som $P = 4X$.
 
 a) Finn likevektspris og omsatt kvantum. Vis tilpasningen grafisk.
@@ -259,6 +219,7 @@ Setter vi dette kvantumet inn i enten etterspørs- eller tilbudskurven vil vi fi
 MBV: P = 24-2\cdot 4=16 \\
 (GK: P = 4\cdot 4= 16)
 \end{aligned}
+![](bilder/arb_4_a.png){width=50%}
 </div>
 b) Regn ut konsumentoverskuddet (KO), produsentoverskuddet (PO) og samfunnsøkonomisk overskudd (SO).
 <div class="answer hidden">
@@ -311,6 +272,7 @@ Regn ut effektivitetstapet og illustrer denne tilpasningen ved hjelp av en figur
 DT = \frac{(4-3)\cdot (18-12)}{2}=3
 \end{equation}
 <br>
+![](bilder/arb_4_e){width=50%}
 </div>
 f) Vil de samfunnsøkonomiske konsekvensene av avgiften bli påvirket av etterspørselens og
 tilbudets prisfølsomhet (priselastisitet)? Begrunn svaret.
@@ -338,4 +300,10 @@ showAllButton.addEventListener("click", () => {
   });
 });
 </script>
+
+```{r}
+knitr::knit_exit()
+```
+
+
 

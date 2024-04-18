@@ -22,7 +22,7 @@ Uke `r md$regnv$sem3[2]`, ansvarlig: `r md$regnv$ansv[3]`
 Torsdag kl. 09:15-11:00.
 
 
-## Oppgave 1: Produksjonsteori på kort sikt
+# Oppgave 1: Produksjonsteori på kort sikt
 ## Produksjonsteori: kort sikt 
 Bedriften `r nvb[1]` produserer `r prd[1]` ved hjelp av arbeidskraft  ($N$). Produksjonsprosessen kan beskrives ved hjelp av en produktfunksjon $`r meq$pf1`$. Produktprisen er $`r meq$pn1`$ kroner, mens faktorprisen for arbeidskraft ($w$) er gitt ved $`r meq$wn1`$ 
 kroner.
@@ -64,6 +64,7 @@ a) Vis ved bruk av en figur og forklar hva som skjer med etterspørselen til bed
 <div class="answer hidden">
 Dersom faktorprisen for arbeidskraft går ned vil verdien av grenseproduktiviteten i utgangspunktet være høyere enn
 faktorprisen. Det vil gjøre det lønnsomt for bedriften å øke bruken av antal arbeidere helt inntil disse to verdiene er lik hverandre igjen. 
+![Elephant](bilder/sem1_1a.png)
 </div>
 
 ## Produksjonsteori: lang sikt
@@ -122,6 +123,7 @@ K=4N=4(4)=16 \\
 \text{Alternativt} \\
 80 = 10(4)^{0.5}K^{0.5} \Leftrightarrow K = (\frac{80}{20})^{2}=16
 \end{aligned}
+![Elephant](bilder/sem1_1a.png)
 </div>
 
 
