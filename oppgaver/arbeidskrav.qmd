@@ -219,6 +219,7 @@ Setter vi dette kvantumet inn i enten etterspørs- eller tilbudskurven vil vi fi
 MBV: P = 24-2\cdot 4=16 \\
 (GK: P = 4\cdot 4= 16)
 \end{aligned}
+<br>
 ![](bilder/arb_4_a.png){width=50%}
 </div>
 b) Regn ut konsumentoverskuddet (KO), produsentoverskuddet (PO) og samfunnsøkonomisk overskudd (SO).
