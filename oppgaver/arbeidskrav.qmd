@@ -22,7 +22,7 @@ format:
 
 
 ```{r, echo=F}
-fp <- '/home/joernih/homepageJIH/nonpublic/templates/mikro/script/oppgaver_h_2023.py'
+fp <- 'script/oppgaver_h_2023.py'
 reticulate::source_python(fp)
 meq <- reticulate::py$modeql
 nvb <- c("Ambå","Bambå","Cambå")
@@ -284,7 +284,7 @@ Generelt vil det være slik at desto mer priselastisk etterspørselen og tilbude
 
 [Trykk her for pdf-versjon](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/utskrifter/Arbeidskrav_2024_V.pdf)
 
-<button id="show-all-answers">Vis svar (figurer vil bli lagt til snart)</button>
+<button id="show-all-answers">Vis svar</button>
 
 <style>
   .answer {
@@ -302,9 +302,6 @@ showAllButton.addEventListener("click", () => {
 });
 </script>
 
-```{r}
-knitr::knit_exit()
-```
 
 
 
