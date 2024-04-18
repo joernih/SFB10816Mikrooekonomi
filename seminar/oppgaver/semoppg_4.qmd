@@ -144,6 +144,7 @@ ikke konsumere mer enn det som inntekt og priser bestemmer og avgrenser.
 a.
 Hva skjer med budsjettlinjen dersom inntekten reduseres til 120 kroner? Bruk også en
 figur i forklaringen din.
+<br>
 <div class="answer hidden">
 Ved en reduksjon i budsjettet (R) med 120 kroner, får vi følgende reviderte
 budsjettbetingelse:
@@ -159,7 +160,7 @@ Skjæringspunktet med den horisontale aksen ($\frac{R}{p_1}=\frac{120}{20}=6$) v
 vertikale aksen ($\frac{R}{p_2}=\frac{120}{40}=3$) viser at Olava kan konsumere 3 kopper med kaffelatte dersom hun bruker hele budsjettet på dette godet.
 Konklusjon: Redusert budsjett, reduserer konsumentens mulighetsområde ved å
 parallellforskyve budsjettlinjen innover i godediagrammet.
-![Elephant](bilder/sem1_1a.png)
+![](bilder/sem4_1f.png){width=50%}
 </div>
 a.
 Olava har følgende nyttefunksjon: $U =10x_1^{0.5}x_2^{0.5}$. Her er x lik mengden som konsumeres
@@ -227,7 +228,7 @@ vil substitusjonseffekten være sterkere enn inntektseffekten. Fremdeles vil den
 samlede virkningen være en økt etterspørsel etter kaker. Dersom kaker er et sterkt
 mindreverdig gode, kan vi oppleve den situasjonen at en prisnedgang på kaker fører til
 lavere etterspørsel etter godet. I så fall betegner vi kaker som et giffengode.
-![Elephant](bilder/sem1_1a.png)
+![](bilder/sem4_1i.png){width=50%}
 </div>
 
 

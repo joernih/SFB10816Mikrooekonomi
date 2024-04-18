@@ -1,5 +1,5 @@
 ---
-title: "Samlede notater"
+title: "Samlede notater (beta-versjon)"
 format: 
   html:
     toc: true
@@ -29,6 +29,8 @@ pres <- paste0(rprojroot::find_rstudio_root_file(), '/forelesninger/notater.qmd'
 text <- readLines(pres)
 cat(knitr::knit_child(text = paste(text[103:length(text)], collapse = "\n"), quiet = TRUE))
 ```
+
+
 
 
 
