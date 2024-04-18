@@ -25,6 +25,7 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 
 
 
+
 ### Obligatorisk innleveringsoppgaver
 
 - Innleveringsfrist: **`r md$kursg$arbkinl`**.
@@ -40,6 +41,7 @@ app1_fil <- paste0("/home/joernih/homepageJIH/nonpublic/templates/mikro/Arbeidsk
 text <- readLines(app1_fil)
 cat(knitr::knit_child(text = paste(text[25:length(text)], collapse = "\n"), quiet = TRUE))
 ```
+
 
 [Trykk her for pdf-versjon](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/utskrifter/Arbeidskrav_2024_V.pdf)
 

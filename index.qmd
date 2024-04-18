@@ -49,7 +49,3 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 knitr::knit_exit()
 ```
 
-
-
-
-
