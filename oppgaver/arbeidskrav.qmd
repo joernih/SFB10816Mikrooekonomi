@@ -23,6 +23,37 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 
 \newpage 
 
+```{r, echo=F}
+library(ggplot2)
+
+# Define the function
+cost_function <- function(x) {
+  2 * x^2
+}
+
+# Generate data for positive x values only
+data <- data.frame(x = seq(0, 10, by = 0.1))
+data$y <- cost_function(data$x)
+
+# Optimal levels of output for positive x values
+x_optimal_100 <- sqrt(50)
+x_optimal_150 <- sqrt(75)
+
+# Create the plot
+plot <- ggplot(data, aes(x = x, y = y)) +
+  geom_line() + # Adds a line plot
+  geom_hline(yintercept = 100, linetype = "dashed", color = "blue", size = 1) +
+  geom_hline(yintercept = 150, linetype = "dotted", color = "red", size = 1) +
+  geom_vline(xintercept = x_optimal_100, linetype = "dashed", color = "green", size = 1) +
+  geom_vline(xintercept = x_optimal_150, linetype = "dotted", color = "purple", size = 1) +
+  ggtitle("Cost Function c(x) = 2x^2 (Positive x) with Price and Optimal Output Levels") +
+  xlab("x") +
+  ylab("c(x)") +
+  theme_minimal() # Adds a minimal theme
+
+# Print the plot
+print(plot)
+```
 
 
 
@@ -288,10 +319,6 @@ Essensen med stykkavgiften på 6 kroner er at den medfører et effektivitetstap 
 Generelt vil det være slik at desto mer priselastisk etterspørselen og tilbudet er, desto større vil effektivitetstapet være. </div>
 </div>
 
-
-
-
-
 [Trykk her for pdf-versjon](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/utskrifter/Arbeidskrav_2024_V.pdf)
 
 <button id="show-all-answers">Vis svar (figurer vil bli lagt til snart)</button>
@@ -311,13 +338,4 @@ showAllButton.addEventListener("click", () => {
   });
 });
 </script>
-
-
-
-
-
-
-
-
-
 
