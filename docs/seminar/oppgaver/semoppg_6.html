@@ -366,6 +366,24 @@ Oppgave: Finn den samfunnsøkonomisk effektive produksjonen av dette godet.
 <div class="answer hidden">
 <p><img src="ghi.png" class="img-fluid"></p>
 </div>
+<br> <button id="show-all-answers">Vis svar</button>
+<p class="answer hidden">
+</p>
+<style>
+  .answer {
+    color: blue;
+  }
+</style>
+<script>
+const answerToggles = document.querySelectorAll(".answer");
+const showAllButton = document.getElementById("show-all-answers");
+
+showAllButton.addEventListener("click", () => {
+  answerToggles.forEach(answer => {
+    answer.classList.toggle("hidden");
+  });
+});
+</script>
 
 
 </section>

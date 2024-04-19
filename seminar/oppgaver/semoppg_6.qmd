@@ -111,7 +111,6 @@ Hvis du innen 30 dager etter kjøp av en vare hos oss finner samme vare billiger
 </div>
 
 
-::: {.content-visible when-profile="internal"}
 <br>
 <button id="show-all-answers">Vis svar</button>
 <p class="answer hidden">
@@ -132,6 +131,9 @@ showAllButton.addEventListener("click", () => {
   });
 });
 </script>
+
+
+::: {.content-visible when-profile="internal"}
 :::
 
 
