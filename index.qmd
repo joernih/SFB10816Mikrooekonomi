@@ -22,8 +22,8 @@ md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/m
 
 ## Nyheter
 
-- Oppgaver til seminar #6 førstkommende fredag er nå blitt publisert
 - [Repetisjonsvideo](https://hiof.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=e23b9a50-ff4d-4494-b1dc-b0ec014eb815) fra siste forelesning
+- Løsningsforslag til seminar #6 er nå blitt publisert
 
 ### Pensumbøker
 
