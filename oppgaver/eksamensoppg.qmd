@@ -18,11 +18,11 @@
 
 ## Tre oppgavesett
 - [Oppgavesett 1](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/oppgaver/Oppgavesett%201.pdf)
-	- Løsningsforslag kommer snart
+	- [Løsningsforslag (utkast)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/oppgaver/arbeidsoppgaver_sett1_losningsforslag.pdf)
 - [Oppgavesett 2](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/oppgaver/Oppgavesett%202.pdf)
-	- Løsningsforslag kommer snart
+	- [Løsningsforslag (utkast)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/oppgaver/arbeidsoppgaver_sett2_losningsforslag.pdf)
 - [Oppgavesett 3](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/oppgaver/Oppgavesett%203.pdf)
-	- Løsningsforslag kommer snart
+	- [Løsningsforslag (utkast)](https://github.com/joernih/SFB10816Mikrooekonomi/blob/main/oppgaver/arbeidsoppgaver_sett3_losningsforslag.pdf)
 
 ```{r, echo=F}
 knitr::knit_exit()
