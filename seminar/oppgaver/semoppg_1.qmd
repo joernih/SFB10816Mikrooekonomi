@@ -98,7 +98,7 @@ Dvs både etterspørsel og tilbud er priselastisk, men etterspørselen er dobbel
 
 La oss nå anta at etterspørselen og tilbudet er som først spesifisertj
 innledningsvis i oppgaven. Anta at produsentene blir pålagt å betale en
-stykkavgift på TTT kroner per enhet de selger.
+stykkavgift på T=60 kroner per enhet de selger.
 
 d)  Hvordan vil stykkavgiften påvirke prisen som konsumentene betaler og
     prisen som produsenten betaler, samt omsatt mengde? Hvordan vil
