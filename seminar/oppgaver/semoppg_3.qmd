@@ -118,7 +118,7 @@ MTSB= \frac{K}{N}  = \frac{4}{1} = 4  \Rightarrow K =4N \\
 \end{aligned}
 Følgende kombinasjon av de to uttrykken forteller oss at kostnadsminimerende bruk av arbeidskraft er gitt ved 
 \begin{aligned}
-80 = 10N^{0.5}(4N)^{0.5}=10\cdot4^{0.5}N \Rightarrow  N=\frac{40}{20} = 4 \\ 
+80 = 10N^{0.5}(4N)^{0.5}=10\cdot4^{0.5}N \Rightarrow  N=\frac{80}{20} = 4 \\ 
 \text{Mens kostnadsminimerende bruk av kapital er gitt ved} \\
 K=4N=4(4)=16 \\
 \text{Alternativt} \\
@@ -126,6 +126,7 @@ K=4N=4(4)=16 \\
 \end{aligned}
 ![](bilder/sem3_2e.png){width=50%}
 </div>
+
 
 
 <button id="show-all-answers">Vis svar</button>
