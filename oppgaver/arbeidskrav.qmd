@@ -12,7 +12,6 @@ format:
 
 \newpage 
 
-
 # Obligatorisk innleveringsoppgaver
 
   - [Canvas](https://hiof.instructure.com/courses/8577/assignments/38559)
