@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.9">
+<meta name="generator" content="quarto-1.5.28">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mikroøkonomi (SFB10816) – Seminar 5: Markedsteori: Fullkommen konkurranse, monopoltilpasning, prisdiskriminering og kollektive goder</title>
+<title>Mikroøkonomi (SFB10816) – Seminar 5: Markedsteori: Fullkommen konkurranse, monopoltilpasning, spillteori og kollektive goder</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +66,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -96,6 +96,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="css/ON.css">
 </head>
 
 <body>
@@ -105,7 +106,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Seminar 5: Markedsteori: Fullkommen konkurranse, monopoltilpasning, prisdiskriminering og kollektive goder</h1>
+      <h1 class="title">Seminar 5: Markedsteori: Fullkommen konkurranse, monopoltilpasning, spillteori og kollektive goder</h1>
                       </div>
   </div>
     
@@ -126,9 +127,9 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#oppgave-1-markedsteori-fullkommen-konkurranse-og-monopol-eksamen-hvl-høsten-2023" id="toc-oppgave-1-markedsteori-fullkommen-konkurranse-og-monopol-eksamen-hvl-høsten-2023" class="nav-link active" data-scroll-target="#oppgave-1-markedsteori-fullkommen-konkurranse-og-monopol-eksamen-hvl-høsten-2023">Oppgave 1: Markedsteori – fullkommen konkurranse og monopol (Eksamen HVL, høsten 2023)</a></li>
+  <li><a href="#oppgave-1-markedsteori-fullkommen-konkurranse-og-monopol-eksamen-hvl-høsten-2022" id="toc-oppgave-1-markedsteori-fullkommen-konkurranse-og-monopol-eksamen-hvl-høsten-2022" class="nav-link active" data-scroll-target="#oppgave-1-markedsteori-fullkommen-konkurranse-og-monopol-eksamen-hvl-høsten-2022">Oppgave 1: Markedsteori – fullkommen konkurranse og monopol (Eksamen HVL, høsten 2022)</a></li>
   <li><a href="#oppgave-2-spillteori" id="toc-oppgave-2-spillteori" class="nav-link" data-scroll-target="#oppgave-2-spillteori">Oppgave 2: Spillteori</a></li>
-  <li><a href="#oppgave-3-prisdiskriminering-hvl-202x" id="toc-oppgave-3-prisdiskriminering-hvl-202x" class="nav-link" data-scroll-target="#oppgave-3-prisdiskriminering-hvl-202x">Oppgave 3: Prisdiskriminering (HVL 202X)</a></li>
+  <li><a href="#oppgave-3-prisdiskriminering-hvl-våren-2023" id="toc-oppgave-3-prisdiskriminering-hvl-våren-2023" class="nav-link" data-scroll-target="#oppgave-3-prisdiskriminering-hvl-våren-2023">Oppgave 3: Prisdiskriminering (HVL, våren 2023)</a></li>
   </ul>
 </nav>
     </div>
@@ -140,39 +141,83 @@ window.Quarto = {
 
 
 <p>Uke 14, ansvarlig: TAB Fredag kl. 12:15-14:00.</p>
-<section id="oppgave-1-markedsteori-fullkommen-konkurranse-og-monopol-eksamen-hvl-høsten-2023" class="level1">
-<h1>Oppgave 1: Markedsteori – fullkommen konkurranse og monopol (Eksamen HVL, høsten 2023)</h1>
+<section id="oppgave-1-markedsteori-fullkommen-konkurranse-og-monopol-eksamen-hvl-høsten-2022" class="level1">
+<h1>Oppgave 1: Markedsteori – fullkommen konkurranse og monopol (Eksamen HVL, høsten 2022)</h1>
 <p>Anta at markedets etterspørsel etter et bestemt konsumgode er gitt ved: <span class="math display">\[
 X^D = 600 – 6p
 \]</span> der <span class="math inline">\(p\)</span> er prisen på godet og <span class="math inline">\(X^D\)</span> er markedets totale etterspørsel etter gode. Markedets tilbudskurve er gitt ved: <span class="math display">\[X^S = 2p
 \]</span> hvor <span class="math inline">\(X^s\)</span> er antall tilbudte enheter av godet.</p>
 <ol type="a">
 <li>Finn markedslikevekten (pris og kvantum) under fullkommen konkurranse.
-<div class="sol">
-<p>Svar</p>
-</div></li>
-</ol>
-<p>Anta nå at det bare er én tilbyder i markedet som dermed har monopol. Den oppgitte tilbudskurven vil da gjenspeile monopolets grensekostnad som er lik <span class="math inline">\(\frac{1}{2}X^{s}\)</span>.</p>
-<ol start="2" type="a">
+<div class="answer hidden">
+<p>Fullkommen konkurranse tilsier markedsklarering, som betyr at <span class="math inline">\(X^d=X^s=X\)</span>. Vi kan derfor ta i bruk de oppgitte funksjonssammenhengene for først å finne likevektsprisen i markedet: <span class="math display">\[
+600 – 6p= 2p \\
+6p+2p = 600 \\
+8p = 600 \\
+p = 75 \\
+\]</span> Ved å sette <span class="math inline">\(75\)</span> tilbake i tilbudsfunksjonen (alternativt etterspørselsfunksjonen) vil vi finne at kvantum omsatt i markedet vil være gitt ved: <span class="math display">\[
+X^s=X=2\cdot75 = 150
+\]</span></p>
+</div>
+Anta nå at det bare er én tilbyder i markedet som dermed har monopol. Den oppgitte tilbudskurven vil da gjenspeile monopolets grensekostnad som er lik <span class="math inline">\(\frac{1}{2}X^{s}\)</span>.</li>
 <li>Dersom denne aktøren ønsker å maksimere fortjenesten, hvor mye bør den produsere og hva blir prisen?<br>
 
-<div class="sol">
-<p>Svar</p>
-</div></li>
-<li>Regn ut og forklar effektivitetstapet (dødvektstapet) ved denne tilpasningen.
-<div class="sol">
-<p>Svar</p>
-</div></li>
-<li>Hva blir produsentoverskuddet? <br>
-<div class="sol">
-<p>Svar</p>
-</div></li>
-<li>Illustrer til slutt markedsløsningen ved fullkommen konkurranse og monopol ved bruk av to figurer.
-<div class="sol">
-<p>Svar</p>
-</div></li>
+<div class="answer hidden">
+Optimal tilpasning til en monpolist er gitt ved den produksjonen hvor grenseinntekt lik grensekostnad. Grenseinntekten framkommer ved å derivere inntektsfunksjonen som er git ved <span class="math inline">\(I(x)=pX=(100-(1/6)X)X = 100X-(1/6)(X)^{2}\)</span> Vi har derfor: <span class="math display">\[
+I'(x) = 100 -(1/3)X
+\]</span> Men grensekostnaden finner vi ved å løse tilbudsfunksjonen mhp. p <span class="math display">\[
+C'(X)=\frac{1}{2}X
+\]</span> Vi har derfor at <span class="math display">\[
+I'(x) = C'(x) \\
+100 -(1/3)X = \frac{1}{2}X \Leftrightarrow \\
+(1/3)X + (1/2)X = 100 \\
+X(5/6) = 100 \\
+X = 120
+\]</span> Monpolprisen er gitt ved
+<div class="answer hidden">
+<p><span class="math display">\[p^m=100−(1/6)120=80
+\]</span></p>
+</div></div></li>
+<li>Regn ut og forklar effektivitetstapet (dødvektstapet) ved denne tilpasningen.</li>
 </ol>
-<div style="page-break-after: always;"></div>
+<div class="answer hidden">
+<p>Kvantum på <span class="math inline">\(120\)</span> gir grensinntekt på <span class="math display">\[
+GI=100-(1/3)60=60
+\]</span> Dødvektstapet er gitt ved <span class="math display">\[
+((150-120)(80-60))/2 = 300
+\]</span> Fullkommen konkurranse innebærer at det omsettes <span class="math inline">\(X = 150\)</span> enheter. Denne mengden er samfunnsøkonomisk effektiv mengde der marginal betalingsvilje (gjenspeilt i etterspørselskurven) er lik grensekostnaden (gjenspeilt i tilbudskurven). Den høye monopolprisen vil bidra til at omsatt mengde reduseres til <span class="math inline">\(X=120\)</span>. De 30 enhetene som faller bort pga den høye monopolprisen skyldes at under fullkommen konkurranse vil <span class="math inline">\(I’(X^{FK})&lt; C’(X^FK{})\)</span>, Monopolisten begrenser tilbudet for å presse prisen oppover inntil <span class="math inline">\(I’(X^{M})=C’(X^{M})\)</span>, siden det er dette kvantumet som maksimerer fortjenesten.</p>
+</div>
+<ol start="4" type="a">
+<li>Hva blir produsentoverskuddet?</li>
+</ol>
+<div class="answer hidden">
+<p>Produsentoverskuddet under monpol <span class="math display">\[
+PO=PO_{I}+PO_{II}=(120\cdot(60))/2+120\cdot(80-60)= 6000
+\]</span></p>
+</div>
+<ol start="5" type="a">
+<li>Illustrer til slutt markedsløsningen ved fullkommen konkurranse og monopol ved bruk av to figurer.</li>
+</ol>
+<div class="answer hidden">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="figurer/eks_fk.png" class="img-fluid figure-img" style="width:45.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="figurer/eks_mp.png" class="img-fluid figure-img" style="width:45.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="oppgave-2-spillteori" class="level1">
 <h1>Oppgave 2: Spillteori</h1>
@@ -185,17 +230,74 @@ X^D = 600 – 6p
 </div>
 </div>
 </div>
+<div class="answer hidden">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="bilder/kap14_I_losn.png" class="img-fluid figure-img" style="width:45.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="bilder/kap14_II_losn.png" class="img-fluid figure-img" style="width:45.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="oppgave-3-prisdiskriminering-hvl-202x" class="level1">
-<h1>Oppgave 3: Prisdiskriminering (HVL 202X)</h1>
+<section id="oppgave-3-prisdiskriminering-hvl-våren-2023" class="level1">
+<h1>Oppgave 3: Prisdiskriminering (HVL, våren 2023)</h1>
 <ol type="a">
-<li>Man snakker gjerne om tre ulike former for prisdiskriminering. Gjør kort rede for hvorfor prisdiskriminering av tredje orden vil skille seg fra monopol uten prisdiskriminering.</li>
+<li>Man snakker gjerne om tre ulike former for prisdiskriminering. Gjør kort rede for hvorfor prisdiskriminering av tredje orden vil skille seg fra monopol uten prisdiskriminering.
+<div class="answer hidden">
+<em>Prisdiskriminering av tredje orden</em> har vi når en produsent kan selge et gode til forskjellige priser til ulike grupper av konsumenter. Et typisk eksempel på tredjeordens prisdiskriminering kan være et busselskap som tar ulik pris fra forskjellige kundegrupper (voksen-, barne-, student- og honnørpriser). Det er tre betingelser som må være oppfylt for at tredje ordens prisdiskriminering kan gjennomføres:
+<ol>
+<li>
+Forskjellige kundegrupper må ha ulik etterspørselselastisitet
+</li>
+<li>
+Monopolisten må kunne skaffe seg informasjon om disse ulikhetene
+</li>
+<li>
+Monopolisten må klare å skille de enkelte kundegruppene (delmarkedene) fra hverandre.
+</li>
 </ol>
+<em>Monopol uten prisdiskriminering:</em> Det er kun en produsent (en tilbyder) av en vare eller tjeneste på et marked.<br>
+<br> Forskjellen er at ved tredjeordens prisdiskriminering deler produsenten selv markedet inn i en rekke delmonopolmarkeder; ett delmarked for hver kundegruppe og i hvert av disse delmonopolmarkedene tilpasser han seg slik at grenseinntekt er lik grensekostnad. Dette innebærer således at han tar høyest pris og tilbyr færrest varer i de delmarkeder der etterspørselen er mest uelastisk (minst prisfølsom). Da henter han ut maksimal monopolgevinst. Ved monopol uten prisdiskriminering har ikke produsenten mulighet til å dele kundegruppene inn etter grad av etterspørseIselastisitet, han må derimot ta samme pris fra alle kunder. Dermed vil monopolgevinsten uten prisdiskriminering, under ellers like forhold, bli mindre enn med prisdiskriminering.<br>
+</div></li>
+</ol>
+</section></main></div>
+<button id="show-all-answers">
+Vis svar
+</button>
+<p class="answer hidden">
+</p>
+<style>
+  .answer {
+    color: blue;
+  }
+</style>
+<script>
+const answerToggles = document.querySelectorAll(".answer");
+const showAllButton = document.getElementById("show-all-answers");
+
+showAllButton.addEventListener("click", () => {
+  answerToggles.forEach(answer => {
+    answer.classList.toggle("hidden");
+  });
+});
+</script>
 
 
-</section>
 
-</main> <!-- /main -->
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -231,18 +333,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -274,7 +365,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -309,7 +440,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -583,7 +718,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</div> <!-- /content -->
+ <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">

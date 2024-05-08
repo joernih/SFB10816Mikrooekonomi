@@ -1,0 +1,14 @@
+.pagebreak { page-break-before: always; }
+
+.body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+.sol {
+  font-weight: bold;
+  color: white;
+  zoom: 0%;
+  font-size: 0% ;
+}
+

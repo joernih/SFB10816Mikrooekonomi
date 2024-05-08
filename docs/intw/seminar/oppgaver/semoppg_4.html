@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.28">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Mikroøkonomi (SFB10816) – Seminar 4: Konsumentteori</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="css/OFF.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Mikroøkonomi (SFB10816)</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../timeplan/timeplan.html"> 
+<span class="menu-text">Timeplan</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-forelesninger" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Forelesninger</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-forelesninger">    
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html">
+ <span class="dropdown-text">Praktisk informasjon</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-1-introduksjon-til-mikroøkonomi.-overblikk-over-fulllkomen-konkurranse">
+ <span class="dropdown-text">Forelesning 1: Introduksjon til mikroøkonomi</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-4-5-og-6-innledning-til-produsentteorien">
+ <span class="dropdown-text">Forelesning 2-3: Introduksjons til produksjonsteori. Produksjonsteori på kort sikt</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-4-5-og-6-produksjonsteori-på-lang-sikt">
+ <span class="dropdown-text">Forelesning 3-4: Introduksjons til produksjonsteori. Produksjonsteori på lang sikt</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-7-konsumentteori">
+ <span class="dropdown-text">Forelesning 5: Konsumentteori</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-8-konsumentens-økonomiske-adferd-i-gode--og-arbeidsmarkedet">
+ <span class="dropdown-text">Forelesning 6: Konsumentens øknomiske adferd i gode- og arbeidsmarkedet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-9-markedsteori-fullkommen-konkurranse">
+ <span class="dropdown-text">Forelesning 7: Fullkommen konkurranse</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-10-markedsteori-ufullkommen-konkurranse---monopol">
+ <span class="dropdown-text">Forelesning 8: Monopol</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-11-ufullkommen-konkurranse---monopolistisk-konkurranse">
+ <span class="dropdown-text">Forelesning 9: Ufullkommen konkurranse - monopolistisk konkurranse</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-14-andre-emner-litt-spillteori">
+ <span class="dropdown-text">Forelesning 10: Andre emner: Prisdiskriminering, Litt spillteori, Arbeidsmarkedet og Tilpasninger over tid</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/notater.html#/kapittel-13-andre-emner-velferd-og-markedssvikt">
+ <span class="dropdown-text">Forelesning 11: Velferd og markedssvikt</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/allenotater.html">
+ <span class="dropdown-text">Notatblokk for alle notater (betaversjon)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/drawio/alle.pdf">
+ <span class="dropdown-text">Figurpakke</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../forelesninger/repetisjonsnotat.html">
+ <span class="dropdown-text">Repetisjonsnotat</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-oppgaver" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Oppgaver</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-oppgaver">    
+        <li>
+    <a class="dropdown-item" href="../../oppgaver/oppgaver.html">
+ <span class="dropdown-text">Anbefalte oppgaver</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../seminar/posts.html">
+ <span class="dropdown-text">Seminar</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../oppgaver/arbeidskrav.html">
+ <span class="dropdown-text">Arbeidskrav</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../oppgaver/eksamensoppg.html">
+ <span class="dropdown-text">Tidligere eksamensoppgaver</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../forelesninger/slides.pdf"> 
+<span class="menu-text">Utskrifter</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../log.html"> 
+<span class="menu-text">Endringslog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teknisk.html"> 
+<span class="menu-text">Appendiks</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teknisk" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teknisk</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-teknisk">    
+        <li>
+    <a class="dropdown-item" href="../../eksamensoppgaver/qmdconvert/Eksamen_SFB10816_2022_V.html">
+ <span class="dropdown-text">abc1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../eksamensoppgaver/qmdconvert/Eksamen_SFB10816_Mikro_2023_V.html">
+ <span class="dropdown-text">abc2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../eksamensoppgaver/qmdconvert/Eksamen_SFB10816_Mikro_2023_H_K.html">
+ <span class="dropdown-text">abc3</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Seminar 4: Konsumentteori</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#husholdningens-tilpasning" id="toc-husholdningens-tilpasning" class="nav-link active" data-scroll-target="#husholdningens-tilpasning">Husholdningens tilpasning</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/joernih/https://github.com/joernih/SFB10816Mikrooekonomi/edit/main/seminar/oppgaver/semoppg_4.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p>Uke 10, ansvarlig: JIH Torsdag kl. 09:15-11:00.</p>
+<section id="husholdningens-tilpasning" class="level1">
+<h1>Husholdningens tilpasning</h1>
+<ol type="a">
+<li>Hva mener vi med nytte i konsumentteorien? Forklar forskjellen mellom ordinal og kardinal nytte.
+<div class="answer hidden">
+<p>Nytte er et subjektivt mål på den glede eller tilfredsstillelse som en konsument har ved konsumet av et gode. Ordinal innebærer at nytten er rangerbar. Det numeriske tallet for nyttenivå har altså ingen verdi utover at den rangerer gode kombinasjoner. Kardinal nytte innebærer at nytten er målbar. Kun ved kardinal nytte er det mulig å sammenligne nytte mellom konsumenter.</p>
+</div></li>
+<li>Hva mener vi med indifferenskurver? Skisser grafisk følgende 3 typer av indifferenskurver:
+<ul>
+<li>
+Ordinære indifferenskurver
+</li>
+<li>
+Indifferenskurver for en konsument som konsumerer to goder i et fast forhold (for eksempel en enhet saft og 2 enheter farrisvann)
+</li>
+<li>
+En konsument som liker to goder like godt (for eksempel ferie i Norge og ferie i utlandet)
+</li>
+</ul>
+<div class="answer hidden">
+<p><strong>Ordinære indifferenskurver:</strong> Vanlige indifferenskurver krummer mot origo, noe som avspeiler begrensede substitusjonsmuligheter. Slike indifferenskurver innebærer avtagende marginal substitusjonsbrøk. Jo mer en konsument har av et gode i utgangspunktet, desto mindre trenger han i kompensasjon av det andre godet dersom han blir fratatt en enhet av det godet han har rikelig av. <br> <br> <strong>Fast forhold:</strong> Goder som konsumeres i et fast forhold har rettvinklede indifferenskurver. I dette tilfellet har man ingen substitusjonsmuligheter, og det er et fast forhold mellom konsumerte mengder av de to godene. Godene er da komplementære. Vi får dermed ikke økt nytte dersom vi øker mengden av for eksempel saft, mens mengden av farrisvann er konstant. Vi må konsumere 1 enhet saft sammen med 2 enheter farrisvann. <br> <br> <strong>Like godt:</strong> Goder som er perfekt substituerbare, som f eks. norgesferie og ferie i utlandet, vil ha rettlinjede indifferenskurver. Å tilbringe 2 uker på ferie i Norge kan substitueres mot en 14 dagers utenlandsferie. Det er altså et konstant bytteforhold mellom de to godene. <br> <br></p>
+</div></li>
+<li>Hva mener vi med den marginale substitusjonsbrøk? Bruk de tre typene indifferenskurver fra oppgave 1b) i svaret ditt.
+<div class="answer hidden">
+<p>Den marginale substitusjonsbrøk (MSB) viser hvor mye vi må gi opp av et gode for å få mer av et annet, når nytten er konstant. Den angir bytteforholdet mellom to goder. <br> <br> I tilfellet med <strong>krummede</strong> indifferenskurver, vil MSB avta langs en indifferenskurve. Er indifferenskurvene <strong>rettlinjede</strong>, vil MSB være konstant og lik 1 langs hele kurven. Er derimot indifferenskurvene <strong>rettvinklede</strong>, og det er fravær av substitusjonsmuligheter, da vil MSB være lik null langs den horisontale aksen.</p>
+</div></li>
+<li>Hvilke kriterier må være oppfylt for at konsumenten skal oppnå maksimal nytte til en gitt inntekt? Forklar grundig, og illustrer svaret ditt med en figur.
+<div class="answer hidden">
+<p>Bruk figur 7.12 i læreboka. Du skal forklare punkt a, b og c.&nbsp;Det er 2 betingelser som må være oppfylt for at en godekombinasjon skal være optimal: <br> 1 Den må ligge på budsjettlinjen. <br> 2 Den må være i tangeringspunktet mellom en indifferenskurve og den angitte budsjettlinjen. <br> <br> I <strong>punktet c</strong> har vi tangering mellom den høyst oppnåelige indifferenskurven og budsjettlinjen. I tangeringspunktet er helningen på indifferenskurven (MRS) liker helningen på budsjettlinja, dvs at <span class="math inline">\(\frac{u_1^{'}}{u_2^{'}}=\frac{p_1}{p_2}\)</span>. <br> <br> <strong>Punktet a</strong> er ikke et optimumspunkt, fordi der er MSB <span class="math inline">\(&gt;\)</span> prisforholdet. Det innebærer at da vil konsumenten være villig til å ofre flere enheter av gode 2 for å få 1 enhet til av gode 1 (MSB) og fremdeles befinne seg på det samme nyttenivået, enn det han virkelig må ofre for å kjøpe en enhet til av gode 1 (prisforholdet). Da vil han øke sin nytte for det samme budsjettet ved å kjøpe mer av gode 1 og mindre av gode 2, og således bevege seg mot punkt c. <strong>Eksempel:</strong> Anta at <span class="math inline">\(MSB = 4\)</span> og <span class="math inline">\(p_1/p_2 = 3\)</span> i punkt a. For å få 1 enhet mer av gode 1, er han da villig til å ofre 4 enheter av gode 2. Det koster ham imidlertid kun 3 enheter av gode 2 for å kunne kjøpe 1 enhet av gode 1. Siden «markedet» tilbyr en lavere pris for gode 1 (3 enheter av gode 2) enn det han maksimalt hadde vært villig til å «betale» (4 enheter av gode 2), øker hans nytte når han bytter ut noe av gode 2 med mer av gode 1. <br> <br> <strong>Punktet b</strong> er heller ikke et optimumspunkt, fordi der er MSB <span class="math inline">\(&lt;\)</span> prisforholdet. Det innebærer at da vil konsumenten ha behov for færre nye enheter av gode 2 dersom han får 1 enhet mindre av gode 1 (MSB) for fremdeles å befinne seg på det samme nyttenivået, enn de han får råd til dersom han reduserer kjøpet av gode 1 med en. Den må ligge på budsjettlinjen. enhet (prisforholdet). Da vil han øke sin nytte for det samme budsjettet ved å kjøpe mindre av gode 1 og mer av gode 2, og således bevege seg mot punkt c. <strong>Eksempel:</strong> Anta at <span class="math inline">\(MSB = 2\)</span> og <span class="math inline">\(p_1/p_2 = 3\)</span> i punkt b. For å gi slipp på 1 enhet av gode 1, må han da få 2 enheter av gode 2 for å opprettholde nyttenivået. Han kan imidlertid kjøpe hele 3 enheter av gode 2 dersom han kjøper 1 enhet mindre av gode 1. Siden «markedet» tilbyr ham en høyere pris for gode 1 (3 enheter av gode enn det han maksimalt hadde vært villig til å «betale» (2 enheter av gode 2), øker hans nytte når han bytter ut noe av gode 1 med mer av gode 2.</p>
+</div></li>
+<li>En konsument, Olava, liker å kose seg på en av byens kafeer. Prisen på et stykke kake er 20 kroner, mens prisen for en kaffe latte er 40 kroner. Budsjettet til Olava er på 160 kroner. Formuler Olavas budsjettbetingelse og illustrer den grafisk i et godediagram. Du skal ha mengden kake langs den horisontale aksen og mengden kaffe latte langs den vertikale. Forklar hva budsjettlinjen gir uttrykk for. Finn også et uttrykk for helningen på kurven.
+<div class="answer hidden">
+<p>Budsjettbetingelsen angir hvordan det samlede budsjettet (R) fordeles på utgifter til henholdsvis gode 1 <span class="math inline">\((p_1x_1)\)</span> og gode 2 <span class="math inline">\((p_2x_2)\)</span>: <span class="math display">\[\begin{equation*}
+R=p_1x_1+p_2x_2 \Rightarrow 160=20x_1+40x_2
+\end{equation*}\]</span> budsjettlinja får vi når vi løser budsjettbetingelsen med hensyn på <span class="math inline">\(x_2\)</span>, slik at den passer inn i et <span class="math inline">\(x_1x_2\)</span>-diagram: <span class="math display">\[\begin{equation*}
+x_2=-\frac{p_1}{p_2}x_1+\frac{R}{p_2}
+\end{equation*}\]</span> helningen på budsjettlinjen: <span class="math display">\[\begin{equation*}
+\frac{\Delta x_2}{\Delta x_1}=-\frac{p_1}{p_2}
+\end{equation*}\]</span> den er negativ, fordi kjøp av en enhet mer av gode 1 (kake), krever mindre kjøp av gode 2 (latte) med uendret budsjett. mulighetsområdet avgrenses av de to aksene og budsjettlinjen, og angir alle de kombinasjoner av kake og latte som olava kan kjøpe innenfor budsjettet sitt. hun kan ikke konsumere mer enn det som inntekt og priser bestemmer og avgrenser.</p>
+</div></li>
+<li>Hva skjer med budsjettlinjen dersom inntekten reduseres til 120 kroner? Bruk også en figur i forklaringen din. <br>
+<div class="answer hidden">
+<p>Ved en reduksjon i budsjettet (R) med 120 kroner, får vi følgende reviderte budsjettbetingelse: <span class="math display">\[\begin{equation*}
+R=p_1x_1+p_2x_2 \Rightarrow 120=20x_1+40x_2
+\end{equation*}\]</span> Helningen på budsjettlinjen: <span class="math display">\[\begin{equation*}
+\frac{\Delta x_2}{\Delta x_1}=-\frac{p_1}{p_2}
+\end{equation*}\]</span> er dermed uendret. Skjæringspunktet med den horisontale aksen (<span class="math inline">\(\frac{R}{p_1}=\frac{120}{20}=6\)</span>) viser at Olava kan konsumere 6 kakestykker dersom hun bruker hele budsjettet på dette godet, mens skjæringspunktet med den vertikale aksen (<span class="math inline">\(\frac{R}{p_2}=\frac{120}{40}=3\)</span>) viser at Olava kan konsumere 3 kopper med kaffelatte dersom hun bruker hele budsjettet på dette godet. Konklusjon: Redusert budsjett, reduserer konsumentens mulighetsområde ved å parallellforskyve budsjettlinjen innover i godediagrammet. <img src="bilder/sem4_1f.png" class="img-fluid" style="width:50.0%"></p>
+</div></li>
+<li>Olava har følgende nyttefunksjon: <span class="math inline">\(U =10x_1^{0.5}x_2^{0.5}\)</span>. Her er x lik mengden som konsumeres av henholdsvis gode 1 (kake) og gode 2 (kaffe latte). Hvor mye velger Olava å konsumere av de to godene når priser og inntekt er som i oppgave 1e)? Hva blir nyttenivået i dette tilfellet? Illustrer svaret grafisk.
+<div class="answer hidden">
+Løsningen må ligge på budsjettlinjen. <span class="math display">\[\begin{equation*}
+R=p_1x_1+ p_2x_2 \Rightarrow 160=20x_1+ 40x_2
+\end{equation*}\]</span> samt ligge i tangeringspunktet mellom en indifferenskurve og den angitte budsjettlinjen. <span class="math display">\[\begin{equation*}
+\frac{u_1^{'}}{u_2^{'}}=\frac{p_1}{p_2}=\frac{0.5\cdot 10 x_1^{-0.5}x_2^{0.5}}{0.5 \cdot10 x_1^{0.5}x_2^{-0.5}}=\frac{x_{2}^{0.5+0.5}}{x_1^{0.5+0.5}}=\frac{20}{40} \Rightarrow \frac{x_2}{x_1}=\frac{1}{2} \Rightarrow x_2=\frac{1}{2}x_1
+\end{equation*}\]</span> Vi erstatter så <span class="math inline">\(x_2\)</span> i budsjettligningen:
+<span class="math display">\[\begin{aligned}
+160=20 x_1+ 40(\frac{1}{2}) x_1 \\  160=40x_1 \Rightarrow x_1 =4 \text{ enheter kaker} \\
+x_2 =\frac{1}{2}4=2 \text{ enheter kaffe latte} \\
+\end{aligned}\]</span>
+<p><br> Nyttenivået i optimum: <span class="math display">\[\begin{equation*}
+U =10x_1^{0.5}x_2^{0.5} = 10\cdot 4^{0.5}2^{0.5} \approx 28,3 \text{ nytteenheter}
+\end{equation*}\]</span></p>
+</div></li>
+<li>Olava hadde egentlig tenkt å kjøpe 2 stykker kake og 3 kaffe latte for sitt budsjett. Hva blir nyttenivået i dette tilfellet? Hvilket råd vil du som samfunnsøkonom gi henne?
+<div class="answer hidden">
+<p>Hun maksimerer ikke nytten når hun konsumerer denne mengden. Dette skyldes at MSB da er 3/2, dvs hun er villig til å ofre 1,5 kaffekopper for å få ett kakestykke og samtidig opprettholde nyttenivået. Derimot kan hun kjøpe ett kakestykke og betale tilsvarende en ½ kaffekopp for dette. Hun er altså villig til å ofre flere kaffekopper for ett kakestykke enn det hun faktisk behøver for å opprettholde nyttenivået når hun kjøper dette kakestykket. Da bør hun kjøpe mer kake og færre kopper med kaffe. Dette bør hun fortsette med, helt til MSB har sunket til prisforholdet, dvs ½.</p>
+</div></li>
+<li>Anta at prisen på kake synker. Forklar kort hva vi mener med inntekt- og substitusjonseffekt i dette tilfellet. Illustrer grafisk.
+<div class="answer hidden">
+<p>Forklares ved å bruke en tilsvarende figur som Figur 8.8 i læreboka. Effekten av en prisreduksjon på etterspørselen etter godet, kan dekomponeres i 2 deler: <strong>Substitusjonseffekten</strong> (prisvridningseffekten): Den nyttekompenserte virkningen på etterspørselen etter kaker som følge av at kakeprisen reduseres. Besvarer følgende spørsmål; hvordan ville etterspørselen etter kaker endret seg dersom konsumenten hadde blitt fratatt en (tenkt) del av sin inntekt slik at hun hadde beholdt den samme nytten som tidligere. Substitusjonseffekten fanger opp effekten av at prisen på kake er blitt lavere sammenlignet med prisen på det andre godet, kaffe. Denne effekten virker alltid slik at prisnedgang på kaker øker kakeetterspørselen. <br> <strong>Inntektseffekten</strong> er virkningen på kakeetterspørselen som følge av at realinntekten har gått opp siden kakeprisen har gått ned. Olavas budsjett på 160 kr har fått større kjøpekraft da ett av godene er blitt billigere. Dersom kaker er et normalt gode for Olava, drar inntektseffekten i retning av økt kakekonsum, mens det motsatte er tilfellet dersom Olava betrakter kaker som et mindreverdig gode. <br> Den <strong>samlede effekten</strong> på Olavas etterspørsel etter kaker som følge av en prisnedgang, er summen av substitusjons- og inntektseffekten. Dersom Olava oppfatter kaker som et normalt gode, vil en prisreduksjon garantert resultere i økt etterspørsel etter kaker. Dersom kaker er et mindreverdig gode, drar de to effektene i hver sin retning, men da vil substitusjonseffekten være sterkere enn inntektseffekten. Fremdeles vil den samlede virkningen være en økt etterspørsel etter kaker. Dersom kaker er et sterkt mindreverdig gode, kan vi oppleve den situasjonen at en prisnedgang på kaker fører til lavere etterspørsel etter godet. I så fall betegner vi kaker som et giffengode. <img src="bilder/sem4_1i.png" class="img-fluid" style="width:50.0%"></p>
+</div></li>
+</ol>
+<button id="show-all-answers">
+Vis svar
+</button>
+<p class="answer hidden">
+</p>
+<style>
+  .answer {
+    color: blue;
+  }
+</style>
+<script>
+const answerToggles = document.querySelectorAll(".answer");
+const showAllButton = document.getElementById("show-all-answers");
+
+showAllButton.addEventListener("click", () => {
+  answerToggles.forEach(answer => {
+    answer.classList.toggle("hidden");
+  });
+});
+</script>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/github\.com\/joernih\/https:\/\/joernih\.github\.io\/SFB10816Mikrooekonomi\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Jørn I. Halvorsen (jorn.i.halvorsen at hiof.no)</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/joernih/https://github.com/joernih/SFB10816Mikrooekonomi/edit/main/seminar/oppgaver/semoppg_4.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
