@@ -1,5 +1,5 @@
 ---
-title: "Mikroøkonomi med anvendelser (våren 2024)"
+title: "Mikroøkonomi med anvendelser (høsten 2024)"
 output:
   html_document:
 engine: knitr
