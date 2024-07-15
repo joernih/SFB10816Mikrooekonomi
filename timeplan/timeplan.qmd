@@ -4,12 +4,18 @@ title: Timeplan
 # data-raw/metadata.json
 ---
 
+## Forelesninger
+
 ```{r, echo=F, ,message=F}
-source(paste0(rprojroot::find_rstudio_root_file(),'/forelesninger/timeplan.R'))
+source(paste0(rprojroot::find_rstudio_root_file(),'/script/timeplan.R'))
+#kableExtra::kbl(dft)
+```
+
+```{r, echo=F}
+knitr::knit_exit()
 ```
 
 ## Forelesninger
-
 
 ```{r, echo=F, ,message=F}
 lecnr <- 13
@@ -19,9 +25,6 @@ kableExtra::kbl(df_t,col.names=c("#","Tema","Kapittel","Ansvarlig","Ukenr","Dato
 
 [Romplan](https://tp.educloud.no/hiof/timeplan/timeplan.php?type=course&sem=24v&campus=&id[]=SFB10816%2C1)
 
-```{r, echo=F}
-knitr::knit_exit()
-```
 
 ## Regneverksted
 ```{r, echo=F}

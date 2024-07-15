@@ -1,9 +1,11 @@
 project:
   type: website
+  output-dir: docs
   render:
     - "index.qmd"
-    - "kladd.qmd"
     - "timeplan/timeplan.qmd"
+    - "script/timeplan.R"
+    - "kladd.qmd"
     - "forelesninger/notater.qmd"
     - "forelesninger/allenotater.qmd"
     - "forelesninger/presentations_hiof.Rmd"
@@ -20,17 +22,37 @@ project:
     - "eksamensoppgaver/qmdconvert/Eksamen_SFB10816_2022_V.Rmd"
     - "eksamensoppgaver/qmdconvert/Eksamen_SFB10816_Mikro_2023_V.qmd"
     - "eksamensoppgaver/qmdconvert/Eksamen_SFB10816_Mikro_2023_H_K.qmd"
-
 website:
-  title: "Mikroøkonomi (SFB10816)"
+  title: "Mikroøkonomi (BOE203)"
+    #repo-url: https://github.com/joernih/https://github.com/joernih/SFB10816Mikrooekonomi
+    #site-url: https://github.com/joernih/https://joernih.github.io/SFB10816Mikrooekonomi/
   reader-mode: false
-  page-footer: 
-       left: "Jørn I. Halvorsen (jorn.i.halvorsen at hiof.no)" 
-format:
-  html:
-    theme: default
-    toc: true
-########################################################################
-# Lenke
-# git remote set-url origin https://$GIT_PAT@github.com/joernih/SFB10816Mikrooekonomi.git
-# /home/joernih/teaching/SFB10816Mikrooekonomi
+  navbar:
+    left:
+      - text: "Timeplan"
+        href: "timeplan/timeplan.qmd"
+      - text: "Forelesninger"
+        menu:
+          - text: "Praktisk informasjon"
+          - text: "Module 1:"
+          - text: "Module 2:"
+          - text: "Module 3:"
+          - text: "Module 4:"
+            #      - text: "Oppgaver"
+            #        menu:
+            #          - text: "Anbefalte oppgaver"
+            #            href: "oppgaver/oppgaver.qmd"
+            #          - text: "Seminar"
+            #            href: "seminar/posts.qmd"
+            #          - text: "Arbeidskrav"
+            #            href: "oppgaver/arbeidskrav.qmd"
+            #          - text: "Tidligere eksamensoppgaver"
+            #            href: "oppgaver/eksamensoppg.qmd"
+            #      - text: "Utskrifter"
+            #        href: "forelesninger/slides.pdf"
+            #      - text: "Endringslog"
+            #        href: "log.qmd"
+page-footer: 
+     right: 
+       - icon: github
+         href: https://github.com/joernih/OEKA201ProgrammingWebPage
