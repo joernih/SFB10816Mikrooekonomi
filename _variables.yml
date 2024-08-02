@@ -1,7 +1,8 @@
-lec01:  "Introduksjon og overblikk"
-lec02:  "Relevant risiko: Porteføljeteori to objekter"
-lec03:  "Relevant risiko: Porteføljeteori 3-n objekter"
-lec04:  "Effisiens"
+lec:
+  lec01:  "Introduksjon og overblikk"
+  lec02:  "Relevant risiko: Porteføljeteori to objekter"
+  lec03:  "Relevant risiko: Porteføljeteori 3-n objekter"
+  lec04:  "Effisiens"
 # Dobbel 36_JIH,39_JIH,41_JIH,45_JIH
 # Enkle 33_AO,34_JIH,35_AO,37_AO,38_AO,40_AO,42_AO,43_AO,44_AO,47_AO
 # Uke 36: 30. august 2024

@@ -1,10 +1,29 @@
-#    ma ti on to fr lø sø      ma ti on to fr lø sø      ma ti on to fr lø sø
-# 27  1  2  3  4  5  6  7   31           1  2  3  4   35                    1
-# 28  8  9 10 11 12 13 14   32  5  6  7  8  9 10 11   36  2  3  4  5  6  7  8
-# 29 15 16 17 18 19 20 21   33 12 13 14 15 16 17 18   37  9 10 11 12 13 14 15
-# 30 22 23 24 25 26 27 28   34 19 20 21 22 23 24 25   38 16 17 18 19 20 21 22
-# 31 29 30 31               35 26 27 28 29 30 31      39 23 24 25 26 27 28 29
-#                                                     40 30                  
+library(kableExtra)
+library(aweek)
+library(dplyr)
+mva <- yaml::yaml.load_file(paste0(rprojroot::find_rstudio_root_file(),"/_variables.yml"))
+ynr <- 2024
+ukr  <- c("34","36","39","41","45")
+dnr <- 4
+a <- get_date(week = ukr[1], day=4, year = 2024)
+b <- get_date(week = ukr[-1], day=4, year = 2024)
+c <- get_date(week = ukr[-1], day=5, year = 2024)
+dat <- c(a,b,c)[order(c(a,b,c))]
+lct <- unlist(mva$lec)
+dft <- data.frame(
+	lnr=seq(1,length(dat)),
+	dat=dat
+) 
+#mdvar$lec
+
+
+#     ma ti on to fr lø sø      ma ti on to fr lø sø
+#  31           1  2  3  4   35                    1
+#  32  5  6  7  8  9 10 11   36  2  3  4  5  6  7  8
+#  33 12 13 14 15 16 17 18   37  9 10 11 12 13 14 15
+#  34 19 20 21 22 23 24 25   38 16 17 18 19 20 21 22
+#  35 26 27 28 29 30 31      39 23 24 25 26 27 28 29
+#                            40 30                  
 #         oktober                   november                  desember       
 #    ma ti on to fr lø sø      ma ti on to fr lø sø      ma ti on to fr lø sø
 # 40     1  2  3  4  5  6   44              1  2  3   48                    1
@@ -15,12 +34,34 @@
 #                                                     1 30 31               
 # Dobbel 36_JIH,39_JIH,41_JIH,45_JIH
 # Enkle 33_AO,34_JIH,35_AO,37_AO,38_AO,40_AO,42_AO,43_AO,44_AO,47_AO
-library(htmlTable)
-library(magrittr)
-library(xaringan)
-library(aweek)
-###############################################################################################################################################
 # Timeplan
+###############################################################################################################################################
+# Flybilletter
+## https://www.norwegian.no/ipc/availability/avaday?AdultCount=1&A_City=HAU&D_City=OSL&D_Month=202409&D_Day=05&IncludeTransit=true&TripType=1
+#library(kableExtra)
+#library(aweek)
+#library(dplyr)
+#mdvar <- yaml::yaml.load_file("/home/joernih/Teaching/SFB30820Finansteori/_variables.yml")
+#mdvar$lec$url
+## [1] "https://tp.educloud.no/hiof/timeplan/timeplan.php?id%5B%5D=SFB30820%2C1&type=course&sem=24h&campus=&hide_old=0"
+#ynr <- 2024
+#ukr <- seq(from=34,to=47,1)[-c(7)]
+#dnr <- 4
+#get_date(week = unique(ukr), day=dnr, year = ynr)
+#ant <- seq(1,length(ukr))
+#wdn <- get_date(week = ukr[-5], day=dnr, year = ynr)
+#dft <- data.frame(
+#  ant=ant,
+#  wnr=ukr,
+#  tma=unname(unlist(mdvar$lec))
+#) 
+#
+
+
+
+
+###############################################################################################################################################
+###############################################################################################################################################
 ###############################################################################################################################################
 ukenr  <- c("34",rep("36",2),rep("38",2),rep("42",2),rep("44",2))
 datenr <- c(get_date(week = unique(ukenr)[1], day=4, year = 2023),c(get_date(week = unique(ukenr)[-1], day=4, year = 2023),get_date(week = unique(ukenr)[-1], day=5, year = 2023))[c(1,5,2,6,3,7,4,8)])
